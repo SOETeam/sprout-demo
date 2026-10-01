@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPROUT — Homeschool OS · Interactive Demo</title>
+<meta name="description" content="SPROUT demo: homeschool operating system with placement flow, mastery tracking, guardian gate and records binder. Demo data only — no accounts, no real learner data.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://soeteam.github.io/sprout-demo/">
+<meta property="og:title" content="SPROUT — Homeschool OS · Interactive Demo">
+<meta property="og:description" content="Playable placement flow, BKT mastery, Leitner reviews, guardian-gated plans and records export. Demo data only — no accounts, no real learner data.">
+<meta property="og:url" content="https://soeteam.github.io/sprout-demo/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b132b">
+<style>
+:root{
+  --bg0:#0b132b; --bg1:#0f172a; --bg2:#1c2541;
+  --acc:#00e5a0; --amber:#ffd166; --violet:#8a2be2;
+  --mut:#94a3b8; --mut2:#64748b; --line:rgba(0,229,160,.22);
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:linear-gradient(160deg,var(--bg0) 0%,var(--bg1) 55%,var(--bg2) 100%);color:#dbe4f0;font-family:var(--font);min-height:100vh;line-height:1.5}
+a{color:var(--acc)}
+.wrap{max-width:1080px;margin:0 auto;padding:18px 16px 60px}
+.mono{font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;font-size:.72rem;color:var(--mut)}
+/* top bar */
+.topbar{display:flex;align-items:center;gap:12px;padding:14px 18px;border:1px solid var(--line);background:rgba(11,19,43,.75);position:relative}
+.topbar .logo{font-family:var(--mono);font-weight:700;color:var(--acc);letter-spacing:.22em;font-size:1.05rem}
+.led{width:9px;height:9px;border-radius:50%;background:var(--acc);box-shadow:0 0 10px var(--acc);display:inline-block;animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+/* corner brackets */
+.panel{position:relative;border:1px solid var(--line);background:rgba(28,37,65,.55);padding:18px;margin-top:18px}
+.panel::before,.panel::after{content:"";position:absolute;width:14px;height:14px;pointer-events:none}
+.panel::before{top:-1px;left:-1px;border-top:2px solid var(--acc);border-left:2px solid var(--acc)}
+.panel::after{bottom:-1px;right:-1px;border-bottom:2px solid var(--acc);border-right:2px solid var(--acc)}
+.panel h2{font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;font-family:var(--mono);color:var(--amber);margin-bottom:10px}
+/* hero */
+.hero{text-align:center;padding:34px 18px 26px}
+.hero h1{font-size:clamp(1.6rem,4.5vw,2.6rem);letter-spacing:.06em;color:#fff}
+.hero h1 .sprout{color:var(--acc)}
+.hero .sub{color:var(--mut);margin-top:8px;font-size:1rem}
+.hero .proof{margin-top:14px;display:inline-block;border:1px dashed var(--line);padding:8px 14px;color:var(--amber);font-family:var(--mono);font-size:.78rem;letter-spacing:.06em}
+.badge-demo{display:inline-block;margin-top:12px;padding:5px 12px;border:1px solid var(--amber);color:var(--amber);font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;background:rgba(255,209,102,.06)}
+/* tabs */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;justify-content:center}
+.tabs button{background:transparent;border:1px solid var(--line);color:var(--mut);padding:9px 16px;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;cursor:pointer;text-transform:uppercase}
+.tabs button.active,.tabs button:hover{color:var(--acc);border-color:var(--acc);background:rgba(0,229,160,.07)}
+.view{display:none}
+.view.active{display:block}
+/* dashboard grid */
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
+.kidcard{border:1px solid rgba(148,163,184,.25);background:rgba(15,23,42,.7);padding:16px;cursor:pointer;transition:border-color .15s}
+.kidcard:hover,.kidcard.sel{border-color:var(--acc)}
+.kidcard .totem{font-size:2rem}
+.kidcard .name{font-weight:700;color:#fff;letter-spacing:.04em}
+.bar{height:8px;background:rgba(148,163,184,.18);margin-top:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--violet))}
+.stat{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.78rem;color:var(--mut);margin-top:6px}
+.stat b{color:#fff;font-weight:600}
+/* coverage tile */
+.cov{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:10px}
+.cov span{border:1px solid rgba(0,229,160,.25);padding:8px 10px;font-size:.82rem;background:rgba(0,229,160,.05)}
+.cite{font-family:var(--mono);font-size:.72rem;color:var(--mut2);margin-top:10px}
+.legal{font-size:.72rem;color:var(--mut2);margin-top:8px;font-style:italic}
+.mi-ready{margin-top:10px;padding:8px 12px;border-left:3px solid var(--acc);background:rgba(0,229,160,.06);font-size:.85rem}
+/* kid portal */
+.kp-head{display:flex;align-items:center;gap:14px}
+.kp-head .totem{font-size:2.6rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:14px}
+.mini{border:1px solid rgba(148,163,184,.25);padding:12px;background:rgba(15,23,42,.7)}
+.mini .k{font-family:var(--mono);font-size:.7rem;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+.mini .v{font-size:1.5rem;color:#fff;font-weight:700;margin-top:4px}
+.skillrow{display:flex;justify-content:space-between;align-items:center;border-bottom:1px dashed rgba(148,163,184,.2);padding:8px 0;gap:8px;flex-wrap:wrap}
+.pill{font-family:var(--mono);font-size:.68rem;padding:3px 8px;border:1px solid var(--amber);color:var(--amber)}
+.pill.due{border-color:#ff5d7a;color:#ff5d7a}
+/* placement */
+.qcard{min-height:130px}
+.opts{display:grid;gap:8px;margin-top:14px}
+.opts button{text-align:left;padding:12px 14px;background:rgba(15,23,42,.8);border:1px solid rgba(148,163,184,.3);color:#dbe4f0;font-size:.95rem;cursor:pointer}
+.opts button:hover{border-color:var(--acc);color:var(--acc)}
+.feedback{margin-top:12px;font-family:var(--mono);font-size:.8rem;min-height:1.2em}
+.feedback.ok{color:var(--acc)}
+.feedback.no{color:#ff5d7a}
+.progress{height:6px;background:rgba(148,163,184,.18)}
+.progress i{display:block;height:100%;background:var(--violet);transition:width .3s}
+.result{display:none}
+.big{font-size:1.6rem;color:var(--acc);font-weight:700}
+/* guardian gate */
+.gate{border:1px solid var(--amber);background:rgba(255,209,102,.05);padding:16px;margin-top:14px;position:relative}
+.gate::before{content:"GUARDIAN GATE — MANDATORY";position:absolute;top:-9px;left:12px;background:var(--bg1);padding:0 8px;font-family:var(--mono);font-size:.68rem;color:var(--amber);letter-spacing:.14em}
+.gate label{display:flex;gap:10px;align-items:flex-start;cursor:pointer;font-size:.95rem}
+.gate input{width:20px;height:20px;margin-top:2px;accent-color:var(--acc)}
+.gate-blocked{display:none;margin-top:10px;border:1px solid #ff5d7a;color:#ff5d7a;padding:8px 12px;font-family:var(--mono);font-size:.75rem;letter-spacing:.08em}
+.gate-open-note{display:none;margin-top:10px;border:1px solid var(--acc);color:var(--acc);padding:8px 12px;font-family:var(--mono);font-size:.75rem;letter-spacing:.08em}
+/* plan */
+.plan{display:none}
+.week{margin-top:12px}
+.day{display:grid;grid-template-columns:110px 1fr;gap:10px;border-bottom:1px dashed rgba(148,163,184,.2);padding:8px 0}
+.day .d{font-family:var(--mono);color:var(--amber);font-size:.8rem;padding-top:2px}
+.units{display:flex;flex-wrap:wrap;gap:6px}
+.unit{border:1px solid var(--line);padding:4px 10px;font-size:.78rem;background:rgba(0,229,160,.05)}
+/* mastery lab */
+.sliderrow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:10px}
+input[type=range]{flex:1;min-width:220px;accent-color:var(--acc)}
+.btn{display:inline-block;background:transparent;border:1px solid var(--acc);color:var(--acc);padding:10px 18px;font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;cursor:pointer;text-transform:uppercase}
+.btn.amber{border-color:var(--amber);color:var(--amber)}
+.btn:hover{background:rgba(0,229,160,.1)}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.readout{font-family:var(--mono);font-size:.9rem;color:var(--acc);margin-top:12px}
+select{background:var(--bg1);color:#dbe4f0;border:1px solid var(--line);padding:8px 10px;font-family:var(--mono);font-size:.8rem}
+/* records */
+pre.code{background:rgba(11,19,43,.9);border:1px solid rgba(148,163,184,.25);padding:14px;font-family:var(--mono);font-size:.75rem;max-height:320px;overflow:auto;white-space:pre-wrap;color:var(--mut)}
+/* footer */
+footer{margin-top:34px;text-align:center;font-family:var(--mono);font-size:.72rem;color:var(--mut2);letter-spacing:.06em}
+footer .sep{color:var(--mut2);margin:0 6px}
+noscript{display:block;text-align:center;color:#ff5d7a;padding:20px;font-family:var(--mono)}
+/* print */
+#printsheet{display:none}
+@media print{
+  body *{visibility:hidden}
+  #printsheet,#printsheet *{visibility:visible}
+  #printsheet{display:block!important;position:absolute;inset:0;color:#000;background:#fff;font-family:var(--mono);padding:20px}
+}
+@media (max-width:640px){.day{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<noscript>SPROUT demo requires JavaScript (all logic runs client-side in your browser).</noscript>
+<div class="wrap">
+
+  <div class="topbar panel">
+    <span class="led" aria-hidden="true"></span>
+    <span class="logo">SPROUT</span>
+    <span class="mono">Homeschool OS · demo build</span>
+    <span class="mono" style="margin-left:auto">NO ACCOUNTS · NO TRACKING</span>
+  </div>
+
+  <div class="hero">
+    <h1><span class="sprout">SPROUT</span> — Homeschool OS · interactive demo</h1>
+    <div class="sub">Adaptive placement, mastery tracking, guardian-gated plans and printable records — all running in your browser.</div>
+    <div class="badge-demo">⚠ DEMO DATA ONLY — NO ACCOUNTS, NO REAL LEARNER DATA</div>
+    <div class="proof">This demo shows adaptive homeschool placement + mastery tooling built by the SOETech agent fleet.</div>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="dashboard">Family Dashboard</button>
+    <button class="tab" data-tab="portal">Kid Portal</button>
+    <button class="tab" data-tab="placement">Placement Flow</button>
+    <button class="tab" data-tab="mastery">Mastery Lab</button>
+    <button class="tab" data-tab="records">Records Binder</button>
+  </div>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section class="view active" data-view="dashboard">
+    <div class="panel">
+      <h2 id="weekTitle">Week 7 at a glance</h2>
+      <div class="mono" id="weekRange">demo week window</div>
+      <div class="grid3" id="glance"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Coverage audit — 9 statutory subjects</h2>
+      <div class="cov" id="covGrid"></div>
+      <div class="cite">Source: MCL 380.1561(3)(f) · status: verified-D7 · SPROUT organizes Michigan-required subject coverage.</div>
+      <div class="mi-ready">📁 Michigan-ready records: every completed unit, assessment and review is written to an exportable records binder (see Records Binder tab).</div>
+      <div class="legal">Not legal advice. SPROUT organizes records and subject coverage; it does not provide legal guidance on homeschool requirements.</div>
+    </div>
+
+    <div class="panel">
+      <h2>Portals — pick a totem</h2>
+      <div class="grid3" id="kidCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ KID PORTAL ============ -->
+  <section class="view" data-view="portal">
+    <div class="panel">
+      <h2>Kid portal</h2>
+      <div class="mono">Select a totem on the dashboard, or below:</div>
+      <div class="tabs" id="portalPick" style="justify-content:flex-start;margin-top:10px"></div>
+      <div id="portalBody"></div>
+    </div>
+  </section>
+
+  <!-- ============ PLACEMENT ============ -->
+  <section class="view" data-view="placement">
+    <div class="panel">
+      <h2>Playable placement flow</h2>
+      <div class="mono" id="placeStatus">8 real seed items · grade-3 band · served one at a time</div>
+      <div class="progress" style="margin-top:10px"><i id="placeBar" style="width:0%"></i></div>
+      <div id="placeIntro" style="margin-top:14px">
+        <p style="color:var(--mut);font-size:.9rem">A short adaptive check: 8 items drawn from the SPROUT seed bank (math + ELA). The engine estimates ability from your answers, then a guardian must approve the placement before any plan is generated.</p>
+        <button class="btn" id="placeStart" style="margin-top:14px">▶ Start placement check</button>
+      </div>
+      <div id="placeQuiz" style="display:none" class="qcard">
+        <div class="mono" id="placeItemMeta" style="margin-top:10px"></div>
+        <h3 id="placeQ" style="margin-top:8px;font-size:1.1rem;color:#fff"></h3>
+        <div class="opts" id="placeOpts"></div>
+        <div class="feedback" id="placeFb"></div>
+        <button class="btn amber" id="placeNext" style="display:none;margin-top:10px">Next →</button>
+      </div>
+      <div class="result" id="placeResult">
+        <h2 style="margin-top:6px">Placement result</h2>
+        <div class="big" id="placeLevel"></div>
+        <div class="readout" id="placeTheta"></div>
+        <div class="mono" id="placeDetail" style="margin-top:6px"></div>
+        <div class="gate">
+          <label><input type="checkbox" id="gateToggle"> <span><b style="color:#fff">Parent approves this placement.</b><br><span style="color:var(--mut);font-size:.82rem">A guardian must explicitly approve before SPROUT generates any learning plan. This is a hard gate in the product — the plan below cannot render without it.</span></span></label>
+          <div class="gate-blocked" id="gateBlocked">⛔ BLOCKED — guardian approval required. No plan generated.</div>
+          <div class="gate-open-note" id="gateOpenNote">✓ Guardian approval recorded — plan unlocked.</div>
+          <button class="btn amber" id="planAttempt" style="margin-top:12px">Generate 2-week micro-plan →</button>
+        </div>
+        <div class="plan" id="planBox">
+          <h2 style="margin-top:16px">2-week micro-plan skeleton</h2>
+          <div class="mono" id="planMeta"></div>
+          <div id="planWeeks"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MASTERY LAB ============ -->
+  <section class="view" data-view="mastery">
+    <div class="panel">
+      <h2>Mastery Lab — BKT · XP-once · Leitner</h2>
+      <div class="mono">This is the engine SPROUT uses to decide what to practice next.</div>
+      <div style="margin-top:12px">
+        <span class="mono">Skill:</span>
+        <select id="mlSkill"></select>
+      </div>
+      <div class="sliderrow">
+        <span class="mono">BKT p_known</span>
+        <input type="range" id="mlSlider" min="0" max="100" value="50">
+        <span class="readout" id="mlPknown">p_known = 0.50</span>
+      </div>
+      <div class="cards">
+        <div class="mini"><div class="k">XP (one-time award)</div><div class="v" id="mlXp">+10 XP</div>
+          <button class="btn" id="mlXpBtn" style="margin-top:8px">Award practice XP</button>
+          <div class="mono" id="mlXpNote" style="margin-top:6px">XP-once: a skill can earn its practice XP a single time.</div>
+        </div>
+        <div class="mini"><div class="k">BKT update</div><div class="readout" id="mlBkt">p_known|correct = —</div>
+          <div class="mono" style="margin-top:6px">slip .10 · guess .25 · learn .15</div>
+          <div class="sliderrow" style="margin-top:10px">
+            <button class="btn" id="mlCorrect">Practice: correct</button>
+            <button class="btn amber" id="mlWrong">Practice: wrong</button>
+          </div>
+        </div>
+        <div class="mini"><div class="k">Leitner box + next review</div><div class="v" id="mlBox">Box 1</div>
+          <div class="readout" id="mlNext">next review: —</div>
+          <div class="mono" style="margin-top:6px">boxes 1–5 · intervals 1/2/4/7/12 days · wrong → box 1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECORDS ============ -->
+  <section class="view" data-view="records">
+    <div class="panel">
+      <h2>Records binder — preview &amp; export</h2>
+      <div class="mono">Everything below is generated from demo data in your browser. Nothing is uploaded.</div>
+      <div class="sliderrow">
+        <button class="btn" id="recExport">⬇ Export binder JSON</button>
+        <button class="btn amber" id="recPrint">🖨 Print view</button>
+      </div>
+      <div class="mono" style="margin-top:10px">Export preview:</div>
+      <pre class="code" id="recOut">Press "Export binder JSON" to generate the binder from demo data.</pre>
+    </div>
+  </section>
+
+  <footer>
+    Built by the SOETech agent fleet <span class="sep">·</span> synthetic demo data <span class="sep">·</span> 2026-09-30 <span class="sep">·</span>
+    items from the SPROUT public seed bank (deterministic generator, answer-key machine-verified) <span class="sep">·</span>
+    <a href="https://github.com/SOETeam/sprout-demo">source</a>
+  </footer>
+
+  <div id="printsheet"></div>
+</div>
+
+<script>
+/* ============ SPROUT seed item bank (public, deterministic, answer-key machine-verified) ============ */
+const ITEMS = [
+ {id:"itm_multiplication_facts_1000",subject:"math",skill:"multiplication-facts",band:3,b:0.0,text:"What is 8 x 3?",options:["27","24","16","32"],answer:"24"},
+ {id:"itm_synonym_choice_1000",subject:"ela",skill:"synonyms",band:3,b:-0.2,text:"Which word means almost the same as \u201cloud\u201d?",options:["soft","noisy","quiet"],answer:"noisy"},
+ {id:"itm_subtraction_3digit_1000",subject:"math",skill:"multi-digit-subtraction",band:3,b:-0.5,text:"What is 689 - 201?",options:["478","488","890","498"],answer:"488"},
+ {id:"itm_plural_form_1000",subject:"ela",skill:"plural-nouns",band:3,b:-0.5,text:"What is the correct plural of \u201cbush\u201d?",options:["bushies","bushes","bushs"],answer:"bushes"},
+ {id:"itm_fractions_same_denominator_1000",subject:"math",skill:"fractions",band:3,b:0.3,text:"Which fraction is larger: 6/7 or 1/7?",options:["6/7","1/7","They are equal"],answer:"6/7"},
+ {id:"itm_verb_agreement_1000",subject:"ela",skill:"subject-verb-agreement",band:3,b:-0.3,text:"Max _____ his backpack each morning.  Which verb fits the blank?",options:["packing","packs","pack"],answer:"packs"},
+ {id:"itm_area_rectangle_1000",subject:"math",skill:"area",band:3,b:0.1,text:"A rectangle is 9 units long and 4 units wide. What is its area in square units?",options:["13","36","38","26"],answer:"36"},
+ {id:"itm_elapsed_time_1000",subject:"math",skill:"elapsed-time",band:3,b:0.2,text:"An activity starts at 7:00 and lasts 70 minutes. What time does it end?",options:["8:20","9:10","8:00","8:10"],answer:"8:10"}
+];
+
+/* ============ synthetic demo family (fictional totems, no real learners) ============ */
+const DEMO_START = new Date(2026, 7, 17); /* demo epoch */
+const KIDS = [
+ {id:"nova",totem:"🦊",name:"Nova",grade:"Grade 3 (demo)",hue:"#00e5a0",xp:240,streak:6,
+  skills:[{tag:"multiplication-facts",label:"Multiplication facts",p:0.82,box:4,lastAgo:5},
+          {tag:"fractions",label:"Fractions",p:0.54,box:2,lastAgo:3},
+          {tag:"subject-verb-agreement",label:"Subject–verb agreement",p:0.71,box:3,lastAgo:4}]},
+ {id:"orion",totem:"🐺",name:"Orion",grade:"Grade 3 (demo)",hue:"#ffd166",xp:165,streak:4,
+  skills:[{tag:"multi-digit-subtraction",label:"Multi-digit subtraction",p:0.63,box:2,lastAgo:2},
+          {tag:"capitalization",label:"Capitalization",p:0.48,box:1,lastAgo:4},
+          {tag:"money-change",label:"Money & change",p:0.58,box:2,lastAgo:1}]},
+ {id:"comet",totem:"🐨",name:"Comet",grade:"Grade 3 (demo)",hue:"#8a2be2",xp:98,streak:2,
+  skills:[{tag:"plural-nouns",label:"Plural nouns",p:0.40,box:1,lastAgo:2},
+          {tag:"elapsed-time",label:"Elapsed time",p:0.35,box:1,lastAgo:3},
+          {tag:"synonyms",label:"Synonyms",p:0.61,box:2,lastAgo:2}]}
+];
+const SUBJECTS = ["Reading","Spelling","Mathematics","Science","History","Civics","Literature","Writing","English Grammar"];
+const SUBJECT_FOCUS = {
+ "Reading":"read-aloud + short narration","Spelling":"word sort + 5-word dictation",
+ "Mathematics":"practice set + 1 review item","Science":"observation notebook entry",
+ "History":"timeline card + source picture","Civics":"community helper / charter card",
+ "Literature":"chapter + 2 recall questions","Writing":"3-sentence draft + edit",
+ "English Grammar":"skill drill + sentence labeling"};
+const LEITNER = [1,2,4,7,12];
+
+/* ============ utils ============ */
+const $ = (id) => document.getElementById(id);
+function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x;}
+function fmt(d){const p=(n)=>String(n).padStart(2,"0");return d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate());}
+function weekNum(){return Math.max(1,Math.floor((Date.now()-DEMO_START.getTime())/6048e5)+1);}
+function nextMonday(){const t=new Date();const idx=(t.getDay()+6)%7;const off=(8-idx)%7;return addDays(t,off||7);}
+
+/* tabs */
+document.querySelectorAll(".tab").forEach(function(b){
+  b.addEventListener("click",function(){
+    document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("active");});
+    document.querySelectorAll(".view").forEach(function(v){v.classList.remove("active");});
+    b.classList.add("active");
+    document.querySelector('.view[data-view="'+b.dataset.tab+'"]').classList.add("active");
+  });
+});
+
+/* ============ dashboard ============ */
+function reviewDueInfo(kid){
+  let due=0, soon=0;
+  kid.skills.forEach(function(s){
+    const nr=addDays(new Date(),LEITNER[s.box-1]-s.lastAgo);
+    if(nr.getTime()<=Date.now()+864e5) due++; else soon++;
+  });
+  return {due:due,soon:soon};
+}
+function buildDashboard(){
+  $("weekTitle").textContent = "Week " + weekNum() + " at a glance";
+  const nm=nextMonday();
+  $("weekRange").textContent = "week window " + fmt(nm) + " → " + fmt(addDays(nm,9)) + " · demo schedule";
+  const cov=$("covGrid"); cov.innerHTML="";
+  SUBJECTS.forEach(function(s){const sp=document.createElement("span");sp.textContent="✓ "+s;cov.appendChild(sp);});
+  const cards=$("kidCards"); cards.innerHTML="";
+  KIDS.forEach(function(k){
+    const info=reviewDueInfo(k);
+    const d=document.createElement("div");
+    d.className="kidcard"; d.dataset.kid=k.id; d.setAttribute("data-testid","kidcard-"+k.id);
+    d.innerHTML='<div class="totem">'+k.totem+'</div><div class="name">'+k.name+'</div>'+
+      '<div class="mono">'+k.grade+' · '+k.totem+' portal</div>'+
+      '<div class="bar"><i style="width:'+Math.min(100,k.xp/3)+'%"></i></div>'+
+      '<div class="stat"><span>XP</span><b>'+k.xp+'</b></div>'+
+      '<div class="stat"><span>Streak</span><b>'+k.streak+' days 🔥</b></div>'+
+      '<div class="stat"><span>Reviews due</span><b>'+info.due+' due · '+info.soon+' soon</b></div>';
+    d.addEventListener("click",function(){openPortal(k.id);});
+    cards.appendChild(d);
+    /* glance */
+    const g=document.createElement("div");
+    g.className="mini";
+    g.innerHTML='<div class="k">'+k.totem+' '+k.name+' · week plan</div>'+
+      '<div class="stat"><span>Units planned</span><b>15</b></div>'+
+      '<div class="stat"><span>Completed</span><b>'+Math.max(0,15-k.streak*2)+'</b></div>'+
+      '<div class="stat"><span>Review queue</span><b>'+info.due+' due</b></div>'+
+      '<div class="bar" style="margin-top:10px"><i style="width:'+Math.round(((15-k.streak*2)/15)*100)+'%"></i></div>';
+    $("glance").appendChild(g);
+  });
+  /* portal picker */
+  const pk=$("portalPick"); pk.innerHTML="";
+  KIDS.forEach(function(k){
+    const b=document.createElement("button");
+    b.textContent=k.totem+" "+k.name; b.dataset.kid=k.id; b.setAttribute("data-testid","pick-"+k.id);
+    b.addEventListener("click",function(){openPortal(k.id);});
+    pk.appendChild(b);
+  });
+}
+
+/* ============ kid portal ============ */
+function openPortal(kidId){
+  const k=KIDS.find(function(x){return x.id===kidId;}); if(!k) return;
+  document.querySelectorAll(".kidcard").forEach(function(c){c.classList.toggle("sel",c.dataset.kid===kidId);});
+  document.querySelector('.tab[data-tab="portal"]').classList.add("active");
+  document.querySelectorAll(".tab").forEach(function(x){x.classList.toggle("active",x.dataset.tab==="portal");});
+  document.querySelectorAll(".view").forEach(function(v){v.classList.toggle("active",v.dataset.view==="portal");});
+  const info=reviewDueInfo(k);
+  let skills="";
+  k.skills.forEach(function(s){
+    const nr=addDays(new Date(),LEITNER[s.box-1]-s.lastAgo);
+    const due=nr.getTime()<=Date.now()+864e5;
+    skills+='<div class="skillrow"><span>'+s.label+'</span><span class="mono">p_known '+s.p.toFixed(2)+'</span>'+
+      '<span class="pill'+(due?" due":"")+'">'+(due?"review due ":"next "+fmt(nr))+' · box '+s.box+'</span></div>';
+  });
+  $("portalBody").innerHTML=
+    '<div class="kp-head" style="margin-top:14px"><div class="totem">'+k.totem+'</div>'+
+    '<div><div class="name" style="font-size:1.2rem;color:#fff">'+k.name+'</div><div class="mono">'+k.grade+' · totem portal</div></div></div>'+
+    '<div class="cards">'+
+      '<div class="mini"><div class="k">XP</div><div class="v" style="color:'+k.hue+'">'+k.xp+'</div></div>'+
+      '<div class="mini"><div class="k">Streak</div><div class="v">'+k.streak+' 🔥</div></div>'+
+      '<div class="mini"><div class="k">Reviews due</div><div class="v" style="color:'+(info.due?"#ff5d7a":"var(--acc)")+'">'+info.due+'</div></div>'+
+    '</div>'+
+    '<h2 style="margin-top:16px">Skill mastery + review queue</h2>'+skills+
+    '<div class="mono" style="margin-top:10px">Demo learner · synthetic data only. Totems stand in for real portals.</div>';
+}
+
+/* ============ placement flow ============ */
+const place={idx:-1,answers:[],open:false,gate:false};
+function placeStart(){
+  place.idx=0; place.answers=[]; place.open=false; place.gate=false;
+  $("placeIntro").style.display="none";
+  $("placeResult").style.display="none";
+  $("placeQuiz").style.display="block";
+  $("planBox").style.display="none";
+  $("gateToggle").checked=false;
+  $("gateOpenNote").style.display="none";
+  showItem();
+}
+function showItem(){
+  const it=ITEMS[place.idx];
+  $("placeBar").style.width=Math.round((place.idx/ITEMS.length)*100)+"%";
+  $("placeItemMeta").textContent="item "+(place.idx+1)+"/"+ITEMS.length+" · "+it.subject.toUpperCase()+" · "+it.skill+" · grade "+it.band+" band";
+  $("placeQ").textContent=it.text;
+  $("placeFb").textContent=""; $("placeFb").className="feedback";
+  $("placeNext").style.display="none";
+  const box=$("placeOpts"); box.innerHTML="";
+  it.options.forEach(function(op){
+    const b=document.createElement("button");
+    b.textContent=op; b.setAttribute("data-testid","opt");
+    b.addEventListener("click",function(){answer(op);});
+    box.appendChild(b);
+  });
+}
+function answer(op){
+  if(place.open) return;
+  const it=ITEMS[place.idx];
+  const ok=(op===it.answer);
+  place.answers.push({id:it.id,skill:it.skill,b:it.b,correct:ok});
+  place.open=true;
+  const fb=$("placeFb");
+  fb.textContent=ok?"✓ correct":"✗ not quite — logged for the misconception map";
+  fb.className="feedback "+(ok?"ok":"no");
+  $("placeNext").style.display="inline-block";
+  if(place.idx===ITEMS.length-1){$("placeNext").textContent="See placement result →";}
+  else{$("placeNext").textContent="Next →";}
+}
+function nextItem(){
+  place.open=false;
+  place.idx++;
+  if(place.idx>=ITEMS.length){finishPlacement();return;}
+  showItem();
+}
+function finishPlacement(){
+  $("placeQuiz").style.display="none";
+  $("placeBar").style.width="100%";
+  const n=place.answers.length;
+  let hit=0, sCorrect=0, sWrong=0;
+  place.answers.forEach(function(a){
+    if(a.correct){hit++;sCorrect+=a.b;}else{sWrong+=a.b;}
+  });
+  const theta=(sCorrect-sWrong)/n; /* simple difficulty-weighted ability estimate */
+  let level;
+  if(theta<=-0.35) level="Emerging — Grade 3 support track";
+  else if(theta<0.25) level="On level — Grade 3 core track";
+  else level="Above level — Grade 3 → 4 bridge track";
+  const bySkill={};
+  place.answers.forEach(function(a){if(!bySkill[a.skill])bySkill[a.skill]={c:0,n:0};bySkill[a.skill].n++;if(a.correct)bySkill[a.skill].c++;});
+  let det=Object.keys(bySkill).map(function(s){return s+" "+bySkill[s].c+"/"+bySkill[s].n;}).join(" · ");
+  $("placeLevel").textContent=level;
+  $("placeTheta").textContent="ability estimate θ ≈ "+theta.toFixed(2)+" (difficulty-weighted; "+hit+"/"+n+" correct)";
+  $("placeDetail").textContent=det;
+  $("placeResult").style.display="block";
+  $("gateBlocked").style.display="none";
+  $("gateOpenNote").style.display="none";
+  $("planBox").style.display="none";
+  place.gate=false;
+}
+function attemptPlan(){
+  if(!$("gateToggle").checked){
+    $("gateBlocked").style.display="block";
+    $("gateOpenNote").style.display="none";
+    $("planBox").style.display="none";
+    return false;
+  }
+  place.gate=true;
+  $("gateBlocked").style.display="none";
+  $("gateOpenNote").style.display="block";
+  renderPlan();
+  return true;
+}
+function renderPlan(){
+  const start=nextMonday();
+  $("planMeta").textContent="plan start "+fmt(start)+" · 2 weeks · 15 units · covers all 9 statutory subjects";
+  const box=$("planWeeks"); box.innerHTML="";
+  for(let w=1;w<=2;w++){
+    const wk=document.createElement("div"); wk.className="week";
+    wk.innerHTML='<div class="mono" style="color:var(--acc)">Week '+(weekNum()+w-1)+' · '+fmt(start)+' → '+fmt(addDays(start,4))+'</div>';
+    for(let d=0;d<5;d++){
+      const date=addDays(start,(w-1)*5+d);
+      const row=document.createElement("div"); row.className="day";
+      let units="";
+      for(let u=0;u<3;u++){
+        const s=SUBJECTS[(((w-1)*5+d)*3+u)%9];
+        units+='<span class="unit">'+s+' — '+SUBJECT_FOCUS[s]+'</span>';
+      }
+      row.innerHTML='<div class="d">'+fmt(date)+'</div><div class="units">'+units+'</div>';
+      wk.appendChild(row);
+    }
+    box.appendChild(wk);
+  }
+  $("planBox").style.display="block";
+}
+
+/* ============ mastery lab ============ */
+const ml={slip:0.10,guess:0.25,learn:0.15,p:0.50,box:1,xpOnce:{}};
+function mlBuild(){
+  const sel=$("mlSkill"); sel.innerHTML="";
+  KIDS[0].skills.forEach(function(s){
+    const o=document.createElement("option"); o.value=s.tag; o.textContent=s.label; sel.appendChild(o);
+  });
+  sel.addEventListener("change",mlReset);
+  $("mlSlider").addEventListener("input",function(){
+    ml.p=$("mlSlider").value/100;
+    $("mlPknown").textContent="p_known = "+ml.p.toFixed(2);
+    $("mlBox").textContent="Box "+ml.box;
+    mlNext();
+  });
+  $("mlXpBtn").addEventListener("click",mlXp);
+  $("mlCorrect").addEventListener("click",function(){mlPractice(true);});
+  $("mlWrong").addEventListener("click",function(){mlPractice(false);});
+  mlReset();
+}
+function mlReset(){
+  ml.p=$("mlSlider").value/100; ml.box=1;
+  $("mlPknown").textContent="p_known = "+ml.p.toFixed(2);
+  $("mlBox").textContent="Box "+ml.box;
+  $("mlBkt").textContent="p_known|correct = —";
+  const tag=$("mlSkill").value;
+  const btn=$("mlXpBtn");
+  if(ml.xpOnce[tag]){btn.disabled=true;btn.textContent="XP awarded ✓ (one-time)";$("mlXpNote").textContent="XP-once enforced: this skill already earned its practice XP.";}
+  else{btn.disabled=false;btn.textContent="Award practice XP";$("mlXpNote").textContent="XP-once: a skill can earn its practice XP a single time.";}
+  mlNext();
+}
+function mlXp(){
+  const tag=$("mlSkill").value;
+  if(ml.xpOnce[tag]) return;
+  ml.xpOnce[tag]=true;
+  $("mlXpBtn").disabled=true;
+  $("mlXpBtn").textContent="XP awarded ✓ (one-time)";
+  $("mlXpNote").textContent="XP-once enforced: this skill already earned its practice XP.";
+  $("mlXp").textContent="+10 XP ✓";
+}
+function bktUpdate(correct){
+  let p=ml.p, out;
+  if(correct){out=(p*(1-ml.slip))/((p*(1-ml.slip))+((1-p)*ml.guess));}
+  else{out=(p*ml.slip)/((p*ml.slip)+((1-p)*(1-ml.guess)));}
+  out=out+(1-out)*ml.learn; /* learning transition */
+  ml.p=Math.min(0.99,Math.max(0.01,out));
+  $("mlSlider").value=Math.round(ml.p*100);
+  $("mlPknown").textContent="p_known = "+ml.p.toFixed(2);
+  $("mlBkt").textContent="p_known → "+ml.p.toFixed(2)+" after "+(correct?"correct":"wrong")+" practice";
+}
+function mlPractice(correct){
+  bktUpdate(correct);
+  if(correct){ml.box=Math.min(5,ml.box+1);}else{ml.box=1;}
+  $("mlBox").textContent="Box "+ml.box;
+  mlNext();
+}
+function mlNext(){
+  const d=addDays(new Date(),LEITNER[ml.box-1]);
+  $("mlNext").textContent="next review: "+fmt(d);
+}
+
+/* ============ records binder ============ */
+function buildBinder(){
+  const k=KIDS.map(function(x){
+    return {totem:x.totem,name:x.name,grade_band:"demo",xp:x.xp,streak_days:x.streak,
+      skills:x.skills.map(function(s){
+        return {skill_tag:s.tag,p_known_bkt:s.p,leitner_box:s.box,
+          next_review:fmt(addDays(new Date(),LEITNER[s.box-1]-s.lastAgo))};
+      })};
+  });
+  const start=nextMonday();
+  const plan=[];
+  for(let w=1;w<=2;w++){for(let d=0;d<5;d++){
+    const date=addDays(start,(w-1)*5+d);
+    const subs=[];for(let u=0;u<3;u++){subs.push(SUBJECTS[(((w-1)*5+d)*3+u)%9]);}
+    plan.push({date:fmt(date),week:w+weekNum()-1,day_of_week:["Mon","Tue","Wed","Thu","Fri"][d],subjects:subs});
+  }}
+  return {
+    binder:"SPROUT demo records binder",
+    notice:"synthetic demo data — no real learner data; not legal advice",
+    statutory_basis:"MCL 380.1561(3)(f) — organizes Michigan-required subject coverage (verified-D7)",
+    subjects:SUBJECTS,
+    demo_week:weekNum(),
+    generated_at:new Date().toISOString(),
+    learners:k,
+    micro_plan_skeleton:plan
+  };
+}
+function exportBinder(){
+  const data=buildBinder();
+  const json=JSON.stringify(data,null,2);
+  $("recOut").textContent=json;
+  const blob=new Blob([json],{type:"application/json"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");
+  a.href=url; a.download="sprout-demo-records.json";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(function(){URL.revokeObjectURL(url);},4000);
+  return json;
+}
+function printView(){
+  const data=buildBinder();
+  let rows="";
+  data.learners.forEach(function(l){
+    rows+="<h3>"+l.totem+" "+l.name+" — "+l.grade_band+"</h3><table>";
+    rows+="<tr><th>skill</th><th>p_known</th><th>leitner box</th><th>next review</th></tr>";
+    l.skills.forEach(function(s){rows+="<tr><td>"+s.skill_tag+"</td><td>"+s.p_known_bkt+"</td><td>"+s.leitner_box+"</td><td>"+s.next_review+"</td></tr>";});
+    rows+="</table>";
+  });
+  let planRows="<h3>2-week plan skeleton (9 subjects, MCL 380.1561(3)(f))</h3><table><tr><th>date</th><th>subjects</th></tr>";
+  data.micro_plan_skeleton.forEach(function(p){planRows+="<tr><td>"+p.date+"</td><td>"+p.subjects.join(", ")+"</td></tr>";});
+  planRows+="</table>";
+  $("printsheet").innerHTML=
+    "<h2>SPROUT Demo Records Binder</h2>"+
+    "<p>"+data.notice+"</p><p>"+data.statutory_basis+"</p>"+rows+planRows+
+    "<p>Built by the SOETech agent fleet · synthetic demo data · 2026-09-30</p>";
+  window.print();
+}
+
+/* ============ wire up ============ */
+buildDashboard();
+openPortal("nova");
+mlBuild();
+$("placeStart").addEventListener("click",placeStart);
+$("placeNext").addEventListener("click",nextItem);
+$("planAttempt").addEventListener("click",attemptPlan);
+$("gateToggle").addEventListener("change",attemptPlan);
+$("recExport").addEventListener("click",exportBinder);
+$("recPrint").addEventListener("click",printView);
+</script>
+</body>
+</html>
