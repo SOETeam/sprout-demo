@@ -1,0 +1,283 @@
+[
+  {
+    "id": "max_w2_l8",
+    "title": "Retell in Order",
+    "emoji": "📖",
+    "minutes": 15,
+    "summary": "Answer questions about the frog passage and find proof in the text.",
+    "content": {
+      "explain": "Good readers go back to the passage to prove their answers. Read each question, think about what happened first, next, and last. Then point to the exact line that shows your answer is right.",
+      "examples": [
+        "Question: What do frogs eat?\nFind the line: Frogs eat insects and worms.\nAnswer: Insects and worms.",
+        "Question: Where do frogs lay eggs?\nFind the line: Frogs lay eggs in water.\nAnswer: In water.",
+        "Question: What happens after the egg?\nFind the line: Eggs hatch into tadpoles.\nAnswer: Tadpoles hatch."
+      ],
+      "practice": [
+        {
+          "question": "What is the first thing a frog does in its life cycle?",
+          "options": [
+            "Grows legs",
+            "Lays eggs",
+            "Hatches from an egg",
+            "Jumps on land"
+          ],
+          "correctIndex": 2,
+          "hint": "Look for the word first or the beginning of the passage.",
+          "praise": "Yes! Frogs start as eggs."
+        },
+        {
+          "question": "What comes after the tadpole stage?",
+          "options": [
+            "Adult frog",
+            "Egg",
+            "Froglet with legs",
+            "Fish"
+          ],
+          "correctIndex": 2,
+          "hint": "Find the sentence that says what happens next.",
+          "praise": "Right! Tadpoles grow legs and become froglets."
+        },
+        {
+          "question": "Which line proves frogs eat insects?",
+          "options": [
+            "Frogs live near ponds.",
+            "Frogs eat insects and worms.",
+            "Frogs have webbed feet.",
+            "Frogs lay eggs in water."
+          ],
+          "correctIndex": 1,
+          "hint": "Look for the word eat in the passage.",
+          "praise": "Perfect! That line tells exactly what frogs eat."
+        },
+        {
+          "question": "How do you know frogs need water?",
+          "options": [
+            "They have legs.",
+            "They lay eggs in water.",
+            "They are green.",
+            "They jump high."
+          ],
+          "correctIndex": 1,
+          "hint": "Find the sentence about where eggs go.",
+          "praise": "Great! The passage says they lay eggs in water."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write one question about frogs and the line number where the answer is found.",
+          "answer": "Example: What do tadpoles eat? Line 5."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l12",
+    "title": "Loop Your Routine",
+    "emoji": "🔁",
+    "minutes": 15,
+    "summary": "Use a repeat block to run your morning routine twice.",
+    "content": {
+      "explain": "A repeat block lets you run the same steps many times without adding more blocks. Put your 6 morning blocks inside a repeat block set to 2. Then press run — the whole routine plays two times in a row.",
+      "examples": [
+        "Morning blocks: wake up, brush teeth, get dressed, eat, pack bag, walk out.\nAdd repeat 2 around all six.\nRun: sequence plays twice.",
+        "Without repeat: 12 blocks needed.\nWith repeat: 6 blocks inside one repeat block.\nSame result, less work."
+      ],
+      "practice": [
+        {
+          "question": "What does a repeat block do?",
+          "options": [
+            "Deletes blocks",
+            "Runs blocks inside it multiple times",
+            "Changes block colors",
+            "Stops the program"
+          ],
+          "correctIndex": 1,
+          "hint": "Think about the word repeat — do it again.",
+          "praise": "Yes! It runs the blocks inside it over and over."
+        },
+        {
+          "question": "If you set repeat to 2, how many times does the routine run?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "correctIndex": 1,
+          "hint": "The number on the repeat block tells how many times.",
+          "praise": "Correct! Repeat 2 means two full runs."
+        },
+        {
+          "question": "Your routine has 6 blocks. With repeat 2, how many blocks run total?",
+          "options": [
+            "6",
+            "8",
+            "12",
+            "10"
+          ],
+          "correctIndex": 2,
+          "hint": "6 blocks times 2 runs.",
+          "praise": "Right! 6 x 2 = 12 block runs."
+        },
+        {
+          "question": "Where do you put the blocks you want to repeat?",
+          "options": [
+            "Above the repeat block",
+            "Below the repeat block",
+            "Inside the repeat block",
+            "Next to the repeat block"
+          ],
+          "correctIndex": 2,
+          "hint": "The repeat block wraps around other blocks.",
+          "praise": "Exactly! Drag them inside the repeat block."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Draw your 6 morning blocks inside a repeat block labeled 2.",
+          "answer": "Repeat (2) → [wake, brush, dress, eat, pack, walk]"
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l16",
+    "title": "Animal Facts & Art",
+    "emoji": "🐣",
+    "minutes": 15,
+    "summary": "Write four facts about animal babies and draw a matching picture.",
+    "content": {
+      "explain": "You have learned names for animal young and how they grow. Now write four true facts. Then draw one picture that shows one of your facts. Label the adult and baby in your drawing.",
+      "examples": [
+        "Fact: A baby cow is called a calf.\nFact: A baby frog is a tadpole.\nFact: Kangaroo babies live in a pouch.\nFact: Bird babies hatch from eggs.",
+        "Drawing idea: Duck and ducklings swimming.\nLabels: mother duck, duckling."
+      ],
+      "practice": [
+        {
+          "question": "What is a baby sheep called?",
+          "options": [
+            "Calf",
+            "Lamb",
+            "Fawn",
+            "Kid"
+          ],
+          "correctIndex": 1,
+          "hint": "Think of the song 'Mary Had a Little...'",
+          "praise": "Yes! A baby sheep is a lamb."
+        },
+        {
+          "question": "Which animal baby lives in a pouch?",
+          "options": [
+            "Koala",
+            "Penguin",
+            "Turtle",
+            "Snake"
+          ],
+          "correctIndex": 0,
+          "hint": "Marsupials carry babies in pouches.",
+          "praise": "Right! Koala joeys stay in the pouch."
+        },
+        {
+          "question": "What do you call a baby horse?",
+          "options": [
+            "Foal",
+            "Colt",
+            "Pony",
+            "Calf"
+          ],
+          "correctIndex": 0,
+          "hint": "It rhymes with goal.",
+          "praise": "Correct! A baby horse is a foal."
+        },
+        {
+          "question": "Which fact is true about animal babies?",
+          "options": [
+            "All babies look like tiny adults.",
+            "Some babies look very different from adults.",
+            "No babies drink milk.",
+            "All babies can walk right away."
+          ],
+          "correctIndex": 1,
+          "hint": "Think about tadpoles and frogs.",
+          "praise": "Yes! Tadpoles look nothing like frogs."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write 4 facts about animal babies. Draw and label one.",
+          "answer": "Example: 1) Cat baby = kitten. 2) Dog baby = puppy. 3) Bear baby = cub. 4) Duck baby = duckling. Drawing: duck + ducklings labeled."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l24",
+    "title": "Explain Your Code",
+    "emoji": "🗣️",
+    "minutes": 15,
+    "summary": "Run your morning routine and tell what each block does.",
+    "content": {
+      "explain": "Running your code and explaining it out loud helps you understand every step. Press run, watch the highlight move, and say the job of each block: wake up, brush teeth, get dressed, eat, pack bag, walk out.",
+      "examples": [
+        "Block 1: Wake up — starts the day.\nBlock 2: Brush teeth — cleans teeth.\nBlock 3: Get dressed — puts on clothes.\nBlock 4: Eat — gives energy.\nBlock 5: Pack bag — gets ready for school.\nBlock 6: Walk out — leaves the house.",
+        "Say it like: 'This block wakes me up. This block brushes my teeth.'"
+      ],
+      "practice": [
+        {
+          "question": "What does the first block in a morning routine usually do?",
+          "options": [
+            "Pack bag",
+            "Wake up",
+            "Walk out",
+            "Eat"
+          ],
+          "correctIndex": 1,
+          "hint": "What happens before everything else?",
+          "praise": "Right! You wake up first."
+        },
+        {
+          "question": "Why say each block job out loud?",
+          "options": [
+            "To make noise",
+            "To check you understand each step",
+            "To go faster",
+            "To skip blocks"
+          ],
+          "correctIndex": 1,
+          "hint": "Explaining helps you catch mistakes.",
+          "praise": "Yes! Talking through it builds understanding."
+        },
+        {
+          "question": "If the highlight is on block 4, what is happening?",
+          "options": [
+            "Wake up",
+            "Brush teeth",
+            "Eat",
+            "Walk out"
+          ],
+          "correctIndex": 2,
+          "hint": "Count the blocks in order: 1 wake, 2 brush, 3 dress, 4 eat.",
+          "praise": "Correct! Block 4 is eat."
+        },
+        {
+          "question": "What should you do after the last block runs?",
+          "options": [
+            "Stop and explain the whole routine",
+            "Delete the code",
+            "Change all blocks",
+            "Run it backward"
+          ],
+          "correctIndex": 0,
+          "hint": "Review what the program just did.",
+          "praise": "Great! Explaining after running locks in learning."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "List your 6 morning blocks in order with one-word jobs.",
+          "answer": "1 wake, 2 brush, 3 dress, 4 eat, 5 pack, 6 walk"
+        }
+      ]
+    }
+  }
+]

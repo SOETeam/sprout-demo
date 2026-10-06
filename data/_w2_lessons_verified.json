@@ -1,0 +1,1146 @@
+[
+ {
+  "id": "max_w2_l1",
+  "title": "Times Table Sprint 0-5",
+  "emoji": "⏱️",
+  "minutes": 15,
+  "summary": "Race the clock on ×0–×5 facts and beat your best time.",
+  "content": {
+   "explain": "Start with a 20-minute spine review of all ×0 through ×5 facts. Say each fact out loud, cover the answer, then check. After the spine, grab a timer and race through the ×2, ×3, ×4, and ×5 tables. Write your time down so you can try to beat it tomorrow.\n\nIf a fact slows you down, pause and count by that number on your fingers. Each day you practice, the pathways in your brain get stronger and faster.",
+   "examples": [
+    "×2 table: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 — count by 2s to 20.",
+    "×5 table: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 — every answer ends in 5 or 0."
+   ],
+   "practice": [
+    {
+     "question": "What is 7 × 5?",
+     "options": [
+      "30",
+      "35",
+      "40",
+      "25"
+     ],
+     "correctIndex": 1,
+     "hint": "Count by 5s seven times: 5, 10, 15, 20, 25, 30, 35.",
+     "praise": "Yes! 7 × 5 = 35."
+    },
+    {
+     "question": "Which ×4 fact equals 28?",
+     "options": [
+      "4 × 6",
+      "4 × 7",
+      "4 × 8",
+      "4 × 5"
+     ],
+     "correctIndex": 1,
+     "hint": "Count by 4s: 4, 8, 12, 16, 20, 24, 28 — that's seven 4s.",
+     "praise": "Correct! 4 × 7 = 28."
+    },
+    {
+     "question": "Any number times 0 equals:",
+     "options": [
+      "That number",
+      "1",
+      "0",
+      "10"
+     ],
+     "correctIndex": 2,
+     "hint": "Zero groups of anything is nothing.",
+     "praise": "Right! 0 times anything is 0."
+    },
+    {
+     "question": "6 × 3 = ?",
+     "options": [
+      "15",
+      "18",
+      "21",
+      "12"
+     ],
+     "correctIndex": 1,
+     "hint": "Three groups of 6: 6, 12, 18.",
+     "praise": "Nice! 6 × 3 = 18."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Time yourself on the ×3 table. Write your time here: ______",
+     "answer": "Aim to beat this time tomorrow."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l10",
+  "title": "Retelling in Order",
+  "emoji": "📖",
+  "minutes": 15,
+  "summary": "Answer 5 questions about the frog passage by finding proof in the text.",
+  "content": {
+   "explain": "Good readers go back to the passage to prove their answers. Read each question, then scan the text for the exact line that supports your choice. Point to the line and say the answer in your own words. This builds strong comprehension habits.",
+   "examples": [
+    "Question: What do frogs eat?\nText line: \"Frogs catch insects with their sticky tongues.\"\nAnswer: Frogs eat insects.",
+    "Question: Where do frogs lay eggs?\nText line: \"Frogs lay eggs in water.\"\nAnswer: Frogs lay eggs in water."
+   ],
+   "practice": [
+    {
+     "question": "When answering a question about the passage, what should you do first?",
+     "options": [
+      "Guess the answer",
+      "Find the proof in the text",
+      "Ask a friend",
+      "Skip the question"
+     ],
+     "correctIndex": 1,
+     "hint": "The text holds the evidence you need.",
+     "praise": "Yes! Always look back at the passage."
+    },
+    {
+     "question": "The passage says: \"Frogs have smooth, wet skin.\" What does this prove?",
+     "options": [
+      "Frogs are reptiles",
+      "Frogs have smooth, wet skin",
+      "Frogs live in trees",
+      "Frogs have fur"
+     ],
+     "correctIndex": 1,
+     "hint": "Match the answer to the exact words in the text.",
+     "praise": "Correct! The text is your proof."
+    },
+    {
+     "question": "Why is pointing to the line important?",
+     "options": [
+      "It looks neat",
+      "It shows where you found the answer",
+      "It makes the teacher happy",
+      "It uses more paper"
+     ],
+     "correctIndex": 1,
+     "hint": "Pointing proves you didn't just guess.",
+     "praise": "Exactly! It shows your thinking."
+    },
+    {
+     "question": "If you cannot find the answer in the text, what should you do?",
+     "options": [
+      "Write anything",
+      "Reread the passage carefully",
+      "Leave it blank",
+      "Copy a neighbor"
+     ],
+     "correctIndex": 1,
+     "hint": "Sometimes the answer is there but easy to miss.",
+     "praise": "Great strategy! Rereading helps you spot details."
+    },
+    {
+     "question": "How many retelling questions are on today's worksheet?",
+     "options": [
+      "3",
+      "5",
+      "7",
+      "10"
+     ],
+     "correctIndex": 1,
+     "hint": "The schedule says 5 retelling in order questions.",
+     "praise": "Right! Five questions to answer with proof."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Choose one question you answered and copy the sentence from the passage that proves it.",
+     "answer": "Student copies the exact supporting sentence from the frog passage."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l11",
+  "title": "Spelling Sentences",
+  "emoji": "✍️",
+  "minutes": 15,
+  "summary": "Write 4 spelling words in complete sentences with correct capitalization and punctuation.",
+  "content": {
+   "explain": "A sentence starts with a capital letter and ends with a period, question mark, or exclamation point. Pick four spelling words and write one sentence for each. Use the word naturally, like you're telling a story. Check that every sentence has a subject and a verb.",
+   "examples": [
+    "Word: jumped\nSentence: The frog jumped over the log.",
+    "Word: swimming\nSentence: We are swimming in the cool lake."
+   ],
+   "practice": [
+    {
+     "question": "Which sentence has correct capitalization and punctuation?",
+     "options": [
+      "the cat slept",
+      "The cat slept.",
+      "the cat slept.",
+      "The cat slept"
+     ],
+     "correctIndex": 1,
+     "hint": "First word capital, last mark is a period.",
+     "praise": "Perfect! Capital T and period at the end."
+    },
+    {
+     "question": "Pick the best sentence for the word \"hopping\".",
+     "options": [
+      "Hopping.",
+      "The rabbit is hopping.",
+      "rabbit hopping",
+      "is hopping the rabbit"
+     ],
+     "correctIndex": 1,
+     "hint": "A sentence needs a subject and a verb.",
+     "praise": "Yes! Complete thought with subject and verb."
+    },
+    {
+     "question": "What must every sentence end with?",
+     "options": [
+      "A comma",
+      "A period, question mark, or exclamation point",
+      "The word \"and\"",
+      "A capital letter"
+     ],
+     "correctIndex": 1,
+     "hint": "End marks tell the reader the sentence is done.",
+     "praise": "Right! One of those three end marks."
+    },
+    {
+     "question": "If your spelling word is \"played\", which sentence works?",
+     "options": [
+      "We played soccer yesterday.",
+      "Played soccer yesterday.",
+      "We soccer played.",
+      "Yesterday played we."
+     ],
+     "correctIndex": 0,
+     "hint": "Subject first, then verb, then the rest.",
+     "praise": "Excellent! Subject + verb + details."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Write 2 more sentences using two different spelling words. Circle the capital letter and end mark in each.",
+     "answer": "Two complete sentences with spelling words, capitals and end marks circled."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l13",
+  "title": "Town Helpers Quiz",
+  "emoji": "🏘️",
+  "minutes": 15,
+  "summary": "Answer 5 questions about community helpers from memory, then check and fix 2.",
+  "content": {
+   "explain": "You've learned about people who help our town: firefighters, police officers, teachers, doctors, mail carriers, and more. Close the lesson and answer 5 questions from what you remember. Then open the lesson, check your work, and fix any two that need correction. This builds memory and self-checking skills.",
+   "examples": [
+    "Question: Who puts out fires?\nMemory answer: Firefighters.\nCheck: Lesson confirms firefighters fight fires.",
+    "Question: Who delivers letters?\nMemory answer: Mail carrier.\nCheck: Lesson says mail carrier delivers mail."
+   ],
+   "practice": [
+    {
+     "question": "Who helps keep our streets safe?",
+     "options": [
+      "Teacher",
+      "Police officer",
+      "Baker",
+      "Artist"
+     ],
+     "correctIndex": 1,
+     "hint": "Think about who directs traffic and solves problems.",
+     "praise": "Yes! Police officers protect the community."
+    },
+    {
+     "question": "Who helps you learn at school?",
+     "options": [
+      "Doctor",
+      "Teacher",
+      "Firefighter",
+      "Dentist"
+     ],
+     "correctIndex": 1,
+     "hint": "You see this helper every weekday.",
+     "praise": "Correct! Teachers guide learning."
+    },
+    {
+     "question": "Who brings medicine when you are sick?",
+     "options": [
+      "Mail carrier",
+      "Doctor",
+      "Librarian",
+      "Farmer"
+     ],
+     "correctIndex": 1,
+     "hint": "This helper checks your health.",
+     "praise": "Right! Doctors care for sick people."
+    },
+    {
+     "question": "After answering from memory, what is the next step?",
+     "options": [
+      "Throw away the paper",
+      "Check the lesson and fix 2",
+      "Ask a friend for answers",
+      "Guess the rest"
+     ],
+     "correctIndex": 1,
+     "hint": "The schedule says check and fix 2.",
+     "praise": "Perfect! Self-checking makes learning stick."
+    },
+    {
+     "question": "Who delivers packages and letters to your house?",
+     "options": [
+      "Garbage collector",
+      "Mail carrier",
+      "Bus driver",
+      "Chef"
+     ],
+     "correctIndex": 1,
+     "hint": "Look for the uniform with a bag.",
+     "praise": "Yes! Mail carriers bring the mail."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Write the 2 answers you fixed and what the correct answer is.",
+     "answer": "Two corrected answers with the right information from the lesson."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l14",
+  "title": "Loop Your Routine",
+  "emoji": "🔁",
+  "minutes": 15,
+  "summary": "Remix the 6-block morning routine so it runs twice automatically.",
+  "content": {
+   "explain": "A loop repeats a set of blocks without rewriting them. Wrap your 6 morning blocks inside a \"repeat 2 times\" block. Now the whole routine runs, then runs again. This is how coders save time and avoid mistakes. Test it: you should see all 12 messages in order.",
+   "examples": [
+    "Before loop:\nBlock 1-6 run once.\nAfter loop:\nRepeat 2 times:\n  Block 1\n  Block 2\n  ...\n  Block 6\nRuns 12 blocks total.",
+    "If you want 3 days of routine:\nRepeat 3 times around the 6 blocks."
+   ],
+   "practice": [
+    {
+     "question": "What does a \"repeat 2 times\" block do?",
+     "options": [
+      "Runs the blocks inside it two times",
+      "Deletes the blocks",
+      "Runs the blocks once",
+      "Changes the block colors"
+     ],
+     "correctIndex": 0,
+     "hint": "Repeat means do it again.",
+     "praise": "Yes! The inner blocks run twice."
+    },
+    {
+     "question": "Your routine has 6 blocks. With a repeat-2 loop, how many blocks run total?",
+     "options": [
+      "6",
+      "8",
+      "12",
+      "3"
+     ],
+     "correctIndex": 2,
+     "hint": "6 blocks times 2 repetitions.",
+     "praise": "Correct! 6 x 2 = 12 block runs."
+    },
+    {
+     "question": "Where do you put the 6 blocks to make them repeat?",
+     "options": [
+      "Above the loop",
+      "Inside the loop",
+      "Below the loop",
+      "In a different project"
+     ],
+     "correctIndex": 1,
+     "hint": "Drag them into the mouth of the repeat block.",
+     "praise": "Right! Inside the loop is the repeat zone."
+    },
+    {
+     "question": "Why use a loop instead of copying blocks?",
+     "options": [
+      "Loops look cooler",
+      "Less typing, fewer mistakes",
+      "Loops run slower",
+      "Copies are better"
+     ],
+     "correctIndex": 1,
+     "hint": "One change in the loop fixes every repeat.",
+     "praise": "Exactly! One edit updates all repeats."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Draw your loop block with the 6 morning blocks inside. Label \"Repeat 2 times.\"",
+     "answer": "A loop container graphic with 6 labeled blocks nested inside."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l15",
+  "title": "Retell in Four Sentences",
+  "emoji": "📝",
+  "minutes": 15,
+  "summary": "Write 4 sentences that retell the frog passage: beginning, middle, and end.",
+  "content": {
+   "explain": "A good retelling captures the main idea in order. Sentence 1: the beginning — what the passage introduces. Sentence 2-3: the middle — key details. Sentence 4: the end — how it wraps up. Use your own words. Each sentence starts with a capital and ends with a period.",
+   "examples": [
+    "1. The passage teaches about frogs and their lives.\n2. Frogs lay eggs in water that hatch into tadpoles.\n3. Tadpoles grow legs and lose tails to become frogs.\n4. Adult frogs eat insects and live near water.",
+    "1. Frogs are amphibians with smooth skin.\n2. They start as eggs, then tadpoles, then adults.\n3. They catch food with sticky tongues.\n4. Frogs help nature by eating bugs."
+   ],
+   "practice": [
+    {
+     "question": "Sentence 1 of a retelling should cover:",
+     "options": [
+      "The ending",
+      "The beginning",
+      "A random detail",
+      "Your opinion"
+     ],
+     "correctIndex": 1,
+     "hint": "Start where the passage starts.",
+     "praise": "Yes! Begin with the introduction."
+    },
+    {
+     "question": "How many sentences should your retelling have today?",
+     "options": [
+      "2",
+      "4",
+      "6",
+      "10"
+     ],
+     "correctIndex": 1,
+     "hint": "The schedule says write 4 sentences.",
+     "praise": "Correct! Four sentences total."
+    },
+    {
+     "question": "What belongs in the middle sentences?",
+     "options": [
+      "Only the title",
+      "Key details from the passage",
+      "Your favorite color",
+      "A joke"
+     ],
+     "correctIndex": 1,
+     "hint": "The middle holds the important facts.",
+     "praise": "Right! Key details go in the middle."
+    },
+    {
+     "question": "Sentence 4 should tell:",
+     "options": [
+      "How the passage ends",
+      "What you ate for lunch",
+      "A new topic",
+      "The first word"
+     ],
+     "correctIndex": 0,
+     "hint": "Wrap up with the conclusion.",
+     "praise": "Perfect! The last sentence closes the retelling."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Write your 4-sentence retelling on lined paper. Check capitals and periods.",
+     "answer": "Four complete sentences in order with correct mechanics."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l17",
+  "title": "Animal Facts & Pictures",
+  "emoji": "🐣",
+  "minutes": 15,
+  "summary": "Write four facts about animal babies and draw a matching picture.",
+  "content": {
+   "explain": "Scientists share what they learn by writing facts and drawing pictures. A fact is a true statement you can prove. Pick four things you learned about animals and their young. Write each fact as a complete sentence. Then draw one picture that shows one of your facts. Label the important parts.",
+   "examples": [
+    "Fact: A baby kangaroo is called a joey and lives in its mother's pouch.",
+    "Fact: Frog eggs hatch into tadpoles that breathe with gills.",
+    "Fact: Penguin fathers keep the egg warm on their feet for two months."
+   ],
+   "practice": [
+    {
+     "question": "Which of these is a fact about animal babies?",
+     "options": [
+      "Baby lions are the cutest animals ever.",
+      "A baby elephant is called a calf.",
+      "All baby animals like to play video games.",
+      "Baby birds should be pets."
+     ],
+     "correctIndex": 1,
+     "hint": "A fact is something true you can look up.",
+     "praise": "Yes! A baby elephant is called a calf."
+    },
+    {
+     "question": "What should you include in a labeled science picture?",
+     "options": [
+      "Only colors, no words",
+      "Names of the important parts",
+      "A funny joke at the bottom",
+      "Nothing, just the drawing"
+     ],
+     "correctIndex": 1,
+     "hint": "Labels help others understand your drawing.",
+     "praise": "Right! Labels name the important parts."
+    },
+    {
+     "question": "How many facts should you write for this activity?",
+     "options": [
+      "Two facts",
+      "Four facts",
+      "Ten facts",
+      "One fact"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity asks for four facts.",
+     "praise": "Correct! Write four facts about animals and their young."
+    },
+    {
+     "question": "A complete sentence for a fact needs:",
+     "options": [
+      "A capital letter and ending punctuation",
+      "Only capital letters",
+      "No punctuation at all",
+      "Emojis instead of words"
+     ],
+     "correctIndex": 0,
+     "hint": "Sentences start with a capital and end with a period.",
+     "praise": "Nice! Capital letter and period make a complete sentence."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Write 4 facts about animals and their young. Draw and label 1 picture.",
+     "answer": "Four true sentences and one labeled drawing showing an animal with its young."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l18",
+  "title": "Town Helpers Timeline",
+  "emoji": "🏘️",
+  "minutes": 15,
+  "summary": "Add four labels to the community helpers timeline or map.",
+  "content": {
+   "explain": "A timeline shows events in order. A map shows where things are. Your town has many helpers: firefighters, teachers, mail carriers, librarians, and more. Add four labels to your timeline or map. Each label names a helper or an event. Then read your labels aloud to check they make sense in order.",
+   "examples": [
+    "Label: Fire station built in 1920 — placed on timeline at 1920.",
+    "Label: Mrs. Chen, crossing guard — placed on map at Main St. and 1st Ave.",
+    "Label: Mobile library visits every Tuesday — placed on timeline under Tuesday."
+   ],
+   "practice": [
+    {
+     "question": "What does a timeline show?",
+     "options": [
+      "Where things are located",
+      "Events in the order they happened",
+      "How tall people are",
+      "What the weather will be"
+     ],
+     "correctIndex": 1,
+     "hint": "Time-line has the word time in it.",
+     "praise": "Yes! A timeline puts events in time order."
+    },
+    {
+     "question": "Which label would go on a map, not a timeline?",
+     "options": [
+      "School opened in 1955",
+      "Fire station at Oak and 3rd",
+      "First librarian hired in 1902",
+      "Town founded in 1880"
+     ],
+     "correctIndex": 1,
+     "hint": "Maps show locations with streets or places.",
+     "praise": "Correct! Street addresses go on a map."
+    },
+    {
+     "question": "How many labels should you add to your timeline or map?",
+     "options": [
+      "Two labels",
+      "Four labels",
+      "Six labels",
+      "Ten labels"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says add four labels.",
+     "praise": "Right! Add four labels this time."
+    },
+    {
+     "question": "Why read your labels aloud after adding them?",
+     "options": [
+      "To make noise",
+      "To check they make sense in order",
+      "To practice singing",
+      "To scare the cat"
+     ],
+     "correctIndex": 1,
+     "hint": "Reading aloud helps you hear mistakes.",
+     "praise": "Exactly! Hearing them helps you catch mix-ups."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Add 4 labels to your town helpers timeline or map. Read them back aloud.",
+     "answer": "Four labeled events or helpers placed correctly; read aloud in order."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l19",
+  "title": "Debug a Morning Routine",
+  "emoji": "🐛",
+  "minutes": 15,
+  "summary": "Break a 6-block code on purpose, then fix it using the run screen.",
+  "content": {
+   "explain": "Debugging means finding and fixing mistakes in code. First, build a working 6-block morning routine. Then, change one block on purpose to break it — maybe swap the order or delete a block. Run the code and watch the run screen. It shows what went wrong. Use those clues to fix the bug and make the routine run correctly again.",
+   "examples": [
+    "Working: Wake up → Brush teeth → Get dressed → Eat breakfast → Pack bag → Leave.",
+    "Broken on purpose: Wake up → Eat breakfast → Brush teeth → Get dressed → Pack bag → Leave (teeth before dressing is messy!).",
+    "Run screen shows: 'Character has toothpaste on shirt.' Fix: Move brush teeth before get dressed."
+   ],
+   "practice": [
+    {
+     "question": "What is debugging?",
+     "options": [
+      "Adding more blocks",
+      "Finding and fixing mistakes in code",
+      "Deleting the whole program",
+      "Changing the colors"
+     ],
+     "correctIndex": 1,
+     "hint": "Bugs are mistakes; debugging fixes them.",
+     "praise": "Yes! Debugging means finding and fixing code bugs."
+    },
+    {
+     "question": "What does the run screen show you?",
+     "options": [
+      "Your high score",
+      "What went wrong when the code ran",
+      "A cartoon movie",
+      "The weather forecast"
+     ],
+     "correctIndex": 1,
+     "hint": "The run screen is like a replay with clues.",
+     "praise": "Right! The run screen shows the error so you can fix it."
+    },
+    {
+     "question": "If you break your code on purpose, what should you do next?",
+     "options": [
+      "Give up and quit",
+      "Run it and watch the run screen for clues",
+      "Throw the computer",
+      "Blame the cat"
+     ],
+     "correctIndex": 1,
+     "hint": "The run screen is your best detective tool.",
+     "praise": "Perfect! Run it, watch the screen, then fix the bug."
+    },
+    {
+     "question": "A 6-block morning routine has how many blocks?",
+     "options": [
+      "4 blocks",
+      "6 blocks",
+      "8 blocks",
+      "10 blocks"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says 6-block sequence.",
+     "praise": "Correct! Six blocks make the routine."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Break your 6-block routine on purpose. Run it. Write what the run screen showed and how you fixed it.",
+     "answer": "Description of the bug, what the run screen displayed, and the change that fixed it."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l2",
+  "title": "Frog Passage Word Hunt",
+  "emoji": "🐸",
+  "minutes": 15,
+  "summary": "Read a frog passage and mark three tricky words.",
+  "content": {
+   "explain": "Read the nonfiction passage about frogs slowly and carefully. When you find a word you don't know, underline it with your pencil. Find exactly three words. After reading, you can look them up or ask a grown-up what they mean.\n\nGood readers notice when a word is new. Underlining helps you remember to learn it later. You're building a stronger vocabulary every time you do this.",
+   "examples": [
+    "If you see 'amphibian' and aren't sure, underline it. It means an animal that lives in water and on land.",
+    "The word 'metamorphosis' might be new. Underline it! It means a big change, like a tadpole becoming a frog."
+   ],
+   "practice": [
+    {
+     "question": "What should you do when you find a word you don't know in the passage?",
+     "options": [
+      "Skip it and keep reading",
+      "Underline it with your pencil",
+      "Guess and move on",
+      "Close the book"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says to underline three words you do not know.",
+     "praise": "Exactly! Underline it so you can learn it later."
+    },
+    {
+     "question": "How many words should you underline in this activity?",
+     "options": [
+      "As many as you want",
+      "Exactly three",
+      "Only one",
+      "Five or more"
+     ],
+     "correctIndex": 1,
+     "hint": "The directions say 'underline 3 words you do not know.'",
+     "praise": "Right! Find exactly three new words."
+    },
+    {
+     "question": "Why is it helpful to mark unknown words?",
+     "options": [
+      "To make the page look messy",
+      "So you can learn them later",
+      "To show you didn't read",
+      "Because the teacher said so"
+     ],
+     "correctIndex": 1,
+     "hint": "Marking words helps you remember to find out what they mean.",
+     "praise": "Yes! It helps you build your vocabulary."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Write your three underlined words here and find their meanings.",
+     "answer": "Word 1: ______ Meaning: ______  Word 2: ______ Meaning: ______  Word 3: ______ Meaning: ______"
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l20",
+  "title": "Retell & Why Questions",
+  "emoji": "📖",
+  "minutes": 15,
+  "summary": "Retell the frog passage in four sentences, then answer two why questions.",
+  "content": {
+   "explain": "Retelling means telling the big events in order: beginning, middle, end. Use four sentences. First sentence: what the passage is mostly about. Next two: key details in order. Last sentence: how it ends. Then answer two why questions. Look back in the text for proof. Why questions ask for reasons. Your answer should start with Because or The text says.",
+   "examples": [
+    "Retell: The passage teaches about frog life cycles. First, frogs lay eggs in water. Then tadpoles hatch and grow legs. Finally, they become adult frogs.",
+    "Why question: Why do frogs lay eggs in water? Answer: Because the eggs need water to stay wet and hatch into tadpoles.",
+    "Why question: Why do tadpoles have gills? Answer: The text says tadpoles breathe underwater using gills."
+   ],
+   "practice": [
+    {
+     "question": "How many sentences should your retell have?",
+     "options": [
+      "Two sentences",
+      "Four sentences",
+      "Six sentences",
+      "One sentence"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says retell in four sentences.",
+     "praise": "Yes! Four sentences for the retell."
+    },
+    {
+     "question": "What should the first sentence of a retell tell?",
+     "options": [
+      "A joke about frogs",
+      "What the passage is mostly about",
+      "Your favorite color",
+      "What you ate for lunch"
+     ],
+     "correctIndex": 1,
+     "hint": "Start with the main idea.",
+     "praise": "Right! The first sentence states the main topic."
+    },
+    {
+     "question": "When answering a why question, where do you find the proof?",
+     "options": [
+      "In your imagination",
+      "In the text",
+      "From a friend's guess",
+      "On the back of the book"
+     ],
+     "correctIndex": 1,
+     "hint": "The passage has the evidence you need.",
+     "praise": "Correct! Look back in the text for the answer."
+    },
+    {
+     "question": "A good answer to a why question often starts with:",
+     "options": [
+      "Because... or The text says...",
+      "I think maybe...",
+      "Once upon a time...",
+      "Pizza is..."
+     ],
+     "correctIndex": 0,
+     "hint": "Because gives a reason; The text says shows evidence.",
+     "praise": "Nice! Because or The text says makes a strong answer."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Retell the frog passage in 4 sentences. Then answer 2 why questions with text evidence.",
+     "answer": "Four-sentence retell in order; two why answers starting with Because or The text says."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l21",
+  "title": "Cover-Write-Check Spelling",
+  "emoji": "✍️",
+  "minutes": 15,
+  "summary": "Practice the five trickiest spelling words with cover-write-check.",
+  "content": {
+   "explain": "Cover-write-check is a powerful way to learn spelling. First, pick your five hardest words from the list. Look at a word, say it aloud, then cover it. Write the word from memory. Uncover and check letter by letter. If you missed any, rewrite it correctly. Do this once for each of the five words. Then test yourself one more time on all five without looking.",
+   "examples": [
+    "Word: jumping\nCover → write: jumpng → check: missing i → rewrite: jumping",
+    "Word: played\nCover → write: played → check: matches! ✓",
+    "Word: hopped\nCover → write: hopped → check: double p correct! ✓"
+   ],
+   "practice": [
+    {
+     "question": "What is the first step in cover-write-check?",
+     "options": [
+      "Write the word with eyes closed",
+      "Look at the word and say it aloud",
+      "Cover the word immediately",
+      "Ask a friend to spell it"
+     ],
+     "correctIndex": 1,
+     "hint": "You need to see and hear the word first.",
+     "praise": "Yes! Look and say it before you cover."
+    },
+    {
+     "question": "After you write the word from memory, what do you do?",
+     "options": [
+      "Eat the paper",
+      "Uncover and check each letter",
+      "Write it backwards",
+      "Draw a picture of it"
+     ],
+     "correctIndex": 1,
+     "hint": "Check means compare your writing to the correct spelling.",
+     "praise": "Right! Uncover and check letter by letter."
+    },
+    {
+     "question": "If you misspell a word during check, what should you do?",
+     "options": [
+      "Cross it out and forget it",
+      "Rewrite it correctly",
+      "Circle the mistake and stop",
+      "Blame the pencil"
+     ],
+     "correctIndex": 1,
+     "hint": "Practice makes progress — rewrite it right.",
+     "praise": "Exactly! Rewrite the correct spelling to learn it."
+    },
+    {
+     "question": "How many tricky words should you practice this way?",
+     "options": [
+      "Three words",
+      "Five words",
+      "Seven words",
+      "All ten words"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says the five hardest words.",
+     "praise": "Correct! Focus on your five trickiest words."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Do cover-write-check on your 5 hardest spelling words. Then test yourself once more.",
+     "answer": "Five words practiced with cover-write-check; final self-test results noted."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l22",
+  "title": "Explain & Draw Animal Families",
+  "emoji": "🗣️",
+  "minutes": 15,
+  "summary": "Teach a parent about animal babies in three sentences plus a labeled drawing.",
+  "content": {
+   "explain": "Teaching someone else proves you understand. Explain animals and their young to a parent in three clear sentences. Sentence 1: the big idea. Sentence 2: a detail about how babies are born or hatch. Sentence 3: a detail about how parents care for them. Then draw one labeled picture that matches your explanation. Point to each label as you read your sentences.",
+   "examples": [
+    "Sentence 1: Animals have babies in different ways. Sentence 2: Birds lay eggs and keep them warm. Sentence 3: Mammal mothers feed babies milk.",
+    "Labeled drawing: Mother bird on nest labeled 'incubating eggs'; baby bird labeled 'hatchling'; arrow labeled 'feeding worms'.",
+    "Sentence 1: Frogs change shape as they grow. Sentence 2: Eggs become tadpoles with gills. Sentence 3: Tadpoles grow legs and lose tails."
+   ],
+   "practice": [
+    {
+     "question": "How many sentences should your explanation have?",
+     "options": [
+      "One sentence",
+      "Three sentences",
+      "Five sentences",
+      "Ten sentences"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says explain in three sentences.",
+     "praise": "Yes! Three sentences make a clear explanation."
+    },
+    {
+     "question": "What should sentence 1 of your explanation cover?",
+     "options": [
+      "A joke about animals",
+      "The big idea or main topic",
+      "What you had for breakfast",
+      "Your favorite animal name"
+     ],
+     "correctIndex": 1,
+     "hint": "Start with the main point.",
+     "praise": "Right! Sentence 1 states the big idea."
+    },
+    {
+     "question": "Why label your drawing?",
+     "options": [
+      "To use up ink",
+      "So others understand the parts",
+      "To make it look messy",
+      "Labels are not needed"
+     ],
+     "correctIndex": 1,
+     "hint": "Labels are like captions for pictures.",
+     "praise": "Correct! Labels teach the viewer what they see."
+    },
+    {
+     "question": "When you read your sentences to a parent, what should you do with the drawing?",
+     "options": [
+      "Hide it behind your back",
+      "Point to each label as you read",
+      "Crumple it up",
+      "Draw on the parent's hand"
+     ],
+     "correctIndex": 1,
+     "hint": "Connect your words to the picture.",
+     "praise": "Nice! Pointing links your explanation to the labels."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Explain animals and their young to a parent in 3 sentences. Draw 1 labeled picture.",
+     "answer": "Three-sentence explanation given aloud; one labeled drawing shown and discussed."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l23",
+  "title": "Kid Helpers in the Community",
+  "emoji": "🤝",
+  "minutes": 15,
+  "summary": "Name four ways kids help at home, school, and town; pick one to do.",
+  "content": {
+   "explain": "Citizenship means helping your community. Kids can help in many ways. At home: set the table, feed a pet, tidy toys. At school: help a classmate, clean up supplies, be a line leader. In town: pick up litter, visit a neighbor, join a clean-up day. Name four different ways — try to spread them across home, school, and town. Then choose one you will do this week and make a plan.",
+   "examples": [
+    "Home: Make my bed each morning without being asked.",
+    "School: Help a new student learn the classroom routines.",
+    "Town: Pick up trash at the park on Saturday with my family.",
+    "Home: Water the vegetable garden every evening."
+   ],
+   "practice": [
+    {
+     "question": "Which is a way to help at school?",
+     "options": [
+      "Ignore a classmate who dropped papers",
+      "Help pick up the dropped papers",
+      "Run in the hallway",
+      "Talk during quiet reading"
+     ],
+     "correctIndex": 1,
+     "hint": "Helping means doing something kind and useful.",
+     "praise": "Yes! Picking up papers helps your classmate and the classroom."
+    },
+    {
+     "question": "Which is a way to help in your town?",
+     "options": [
+      "Leave toys on the sidewalk",
+      "Pick up litter at the park",
+      "Draw on park benches",
+      "Shout in the library"
+     ],
+     "correctIndex": 1,
+     "hint": "Town help makes the community nicer for everyone.",
+     "praise": "Right! Cleaning the park helps the whole town."
+    },
+    {
+     "question": "How many ways to help should you name?",
+     "options": [
+      "Two ways",
+      "Four ways",
+      "One way",
+      "Ten ways"
+     ],
+     "correctIndex": 1,
+     "hint": "The activity says name four ways.",
+     "praise": "Correct! Name four different ways to help."
+    },
+    {
+     "question": "After naming four ways, what do you do next?",
+     "options": [
+      "Forget about it",
+      "Pick one to do this week and make a plan",
+      "Tell a friend they have to do it",
+      "Write a letter to the mayor"
+     ],
+     "correctIndex": 1,
+     "hint": "Action turns ideas into real help.",
+     "praise": "Exactly! Choose one and plan when you'll do it."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "List 4 ways kids help at home, school, or town. Circle the one you'll do this week and write your plan.",
+     "answer": "Four listed ways; one circled with a simple plan (when, where, how)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l3",
+  "title": "Sorting -ed and -ing Words",
+  "emoji": "🔤",
+  "minutes": 15,
+  "summary": "Read spelling words aloud and group by ending.",
+  "content": {
+   "explain": "Take your list of 10 spelling words. Read each one out loud clearly. Then sort them into two groups: words ending in -ed and words ending in -ing. Say the rule for each group as you sort.\n\n-ed usually shows something happened in the past. -ing shows something is happening now or keeps happening. Noticing the ending helps you spell and read these words correctly.",
+   "examples": [
+    "Jumped, walked, played — all end in -ed. They tell about the past.",
+    "Jumping, walking, playing — all end in -ing. They tell about right now."
+   ],
+   "practice": [
+    {
+     "question": "Which word belongs in the -ed group?",
+     "options": [
+      "running",
+      "jumped",
+      "swimming",
+      "reading"
+     ],
+     "correctIndex": 1,
+     "hint": "Look for the word ending with the letters e-d.",
+     "praise": "Yes! Jumped ends with -ed."
+    },
+    {
+     "question": "Which word belongs in the -ing group?",
+     "options": [
+      "baked",
+      "cooked",
+      "baking",
+      "cleaned"
+     ],
+     "correctIndex": 2,
+     "hint": "Find the word ending with i-n-g.",
+     "praise": "Correct! Baking ends with -ing."
+    },
+    {
+     "question": "What does -ed at the end of a verb usually tell you?",
+     "options": [
+      "It's happening now",
+      "It happened in the past",
+      "It will happen tomorrow",
+      "It never happens"
+     ],
+     "correctIndex": 1,
+     "hint": "Think about words like 'walked' or 'played.'",
+     "praise": "Right! -ed shows past tense."
+    },
+    {
+     "question": "If you are doing something right now, which ending do you use?",
+     "options": [
+      "-ed",
+      "-ing",
+      "-s",
+      "-er"
+     ],
+     "correctIndex": 1,
+     "hint": "Say 'I am reading' — what ending is on reading?",
+     "praise": "Exactly! -ing shows action happening now."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Write your 10 spelling words in two columns: -ed words and -ing words.",
+     "answer": "-ed column: ______  -ing column: ______"
+    }
+   ]
+  }
+ },
+ {
+  "id": "max_w2_l9",
+  "title": "Morning Routine Code",
+  "emoji": "💻",
+  "minutes": 15,
+  "summary": "Build a 6-step morning routine sequence, testing each block as you go.",
+  "content": {
+   "explain": "Coding means giving a computer clear steps in the right order. A morning routine is perfect practice: wake up, brush teeth, get dressed, eat breakfast, pack bag, head out. Add one block, test it, then add the next. If something runs out of order, move the blocks until the sequence flows.",
+   "examples": [
+    "Block 1: show \"Wake up\"\nBlock 2: show \"Brush teeth\"\nBlock 3: show \"Get dressed\"\nRun after each block to check.",
+    "Block 4: show \"Eat breakfast\"\nBlock 5: show \"Pack bag\"\nBlock 6: show \"Head out\"\nFull run: all six messages appear in order."
+   ],
+   "practice": [
+    {
+     "question": "What should the first block in a morning routine say?",
+     "options": [
+      "Eat breakfast",
+      "Wake up",
+      "Pack bag",
+      "Brush teeth"
+     ],
+     "correctIndex": 1,
+     "hint": "Think about what happens the moment you open your eyes.",
+     "praise": "Yes! The day starts when you wake up."
+    },
+    {
+     "question": "Why test after adding each block?",
+     "options": [
+      "To make the code longer",
+      "To catch mistakes early",
+      "To slow down the computer",
+      "To use more blocks"
+     ],
+     "correctIndex": 1,
+     "hint": "Testing early helps you fix small problems before they grow.",
+     "praise": "Exactly! Early testing saves time later."
+    },
+    {
+     "question": "Which order makes sense for blocks 3, 4, 5?",
+     "options": [
+      "Pack bag, Eat breakfast, Get dressed",
+      "Get dressed, Eat breakfast, Pack bag",
+      "Eat breakfast, Pack bag, Get dressed",
+      "Pack bag, Get dressed, Eat breakfast"
+     ],
+     "correctIndex": 1,
+     "hint": "You dress before eating, and pack last before leaving.",
+     "praise": "Right! Dress, eat, then pack your bag."
+    },
+    {
+     "question": "If the routine runs but shows \"Pack bag\" before \"Eat breakfast\", what do you do?",
+     "options": [
+      "Delete the whole program",
+      "Swap the two blocks",
+      "Add more blocks",
+      "Change the words"
+     ],
+     "correctIndex": 1,
+     "hint": "Blocks can be dragged into a new order.",
+     "praise": "Perfect! Drag blocks to fix the sequence."
+    }
+   ],
+   "workbook": [
+    {
+     "prompt": "Draw your 6-block morning routine on paper with arrows showing the order.",
+     "answer": "Six labeled boxes connected by arrows in the correct sequence."
+    },
+    {
+     "prompt": "Tell a parent what each block in your routine does.",
+     "answer": "Student explains each step in their own words."
+    }
+   ]
+  }
+ }
+]

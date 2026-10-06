@@ -1,0 +1,321 @@
+[
+  {
+    "id": "max_w2_l4",
+    "title": "Estimate to Check",
+    "emoji": "🎯",
+    "minutes": 15,
+    "summary": "Round numbers first, then solve and see if the answer is close.",
+    "content": {
+      "explain": "Round each number to the nearest ten. Add or multiply the rounded numbers in your head. The exact answer should be near your estimate. If it is far off, re-check your work. Estimating catches mistakes fast.",
+      "examples": [
+        "48 + 51 → 50 + 50 = 100. Exact: 99. Close!",
+        "19 × 3 → 20 × 3 = 60. Exact: 57. Close!",
+        "76 rounds to 80 (past 75)."
+      ],
+      "practice": [
+        {
+          "question": "About how much is 48 + 51?",
+          "options": [
+            "About 10",
+            "About 100",
+            "About 1,000",
+            "About 60"
+          ],
+          "correctIndex": 1,
+          "hint": "Round both to 50, then add.",
+          "praise": "Yes! 50 + 50 = 100."
+        },
+        {
+          "question": "19 × 3 is closest to which fact?",
+          "options": [
+            "20 × 3 = 60",
+            "10 × 3 = 30",
+            "19 × 10 = 190",
+            "20 × 20 = 400"
+          ],
+          "correctIndex": 0,
+          "hint": "Round 19 up to the nearest ten.",
+          "praise": "Correct! 20 × 3 = 60."
+        },
+        {
+          "question": "Round 76 to the nearest ten.",
+          "options": [
+            "60",
+            "70",
+            "76",
+            "80"
+          ],
+          "correctIndex": 3,
+          "hint": "Is 76 closer to 70 or 80?",
+          "praise": "Right! 76 rounds up to 80."
+        },
+        {
+          "question": "32 + 18 is about:",
+          "options": [
+            "About 50",
+            "About 500",
+            "About 5",
+            "About 300"
+          ],
+          "correctIndex": 0,
+          "hint": "Round 32 to 30, 18 to 20, then add.",
+          "praise": "Yes! 30 + 20 = 50."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Estimate 27 × 4 by rounding first. Then solve exactly.",
+          "answer": "Estimate: 30 × 4 = 120. Exact: 108."
+        },
+        {
+          "prompt": "Round 63 and 29 to the nearest ten. Add the rounded numbers.",
+          "answer": "60 + 30 = 90."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l5",
+    "title": "Mixed Fact Practice",
+    "emoji": "🔀",
+    "minutes": 15,
+    "summary": "Mix ×0–×5 facts to build speed for the week test.",
+    "content": {
+      "explain": "The week test covers all facts ×0 through ×5. Practice them in random order. Say the fact, write the answer, then check. If one slows you down, practice that row three times. Mixing keeps your brain flexible.",
+      "examples": [
+        "4 × 0 = 0 (zero groups is always zero)",
+        "5 × 5 = 25 (five fives)",
+        "2 × 3 = 6 (two threes)",
+        "1 × 4 = 4 (one group of four)"
+      ],
+      "practice": [
+        {
+          "question": "5 × 0 = ?",
+          "options": [
+            "0",
+            "5",
+            "1",
+            "10"
+          ],
+          "correctIndex": 0,
+          "hint": "Zero groups of any number is zero.",
+          "praise": "Yes! 5 × 0 = 0."
+        },
+        {
+          "question": "3 × 5 = ?",
+          "options": [
+            "8",
+            "15",
+            "12",
+            "10"
+          ],
+          "correctIndex": 1,
+          "hint": "Three fives: 5, 10, 15.",
+          "praise": "Correct! 3 × 5 = 15."
+        },
+        {
+          "question": "Which fact equals 12?",
+          "options": [
+            "3 × 3",
+            "4 × 2",
+            "5 × 2",
+            "6 × 1"
+          ],
+          "correctIndex": 1,
+          "hint": "4 × 2 = 8, 3 × 4 = 12.",
+          "praise": "Right! 3 × 4 = 12."
+        },
+        {
+          "question": "2 × 4 = ?",
+          "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+          ],
+          "correctIndex": 1,
+          "hint": "Two fours: 4 + 4.",
+          "praise": "Great! 2 × 4 = 8."
+        },
+        {
+          "question": "0 × 5 = ?",
+          "options": [
+            "5",
+            "0",
+            "1",
+            "10"
+          ],
+          "correctIndex": 1,
+          "hint": "Zero groups of five.",
+          "praise": "Exactly! 0 × 5 = 0."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write all ×4 facts from 0 to 5. Say each aloud.",
+          "answer": "0×4=0, 1×4=4, 2×4=8, 3×4=12, 4×4=16, 5×4=20"
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l6",
+    "title": "Week 1–2 Cumulative Review",
+    "emoji": "📚",
+    "minutes": 15,
+    "summary": "Review skip-counting, arrays, and ×0–×5 facts together.",
+    "content": {
+      "explain": "The cumulative quiz samples weeks 1 and 2. Week 1 was skip-counting by 2s, 5s, 10s. Week 2 is ×0–×5 facts, arrays, and word problems. Do a quick hit of each: count by 3s to 18, draw a 3×4 array, solve 4×5, and estimate 23+38.",
+      "examples": [
+        "Count by 3s: 3, 6, 9, 12, 15, 18",
+        "Array 3×4: 3 rows of 4 dots = 12",
+        "4 × 5 = 20",
+        "Estimate 23+38 → 20+40 = 60"
+      ],
+      "practice": [
+        {
+          "question": "What comes next? 3, 6, 9, 12, ___",
+          "options": [
+            "13",
+            "15",
+            "16",
+            "18"
+          ],
+          "correctIndex": 1,
+          "hint": "Add 3 to the last number.",
+          "praise": "Yes! 12 + 3 = 15."
+        },
+        {
+          "question": "An array has 2 rows and 6 columns. How many dots?",
+          "options": [
+            "8",
+            "12",
+            "10",
+            "14"
+          ],
+          "correctIndex": 1,
+          "hint": "Multiply rows × columns: 2 × 6.",
+          "praise": "Correct! 2 × 6 = 12."
+        },
+        {
+          "question": "4 × 5 = ?",
+          "options": [
+            "9",
+            "20",
+            "15",
+            "25"
+          ],
+          "correctIndex": 1,
+          "hint": "Four fives: 5, 10, 15, 20.",
+          "praise": "Right! 4 × 5 = 20."
+        },
+        {
+          "question": "Estimate 23 + 38 by rounding to tens.",
+          "options": [
+            "50",
+            "60",
+            "70",
+            "40"
+          ],
+          "correctIndex": 1,
+          "hint": "23→20, 38→40. 20+40=60.",
+          "praise": "Yes! About 60."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Draw an array for 3 × 3. Write the fact.",
+          "answer": "3 rows of 3 dots. 3 × 3 = 9."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l7",
+    "title": "Fact Fluency Builder",
+    "emoji": "⚡",
+    "minutes": 15,
+    "summary": "Timed practice to answer ×0–×5 facts in 3 seconds each.",
+    "content": {
+      "explain": "Fluency means fast and accurate. Set a timer for 1 minute. Write answers to 20 mixed ×0–×5 facts. Count correct. Do it again tomorrow and beat your score. Focus on the facts that stick, then target the tricky ones.",
+      "examples": [
+        "1 × 2 = 2",
+        "5 × 3 = 15",
+        "0 × 4 = 0",
+        "2 × 5 = 10"
+      ],
+      "practice": [
+        {
+          "question": "5 × 2 = ?",
+          "options": [
+            "7",
+            "10",
+            "12",
+            "5"
+          ],
+          "correctIndex": 1,
+          "hint": "Two fives or five twos.",
+          "praise": "Fast! 5 × 2 = 10."
+        },
+        {
+          "question": "3 × 0 = ?",
+          "options": [
+            "3",
+            "0",
+            "1",
+            "30"
+          ],
+          "correctIndex": 1,
+          "hint": "Zero groups of three.",
+          "praise": "Quick! 3 × 0 = 0."
+        },
+        {
+          "question": "4 × 3 = ?",
+          "options": [
+            "7",
+            "12",
+            "9",
+            "15"
+          ],
+          "correctIndex": 1,
+          "hint": "Four threes: 3, 6, 9, 12.",
+          "praise": "Yes! 4 × 3 = 12."
+        },
+        {
+          "question": "Which is a ×5 fact?",
+          "options": [
+            "3 × 4",
+            "5 × 3",
+            "2 × 6",
+            "4 × 4"
+          ],
+          "correctIndex": 1,
+          "hint": "One factor is 5.",
+          "praise": "Correct! 5 × 3 uses the 5s row."
+        },
+        {
+          "question": "2 × 2 = ?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "8"
+          ],
+          "correctIndex": 1,
+          "hint": "Two twos.",
+          "praise": "Great! 2 × 2 = 4."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Time yourself on 10 mixed facts. Record your score.",
+          "answer": "Goal: 10/10 in under 60 seconds."
+        },
+        {
+          "prompt": "Circle the three facts you want to practice more.",
+          "answer": "Student choice."
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "quizId": "pixel_w2_test",
+  "learner": "Pixel",
+  "title": "Week 2 Test — Fractions Operations & Algebra Basics",
+  "tapFriendly": true,
+  "format": "tap-mcq",
+  "minutes": 15,
+  "passScore": 0.8,
+  "covers": [
+    "adonis_w2_l1",
+    "adonis_w2_l2",
+    "adonis_w2_l3",
+    "adonis_w2_l4",
+    "adonis_w1_l1",
+    "adonis_w1_l2"
+  ],
+  "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice.",
+  "questions": [
+    {
+      "q": "A box is 4 cm long, 3 cm wide, and 2 cm high. What is its volume in cubic centimeters?",
+      "options": [
+        "9",
+        "24",
+        "12",
+        "18"
+      ],
+      "correct": 1,
+      "skill": "volume",
+      "why": "Volume = length × width × height = 4 × 3 × 2 = 24 cubic cm. Great job visualizing the unit cubes!"
+    },
+    {
+      "q": "If you fill a box with 36 unit cubes and the box is 3 cubes long and 4 cubes wide, how many layers high is it?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correct": 1,
+      "skill": "volume",
+      "why": "Each layer has 3 × 4 = 12 cubes. 36 ÷ 12 = 3 layers. You're thinking in 3D!"
+    },
+    {
+      "q": "Solve for x: x + 7 = 15",
+      "options": [
+        "8",
+        "22",
+        "7",
+        "15"
+      ],
+      "correct": 0,
+      "skill": "solving-equations",
+      "why": "Undo the +7 by subtracting 7 from both sides: x = 15 - 7 = 8. Nice inverse thinking!"
+    },
+    {
+      "q": "Solve for x: 3x = 21",
+      "options": [
+        "7",
+        "18",
+        "24",
+        "63"
+      ],
+      "correct": 0,
+      "skill": "solving-equations",
+      "why": "Undo the multiplication by dividing both sides by 3: x = 21 ÷ 3 = 7. You've got the balance scale idea!"
+    },
+    {
+      "q": "In the expression 5 + n = 12, what does the letter n represent?",
+      "options": [
+        "The number 5",
+        "The number 12",
+        "An unknown number we need to find",
+        "The operation sign"
+      ],
+      "correct": 2,
+      "skill": "variables",
+      "why": "A variable like n is a placeholder for a number we don't know yet. It's a math detective's clue!"
+    },
+    {
+      "q": "Which equation shows the rule: 'Multiply a number by 4, then add 3'?",
+      "options": [
+        "y = 4x + 3",
+        "y = 3x + 4",
+        "y = 4(x + 3)",
+        "y = x + 7"
+      ],
+      "correct": 0,
+      "skill": "variables",
+      "why": "The rule says multiply first (4x), then add 3. That's exactly y = 4x + 3. You're reading math like a story!"
+    },
+    {
+      "q": "What is 3/8 + 2/8?",
+      "options": [
+        "5/16",
+        "5/8",
+        "6/8",
+        "1/8"
+      ],
+      "correct": 1,
+      "skill": "fractions-operations",
+      "why": "Same denominator means same-sized pieces: 3 pieces + 2 pieces = 5 pieces out of 8. Smooth sailing!"
+    },
+    {
+      "q": "What is 7/10 - 3/10?",
+      "options": [
+        "4/10",
+        "4/0",
+        "10/4",
+        "3/7"
+      ],
+      "correct": 0,
+      "skill": "fractions-operations",
+      "why": "Keep the denominator, subtract the numerators: 7 - 3 = 4, so 4/10. You're keeping the whole intact!"
+    },
+    {
+      "q": "What is 2/5 of 20?",
+      "options": [
+        "4",
+        "8",
+        "10",
+        "12"
+      ],
+      "correct": 1,
+      "skill": "fractions-operations",
+      "why": "Split 20 into 5 equal groups (4 each), take 2 groups: 4 × 2 = 8. Fraction of a quantity mastered!"
+    },
+    {
+      "q": "In the sentence 'The curious robot explored Mars', what is the complete subject?",
+      "options": [
+        "robot",
+        "The curious robot",
+        "explored Mars",
+        "Mars"
+      ],
+      "correct": 1,
+      "skill": "sentence-structure",
+      "why": "The complete subject includes all the words telling who or what: 'The curious robot'. You spotted the whole team!"
+    },
+    {
+      "q": "Which of these is a sentence fragment?",
+      "options": [
+        "The sun rises in the east.",
+        "Because it was raining.",
+        "Birds fly south in winter.",
+        "She reads every night."
+      ],
+      "correct": 1,
+      "skill": "sentence-structure",
+      "why": "'Because it was raining' leaves you waiting for the rest of the thought. It's a dependent clause, not a complete sentence. Sharp eye!"
+    },
+    {
+      "q": "When adding -ing to 'run', what spelling rule applies?",
+      "options": [
+        "Drop the final e",
+        "Double the final consonant",
+        "Change y to i",
+        "Just add -ing"
+      ],
+      "correct": 1,
+      "skill": "spelling",
+      "why": "Run has a short vowel + one consonant, so double the n: running. You've got the doubling rhythm down!"
+    },
+    {
+      "q": "Which property helps you identify a solid?",
+      "options": [
+        "Takes the shape of its container",
+        "Has a definite shape and volume",
+        "Flows easily",
+        "Can be compressed"
+      ],
+      "correct": 1,
+      "skill": "properties-of-matter",
+      "why": "Solids keep their own shape and volume. That's why a rock stays a rock wherever you put it. Solid reasoning!"
+    },
+    {
+      "q": "Why did ancient cities often grow near rivers?",
+      "options": [
+        "For protection from invaders",
+        "For water, farming, travel, and trade",
+        "To avoid wild animals",
+        "Because rivers are pretty"
+      ],
+      "correct": 1,
+      "skill": "ancient-civilizations",
+      "why": "Rivers gave fresh water, fertile soil for crops, transportation, and trade routes — everything a city needs to thrive. You're thinking like a historian!"
+    }
+  ]
+}

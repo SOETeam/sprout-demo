@@ -1,0 +1,138 @@
+{
+  "quizId": "juniper_w2_test",
+  "learner": "Juniper",
+  "title": "Week 2 Test — Multiplication Masters A",
+  "tapFriendly": true,
+  "format": "tap-mcq",
+  "minutes": 15,
+  "passScore": 0.8,
+  "covers": [
+    "max_w2_l1",
+    "max_w2_l2",
+    "max_w2_l3",
+    "max_w2_l4"
+  ],
+  "note": "Drawn from Juniper's week-2 math lessons (times table review 2-5, equal groups & arrays, word problems with arrays, estimate to check) plus the daily spine practice activities.",
+  "questions": [
+    {
+      "q": "0 × 4 = ?",
+      "options": [
+        "0",
+        "4",
+        "8",
+        "12"
+      ],
+      "correct": 0,
+      "skill": "multiplication",
+      "why": "Zero groups of anything is nothing — you've got this!"
+    },
+    {
+      "q": "5 × 3 = ?",
+      "options": [
+        "8",
+        "15",
+        "12",
+        "18"
+      ],
+      "correct": 1,
+      "skill": "multiplication",
+      "why": "Five groups of 3: 3, 6, 9, 12, 15 — nice counting!"
+    },
+    {
+      "q": "Which shows 4 equal groups of 2?",
+      "options": [
+        "2 + 2 + 2",
+        "2 + 2 + 2 + 2",
+        "4 + 4",
+        "2 + 4"
+      ],
+      "correct": 1,
+      "skill": "equal-groups",
+      "why": "Four groups means four 2s added together — you spotted the pattern!"
+    },
+    {
+      "q": "An array has 3 rows and 4 columns. How many dots in all?",
+      "options": [
+        "7",
+        "12",
+        "10",
+        "14"
+      ],
+      "correct": 1,
+      "skill": "arrays",
+      "why": "Rows × columns: 3 × 4 = 12 — your array eyes are sharp!"
+    },
+    {
+      "q": "There are 4 bags. Each bag has 5 apples. How many apples in total?",
+      "options": [
+        "9",
+        "20",
+        "15",
+        "25"
+      ],
+      "correct": 1,
+      "skill": "word-problems",
+      "why": "4 groups of 5: draw 4 circles with 5 dots each, count them up — 20!"
+    },
+    {
+      "q": "A garden has 3 rows of flowers. Each row has 6 flowers. Which multiplication sentence matches?",
+      "options": [
+        "3 + 6 = 9",
+        "3 × 6 = 18",
+        "6 × 6 = 36",
+        "3 × 3 = 9"
+      ],
+      "correct": 1,
+      "skill": "word-problems",
+      "why": "Rows × flowers in each row — you're reading the story like a math detective!"
+    },
+    {
+      "q": "Estimate first: 4 × 6 is about ?",
+      "options": [
+        "20",
+        "24",
+        "30",
+        "18"
+      ],
+      "correct": 1,
+      "skill": "estimation",
+      "why": "4 × 6 is exactly 24 — your estimate was right on target!"
+    },
+    {
+      "q": "Which fact would you check by estimating 5 × 5 ≈ 25?",
+      "options": [
+        "4 × 6",
+        "5 × 5",
+        "6 × 4",
+        "3 × 8"
+      ],
+      "correct": 1,
+      "skill": "estimation",
+      "why": "Estimating 5 × 5 as 25 helps you know the answer makes sense — smart checking!"
+    },
+    {
+      "q": "Draw an array for 2 × 5. How many dots?",
+      "options": [
+        "7",
+        "10",
+        "12",
+        "8"
+      ],
+      "correct": 1,
+      "skill": "arrays",
+      "why": "2 rows of 5 dots each — count by 5s: 5, 10. You've got array power!"
+    },
+    {
+      "q": "Complete the pattern: 2, 4, 6, 8, ___",
+      "options": [
+        "9",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": 1,
+      "skill": "skip-counting",
+      "why": "Counting by 2s — each step adds 2 more. You're cruising through the tables!"
+    }
+  ]
+}

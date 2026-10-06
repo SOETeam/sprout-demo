@@ -1,0 +1,90 @@
+{
+  "quizId": "rookie_w2_test",
+  "learner": "Rookie",
+  "title": "Week 2 Show-Me Time",
+  "tapFriendly": true,
+  "format": "show-me-checklist",
+  "minutes": 15,
+  "passScore": 0,
+  "covers": [
+    "luca_w2_l1",
+    "luca_w2_l2",
+    "luca_w2_l3",
+    "luca_w2_l4"
+  ],
+  "note": "Grown-up reads each prompt aloud. Rookie shows what they can do. Tap the happy face together for each one!",
+  "questions": [
+    {
+      "q": "Show counting to 10 on fingers, nice and slow",
+      "options": [
+        "Counted all 10 fingers",
+        "Counted some fingers",
+        "Wiggled fingers while counting",
+        "Watched a grown-up count"
+      ],
+      "correct": 0,
+      "skill": "Counting 1-10",
+      "why": "Every number you touch builds strong counting muscles!"
+    },
+    {
+      "q": "Show counting to 20 with a wiggle at 15 and a big clap at 20",
+      "options": [
+        "Counted to 20 with wiggle and clap",
+        "Counted past 10",
+        "Clapped at the end",
+        "Listened to a grown-up count"
+      ],
+      "correct": 0,
+      "skill": "Counting 11-20",
+      "why": "Reaching 20 is a big milestone — great job!"
+    },
+    {
+      "q": "Make two groups of blocks and tap the group that has more",
+      "options": [
+        "Tapped the bigger group",
+        "Made two groups",
+        "Counted both groups",
+        "Watched a grown-up compare"
+      ],
+      "correct": 0,
+      "skill": "More or Less",
+      "why": "Spotting 'more' helps your math brain grow!"
+    },
+    {
+      "q": "Line up toys, count them together, then add one more and count again",
+      "options": [
+        "Counted toys, added one, counted again",
+        "Lined up toys",
+        "Counted the line",
+        "Helped a grown-up count"
+      ],
+      "correct": 0,
+      "skill": "Counting with Toys",
+      "why": "Adding one more shows you know what comes next!"
+    },
+    {
+      "q": "Sort items by color — put all green things together",
+      "options": [
+        "Grouped all green items",
+        "Found something green",
+        "Named the color green",
+        "Watched a grown-up sort"
+      ],
+      "correct": 0,
+      "skill": "Color Sorting",
+      "why": "Sorting by color sharpens your noticing skills!"
+    },
+    {
+      "q": "Thread six beads onto a string, then do it again",
+      "options": [
+        "Threaded six beads twice",
+        "Threaded some beads",
+        "Held the string steady",
+        "Watched a grown-up thread"
+      ],
+      "correct": 0,
+      "skill": "Fine Motor Counting",
+      "why": "Each bead threaded is a tiny victory for strong fingers!"
+    }
+  ]
+}

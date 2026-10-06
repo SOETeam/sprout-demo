@@ -1,0 +1,523 @@
+[
+  {
+    "id": "max_w2_l9",
+    "title": "Morning Routine Code",
+    "emoji": "💻",
+    "minutes": 15,
+    "summary": "Build a 6-step morning routine sequence, testing each block as you go.",
+    "content": {
+      "explain": "Coding means giving a computer clear steps in the right order. A morning routine is perfect practice: wake up, brush teeth, get dressed, eat breakfast, pack bag, head out. Add one block, test it, then add the next. If something runs out of order, move the blocks until the sequence flows.",
+      "examples": [
+        "Block 1: show \"Wake up\"\nBlock 2: show \"Brush teeth\"\nBlock 3: show \"Get dressed\"\nRun after each block to check.",
+        "Block 4: show \"Eat breakfast\"\nBlock 5: show \"Pack bag\"\nBlock 6: show \"Head out\"\nFull run: all six messages appear in order."
+      ],
+      "practice": [
+        {
+          "question": "What should the first block in a morning routine say?",
+          "options": [
+            "Eat breakfast",
+            "Wake up",
+            "Pack bag",
+            "Brush teeth"
+          ],
+          "correctIndex": 1,
+          "hint": "Think about what happens the moment you open your eyes.",
+          "praise": "Yes! The day starts when you wake up."
+        },
+        {
+          "question": "Why test after adding each block?",
+          "options": [
+            "To make the code longer",
+            "To catch mistakes early",
+            "To slow down the computer",
+            "To use more blocks"
+          ],
+          "correctIndex": 1,
+          "hint": "Testing early helps you fix small problems before they grow.",
+          "praise": "Exactly! Early testing saves time later."
+        },
+        {
+          "question": "Which order makes sense for blocks 3, 4, 5?",
+          "options": [
+            "Pack bag, Eat breakfast, Get dressed",
+            "Get dressed, Eat breakfast, Pack bag",
+            "Eat breakfast, Pack bag, Get dressed",
+            "Pack bag, Get dressed, Eat breakfast"
+          ],
+          "correctIndex": 1,
+          "hint": "You dress before eating, and pack last before leaving.",
+          "praise": "Right! Dress, eat, then pack your bag."
+        },
+        {
+          "question": "If the routine runs but shows \"Pack bag\" before \"Eat breakfast\", what do you do?",
+          "options": [
+            "Delete the whole program",
+            "Swap the two blocks",
+            "Add more blocks",
+            "Change the words"
+          ],
+          "correctIndex": 1,
+          "hint": "Blocks can be dragged into a new order.",
+          "praise": "Perfect! Drag blocks to fix the sequence."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Draw your 6-block morning routine on paper with arrows showing the order.",
+          "answer": "Six labeled boxes connected by arrows in the correct sequence."
+        },
+        {
+          "prompt": "Tell a parent what each block in your routine does.",
+          "answer": "Student explains each step in their own words."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l10",
+    "title": "Retelling in Order",
+    "emoji": "📖",
+    "minutes": 15,
+    "summary": "Answer 5 questions about the frog passage by finding proof in the text.",
+    "content": {
+      "explain": "Good readers go back to the passage to prove their answers. Read each question, then scan the text for the exact line that supports your choice. Point to the line and say the answer in your own words. This builds strong comprehension habits.",
+      "examples": [
+        "Question: What do frogs eat?\nText line: \"Frogs catch insects with their sticky tongues.\"\nAnswer: Frogs eat insects.",
+        "Question: Where do frogs lay eggs?\nText line: \"Frogs lay eggs in water.\"\nAnswer: Frogs lay eggs in water."
+      ],
+      "practice": [
+        {
+          "question": "When answering a question about the passage, what should you do first?",
+          "options": [
+            "Guess the answer",
+            "Find the proof in the text",
+            "Ask a friend",
+            "Skip the question"
+          ],
+          "correctIndex": 1,
+          "hint": "The text holds the evidence you need.",
+          "praise": "Yes! Always look back at the passage."
+        },
+        {
+          "question": "The passage says: \"Frogs have smooth, wet skin.\" What does this prove?",
+          "options": [
+            "Frogs are reptiles",
+            "Frogs have smooth, wet skin",
+            "Frogs live in trees",
+            "Frogs have fur"
+          ],
+          "correctIndex": 1,
+          "hint": "Match the answer to the exact words in the text.",
+          "praise": "Correct! The text is your proof."
+        },
+        {
+          "question": "Why is pointing to the line important?",
+          "options": [
+            "It looks neat",
+            "It shows where you found the answer",
+            "It makes the teacher happy",
+            "It uses more paper"
+          ],
+          "correctIndex": 1,
+          "hint": "Pointing proves you didn't just guess.",
+          "praise": "Exactly! It shows your thinking."
+        },
+        {
+          "question": "If you cannot find the answer in the text, what should you do?",
+          "options": [
+            "Write anything",
+            "Reread the passage carefully",
+            "Leave it blank",
+            "Copy a neighbor"
+          ],
+          "correctIndex": 1,
+          "hint": "Sometimes the answer is there but easy to miss.",
+          "praise": "Great strategy! Rereading helps you spot details."
+        },
+        {
+          "question": "How many retelling questions are on today's worksheet?",
+          "options": [
+            "3",
+            "5",
+            "7",
+            "10"
+          ],
+          "correctIndex": 1,
+          "hint": "The schedule says 5 retelling in order questions.",
+          "praise": "Right! Five questions to answer with proof."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Choose one question you answered and copy the sentence from the passage that proves it.",
+          "answer": "Student copies the exact supporting sentence from the frog passage."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l11",
+    "title": "Spelling Sentences",
+    "emoji": "✍️",
+    "minutes": 15,
+    "summary": "Write 4 spelling words in complete sentences with correct capitalization and punctuation.",
+    "content": {
+      "explain": "A sentence starts with a capital letter and ends with a period, question mark, or exclamation point. Pick four spelling words and write one sentence for each. Use the word naturally, like you're telling a story. Check that every sentence has a subject and a verb.",
+      "examples": [
+        "Word: jumped\nSentence: The frog jumped over the log.",
+        "Word: swimming\nSentence: We are swimming in the cool lake."
+      ],
+      "practice": [
+        {
+          "question": "Which sentence has correct capitalization and punctuation?",
+          "options": [
+            "the cat slept",
+            "The cat slept.",
+            "the cat slept.",
+            "The cat slept"
+          ],
+          "correctIndex": 1,
+          "hint": "First word capital, last mark is a period.",
+          "praise": "Perfect! Capital T and period at the end."
+        },
+        {
+          "question": "Pick the best sentence for the word \"hopping\".",
+          "options": [
+            "Hopping.",
+            "The rabbit is hopping.",
+            "rabbit hopping",
+            "is hopping the rabbit"
+          ],
+          "correctIndex": 1,
+          "hint": "A sentence needs a subject and a verb.",
+          "praise": "Yes! Complete thought with subject and verb."
+        },
+        {
+          "question": "What must every sentence end with?",
+          "options": [
+            "A comma",
+            "A period, question mark, or exclamation point",
+            "The word \"and\"",
+            "A capital letter"
+          ],
+          "correctIndex": 1,
+          "hint": "End marks tell the reader the sentence is done.",
+          "praise": "Right! One of those three end marks."
+        },
+        {
+          "question": "If your spelling word is \"played\", which sentence works?",
+          "options": [
+            "We played soccer yesterday.",
+            "Played soccer yesterday.",
+            "We soccer played.",
+            "Yesterday played we."
+          ],
+          "correctIndex": 0,
+          "hint": "Subject first, then verb, then the rest.",
+          "praise": "Excellent! Subject + verb + details."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write 2 more sentences using two different spelling words. Circle the capital letter and end mark in each.",
+          "answer": "Two complete sentences with spelling words, capitals and end marks circled."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l12",
+    "title": "Sort Animal Babies",
+    "emoji": "🐣",
+    "minutes": 15,
+    "summary": "Group 6 animal examples into two categories and explain your sorting rule.",
+    "content": {
+      "explain": "Scientists sort living things by shared traits. Look at 6 animal-and-young pairs. Decide on one clear rule: maybe \"lay eggs\" vs \"live birth,\" or \"fur\" vs \"no fur,\" or \"water babies\" vs \"land babies.\" Put three in each group and say your rule out loud.",
+      "examples": [
+        "Rule: Lay eggs vs live birth\nEgg layers: frog, chicken, turtle\nLive birth: dog, cat, whale",
+        "Rule: Fur vs no fur\nFur: bear cub, kitten, puppy\nNo fur: tadpole, chick, hatchling snake"
+      ],
+      "practice": [
+        {
+          "question": "Which is a clear sorting rule for animal babies?",
+          "options": [
+            "Cute vs not cute",
+            "Lay eggs vs live birth",
+            "Big vs small",
+            "Fast vs slow"
+          ],
+          "correctIndex": 1,
+          "hint": "Science groups use traits that never change.",
+          "praise": "Yes! Egg-laying vs live birth is a scientific trait."
+        },
+        {
+          "question": "A frog, a chicken, and a turtle go in which group?",
+          "options": [
+            "Live birth",
+            "Lay eggs",
+            "Have fur",
+            "Fly"
+          ],
+          "correctIndex": 1,
+          "hint": "All three hatch from eggs.",
+          "praise": "Correct! They are egg-layers."
+        },
+        {
+          "question": "If you sort by \"has feathers\" vs \"no feathers,\" where does a duckling go?",
+          "options": [
+            "Has feathers",
+            "No feathers"
+          ],
+          "correctIndex": 0,
+          "hint": "Birds have feathers, even as babies.",
+          "praise": "Right! Ducklings have soft down feathers."
+        },
+        {
+          "question": "Why say your rule out loud?",
+          "options": [
+            "To make noise",
+            "To check if the rule works for all six",
+            "To finish faster",
+            "To use your voice"
+          ],
+          "correctIndex": 1,
+          "hint": "Saying it helps you catch mistakes.",
+          "praise": "Exactly! Speaking the rule tests your thinking."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Draw your two groups with labels. Write your sorting rule at the top.",
+          "answer": "Two labeled groups of three animals each, with a clear rule written above."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l13",
+    "title": "Town Helpers Quiz",
+    "emoji": "🏘️",
+    "minutes": 15,
+    "summary": "Answer 5 questions about community helpers from memory, then check and fix 2.",
+    "content": {
+      "explain": "You've learned about people who help our town: firefighters, police officers, teachers, doctors, mail carriers, and more. Close the lesson and answer 5 questions from what you remember. Then open the lesson, check your work, and fix any two that need correction. This builds memory and self-checking skills.",
+      "examples": [
+        "Question: Who puts out fires?\nMemory answer: Firefighters.\nCheck: Lesson confirms firefighters fight fires.",
+        "Question: Who delivers letters?\nMemory answer: Mail carrier.\nCheck: Lesson says mail carrier delivers mail."
+      ],
+      "practice": [
+        {
+          "question": "Who helps keep our streets safe?",
+          "options": [
+            "Teacher",
+            "Police officer",
+            "Baker",
+            "Artist"
+          ],
+          "correctIndex": 1,
+          "hint": "Think about who directs traffic and solves problems.",
+          "praise": "Yes! Police officers protect the community."
+        },
+        {
+          "question": "Who helps you learn at school?",
+          "options": [
+            "Doctor",
+            "Teacher",
+            "Firefighter",
+            "Dentist"
+          ],
+          "correctIndex": 1,
+          "hint": "You see this helper every weekday.",
+          "praise": "Correct! Teachers guide learning."
+        },
+        {
+          "question": "Who brings medicine when you are sick?",
+          "options": [
+            "Mail carrier",
+            "Doctor",
+            "Librarian",
+            "Farmer"
+          ],
+          "correctIndex": 1,
+          "hint": "This helper checks your health.",
+          "praise": "Right! Doctors care for sick people."
+        },
+        {
+          "question": "After answering from memory, what is the next step?",
+          "options": [
+            "Throw away the paper",
+            "Check the lesson and fix 2",
+            "Ask a friend for answers",
+            "Guess the rest"
+          ],
+          "correctIndex": 1,
+          "hint": "The schedule says check and fix 2.",
+          "praise": "Perfect! Self-checking makes learning stick."
+        },
+        {
+          "question": "Who delivers packages and letters to your house?",
+          "options": [
+            "Garbage collector",
+            "Mail carrier",
+            "Bus driver",
+            "Chef"
+          ],
+          "correctIndex": 1,
+          "hint": "Look for the uniform with a bag.",
+          "praise": "Yes! Mail carriers bring the mail."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write the 2 answers you fixed and what the correct answer is.",
+          "answer": "Two corrected answers with the right information from the lesson."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l14",
+    "title": "Loop Your Routine",
+    "emoji": "🔁",
+    "minutes": 15,
+    "summary": "Remix the 6-block morning routine so it runs twice automatically.",
+    "content": {
+      "explain": "A loop repeats a set of blocks without rewriting them. Wrap your 6 morning blocks inside a \"repeat 2 times\" block. Now the whole routine runs, then runs again. This is how coders save time and avoid mistakes. Test it: you should see all 12 messages in order.",
+      "examples": [
+        "Before loop:\nBlock 1-6 run once.\nAfter loop:\nRepeat 2 times:\n  Block 1\n  Block 2\n  ...\n  Block 6\nRuns 12 blocks total.",
+        "If you want 3 days of routine:\nRepeat 3 times around the 6 blocks."
+      ],
+      "practice": [
+        {
+          "question": "What does a \"repeat 2 times\" block do?",
+          "options": [
+            "Runs the blocks inside it two times",
+            "Deletes the blocks",
+            "Runs the blocks once",
+            "Changes the block colors"
+          ],
+          "correctIndex": 0,
+          "hint": "Repeat means do it again.",
+          "praise": "Yes! The inner blocks run twice."
+        },
+        {
+          "question": "Your routine has 6 blocks. With a repeat-2 loop, how many blocks run total?",
+          "options": [
+            "6",
+            "8",
+            "12",
+            "3"
+          ],
+          "correctIndex": 2,
+          "hint": "6 blocks times 2 repetitions.",
+          "praise": "Correct! 6 x 2 = 12 block runs."
+        },
+        {
+          "question": "Where do you put the 6 blocks to make them repeat?",
+          "options": [
+            "Above the loop",
+            "Inside the loop",
+            "Below the loop",
+            "In a different project"
+          ],
+          "correctIndex": 1,
+          "hint": "Drag them into the mouth of the repeat block.",
+          "praise": "Right! Inside the loop is the repeat zone."
+        },
+        {
+          "question": "Why use a loop instead of copying blocks?",
+          "options": [
+            "Loops look cooler",
+            "Less typing, fewer mistakes",
+            "Loops run slower",
+            "Copies are better"
+          ],
+          "correctIndex": 1,
+          "hint": "One change in the loop fixes every repeat.",
+          "praise": "Exactly! One edit updates all repeats."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Draw your loop block with the 6 morning blocks inside. Label \"Repeat 2 times.\"",
+          "answer": "A loop container graphic with 6 labeled blocks nested inside."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l15",
+    "title": "Retell in Four Sentences",
+    "emoji": "📝",
+    "minutes": 15,
+    "summary": "Write 4 sentences that retell the frog passage: beginning, middle, and end.",
+    "content": {
+      "explain": "A good retelling captures the main idea in order. Sentence 1: the beginning — what the passage introduces. Sentence 2-3: the middle — key details. Sentence 4: the end — how it wraps up. Use your own words. Each sentence starts with a capital and ends with a period.",
+      "examples": [
+        "1. The passage teaches about frogs and their lives.\n2. Frogs lay eggs in water that hatch into tadpoles.\n3. Tadpoles grow legs and lose tails to become frogs.\n4. Adult frogs eat insects and live near water.",
+        "1. Frogs are amphibians with smooth skin.\n2. They start as eggs, then tadpoles, then adults.\n3. They catch food with sticky tongues.\n4. Frogs help nature by eating bugs."
+      ],
+      "practice": [
+        {
+          "question": "Sentence 1 of a retelling should cover:",
+          "options": [
+            "The ending",
+            "The beginning",
+            "A random detail",
+            "Your opinion"
+          ],
+          "correctIndex": 1,
+          "hint": "Start where the passage starts.",
+          "praise": "Yes! Begin with the introduction."
+        },
+        {
+          "question": "How many sentences should your retelling have today?",
+          "options": [
+            "2",
+            "4",
+            "6",
+            "10"
+          ],
+          "correctIndex": 1,
+          "hint": "The schedule says write 4 sentences.",
+          "praise": "Correct! Four sentences total."
+        },
+        {
+          "question": "What belongs in the middle sentences?",
+          "options": [
+            "Only the title",
+            "Key details from the passage",
+            "Your favorite color",
+            "A joke"
+          ],
+          "correctIndex": 1,
+          "hint": "The middle holds the important facts.",
+          "praise": "Right! Key details go in the middle."
+        },
+        {
+          "question": "Sentence 4 should tell:",
+          "options": [
+            "How the passage ends",
+            "What you ate for lunch",
+            "A new topic",
+            "The first word"
+          ],
+          "correctIndex": 0,
+          "hint": "Wrap up with the conclusion.",
+          "praise": "Perfect! The last sentence closes the retelling."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write your 4-sentence retelling on lined paper. Check capitals and periods.",
+          "answer": "Four complete sentences in order with correct mechanics."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l16",
+    "title": "Spelling Dictation",
+    "emoji": "🎧",
+    "minutes": 15,
+    "summary": "Write

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "max_w2_l1",
+    "title": "Times Table Sprint 0-5",
+    "emoji": "⏱️",
+    "minutes": 15,
+    "summary": "Race the clock on ×0–×5 facts and beat your best time.",
+    "content": {
+      "explain": "Start with a 20-minute spine review of all ×0 through ×5 facts. Say each fact out loud, cover the answer, then check. After the spine, grab a timer and race through the ×2, ×3, ×4, and ×5 tables. Write your time down so you can try to beat it tomorrow.\n\nIf a fact slows you down, pause and count by that number on your fingers. Each day you practice, the pathways in your brain get stronger and faster.",
+      "examples": [
+        "×2 table: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 — count by 2s to 20.",
+        "×5 table: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 — every answer ends in 5 or 0."
+      ],
+      "practice": [
+        {
+          "question": "What is 7 × 5?",
+          "options": [
+            "30",
+            "35",
+            "40",
+            "25"
+          ],
+          "correctIndex": 1,
+          "hint": "Count by 5s seven times: 5, 10, 15, 20, 25, 30, 35.",
+          "praise": "Yes! 7 × 5 = 35."
+        },
+        {
+          "question": "Which ×4 fact equals 28?",
+          "options": [
+            "4 × 6",
+            "4 × 7",
+            "4 × 8",
+            "4 × 5"
+          ],
+          "correctIndex": 1,
+          "hint": "Count by 4s: 4, 8, 12, 16, 20, 24, 28 — that's seven 4s.",
+          "praise": "Correct! 4 × 7 = 28."
+        },
+        {
+          "question": "Any number times 0 equals:",
+          "options": [
+            "That number",
+            "1",
+            "0",
+            "10"
+          ],
+          "correctIndex": 2,
+          "hint": "Zero groups of anything is nothing.",
+          "praise": "Right! 0 times anything is 0."
+        },
+        {
+          "question": "6 × 3 = ?",
+          "options": [
+            "15",
+            "18",
+            "21",
+            "12"
+          ],
+          "correctIndex": 1,
+          "hint": "Three groups of 6: 6, 12, 18.",
+          "praise": "Nice! 6 × 3 = 18."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Time yourself on the ×3 table. Write your time here: ______",
+          "answer": "Aim to beat this time tomorrow."
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l2",
+    "title": "Frog Passage Word Hunt",
+    "emoji": "🐸",
+    "minutes": 15,
+    "summary": "Read a frog passage and mark three tricky words.",
+    "content": {
+      "explain": "Read the nonfiction passage about frogs slowly and carefully. When you find a word you don't know, underline it with your pencil. Find exactly three words. After reading, you can look them up or ask a grown-up what they mean.\n\nGood readers notice when a word is new. Underlining helps you remember to learn it later. You're building a stronger vocabulary every time you do this.",
+      "examples": [
+        "If you see 'amphibian' and aren't sure, underline it. It means an animal that lives in water and on land.",
+        "The word 'metamorphosis' might be new. Underline it! It means a big change, like a tadpole becoming a frog."
+      ],
+      "practice": [
+        {
+          "question": "What should you do when you find a word you don't know in the passage?",
+          "options": [
+            "Skip it and keep reading",
+            "Underline it with your pencil",
+            "Guess and move on",
+            "Close the book"
+          ],
+          "correctIndex": 1,
+          "hint": "The activity says to underline three words you do not know.",
+          "praise": "Exactly! Underline it so you can learn it later."
+        },
+        {
+          "question": "How many words should you underline in this activity?",
+          "options": [
+            "As many as you want",
+            "Exactly three",
+            "Only one",
+            "Five or more"
+          ],
+          "correctIndex": 1,
+          "hint": "The directions say 'underline 3 words you do not know.'",
+          "praise": "Right! Find exactly three new words."
+        },
+        {
+          "question": "Why is it helpful to mark unknown words?",
+          "options": [
+            "To make the page look messy",
+            "So you can learn them later",
+            "To show you didn't read",
+            "Because the teacher said so"
+          ],
+          "correctIndex": 1,
+          "hint": "Marking words helps you remember to find out what they mean.",
+          "praise": "Yes! It helps you build your vocabulary."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write your three underlined words here and find their meanings.",
+          "answer": "Word 1: ______ Meaning: ______  Word 2: ______ Meaning: ______  Word 3: ______ Meaning: ______"
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l3",
+    "title": "Sorting -ed and -ing Words",
+    "emoji": "🔤",
+    "minutes": 15,
+    "summary": "Read spelling words aloud and group by ending.",
+    "content": {
+      "explain": "Take your list of 10 spelling words. Read each one out loud clearly. Then sort them into two groups: words ending in -ed and words ending in -ing. Say the rule for each group as you sort.\n\n-ed usually shows something happened in the past. -ing shows something is happening now or keeps happening. Noticing the ending helps you spell and read these words correctly.",
+      "examples": [
+        "Jumped, walked, played — all end in -ed. They tell about the past.",
+        "Jumping, walking, playing — all end in -ing. They tell about right now."
+      ],
+      "practice": [
+        {
+          "question": "Which word belongs in the -ed group?",
+          "options": [
+            "running",
+            "jumped",
+            "swimming",
+            "reading"
+          ],
+          "correctIndex": 1,
+          "hint": "Look for the word ending with the letters e-d.",
+          "praise": "Yes! Jumped ends with -ed."
+        },
+        {
+          "question": "Which word belongs in the -ing group?",
+          "options": [
+            "baked",
+            "cooked",
+            "baking",
+            "cleaned"
+          ],
+          "correctIndex": 2,
+          "hint": "Find the word ending with i-n-g.",
+          "praise": "Correct! Baking ends with -ing."
+        },
+        {
+          "question": "What does -ed at the end of a verb usually tell you?",
+          "options": [
+            "It's happening now",
+            "It happened in the past",
+            "It will happen tomorrow",
+            "It never happens"
+          ],
+          "correctIndex": 1,
+          "hint": "Think about words like 'walked' or 'played.'",
+          "praise": "Right! -ed shows past tense."
+        },
+        {
+          "question": "If you are doing something right now, which ending do you use?",
+          "options": [
+            "-ed",
+            "-ing",
+            "-s",
+            "-er"
+          ],
+          "correctIndex": 1,
+          "hint": "Say 'I am reading' — what ending is on reading?",
+          "praise": "Exactly! -ing shows action happening now."
+        }
+      ],
+      "workbook": [
+        {
+          "prompt": "Write your 10 spelling words in two columns: -ed words and -ing words.",
+          "answer": "-ed column: ______  -ing column: ______"
+        }
+      ]
+    }
+  },
+  {
+    "id": "max_w2_l4",
+    "title": "Animal Babies Vocabulary",
+    "emoji": "🦢",
+    "minutes": 15,
+    "summary": "Spot and say four new words about animal families.",
+    "content": {
+      "explain": "Look at the pictures or lesson about animals and their young. Find four words that are new to you. Point to each one and say it out loud three times. Saying new words aloud helps lock them in your memory.\
