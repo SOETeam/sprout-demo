@@ -145,6 +145,12 @@ def build_week(grade_key, week_no):
             nb = strip_paths(b)
             blocks_n += 1
             ref = nb.get("lesson_ref")
+            if not ref and b.get("material_ref"):
+                cand = os.path.join(MASTER, b["material_ref"])
+                if os.path.exists(cand):
+                    ref = "%s_w%d_%s" % (student, week_no,
+                                         os.path.splitext(os.path.basename(cand))[0])
+                    nb["lesson_ref"] = ref
             if ref:
                 if ref in lidx and lidx[ref].get("week") == week_no:
                     ls = lidx[ref]
