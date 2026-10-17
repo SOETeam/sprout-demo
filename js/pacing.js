@@ -19,6 +19,8 @@
  *     math grade 3 (max)             lesson.minutes + 30   (20 worksheet + 10 game-practice)
  *     math grade 5 (adonis)          lesson.minutes + 35   (25 worksheet + 10 game-practice)
  *     reading / literature           lesson.minutes + 15   (15 silent reading)
+ *     LONG-LESSON CLAUSE: lessons >= 45 min add NOTHING (self-contained — a 60-min
+ *       reading lesson already IS the practice). Applies to every row above.
  *     writing                        lesson.minutes + 5    (5 overshoot buffer)
  *     spelling, science, history,
  *     civics, english_grammar        lesson.minutes + 5    (5 wrap)
@@ -85,9 +87,12 @@
     history: 5, civics: 5, english_grammar: 5, coding: 5, mathematics: 5
   };
 
-  function laneSegment(grade, subject) {
+  function laneSegment(grade, subject, lessonMin) {
     var g = gradeKey(grade);
     if (!g || LANE_GRADES.indexOf(g) < 0) return null;
+    /* LONG-LESSON CLAUSE (build_recalibrate_week.py 10/17): lessons >= 45 min are
+       self-contained (a 60-min reading lesson IS the practice) — segment = 0. */
+    if (isNum(lessonMin) && lessonMin >= 45) return 0;
     var bank = PRACTICE_SEGMENT[g];
     return bank && isNum(bank[subject]) ? bank[subject] : null;
   }
@@ -312,12 +317,13 @@
      No lane row (preschool) or no lesson -> base = the authored slot; instruction =
      linked lesson.minutes when it fits, practice = the segment (remainder).           */
   function splitFor(block, grade, subject, lesson) {
-    var seg = laneSegment(grade, subject);
     var lessonMin = lesson && isNum(lesson.minutes) && lesson.minutes > 0 ? lesson.minutes : null;
     var slot = isNum(block.min) && block.min > 0 ? block.min : null;
+    var seg = laneSegment(grade, subject, lessonMin);
 
     if (seg !== null && lessonMin !== null) {
-      return { base: lessonMin + seg, instruction: lessonMin, practice: seg, source: 'lane' };
+      return { base: lessonMin + seg, instruction: lessonMin, practice: seg,
+               source: seg === 0 ? 'lane-self-contained' : 'lane' };
     }
     if (slot === null) {
       /* no authored minutes to fall back on: build from whatever we do know */
