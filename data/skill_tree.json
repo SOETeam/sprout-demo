@@ -42,6 +42,44 @@
    "reading",
    "science",
    "spelling"
+  ],
+  "K": [
+   "art",
+   "ela",
+   "math",
+   "motor",
+   "music",
+   "science",
+   "social_studies"
+  ],
+  "1": [
+   "art",
+   "ela",
+   "math",
+   "motor",
+   "music",
+   "science",
+   "social_studies"
+  ],
+  "2": [
+   "art",
+   "ela",
+   "math",
+   "motor",
+   "music",
+   "science",
+   "social_studies"
+  ],
+  "4": [
+   "civics",
+   "english_grammar",
+   "history",
+   "literature",
+   "math",
+   "reading",
+   "science",
+   "spelling",
+   "writing"
   ]
  },
  "grades": {
@@ -2686,6 +2724,4417 @@
      "priority": 2
     }
    ]
+  },
+  "K": {
+   "grade_band": "K",
+   "label": "Kindergarten",
+   "nodes": [
+    {
+     "id": "K.ELA",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English language arts (K-2 band; MCL: english_grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.K.1",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Print concepts: organization and basic features of print",
+     "parent": "K.ELA",
+     "prereqs": [],
+     "standards": [
+      "RF.K.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.K.2",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Phonological awareness: words, syllables, and sounds (phonemes)",
+     "parent": "K.ELA",
+     "prereqs": [
+      "RF.K.1"
+     ],
+     "standards": [
+      "RF.K.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.K.3",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Grade-level phonics and word analysis skills in decoding words",
+     "parent": "K.ELA",
+     "prereqs": [
+      "RF.K.2"
+     ],
+     "standards": [
+      "RF.K.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.K.4",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Read emergent-reader texts with purpose and understanding",
+     "parent": "K.ELA",
+     "prereqs": [
+      "RF.K.3"
+     ],
+     "standards": [
+      "RF.K.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.K.1",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Ask and answer questions about key details in a text",
+     "parent": "K.ELA",
+     "prereqs": [],
+     "standards": [
+      "RL.K.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.K.2",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Identify the main topic and retell key details of a text",
+     "parent": "K.ELA",
+     "prereqs": [
+      "RL.K.1"
+     ],
+     "standards": [
+      "RI.K.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.K.1",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Compose opinion pieces by drawing, dictating, and writing",
+     "parent": "K.ELA",
+     "prereqs": [],
+     "standards": [
+      "W.K.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.K.1",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English grammar and usage",
+     "parent": "K.ELA",
+     "prereqs": [],
+     "standards": [
+      "L.K.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.K.2",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "parent": "K.ELA",
+     "prereqs": [
+      "L.K.1"
+     ],
+     "standards": [
+      "L.K.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.ELA.letter-names",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Letter names A-Z and left-to-right print direction",
+     "parent": "K.ELA",
+     "prereqs": [],
+     "standards": [
+      "RF.K.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.ELA.letter-sounds",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "First letter sounds and rhyming words",
+     "parent": "K.ELA",
+     "prereqs": [
+      "K.ELA.letter-names"
+     ],
+     "standards": [
+      "RF.K.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.ELA.sight-words",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Sight words and CVC decoding",
+     "parent": "K.ELA",
+     "prereqs": [
+      "K.ELA.letter-sounds"
+     ],
+     "standards": [
+      "RF.K.3",
+      "RF.K.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.ELA.story-questions",
+     "grade": "K",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Answering who/what questions about a read-aloud",
+     "parent": "K.ELA",
+     "prereqs": [],
+     "standards": [
+      "RL.K.1",
+      "RI.K.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MATH",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (K-2 band; MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.CC.1",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Count to 100 by ones and by tens",
+     "parent": "K.MATH",
+     "prereqs": [],
+     "standards": [
+      "K.CC.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.CC.4",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Connect counting to cardinality (numbers and quantities)",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.CC.1"
+     ],
+     "standards": [
+      "K.CC.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.CC.5",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Count to answer how-many questions about up to 20 things",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.CC.4"
+     ],
+     "standards": [
+      "K.CC.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.OA.1",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Represent addition and subtraction with objects, drawings, and equations",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.CC.4"
+     ],
+     "standards": [
+      "K.OA.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.OA.2",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Add and subtract within 10 in word problems",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.OA.1"
+     ],
+     "standards": [
+      "K.OA.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.OA.5",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently add and subtract within 5",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.OA.1"
+     ],
+     "standards": [
+      "K.OA.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.NBT.1",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Compose and decompose numbers 11-19 into ten ones and some further ones",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.CC.4"
+     ],
+     "standards": [
+      "K.NBT.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MD.2",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Directly compare two objects with a measurable attribute in common",
+     "parent": "K.MATH",
+     "prereqs": [],
+     "standards": [
+      "K.MD.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MD.3",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Classify objects into categories and count them",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.CC.5"
+     ],
+     "standards": [
+      "K.MD.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.G.1",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Describe objects using shape names and relative positions",
+     "parent": "K.MATH",
+     "prereqs": [],
+     "standards": [
+      "K.G.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.G.2",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Correctly name shapes regardless of orientation or size",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.G.1"
+     ],
+     "standards": [
+      "K.G.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MATH.count-to-100",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Counting to 100 by ones and tens",
+     "parent": "K.MATH",
+     "prereqs": [],
+     "standards": [
+      "K.CC.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MATH.count-tell-how-many",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Counting out objects and answering how many",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.MATH.count-to-100"
+     ],
+     "standards": [
+      "K.CC.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MATH.add-subtract-5",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Addition and subtraction facts within 5",
+     "parent": "K.MATH",
+     "prereqs": [
+      "K.MATH.count-tell-how-many"
+     ],
+     "standards": [
+      "K.OA.1",
+      "K.OA.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MATH.shapes-position",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Shapes and positional words",
+     "parent": "K.MATH",
+     "prereqs": [],
+     "standards": [
+      "K.G.1",
+      "K.G.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MATH.compare-measure",
+     "grade": "K",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Comparing more/less and measuring attributes",
+     "parent": "K.MATH",
+     "prereqs": [],
+     "standards": [
+      "K.MD.2",
+      "K.MD.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.SCI",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (K-2 band; MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K-PS2-1",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Investigate the effects of different strengths or directions of pushes and pulls",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-PS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K-PS3-1",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Observe the effect of sunlight on Earth's surface",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-PS3-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K-LS1-1",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Describe patterns of what plants, animals, and humans need to survive",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-LS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K-ESS2-1",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Describe local weather patterns over time",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-ESS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K-ESS3-1",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Model how the needs of plants and animals connect to the places they live",
+     "parent": "K.SCI",
+     "prereqs": [
+      "K-LS1-1"
+     ],
+     "standards": [
+      "K-ESS3-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K-2-ETS1-1",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Ask questions and gather information to define a simple problem",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-2-ETS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.SCI.weather-patterns",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Weather watching and simple recording (practice)",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-ESS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "K.SCI.needs-of-living",
+     "grade": "K",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "What living things need: food, water, light",
+     "parent": "K.SCI",
+     "prereqs": [],
+     "standards": [
+      "K-LS1-1",
+      "K-ESS3-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.SS",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "Social studies (K-2 band; MCL: history/civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.H2.0.1",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Distinguish among the past, present, and future",
+     "parent": "K.SS",
+     "prereqs": [],
+     "standards": [
+      "K.H2.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.H2.0.2",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Create a timeline using events from their own lives",
+     "parent": "K.SS",
+     "prereqs": [
+      "K.H2.0.1"
+     ],
+     "standards": [
+      "K.H2.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.G1.0.1",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Recognize that maps and globes represent places",
+     "parent": "K.SS",
+     "prereqs": [],
+     "standards": [
+      "K.G1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.G1.0.2",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Use directions or positional words to locate places in the classroom",
+     "parent": "K.SS",
+     "prereqs": [
+      "K.G1.0.1"
+     ],
+     "standards": [
+      "K.G1.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.C1.0.1",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Identify and explain reasons for rules at home and in school",
+     "parent": "K.SS",
+     "prereqs": [],
+     "standards": [
+      "K.C1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.C2.0.1",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Identify the American flag as an important symbol of the United States",
+     "parent": "K.SS",
+     "prereqs": [
+      "K.C1.0.1"
+     ],
+     "standards": [
+      "K.C2.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.E1.0.2",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Distinguish between goods and services",
+     "parent": "K.SS",
+     "prereqs": [],
+     "standards": [
+      "K.E1.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.SS.my-day-timeline",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Timeline of my day: past, present, future",
+     "parent": "K.SS",
+     "prereqs": [],
+     "standards": [
+      "K.H2.0.1",
+      "K.H2.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.SS.classroom-rules",
+     "grade": "K",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Why we have rules and fair ways to decide",
+     "parent": "K.SS",
+     "prereqs": [],
+     "standards": [
+      "K.C1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MOTOR",
+     "grade": "K",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Motor development (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MOTOR.gross-motor",
+     "grade": "K",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Gross motor: balance, hopping, throwing, catching",
+     "parent": "K.MOTOR",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "K.MOTOR.fine-motor",
+     "grade": "K",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Fine motor: cutting, drawing lines, buttoning",
+     "parent": "K.MOTOR",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "K.ART",
+     "grade": "K",
+     "subject": "art",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Art (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.ART.color-shape",
+     "grade": "K",
+     "subject": "art",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Colors and shapes in art-making",
+     "parent": "K.ART",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "K.ART.collage",
+     "grade": "K",
+     "subject": "art",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Drawing, tearing, and collage (fine-motor practice)",
+     "parent": "K.ART",
+     "prereqs": [
+      "K.MOTOR.fine-motor"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "K.MUSIC",
+     "grade": "K",
+     "subject": "music",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Music (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "K.MUSIC.clap-rhythm",
+     "grade": "K",
+     "subject": "music",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Clapping and singing simple rhythms",
+     "parent": "K.MUSIC",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "K.MUSIC.listen-move",
+     "grade": "K",
+     "subject": "music",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Listening and moving to music",
+     "parent": "K.MUSIC",
+     "prereqs": [
+      "K.MUSIC.clap-rhythm"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    }
+   ],
+   "statutory_subjects": [
+    "ela",
+    "math",
+    "science",
+    "social_studies",
+    "motor",
+    "art",
+    "music"
+   ],
+   "cat_domains": [
+    "math",
+    "ela"
+   ],
+   "content": "standards-mapped tree only; no shipped content yet (data/content.json has no weeks/K) — content lane pending"
+  },
+  "1": {
+   "grade_band": "1",
+   "label": "Grade 1",
+   "nodes": [
+    {
+     "id": "1.ELA",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English language arts (K-2 band; MCL: english_grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.1.1",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Print concepts: distinguishing features of a sentence",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "RF.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.1.2",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Phonological awareness: long and short vowels, blending, segmenting",
+     "parent": "1.ELA",
+     "prereqs": [
+      "RF.1.1"
+     ],
+     "standards": [
+      "RF.1.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.1.3",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Grade-level phonics and word analysis skills in decoding words",
+     "parent": "1.ELA",
+     "prereqs": [
+      "RF.1.2"
+     ],
+     "standards": [
+      "RF.1.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.1.4",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Read with sufficient accuracy and fluency to support comprehension",
+     "parent": "1.ELA",
+     "prereqs": [
+      "RF.1.3"
+     ],
+     "standards": [
+      "RF.1.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.1.1",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Ask and answer questions about key details in a text",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "RL.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.1.2",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Retell stories with key details and the central message or lesson",
+     "parent": "1.ELA",
+     "prereqs": [
+      "RL.1.1"
+     ],
+     "standards": [
+      "RL.1.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.1.2",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Identify the main topic and retell key details of a text",
+     "parent": "1.ELA",
+     "prereqs": [
+      "RL.1.1"
+     ],
+     "standards": [
+      "RI.1.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.1.1",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Write opinion pieces with a topic, opinion, reason, and closure",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "W.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.1.3",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Write narratives with sequenced events and temporal words",
+     "parent": "1.ELA",
+     "prereqs": [
+      "W.1.1"
+     ],
+     "standards": [
+      "W.1.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.1.1",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English grammar and usage",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "L.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.1.2",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "parent": "1.ELA",
+     "prereqs": [
+      "L.1.1"
+     ],
+     "standards": [
+      "L.1.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.ELA.decoding-digraphs",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Consonant digraphs and one-syllable decoding",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "RF.1.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.ELA.fluency-reread",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Fluent reading with rereading and self-correction",
+     "parent": "1.ELA",
+     "prereqs": [
+      "1.ELA.decoding-digraphs"
+     ],
+     "standards": [
+      "RF.1.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.ELA.story-retell",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Retelling a story in order with the lesson",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "RL.1.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.ELA.main-topic-details",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Main topic and key details in informational text",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "RI.1.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.ELA.opinion-writing",
+     "grade": "1",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Opinion writing: topic, reason, closure",
+     "parent": "1.ELA",
+     "prereqs": [],
+     "standards": [
+      "W.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (K-2 band; MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.OA.1",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Use addition and subtraction within 20 to solve word problems",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.OA.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.OA.2",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Solve word problems adding three whole numbers within 20",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.OA.1"
+     ],
+     "standards": [
+      "1.OA.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.OA.5",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Relate counting to addition and subtraction (counting on)",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.OA.1"
+     ],
+     "standards": [
+      "1.OA.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.OA.6",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Add and subtract within 20; fluency within 10",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.OA.5"
+     ],
+     "standards": [
+      "1.OA.6"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.OA.8",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Determine the unknown whole number in an addition or subtraction equation",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.OA.6"
+     ],
+     "standards": [
+      "1.OA.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.NBT.1",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Count to 120, starting at any number less than 120",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.NBT.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.NBT.2",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Two-digit numbers are amounts of tens and ones",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.NBT.1"
+     ],
+     "standards": [
+      "1.NBT.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.NBT.4",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Add within 100 using place value and properties of operations",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.NBT.2"
+     ],
+     "standards": [
+      "1.NBT.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.NBT.5",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Mentally find 10 more or 10 less than a two-digit number",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.NBT.2"
+     ],
+     "standards": [
+      "1.NBT.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MD.3",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Tell and write time in hours and half-hours",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.MD.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MD.4",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Organize, represent, and interpret data with up to three categories",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.MD.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.G.1",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Distinguish defining from non-defining attributes of shapes",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.G.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.G.3",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Partition circles and rectangles into two and four equal shares",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.G.1"
+     ],
+     "standards": [
+      "1.G.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH.count-to-120",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Counting and writing numbers to 120",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.NBT.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH.place-value-tens-ones",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Tens and ones in two-digit numbers",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.MATH.count-to-120"
+     ],
+     "standards": [
+      "1.NBT.2",
+      "1.NBT.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH.add-sub-facts-20",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Addition and subtraction facts within 20",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.OA.6"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH.word-problems-20",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Addition and subtraction word problems within 20",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.MATH.add-sub-facts-20"
+     ],
+     "standards": [
+      "1.OA.1",
+      "1.OA.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH.two-digit-addition",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Adding tens and ones (with regrouping)",
+     "parent": "1.MATH",
+     "prereqs": [
+      "1.MATH.place-value-tens-ones"
+     ],
+     "standards": [
+      "1.NBT.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MATH.time-half-hours",
+     "grade": "1",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Reading clocks to the hour and half-hour",
+     "parent": "1.MATH",
+     "prereqs": [],
+     "standards": [
+      "1.MD.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.SCI",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (K-2 band; MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1-PS4-1",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Evidence that vibrating materials make sound and sound makes objects vibrate",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-PS4-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1-PS4-2",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Objects can be seen only when illuminated",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-PS4-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1-LS1-1",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Design a solution by mimicking how plants and animals use external parts",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-LS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1-LS3-1",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Young plants and animals are like, but not exactly like, their parents",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-LS3-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1-ESS1-1",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Describe predictable patterns of the sun, moon, and stars",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-ESS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1-ESS1-2",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Relate daylight at different times of year to the time of year",
+     "parent": "1.SCI",
+     "prereqs": [
+      "1-ESS1-1"
+     ],
+     "standards": [
+      "1-ESS1-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.SCI.sound-vibration",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Sound and vibration investigations (practice)",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-PS4-1"
+     ],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.SCI.light-and-sight",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Light, shadow, and seeing (practice)",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-PS4-2"
+     ],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.SCI.sky-patterns",
+     "grade": "1",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Sun, moon, and seasonal sky patterns",
+     "parent": "1.SCI",
+     "prereqs": [],
+     "standards": [
+      "1-ESS1-1",
+      "1-ESS1-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.SS",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "Social studies (K-2 band; MCL: history/civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.H2.0.1",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Chronological thinking: past, present, and future using family or school events",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.H2.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.H2.0.4",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Compare life today with life in the past (family, school, jobs, communication)",
+     "parent": "1.SS",
+     "prereqs": [
+      "1.H2.0.1"
+     ],
+     "standards": [
+      "1.H2.0.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.G1.0.1",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Construct simple maps of the classroom with aerial perspective",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.G1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.G1.0.2",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Describe places using absolute or relative location",
+     "parent": "1.SS",
+     "prereqs": [
+      "1.G1.0.1"
+     ],
+     "standards": [
+      "1.G1.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.C1.0.1",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Explain the need for rules and purposes of rules",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.C1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.C2.0.2",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Identify important symbols of the United States and what they represent",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.C2.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.E1.0.1",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Distinguish between producers and consumers of goods and services",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.E1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.SS.classroom-rules",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Our class rules: why rules exist",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.C1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.SS.us-symbols",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Symbols of the United States",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.C2.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.SS.map-my-classroom",
+     "grade": "1",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Mapping the classroom and locating places",
+     "parent": "1.SS",
+     "prereqs": [],
+     "standards": [
+      "1.G1.0.1",
+      "1.G1.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MOTOR",
+     "grade": "1",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Motor development (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MOTOR.gross-motor",
+     "grade": "1",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Gross motor: hopping, skipping, ball skills",
+     "parent": "1.MOTOR",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.MOTOR.fine-motor",
+     "grade": "1",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Fine motor: handwriting strokes, cutting, drawing",
+     "parent": "1.MOTOR",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.ART",
+     "grade": "1",
+     "subject": "art",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Art (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.ART.color-mixing",
+     "grade": "1",
+     "subject": "art",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Colors, shapes, and simple pattern-making",
+     "parent": "1.ART",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.ART.drawing-detail",
+     "grade": "1",
+     "subject": "art",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Drawing with detail and describing artwork",
+     "parent": "1.ART",
+     "prereqs": [
+      "1.MOTOR.fine-motor"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.MUSIC",
+     "grade": "1",
+     "subject": "music",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Music (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "1.MUSIC.beat-sing",
+     "grade": "1",
+     "subject": "music",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Steady beat, singing, and call-and-response",
+     "parent": "1.MUSIC",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "1.MUSIC.compare-songs",
+     "grade": "1",
+     "subject": "music",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Compare slow/fast and loud/soft in music",
+     "parent": "1.MUSIC",
+     "prereqs": [
+      "1.MUSIC.beat-sing"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    }
+   ],
+   "statutory_subjects": [
+    "ela",
+    "math",
+    "science",
+    "social_studies",
+    "motor",
+    "art",
+    "music"
+   ],
+   "cat_domains": [
+    "math",
+    "ela"
+   ],
+   "content": "standards-mapped tree only; no shipped content yet (data/content.json has no weeks/1) — content lane pending"
+  },
+  "2": {
+   "grade_band": "2",
+   "label": "Grade 2",
+   "nodes": [
+    {
+     "id": "2.ELA",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English language arts (K-2 band; MCL: english_grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.2.3",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Grade-level phonics: vowel teams, prefixes, and suffixes",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "RF.2.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.2.4",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Read with sufficient accuracy and fluency to support comprehension",
+     "parent": "2.ELA",
+     "prereqs": [
+      "RF.2.3"
+     ],
+     "standards": [
+      "RF.2.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.2.1",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Ask and answer who/what/where/when/why/how questions about a story",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "RL.2.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.2.2",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Recount fables and folktales and determine the central message or moral",
+     "parent": "2.ELA",
+     "prereqs": [
+      "RL.2.1"
+     ],
+     "standards": [
+      "RL.2.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.2.5",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Describe the overall structure of a story",
+     "parent": "2.ELA",
+     "prereqs": [
+      "RL.2.1"
+     ],
+     "standards": [
+      "RL.2.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.2.1",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Ask and answer who/what/where/when/why/how questions about a text",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "RI.2.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.2.2",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Identify the main topic of a multiparagraph text and paragraph focus",
+     "parent": "2.ELA",
+     "prereqs": [
+      "RI.2.1"
+     ],
+     "standards": [
+      "RI.2.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.2.3",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Describe connections between historical events, scientific ideas, or procedures",
+     "parent": "2.ELA",
+     "prereqs": [
+      "RI.2.2"
+     ],
+     "standards": [
+      "RI.2.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.2.1",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Write opinion pieces with reasons and linking words",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "W.2.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.2.2",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Write informative/explanatory texts with a concluding statement",
+     "parent": "2.ELA",
+     "prereqs": [
+      "W.2.1"
+     ],
+     "standards": [
+      "W.2.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.2.1",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English grammar and usage",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "L.2.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.2.2",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "parent": "2.ELA",
+     "prereqs": [
+      "L.2.1"
+     ],
+     "standards": [
+      "L.2.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.ELA.vowel-teams-decoding",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Vowel teams, prefixes, and suffixes in decoding",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "RF.2.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.ELA.fluency-expression",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Fluent reading with expression and self-correction",
+     "parent": "2.ELA",
+     "prereqs": [
+      "2.ELA.vowel-teams-decoding"
+     ],
+     "standards": [
+      "RF.2.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.ELA.fable-message",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Finding the message or moral of a fable",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "RL.2.2",
+      "RL.2.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.ELA.main-topic-paragraphs",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Main topic and paragraph focus in informational text",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "RI.2.2",
+      "RI.2.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.ELA.opinion-reasons",
+     "grade": "2",
+     "subject": "ela",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Opinion writing with linked reasons",
+     "parent": "2.ELA",
+     "prereqs": [],
+     "standards": [
+      "W.2.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (K-2 band; MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.OA.1",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Use addition and subtraction within 100 in one- and two-step word problems",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.OA.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.OA.2",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently add and subtract within 20 using mental strategies",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.OA.1"
+     ],
+     "standards": [
+      "2.OA.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.OA.3",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Determine whether a group of objects up to 20 is odd or even",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.OA.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.OA.4",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Use addition to total objects in rectangular arrays up to 5 by 5",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.OA.3"
+     ],
+     "standards": [
+      "2.OA.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.NBT.1",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Three digits of a three-digit number are hundreds, tens, and ones",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.NBT.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.NBT.2",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Count within 1000 and skip-count by 5s, 10s, and 100s",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.NBT.1"
+     ],
+     "standards": [
+      "2.NBT.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.NBT.3",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Read and write numbers to 1000 in numerals, words, and expanded form",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.NBT.1"
+     ],
+     "standards": [
+      "2.NBT.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.NBT.5",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently add and subtract within 100 using place value",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.NBT.3"
+     ],
+     "standards": [
+      "2.NBT.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.NBT.7",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Add and subtract within 1000 using place value strategies",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.NBT.5"
+     ],
+     "standards": [
+      "2.NBT.7"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MD.1",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Measure length using appropriate tools (rulers, yardsticks, tapes)",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.MD.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MD.7",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Tell and write time to the nearest five minutes, using a.m. and p.m.",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.MD.7"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MD.8",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Solve money word problems with dollars, quarters, dimes, nickels, pennies",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.NBT.5"
+     ],
+     "standards": [
+      "2.MD.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.G.1",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Recognize and draw shapes with specified attributes",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.G.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.G.3",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Partition circles and rectangles into two, three, or four equal shares",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.G.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH.add-sub-fluency-20",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Addition and subtraction fluency within 20",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.OA.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH.word-problems-100",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "One- and two-step word problems within 100",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.MATH.add-sub-fluency-20"
+     ],
+     "standards": [
+      "2.OA.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH.arrays-foundation",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Rows, columns, and repeated addition (arrays)",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.OA.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH.skip-counting",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Skip-counting by 5s, 10s, and 100s",
+     "parent": "2.MATH",
+     "prereqs": [],
+     "standards": [
+      "2.NBT.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH.three-digit-place-value",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Reading, writing, and comparing three-digit numbers",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.MATH.skip-counting"
+     ],
+     "standards": [
+      "2.NBT.3",
+      "2.NBT.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MATH.money-and-time",
+     "grade": "2",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Money amounts and time to five minutes",
+     "parent": "2.MATH",
+     "prereqs": [
+      "2.MATH.three-digit-place-value"
+     ],
+     "standards": [
+      "2.MD.7",
+      "2.MD.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SCI",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (K-2 band; MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-PS1-1",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Describe and classify materials by their observable properties",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-PS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-PS1-2",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Analyze test data to choose materials suited to a use",
+     "parent": "2.SCI",
+     "prereqs": [
+      "2-PS1-1"
+     ],
+     "standards": [
+      "2-PS1-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-PS1-4",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Some changes from heating or cooling can be reversed and some cannot",
+     "parent": "2.SCI",
+     "prereqs": [
+      "2-PS1-1"
+     ],
+     "standards": [
+      "2-PS1-4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-LS2-1",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Investigate whether plants need sunlight and water to grow",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-LS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-LS4-1",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Compare the diversity of life in different habitats",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-LS4-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-ESS1-1",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Evidence that Earth events can occur quickly or slowly",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-ESS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-ESS2-1",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Compare solutions that slow wind or water changing the land",
+     "parent": "2.SCI",
+     "prereqs": [
+      "2-ESS1-1"
+     ],
+     "standards": [
+      "2-ESS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2-ESS2-2",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Model the shapes and kinds of land and bodies of water in an area",
+     "parent": "2.SCI",
+     "prereqs": [
+      "2-ESS2-1"
+     ],
+     "standards": [
+      "2-ESS2-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SCI.material-properties",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Material properties and sorting (practice)",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-PS1-1",
+      "2-PS1-2"
+     ],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "2.SCI.plants-need-sun-water",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Plant needs: sunlight and water investigations",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-LS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SCI.land-and-water",
+     "grade": "2",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Land, water, and weathering in our area",
+     "parent": "2.SCI",
+     "prereqs": [],
+     "standards": [
+      "2-ESS2-1",
+      "2-ESS2-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SS",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "Social studies (K-2 band; MCL: history/civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.H2.0.1",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Chronological thinking across years and decades using a community timeline",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.H2.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.H2.0.4",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Describe changes in the local community over time",
+     "parent": "2.SS",
+     "prereqs": [
+      "2.H2.0.1"
+     ],
+     "standards": [
+      "2.H2.0.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.G1.0.1",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Construct maps of the local community with symbols, labels, and legends",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.G1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.G4.0.1",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Describe land use in the community",
+     "parent": "2.SS",
+     "prereqs": [
+      "2.G1.0.1"
+     ],
+     "standards": [
+      "2.G4.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.C1.0.1",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Explain why people form governments",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.C1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.C3.0.1",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "How local governments make, enforce, and interpret laws (ordinances)",
+     "parent": "2.SS",
+     "prereqs": [
+      "2.C1.0.1"
+     ],
+     "standards": [
+      "2.C3.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.E1.0.1",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Identify the opportunity cost involved in a consumer decision",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.E1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SS.community-timeline",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Building a timeline of our community",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.H2.0.1",
+      "2.H2.0.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SS.community-map",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Mapping our community and its land use",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.G1.0.1",
+      "2.G4.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.SS.local-government",
+     "grade": "2",
+     "subject": "social_studies",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Local government services and rules",
+     "parent": "2.SS",
+     "prereqs": [],
+     "standards": [
+      "2.C3.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MOTOR",
+     "grade": "2",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Motor development (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MOTOR.gross-motor",
+     "grade": "2",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Gross motor: coordination, endurance, team games",
+     "parent": "2.MOTOR",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "2.MOTOR.fine-motor",
+     "grade": "2",
+     "subject": "motor",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Fine motor: handwriting fluency and tool use",
+     "parent": "2.MOTOR",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "2.ART",
+     "grade": "2",
+     "subject": "art",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Art (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.ART.design-steps",
+     "grade": "2",
+     "subject": "art",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Planning and describing a drawing or craft",
+     "parent": "2.ART",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "2.ART.art-in-culture",
+     "grade": "2",
+     "subject": "art",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Art from our community and cultures",
+     "parent": "2.ART",
+     "prereqs": [
+      "2.SS.community-map"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "2.MUSIC",
+     "grade": "2",
+     "subject": "music",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Music (K-2 band; not in the MCL nine)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "2.MUSIC.rhythm-patterns",
+     "grade": "2",
+     "subject": "music",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Clapping and notating rhythm patterns",
+     "parent": "2.MUSIC",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "2.MUSIC.sing-clear",
+     "grade": "2",
+     "subject": "music",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Singing with clear voice and steady beat",
+     "parent": "2.MUSIC",
+     "prereqs": [
+      "2.MUSIC.rhythm-patterns"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    }
+   ],
+   "statutory_subjects": [
+    "ela",
+    "math",
+    "science",
+    "social_studies",
+    "motor",
+    "art",
+    "music"
+   ],
+   "cat_domains": [
+    "math",
+    "ela"
+   ],
+   "content": "standards-mapped tree only; no shipped content yet (data/content.json has no weeks/2) — content lane pending"
+  },
+  "4": {
+   "grade_band": "4",
+   "label": "Grade 4",
+   "nodes": [
+    {
+     "id": "4.MATH",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.OA.1",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Interpret a multiplication equation as a comparison",
+     "parent": "4.MATH",
+     "prereqs": [],
+     "standards": [
+      "4.OA.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.OA.3",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Solve multistep word problems with the four operations; interpret remainders",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.OA.1"
+     ],
+     "standards": [
+      "4.OA.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.OA.4",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Find all factor pairs for a whole number 1-100 and recognize multiples",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.OA.1"
+     ],
+     "standards": [
+      "4.OA.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NBT.1",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "A digit is ten times what it represents in the place to its right",
+     "parent": "4.MATH",
+     "prereqs": [],
+     "standards": [
+      "4.NBT.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NBT.2",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Read, write, and compare multi-digit whole numbers",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NBT.1"
+     ],
+     "standards": [
+      "4.NBT.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NBT.3",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Round multi-digit whole numbers to any place",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NBT.2"
+     ],
+     "standards": [
+      "4.NBT.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NBT.4",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently add and subtract multi-digit whole numbers (standard algorithm)",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NBT.2"
+     ],
+     "standards": [
+      "4.NBT.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NBT.5",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Multiply up to four digits by one digit; multiply two two-digit numbers",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NBT.2"
+     ],
+     "standards": [
+      "4.NBT.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NBT.6",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Find quotients and remainders with four-digit dividends and one-digit divisors",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NBT.5"
+     ],
+     "standards": [
+      "4.NBT.6"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NF.1",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Explain why a fraction a/b is equivalent to (n x a)/(n x b)",
+     "parent": "4.MATH",
+     "prereqs": [],
+     "standards": [
+      "4.NF.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NF.2",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Compare fractions with different numerators and denominators",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NF.1"
+     ],
+     "standards": [
+      "4.NF.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.NF.3",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand a fraction greater than 1 as a sum of fractions",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NF.1"
+     ],
+     "standards": [
+      "4.NF.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MD.3",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Apply the area and perimeter formulas for rectangles",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.NBT.2"
+     ],
+     "standards": [
+      "4.MD.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MATH.multiplicative-comparison",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multiplicative comparison statements and equations",
+     "parent": "4.MATH",
+     "prereqs": [],
+     "standards": [
+      "4.OA.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MATH.multistep-word-problems",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multistep problems with remainders",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.MATH.multiplicative-comparison"
+     ],
+     "standards": [
+      "4.OA.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MATH.multi-digit-add-sub",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multi-digit addition and subtraction fluency",
+     "parent": "4.MATH",
+     "prereqs": [],
+     "standards": [
+      "4.NBT.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MATH.multi-digit-multiplication",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multi-digit multiplication strategies",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.MATH.multi-digit-add-sub"
+     ],
+     "standards": [
+      "4.NBT.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MATH.division-remainders",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Division with remainders and interpretation",
+     "parent": "4.MATH",
+     "prereqs": [
+      "4.MATH.multi-digit-multiplication"
+     ],
+     "standards": [
+      "4.NBT.6"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.MATH.fraction-equivalence",
+     "grade": "4",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Equivalent fractions and comparing fractions",
+     "parent": "4.MATH",
+     "prereqs": [],
+     "standards": [
+      "4.NF.1",
+      "4.NF.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.READ",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "strand",
+     "label": "Reading (MCL: reading)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.4.1",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Use details and examples to explain and infer from a text",
+     "parent": "4.READ",
+     "prereqs": [],
+     "standards": [
+      "RI.4.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.4.2",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Determine the main idea and how it is supported by key details",
+     "parent": "4.READ",
+     "prereqs": [
+      "RI.4.1"
+     ],
+     "standards": [
+      "RI.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.4.3",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Explain events, procedures, or concepts in a historical or technical text",
+     "parent": "4.READ",
+     "prereqs": [
+      "RI.4.2"
+     ],
+     "standards": [
+      "RI.4.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.4.5",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Describe the overall structure of a text (chronology, compare, cause/effect)",
+     "parent": "4.READ",
+     "prereqs": [
+      "RI.4.2"
+     ],
+     "standards": [
+      "RI.4.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.4.3",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Decode multisyllabic words using syllabication and morphology",
+     "parent": "4.READ",
+     "prereqs": [],
+     "standards": [
+      "RF.4.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RF.4.4",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Read with sufficient accuracy and fluency to support comprehension",
+     "parent": "4.READ",
+     "prereqs": [
+      "RF.4.3"
+     ],
+     "standards": [
+      "RF.4.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.READ.text-evidence",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Comprehension with text evidence (incl. cloze)",
+     "parent": "4.READ",
+     "prereqs": [],
+     "standards": [
+      "RI.4.1",
+      "RI.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.READ.main-idea-summarize",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Main idea, structure, and summarizing",
+     "parent": "4.READ",
+     "prereqs": [
+      "4.READ.text-evidence"
+     ],
+     "standards": [
+      "RI.4.2",
+      "RI.4.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.READ.multisyllabic-decoding",
+     "grade": "4",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Multisyllabic decoding and fluency practice",
+     "parent": "4.READ",
+     "prereqs": [],
+     "standards": [
+      "RF.4.3",
+      "RF.4.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.LIT",
+     "grade": "4",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "strand",
+     "label": "Literature (MCL: literature)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.4.1",
+     "grade": "4",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Use details and examples to explain and infer from a literary text",
+     "parent": "4.LIT",
+     "prereqs": [],
+     "standards": [
+      "RL.4.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.4.2",
+     "grade": "4",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Determine a theme from details in the text; summarize",
+     "parent": "4.LIT",
+     "prereqs": [
+      "RL.4.1"
+     ],
+     "standards": [
+      "RL.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.4.3",
+     "grade": "4",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Describe in depth a character, setting, or event using specific details",
+     "parent": "4.LIT",
+     "prereqs": [
+      "RL.4.1"
+     ],
+     "standards": [
+      "RL.4.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.LIT.theme-summary",
+     "grade": "4",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "skill",
+     "label": "Theme and summary in stories, drama, and poetry",
+     "parent": "4.LIT",
+     "prereqs": [],
+     "standards": [
+      "RL.4.2",
+      "RL.4.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.WRIT",
+     "grade": "4",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "strand",
+     "label": "Writing (MCL: writing)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.4.1",
+     "grade": "4",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Opinion pieces that support a point of view with reasons and information",
+     "parent": "4.WRIT",
+     "prereqs": [],
+     "standards": [
+      "W.4.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.4.2",
+     "grade": "4",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Informative/explanatory texts that examine a topic clearly",
+     "parent": "4.WRIT",
+     "prereqs": [
+      "W.4.1"
+     ],
+     "standards": [
+      "W.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.WRIT.opinion",
+     "grade": "4",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Opinion writing: reasons, facts, linking words, conclusion",
+     "parent": "4.WRIT",
+     "prereqs": [],
+     "standards": [
+      "W.4.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.WRIT.informative",
+     "grade": "4",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Informative writing: structure, detail, precise language",
+     "parent": "4.WRIT",
+     "prereqs": [],
+     "standards": [
+      "W.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.GRAM",
+     "grade": "4",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English grammar (MCL: English grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.4.1",
+     "grade": "4",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English grammar and usage",
+     "parent": "4.GRAM",
+     "prereqs": [],
+     "standards": [
+      "L.4.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.4.2",
+     "grade": "4",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "parent": "4.GRAM",
+     "prereqs": [
+      "L.4.1"
+     ],
+     "standards": [
+      "L.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.4.5",
+     "grade": "4",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Figurative language, word relationships, and nuances in word meanings",
+     "parent": "4.GRAM",
+     "prereqs": [],
+     "standards": [
+      "L.4.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.GRAM.sentence-conventions",
+     "grade": "4",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Sentence structure, fragments, and run-ons",
+     "parent": "4.GRAM",
+     "prereqs": [],
+     "standards": [
+      "L.4.1",
+      "L.4.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.GRAM.figurative-language",
+     "grade": "4",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Similes, metaphors, idioms, and antonyms/synonyms",
+     "parent": "4.GRAM",
+     "prereqs": [],
+     "standards": [
+      "L.4.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.SPELL",
+     "grade": "4",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "strand",
+     "label": "Spelling (MCL: spelling)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.4.2.d",
+     "grade": "4",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "standard",
+     "label": "Spell grade-appropriate words correctly, consulting references as needed",
+     "parent": "4.SPELL",
+     "prereqs": [
+      "RF.4.3"
+     ],
+     "standards": [
+      "L.4.2.d"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.SPELL.patterns",
+     "grade": "4",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "skill",
+     "label": "Spelling patterns and reference-checking routine",
+     "parent": "4.SPELL",
+     "prereqs": [
+      "4.READ.multisyllabic-decoding"
+     ],
+     "standards": [
+      "L.4.2.d"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.SCI",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-PS3-1",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Explain how the speed of an object relates to the energy of that object",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-PS3-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-PS3-3",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Ask questions and predict outcomes about energy changes in collisions",
+     "parent": "4.SCI",
+     "prereqs": [
+      "4-PS3-1"
+     ],
+     "standards": [
+      "4-PS3-3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-PS4-1",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Model waves in terms of amplitude and wavelength",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-PS4-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-LS1-1",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Internal and external structures support survival and reproduction",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-LS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-LS1-2",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Model how animals receive, process, and respond to sensory information",
+     "parent": "4.SCI",
+     "prereqs": [
+      "4-LS1-1"
+     ],
+     "standards": [
+      "4-LS1-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-ESS1-1",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Evidence from patterns in rock formations and fossils in rock layers",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-ESS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-ESS2-1",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Evidence of the effects of weathering and erosion by water, ice, wind, vegetation",
+     "parent": "4.SCI",
+     "prereqs": [
+      "4-ESS1-1"
+     ],
+     "standards": [
+      "4-ESS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4-PS3-4",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Design, test, and refine a device that converts energy from one form to another",
+     "parent": "4.SCI",
+     "prereqs": [
+      "4-PS3-3"
+     ],
+     "standards": [
+      "4-PS3-4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.SCI.energy-and-motion",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Energy, speed, and collisions (practice)",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-PS3-1",
+      "4-PS3-3"
+     ],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "4.SCI.waves-sound-light",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Waves, sound, and light (practice)",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-PS4-1"
+     ],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "4.SCI.rocks-and-fossils",
+     "grade": "4",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Rocks, fossils, and Michigan geologic time",
+     "parent": "4.SCI",
+     "prereqs": [],
+     "standards": [
+      "4-ESS1-1",
+      "4-ESS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.HIST",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "History & geography (MCL: history)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.H3.0.1",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Historical inquiry questions on Michigan economic activities since statehood",
+     "parent": "4.HIST",
+     "prereqs": [],
+     "standards": [
+      "4.H3.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.H3.0.2",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Primary and secondary sources on how migration shaped Michigan",
+     "parent": "4.HIST",
+     "prereqs": [
+      "4.H3.0.1"
+     ],
+     "standards": [
+      "4.H3.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.G1.0.1",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Questions geographers ask when examining the United States",
+     "parent": "4.HIST",
+     "prereqs": [],
+     "standards": [
+      "4.G1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.G1.0.5",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Hemispheres, continents, oceans, and lines of latitude locate the United States",
+     "parent": "4.HIST",
+     "prereqs": [
+      "4.G1.0.1"
+     ],
+     "standards": [
+      "4.G1.0.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.G2.0.1",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Describe ways the United States can be divided into regions",
+     "parent": "4.HIST",
+     "prereqs": [
+      "4.G1.0.5"
+     ],
+     "standards": [
+      "4.G2.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.G4.0.1",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Push and pull factors in a migration case study",
+     "parent": "4.HIST",
+     "prereqs": [
+      "4.H3.0.2"
+     ],
+     "standards": [
+      "4.G4.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.HIST.michigan-inquiry",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Michigan history inquiry: then and now",
+     "parent": "4.HIST",
+     "prereqs": [],
+     "standards": [
+      "4.H3.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.HIST.primary-sources",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Primary vs secondary sources (practice)",
+     "parent": "4.HIST",
+     "prereqs": [],
+     "standards": [
+      "4.H3.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.HIST.us-regions-maps",
+     "grade": "4",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "U.S. regions, maps, and migration stories",
+     "parent": "4.HIST",
+     "prereqs": [],
+     "standards": [
+      "4.G2.0.1",
+      "4.G4.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.CIV",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "strand",
+     "label": "Civics (MCL: civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.C1.0.1",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Questions political scientists ask when examining the United States",
+     "parent": "4.CIV",
+     "prereqs": [],
+     "standards": [
+      "4.C1.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.C1.0.2",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Purposes of government as stated in the Preamble of the Constitution",
+     "parent": "4.CIV",
+     "prereqs": [
+      "4.C1.0.1"
+     ],
+     "standards": [
+      "4.C1.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.C2.0.1",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Popular sovereignty, rule of law, checks and balances, and individual rights",
+     "parent": "4.CIV",
+     "prereqs": [
+      "4.C1.0.2"
+     ],
+     "standards": [
+      "4.C2.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.C3.0.1",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Ways the Constitution limits the powers of the federal government",
+     "parent": "4.CIV",
+     "prereqs": [
+      "4.C1.0.2"
+     ],
+     "standards": [
+      "4.C3.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.C5.0.1",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Responsibilities of members of American society",
+     "parent": "4.CIV",
+     "prereqs": [
+      "4.C2.0.1"
+     ],
+     "standards": [
+      "4.C5.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.CIV.preamble-purposes",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "skill",
+     "label": "The Preamble and its purposes",
+     "parent": "4.CIV",
+     "prereqs": [],
+     "standards": [
+      "4.C1.0.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "4.CIV.limits-on-government",
+     "grade": "4",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "skill",
+     "label": "Checks, balances, and limits on government power",
+     "parent": "4.CIV",
+     "prereqs": [],
+     "standards": [
+      "4.C2.0.1",
+      "4.C3.0.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    }
+   ],
+   "statutory_subjects": [
+    "math",
+    "reading",
+    "writing",
+    "english_grammar",
+    "spelling",
+    "literature",
+    "science",
+    "history",
+    "civics"
+   ],
+   "cat_domains": [
+    "math",
+    "ela"
+   ],
+   "content": "standards-mapped tree only; no shipped content yet (data/content.json has no weeks/4) — content lane pending"
   }
+ },
+ "standards_maps": {
+  "schema": "standards_maps/v1",
+  "file": "data/standards_maps.json",
+  "grades": [
+   "K",
+   "1",
+   "2",
+   "4"
+  ],
+  "sources": [
+   {
+    "id": "ccss-ela",
+    "title": "Common Core State Standards for English Language Arts & Literacy in History/Social Studies, Science, and Technical Subjects",
+    "url": "https://corestandards.org/wp-content/uploads/2023/09/ELA_Standards1.pdf",
+    "accessed": "2026-10-17"
+   },
+   {
+    "id": "ccss-math",
+    "title": "Common Core State Standards for Mathematics",
+    "url": "https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf",
+    "accessed": "2026-10-17"
+   },
+   {
+    "id": "ngss",
+    "title": "Next Generation Science Standards — Grades K-5 by Topic (September 2017, (c)2013 Achieve, Inc.)",
+    "url": "https://www.nextgenscience.org/sites/default/files/K-5Topic.pdf",
+    "accessed": "2026-10-17"
+   },
+   {
+    "id": "mi-social-studies",
+    "title": "Michigan K-12 Standards for Social Studies (Grade Level Content Expectations, GLCE coding K-4: <grade>-<discipline><category>.0.<expectation>)",
+    "url": "https://www.michigan.gov/-/media/Project/Websites/mde/Academic-Standards/Social_Studies_Standards.pdf",
+    "accessed": "2026-10-17"
+   }
+  ]
  }
 }

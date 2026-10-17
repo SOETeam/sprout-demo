@@ -17,6 +17,10 @@
         (mastered needs non-practice evidence), Leitner monotonicity
      7. engine_schemas.json covers all four P1 schemas and their files exist
      8. node --check passes on every js/ provider file
+   K/1/2/4 extension (lane A): those grade bands are standards-mapped tree only
+   (no shipped content). Every structural gate above covers them; the content
+   gates (subject union vs content.json, CAT floor) print NOTE lines instead of
+   FAIL lines until the content lane lands items for them.
    Zero network. Exit 0 = all gates green; 1 = at least one FAIL.
    ------------------------------------------------------------------ */
 'use strict';
@@ -47,6 +51,11 @@ ok('item_bank/v1 marker', bank.schema === 'item_bank/v1', bank.schema);
 ok('engine_schema_registry/v1 marker', reg.schema === 'engine_schema_registry/v1', reg.schema);
 ok('registry covers the four P1 schemas',
   ['skill_tree/v1', 'item/v1', 'events/v1', 'mastery/v1'].every((s) => reg.schemas[s]));
+/* K/1/2/4 extension (lane A): standards-mapped grades with no shipped content
+   yet. They are covered by every structural gate above/below (they ride in
+   tree.grades), but the content-dependent gates (subject union vs
+   content.json, CAT floor) cannot pass without content — those print NOTEs. */
+const NEW_GRADES = ['K', '1', '2', '4'];
 
 /* ------------------------------------------------------- 1. skill_tree */
 section('skill_tree/v1 integrity');
@@ -99,6 +108,16 @@ for (const g of ['preschool', '3', '5']) {
   const missing = tree.statutory_subjects.filter((s) => !union.has(s));
   if (missing.length) console.log('NOTE  grade ' + g + ' statutory subjects with no shipped content (arch §0 gap, P2 must close): ' + missing.join(','));
 }
+/* new grades: standards-mapped tree only — structural gates apply, content
+   gates are deferred to the content lane (NOTEs, never FAILs) */
+for (const g of NEW_GRADES) {
+  const gn = tree.grades[g] || {};
+  const gs = (gn.nodes || []).filter((n) => n.grade === g);
+  console.log('NOTE  grade ' + g + ' standards-mapped tree: ' + gs.length + ' nodes (' +
+    ['strand', 'standard', 'skill'].map((k) => k + '=' + gs.filter((n) => n.kind === k).length).join(' ') +
+    '), statutory band [' + (gn.statutory_subjects || []).join(',') + '], CAT domains [' +
+    (gn.cat_domains || ['math', 'ela']).join(',') + '] — content pending (0 items)');
+}
 
 /* ------------------------------------------------------ subject matching */
 section('subject lists match content.json');
@@ -112,6 +131,10 @@ for (const g of ['preschool', '3', '5']) {
   const want = contentSubjects(g).join(',');
   const have = (tree.grade_subjects[g] || []).join(',');
   ok('grade ' + g + ' subject union matches content.json', want === have, have);
+}
+for (const g of NEW_GRADES) {
+  console.log('NOTE  grade ' + g + ' subject union is the statutory band (content.json has no weeks/' +
+    g + ' yet): ' + (tree.grade_subjects[g] || []).join(','));
 }
 
 /* ---------------------------------------------------------- 2. item bank */
@@ -191,6 +214,13 @@ for (const g of ['preschool', '3', '5']) {
     const n = items.filter((i) => i.grade === g && i.cat_domain === d).length;
     ok('grade ' + g + ' ' + d + ' >= 16 items', n >= 16, n + ' items');
   }
+}
+/* new grades: the floor is declared (cat_domains) but unreachable until the
+   content lane ships items — NOTE, not FAIL (lane-A scope: tree only) */
+for (const g of NEW_GRADES) {
+  const doms = (tree.grades[g] || {}).cat_domains || CATS;
+  console.log('NOTE  grade ' + g + ' CAT floor deferred (content lane pending): ' +
+    doms.map((d) => d + '=' + items.filter((i) => i.grade === g && i.cat_domain === d).length + '/' + 16).join(', '));
 }
 
 /* --------------------------------------------- 5. events append-only law */
@@ -274,7 +304,7 @@ ok('resetChild removes only that child key', (MAST.resetChild(cid), MAST.getNode
 /* ------------------------------------ 7. schema registry files exist */
 section('engine_schemas.json registry');
 ok('registry names files that exist',
-  ['data/skill_tree.json', 'data/items.json', 'js/events.js', 'js/mastery.js']
+  ['data/skill_tree.json', 'data/items.json', 'data/standards_maps.json', 'js/events.js', 'js/mastery.js']
     .every((f) => fs.existsSync(path.join(ROOT, f))));
 ok('registry documents append-only law',
   JSON.stringify(reg.schemas['events/v1'].invariants).includes('NO mutation'));
@@ -295,7 +325,7 @@ for (const f of ['js/events.js', 'js/mastery.js', 'js/app.js', 'js/generator.js'
 /* ------------------------------------------------------------- summary */
 section('SUMMARY');
 const perGrade = {};
-for (const g of ['preschool', '3', '5']) {
+for (const g of ['preschool', '3', '5', 'K', '1', '2', '4']) {
   perGrade[g] = {
     items: items.filter((i) => i.grade === g).length,
     math: items.filter((i) => i.grade === g && i.cat_domain === 'math').length,

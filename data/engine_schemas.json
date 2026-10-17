@@ -1,8 +1,20 @@
 {
  "schema": "engine_schema_registry/v1",
- "registry_version": 1,
+ "registry_version": 2,
  "generated_at": "2026-10-17",
  "contract": "SPROUT_ENGINE_ARCH_2026-10-17.md §1 (data model) + §9 (guardrails). Every engine object carries a schema marker; readers reject unknown versions. P1 ships the four registry entries below as provider globals only — no app wiring until P2.",
+ "changelog": [
+  {
+   "version": 2,
+   "date": "2026-10-17",
+   "change": "K-5 lane A: standards_maps/v1 registered (data/standards_maps.json, public sources); skill_tree/v1 gains grade bands K, 1, 2, 4 (standards-mapped, no item content yet) with per-grade statutory_subjects, cat_domains and content fields appended additively; grades preschool/3/5 byte-unchanged."
+  },
+  {
+   "version": 1,
+   "date": "2026-10-17",
+   "change": "Initial P1 registry: skill_tree/v1, item/v1, events/v1, mastery/v1."
+  }
+ ],
  "laws": [
   "append-only events: no mutation or deletion API exists on SPROUT_EVENTS (§1E)",
   "mastery gate is 0.80 for every child; profile modifiers never touch scoring (§9)",
@@ -22,13 +34,22 @@
     "subject_source": "string — canonical subject list provenance",
     "statutory_subjects": ["string[] — the nine MCL 380.1561(3)(f) subjects"],
     "grade_subjects": {"<grade_band>": "string[] — subject union for that grade"},
+    "standards_maps": {
+     "schema": "standards_maps/v1",
+     "file": "data/standards_maps.json",
+     "grades": ["K", "1", "2", "4"],
+     "sources": [{"id": "string", "title": "string", "url": "string", "accessed": "YYYY-MM-DD"}]
+    },
     "grades": {
      "<grade_band>": {
-      "grade_band": "preschool | 3 | 5",
+      "grade_band": "preschool | 3 | 5 | K | 1 | 2 | 4",
       "label": "string",
+      "statutory_subjects": "string[] — (new grades only) per-grade statutory band: K/1/2 = [ela,math,science,social_studies,motor,art,music], 4 = the full MCL nine in engine subject vocabulary",
+      "cat_domains": "[\"math\",\"ela\"] — (new grades only) CAT placement domains once item content lands",
+      "content": "string — (new grades only) standards-mapped only; content lane pending",
       "nodes": [{
-       "id": "string — unique node_id (CASE-shaped: 3.OA.1 / 3.OA.7.multiplication-facts)",
-       "grade": "preschool | 3 | 5",
+       "id": "string — unique node_id (CASE-shaped: 3.OA.1 / RF.K.1 / K.H2.0.1 / 3.OA.7.multiplication-facts)",
+       "grade": "preschool | 3 | 5 | K | 1 | 2 | 4",
        "subject": "string — content.json subject vocabulary (math, reading, ...)",
        "statutory": "string|null — MCL subject name; null = enrichment (e.g. coding)",
        "kind": "strand | standard | skill",
@@ -47,7 +68,26 @@
     "parent and every prereq resolve within the same grade",
     "no cycles in parent or prereq graphs",
     "statutory is one of statutory_subjects or null",
-    "subject is in grade_subjects[grade]"
+    "subject is in grade_subjects[grade]",
+    "K/1/2/4 standard nodes are a 1:1 match with data/standards_maps.json (public CCSS/NGSS/MI codes; asserted by tools/build_engine_data.py)",
+    "new grades carry zero items until their content lane lands (validator prints NOTEs, never FAILs)"
+   ]
+  },
+  "standards_maps/v1": {
+   "file": "data/standards_maps.json",
+   "kind": "reference bundle (read-only)",
+   "provenance": "public standards documents only, read 2026-10-17 — CCSS ELA + CCSS Mathematics + NGSS K-5 by Topic + Michigan K-12 Social Studies GLCE (URLs + access dates in the file's sources[] and in tools/build_engine_data.py's header)",
+   "shape": {
+    "schema": "standards_maps/v1",
+    "accessed": "YYYY-MM-DD",
+    "sources": [{"id": "string", "title": "string", "publisher": "string", "url": "string", "accessed": "YYYY-MM-DD"}],
+    "code_conventions": {"<area>": "string — how the code was normalized (e.g. CCSS cluster letter dropped)"},
+    "grades": {"K|1|2|4": {"<subject>": [{"id": "string — standard code", "label": "string — one-line label condensed from the public text", "source": "string — source id"}]}}
+   },
+   "invariants": [
+    "every K/1/2/4 standard node id in skill_tree/v1 appears here, and every entry here is a standard node (1:1)",
+    "codes and labels are copied from the listed public documents — never derived from SPROUT-authored item text",
+    "no item/v1 content may be generated from this file"
    ]
   },
   "item/v1": {

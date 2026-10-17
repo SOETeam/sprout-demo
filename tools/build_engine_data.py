@@ -21,6 +21,29 @@ snapshot would misrepresent it. They shape the skill tree (each config's skill
 gets a node) and bank-mode configs (which carry authored literal items[]) are
 derived verbatim.
 
+Standards maps — K/1/2/4 extension (lane A, additive). data/standards_maps.json
+holds the grade-band standards codes + one-line labels for the four new grades.
+Every entry was copied from a PUBLIC standards document; sources and read dates:
+
+  * Common Core State Standards for English Language Arts & Literacy
+      https://corestandards.org/wp-content/uploads/2023/09/ELA_Standards1.pdf
+      (HTML index https://www.thecorestandards.org/ELA-Literacy/)  read 2026-10-17
+  * Common Core State Standards for Mathematics
+      https://corestandards.org/wp-content/uploads/2023/09/Math_Standards1.pdf
+      (HTML index https://www.thecorestandards.org/Math/)          read 2026-10-17
+  * Next Generation Science Standards — Grades K-5 by Topic (Achieve, Sept 2017)
+      https://www.nextgenscience.org/sites/default/files/K-5Topic.pdf
+      (HTML index https://www.nextgenscience.org/topics)           read 2026-10-17
+  * Michigan K-12 Standards for Social Studies (MDE, GLCE coding K-4)
+      https://www.michigan.gov/-/media/Project/Websites/mde/Academic-Standards/Social_Studies_Standards.pdf
+                                                                read 2026-10-17
+
+The K/1/2/4 node spec below claims ONLY codes present in that map (asserted
+1:1 at build time) and carries NO item text — the new grades ship a
+standards-mapped tree only, until their content lane lands. Regeneration is
+additive: grades preschool/3/5 and data/items.json are byte-identical to the
+pre-extension build.
+
 Output: data/skill_tree.json, data/items.json (both pretty-printed, stable key
 order so diffs are reviewable).
 """
@@ -38,18 +61,54 @@ OUT_ITEMS = os.path.join(ROOT, OUT_ITEMS)
 with open(SRC) as f:
     C = json.load(f)
 
+MAPS_SRC = os.path.join(ROOT, 'data/standards_maps.json')
+with open(MAPS_SRC) as f:
+    STD_MAPS = json.load(f)  # standards_maps/v1 — public-source codes/labels
+MAP_IDS = {g: {s['id'] for subj in STD_MAPS['grades'][g].values() for s in subj}
+           for g in STD_MAPS['grades']}
+assert sorted(MAP_IDS) == ['1', '2', '4', 'K'], 'standards map must cover K/1/2/4 only'
+
 STATUTORY = list(C['statutory'])  # 9 MCL 380.1561(3)(f) subjects
 SUBJ_TO_STATUTORY = {
     'math': 'mathematics', 'ela': 'english_grammar', 'reading': 'reading',
     'spelling': 'spelling', 'science': 'science', 'history': 'history',
     'civics': 'civics', 'literature': 'literature', 'writing': 'writing',
     'english_grammar': 'english_grammar', 'coding': None,  # enrichment
+    # K-2 band vocabulary (engine subjects, see STATUTORY_BAND): social studies
+    # folds into MCL 'history' (the crosswalk's single-valued subject map);
+    # motor/art/music are not among the D7 nine -> null enrichment-style slots.
+    'social_studies': 'history', 'motor': None, 'art': None, 'music': None,
 }
 CAT_DOMAIN = {  # content subject -> CAT domain (content.assessment.domains = [math, ela])
     'math': 'math', 'reading': 'ela', 'spelling': 'ela', 'writing': 'ela',
-    'english_grammar': 'ela', 'literature': 'ela',
+    'english_grammar': 'ela', 'literature': 'ela', 'ela': 'ela',
     'science': None, 'history': None, 'civics': None, 'coding': None,
+    'social_studies': None, 'motor': None, 'art': None, 'music': None,
 }
+
+# --------------------------- K/1/2/4 extension ------------------------------
+# Grades with no data/content.json weeks yet: their tree is standards-mapped
+# (data/standards_maps.json) and ships WITHOUT items until a content lane lands.
+NEW_GRADES = ['K', '1', '2', '4']
+GRADE_LABELS = {'K': 'Kindergarten', '1': 'Grade 1', '2': 'Grade 2', '4': 'Grade 4'}
+# Per-grade statutory band (MI compliance). K-2 use the early-grade engine band;
+# grade 4 carries the full MCL nine expressed in engine subject vocabulary
+# (mathematics -> math), which is exactly grade_subjects['4'].
+STATUTORY_BAND = {
+    'K': ['ela', 'math', 'science', 'social_studies', 'motor', 'art', 'music'],
+    '1': ['ela', 'math', 'science', 'social_studies', 'motor', 'art', 'music'],
+    '2': ['ela', 'math', 'science', 'social_studies', 'motor', 'art', 'music'],
+    '4': ['math', 'reading', 'writing', 'english_grammar', 'spelling',
+          'literature', 'science', 'history', 'civics'],
+}
+assert all(g in STATUTORY_BAND for g in NEW_GRADES)
+assert len(STATUTORY_BAND['4']) == 9, 'grade 4 must carry the full nine-band'
+assert all(s in SUBJ_TO_STATUTORY for g in NEW_GRADES for s in STATUTORY_BAND[g]), \
+    'every band subject must map to an MCL name or null'
+NEW_GRADE_SUBJECTS = {g: sorted(set(STATUTORY_BAND[g])) for g in NEW_GRADES}
+# The band is the ONLY subject source for a new grade (no content.json weeks).
+for g in NEW_GRADES:
+    assert g not in C['weeks'], 'grade %s already has content weeks' % g
 
 def grade_subjects(g):
     """Union of grade-meta subjects and week block subjects (canonical list)."""
@@ -62,6 +121,8 @@ def grade_subjects(g):
     return sorted(s)
 
 GRADE_SUBJECTS = {g: grade_subjects(g) for g in C['weeks']}
+# New grades derive their subject list from the statutory band (no content yet).
+GRADE_SUBJECTS.update(NEW_GRADE_SUBJECTS)
 
 # ---------------------------------------------------------------------------
 # Skill tree spec. Node tuple: (id, grade, subject, kind, label, parent,
@@ -257,6 +318,301 @@ NODES += [
     SK('P.SCI.play', 'preschool', 'science', 'Outdoor & sensory discovery', 'P.SCI', (), (), None, 2),
 ]
 
+# ------------------------------- grade K ------------------------------------
+# Kindergarten tree: standards-mapped only (no shipped content — the content
+# lane lands later; validate_engine.js prints the content-gap NOTEs). Every
+# standard id below is asserted against data/standards_maps.json 'grades.K'.
+NODES += [
+    S('K.ELA', 'K', 'ela', 'English language arts (K-2 band; MCL: english_grammar)', None),
+    STD('RF.K.1', 'K', 'ela', 'Print concepts: organization and basic features of print', 'K.ELA'),
+    STD('RF.K.2', 'K', 'ela', 'Phonological awareness: words, syllables, and sounds (phonemes)', 'K.ELA', ('RF.K.1',)),
+    STD('RF.K.3', 'K', 'ela', 'Grade-level phonics and word analysis skills in decoding words', 'K.ELA', ('RF.K.2',)),
+    STD('RF.K.4', 'K', 'ela', 'Read emergent-reader texts with purpose and understanding', 'K.ELA', ('RF.K.3',)),
+    STD('RL.K.1', 'K', 'ela', 'Ask and answer questions about key details in a text', 'K.ELA'),
+    STD('RI.K.2', 'K', 'ela', 'Identify the main topic and retell key details of a text', 'K.ELA', ('RL.K.1',)),
+    STD('W.K.1', 'K', 'ela', 'Compose opinion pieces by drawing, dictating, and writing', 'K.ELA'),
+    STD('L.K.1', 'K', 'ela', 'Conventions of standard English grammar and usage', 'K.ELA'),
+    STD('L.K.2', 'K', 'ela', 'Conventions of standard English capitalization, punctuation, and spelling', 'K.ELA', ('L.K.1',)),
+    SK('K.ELA.letter-names', 'K', 'ela', 'Letter names A-Z and left-to-right print direction', 'K.ELA', (), ('RF.K.1',), None, 1),
+    SK('K.ELA.letter-sounds', 'K', 'ela', 'First letter sounds and rhyming words', 'K.ELA', ('K.ELA.letter-names',), ('RF.K.2',), None, 1),
+    SK('K.ELA.sight-words', 'K', 'ela', 'Sight words and CVC decoding', 'K.ELA', ('K.ELA.letter-sounds',), ('RF.K.3', 'RF.K.4'), None, 1),
+    SK('K.ELA.story-questions', 'K', 'ela', 'Answering who/what questions about a read-aloud', 'K.ELA', (), ('RL.K.1', 'RI.K.2'), None, 1),
+    S('K.MATH', 'K', 'math', 'Mathematics (K-2 band; MCL: mathematics)', None),
+    STD('K.CC.1', 'K', 'math', 'Count to 100 by ones and by tens', 'K.MATH'),
+    STD('K.CC.4', 'K', 'math', 'Connect counting to cardinality (numbers and quantities)', 'K.MATH', ('K.CC.1',)),
+    STD('K.CC.5', 'K', 'math', 'Count to answer how-many questions about up to 20 things', 'K.MATH', ('K.CC.4',)),
+    STD('K.OA.1', 'K', 'math', 'Represent addition and subtraction with objects, drawings, and equations', 'K.MATH', ('K.CC.4',)),
+    STD('K.OA.2', 'K', 'math', 'Add and subtract within 10 in word problems', 'K.MATH', ('K.OA.1',)),
+    STD('K.OA.5', 'K', 'math', 'Fluently add and subtract within 5', 'K.MATH', ('K.OA.1',)),
+    STD('K.NBT.1', 'K', 'math', 'Compose and decompose numbers 11-19 into ten ones and some further ones', 'K.MATH', ('K.CC.4',)),
+    STD('K.MD.2', 'K', 'math', 'Directly compare two objects with a measurable attribute in common', 'K.MATH'),
+    STD('K.MD.3', 'K', 'math', 'Classify objects into categories and count them', 'K.MATH', ('K.CC.5',)),
+    STD('K.G.1', 'K', 'math', 'Describe objects using shape names and relative positions', 'K.MATH'),
+    STD('K.G.2', 'K', 'math', 'Correctly name shapes regardless of orientation or size', 'K.MATH', ('K.G.1',)),
+    SK('K.MATH.count-to-100', 'K', 'math', 'Counting to 100 by ones and tens', 'K.MATH', (), ('K.CC.1',), None, 1),
+    SK('K.MATH.count-tell-how-many', 'K', 'math', 'Counting out objects and answering how many', 'K.MATH', ('K.MATH.count-to-100',), ('K.CC.5',), None, 1),
+    SK('K.MATH.add-subtract-5', 'K', 'math', 'Addition and subtraction facts within 5', 'K.MATH', ('K.MATH.count-tell-how-many',), ('K.OA.1', 'K.OA.5'), None, 1),
+    SK('K.MATH.shapes-position', 'K', 'math', 'Shapes and positional words', 'K.MATH', (), ('K.G.1', 'K.G.2'), None, 1),
+    SK('K.MATH.compare-measure', 'K', 'math', 'Comparing more/less and measuring attributes', 'K.MATH', (), ('K.MD.2', 'K.MD.3'), None, 1),
+    S('K.SCI', 'K', 'science', 'Science (K-2 band; MCL: science)', None),
+    STD('K-PS2-1', 'K', 'science', 'Investigate the effects of different strengths or directions of pushes and pulls', 'K.SCI'),
+    STD('K-PS3-1', 'K', 'science', "Observe the effect of sunlight on Earth's surface", 'K.SCI'),
+    STD('K-LS1-1', 'K', 'science', 'Describe patterns of what plants, animals, and humans need to survive', 'K.SCI'),
+    STD('K-ESS2-1', 'K', 'science', 'Describe local weather patterns over time', 'K.SCI'),
+    STD('K-ESS3-1', 'K', 'science', 'Model how the needs of plants and animals connect to the places they live', 'K.SCI', ('K-LS1-1',)),
+    STD('K-2-ETS1-1', 'K', 'science', 'Ask questions and gather information to define a simple problem', 'K.SCI'),
+    SK('K.SCI.weather-patterns', 'K', 'science', 'Weather watching and simple recording (practice)', 'K.SCI', (), ('K-ESS2-1',), None, 2),
+    SK('K.SCI.needs-of-living', 'K', 'science', 'What living things need: food, water, light', 'K.SCI', (), ('K-LS1-1', 'K-ESS3-1'), None, 1),
+    S('K.SS', 'K', 'social_studies', 'Social studies (K-2 band; MCL: history/civics)', None),
+    STD('K.H2.0.1', 'K', 'social_studies', 'Distinguish among the past, present, and future', 'K.SS'),
+    STD('K.H2.0.2', 'K', 'social_studies', 'Create a timeline using events from their own lives', 'K.SS', ('K.H2.0.1',)),
+    STD('K.G1.0.1', 'K', 'social_studies', 'Recognize that maps and globes represent places', 'K.SS'),
+    STD('K.G1.0.2', 'K', 'social_studies', 'Use directions or positional words to locate places in the classroom', 'K.SS', ('K.G1.0.1',)),
+    STD('K.C1.0.1', 'K', 'social_studies', 'Identify and explain reasons for rules at home and in school', 'K.SS'),
+    STD('K.C2.0.1', 'K', 'social_studies', 'Identify the American flag as an important symbol of the United States', 'K.SS', ('K.C1.0.1',)),
+    STD('K.E1.0.2', 'K', 'social_studies', 'Distinguish between goods and services', 'K.SS'),
+    SK('K.SS.my-day-timeline', 'K', 'social_studies', 'Timeline of my day: past, present, future', 'K.SS', (), ('K.H2.0.1', 'K.H2.0.2'), None, 1),
+    SK('K.SS.classroom-rules', 'K', 'social_studies', 'Why we have rules and fair ways to decide', 'K.SS', (), ('K.C1.0.1',), None, 1),
+    S('K.MOTOR', 'K', 'motor', 'Motor development (K-2 band; not in the MCL nine)', None),
+    SK('K.MOTOR.gross-motor', 'K', 'motor', 'Gross motor: balance, hopping, throwing, catching', 'K.MOTOR', (), (), None, 2),
+    SK('K.MOTOR.fine-motor', 'K', 'motor', 'Fine motor: cutting, drawing lines, buttoning', 'K.MOTOR', (), (), None, 2),
+    S('K.ART', 'K', 'art', 'Art (K-2 band; not in the MCL nine)', None),
+    SK('K.ART.color-shape', 'K', 'art', 'Colors and shapes in art-making', 'K.ART', (), (), None, 2),
+    SK('K.ART.collage', 'K', 'art', 'Drawing, tearing, and collage (fine-motor practice)', 'K.ART', ('K.MOTOR.fine-motor',), (), None, 2),
+    S('K.MUSIC', 'K', 'music', 'Music (K-2 band; not in the MCL nine)', None),
+    SK('K.MUSIC.clap-rhythm', 'K', 'music', 'Clapping and singing simple rhythms', 'K.MUSIC', (), (), None, 2),
+    SK('K.MUSIC.listen-move', 'K', 'music', 'Listening and moving to music', 'K.MUSIC', ('K.MUSIC.clap-rhythm',), (), None, 2),
+]
+# ------------------------------- grade 1 ------------------------------------
+NODES += [
+    S('1.ELA', '1', 'ela', 'English language arts (K-2 band; MCL: english_grammar)', None),
+    STD('RF.1.1', '1', 'ela', 'Print concepts: distinguishing features of a sentence', '1.ELA'),
+    STD('RF.1.2', '1', 'ela', 'Phonological awareness: long and short vowels, blending, segmenting', '1.ELA', ('RF.1.1',)),
+    STD('RF.1.3', '1', 'ela', 'Grade-level phonics and word analysis skills in decoding words', '1.ELA', ('RF.1.2',)),
+    STD('RF.1.4', '1', 'ela', 'Read with sufficient accuracy and fluency to support comprehension', '1.ELA', ('RF.1.3',)),
+    STD('RL.1.1', '1', 'ela', 'Ask and answer questions about key details in a text', '1.ELA'),
+    STD('RL.1.2', '1', 'ela', 'Retell stories with key details and the central message or lesson', '1.ELA', ('RL.1.1',)),
+    STD('RI.1.2', '1', 'ela', 'Identify the main topic and retell key details of a text', '1.ELA', ('RL.1.1',)),
+    STD('W.1.1', '1', 'ela', 'Write opinion pieces with a topic, opinion, reason, and closure', '1.ELA'),
+    STD('W.1.3', '1', 'ela', 'Write narratives with sequenced events and temporal words', '1.ELA', ('W.1.1',)),
+    STD('L.1.1', '1', 'ela', 'Conventions of standard English grammar and usage', '1.ELA'),
+    STD('L.1.2', '1', 'ela', 'Conventions of standard English capitalization, punctuation, and spelling', '1.ELA', ('L.1.1',)),
+    SK('1.ELA.decoding-digraphs', '1', 'ela', 'Consonant digraphs and one-syllable decoding', '1.ELA', (), ('RF.1.3',), None, 1),
+    SK('1.ELA.fluency-reread', '1', 'ela', 'Fluent reading with rereading and self-correction', '1.ELA', ('1.ELA.decoding-digraphs',), ('RF.1.4',), None, 1),
+    SK('1.ELA.story-retell', '1', 'ela', 'Retelling a story in order with the lesson', '1.ELA', (), ('RL.1.2',), None, 1),
+    SK('1.ELA.main-topic-details', '1', 'ela', 'Main topic and key details in informational text', '1.ELA', (), ('RI.1.2',), None, 1),
+    SK('1.ELA.opinion-writing', '1', 'ela', 'Opinion writing: topic, reason, closure', '1.ELA', (), ('W.1.1',), None, 1),
+    S('1.MATH', '1', 'math', 'Mathematics (K-2 band; MCL: mathematics)', None),
+    STD('1.OA.1', '1', 'math', 'Use addition and subtraction within 20 to solve word problems', '1.MATH'),
+    STD('1.OA.2', '1', 'math', 'Solve word problems adding three whole numbers within 20', '1.MATH', ('1.OA.1',)),
+    STD('1.OA.5', '1', 'math', 'Relate counting to addition and subtraction (counting on)', '1.MATH', ('1.OA.1',)),
+    STD('1.OA.6', '1', 'math', 'Add and subtract within 20; fluency within 10', '1.MATH', ('1.OA.5',)),
+    STD('1.OA.8', '1', 'math', 'Determine the unknown whole number in an addition or subtraction equation', '1.MATH', ('1.OA.6',)),
+    STD('1.NBT.1', '1', 'math', 'Count to 120, starting at any number less than 120', '1.MATH'),
+    STD('1.NBT.2', '1', 'math', 'Two-digit numbers are amounts of tens and ones', '1.MATH', ('1.NBT.1',)),
+    STD('1.NBT.4', '1', 'math', 'Add within 100 using place value and properties of operations', '1.MATH', ('1.NBT.2',)),
+    STD('1.NBT.5', '1', 'math', 'Mentally find 10 more or 10 less than a two-digit number', '1.MATH', ('1.NBT.2',)),
+    STD('1.MD.3', '1', 'math', 'Tell and write time in hours and half-hours', '1.MATH'),
+    STD('1.MD.4', '1', 'math', 'Organize, represent, and interpret data with up to three categories', '1.MATH'),
+    STD('1.G.1', '1', 'math', 'Distinguish defining from non-defining attributes of shapes', '1.MATH'),
+    STD('1.G.3', '1', 'math', 'Partition circles and rectangles into two and four equal shares', '1.MATH', ('1.G.1',)),
+    SK('1.MATH.count-to-120', '1', 'math', 'Counting and writing numbers to 120', '1.MATH', (), ('1.NBT.1',), None, 1),
+    SK('1.MATH.place-value-tens-ones', '1', 'math', 'Tens and ones in two-digit numbers', '1.MATH', ('1.MATH.count-to-120',), ('1.NBT.2', '1.NBT.5'), None, 1),
+    SK('1.MATH.add-sub-facts-20', '1', 'math', 'Addition and subtraction facts within 20', '1.MATH', (), ('1.OA.6',), None, 1),
+    SK('1.MATH.word-problems-20', '1', 'math', 'Addition and subtraction word problems within 20', '1.MATH', ('1.MATH.add-sub-facts-20',), ('1.OA.1', '1.OA.2'), None, 1),
+    SK('1.MATH.two-digit-addition', '1', 'math', 'Adding tens and ones (with regrouping)', '1.MATH', ('1.MATH.place-value-tens-ones',), ('1.NBT.4',), None, 1),
+    SK('1.MATH.time-half-hours', '1', 'math', 'Reading clocks to the hour and half-hour', '1.MATH', (), ('1.MD.3',), None, 1),
+    S('1.SCI', '1', 'science', 'Science (K-2 band; MCL: science)', None),
+    STD('1-PS4-1', '1', 'science', 'Evidence that vibrating materials make sound and sound makes objects vibrate', '1.SCI'),
+    STD('1-PS4-2', '1', 'science', 'Objects can be seen only when illuminated', '1.SCI'),
+    STD('1-LS1-1', '1', 'science', 'Design a solution by mimicking how plants and animals use external parts', '1.SCI'),
+    STD('1-LS3-1', '1', 'science', 'Young plants and animals are like, but not exactly like, their parents', '1.SCI'),
+    STD('1-ESS1-1', '1', 'science', 'Describe predictable patterns of the sun, moon, and stars', '1.SCI'),
+    STD('1-ESS1-2', '1', 'science', 'Relate daylight at different times of year to the time of year', '1.SCI', ('1-ESS1-1',)),
+    SK('1.SCI.sound-vibration', '1', 'science', 'Sound and vibration investigations (practice)', '1.SCI', (), ('1-PS4-1',), None, 2),
+    SK('1.SCI.light-and-sight', '1', 'science', 'Light, shadow, and seeing (practice)', '1.SCI', (), ('1-PS4-2',), None, 2),
+    SK('1.SCI.sky-patterns', '1', 'science', 'Sun, moon, and seasonal sky patterns', '1.SCI', (), ('1-ESS1-1', '1-ESS1-2'), None, 1),
+    S('1.SS', '1', 'social_studies', 'Social studies (K-2 band; MCL: history/civics)', None),
+    STD('1.H2.0.1', '1', 'social_studies', 'Chronological thinking: past, present, and future using family or school events', '1.SS'),
+    STD('1.H2.0.4', '1', 'social_studies', 'Compare life today with life in the past (family, school, jobs, communication)', '1.SS', ('1.H2.0.1',)),
+    STD('1.G1.0.1', '1', 'social_studies', 'Construct simple maps of the classroom with aerial perspective', '1.SS'),
+    STD('1.G1.0.2', '1', 'social_studies', 'Describe places using absolute or relative location', '1.SS', ('1.G1.0.1',)),
+    STD('1.C1.0.1', '1', 'social_studies', 'Explain the need for rules and purposes of rules', '1.SS'),
+    STD('1.C2.0.2', '1', 'social_studies', 'Identify important symbols of the United States and what they represent', '1.SS'),
+    STD('1.E1.0.1', '1', 'social_studies', 'Distinguish between producers and consumers of goods and services', '1.SS'),
+    SK('1.SS.classroom-rules', '1', 'social_studies', 'Our class rules: why rules exist', '1.SS', (), ('1.C1.0.1',), None, 1),
+    SK('1.SS.us-symbols', '1', 'social_studies', 'Symbols of the United States', '1.SS', (), ('1.C2.0.2',), None, 1),
+    SK('1.SS.map-my-classroom', '1', 'social_studies', 'Mapping the classroom and locating places', '1.SS', (), ('1.G1.0.1', '1.G1.0.2'), None, 1),
+    S('1.MOTOR', '1', 'motor', 'Motor development (K-2 band; not in the MCL nine)', None),
+    SK('1.MOTOR.gross-motor', '1', 'motor', 'Gross motor: hopping, skipping, ball skills', '1.MOTOR', (), (), None, 2),
+    SK('1.MOTOR.fine-motor', '1', 'motor', 'Fine motor: handwriting strokes, cutting, drawing', '1.MOTOR', (), (), None, 2),
+    S('1.ART', '1', 'art', 'Art (K-2 band; not in the MCL nine)', None),
+    SK('1.ART.color-mixing', '1', 'art', 'Colors, shapes, and simple pattern-making', '1.ART', (), (), None, 2),
+    SK('1.ART.drawing-detail', '1', 'art', 'Drawing with detail and describing artwork', '1.ART', ('1.MOTOR.fine-motor',), (), None, 2),
+    S('1.MUSIC', '1', 'music', 'Music (K-2 band; not in the MCL nine)', None),
+    SK('1.MUSIC.beat-sing', '1', 'music', 'Steady beat, singing, and call-and-response', '1.MUSIC', (), (), None, 2),
+    SK('1.MUSIC.compare-songs', '1', 'music', 'Compare slow/fast and loud/soft in music', '1.MUSIC', ('1.MUSIC.beat-sing',), (), None, 2),
+]
+# ------------------------------- grade 2 ------------------------------------
+NODES += [
+    S('2.ELA', '2', 'ela', 'English language arts (K-2 band; MCL: english_grammar)', None),
+    STD('RF.2.3', '2', 'ela', 'Grade-level phonics: vowel teams, prefixes, and suffixes', '2.ELA'),
+    STD('RF.2.4', '2', 'ela', 'Read with sufficient accuracy and fluency to support comprehension', '2.ELA', ('RF.2.3',)),
+    STD('RL.2.1', '2', 'ela', 'Ask and answer who/what/where/when/why/how questions about a story', '2.ELA'),
+    STD('RL.2.2', '2', 'ela', 'Recount fables and folktales and determine the central message or moral', '2.ELA', ('RL.2.1',)),
+    STD('RL.2.5', '2', 'ela', 'Describe the overall structure of a story', '2.ELA', ('RL.2.1',)),
+    STD('RI.2.1', '2', 'ela', 'Ask and answer who/what/where/when/why/how questions about a text', '2.ELA'),
+    STD('RI.2.2', '2', 'ela', 'Identify the main topic of a multiparagraph text and paragraph focus', '2.ELA', ('RI.2.1',)),
+    STD('RI.2.3', '2', 'ela', 'Describe connections between historical events, scientific ideas, or procedures', '2.ELA', ('RI.2.2',)),
+    STD('W.2.1', '2', 'ela', 'Write opinion pieces with reasons and linking words', '2.ELA'),
+    STD('W.2.2', '2', 'ela', 'Write informative/explanatory texts with a concluding statement', '2.ELA', ('W.2.1',)),
+    STD('L.2.1', '2', 'ela', 'Conventions of standard English grammar and usage', '2.ELA'),
+    STD('L.2.2', '2', 'ela', 'Conventions of standard English capitalization, punctuation, and spelling', '2.ELA', ('L.2.1',)),
+    SK('2.ELA.vowel-teams-decoding', '2', 'ela', 'Vowel teams, prefixes, and suffixes in decoding', '2.ELA', (), ('RF.2.3',), None, 1),
+    SK('2.ELA.fluency-expression', '2', 'ela', 'Fluent reading with expression and self-correction', '2.ELA', ('2.ELA.vowel-teams-decoding',), ('RF.2.4',), None, 1),
+    SK('2.ELA.fable-message', '2', 'ela', 'Finding the message or moral of a fable', '2.ELA', (), ('RL.2.2', 'RL.2.5'), None, 1),
+    SK('2.ELA.main-topic-paragraphs', '2', 'ela', 'Main topic and paragraph focus in informational text', '2.ELA', (), ('RI.2.2', 'RI.2.3'), None, 1),
+    SK('2.ELA.opinion-reasons', '2', 'ela', 'Opinion writing with linked reasons', '2.ELA', (), ('W.2.1',), None, 1),
+    S('2.MATH', '2', 'math', 'Mathematics (K-2 band; MCL: mathematics)', None),
+    STD('2.OA.1', '2', 'math', 'Use addition and subtraction within 100 in one- and two-step word problems', '2.MATH'),
+    STD('2.OA.2', '2', 'math', 'Fluently add and subtract within 20 using mental strategies', '2.MATH', ('2.OA.1',)),
+    STD('2.OA.3', '2', 'math', 'Determine whether a group of objects up to 20 is odd or even', '2.MATH'),
+    STD('2.OA.4', '2', 'math', 'Use addition to total objects in rectangular arrays up to 5 by 5', '2.MATH', ('2.OA.3',)),
+    STD('2.NBT.1', '2', 'math', 'Three digits of a three-digit number are hundreds, tens, and ones', '2.MATH'),
+    STD('2.NBT.2', '2', 'math', 'Count within 1000 and skip-count by 5s, 10s, and 100s', '2.MATH', ('2.NBT.1',)),
+    STD('2.NBT.3', '2', 'math', 'Read and write numbers to 1000 in numerals, words, and expanded form', '2.MATH', ('2.NBT.1',)),
+    STD('2.NBT.5', '2', 'math', 'Fluently add and subtract within 100 using place value', '2.MATH', ('2.NBT.3',)),
+    STD('2.NBT.7', '2', 'math', 'Add and subtract within 1000 using place value strategies', '2.MATH', ('2.NBT.5',)),
+    STD('2.MD.1', '2', 'math', 'Measure length using appropriate tools (rulers, yardsticks, tapes)', '2.MATH'),
+    STD('2.MD.7', '2', 'math', 'Tell and write time to the nearest five minutes, using a.m. and p.m.', '2.MATH'),
+    STD('2.MD.8', '2', 'math', 'Solve money word problems with dollars, quarters, dimes, nickels, pennies', '2.MATH', ('2.NBT.5',)),
+    STD('2.G.1', '2', 'math', 'Recognize and draw shapes with specified attributes', '2.MATH'),
+    STD('2.G.3', '2', 'math', 'Partition circles and rectangles into two, three, or four equal shares', '2.MATH'),
+    SK('2.MATH.add-sub-fluency-20', '2', 'math', 'Addition and subtraction fluency within 20', '2.MATH', (), ('2.OA.2',), None, 1),
+    SK('2.MATH.word-problems-100', '2', 'math', 'One- and two-step word problems within 100', '2.MATH', ('2.MATH.add-sub-fluency-20',), ('2.OA.1',), None, 1),
+    SK('2.MATH.arrays-foundation', '2', 'math', 'Rows, columns, and repeated addition (arrays)', '2.MATH', (), ('2.OA.4',), None, 1),
+    SK('2.MATH.skip-counting', '2', 'math', 'Skip-counting by 5s, 10s, and 100s', '2.MATH', (), ('2.NBT.2',), None, 1),
+    SK('2.MATH.three-digit-place-value', '2', 'math', 'Reading, writing, and comparing three-digit numbers', '2.MATH', ('2.MATH.skip-counting',), ('2.NBT.3', '2.NBT.5'), None, 1),
+    SK('2.MATH.money-and-time', '2', 'math', 'Money amounts and time to five minutes', '2.MATH', ('2.MATH.three-digit-place-value',), ('2.MD.7', '2.MD.8'), None, 1),
+    S('2.SCI', '2', 'science', 'Science (K-2 band; MCL: science)', None),
+    STD('2-PS1-1', '2', 'science', 'Describe and classify materials by their observable properties', '2.SCI'),
+    STD('2-PS1-2', '2', 'science', 'Analyze test data to choose materials suited to a use', '2.SCI', ('2-PS1-1',)),
+    STD('2-PS1-4', '2', 'science', 'Some changes from heating or cooling can be reversed and some cannot', '2.SCI', ('2-PS1-1',)),
+    STD('2-LS2-1', '2', 'science', 'Investigate whether plants need sunlight and water to grow', '2.SCI'),
+    STD('2-LS4-1', '2', 'science', 'Compare the diversity of life in different habitats', '2.SCI'),
+    STD('2-ESS1-1', '2', 'science', 'Evidence that Earth events can occur quickly or slowly', '2.SCI'),
+    STD('2-ESS2-1', '2', 'science', 'Compare solutions that slow wind or water changing the land', '2.SCI', ('2-ESS1-1',)),
+    STD('2-ESS2-2', '2', 'science', 'Model the shapes and kinds of land and bodies of water in an area', '2.SCI', ('2-ESS2-1',)),
+    SK('2.SCI.material-properties', '2', 'science', 'Material properties and sorting (practice)', '2.SCI', (), ('2-PS1-1', '2-PS1-2'), None, 2),
+    SK('2.SCI.plants-need-sun-water', '2', 'science', 'Plant needs: sunlight and water investigations', '2.SCI', (), ('2-LS2-1',), None, 1),
+    SK('2.SCI.land-and-water', '2', 'science', 'Land, water, and weathering in our area', '2.SCI', (), ('2-ESS2-1', '2-ESS2-2'), None, 1),
+    S('2.SS', '2', 'social_studies', 'Social studies (K-2 band; MCL: history/civics)', None),
+    STD('2.H2.0.1', '2', 'social_studies', 'Chronological thinking across years and decades using a community timeline', '2.SS'),
+    STD('2.H2.0.4', '2', 'social_studies', 'Describe changes in the local community over time', '2.SS', ('2.H2.0.1',)),
+    STD('2.G1.0.1', '2', 'social_studies', 'Construct maps of the local community with symbols, labels, and legends', '2.SS'),
+    STD('2.G4.0.1', '2', 'social_studies', 'Describe land use in the community', '2.SS', ('2.G1.0.1',)),
+    STD('2.C1.0.1', '2', 'social_studies', 'Explain why people form governments', '2.SS'),
+    STD('2.C3.0.1', '2', 'social_studies', 'How local governments make, enforce, and interpret laws (ordinances)', '2.SS', ('2.C1.0.1',)),
+    STD('2.E1.0.1', '2', 'social_studies', 'Identify the opportunity cost involved in a consumer decision', '2.SS'),
+    SK('2.SS.community-timeline', '2', 'social_studies', 'Building a timeline of our community', '2.SS', (), ('2.H2.0.1', '2.H2.0.4'), None, 1),
+    SK('2.SS.community-map', '2', 'social_studies', 'Mapping our community and its land use', '2.SS', (), ('2.G1.0.1', '2.G4.0.1'), None, 1),
+    SK('2.SS.local-government', '2', 'social_studies', 'Local government services and rules', '2.SS', (), ('2.C3.0.1',), None, 1),
+    S('2.MOTOR', '2', 'motor', 'Motor development (K-2 band; not in the MCL nine)', None),
+    SK('2.MOTOR.gross-motor', '2', 'motor', 'Gross motor: coordination, endurance, team games', '2.MOTOR', (), (), None, 2),
+    SK('2.MOTOR.fine-motor', '2', 'motor', 'Fine motor: handwriting fluency and tool use', '2.MOTOR', (), (), None, 2),
+    S('2.ART', '2', 'art', 'Art (K-2 band; not in the MCL nine)', None),
+    SK('2.ART.design-steps', '2', 'art', 'Planning and describing a drawing or craft', '2.ART', (), (), None, 2),
+    SK('2.ART.art-in-culture', '2', 'art', 'Art from our community and cultures', '2.ART', ('2.SS.community-map',), (), None, 2),
+    S('2.MUSIC', '2', 'music', 'Music (K-2 band; not in the MCL nine)', None),
+    SK('2.MUSIC.rhythm-patterns', '2', 'music', 'Clapping and notating rhythm patterns', '2.MUSIC', (), (), None, 2),
+    SK('2.MUSIC.sing-clear', '2', 'music', 'Singing with clear voice and steady beat', '2.MUSIC', ('2.MUSIC.rhythm-patterns',), (), None, 2),
+]
+# ------------------------------- grade 4 ------------------------------------
+# Grade 4 carries the full MCL nine-band (engine subject vocabulary), matching
+# the grade-3/5 subject set. Standards-mapped only — no shipped content yet.
+NODES += [
+    S('4.MATH', '4', 'math', 'Mathematics (MCL: mathematics)', None),
+    STD('4.OA.1', '4', 'math', 'Interpret a multiplication equation as a comparison', '4.MATH'),
+    STD('4.OA.3', '4', 'math', 'Solve multistep word problems with the four operations; interpret remainders', '4.MATH', ('4.OA.1',)),
+    STD('4.OA.4', '4', 'math', 'Find all factor pairs for a whole number 1-100 and recognize multiples', '4.MATH', ('4.OA.1',)),
+    STD('4.NBT.1', '4', 'math', 'A digit is ten times what it represents in the place to its right', '4.MATH'),
+    STD('4.NBT.2', '4', 'math', 'Read, write, and compare multi-digit whole numbers', '4.MATH', ('4.NBT.1',)),
+    STD('4.NBT.3', '4', 'math', 'Round multi-digit whole numbers to any place', '4.MATH', ('4.NBT.2',)),
+    STD('4.NBT.4', '4', 'math', 'Fluently add and subtract multi-digit whole numbers (standard algorithm)', '4.MATH', ('4.NBT.2',)),
+    STD('4.NBT.5', '4', 'math', 'Multiply up to four digits by one digit; multiply two two-digit numbers', '4.MATH', ('4.NBT.2',)),
+    STD('4.NBT.6', '4', 'math', 'Find quotients and remainders with four-digit dividends and one-digit divisors', '4.MATH', ('4.NBT.5',)),
+    STD('4.NF.1', '4', 'math', 'Explain why a fraction a/b is equivalent to (n x a)/(n x b)', '4.MATH'),
+    STD('4.NF.2', '4', 'math', 'Compare fractions with different numerators and denominators', '4.MATH', ('4.NF.1',)),
+    STD('4.NF.3', '4', 'math', 'Understand a fraction greater than 1 as a sum of fractions', '4.MATH', ('4.NF.1',)),
+    STD('4.MD.3', '4', 'math', 'Apply the area and perimeter formulas for rectangles', '4.MATH', ('4.NBT.2',)),
+    SK('4.MATH.multiplicative-comparison', '4', 'math', 'Multiplicative comparison statements and equations', '4.MATH', (), ('4.OA.1',), None, 1),
+    SK('4.MATH.multistep-word-problems', '4', 'math', 'Multistep problems with remainders', '4.MATH', ('4.MATH.multiplicative-comparison',), ('4.OA.3',), None, 1),
+    SK('4.MATH.multi-digit-add-sub', '4', 'math', 'Multi-digit addition and subtraction fluency', '4.MATH', (), ('4.NBT.4',), None, 1),
+    SK('4.MATH.multi-digit-multiplication', '4', 'math', 'Multi-digit multiplication strategies', '4.MATH', ('4.MATH.multi-digit-add-sub',), ('4.NBT.5',), None, 1),
+    SK('4.MATH.division-remainders', '4', 'math', 'Division with remainders and interpretation', '4.MATH', ('4.MATH.multi-digit-multiplication',), ('4.NBT.6',), None, 1),
+    SK('4.MATH.fraction-equivalence', '4', 'math', 'Equivalent fractions and comparing fractions', '4.MATH', (), ('4.NF.1', '4.NF.2'), None, 1),
+    S('4.READ', '4', 'reading', 'Reading (MCL: reading)', None),
+    STD('RI.4.1', '4', 'reading', 'Use details and examples to explain and infer from a text', '4.READ'),
+    STD('RI.4.2', '4', 'reading', 'Determine the main idea and how it is supported by key details', '4.READ', ('RI.4.1',)),
+    STD('RI.4.3', '4', 'reading', 'Explain events, procedures, or concepts in a historical or technical text', '4.READ', ('RI.4.2',)),
+    STD('RI.4.5', '4', 'reading', 'Describe the overall structure of a text (chronology, compare, cause/effect)', '4.READ', ('RI.4.2',)),
+    STD('RF.4.3', '4', 'reading', 'Decode multisyllabic words using syllabication and morphology', '4.READ'),
+    STD('RF.4.4', '4', 'reading', 'Read with sufficient accuracy and fluency to support comprehension', '4.READ', ('RF.4.3',)),
+    SK('4.READ.text-evidence', '4', 'reading', 'Comprehension with text evidence (incl. cloze)', '4.READ', (), ('RI.4.1', 'RI.4.2'), None, 1),
+    SK('4.READ.main-idea-summarize', '4', 'reading', 'Main idea, structure, and summarizing', '4.READ', ('4.READ.text-evidence',), ('RI.4.2', 'RI.4.5'), None, 1),
+    SK('4.READ.multisyllabic-decoding', '4', 'reading', 'Multisyllabic decoding and fluency practice', '4.READ', (), ('RF.4.3', 'RF.4.4'), None, 1),
+    S('4.LIT', '4', 'literature', 'Literature (MCL: literature)', None),
+    STD('RL.4.1', '4', 'literature', 'Use details and examples to explain and infer from a literary text', '4.LIT'),
+    STD('RL.4.2', '4', 'literature', 'Determine a theme from details in the text; summarize', '4.LIT', ('RL.4.1',)),
+    STD('RL.4.3', '4', 'literature', 'Describe in depth a character, setting, or event using specific details', '4.LIT', ('RL.4.1',)),
+    SK('4.LIT.theme-summary', '4', 'literature', 'Theme and summary in stories, drama, and poetry', '4.LIT', (), ('RL.4.2', 'RL.4.3'), None, 1),
+    S('4.WRIT', '4', 'writing', 'Writing (MCL: writing)', None),
+    STD('W.4.1', '4', 'writing', 'Opinion pieces that support a point of view with reasons and information', '4.WRIT'),
+    STD('W.4.2', '4', 'writing', 'Informative/explanatory texts that examine a topic clearly', '4.WRIT', ('W.4.1',)),
+    SK('4.WRIT.opinion', '4', 'writing', 'Opinion writing: reasons, facts, linking words, conclusion', '4.WRIT', (), ('W.4.1',), None, 1),
+    SK('4.WRIT.informative', '4', 'writing', 'Informative writing: structure, detail, precise language', '4.WRIT', (), ('W.4.2',), None, 1),
+    S('4.GRAM', '4', 'english_grammar', 'English grammar (MCL: English grammar)', None),
+    STD('L.4.1', '4', 'english_grammar', 'Conventions of standard English grammar and usage', '4.GRAM'),
+    STD('L.4.2', '4', 'english_grammar', 'Conventions of standard English capitalization, punctuation, and spelling', '4.GRAM', ('L.4.1',)),
+    STD('L.4.5', '4', 'english_grammar', 'Figurative language, word relationships, and nuances in word meanings', '4.GRAM'),
+    SK('4.GRAM.sentence-conventions', '4', 'english_grammar', 'Sentence structure, fragments, and run-ons', '4.GRAM', (), ('L.4.1', 'L.4.2'), None, 1),
+    SK('4.GRAM.figurative-language', '4', 'english_grammar', 'Similes, metaphors, idioms, and antonyms/synonyms', '4.GRAM', (), ('L.4.5',), None, 1),
+    S('4.SPELL', '4', 'spelling', 'Spelling (MCL: spelling)', None),
+    STD('L.4.2.d', '4', 'spelling', 'Spell grade-appropriate words correctly, consulting references as needed', '4.SPELL', ['RF.4.3']),
+    SK('4.SPELL.patterns', '4', 'spelling', 'Spelling patterns and reference-checking routine', '4.SPELL', ('4.READ.multisyllabic-decoding',), ('L.4.2.d',), None, 1),
+    S('4.SCI', '4', 'science', 'Science (MCL: science)', None),
+    STD('4-PS3-1', '4', 'science', 'Explain how the speed of an object relates to the energy of that object', '4.SCI'),
+    STD('4-PS3-3', '4', 'science', 'Ask questions and predict outcomes about energy changes in collisions', '4.SCI', ('4-PS3-1',)),
+    STD('4-PS4-1', '4', 'science', 'Model waves in terms of amplitude and wavelength', '4.SCI'),
+    STD('4-LS1-1', '4', 'science', 'Internal and external structures support survival and reproduction', '4.SCI'),
+    STD('4-LS1-2', '4', 'science', 'Model how animals receive, process, and respond to sensory information', '4.SCI', ('4-LS1-1',)),
+    STD('4-ESS1-1', '4', 'science', 'Evidence from patterns in rock formations and fossils in rock layers', '4.SCI'),
+    STD('4-ESS2-1', '4', 'science', 'Evidence of the effects of weathering and erosion by water, ice, wind, vegetation', '4.SCI', ('4-ESS1-1',)),
+    # 3-5-ETS1-1 is already a grade-3 node id (same band PE); ids are globally
+    # unique, so grade 4 claims its grade-specific engineering-design PE instead.
+    STD('4-PS3-4', '4', 'science', 'Design, test, and refine a device that converts energy from one form to another', '4.SCI', ('4-PS3-3',)),
+    SK('4.SCI.energy-and-motion', '4', 'science', 'Energy, speed, and collisions (practice)', '4.SCI', (), ('4-PS3-1', '4-PS3-3'), None, 2),
+    SK('4.SCI.waves-sound-light', '4', 'science', 'Waves, sound, and light (practice)', '4.SCI', (), ('4-PS4-1',), None, 2),
+    SK('4.SCI.rocks-and-fossils', '4', 'science', 'Rocks, fossils, and Michigan geologic time', '4.SCI', (), ('4-ESS1-1', '4-ESS2-1'), None, 1),
+    S('4.HIST', '4', 'history', 'History & geography (MCL: history)', None),
+    STD('4.H3.0.1', '4', 'history', 'Historical inquiry questions on Michigan economic activities since statehood', '4.HIST'),
+    STD('4.H3.0.2', '4', 'history', 'Primary and secondary sources on how migration shaped Michigan', '4.HIST', ('4.H3.0.1',)),
+    STD('4.G1.0.1', '4', 'history', 'Questions geographers ask when examining the United States', '4.HIST'),
+    STD('4.G1.0.5', '4', 'history', 'Hemispheres, continents, oceans, and lines of latitude locate the United States', '4.HIST', ('4.G1.0.1',)),
+    STD('4.G2.0.1', '4', 'history', 'Describe ways the United States can be divided into regions', '4.HIST', ('4.G1.0.5',)),
+    STD('4.G4.0.1', '4', 'history', 'Push and pull factors in a migration case study', '4.HIST', ('4.H3.0.2',)),
+    SK('4.HIST.michigan-inquiry', '4', 'history', "Michigan history inquiry: then and now", '4.HIST', (), ('4.H3.0.1',), None, 1),
+    SK('4.HIST.primary-sources', '4', 'history', 'Primary vs secondary sources (practice)', '4.HIST', (), ('4.H3.0.2',), None, 1),
+    SK('4.HIST.us-regions-maps', '4', 'history', 'U.S. regions, maps, and migration stories', '4.HIST', (), ('4.G2.0.1', '4.G4.0.1'), None, 1),
+    S('4.CIV', '4', 'civics', 'Civics (MCL: civics)', None),
+    STD('4.C1.0.1', '4', 'civics', 'Questions political scientists ask when examining the United States', '4.CIV'),
+    STD('4.C1.0.2', '4', 'civics', 'Purposes of government as stated in the Preamble of the Constitution', '4.CIV', ('4.C1.0.1',)),
+    STD('4.C2.0.1', '4', 'civics', 'Popular sovereignty, rule of law, checks and balances, and individual rights', '4.CIV', ('4.C1.0.2',)),
+    STD('4.C3.0.1', '4', 'civics', 'Ways the Constitution limits the powers of the federal government', '4.CIV', ('4.C1.0.2',)),
+    STD('4.C5.0.1', '4', 'civics', 'Responsibilities of members of American society', '4.CIV', ('4.C2.0.1',)),
+    SK('4.CIV.preamble-purposes', '4', 'civics', 'The Preamble and its purposes', '4.CIV', (), ('4.C1.0.2',), None, 1),
+    SK('4.CIV.limits-on-government', '4', 'civics', 'Checks, balances, and limits on government power', '4.CIV', (), ('4.C2.0.1', '4.C3.0.1'), None, 1),
+]
 # ------------------------------- mapping tables -----------------------------
 # test/quiz skill tag -> node id, per grade
 TEST_SKILL_MAP = {
@@ -404,6 +760,21 @@ for n in NODES:
     for p in n['prereqs']:
         assert p in NODE_BY_ID, 'missing prereq %s for %s' % (p, n['id'])
         assert NODE_BY_ID[p]['grade'] == n['grade'], 'cross-grade prereq %s' % n['id']
+
+# K/1/2/4: the spec's standard nodes must equal data/standards_maps.json 1:1 —
+# no standard outside the public map, none left unclaimed.
+for g in NEW_GRADES:
+    spec_std = {n['id'] for n in NODES if n['grade'] == g and n['kind'] == 'standard'}
+    if spec_std != MAP_IDS[g]:
+        raise SystemExit('grade %s standards mismatch: spec-only=%s map-only=%s' % (
+            g, sorted(spec_std - MAP_IDS[g]), sorted(MAP_IDS[g] - spec_std)))
+    for n in NODES:
+        if n['grade'] != g:
+            continue
+        assert n['subject'] in GRADE_SUBJECTS[g], 'grade %s subject off-band: %s' % (g, n['id'])
+        for code in n['standards']:
+            assert code in NODE_BY_ID and NODE_BY_ID[code]['grade'] == g, \
+                'standard %s claimed by %s is not a same-grade node' % (code, n['id'])
 
 # ------------------------------- item derivation ----------------------------
 ITEMS = []
@@ -558,20 +929,35 @@ tree['source'] = ('MDE K-12 standards crosswalk: LNM_BRAIN/SAITTASPROUT/'
                   'MONTH1_SCAFFOLD_1016.md module structure (modules are week-scoped)')
 tree['subject_source'] = 'data/content.json per-grade subject union + content.statutory (D7 nine)'
 tree['statutory_subjects'] = STATUTORY
-tree['grade_subjects'] = OrderedDict((g, GRADE_SUBJECTS[g]) for g in ['preschool', '3', '5'])
+tree['grade_subjects'] = OrderedDict((g, GRADE_SUBJECTS[g])
+                                     for g in ['preschool', '3', '5'] + NEW_GRADES)
 tree['grades'] = OrderedDict()
-for g in ['preschool', '3', '5']:
+for g in ['preschool', '3', '5'] + NEW_GRADES:
     gnodes = [n for n in NODES if n['grade'] == g]
-    tree['grades'][g] = OrderedDict([
-        ('grade_band', g),
-        ('label', C['grades'][g]['label']),
-        ('nodes', [OrderedDict([
-            ('id', n['id']), ('grade', n['grade']), ('subject', n['subject']),
-            ('statutory', SUBJ_TO_STATUTORY[n['subject']]), ('kind', n['kind']),
-            ('label', n['label']), ('parent', n['parent']), ('prereqs', n['prereqs']),
-            ('standards', n['standards']), ('unit_wk', n['unit_wk']), ('priority', n['priority']),
-        ]) for n in gnodes]),
-    ])
+    entry = OrderedDict()
+    entry['grade_band'] = g
+    entry['label'] = GRADE_LABELS[g] if g in NEW_GRADES else C['grades'][g]['label']
+    entry['nodes'] = [OrderedDict([
+        ('id', n['id']), ('grade', n['grade']), ('subject', n['subject']),
+        ('statutory', SUBJ_TO_STATUTORY[n['subject']]), ('kind', n['kind']),
+        ('label', n['label']), ('parent', n['parent']), ('prereqs', n['prereqs']),
+        ('standards', n['standards']), ('unit_wk', n['unit_wk']), ('priority', n['priority']),
+    ]) for n in gnodes]
+    if g in NEW_GRADES:
+        # additive per-grade fields — existing grades keep their exact bytes
+        entry['statutory_subjects'] = list(STATUTORY_BAND[g])
+        entry['cat_domains'] = ['math', 'ela']
+        entry['content'] = ('standards-mapped tree only; no shipped content yet '
+                            '(data/content.json has no weeks/%s) — content lane pending' % g)
+    tree['grades'][g] = entry
+# appended after 'grades' so every pre-existing byte in this document is kept
+tree['standards_maps'] = OrderedDict([
+    ('schema', 'standards_maps/v1'),
+    ('file', 'data/standards_maps.json'),
+    ('grades', list(NEW_GRADES)),
+    ('sources', [OrderedDict((k, s[k]) for k in ('id', 'title', 'url', 'accessed'))
+                 for s in STD_MAPS['sources']]),
+])
 
 # dedup items (identical grade+text+options collapse; provenance of first kept)
 dedup = OrderedDict()
@@ -606,14 +992,16 @@ with open(OUT_ITEMS, 'w') as f:
 
 # ------------------------------- report -------------------------------------
 from collections import Counter
+ALL_GRADES = ['preschool', '3', '5'] + NEW_GRADES
 print('skill_tree.json: %d nodes (%s)' % (
     len(NODES), ', '.join('%s=%d' % (g, sum(1 for n in NODES if n['grade'] == g))
-                          for g in ['preschool', '3', '5'])))
+                          for g in ALL_GRADES)))
 print('items.json: %d items (%d duplicates dropped)' % (len(ITEMS), dropped))
-for g in ['preschool', '3', '5']:
+for g in ALL_GRADES:
     dom = Counter(i['cat_domain'] for i in ITEMS if i['grade'] == g)
-    print('  grade %-9s math=%-3d ela=%-3d non-CAT=%d' % (
+    print('  grade %-9s math=%-3d ela=%-3d non-CAT=%d%s' % (
         g, dom.get('math', 0), dom.get('ela', 0),
-        sum(v for k, v in dom.items() if k is None)))
+        sum(v for k, v in dom.items() if k is None),
+        '   (no content yet — tree only)' if g in NEW_GRADES else ''))
 src = Counter(i['provenance'].split(':')[0] for i in ITEMS)
 print('  provenance:', dict(src))
