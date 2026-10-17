@@ -24,7 +24,8 @@
     children: NS + '.children',
     placement: function (id) { return NS + '.placement.' + id; },
     yearplan: function (id) { return NS + '.yearplan.' + id; },
-    progress: function (id) { return NS + '.progress.' + id; }
+    progress: function (id) { return NS + '.progress.' + id; },
+    landingSeen: NS + '.landing.seen'                         // P1 one-shot first-run flag
   };
 
   var GRADES_ENABLED = ['preschool', '3', '5'];                       // plan F2
@@ -272,10 +273,13 @@
   var ROUTES = [
     { re: /^#?\/?$/, view: 'landing' },
     { re: /^#\/account$/, view: 'account' },
+    { re: /^#\/signin$/, view: 'account' },   // P1 fix: the "Sign in" link was routing to landing
     { re: /^#\/children$/, view: 'children' },
     { re: /^#\/assess\/(.+)$/, view: 'assess' },
     { re: /^#\/ceremony\/(.+)$/, view: 'ceremony' },
-    { re: /^#\/portal\/(.+)$/, view: 'portal' }
+    { re: /^#\/portal\/(.+)$/, view: 'portal' },
+    { re: /^#\/class$/, view: 'class' },
+    { re: /^#\/portal-gate$/, view: 'portalGate' }
   ];
   function route() {
     var h = location.hash || '#/';
@@ -288,6 +292,19 @@
   function go(hash) {
     if (location.hash === hash) { render(); }
     else location.hash = hash;
+  }
+  /* role-based landing (P1) — role whitelist enforced here */
+  var ROLES = ['parent', 'teacher', 'student', 'tutor'];
+  function landingFor(role) {
+    if (role === 'student') return '#/portal-gate';          // keypad gate route (P1.4)
+    if (role === 'teacher' || role === 'tutor') return '#/class';
+    return '#/children';                                     // parent = child manager (exists)
+  }
+  function firstRunLanding() {   // called once from render() when session exists && !landingSeen
+    var s = requireSession(); if (!s) return false;
+    if (store.get(K.landingSeen, null)) return false;
+    store.set(K.landingSeen, { schema: MARKER, v: 1 });
+    go(landingFor(ROLES.indexOf(s.role) >= 0 ? s.role : 'parent')); return true;
   }
   function renderTopnav() {
     var s = requireSession();
@@ -372,27 +389,53 @@
       '</section>' +
 
       '<section class="panel">' +
+      '<h2>Proven in month 1 (verified, not marketing)</h2>' +
+      '<p class="lede">Real build evidence from the month-1 curriculum scaffold — checked with a script, not screenshots.</p>' +
+      '<div class="statgrid">' +
+      '<div class="statbox"><b>4 weeks × 2</b><span>children (Adonis g5, Max g3) — Oct 19–Nov 13 2026</span></div>' +
+      '<div class="statbox"><b>32</b><span>kid-day rows validated (Max 16 + Adonis 16) — 6/6 openable lessons each</span></div>' +
+      '<div class="statbox"><b>9</b><span>Michigan statutory subjects covered weekly per child (MCL 380.1561(3)(f))</span></div>' +
+      '<div class="statbox"><b>8/8</b><span>week + test files pass the scripted validator (refs resolve, minutes sum, counts match)</span></div>' +
+      '</div>' +
+      '<p class="mono" style="margin-top:12px">Sources: MONTH1_SCAFFOLD_1016 §4 · ROTATION_NORMALIZATION_1016 §3 · MI_COMPLIANCE_MAP §4–5 · verified-D7 · not legal advice</p>' +
+      '</section>' +
+
+      '<section class="panel">' +
+      '<h2>Stay in the loop — beta updates</h2>' +
+      '<p class="lede">Want release notes but not an account? This is a separate, one-way interest list — ' +
+      'your address never joins the app. v0: your own mail client opens a message with the subject ' +
+      '<b>“SPROUT beta updates”</b> and nothing is stored here.</p>' +
+      '<div style="margin-top:12px"><a class="btn ghost" id="nl-compose" href="#">✉️ Compose beta-update email</a></div>' +
+      '</section>' +
+      '<section class="panel">' +
       '<h2>Demo account</h2>' +
       (s
         ? '<p class="lede">Signed in as <b>' + esc(s.name) + '</b>' + (s.family ? ' · family “' + esc(s.family) + '”' : '') +
         '. This demo account lives only in this browser.</p>' +
         '<div style="margin-top:12px"><a class="btn" href="#/children">Go to my children</a></div>'
-        : '<p class="lede">Create a local parent account — a display name and passphrase, stored as a salted hash in this browser. No email, no verification, no server.</p>' +
+        : '<p class="lede">Create a local account — a display name and passphrase, stored as a salted hash in this browser. Accounts stay separate from the beta-update list — updates never touch them. No email field, no verification, no server.</p>' +
         '<div style="margin-top:12px"><a class="btn" href="#/account">Create parent account</a>' +
         (kids.length ? ' <span class="mono">' + kids.length + ' child record(s) already in this browser</span>' : '') +
         '</div>') +
       '</section>';
 
     renderInto(html);
+    /* P2: newsletter path is mailto-only — no fetch, no XHR, no localStorage write */
+    $('nl-compose').addEventListener('click', function (e) {
+      e.preventDefault();
+      location.href = 'mailto:?subject=' + encodeURIComponent('SPROUT beta updates') +
+        '&body=' + encodeURIComponent('Hi — please add me to the SPROUT beta update list.\n\n(thanks!)');
+      toast('Opened your mail app. No data was stored by SPROUT.');
+    });
   }
 
   /* ================= ACCOUNT ================= */
   function viewAccount() {
     var s = requireSession();
-    if (s) { go('#/children'); return; }
+    if (s) { go(landingFor(s.role || 'parent')); return; }   // P1: role-aware bounce
     var html =
       '<section class="panel">' +
-      '<h2>Create a parent account (local only)</h2>' +
+      '<h2>Create a local account (this browser only)</h2>' +
       '<p class="lede">This demo account lives only in this browser. No email field, no password reset, no server — a passphrase is stretched into a salted digest and stored under <span class="mono">sprout_demo_v1.account</span>.</p>' +
       '<form id="signup-form" autocomplete="off">' +
       '<div class="formrow">' +
@@ -401,6 +444,12 @@
       '<div class="field"><label for="su-family">Synthetic family name <span class="mono">(optional)</span></label>' +
       '<input id="su-family" name="family" maxlength="40" placeholder="e.g. the Fernwood family"></div>' +
       '</div>' +
+      '<div class="field"><label>I am a…</label><div class="gradelist" id="role-list" role="radiogroup" aria-label="Role">' +
+      '<button type="button" class="gradeopt on" data-role="parent">Parent / guardian<span class="tag">→ child manager</span></button>' +
+      '<button type="button" class="gradeopt" data-role="teacher">Teacher<span class="tag">→ class view</span></button>' +
+      '<button type="button" class="gradeopt" data-role="student">Student<span class="tag">→ keypad gate</span></button>' +
+      '<button type="button" class="gradeopt" data-role="tutor">Tutor<span class="tag">→ class view</span></button>' +
+      '</div><div class="hint">Pick once — it decides where you land after signup. Stored in this browser only.</div></div>' +
       '<div class="field"><label for="su-pass">Passphrase</label>' +
       '<input id="su-pass" name="pass" type="password" required minlength="6" placeholder="at least 6 characters">' +
       '<div class="hint">Stored as a salted, stretched sha256 digest — never as plaintext.</div></div>' +
@@ -418,6 +467,14 @@
       '</form></section>';
 
     renderInto(html);
+    var selectedRole = 'parent';
+    var rl = $('role-list');
+    rl.addEventListener('click', function (e) {
+      var b = e.target.closest('.gradeopt'); if (!b) return;
+      Array.prototype.forEach.call(rl.querySelectorAll('.gradeopt'), function (x) { x.classList.remove('on'); });
+      b.classList.add('on');
+      selectedRole = b.getAttribute('data-role');
+    });
     $('signup-form').addEventListener('submit', function (e) {
       e.preventDefault();
       var name = $('su-name').value.trim();
@@ -431,12 +488,14 @@
         }
       }
       var salt = uid('sl');
-      var rec = { schema: MARKER, name: name, family: family || null, salt: salt,
+      var role = ROLES.indexOf(selectedRole) >= 0 ? selectedRole : 'parent';
+      var rec = { schema: MARKER, name: name, family: family || null, role: role, salt: salt,
         digest: digest(pass, salt), created_at: new Date().toISOString() };
       store.set(K.account, rec);
-      store.set(K.session, { schema: MARKER, name: name, family: rec.family, at: new Date().toISOString() });
+      store.set(K.session, { schema: MARKER, name: name, family: rec.family, role: role, at: new Date().toISOString() });
+      store.set(K.landingSeen, { schema: MARKER, v: 1 });   // suppress the auto-landing below
       toast('Account created — it lives only in this browser.');
-      go('#/children');
+      go(landingFor(role));
     });
     $('signin-form').addEventListener('submit', function (e) {
       e.preventDefault();
@@ -445,9 +504,9 @@
       if ($('si-name').value.trim() !== a.name || digest($('si-pass').value, a.salt) !== a.digest) {
         toast('Name or passphrase did not match the account stored in this browser.', true); return;
       }
-      store.set(K.session, { schema: MARKER, name: a.name, family: a.family, at: new Date().toISOString() });
+      store.set(K.session, { schema: MARKER, name: a.name, family: a.family, role: a.role || 'parent', at: new Date().toISOString() });
       toast('Welcome back, ' + a.name + '.');
-      go('#/children');
+      go(landingFor(a.role || 'parent'));
     });
     if (location.hash === '#/signin') { $('signin-panel').hidden = false; }
   }
@@ -1179,6 +1238,51 @@
       '</section>');
   }
 
+  /* ================= CLASS VIEW (teacher/tutor, P1) =================
+     Read-only roster: reuses viewChildren()'s kid-card markup, no add-child
+     form, no edit affordances. Interim beta stub — week tabs come next. */
+  function viewClass() {
+    var s = requireSession();
+    if (!s) { go('#/account'); return; }
+    var kids = children();
+    var cards = kids.map(function (c) {
+      var gk = c.grade;
+      var pl = store.get(K.placement(c.id), null);
+      var yp = store.get(K.yearplan(c.id), null);
+      return '<div class="kidcard">' +
+        '<div class="totem">' + (PERSONA_TOTEM[gk] || '🌱') + '</div>' +
+        '<div class="name">' + esc(c.name) + '</div>' +
+        '<div class="meta">' + esc(GRADE_LABEL[gk] || gk) + ' · started ' + esc(c.start_date || '—') + '</div>' +
+        '<div class="row"><span>Placement</span><b>' + (pl && pl.guardian_gate && pl.guardian_gate.status === 'approved' ? 'Approved' : (pl ? 'Pending guardian' : 'Not started')) + '</b></div>' +
+        '<div class="row"><span>Year plan</span><b>' + (yp && yp.approved ? 'Approved' : 'Not built') + '</b></div>' +
+        '</div>';
+    }).join('');
+    renderInto(
+      '<section class="panel">' +
+      '<h2>Class view (beta)</h2>' +
+      '<p class="lede">Read-only roster for ' + esc(s.name) + ' — roster + week tabs coming next. ' +
+      'Records live only in this browser.</p>' +
+      (kids.length
+        ? '<div class="grid3">' + cards + '</div>'
+        : '<div class="grid3"><div class="card"><h3>No students yet</h3>' +
+          '<p class="mono">A parent account adds children; the class view mirrors them read-only.</p></div></div>') +
+      '<p class="mono" style="margin-top:12px">Add or edit children from the <a href="#/children">children page</a>.</p>' +
+      '</section>');
+  }
+
+  /* student landing (P1): the shared keypad gate, defaulting to child 0 */
+  function renderPortalGate() {
+    var kids = children();
+    if (!kids.length) {
+      renderInto(
+        '<section class="panel"><h2>Portal gate</h2>' +
+        '<p class="lede">No student tiles yet — a grown-up adds children on the ' +
+        '<a href="#/children">children page</a> (each one gets a 4-digit demo PIN).</p></section>');
+      return;
+    }
+    renderGatePad(kids[0]);
+  }
+
   /* ================= STUDENT PORTAL (F5) ================= */
   var portal = { child: null, week: 1, tab: 'week' };
 
@@ -1689,12 +1793,17 @@
   }
   function render() {
     var r = route();
-    if (r.view === 'landing') viewLanding();
+    if (r.view === 'landing') {
+      if (firstRunLanding()) return;   // P1: role-based first-run landing, once
+      viewLanding();
+    }
     else if (r.view === 'account') viewAccount();
     else if (r.view === 'children') viewChildren();
     else if (r.view === 'assess') renderAssess(r.arg);
     else if (r.view === 'ceremony') renderCeremony(r.arg);
     else if (r.view === 'portal') renderPortal(r.arg);
+    else if (r.view === 'class') viewClass();
+    else if (r.view === 'portalGate') renderPortalGate();
     else viewLanding();
   }
 
