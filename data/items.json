@@ -11548,6 +11548,7260 @@
     "c": null,
     "calibration": "uncalibrated-v0"
    }
+  },
+  {
+   "id": "itm_f796ad99d1a454c3",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.letter-sounds",
+   "skill_tag": "letter-sounds",
+   "standards": [
+    "RF.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which letter makes the sound at the START of \"map\"?",
+   "options": [
+    "m",
+    "a",
+    "p",
+    "t"
+   ],
+   "answer": "m",
+   "provenance": "generator:k.bank.letter-sounds.items[0]",
+   "generator": "k.bank.letter-sounds",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_593fba1434c0bb3c",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.letter-sounds",
+   "skill_tag": "letter-sounds",
+   "standards": [
+    "RF.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which letter says /s/?",
+   "options": [
+    "s",
+    "n",
+    "l",
+    "r"
+   ],
+   "answer": "s",
+   "provenance": "generator:k.bank.letter-sounds.items[1]",
+   "generator": "k.bank.letter-sounds",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7ad8e1ec17ae4754",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.letter-sounds",
+   "skill_tag": "letter-sounds",
+   "standards": [
+    "RF.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What sound does \"t\" make at the start of \"top\"?",
+   "options": [
+    "/t/",
+    "/n/",
+    "/p/",
+    "/k/"
+   ],
+   "answer": "/t/",
+   "provenance": "generator:k.bank.letter-sounds.items[2]",
+   "generator": "k.bank.letter-sounds",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5834dade0eb78f4a",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.letter-sounds",
+   "skill_tag": "letter-sounds",
+   "standards": [
+    "RF.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which letter is the FIRST letter in the word \"sun\"?",
+   "options": [
+    "s",
+    "u",
+    "n",
+    "m"
+   ],
+   "answer": "s",
+   "provenance": "generator:k.bank.letter-sounds.items[3]",
+   "generator": "k.bank.letter-sounds",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d54c911e8205775e",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.letter-sounds",
+   "skill_tag": "letter-sounds",
+   "standards": [
+    "RF.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these starts with the letter \"b\"?",
+   "options": [
+    "bat",
+    "cat",
+    "dog",
+    "fish"
+   ],
+   "answer": "bat",
+   "provenance": "generator:k.bank.letter-sounds.items[4]",
+   "generator": "k.bank.letter-sounds",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_dd76dea245407c57",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.letter-sounds",
+   "skill_tag": "letter-sounds",
+   "standards": [
+    "RF.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Rhyming words share the same ENDING sound. Which pair rhymes?",
+   "options": [
+    "cat - hat",
+    "cat - dog",
+    "cat - sun",
+    "dog - mat"
+   ],
+   "answer": "cat - hat",
+   "provenance": "generator:k.bank.letter-sounds.items[5]",
+   "generator": "k.bank.letter-sounds",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_45f1014337c0ea59",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who is the story about? (a boy named Sam who lost his hat)",
+   "options": [
+    "Sam",
+    "A dog",
+    "A cat",
+    "A bird"
+   ],
+   "answer": "Sam",
+   "provenance": "generator:k.bank.story-questions.items[0]",
+   "generator": "k.bank.story-questions",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_468b862b57708567",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What did Sam lose in the story?",
+   "options": [
+    "His hat",
+    "His shoe",
+    "His ball",
+    "His book"
+   ],
+   "answer": "His hat",
+   "provenance": "generator:k.bank.story-questions.items[1]",
+   "generator": "k.bank.story-questions",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_675b7095e8a19810",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Where did Sam look for his hat?",
+   "options": [
+    "Under the bed",
+    "In the sky",
+    "At the store",
+    "In the garden"
+   ],
+   "answer": "Under the bed",
+   "provenance": "generator:k.bank.story-questions.items[2]",
+   "generator": "k.bank.story-questions",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0f963f5e88f5a3e3",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What happened at the END of the story?",
+   "options": [
+    "Sam found his hat",
+    "Sam cried",
+    "Sam went to sleep",
+    "Sam lost his shoe"
+   ],
+   "answer": "Sam found his hat",
+   "provenance": "generator:k.bank.story-questions.items[3]",
+   "generator": "k.bank.story-questions",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b0d47e1eb4f07d8d",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why was Sam sad at the start?",
+   "options": [
+    "He lost his hat",
+    "He was hungry",
+    "He was tired",
+    "It was raining"
+   ],
+   "answer": "He lost his hat",
+   "provenance": "generator:k.bank.story-questions.items[4]",
+   "generator": "k.bank.story-questions",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5dc801bd1c8c2346",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "How did Sam feel when he found the hat?",
+   "options": [
+    "Happy",
+    "Angry",
+    "Scared",
+    "Bored"
+   ],
+   "answer": "Happy",
+   "provenance": "generator:k.bank.story-questions.items[5]",
+   "generator": "k.bank.story-questions",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0b15be5f692959b5",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "K.SCI.weather-patterns",
+   "skill_tag": "weather-patterns",
+   "standards": [
+    "K-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do we use to check the weather outside?",
+   "options": [
+    "A window and the sky",
+    "A calculator",
+    "A clock",
+    "A map of the ocean"
+   ],
+   "answer": "A window and the sky",
+   "provenance": "generator:k.bank.weather-patterns.items[0]",
+   "generator": "k.bank.weather-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_fb5c23cb3db89186",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "K.SCI.weather-patterns",
+   "skill_tag": "weather-patterns",
+   "standards": [
+    "K-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these is a sunny-day sign?",
+   "options": [
+    "Blue sky and sun",
+    "Dark clouds",
+    "Rain falling",
+    "Snow"
+   ],
+   "answer": "Blue sky and sun",
+   "provenance": "generator:k.bank.weather-patterns.items[1]",
+   "generator": "k.bank.weather-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_3abcae7838392a7d",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "K.SCI.weather-patterns",
+   "skill_tag": "weather-patterns",
+   "standards": [
+    "K-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What might you need when it rains?",
+   "options": [
+    "An umbrella",
+    "A hat only",
+    "Sandals",
+    "Sunglasses"
+   ],
+   "answer": "An umbrella",
+   "provenance": "generator:k.bank.weather-patterns.items[2]",
+   "generator": "k.bank.weather-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_df73c9b39cd7d6a2",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "K.SCI.weather-patterns",
+   "skill_tag": "weather-patterns",
+   "standards": [
+    "K-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Is it cold or hot on a snowy day?",
+   "options": [
+    "Cold",
+    "Hot",
+    "Warm like summer",
+    "Exactly room temperature"
+   ],
+   "answer": "Cold",
+   "provenance": "generator:k.bank.weather-patterns.items[3]",
+   "generator": "k.bank.weather-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_74c5d69b41ba5022",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "K.SCI.weather-patterns",
+   "skill_tag": "weather-patterns",
+   "standards": [
+    "K-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What season has the warmest, sunniest days?",
+   "options": [
+    "Summer",
+    "Winter",
+    "Fall",
+    "Spring"
+   ],
+   "answer": "Summer",
+   "provenance": "generator:k.bank.weather-patterns.items[4]",
+   "generator": "k.bank.weather-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a19734beac522be1",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "K.SCI.weather-patterns",
+   "skill_tag": "weather-patterns",
+   "standards": [
+    "K-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "We record the weather each day in a...",
+   "options": [
+    "weather chart",
+    "spelling list",
+    "story book",
+    "math book"
+   ],
+   "answer": "weather chart",
+   "provenance": "generator:k.bank.weather-patterns.items[5]",
+   "generator": "k.bank.weather-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4e809ea1e2ed2160",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "K.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "K.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why do we have rules in the classroom?",
+   "options": [
+    "So everyone is safe and can learn",
+    "To make kids sad",
+    "To waste time",
+    "There is no reason"
+   ],
+   "answer": "So everyone is safe and can learn",
+   "provenance": "generator:k.bank.classroom-rules.items[0]",
+   "generator": "k.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_9efc44f22ce482ee",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "K.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "K.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What should you do when the teacher is talking?",
+   "options": [
+    "Listen quietly",
+    "Shout out",
+    "Walk around",
+    "Play with toys"
+   ],
+   "answer": "Listen quietly",
+   "provenance": "generator:k.bank.classroom-rules.items[1]",
+   "generator": "k.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a8c2063e3415dc23",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "K.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "K.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "How should you take turns with materials?",
+   "options": [
+    "Wait your turn",
+    "Grab them first",
+    "Hide them",
+    "Throw them"
+   ],
+   "answer": "Wait your turn",
+   "provenance": "generator:k.bank.classroom-rules.items[2]",
+   "generator": "k.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2352fc07f734bba9",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "K.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "K.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a fair way to solve a disagreement?",
+   "options": [
+    "Use kind words and take turns",
+    "Hit",
+    "Yell",
+    "Cry"
+   ],
+   "answer": "Use kind words and take turns",
+   "provenance": "generator:k.bank.classroom-rules.items[3]",
+   "generator": "k.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c491a779466ad0a4",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "K.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "K.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why must we raise our hand to speak?",
+   "options": [
+    "So everyone gets a turn to talk",
+    "To make noise",
+    "To waste time",
+    "No reason"
+   ],
+   "answer": "So everyone gets a turn to talk",
+   "provenance": "generator:k.bank.classroom-rules.items[4]",
+   "generator": "k.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e00fa08409f0f8ef",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "K.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "K.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do we do with toys when the lesson ends?",
+   "options": [
+    "Put them away neatly",
+    "Leave them on the floor",
+    "Take them home",
+    "Hide them"
+   ],
+   "answer": "Put them away neatly",
+   "provenance": "generator:k.bank.classroom-rules.items[5]",
+   "generator": "k.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d542933157184033",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Rat",
+    "Ann",
+    "Dog",
+    "Frog"
+   ],
+   "answer": "Rat",
+   "provenance": "generator:pd.comprehension.gK.items[0]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7ec4554dadd68a56",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"The rat ran at Ann.\"",
+   "options": [
+    "Ann has a cat.",
+    "Ann has a fan.",
+    "Nat has a hat.",
+    "Ann can fan Nat."
+   ],
+   "answer": "Ann has a cat.",
+   "provenance": "generator:pd.comprehension.gK.items[1]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_41f44cda5e10b44a",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which word appears most often in this passage?",
+   "options": [
+    "Ran",
+    "Ann",
+    "Dog",
+    "Frog"
+   ],
+   "answer": "Ran",
+   "provenance": "generator:pd.comprehension.gK.items[2]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_38b88ed0e643b7e8",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Ann",
+    "Rat",
+    "Dog",
+    "Frog"
+   ],
+   "answer": "Ann",
+   "provenance": "generator:pd.comprehension.gK.items[3]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c6e3a0cb3de8230f",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which word appears most often in this passage?",
+   "options": [
+    "Fan",
+    "Rat",
+    "Dog",
+    "Frog"
+   ],
+   "answer": "Fan",
+   "provenance": "generator:pd.comprehension.gK.items[4]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_71c5f590d095eb46",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Ann can ____ Nat.",
+   "options": [
+    "fan",
+    "rat",
+    "dog",
+    "frog"
+   ],
+   "answer": "fan",
+   "provenance": "generator:pd.comprehension.gK.items[5]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c0c3e5054a2d920b",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Ann has a fan.\"",
+   "options": [
+    "Nat has a hat.",
+    "Ann and Nat.",
+    "Ann can fan Nat.",
+    "The cat has a rat."
+   ],
+   "answer": "Nat has a hat.",
+   "provenance": "generator:pd.comprehension.gK.items[6]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5b2e1ef98cfbc4df",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Nat and Rab ran.\"",
+   "options": [
+    "Rab ran at a cat.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "Rab ran at a cat.",
+   "provenance": "generator:pd.comprehension.gK.items[7]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_01220df14b8fbb4c",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Dog",
+    "Rat",
+    "Ann",
+    "Frog"
+   ],
+   "answer": "Dog",
+   "provenance": "generator:pd.comprehension.gK.items[8]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2ba14fa5640019bd",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these words appears in the passage?",
+   "options": [
+    "Nat's",
+    "Stand",
+    "Ann's",
+    "Catch"
+   ],
+   "answer": "Nat's",
+   "provenance": "generator:pd.comprehension.gK.items[9]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_845e2c31eb177b4b",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Can the ____ see Rab?",
+   "options": [
+    "frog",
+    "Nat's",
+    "lamp",
+    "stand"
+   ],
+   "answer": "frog",
+   "provenance": "generator:pd.comprehension.gK.items[10]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_42aa2c2c1cbcdc4c",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Can the frog see Rab?\"",
+   "options": [
+    "The frog can see the dog.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "The frog can see the dog.",
+   "provenance": "generator:pd.comprehension.gK.items[11]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_58c9b43a8993372a",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Frog",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Frog",
+   "provenance": "generator:pd.comprehension.gK.items[12]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_aa75904afc83f207",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. The ____ is Nat's, and the mat is Ann's.",
+   "options": [
+    "lamp",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "lamp",
+   "provenance": "generator:pd.comprehension.gK.items[13]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_449bc2319a64a793",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Lamp",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Lamp",
+   "provenance": "generator:pd.comprehension.gK.items[14]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a0b3a13839018bda",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these words appears in the passage?",
+   "options": [
+    "stand",
+    "catch",
+    "Tom's",
+    "lives"
+   ],
+   "answer": "stand",
+   "provenance": "generator:pd.comprehension.gK.items[15]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_68b4a2fe476516d3",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Can Tom ____ his nag?",
+   "options": [
+    "catch",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "catch",
+   "provenance": "generator:pd.comprehension.gK.items[16]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d305702a98b6da76",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Can Tom catch his nag?\"",
+   "options": [
+    "He can not catch him.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "He can not catch him.",
+   "provenance": "generator:pd.comprehension.gK.items[17]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0a2945e393fea445",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Nag",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Nag",
+   "provenance": "generator:pd.comprehension.gK.items[18]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_16ff9d93c076446f",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. A lad ____ the frog.",
+   "options": [
+    "sees",
+    "Nat's",
+    "frog",
+    "lamp"
+   ],
+   "answer": "sees",
+   "provenance": "generator:pd.comprehension.gK.items[19]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_ad4dff0970e9a041",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"A lad sees the frog.\"",
+   "options": [
+    "The lad can not catch it.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "The lad can not catch it.",
+   "provenance": "generator:pd.comprehension.gK.items[20]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_886c213dfe2afbbe",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. It will ____ on Sue's hand, and sing.",
+   "options": [
+    "stand",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "stand",
+   "provenance": "generator:pd.comprehension.gK.items[22]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bc8321136f2bc403",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"It will stand on Sue's hand, and sing.\"",
+   "options": [
+    "Sue loves her pet bird.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "Sue loves her pet bird.",
+   "provenance": "generator:pd.comprehension.gK.items[23]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4e9e1d585fa0a26c",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Lives",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Lives",
+   "provenance": "generator:pd.comprehension.gK.items[24]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c174173eeb00bcd3",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Our ____ do not run off.",
+   "options": [
+    "cows",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "cows",
+   "provenance": "generator:pd.comprehension.gK.items[25]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4a027e7e6f6957c8",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Our cows do not run off.\"",
+   "options": [
+    "At night they come to the barn.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "At night they come to the barn.",
+   "provenance": "generator:pd.comprehension.gK.items[26]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_59984f462ec1d36d",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Cows",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Cows",
+   "provenance": "generator:pd.comprehension.gK.items[27]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d7951f0f8048e0c4",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. If the ____ can not get to them, they will drown.",
+   "options": [
+    "boat",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "boat",
+   "provenance": "generator:pd.comprehension.gK.items[28]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c48a3942332f19c6",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"If the boat can not get to them, they will drown.\"",
+   "options": [
+    "The boat has brave men in it.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "The boat has brave men in it.",
+   "provenance": "generator:pd.comprehension.gK.items[29]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_471eae05fcbfef12",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Boat",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Boat",
+   "provenance": "generator:pd.comprehension.gK.items[30]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4fe6667fb3fd658e",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. The ____ men in our boat are on their way to the ship.",
+   "options": [
+    "brave",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "brave",
+   "provenance": "generator:pd.comprehension.gK.items[31]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_8e2b7edac84f96db",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"The brave men in our boat are on their way to the ship.\"",
+   "options": [
+    "They will save the men in the ship, if they can.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "They will save the men in the ship, if they can.",
+   "provenance": "generator:pd.comprehension.gK.items[32]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1e72d9f4d1eaf796",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Big",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Big",
+   "provenance": "generator:pd.comprehension.gK.items[33]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_34fd0f2bc7756ffa",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____!\" but Mary could not tell its wants.",
+   "options": [
+    "buzz",
+    "Nat's",
+    "frog",
+    "sees"
+   ],
+   "answer": "buzz",
+   "provenance": "generator:pd.comprehension.gK.items[34]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_f34f9a0d8ab9ec57",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"buzz!\" but Mary could not tell its wants.\"",
+   "options": [
+    "I think it said, \"Please let me get some sweets in this vine.",
+    "The cat has a rat.",
+    "The rat ran at Ann.",
+    "Ann has a cat."
+   ],
+   "answer": "I think it said, \"Please let me get some sweets in this vine.",
+   "provenance": "generator:pd.comprehension.gK.items[35]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c5ab702a1a503831",
+   "schema": "item/v1",
+   "grade": "K",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "K.ELA.story-questions",
+   "skill_tag": "story-questions",
+   "standards": [
+    "RL.K.1",
+    "RI.K.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Buzz",
+    "Rat",
+    "Ann",
+    "Dog"
+   ],
+   "answer": "Buzz",
+   "provenance": "generator:pd.comprehension.gK.items[36]",
+   "generator": "pd.comprehension.gK",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_f83db6cb1c5c6441",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sound-vibration",
+   "skill_tag": "sound-vibration",
+   "standards": [
+    "1-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What makes a drum make sound when you hit it?",
+   "options": [
+    "It vibrates (shakes fast)",
+    "It glows",
+    "It melts",
+    "It floats"
+   ],
+   "answer": "It vibrates (shakes fast)",
+   "provenance": "generator:1.bank.sound-vibration.items[0]",
+   "generator": "1.bank.sound-vibration",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1a33c6a97203e776",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sound-vibration",
+   "skill_tag": "sound-vibration",
+   "standards": [
+    "1-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these can you HEAR?",
+   "options": [
+    "A ringing bell",
+    "a color",
+    "a smell",
+    "a thought"
+   ],
+   "answer": "A ringing bell",
+   "provenance": "generator:1.bank.sound-vibration.items[1]",
+   "generator": "1.bank.sound-vibration",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7436431fd99bb49d",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sound-vibration",
+   "skill_tag": "sound-vibration",
+   "standards": [
+    "1-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do your vocal cords do when you speak?",
+   "options": [
+    "They vibrate",
+    "They light up",
+    "They cool down",
+    "They freeze"
+   ],
+   "answer": "They vibrate",
+   "provenance": "generator:1.bank.sound-vibration.items[2]",
+   "generator": "1.bank.sound-vibration",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5122ea3d1cca57d0",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sound-vibration",
+   "skill_tag": "sound-vibration",
+   "standards": [
+    "1-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Where do the vibrations from a guitar string go?",
+   "options": [
+    "Into the air as sound waves",
+    "Nowhere",
+    "Into the floor only",
+    "Into the light"
+   ],
+   "answer": "Into the air as sound waves",
+   "provenance": "generator:1.bank.sound-vibration.items[3]",
+   "generator": "1.bank.sound-vibration",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1026c842788ceb9a",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sound-vibration",
+   "skill_tag": "sound-vibration",
+   "standards": [
+    "1-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why does a spoon make noise when you tap a bowl?",
+   "options": [
+    "The bowl vibrates",
+    "The bowl glows",
+    "The bowl melts",
+    "The bowl spins"
+   ],
+   "answer": "The bowl vibrates",
+   "provenance": "generator:1.bank.sound-vibration.items[4]",
+   "generator": "1.bank.sound-vibration",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1af12e2d6e81d92e",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sound-vibration",
+   "skill_tag": "sound-vibration",
+   "standards": [
+    "1-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What happens to sound if you cover your ears?",
+   "options": [
+    "You hear it less",
+    "You hear it more",
+    "It stops existing",
+    "It gets louder"
+   ],
+   "answer": "You hear it less",
+   "provenance": "generator:1.bank.sound-vibration.items[5]",
+   "generator": "1.bank.sound-vibration",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_259cd95821fc13b2",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.light-and-sight",
+   "skill_tag": "light-and-sight",
+   "standards": [
+    "1-PS4-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do you need to SEE an object?",
+   "options": [
+    "Light shining on it",
+    "A loud noise",
+    "A strong wind",
+    "Cold air"
+   ],
+   "answer": "Light shining on it",
+   "provenance": "generator:1.bank.light-and-sight.items[0]",
+   "generator": "1.bank.light-and-sight",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_cf1b7dbb86abf29a",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.light-and-sight",
+   "skill_tag": "light-and-sight",
+   "standards": [
+    "1-PS4-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What makes a shadow?",
+   "options": [
+    "An object blocking light",
+    "A reflection in water",
+    "A loud sound",
+    "Cold air"
+   ],
+   "answer": "An object blocking light",
+   "provenance": "generator:1.bank.light-and-sight.items[1]",
+   "generator": "1.bank.light-and-sight",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_783a522c0afa9077",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.light-and-sight",
+   "skill_tag": "light-and-sight",
+   "standards": [
+    "1-PS4-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these gives off its OWN light?",
+   "options": [
+    "The sun",
+    "The moon",
+    "a book",
+    "a chair"
+   ],
+   "answer": "The sun",
+   "provenance": "generator:1.bank.light-and-sight.items[2]",
+   "generator": "1.bank.light-and-sight",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_584fa671ac38cd4c",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.light-and-sight",
+   "skill_tag": "light-and-sight",
+   "standards": [
+    "1-PS4-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why can you not see in a perfectly dark room?",
+   "options": [
+    "There is no light to reflect",
+    "Your eyes are broken",
+    "It is too small",
+    "It is too loud"
+   ],
+   "answer": "There is no light to reflect",
+   "provenance": "generator:1.bank.light-and-sight.items[3]",
+   "generator": "1.bank.light-and-sight",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1e435dfef42c740d",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.light-and-sight",
+   "skill_tag": "light-and-sight",
+   "standards": [
+    "1-PS4-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do mirrors do with light?",
+   "options": [
+    "Bounce it back (reflect)",
+    "Absorb it all",
+    "Turn it into sound",
+    "Turn it into heat only"
+   ],
+   "answer": "Bounce it back (reflect)",
+   "provenance": "generator:1.bank.light-and-sight.items[4]",
+   "generator": "1.bank.light-and-sight",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4c7d32af9aafb329",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.light-and-sight",
+   "skill_tag": "light-and-sight",
+   "standards": [
+    "1-PS4-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "You can see a ball in a dark room if you...",
+   "options": [
+    "Shine a light on it",
+    "Sing to it",
+    "Wave at it",
+    "Close your eyes"
+   ],
+   "answer": "Shine a light on it",
+   "provenance": "generator:1.bank.light-and-sight.items[5]",
+   "generator": "1.bank.light-and-sight",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c974257c47631cee",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sky-patterns",
+   "skill_tag": "sky-patterns",
+   "standards": [
+    "1-ESS1-1",
+    "1-ESS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do we see in the daytime sky?",
+   "options": [
+    "The sun",
+    "The full moon",
+    "Stars",
+    "Comets"
+   ],
+   "answer": "The sun",
+   "provenance": "generator:1.bank.sky-patterns.items[0]",
+   "generator": "1.bank.sky-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_23fc67965e7934b1",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sky-patterns",
+   "skill_tag": "sky-patterns",
+   "standards": [
+    "1-ESS1-1",
+    "1-ESS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "When do we usually see the moon?",
+   "options": [
+    "At night",
+    "At noon",
+    "Only in winter",
+    "Only indoors"
+   ],
+   "answer": "At night",
+   "provenance": "generator:1.bank.sky-patterns.items[1]",
+   "generator": "1.bank.sky-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_98bd76c55a04d1f7",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sky-patterns",
+   "skill_tag": "sky-patterns",
+   "standards": [
+    "1-ESS1-1",
+    "1-ESS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which star is closest to Earth?",
+   "options": [
+    "The sun",
+    "Polaris",
+    "A distant galaxy",
+    "A black hole"
+   ],
+   "answer": "The sun",
+   "provenance": "generator:1.bank.sky-patterns.items[2]",
+   "generator": "1.bank.sky-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e3d071c878b2a812",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sky-patterns",
+   "skill_tag": "sky-patterns",
+   "standards": [
+    "1-ESS1-1",
+    "1-ESS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What changes make the seasons?",
+   "options": [
+    "How Earth is tilted as it orbits the sun",
+    "The moon getting closer",
+    "Clouds",
+    "Rain"
+   ],
+   "answer": "How Earth is tilted as it orbits the sun",
+   "provenance": "generator:1.bank.sky-patterns.items[3]",
+   "generator": "1.bank.sky-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2a2933be5eeb55fc",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sky-patterns",
+   "skill_tag": "sky-patterns",
+   "standards": [
+    "1-ESS1-1",
+    "1-ESS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which season has the longest days?",
+   "options": [
+    "Summer",
+    "Winter",
+    "Fall",
+    "Spring"
+   ],
+   "answer": "Summer",
+   "provenance": "generator:1.bank.sky-patterns.items[4]",
+   "generator": "1.bank.sky-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2df37eca8dd92c8f",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "1.SCI.sky-patterns",
+   "skill_tag": "sky-patterns",
+   "standards": [
+    "1-ESS1-1",
+    "1-ESS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What pattern do the sun and moon follow?",
+   "options": [
+    "They rise and set each day/night",
+    "They never move",
+    "They only appear on weekends",
+    "They swap places"
+   ],
+   "answer": "They rise and set each day/night",
+   "provenance": "generator:1.bank.sky-patterns.items[5]",
+   "generator": "1.bank.sky-patterns",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e8da1ea5d6b8b70c",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "1.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "1.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why does our class have rules?",
+   "options": [
+    "To keep everyone safe and learning",
+    "To be mean",
+    "To waste time",
+    "No reason"
+   ],
+   "answer": "To keep everyone safe and learning",
+   "provenance": "generator:1.bank.classroom-rules.items[0]",
+   "generator": "1.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_65efdcfa1b684662",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "1.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "1.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What should you do before speaking in class?",
+   "options": [
+    "Raise your hand",
+    "Shout",
+    "Leave the room",
+    "Ignore the teacher"
+   ],
+   "answer": "Raise your hand",
+   "provenance": "generator:1.bank.classroom-rules.items[1]",
+   "generator": "1.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_844f8116fdf91c5b",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "1.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "1.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "How do you show respect for a classmate’s idea?",
+   "options": [
+    "Listen and take turns",
+    "Interrupt",
+    "Laugh",
+    "Copy without asking"
+   ],
+   "answer": "Listen and take turns",
+   "provenance": "generator:1.bank.classroom-rules.items[2]",
+   "generator": "1.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1689c599ec1c4bfd",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "1.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "1.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is the fair way to share supplies?",
+   "options": [
+    "Take turns and share",
+    "Grab the most",
+    "Hide them",
+    "Refuse to share"
+   ],
+   "answer": "Take turns and share",
+   "provenance": "generator:1.bank.classroom-rules.items[3]",
+   "generator": "1.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_52facfa7e64ca621",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "1.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "1.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why do we clean up after an activity?",
+   "options": [
+    "So the next group is ready",
+    "To waste time",
+    "Because we must not",
+    "No reason"
+   ],
+   "answer": "So the next group is ready",
+   "provenance": "generator:1.bank.classroom-rules.items[4]",
+   "generator": "1.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b008eaf3ef287a61",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "1.SS.classroom-rules",
+   "skill_tag": "classroom-rules",
+   "standards": [
+    "1.C1.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What should you do if you disagree with a rule?",
+   "options": [
+    "Raise your hand and ask respectfully",
+    "Yell",
+    "Break it",
+    "Ignore it"
+   ],
+   "answer": "Raise your hand and ask respectfully",
+   "provenance": "generator:1.bank.classroom-rules.items[5]",
+   "generator": "1.bank.classroom-rules",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1c2f10bb4e742d52",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Now Ann can pat Rab.\"",
+   "options": [
+    "Let me pat Rab, too.",
+    "Ned eggs black left fed nest them get will",
+    "Ned has fed the hen.",
+    "She is a black hen."
+   ],
+   "answer": "Let me pat Rab, too.",
+   "provenance": "generator:pd.comprehension.g1.items[0]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bf004420421aca2a",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Rab",
+    "Ned",
+    "Let",
+    "Whip"
+   ],
+   "answer": "Rab",
+   "provenance": "generator:pd.comprehension.g1.items[1]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_3967f5f29baad735",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these words appears in the passage?",
+   "options": [
+    "catch",
+    "black",
+    "still",
+    "stand"
+   ],
+   "answer": "catch",
+   "provenance": "generator:pd.comprehension.g1.items[2]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e4346f12a8e31600",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. See the ____ in the nest!",
+   "options": [
+    "eggs",
+    "catch",
+    "Nell",
+    "black"
+   ],
+   "answer": "eggs",
+   "provenance": "generator:pd.comprehension.g1.items[3]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_09f18529e34345ff",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"See the eggs in the nest!\"",
+   "options": [
+    "Will the hen let Ned get them?",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "Will the hen let Ned get them?",
+   "provenance": "generator:pd.comprehension.g1.items[4]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_debd4cb709b51e1d",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Ned",
+    "Rab",
+    "Let",
+    "Whip"
+   ],
+   "answer": "Ned",
+   "provenance": "generator:pd.comprehension.g1.items[5]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5e27fbdf1a9f8b96",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Has the ____ hen left the nest?",
+   "options": [
+    "black",
+    "catch",
+    "eggs",
+    "left"
+   ],
+   "answer": "black",
+   "provenance": "generator:pd.comprehension.g1.items[6]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a32ba54ef41be66e",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Has the black hen left the nest?\"",
+   "options": [
+    "I will now run to catch Rab.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "I will now run to catch Rab.",
+   "provenance": "generator:pd.comprehension.g1.items[7]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_79204da856ffe705",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Let",
+    "Rab",
+    "Ned",
+    "Whip"
+   ],
+   "answer": "Let",
+   "provenance": "generator:pd.comprehension.g1.items[8]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_164854a46991da80",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ still, Jip, and let Ann get in.",
+   "options": [
+    "Stand",
+    "Catch",
+    "Eggs",
+    "Black"
+   ],
+   "answer": "Stand",
+   "provenance": "generator:pd.comprehension.g1.items[9]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_3678c296f17d187f",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Stand still, Jip, and let Ann get in.\"",
+   "options": [
+    "Now, Ben, hand me the whip.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "Now, Ben, hand me the whip.",
+   "provenance": "generator:pd.comprehension.g1.items[10]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_adb37f4c027768c1",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Whip",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Whip",
+   "provenance": "generator:pd.comprehension.g1.items[11]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_860058705fcd9ab0",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Do you ____ he is a good dog?",
+   "options": [
+    "think",
+    "catch",
+    "eggs",
+    "black"
+   ],
+   "answer": "think",
+   "provenance": "generator:pd.comprehension.g1.items[12]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b2476fb69a262364",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Do you think he is a good dog?\"",
+   "options": [
+    "Tom has a big top, too.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "Tom has a big top, too.",
+   "provenance": "generator:pd.comprehension.g1.items[13]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_6718c2701577ddca",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Dog",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Dog",
+   "provenance": "generator:pd.comprehension.g1.items[14]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_df0445f33988cd11",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____, will you let me ride with you on Prince?",
+   "options": [
+    "Papa",
+    "Catch",
+    "Eggs",
+    "Black"
+   ],
+   "answer": "Papa",
+   "provenance": "generator:pd.comprehension.g1.items[15]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_85f3564bc823c335",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Papa, will you let me ride with you on Prince?\"",
+   "options": [
+    "I will sit still in your arms.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "I will sit still in your arms.",
+   "provenance": "generator:pd.comprehension.g1.items[16]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0a5f2d77aa6b8273",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Pa",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Pa",
+   "provenance": "generator:pd.comprehension.g1.items[17]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_036fa95175fa1572",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. The fat ____ swam to the bank, and we fed her.",
+   "options": [
+    "duck",
+    "catch",
+    "eggs",
+    "black"
+   ],
+   "answer": "duck",
+   "provenance": "generator:pd.comprehension.g1.items[18]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_ecddb77871cee5bb",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"The fat duck swam to the bank, and we fed her.\"",
+   "options": [
+    "Did you think we might fall into the pond?",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "Did you think we might fall into the pond?",
+   "provenance": "generator:pd.comprehension.g1.items[19]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_dadd0544d664966c",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Tom",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Tom",
+   "provenance": "generator:pd.comprehension.g1.items[20]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b3fe1dc401ba9f6d",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. I ____ they will stop here and play for us.",
+   "options": [
+    "hope",
+    "catch",
+    "eggs",
+    "black"
+   ],
+   "answer": "hope",
+   "provenance": "generator:pd.comprehension.g1.items[21]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_6c7ebd8d4eaddd2d",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"I hope they will stop here and play for us.\"",
+   "options": [
+    "See the large man in front of the band, with his big hat.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "See the large man in front of the band, with his big hat.",
+   "provenance": "generator:pd.comprehension.g1.items[22]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0aee52642feee187",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Play",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Play",
+   "provenance": "generator:pd.comprehension.g1.items[23]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0b8ba5a9d595e777",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Here, hen, ____ this little chick under your wing.",
+   "options": [
+    "take",
+    "catch",
+    "eggs",
+    "black"
+   ],
+   "answer": "take",
+   "provenance": "generator:pd.comprehension.g1.items[24]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_54077260188665a2",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Here, hen, take this little chick under your wing.\"",
+   "options": [
+    "Now, chick, tuck your little, wet feet under you, and go to sleep for a while.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "Now, chick, tuck your little, wet feet under you, and go to sleep for a while.",
+   "provenance": "generator:pd.comprehension.g1.items[25]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_291ec3efe5a992cb",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Little",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Little",
+   "provenance": "generator:pd.comprehension.g1.items[26]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_f911e4145a223651",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. There is a ____ wind, and my kite flies high.",
+   "options": [
+    "good",
+    "catch",
+    "eggs",
+    "black"
+   ],
+   "answer": "good",
+   "provenance": "generator:pd.comprehension.g1.items[27]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_13a0f06447127c96",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"There is a good wind, and my kite flies high.\"",
+   "options": [
+    "I can just see it.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "I can just see it.",
+   "provenance": "generator:pd.comprehension.g1.items[28]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_05892f2d88c91816",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "High",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "High",
+   "provenance": "generator:pd.comprehension.g1.items[29]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2f255741db972522",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ came with a bound, and jumped into the pond.",
+   "options": [
+    "Ponto",
+    "Catch",
+    "Eggs",
+    "Black"
+   ],
+   "answer": "Ponto",
+   "provenance": "generator:pd.comprehension.g1.items[30]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_dba124cc7e7700cd",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Ponto came with a bound, and jumped into the pond.\"",
+   "options": [
+    "He swam around, and got Bess in his mouth, and brought her to the shore.",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "He swam around, and got Bess in his mouth, and brought her to the shore.",
+   "provenance": "generator:pd.comprehension.g1.items[31]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4996056b3315211a",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Ponto",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Ponto",
+   "provenance": "generator:pd.comprehension.g1.items[32]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b6bd3051cd6b0b23",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ me your paw, Fido.",
+   "options": [
+    "Give",
+    "Catch",
+    "Eggs",
+    "Black"
+   ],
+   "answer": "Give",
+   "provenance": "generator:pd.comprehension.g1.items[33]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_41b5cfd776ea0335",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Give me your paw, Fido.\"",
+   "options": [
+    "How do you do, sir?",
+    "Ann can catch Rab.",
+    "She has the hat.",
+    "Now Ann can pat Rab."
+   ],
+   "answer": "How do you do, sir?",
+   "provenance": "generator:pd.comprehension.g1.items[34]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_fddfdcb05fb0dbcf",
+   "schema": "item/v1",
+   "grade": "1",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "1.ELA.main-topic-details",
+   "skill_tag": "main-topic-details",
+   "standards": [
+    "RI.1.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Fido",
+    "Rab",
+    "Ned",
+    "Let"
+   ],
+   "answer": "Fido",
+   "provenance": "generator:pd.comprehension.g1.items[35]",
+   "generator": "pd.comprehension.g1",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_56ec1d93a00f3dad",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.material-properties",
+   "skill_tag": "material-properties",
+   "standards": [
+    "2-PS1-1",
+    "2-PS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which material is the HARDEST?",
+   "options": [
+    "Metal rock",
+    "A feather",
+    "Jelly",
+    "Cotton candy"
+   ],
+   "answer": "Metal rock",
+   "provenance": "generator:2.bank.material-properties.items[0]",
+   "generator": "2.bank.material-properties",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c03e32838c4e6fb9",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.material-properties",
+   "skill_tag": "material-properties",
+   "standards": [
+    "2-PS1-1",
+    "2-PS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which material lets light pass through?",
+   "options": [
+    "Clear glass",
+    "Wood",
+    "Brick",
+    "Cardboard"
+   ],
+   "answer": "Clear glass",
+   "provenance": "generator:2.bank.material-properties.items[1]",
+   "generator": "2.bank.material-properties",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_9e328bcce852c4ae",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.material-properties",
+   "skill_tag": "material-properties",
+   "standards": [
+    "2-PS1-1",
+    "2-PS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What property describes how heavy something is?",
+   "options": [
+    "Mass",
+    "Color",
+    "Smell",
+    "Taste"
+   ],
+   "answer": "Mass",
+   "provenance": "generator:2.bank.material-properties.items[2]",
+   "generator": "2.bank.material-properties",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c465924c761d634b",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.material-properties",
+   "skill_tag": "material-properties",
+   "standards": [
+    "2-PS1-1",
+    "2-PS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which material is the BEST insulator (keeps heat in)?",
+   "options": [
+    "Wool",
+    "Metal",
+    "Glass",
+    "Water"
+   ],
+   "answer": "Wool",
+   "provenance": "generator:2.bank.material-properties.items[3]",
+   "generator": "2.bank.material-properties",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_fb5da9af9558bbf3",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.material-properties",
+   "skill_tag": "material-properties",
+   "standards": [
+    "2-PS1-1",
+    "2-PS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A material that bends easily without breaking is...",
+   "options": [
+    "Flexible",
+    "Rigid",
+    "Transparent",
+    "Brittle"
+   ],
+   "answer": "Flexible",
+   "provenance": "generator:2.bank.material-properties.items[4]",
+   "generator": "2.bank.material-properties",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2486e81a6a98dfb0",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.material-properties",
+   "skill_tag": "material-properties",
+   "standards": [
+    "2-PS1-1",
+    "2-PS1-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which is a NATURAL material?",
+   "options": [
+    "Wood",
+    "Plastic",
+    "Nylon",
+    "Glass"
+   ],
+   "answer": "Wood",
+   "provenance": "generator:2.bank.material-properties.items[5]",
+   "generator": "2.bank.material-properties",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_8ba565e86c260672",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.plants-need-sun-water",
+   "skill_tag": "plants-need-sun-water",
+   "standards": [
+    "2-LS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do plants need to make their own food?",
+   "options": [
+    "Sunlight and water",
+    "Moonlight only",
+    "Wind only",
+    "Salt water"
+   ],
+   "answer": "Sunlight and water",
+   "provenance": "generator:2.bank.plants-need-sun-water.items[0]",
+   "generator": "2.bank.plants-need-sun-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1f61fcde42adbd7d",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.plants-need-sun-water",
+   "skill_tag": "plants-need-sun-water",
+   "standards": [
+    "2-LS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why do plants need water?",
+   "options": [
+    "To grow and stay firm",
+    "To change color",
+    "To make sound",
+    "To move faster"
+   ],
+   "answer": "To grow and stay firm",
+   "provenance": "generator:2.bank.plants-need-sun-water.items[1]",
+   "generator": "2.bank.plants-need-sun-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e4530d62701ed11f",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.plants-need-sun-water",
+   "skill_tag": "plants-need-sun-water",
+   "standards": [
+    "2-LS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What gas do plants take in for photosynthesis?",
+   "options": [
+    "Carbon dioxide",
+    "Oxygen only",
+    "Helium",
+    "Nitrogen only"
+   ],
+   "answer": "Carbon dioxide",
+   "provenance": "generator:2.bank.plants-need-sun-water.items[2]",
+   "generator": "2.bank.plants-need-sun-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d6710a866b44cd42",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.plants-need-sun-water",
+   "skill_tag": "plants-need-sun-water",
+   "standards": [
+    "2-LS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do plants release as a product of photosynthesis?",
+   "options": [
+    "Oxygen",
+    "Carbon dioxide",
+    "Methane",
+    "Smoke"
+   ],
+   "answer": "Oxygen",
+   "provenance": "generator:2.bank.plants-need-sun-water.items[3]",
+   "generator": "2.bank.plants-need-sun-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_55b9a34db0926129",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.plants-need-sun-water",
+   "skill_tag": "plants-need-sun-water",
+   "standards": [
+    "2-LS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Where do most plants grow best?",
+   "options": [
+    "In soil with sunlight",
+    "In total darkness",
+    "In salt water",
+    "Under a rock"
+   ],
+   "answer": "In soil with sunlight",
+   "provenance": "generator:2.bank.plants-need-sun-water.items[4]",
+   "generator": "2.bank.plants-need-sun-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_8633d38382a1b2d4",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.plants-need-sun-water",
+   "skill_tag": "plants-need-sun-water",
+   "standards": [
+    "2-LS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What happens to a plant with no water for a long time?",
+   "options": [
+    "It wilts and may die",
+    "It grows faster",
+    "It changes color to blue",
+    "It floats"
+   ],
+   "answer": "It wilts and may die",
+   "provenance": "generator:2.bank.plants-need-sun-water.items[5]",
+   "generator": "2.bank.plants-need-sun-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_22afcc9b9c043f66",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.land-and-water",
+   "skill_tag": "land-and-water",
+   "standards": [
+    "2-ESS2-1",
+    "2-ESS2-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is LAND?",
+   "options": [
+    "The ground we walk on",
+    "Only oceans",
+    "The sky",
+    "Clouds"
+   ],
+   "answer": "The ground we walk on",
+   "provenance": "generator:2.bank.land-and-water.items[0]",
+   "generator": "2.bank.land-and-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bd5d5f63f4534bac",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.land-and-water",
+   "skill_tag": "land-and-water",
+   "standards": [
+    "2-ESS2-1",
+    "2-ESS2-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is WATER (on a map)?",
+   "options": [
+    "Oceans, lakes, rivers",
+    "Mountains",
+    "Cities",
+    "Forests"
+   ],
+   "answer": "Oceans, lakes, rivers",
+   "provenance": "generator:2.bank.land-and-water.items[1]",
+   "generator": "2.bank.land-and-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7b5b65706ec6686a",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.land-and-water",
+   "skill_tag": "land-and-water",
+   "standards": [
+    "2-ESS2-1",
+    "2-ESS2-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What can slowly change the shape of land?",
+   "options": [
+    "Moving water and wind",
+    "A pencil",
+    "A sound",
+    "A shadow"
+   ],
+   "answer": "Moving water and wind",
+   "provenance": "generator:2.bank.land-and-water.items[2]",
+   "generator": "2.bank.land-and-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c52e2dd469c98614",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.land-and-water",
+   "skill_tag": "land-and-water",
+   "standards": [
+    "2-ESS2-1",
+    "2-ESS2-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which is a large body of salt water?",
+   "options": [
+    "An ocean",
+    "A pond",
+    "A puddle",
+    "A river"
+   ],
+   "answer": "An ocean",
+   "provenance": "generator:2.bank.land-and-water.items[3]",
+   "generator": "2.bank.land-and-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_46adda985c2f0648",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.land-and-water",
+   "skill_tag": "land-and-water",
+   "standards": [
+    "2-ESS2-1",
+    "2-ESS2-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Where does a river usually END up?",
+   "options": [
+    "In an ocean or lake",
+    "In the sky",
+    "In the desert",
+    "Underground only"
+   ],
+   "answer": "In an ocean or lake",
+   "provenance": "generator:2.bank.land-and-water.items[4]",
+   "generator": "2.bank.land-and-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_38a2dd194a663bbc",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "2.SCI.land-and-water",
+   "skill_tag": "land-and-water",
+   "standards": [
+    "2-ESS2-1",
+    "2-ESS2-2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a hill?",
+   "options": [
+    "A piece of land higher than the ground around it",
+    "A body of water",
+    "A cloud",
+    "A wind pattern"
+   ],
+   "answer": "A piece of land higher than the ground around it",
+   "provenance": "generator:2.bank.land-and-water.items[5]",
+   "generator": "2.bank.land-and-water",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e3badf22982e2cb2",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "2.SS.local-government",
+   "skill_tag": "local-government",
+   "standards": [
+    "2.C3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What does local government DO?",
+   "options": [
+    "Makes and enforces town rules (ordinances)",
+    "Flies rockets",
+    "Paints pictures",
+    "Grows food"
+   ],
+   "answer": "Makes and enforces town rules (ordinances)",
+   "provenance": "generator:2.bank.local-government.items[0]",
+   "generator": "2.bank.local-government",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a400de244690adfb",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "2.SS.local-government",
+   "skill_tag": "local-government",
+   "standards": [
+    "2.C3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who helps keep a town safe every day?",
+   "options": [
+    "Police and firefighters",
+    "Astronauts",
+    "Artists",
+    "Farmers only"
+   ],
+   "answer": "Police and firefighters",
+   "provenance": "generator:2.bank.local-government.items[1]",
+   "generator": "2.bank.local-government",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_865c54741dc88b03",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "2.SS.local-government",
+   "skill_tag": "local-government",
+   "standards": [
+    "2.C3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is an ORDINANCE?",
+   "options": [
+    "A local law",
+    "A type of tree",
+    "A weather event",
+    "A math rule"
+   ],
+   "answer": "A local law",
+   "provenance": "generator:2.bank.local-government.items[2]",
+   "generator": "2.bank.local-government",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_903d106b5b56be64",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "2.SS.local-government",
+   "skill_tag": "local-government",
+   "standards": [
+    "2.C3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Where do town leaders meet to make decisions?",
+   "options": [
+    "City/town hall",
+    "A mountain",
+    "A forest",
+    "A boat"
+   ],
+   "answer": "City/town hall",
+   "provenance": "generator:2.bank.local-government.items[3]",
+   "generator": "2.bank.local-government",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a05dd87fa754bb62",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "2.SS.local-government",
+   "skill_tag": "local-government",
+   "standards": [
+    "2.C3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why do towns make rules (ordinances)?",
+   "options": [
+    "To keep people safe and orderly",
+    "To confuse people",
+    "To waste money",
+    "No reason"
+   ],
+   "answer": "To keep people safe and orderly",
+   "provenance": "generator:2.bank.local-government.items[4]",
+   "generator": "2.bank.local-government",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5b43273891de8690",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "social_studies",
+   "cat_domain": null,
+   "skill_node": "2.SS.local-government",
+   "skill_tag": "local-government",
+   "standards": [
+    "2.C3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these is a LOCAL service?",
+   "options": [
+    "Trash pickup",
+    "Space travel",
+    "Ocean shipping only",
+    "Global satellites"
+   ],
+   "answer": "Trash pickup",
+   "provenance": "generator:2.bank.local-government.items[5]",
+   "generator": "2.bank.local-government",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_8bdec36665f41e88",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____-twit, twit-twit, twit-tweet!",
+   "options": [
+    "Twit",
+    "Afraid",
+    "Dark",
+    "Willie"
+   ],
+   "answer": "Twit",
+   "provenance": "generator:pd.comprehension.g2.items[0]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bee725501d8f567a",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Twit-twit, twit-twit, twit-tweet!\"",
+   "options": [
+    "That was all he would say.",
+    "AFRAID IN THE DARK.",
+    "\"Willie, will you run upstairs, and get my needle book from the bureau?\"",
+    "But Willie did not stir."
+   ],
+   "answer": "That was all he would say.",
+   "provenance": "generator:pd.comprehension.g2.items[1]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_79f9281345396722",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Twit",
+    "Willie",
+    "Man",
+    "Dog"
+   ],
+   "answer": "Twit",
+   "provenance": "generator:pd.comprehension.g2.items[2]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c47e4bd94dd9fc49",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. \"____, the dark is only a big shadow over everything.\"",
+   "options": [
+    "Well",
+    "Bird",
+    "Taught",
+    "Come"
+   ],
+   "answer": "Well",
+   "provenance": "generator:pd.comprehension.g2.items[3]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4678ad4e2b878c55",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"\"Well, the dark is only a big shadow over everything.\"\"",
+   "options": [
+    "\"What makes the big shadow, mamma?\"",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "\"What makes the big shadow, mamma?\"",
+   "provenance": "generator:pd.comprehension.g2.items[4]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2ce45b642aab5eef",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Willie",
+    "Twit",
+    "Man",
+    "Dog"
+   ],
+   "answer": "Willie",
+   "provenance": "generator:pd.comprehension.g2.items[5]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_9a4802845adcdcc6",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. The ____ man stood, and held out his hat.",
+   "options": [
+    "blind",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "blind",
+   "provenance": "generator:pd.comprehension.g2.items[6]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_672799aa0cc1b165",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"The blind man stood, and held out his hat.\"",
+   "options": [
+    "\"Let us give the poor man something,\" said Harry to his mother.",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "\"Let us give the poor man something,\" said Harry to his mother.",
+   "provenance": "generator:pd.comprehension.g2.items[7]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7513e66e303097a1",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Man",
+    "Twit",
+    "Willie",
+    "Dog"
+   ],
+   "answer": "Man",
+   "provenance": "generator:pd.comprehension.g2.items[8]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_000b6ca335eb65d2",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. \"He ____ something pull him by the coat, and heard the bark of a dog.",
+   "options": [
+    "felt",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "felt",
+   "provenance": "generator:pd.comprehension.g2.items[9]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e6cb91cec9697ad2",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"\"He felt something pull him by the coat, and heard the bark of a dog.\"",
+   "options": [
+    "He put out his hand, and felt the dog.",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "He put out his hand, and felt the dog.",
+   "provenance": "generator:pd.comprehension.g2.items[10]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_21c18422463d7482",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Dog",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Dog",
+   "provenance": "generator:pd.comprehension.g2.items[11]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_909de214d7e7fdd7",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. On the ____ is a basket of fine apples.",
+   "options": [
+    "stool",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "stool",
+   "provenance": "generator:pd.comprehension.g2.items[12]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_f42fbc43b6181822",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"On the stool is a basket of fine apples.\"",
+   "options": [
+    "They seem to say, \"Won't you have one?\"",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "They seem to say, \"Won't you have one?\"",
+   "provenance": "generator:pd.comprehension.g2.items[13]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5583f47b7ee4a1a0",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Harry",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Harry",
+   "provenance": "generator:pd.comprehension.g2.items[14]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_28840e6b67d93002",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. \"She would ____ wash her face without soap,\" says Harry.",
+   "options": [
+    "rather",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "rather",
+   "provenance": "generator:pd.comprehension.g2.items[15]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1ef3aa68ed2d4ac3",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"\"She would rather wash her face without soap,\" says Harry.\"",
+   "options": [
+    "\"Now let us see who can make the biggest bubble.\"",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "\"Now let us see who can make the biggest bubble.\"",
+   "provenance": "generator:pd.comprehension.g2.items[16]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_6f5b3c447f4b7ce4",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Says",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Says",
+   "provenance": "generator:pd.comprehension.g2.items[17]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_22fb8968090c9b31",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Can you ____ me a little block for a post, Lucy'!\"",
+   "options": [
+    "find",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "find",
+   "provenance": "generator:pd.comprehension.g2.items[18]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bc7beab985fbcb9f",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Can you find me a little block for a post, Lucy'!\"\"",
+   "options": [
+    "\"Will a ribbon block do, Herbert?\"",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "\"Will a ribbon block do, Herbert?\"",
+   "provenance": "generator:pd.comprehension.g2.items[19]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d37fc3af0ba69c62",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Beam",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Beam",
+   "provenance": "generator:pd.comprehension.g2.items[20]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_cb8f21bb8d8f3adb",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ thought the bird was an owl, and that he had a nest in the old oak.",
+   "options": [
+    "Fred",
+    "Bird",
+    "Taught",
+    "Come"
+   ],
+   "answer": "Fred",
+   "provenance": "generator:pd.comprehension.g2.items[21]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2fbe3be286eb474d",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Fred thought the bird was an owl, and that he had a nest in the old oak.\"",
+   "options": [
+    "\"The next day we went to look for him, and, sure enough, he was there.\"",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "\"The next day we went to look for him, and, sure enough, he was there.\"",
+   "provenance": "generator:pd.comprehension.g2.items[22]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_25c1f86395e23dd7",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Fred",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Fred",
+   "provenance": "generator:pd.comprehension.g2.items[23]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_348e12ea96baf79b",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. It was a ____; a trout, my little girl.\"",
+   "options": [
+    "fish",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "fish",
+   "provenance": "generator:pd.comprehension.g2.items[24]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bfbed7764a664c59",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"It was a fish; a trout, my little girl.\"\"",
+   "options": [
+    "\"Not a fish, grandfather!",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "\"Not a fish, grandfather!",
+   "provenance": "generator:pd.comprehension.g2.items[25]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_264e9b990e51862a",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Tree",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Tree",
+   "provenance": "generator:pd.comprehension.g2.items[26]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b8d1a6cf1505380f",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ he would teach them a hymn.",
+   "options": [
+    "Sometimes",
+    "Bird",
+    "Taught",
+    "Come"
+   ],
+   "answer": "Sometimes",
+   "provenance": "generator:pd.comprehension.g2.items[27]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_34d813068084c59a",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Sometimes he would teach them a hymn.\"",
+   "options": [
+    "He would often talk to them of their father, who had gone to sea, or of their good, kind mother, who was in her grave.",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "He would often talk to them of their father, who had gone to sea, or of their good, kind mother, who was in her grave.",
+   "provenance": "generator:pd.comprehension.g2.items[28]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_cf80f3dc303d7b61",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Little",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Little",
+   "provenance": "generator:pd.comprehension.g2.items[29]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_1ad3ac15821e3a81",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ very honestly told him all about the broken window, and said he felt very well without any money to spend.",
+   "options": [
+    "George",
+    "Bird",
+    "Taught",
+    "Come"
+   ],
+   "answer": "George",
+   "provenance": "generator:pd.comprehension.g2.items[30]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_542de7433cb5ba63",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"George very honestly told him all about the broken window, and said he felt very well without any money to spend.\"",
+   "options": [
+    "When dinner was over, Mr.",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "When dinner was over, Mr.",
+   "provenance": "generator:pd.comprehension.g2.items[31]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_cae5a37bd22c7f10",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "George",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "George",
+   "provenance": "generator:pd.comprehension.g2.items[32]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_4fbbe1250ad89026",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. When they were ____ out in the water, the purple ones looked like plumes, and the brown ones like little trees.",
+   "options": [
+    "spread",
+    "BIRD",
+    "TAUGHT",
+    "come"
+   ],
+   "answer": "spread",
+   "provenance": "generator:pd.comprehension.g2.items[33]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b115ee71a33e6302",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"When they were spread out in the water, the purple ones looked like plumes, and the brown ones like little trees.\"",
+   "options": [
+    "Such a funny thing happened to Lucy.",
+    "WHAT A BIRD TAUGHT.",
+    "Why do you come to my apple tree, Little bird so gray?",
+    "That was all he would say."
+   ],
+   "answer": "Such a funny thing happened to Lucy.",
+   "provenance": "generator:pd.comprehension.g2.items[34]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d42d91c0d3adc8a4",
+   "schema": "item/v1",
+   "grade": "2",
+   "subject": "ela",
+   "cat_domain": "ela",
+   "skill_node": "2.ELA.main-topic-paragraphs",
+   "skill_tag": "main-topic-paragraphs",
+   "standards": [
+    "RI.2.2",
+    "RI.2.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Took",
+    "Twit",
+    "Willie",
+    "Man"
+   ],
+   "answer": "Took",
+   "provenance": "generator:pd.comprehension.g2.items[35]",
+   "generator": "pd.comprehension.g2",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_adea6a17d09a6bf5",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.energy-and-motion",
+   "skill_tag": "energy-and-motion",
+   "standards": [
+    "4-PS3-1",
+    "4-PS3-3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is ENERGY?",
+   "options": [
+    "The ability to do work or cause change",
+    "A type of rock",
+    "A color",
+    "A sound"
+   ],
+   "answer": "The ability to do work or cause change",
+   "provenance": "generator:4.bank.energy-and-motion.items[0]",
+   "generator": "4.bank.energy-and-motion",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c8c652912296e587",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.energy-and-motion",
+   "skill_tag": "energy-and-motion",
+   "standards": [
+    "4-PS3-1",
+    "4-PS3-3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "The FASTER an object moves, the more it has...",
+   "options": [
+    "Kinetic energy",
+    "No energy",
+    "Only potential energy",
+    "Negative energy"
+   ],
+   "answer": "Kinetic energy",
+   "provenance": "generator:4.bank.energy-and-motion.items[1]",
+   "generator": "4.bank.energy-and-motion",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_94cc28a3369626f8",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.energy-and-motion",
+   "skill_tag": "energy-and-motion",
+   "standards": [
+    "4-PS3-1",
+    "4-PS3-3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Energy stored for later use is called...",
+   "options": [
+    "Potential energy",
+    "Kinetic energy only",
+    "Sound energy only",
+    "Light energy only"
+   ],
+   "answer": "Potential energy",
+   "provenance": "generator:4.bank.energy-and-motion.items[2]",
+   "generator": "4.bank.energy-and-motion",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_f6c377c37d257709",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.energy-and-motion",
+   "skill_tag": "energy-and-motion",
+   "standards": [
+    "4-PS3-1",
+    "4-PS3-3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In a collision, what usually happens to energy?",
+   "options": [
+    "It transfers from one object to another",
+    "It vanishes",
+    "It turns into nothing",
+    "It doubles for free"
+   ],
+   "answer": "It transfers from one object to another",
+   "provenance": "generator:4.bank.energy-and-motion.items[3]",
+   "generator": "4.bank.energy-and-motion",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_202b5f5e04c60539",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.energy-and-motion",
+   "skill_tag": "energy-and-motion",
+   "standards": [
+    "4-PS3-1",
+    "4-PS3-3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A heavier object at the same speed has...",
+   "options": [
+    "More kinetic energy",
+    "Less energy",
+    "The same as a feather",
+    "No energy"
+   ],
+   "answer": "More kinetic energy",
+   "provenance": "generator:4.bank.energy-and-motion.items[4]",
+   "generator": "4.bank.energy-and-motion",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_16812401c30d7b71",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.energy-and-motion",
+   "skill_tag": "energy-and-motion",
+   "standards": [
+    "4-PS3-1",
+    "4-PS3-3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What happens to total energy in a closed system?",
+   "options": [
+    "It is conserved (stays the same)",
+    "It disappears",
+    "It multiplies",
+    "It turns into mass only"
+   ],
+   "answer": "It is conserved (stays the same)",
+   "provenance": "generator:4.bank.energy-and-motion.items[5]",
+   "generator": "4.bank.energy-and-motion",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7a1ed02cea51150e",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.waves-sound-light",
+   "skill_tag": "waves-sound-light",
+   "standards": [
+    "4-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a WAVE?",
+   "options": [
+    "A disturbance that transfers energy",
+    "A solid object",
+    "A type of animal",
+    "A weather event"
+   ],
+   "answer": "A disturbance that transfers energy",
+   "provenance": "generator:4.bank.waves-sound-light.items[0]",
+   "generator": "4.bank.waves-sound-light",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_72728a4110ca1190",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.waves-sound-light",
+   "skill_tag": "waves-sound-light",
+   "standards": [
+    "4-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "AMPLITUDE tells you a wave’s...",
+   "options": [
+    "Height (energy)",
+    "Color",
+    "Speed of sound only",
+    "Direction of gravity"
+   ],
+   "answer": "Height (energy)",
+   "provenance": "generator:4.bank.waves-sound-light.items[1]",
+   "generator": "4.bank.waves-sound-light",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_9133f96d8fc99ee1",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.waves-sound-light",
+   "skill_tag": "waves-sound-light",
+   "standards": [
+    "4-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "WAVELENGTH is the distance between...",
+   "options": [
+    "Two matching points on a wave",
+    "The floor and ceiling",
+    "Two colors",
+    "Two objects only"
+   ],
+   "answer": "Two matching points on a wave",
+   "provenance": "generator:4.bank.waves-sound-light.items[2]",
+   "generator": "4.bank.waves-sound-light",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_797c406ab8dc097a",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.waves-sound-light",
+   "skill_tag": "waves-sound-light",
+   "standards": [
+    "4-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Sound waves travel best through...",
+   "options": [
+    "Solids and liquids",
+    "A vacuum only",
+    "Outer space only",
+    "A void"
+   ],
+   "answer": "Solids and liquids",
+   "provenance": "generator:4.bank.waves-sound-light.items[3]",
+   "generator": "4.bank.waves-sound-light",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0ec0ba372a90194b",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.waves-sound-light",
+   "skill_tag": "waves-sound-light",
+   "standards": [
+    "4-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Light waves can travel through...",
+   "options": [
+    "Empty space (a vacuum)",
+    "Only glass",
+    "Only water",
+    "Only air, never space"
+   ],
+   "answer": "Empty space (a vacuum)",
+   "provenance": "generator:4.bank.waves-sound-light.items[4]",
+   "generator": "4.bank.waves-sound-light",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_922bb25b288009ff",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.waves-sound-light",
+   "skill_tag": "waves-sound-light",
+   "standards": [
+    "4-PS4-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A longer wavelength of visible light looks more like...",
+   "options": [
+    "Red",
+    "Violet",
+    "Blue",
+    "Green"
+   ],
+   "answer": "Red",
+   "provenance": "generator:4.bank.waves-sound-light.items[5]",
+   "generator": "4.bank.waves-sound-light",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b677ffc4574be125",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.rocks-and-fossils",
+   "skill_tag": "rocks-and-fossils",
+   "standards": [
+    "4-ESS1-1",
+    "4-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do FOSSILS tell scientists?",
+   "options": [
+    "What lived long ago",
+    "The weather tomorrow",
+    "Future events",
+    "Nothing at all"
+   ],
+   "answer": "What lived long ago",
+   "provenance": "generator:4.bank.rocks-and-fossils.items[0]",
+   "generator": "4.bank.rocks-and-fossils",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7c073ca2254f179d",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.rocks-and-fossils",
+   "skill_tag": "rocks-and-fossils",
+   "standards": [
+    "4-ESS1-1",
+    "4-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Most fossils are found in...",
+   "options": [
+    "Sedimentary rock",
+    "Igneous rock",
+    "Metal",
+    "Glass"
+   ],
+   "answer": "Sedimentary rock",
+   "provenance": "generator:4.bank.rocks-and-fossils.items[1]",
+   "generator": "4.bank.rocks-and-fossils",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_54fa04bac9d9eaa4",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.rocks-and-fossils",
+   "skill_tag": "rocks-and-fossils",
+   "standards": [
+    "4-ESS1-1",
+    "4-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Rock layers (strata) are usually...",
+   "options": [
+    "Oldest on the bottom, youngest on top",
+    "Randomly mixed",
+    "All the same age",
+    "Newest on the bottom"
+   ],
+   "answer": "Oldest on the bottom, youngest on top",
+   "provenance": "generator:4.bank.rocks-and-fossils.items[2]",
+   "generator": "4.bank.rocks-and-fossils",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_b0691df8209eeafb",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.rocks-and-fossils",
+   "skill_tag": "rocks-and-fossils",
+   "standards": [
+    "4-ESS1-1",
+    "4-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What process slowly WEATHERS rock?",
+   "options": [
+    "Water, wind, ice over time",
+    "Instant melting only",
+    "A single raindrop",
+    "Nothing changes rock"
+   ],
+   "answer": "Water, wind, ice over time",
+   "provenance": "generator:4.bank.rocks-and-fossils.items[3]",
+   "generator": "4.bank.rocks-and-fossils",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d08d8f587f405491",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.rocks-and-fossils",
+   "skill_tag": "rocks-and-fossils",
+   "standards": [
+    "4-ESS1-1",
+    "4-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "EROSION is when weathered material is...",
+   "options": [
+    "Moved and deposited elsewhere",
+    "Made into energy",
+    "Vaporized",
+    "Recycled instantly"
+   ],
+   "answer": "Moved and deposited elsewhere",
+   "provenance": "generator:4.bank.rocks-and-fossils.items[4]",
+   "generator": "4.bank.rocks-and-fossils",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_931d0609c7f8b5e9",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "4.SCI.rocks-and-fossils",
+   "skill_tag": "rocks-and-fossils",
+   "standards": [
+    "4-ESS1-1",
+    "4-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which is NOT a type of fossil?",
+   "options": [
+    "A footprint in a computer chip",
+    "A petrified shell",
+    "A bone cast",
+    "Amber insect"
+   ],
+   "answer": "A footprint in a computer chip",
+   "provenance": "generator:4.bank.rocks-and-fossils.items[5]",
+   "generator": "4.bank.rocks-and-fossils",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c518bc1a23b2aca0",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.michigan-inquiry",
+   "skill_tag": "michigan-inquiry",
+   "standards": [
+    "4.H3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What do historians ASK when studying Michigan?",
+   "options": [
+    "Why did events happen and how do we know?",
+    "What is 2+2?",
+    "What color is the sky?",
+    "How fast can you run?"
+   ],
+   "answer": "Why did events happen and how do we know?",
+   "provenance": "generator:4.bank.michigan-inquiry.items[0]",
+   "generator": "4.bank.michigan-inquiry",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0612a43f243beeb5",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.michigan-inquiry",
+   "skill_tag": "michigan-inquiry",
+   "standards": [
+    "4.H3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Michigan became a state in...",
+   "options": [
+    "1837",
+    "1776",
+    "1900",
+    "1791"
+   ],
+   "answer": "1837",
+   "provenance": "generator:4.bank.michigan-inquiry.items[1]",
+   "generator": "4.bank.michigan-inquiry",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_aef5883706c090d8",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.michigan-inquiry",
+   "skill_tag": "michigan-inquiry",
+   "standards": [
+    "4.H3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a PRIMARY source?",
+   "options": [
+    "A document/artifact from the time being studied",
+    "A modern textbook summary",
+    "A novel written later",
+    "A website blog"
+   ],
+   "answer": "A document/artifact from the time being studied",
+   "provenance": "generator:4.bank.michigan-inquiry.items[2]",
+   "generator": "4.bank.michigan-inquiry",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_8f0317c473d0c61a",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.michigan-inquiry",
+   "skill_tag": "michigan-inquiry",
+   "standards": [
+    "4.H3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a SECONDARY source?",
+   "options": [
+    "Something written AFTER the event using primary sources",
+    "A diary from the day",
+    "A photo from the time",
+    "A signed treaty"
+   ],
+   "answer": "Something written AFTER the event using primary sources",
+   "provenance": "generator:4.bank.michigan-inquiry.items[3]",
+   "generator": "4.bank.michigan-inquiry",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_20bc19bfe1de33ce",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.michigan-inquiry",
+   "skill_tag": "michigan-inquiry",
+   "standards": [
+    "4.H3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which is a good question for studying Michigan’s past?",
+   "options": [
+    "How did the Great Lakes shape trade and towns?",
+    "What is my favorite color?",
+    "Who won yesterday’s game?",
+    "How tall am I?"
+   ],
+   "answer": "How did the Great Lakes shape trade and towns?",
+   "provenance": "generator:4.bank.michigan-inquiry.items[4]",
+   "generator": "4.bank.michigan-inquiry",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_50c96c22d3ba1723",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.michigan-inquiry",
+   "skill_tag": "michigan-inquiry",
+   "standards": [
+    "4.H3.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Where do historians find EVIDENCE?",
+   "options": [
+    "Letters, photos, maps, and records",
+    "Their imagination only",
+    "A crystal ball",
+    "Nowhere"
+   ],
+   "answer": "Letters, photos, maps, and records",
+   "provenance": "generator:4.bank.michigan-inquiry.items[5]",
+   "generator": "4.bank.michigan-inquiry",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_74c50a2b06edec1a",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.us-regions-maps",
+   "skill_tag": "us-regions-maps",
+   "standards": [
+    "4.G2.0.1",
+    "4.G4.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What does a MAP show?",
+   "options": [
+    "Places and their locations",
+    "Only the weather",
+    "Only time",
+    "Only sound"
+   ],
+   "answer": "Places and their locations",
+   "provenance": "generator:4.bank.us-regions-maps.items[0]",
+   "generator": "4.bank.us-regions-maps",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_0206c39560100eb6",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.us-regions-maps",
+   "skill_tag": "us-regions-maps",
+   "standards": [
+    "4.G2.0.1",
+    "4.G4.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A LEGEND (key) on a map tells you...",
+   "options": [
+    "What the symbols/colors mean",
+    "The map’s age",
+    "The author’s name only",
+    "Nothing"
+   ],
+   "answer": "What the symbols/colors mean",
+   "provenance": "generator:4.bank.us-regions-maps.items[1]",
+   "generator": "4.bank.us-regions-maps",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_81d2e794a6b27a78",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.us-regions-maps",
+   "skill_tag": "us-regions-maps",
+   "standards": [
+    "4.G2.0.1",
+    "4.G4.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "The UNITED STATES is commonly divided into...",
+   "options": [
+    "Regions (e.g. Northeast, Midwest, South, West)",
+    "Only two states",
+    "One city",
+    "Just oceans"
+   ],
+   "answer": "Regions (e.g. Northeast, Midwest, South, West)",
+   "provenance": "generator:4.bank.us-regions-maps.items[2]",
+   "generator": "4.bank.us-regions-maps",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2be0d97ef51d5bf6",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.us-regions-maps",
+   "skill_tag": "us-regions-maps",
+   "standards": [
+    "4.G2.0.1",
+    "4.G4.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What are PUSH factors in migration?",
+   "options": [
+    "Reasons to LEAVE a place (conflict, jobs)",
+    "Reasons to stay",
+    "Vacation plans",
+    "Random chance"
+   ],
+   "answer": "Reasons to LEAVE a place (conflict, jobs)",
+   "provenance": "generator:4.bank.us-regions-maps.items[3]",
+   "generator": "4.bank.us-regions-maps",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a639f60203d6bca8",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.us-regions-maps",
+   "skill_tag": "us-regions-maps",
+   "standards": [
+    "4.G2.0.1",
+    "4.G4.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What are PULL factors in migration?",
+   "options": [
+    "Reasons to GO TO a place (jobs, safety)",
+    "Reasons to leave",
+    "Storms",
+    "Fences"
+   ],
+   "answer": "Reasons to GO TO a place (jobs, safety)",
+   "provenance": "generator:4.bank.us-regions-maps.items[4]",
+   "generator": "4.bank.us-regions-maps",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a45f17b13833e130",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "4.HIST.us-regions-maps",
+   "skill_tag": "us-regions-maps",
+   "standards": [
+    "4.G2.0.1",
+    "4.G4.0.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A compass rose shows...",
+   "options": [
+    "Direction (N, S, E, W)",
+    "Elevation",
+    "Population",
+    "Rainfall"
+   ],
+   "answer": "Direction (N, S, E, W)",
+   "provenance": "generator:4.bank.us-regions-maps.items[5]",
+   "generator": "4.bank.us-regions-maps",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_f6fff72c2788820e",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. If you ____ your task is hard, Try, try again; Time will bring you your reward, Try, try again.",
+   "options": [
+    "find",
+    "royal",
+    "cried",
+    "lazy"
+   ],
+   "answer": "find",
+   "provenance": "generator:pd.comprehension.g4.items[0]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2d0d4d78345143f1",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again.\"",
+   "options": [
+    "All that other folks can do, Why, with patience, should not you?",
+    "\"'T is royal fun,\" cried lazy Ned, \"To coast, upon my fine, new sled, And beat the other boys; But then, I can not bear to climb The tiresome hill, for every time It more and more annoys.\"",
+    "So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.",
+    "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last."
+   ],
+   "answer": "All that other folks can do, Why, with patience, should not you?",
+   "provenance": "generator:pd.comprehension.g4.items[1]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_01a288542a031ead",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Try",
+    "Ned",
+    "Grandmamma",
+    "Piccola"
+   ],
+   "answer": "Try",
+   "provenance": "generator:pd.comprehension.g4.items[2]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_3a63201a6b7c95eb",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. So, ____ his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.",
+   "options": [
+    "while",
+    "lesson",
+    "heed",
+    "first"
+   ],
+   "answer": "while",
+   "provenance": "generator:pd.comprehension.g4.items[3]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_9006150b691c6c11",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.\"",
+   "options": [
+    "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last.",
+   "provenance": "generator:pd.comprehension.g4.items[4]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bd6e92e5c7ac1b17",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Ned",
+    "Try",
+    "Grandmamma",
+    "Piccola"
+   ],
+   "answer": "Ned",
+   "provenance": "generator:pd.comprehension.g4.items[5]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e7917636e3a7b8bd",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ open it,\" said little miss.",
+   "options": [
+    "I'll",
+    "Lesson",
+    "Heed",
+    "First"
+   ],
+   "answer": "I'll",
+   "provenance": "generator:pd.comprehension.g4.items[6]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_33545d5e4c9ac5e6",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"I'll open it,\" said little miss.\"",
+   "options": [
+    "\"I know that grandmamma would say, 'Don't meddle with it, dear;' But then she's far enough away, And no one else is near; Beside, what can there be amiss In opening such a box as this?\"",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "\"I know that grandmamma would say, 'Don't meddle with it, dear;' But then she's far enough away, And no one else is near; Beside, what can there be amiss In opening such a box as this?\"",
+   "provenance": "generator:pd.comprehension.g4.items[7]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_59f558ebfed04e15",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Grandmamma",
+    "Try",
+    "Ned",
+    "Piccola"
+   ],
+   "answer": "Grandmamma",
+   "provenance": "generator:pd.comprehension.g4.items[8]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c43344e6a94bc439",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ nothing would bring to her!",
+   "options": [
+    "Nicholas",
+    "Lesson",
+    "Heed",
+    "First"
+   ],
+   "answer": "Nicholas",
+   "provenance": "generator:pd.comprehension.g4.items[9]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c7cd416a8bb78c4d",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Nicholas nothing would bring to her!\"",
+   "options": [
+    "But Piccola never doubted at all That something beautiful must befall Every child upon Christmas day, And so she slept till the dawn was gray.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "But Piccola never doubted at all That something beautiful must befall Every child upon Christmas day, And so she slept till the dawn was gray.",
+   "provenance": "generator:pd.comprehension.g4.items[10]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e9d217c60cd950eb",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Piccola",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Piccola",
+   "provenance": "generator:pd.comprehension.g4.items[11]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a2d3b2b268330a90",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ girl, little boy, Or the world will lose some of its joy!",
+   "options": [
+    "little",
+    "lesson",
+    "heed",
+    "first"
+   ],
+   "answer": "little",
+   "provenance": "generator:pd.comprehension.g4.items[12]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_25a67cf01bbb1e95",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Little",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Little",
+   "provenance": "generator:pd.comprehension.g4.items[13]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_c529b224bb5eeba3",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these words appears in the passage?",
+   "options": [
+    "Larcom",
+    "Lesson",
+    "First",
+    "Succeed"
+   ],
+   "answer": "Larcom",
+   "provenance": "generator:pd.comprehension.g4.items[14]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_3e80da8c0bce1b8b",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. Then he ____ to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.",
+   "options": [
+    "flew",
+    "lesson",
+    "heed",
+    "first"
+   ],
+   "answer": "flew",
+   "provenance": "generator:pd.comprehension.g4.items[15]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d303d5f20886ade4",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Then he flew to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.\"",
+   "options": [
+    "He went to the windows of those who slept, And over each pane, like a fairy, crept; Wherever he breathed, wherever he stepped, By the light of the morn were seen Most beautiful things; there were flowers and trees; There were bevies of birds, and swarms of bees; There were cities with temples and towers, and these All pictured in silver sheen.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "He went to the windows of those who slept, And over each pane, like a fairy, crept; Wherever he breathed, wherever he stepped, By the light of the morn were seen Most beautiful things; there were flowers and trees; There were bevies of birds, and swarms of bees; There were cities with temples and towers, and these All pictured in silver sheen.",
+   "provenance": "generator:pd.comprehension.g4.items[16]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_e0c7e040a16f4f92",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "I'll",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "I'll",
+   "provenance": "generator:pd.comprehension.g4.items[17]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a1552144e92a13cf",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. \"I ____ you so!\" cried angry Jo: \"It always is a-raining!\" Then hid her face in dire despair, Lamenting and complaining.",
+   "options": [
+    "told",
+    "lesson",
+    "heed",
+    "first"
+   ],
+   "answer": "told",
+   "provenance": "generator:pd.comprehension.g4.items[18]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_d2b065d336548639",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"\"I told you so!\" cried angry Jo: \"It always is a-raining!\" Then hid her face in dire despair, Lamenting and complaining.\"",
+   "options": [
+    "But sweet Jeannette, quite hopeful yet,-- I tell it to her honor,-- Looked up and waited till the sun Came streaming in upon her.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "But sweet Jeannette, quite hopeful yet,-- I tell it to her honor,-- Looked up and waited till the sun Came streaming in upon her.",
+   "provenance": "generator:pd.comprehension.g4.items[19]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_aef14d8375fc15cb",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Jeannette",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Jeannette",
+   "provenance": "generator:pd.comprehension.g4.items[20]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_cdccd05dfc55be2b",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ carpeting the ground; Thrushes, orioles, warbling sound:-- Swing me low, and swing me high, To the warm clouds of July.",
+   "options": [
+    "Roses",
+    "Lesson",
+    "Heed",
+    "First"
+   ],
+   "answer": "Roses",
+   "provenance": "generator:pd.comprehension.g4.items[21]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_3a45a07e9872b879",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Roses carpeting the ground; Thrushes, orioles, warbling sound:-- Swing me low, and swing me high, To the warm clouds of July.\"",
+   "options": [
+    "Slower now, for at my side White pond lilies open wide.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "Slower now, for at my side White pond lilies open wide.",
+   "provenance": "generator:pd.comprehension.g4.items[22]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_34c19d2050fedcf7",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Swing",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Swing",
+   "provenance": "generator:pd.comprehension.g4.items[23]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_ffa7779601553b6f",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ the white highway like cavalry fleet, It dashes the dust with its numberless feet.",
+   "options": [
+    "Adown",
+    "Lesson",
+    "Heed",
+    "First"
+   ],
+   "answer": "Adown",
+   "provenance": "generator:pd.comprehension.g4.items[24]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_7775848aff34ed7e",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Adown the white highway like cavalry fleet, It dashes the dust with its numberless feet.\"",
+   "options": [
+    "Like a murmurless school, in their leafy retreat, The wild birds sit listening the drops round them beat; And the boy crouches close to the blackberry wall.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "Like a murmurless school, in their leafy retreat, The wild birds sit listening the drops round them beat; And the boy crouches close to the blackberry wall.",
+   "provenance": "generator:pd.comprehension.g4.items[25]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_918125cba3976abc",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Boy",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Boy",
+   "provenance": "generator:pd.comprehension.g4.items[26]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_8825fba628c6fa7a",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. 'T is a ____ thing in winter To be shattered by the blast, And to hear the rattling trumpet Thunder, \"Cut away the mast!\"",
+   "options": [
+    "fearful",
+    "lesson",
+    "heed",
+    "first"
+   ],
+   "answer": "fearful",
+   "provenance": "generator:pd.comprehension.g4.items[27]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_56240d6ab4b5f437",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"'T is a fearful thing in winter To be shattered by the blast, And to hear the rattling trumpet Thunder, \"Cut away the mast!\"\"",
+   "options": [
+    "So we shuddered there in silence, For the stoutest held his breath, While the hungry sea was roaring, And the breakers threatened death.",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "So we shuddered there in silence, For the stoutest held his breath, While the hungry sea was roaring, And the breakers threatened death.",
+   "provenance": "generator:pd.comprehension.g4.items[28]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_2ddd67b703dfc2a6",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Born",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Born",
+   "provenance": "generator:pd.comprehension.g4.items[29]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_640a31fe8dc42b5d",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. He has no ____ of any wrong, He scans me with a fearless eye; Stanch friends are we, well-tried and strong, The little sandpiper and I.",
+   "options": [
+    "thought",
+    "lesson",
+    "heed",
+    "first"
+   ],
+   "answer": "thought",
+   "provenance": "generator:pd.comprehension.g4.items[30]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_59aed324c31bf5e2",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"He has no thought of any wrong, He scans me with a fearless eye; Stanch friends are we, well-tried and strong, The little sandpiper and I.\"",
+   "options": [
+    "Comrade, where wilt thou be to-night, When the loosed storm breaks furiously?",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "Comrade, where wilt thou be to-night, When the loosed storm breaks furiously?",
+   "provenance": "generator:pd.comprehension.g4.items[31]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_14e3eb0267131255",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Read the sentence from the passage and choose the word that fills the blank. ____ one who will not fear To feel thy coldest touch, or shrink Thy loudest blast to hear.",
+   "options": [
+    "Here's",
+    "Lesson",
+    "Heed",
+    "First"
+   ],
+   "answer": "Here's",
+   "provenance": "generator:pd.comprehension.g4.items[33]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_bf7bf81dc250745f",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In the passage, which sentence comes right after this one? \"Here's one who will not fear To feel thy coldest touch, or shrink Thy loudest blast to hear.\"",
+   "options": [
+    "Proud triumph of the schoolboy's skill!",
+    "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+    "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+    "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+   ],
+   "answer": "Proud triumph of the schoolboy's skill!",
+   "provenance": "generator:pd.comprehension.g4.items[34]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_5c71b1af11d04688",
+   "schema": "item/v1",
+   "grade": "4",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "4.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.4.1",
+    "RI.4.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Who or what is this passage mostly about?",
+   "options": [
+    "Snow",
+    "Try",
+    "Ned",
+    "Grandmamma"
+   ],
+   "answer": "Snow",
+   "provenance": "generator:pd.comprehension.g4.items[35]",
+   "generator": "pd.comprehension.g4",
+   "generator_family": "bank.recall"
   }
  ]
 }

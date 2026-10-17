@@ -211,8 +211,12 @@
       for (var i = 1; i < digits; i++) { s += ri(rng, 0, 9); }
       return parseInt(s, 10);
     }
-    var places = digits === 4 ? ['ones', 'tens', 'hundreds', 'thousands'] : ['ones', 'tens', 'hundreds'];
-    var weights = digits === 4 ? [1, 10, 100, 1000] : [1, 10, 100];
+    /* places/weights sized to `digits` (was hardcoded to 3/4; digits=1 or 2 left
+       extra place names that could index past the number's length -> NaN). */
+    var ALL_PLACES = ['ones', 'tens', 'hundreds', 'thousands'];
+    var ALL_WEIGHTS = [1, 10, 100, 1000];
+    var places = ALL_PLACES.slice(0, Math.max(1, Math.min(4, digits)));
+    var weights = ALL_WEIGHTS.slice(0, Math.max(1, Math.min(4, digits)));
     var n = makeNumber(), q, correct, distr, hint, praise;
     if (mode === 'blocks') {
       /* read place-value blocks -> write the number (D3 card) */
@@ -236,7 +240,9 @@
       var words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
       var w = digits === 4
         ? words[Math.floor(n / 1000)] + ' thousand ' + words[Math.floor((n % 1000) / 100)] + ' hundred ' + (n % 100)
-        : words[Math.floor(n / 100)] + ' hundred ' + (n % 100);
+        : (digits >= 3
+            ? words[Math.floor(n / 100)] + ' hundred ' + (n % 100)
+            : words[Math.floor(n / 10)] + ' ten ' + (n % 10));
       correct = n;
       q = 'Write this number in digits: "' + w + '"';
       hint = 'Say it in chunks: thousands, then hundreds, then the last two digits.';
@@ -684,6 +690,210 @@
       hint: it.hint, praise: it.praise || 'Yes — that is right.'
     };
   };
+
+
+  /* ------------------ NEW FAMILIES (K/1/2/4 lane E3) ------------------ */
+
+  /* math.counting — counting sequence / how-many / number sense (K, G1) */
+  families['math.counting'] = function (p, rng, ctx) {
+    var max = p.max || 20;
+    var mode = p.mode || 'next';
+    var q, correct, distr, hint, praise;
+    if (mode === 'missing') {
+      /* fill the gap in a counting sequence */
+      var start = ri(rng, 1, Math.max(1, max - 10));
+      var seq = [];
+      for (var i = 0; i < 6; i++) { seq.push(start + i); }
+      var pos = ri(rng, 1, seq.length - 1);
+      correct = seq[pos];
+      var shown = seq.slice();
+      shown[pos] = '?';
+      q = 'What number is missing?\n' + shown.join(', ');
+      distr = [correct + 1, correct - 1, correct + 2, correct - 10 > 0 ? correct - 10 : correct + 3, correct + 5];
+      hint = 'Count up from ' + start + ' and find the gap.';
+      praise = 'Yes! ' + correct + ' belongs there.';
+    } else if (mode === 'start') {
+      /* count starting from a given number (1.NBT.1 style) */
+      var s0 = ri(rng, 1, Math.max(1, max - 6));
+      correct = s0 + 5;
+      q = 'Start at ' + s0 + ' and count up 5. What number do you say last?\n' + s0 + ', ' + (s0+1) + ', ' + (s0+2) + ', ' + (s0+3) + ', ' + (s0+4) + ', ___';
+      distr = [s0 + 4, s0 + 6, s0 + 3, s0 + 10, s0 + 7];
+      hint = 'Count on: ' + s0 + ' is first, add 5 more steps.';
+      praise = 'Yes! ' + correct + '.';
+    } else if (mode === 'set') {
+      /* how-many: a drawn set of objects */
+      var n = ri(rng, 1, Math.min(max, 20));
+      correct = n;
+      var symbols = ['star','ball','apple','fish','block'];
+      var sym = symbols[ri(rng, 0, symbols.length - 1)];
+      q = 'Count the ' + sym + 's: ' + Array(n + 1).join(sym + ' ') + '\nHow many ' + sym + 's are there?';
+      distr = [n + 1, n - 1 > 0 ? n - 1 : n + 2, n + 3, n + 5, n + 7];
+      hint = 'Touch each ' + sym + ' once and count.';
+      praise = 'Yes! There are ' + n + ' ' + sym + 's.';
+    } else {
+      /* next number in the count-by-1 sequence up to max */
+      var cur = ri(rng, 1, Math.max(1, max - 1));
+      correct = cur + 1;
+      q = 'What number comes next? Count by 1s.\n' + cur + ', ___';
+      distr = [cur + 2, cur - 1 > 0 ? cur - 1 : cur + 3, cur + 5, cur + 10, cur + 4];
+      hint = 'Counting by ones: add 1 to ' + cur + '.';
+      praise = 'Yes! ' + correct + '.';
+    }
+    var m = mcq(rng, correct, distr, hint, praise);
+    return { question: q, options: m.options, correctIndex: m.correctIndex, hint: m.hint, praise: m.praise };
+  };
+
+  /* math.add_sub_within — addition/subtraction facts and simple word problems
+     within a bound (K:5/10, G1:20, G2:20/100). Supports missing-addend. */
+  families['math.add_sub_within'] = function (p, rng, ctx) {
+    var max = p.max || 10;
+    var ops = p.ops || ['+', '-'];
+    var word = !!p.word;
+    var missing = !!p.missing;
+    var op = ops[ri(rng, 0, ops.length - 1)];
+    var a, b, correct, q, hint, praise, distr;
+    if (op === '+') {
+      a = ri(rng, 1, Math.max(1, Math.floor(max / 2)));
+      b = ri(rng, 1, Math.max(1, max - a));
+      correct = a + b;
+    } else {
+      a = ri(rng, 2, max);
+      b = ri(rng, 1, a - 1 >= 1 ? a - 1 : 1);
+      correct = a - b;
+    }
+    if (missing) {
+      /* present "a op ? = correct" and ask for the missing operand */
+      if (op === '+') {
+        q = a + ' + ? = ' + correct + '   What number goes in the box?';
+        hint = 'Think: ' + correct + ' - ' + a + ' = ?';
+        praise = 'Yes! ' + a + ' + ' + (correct - a) + ' = ' + correct + '.';
+        distr = [correct - a + 1, correct - a - 1 > 0 ? correct - a - 1 : correct - a + 2, a, b, correct];
+      } else {
+        q = a + ' - ? = ' + correct + '   What number goes in the box?';
+        hint = 'Think: ' + a + ' - ' + correct + ' = ?';
+        praise = 'Yes! ' + a + ' - ' + (a - correct) + ' = ' + correct + '.';
+        distr = [a - correct + 1, a - correct - 1 > 0 ? a - correct - 1 : a - correct + 2, a, b, correct];
+      }
+      correct = op === '+' ? (correct - a) : (a - correct);
+      var mm = mcq(rng, correct, distr, hint, praise);
+      return { question: q, options: mm.options, correctIndex: mm.correctIndex, hint: mm.hint, praise: mm.praise };
+    }
+    if (word) {
+      var subjects = ['apples','stickers','crayons','marbles','books','cookies','pencils','balloons'];
+      var subj = subjects[ri(rng, 0, subjects.length - 1)];
+      if (op === '+') {
+        q = 'Sam had ' + a + ' ' + subj + '. Sam got ' + b + ' more. How many ' + subj + ' does Sam have now?\n' + a + ' + ' + b + ' = ?';
+        hint = 'Add the two groups together.';
+        praise = 'Yes! ' + a + ' + ' + b + ' = ' + correct + '.';
+      } else {
+        q = 'Sam had ' + a + ' ' + subj + '. Sam gave ' + b + ' away. How many ' + subj + ' are left?\n' + a + ' - ' + b + ' = ?';
+        hint = 'Subtract the part that was given away.';
+        praise = 'Yes! ' + a + ' - ' + b + ' = ' + correct + '.';
+      }
+      distr = [correct + 1, correct - 1 > 0 ? correct - 1 : correct + 2, correct + 2, a, b];
+    } else {
+      q = a + ' ' + op + ' ' + b + ' = ?';
+      if (op === '+') { hint = 'Count on from ' + a + ', add ' + b + ' more.'; praise = 'Yes! ' + a + ' + ' + b + ' = ' + correct + '.'; }
+      else { hint = 'Take away ' + b + ' from ' + a + '.'; praise = 'Yes! ' + a + ' - ' + b + ' = ' + correct + '.'; }
+      distr = [correct + 1, correct - 1 > 0 ? correct - 1 : correct + 2, correct + 2, a, b];
+    }
+    var m2 = mcq(rng, correct, distr, hint, praise);
+    return { question: q, options: m2.options, correctIndex: m2.correctIndex, hint: m2.hint, praise: m2.praise };
+  };
+
+  /* word.cvc — CVC / CVCE / digraph / vowel-team decoding (K, G1, G2 phonics) */
+  families['word.cvc'] = function (p, rng, ctx) {
+    var banks = p.banks || {};
+    var patterns = p.patterns || ['cvc'];
+    var pat = patterns[ri(rng, 0, patterns.length - 1)];
+    var pool = banks[pat] || banks.cvc || [];
+    if (!pool.length) { pool = banks.cvc || ['cat','bed','sit']; }
+    var target = pick(rng, pool);
+    var mode = p.mode || 'which_word';
+    var q, correct, distr, hint, praise;
+    if (mode === 'missing_letter') {
+      var pos = ri(rng, 1, Math.max(1, target.length - 1));
+      var masked = target.slice(0, pos) + '_' + target.slice(pos + 1);
+      correct = target[pos];
+      var letters = 'aeiouybcdfghjklmnpqrstvwxyz'.split('');
+      var otherLetters = letters.filter(function (x) { return x !== correct.toLowerCase(); });
+      distr = [];
+      for (var i = 0; i < 6 && i < otherLetters.length; i++) { distr.push(otherLetters[ri(rng, 0, otherLetters.length - 1)]); }
+      q = 'Which letter completes the word?\n' + masked;
+      hint = 'Say the word slowly and listen for the missing sound.';
+      praise = 'Yes — ' + target + ' fills the blank.';
+    } else if (mode === 'rhyme') {
+      correct = target;
+      var allWords = [].concat(banks.cvc || [], banks.cvce || [], banks.digraph || [], banks.vowel_team || []);
+      var others = allWords.filter(function (w) { return w !== target && w.slice(-2) !== target.slice(-2); });
+      if (others.length < 3) {
+        others = allWords.filter(function (w) { return w !== target; });
+      }
+      distr = [];
+      for (var j = 0; j < 6 && j < others.length; j++) { distr.push(others[ri(rng, 0, others.length - 1)]); }
+      q = 'Which word RHYMES with "' + target + '"? (same ending sound)';
+      hint = 'Rhyming words share the same ending sound.';
+      praise = 'Yes — ' + target + ' and your pick share the ending sound.';
+    } else {
+      /* default: which word matches the described pattern / starts with given letters.
+         Distractors come from the OTHER pattern sub-banks (guarantees >=3 distinct
+         options whenever each pattern list holds >=3 words). */
+      correct = target;
+      var otherPats = Object.keys(banks).filter(function (k) { return k !== pat && banks[k] && banks[k].length; });
+      var distrPool = [];
+      otherPats.forEach(function (k) {
+        banks[k].forEach(function (w) { if (w !== target && distrPool.indexOf(w) === -1) distrPool.push(w); });
+      });
+      /* fall back to same-bank other words if the other sub-banks are empty/absent */
+      if (distrPool.length < 3) {
+        (banks[pat] || []).forEach(function (w) { if (w !== target && distrPool.indexOf(w) === -1) distrPool.push(w); });
+      }
+      distr = [];
+      for (var k = 0; k < 6 && k < distrPool.length; k++) { distr.push(distrPool[ri(rng, 0, distrPool.length - 1)]); }
+      if (pat === 'cvc') { q = 'Which word is a CVC word (consonant-vowel-consonant, like "cat")?'; hint = 'CVC = one vowel in the middle, consonants on each side.'; }
+      else if (pat === 'cvce') { q = 'Which word has a silent "e" at the end (CVCE, like "cake")?'; hint = 'A silent e at the end makes the vowel say its name.'; }
+      else if (pat === 'digraph') { q = 'Which word starts with a consonant digraph (two letters making one sound, like "sh")?'; hint = 'A digraph is two letters that make a single new sound.'; }
+      else { q = 'Which word contains a vowel team (two vowels together, like "ai")?'; hint = 'A vowel team is two vowels side by side making one sound.'; }
+      praise = 'Yes — ' + target + '.';
+    }
+    var m = mcq(rng, correct, distr, hint, praise);
+    return { question: q, options: m.options, correctIndex: m.correctIndex, hint: m.hint, praise: m.praise };
+  };
+
+  /* word.sight_word — Dolch/Fry sight-word recognition from research/word_sets.json banks */
+  families['word.sight_word'] = function (p, rng, ctx) {
+    var words = p.words || [];
+    if (!words.length) { words = ['the','and','is']; }
+    var target = pick(rng, words);
+    var mode = p.mode || 'which_sight';
+    var q, correct, distr, hint, praise;
+    if (mode === 'fill_blank') {
+      var sentences = [
+        'I see the ' + target + ' .',
+        'We like to ' + target + ' .',
+        'The ' + target + ' is big .'
+      ];
+      var s = sentences[ri(rng, 0, sentences.length - 1)];
+      correct = target;
+      var others = words.filter(function (w) { return w !== target; });
+      distr = [];
+      for (var i = 0; i < 6 && i < others.length; i++) { distr.push(others[ri(rng, 0, others.length - 1)]); }
+      q = 'Which sight word fits in the blank?\n' + s.replace(target, '____');
+      hint = 'Read the whole sentence and pick the word that makes sense.';
+      praise = 'Yes — "' + target + '" fits the sentence.';
+    } else {
+      correct = target;
+      var pool = words.filter(function (w) { return w !== target; });
+      distr = [];
+      for (var j = 0; j < 6 && j < pool.length; j++) { distr.push(pool[ri(rng, 0, pool.length - 1)]); }
+      q = 'Which of these is a sight word you should know by heart?';
+      hint = 'Sight words are common words you recognize instantly without sounding out.';
+      praise = 'Yes — "' + target + '" is a sight word.';
+    }
+    var m = mcq(rng, correct, distr, hint, praise);
+    return { question: q, options: m.options, correctIndex: m.correctIndex, hint: m.hint, praise: m.praise };
+  };
+
 
   /* ---------------- registry access ---------------- */
 

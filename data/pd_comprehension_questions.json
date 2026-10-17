@@ -1,0 +1,2481 @@
+{
+ "schema": "pd_comprehension/v1",
+ "generated_by": "tools/build_engine_data.py (lane E3 authoring step)",
+ "source": "research/pd_readers_passages.json (48 public-domain passages, Lane B verbatim) — comprehension questions authored deterministically from passage text (cloze/sequence/main-topic/vocab); every answer verbatim-grounded in its passage",
+ "exposure_limit": 3,
+ "grades": {
+  "K": [
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Rat",
+     "Ann",
+     "Dog",
+     "Frog"
+    ],
+    "answer": "Rat",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 0,
+    "label": "LESSON II",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"The rat ran at Ann.\"",
+    "options": [
+     "Ann has a cat.",
+     "Ann has a fan.",
+     "Nat has a hat.",
+     "Ann can fan Nat."
+    ],
+    "answer": "Ann has a cat.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 0,
+    "label": "LESSON II",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Which word appears most often in this passage?",
+    "options": [
+     "Ran",
+     "Ann",
+     "Dog",
+     "Frog"
+    ],
+    "answer": "Ran",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 0,
+    "label": "LESSON II",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Ann",
+     "Rat",
+     "Dog",
+     "Frog"
+    ],
+    "answer": "Ann",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 1,
+    "label": "LESSON III",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Which word appears most often in this passage?",
+    "options": [
+     "Fan",
+     "Rat",
+     "Dog",
+     "Frog"
+    ],
+    "answer": "Fan",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 1,
+    "label": "LESSON III",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nAnn can ____ Nat.",
+    "options": [
+     "fan",
+     "rat",
+     "dog",
+     "frog"
+    ],
+    "answer": "fan",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 1,
+    "label": "LESSON III",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Ann has a fan.\"",
+    "options": [
+     "Nat has a hat.",
+     "Ann and Nat.",
+     "Ann can fan Nat.",
+     "The cat has a rat."
+    ],
+    "answer": "Nat has a hat.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 1,
+    "label": "LESSON III",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Nat and Rab ran.\"",
+    "options": [
+     "Rab ran at a cat.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "Rab ran at a cat.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 2,
+    "label": "LESSON VI",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Dog",
+     "Rat",
+     "Ann",
+     "Frog"
+    ],
+    "answer": "Dog",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 2,
+    "label": "LESSON VI",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Which of these words appears in the passage?",
+    "options": [
+     "Nat's",
+     "Stand",
+     "Ann's",
+     "Catch"
+    ],
+    "answer": "Nat's",
+    "level": 2,
+    "kind": "vocab",
+    "pidx": 2,
+    "label": "LESSON VI",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nCan the ____ see Rab?",
+    "options": [
+     "frog",
+     "Nat's",
+     "lamp",
+     "stand"
+    ],
+    "answer": "frog",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 3,
+    "label": "LESSON VII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Can the frog see Rab?\"",
+    "options": [
+     "The frog can see the dog.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "The frog can see the dog.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 3,
+    "label": "LESSON VII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Frog",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Frog",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 3,
+    "label": "LESSON VII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nThe ____ is Nat's, and the mat is Ann's.",
+    "options": [
+     "lamp",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "lamp",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 4,
+    "label": "LESSON VIII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Lamp",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Lamp",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 4,
+    "label": "LESSON VIII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Which of these words appears in the passage?",
+    "options": [
+     "stand",
+     "catch",
+     "Tom's",
+     "lives"
+    ],
+    "answer": "stand",
+    "level": 2,
+    "kind": "vocab",
+    "pidx": 4,
+    "label": "LESSON VIII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nCan Tom ____ his nag?",
+    "options": [
+     "catch",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "catch",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 5,
+    "label": "LESSON IX",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Can Tom catch his nag?\"",
+    "options": [
+     "He can not catch him.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "He can not catch him.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 5,
+    "label": "LESSON IX",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Nag",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Nag",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 5,
+    "label": "LESSON IX",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nA lad ____ the frog.",
+    "options": [
+     "sees",
+     "Nat's",
+     "frog",
+     "lamp"
+    ],
+    "answer": "sees",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 6,
+    "label": "LESSON X",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"A lad sees the frog.\"",
+    "options": [
+     "The lad can not catch it.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "The lad can not catch it.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 6,
+    "label": "LESSON X",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Dog",
+     "Rat",
+     "Ann",
+     "Frog"
+    ],
+    "answer": "Dog",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 6,
+    "label": "LESSON X",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nIt will ____ on Sue's hand, and sing.",
+    "options": [
+     "stand",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "stand",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 7,
+    "label": "LESSON XVIII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"It will stand on Sue's hand, and sing.\"",
+    "options": [
+     "Sue loves her pet bird.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "Sue loves her pet bird.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 7,
+    "label": "LESSON XVIII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Lives",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Lives",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 7,
+    "label": "LESSON XVIII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nOur ____ do not run off.",
+    "options": [
+     "cows",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "cows",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 8,
+    "label": "LESSON XXII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Our cows do not run off.\"",
+    "options": [
+     "At night they come to the barn.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "At night they come to the barn.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 8,
+    "label": "LESSON XXII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Cows",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Cows",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 8,
+    "label": "LESSON XXII",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nIf the ____ can not get to them, they will drown.",
+    "options": [
+     "boat",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "boat",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 9,
+    "label": "LESSON XXIV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"If the boat can not get to them, they will drown.\"",
+    "options": [
+     "The boat has brave men in it.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "The boat has brave men in it.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 9,
+    "label": "LESSON XXIV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Boat",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Boat",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 9,
+    "label": "LESSON XXIV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nThe ____ men in our boat are on their way to the ship.",
+    "options": [
+     "brave",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "brave",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 10,
+    "label": "LESSON XXV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"The brave men in our boat are on their way to the ship.\"",
+    "options": [
+     "They will save the men in the ship, if they can.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "They will save the men in the ship, if they can.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 10,
+    "label": "LESSON XXV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Big",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Big",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 10,
+    "label": "LESSON XXV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____!\" but Mary could not tell its wants.",
+    "options": [
+     "buzz",
+     "Nat's",
+     "frog",
+     "sees"
+    ],
+    "answer": "buzz",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 11,
+    "label": "LESSON XLIV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"buzz!\" but Mary could not tell its wants.\"",
+    "options": [
+     "I think it said, \"Please let me get some sweets in this vine.",
+     "The cat has a rat.",
+     "The rat ran at Ann.",
+     "Ann has a cat."
+    ],
+    "answer": "I think it said, \"Please let me get some sweets in this vine.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 11,
+    "label": "LESSON XLIV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Buzz",
+     "Rat",
+     "Ann",
+     "Dog"
+    ],
+    "answer": "Buzz",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 11,
+    "label": "LESSON XLIV",
+    "skill_node": "K.ELA.story-questions",
+    "subject": "ela",
+    "cat_domain": "ela"
+   }
+  ],
+  "1": [
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Now Ann can pat Rab.\"",
+    "options": [
+     "Let me pat Rab, too.",
+     "Ned eggs black left fed nest them get will",
+     "Ned has fed the hen.",
+     "She is a black hen."
+    ],
+    "answer": "Let me pat Rab, too.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 0,
+    "label": "LESSON VI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Rab",
+     "Ned",
+     "Let",
+     "Whip"
+    ],
+    "answer": "Rab",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 0,
+    "label": "LESSON VI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Which of these words appears in the passage?",
+    "options": [
+     "catch",
+     "black",
+     "still",
+     "stand"
+    ],
+    "answer": "catch",
+    "level": 2,
+    "kind": "vocab",
+    "pidx": 0,
+    "label": "LESSON VI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nSee the ____ in the nest!",
+    "options": [
+     "eggs",
+     "catch",
+     "Nell",
+     "black"
+    ],
+    "answer": "eggs",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 1,
+    "label": "LESSON VII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"See the eggs in the nest!\"",
+    "options": [
+     "Will the hen let Ned get them?",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "Will the hen let Ned get them?",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 1,
+    "label": "LESSON VII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Ned",
+     "Rab",
+     "Let",
+     "Whip"
+    ],
+    "answer": "Ned",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 1,
+    "label": "LESSON VII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nHas the ____ hen left the nest?",
+    "options": [
+     "black",
+     "catch",
+     "eggs",
+     "left"
+    ],
+    "answer": "black",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 2,
+    "label": "LESSON X",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Has the black hen left the nest?\"",
+    "options": [
+     "I will now run to catch Rab.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "I will now run to catch Rab.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 2,
+    "label": "LESSON X",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Let",
+     "Rab",
+     "Ned",
+     "Whip"
+    ],
+    "answer": "Let",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 2,
+    "label": "LESSON X",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ still, Jip, and let Ann get in.",
+    "options": [
+     "Stand",
+     "Catch",
+     "Eggs",
+     "Black"
+    ],
+    "answer": "Stand",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 3,
+    "label": "LESSON XI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Stand still, Jip, and let Ann get in.\"",
+    "options": [
+     "Now, Ben, hand me the whip.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "Now, Ben, hand me the whip.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 3,
+    "label": "LESSON XI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Whip",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Whip",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 3,
+    "label": "LESSON XI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nDo you ____ he is a good dog?",
+    "options": [
+     "think",
+     "catch",
+     "eggs",
+     "black"
+    ],
+    "answer": "think",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 4,
+    "label": "LESSON XIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Do you think he is a good dog?\"",
+    "options": [
+     "Tom has a big top, too.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "Tom has a big top, too.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 4,
+    "label": "LESSON XIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Dog",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Dog",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 4,
+    "label": "LESSON XIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____, will you let me ride with you on Prince?",
+    "options": [
+     "Papa",
+     "Catch",
+     "Eggs",
+     "Black"
+    ],
+    "answer": "Papa",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 5,
+    "label": "LESSON XX",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Papa, will you let me ride with you on Prince?\"",
+    "options": [
+     "I will sit still in your arms.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "I will sit still in your arms.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 5,
+    "label": "LESSON XX",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Pa",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Pa",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 5,
+    "label": "LESSON XX",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nThe fat ____ swam to the bank, and we fed her.",
+    "options": [
+     "duck",
+     "catch",
+     "eggs",
+     "black"
+    ],
+    "answer": "duck",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 6,
+    "label": "LESSON XXII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"The fat duck swam to the bank, and we fed her.\"",
+    "options": [
+     "Did you think we might fall into the pond?",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "Did you think we might fall into the pond?",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 6,
+    "label": "LESSON XXII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Tom",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Tom",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 6,
+    "label": "LESSON XXII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nI ____ they will stop here and play for us.",
+    "options": [
+     "hope",
+     "catch",
+     "eggs",
+     "black"
+    ],
+    "answer": "hope",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 7,
+    "label": "LESSON XXIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"I hope they will stop here and play for us.\"",
+    "options": [
+     "See the large man in front of the band, with his big hat.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "See the large man in front of the band, with his big hat.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 7,
+    "label": "LESSON XXIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Play",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Play",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 7,
+    "label": "LESSON XXIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nHere, hen, ____ this little chick under your wing.",
+    "options": [
+     "take",
+     "catch",
+     "eggs",
+     "black"
+    ],
+    "answer": "take",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 8,
+    "label": "LESSON XXVIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Here, hen, take this little chick under your wing.\"",
+    "options": [
+     "Now, chick, tuck your little, wet feet under you, and go to sleep for a while.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "Now, chick, tuck your little, wet feet under you, and go to sleep for a while.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 8,
+    "label": "LESSON XXVIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Little",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Little",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 8,
+    "label": "LESSON XXVIII",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nThere is a ____ wind, and my kite flies high.",
+    "options": [
+     "good",
+     "catch",
+     "eggs",
+     "black"
+    ],
+    "answer": "good",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 9,
+    "label": "LESSON XXIX",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"There is a good wind, and my kite flies high.\"",
+    "options": [
+     "I can just see it.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "I can just see it.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 9,
+    "label": "LESSON XXIX",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "High",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "High",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 9,
+    "label": "LESSON XXIX",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ came with a bound, and jumped into the pond.",
+    "options": [
+     "Ponto",
+     "Catch",
+     "Eggs",
+     "Black"
+    ],
+    "answer": "Ponto",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 10,
+    "label": "LESSON XXXI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Ponto came with a bound, and jumped into the pond.\"",
+    "options": [
+     "He swam around, and got Bess in his mouth, and brought her to the shore.",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "He swam around, and got Bess in his mouth, and brought her to the shore.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 10,
+    "label": "LESSON XXXI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Ponto",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Ponto",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 10,
+    "label": "LESSON XXXI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ me your paw, Fido.",
+    "options": [
+     "Give",
+     "Catch",
+     "Eggs",
+     "Black"
+    ],
+    "answer": "Give",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 11,
+    "label": "LESSON LI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Give me your paw, Fido.\"",
+    "options": [
+     "How do you do, sir?",
+     "Ann can catch Rab.",
+     "She has the hat.",
+     "Now Ann can pat Rab."
+    ],
+    "answer": "How do you do, sir?",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 11,
+    "label": "LESSON LI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Fido",
+     "Rab",
+     "Ned",
+     "Let"
+    ],
+    "answer": "Fido",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 11,
+    "label": "LESSON LI",
+    "skill_node": "1.ELA.main-topic-details",
+    "subject": "ela",
+    "cat_domain": "ela"
+   }
+  ],
+  "2": [
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____-twit, twit-twit, twit-tweet!",
+    "options": [
+     "Twit",
+     "Afraid",
+     "Dark",
+     "Willie"
+    ],
+    "answer": "Twit",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 0,
+    "label": "LESSON XI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Twit-twit, twit-twit, twit-tweet!\"",
+    "options": [
+     "That was all he would say.",
+     "AFRAID IN THE DARK.",
+     "\"Willie, will you run upstairs, and get my needle book from the bureau?\"",
+     "But Willie did not stir."
+    ],
+    "answer": "That was all he would say.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 0,
+    "label": "LESSON XI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Twit",
+     "Willie",
+     "Man",
+     "Dog"
+    ],
+    "answer": "Twit",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 0,
+    "label": "LESSON XI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n\"____, the dark is only a big shadow over everything.\"",
+    "options": [
+     "Well",
+     "Bird",
+     "Taught",
+     "Come"
+    ],
+    "answer": "Well",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 1,
+    "label": "LESSON VI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"\"Well, the dark is only a big shadow over everything.\"\"",
+    "options": [
+     "\"What makes the big shadow, mamma?\"",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "\"What makes the big shadow, mamma?\"",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 1,
+    "label": "LESSON VI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Willie",
+     "Twit",
+     "Man",
+     "Dog"
+    ],
+    "answer": "Willie",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 1,
+    "label": "LESSON VI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nThe ____ man stood, and held out his hat.",
+    "options": [
+     "blind",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "blind",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 2,
+    "label": "LESSON XXVIII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"The blind man stood, and held out his hat.\"",
+    "options": [
+     "\"Let us give the poor man something,\" said Harry to his mother.",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "\"Let us give the poor man something,\" said Harry to his mother.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 2,
+    "label": "LESSON XXVIII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Man",
+     "Twit",
+     "Willie",
+     "Dog"
+    ],
+    "answer": "Man",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 2,
+    "label": "LESSON XXVIII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n\"He ____ something pull him by the coat, and heard the bark of a dog.",
+    "options": [
+     "felt",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "felt",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 3,
+    "label": "LESSON LI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"\"He felt something pull him by the coat, and heard the bark of a dog.\"",
+    "options": [
+     "He put out his hand, and felt the dog.",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "He put out his hand, and felt the dog.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 3,
+    "label": "LESSON LI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Dog",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Dog",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 3,
+    "label": "LESSON LI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nOn the ____ is a basket of fine apples.",
+    "options": [
+     "stool",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "stool",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 4,
+    "label": "LESSON I",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"On the stool is a basket of fine apples.\"",
+    "options": [
+     "They seem to say, \"Won't you have one?\"",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "They seem to say, \"Won't you have one?\"",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 4,
+    "label": "LESSON I",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Harry",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Harry",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 4,
+    "label": "LESSON I",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n\"She would ____ wash her face without soap,\" says Harry.",
+    "options": [
+     "rather",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "rather",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 5,
+    "label": "LESSON II",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"\"She would rather wash her face without soap,\" says Harry.\"",
+    "options": [
+     "\"Now let us see who can make the biggest bubble.\"",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "\"Now let us see who can make the biggest bubble.\"",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 5,
+    "label": "LESSON II",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Says",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Says",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 5,
+    "label": "LESSON II",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nCan you ____ me a little block for a post, Lucy'!\"",
+    "options": [
+     "find",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "find",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 6,
+    "label": "LESSON XXXVIII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Can you find me a little block for a post, Lucy'!\"\"",
+    "options": [
+     "\"Will a ribbon block do, Herbert?\"",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "\"Will a ribbon block do, Herbert?\"",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 6,
+    "label": "LESSON XXXVIII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Beam",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Beam",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 6,
+    "label": "LESSON XXXVIII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ thought the bird was an owl, and that he had a nest in the old oak.",
+    "options": [
+     "Fred",
+     "Bird",
+     "Taught",
+     "Come"
+    ],
+    "answer": "Fred",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 7,
+    "label": "LESSON LII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Fred thought the bird was an owl, and that he had a nest in the old oak.\"",
+    "options": [
+     "\"The next day we went to look for him, and, sure enough, he was there.\"",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "\"The next day we went to look for him, and, sure enough, he was there.\"",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 7,
+    "label": "LESSON LII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Fred",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Fred",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 7,
+    "label": "LESSON LII",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nIt was a ____; a trout, my little girl.\"",
+    "options": [
+     "fish",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "fish",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 8,
+    "label": "LESSON LIV",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"It was a fish; a trout, my little girl.\"\"",
+    "options": [
+     "\"Not a fish, grandfather!",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "\"Not a fish, grandfather!",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 8,
+    "label": "LESSON LIV",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Tree",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Tree",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 8,
+    "label": "LESSON LIV",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ he would teach them a hymn.",
+    "options": [
+     "Sometimes",
+     "Bird",
+     "Taught",
+     "Come"
+    ],
+    "answer": "Sometimes",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 9,
+    "label": "LESSON LVI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Sometimes he would teach them a hymn.\"",
+    "options": [
+     "He would often talk to them of their father, who had gone to sea, or of their good, kind mother, who was in her grave.",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "He would often talk to them of their father, who had gone to sea, or of their good, kind mother, who was in her grave.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 9,
+    "label": "LESSON LVI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Little",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Little",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 9,
+    "label": "LESSON LVI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ very honestly told him all about the broken window, and said he felt very well without any money to spend.",
+    "options": [
+     "George",
+     "Bird",
+     "Taught",
+     "Come"
+    ],
+    "answer": "George",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 10,
+    "label": "LESSON LXI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"George very honestly told him all about the broken window, and said he felt very well without any money to spend.\"",
+    "options": [
+     "When dinner was over, Mr.",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "When dinner was over, Mr.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 10,
+    "label": "LESSON LXI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "George",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "George",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 10,
+    "label": "LESSON LXI",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nWhen they were ____ out in the water, the purple ones looked like plumes, and the brown ones like little trees.",
+    "options": [
+     "spread",
+     "BIRD",
+     "TAUGHT",
+     "come"
+    ],
+    "answer": "spread",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 11,
+    "label": "LESSON XLV",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"When they were spread out in the water, the purple ones looked like plumes, and the brown ones like little trees.\"",
+    "options": [
+     "Such a funny thing happened to Lucy.",
+     "WHAT A BIRD TAUGHT.",
+     "Why do you come to my apple tree, Little bird so gray?",
+     "That was all he would say."
+    ],
+    "answer": "Such a funny thing happened to Lucy.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 11,
+    "label": "LESSON XLV",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Took",
+     "Twit",
+     "Willie",
+     "Man"
+    ],
+    "answer": "Took",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 11,
+    "label": "LESSON XLV",
+    "skill_node": "2.ELA.main-topic-paragraphs",
+    "subject": "ela",
+    "cat_domain": "ela"
+   }
+  ],
+  "4": [
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nIf you ____ your task is hard, Try, try again; Time will bring you your reward, Try, try again.",
+    "options": [
+     "find",
+     "royal",
+     "cried",
+     "lazy"
+    ],
+    "answer": "find",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 0,
+    "label": "II. TRY, TRY AGAIN",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again.\"",
+    "options": [
+     "All that other folks can do, Why, with patience, should not you?",
+     "\"'T is royal fun,\" cried lazy Ned, \"To coast, upon my fine, new sled, And beat the other boys; But then, I can not bear to climb The tiresome hill, for every time It more and more annoys.\"",
+     "So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.",
+     "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last."
+    ],
+    "answer": "All that other folks can do, Why, with patience, should not you?",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 0,
+    "label": "II. TRY, TRY AGAIN",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Try",
+     "Ned",
+     "Grandmamma",
+     "Piccola"
+    ],
+    "answer": "Try",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 0,
+    "label": "II. TRY, TRY AGAIN",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nSo, ____ his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.",
+    "options": [
+     "while",
+     "lesson",
+     "heed",
+     "first"
+    ],
+    "answer": "while",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 1,
+    "label": "VII. LAZY NED",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.\"",
+    "options": [
+     "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 1,
+    "label": "VII. LAZY NED",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Ned",
+     "Try",
+     "Grandmamma",
+     "Piccola"
+    ],
+    "answer": "Ned",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 1,
+    "label": "VII. LAZY NED",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ open it,\" said little miss.",
+    "options": [
+     "I'll",
+     "Lesson",
+     "Heed",
+     "First"
+    ],
+    "answer": "I'll",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 2,
+    "label": "IX. MEDDLESOME MATTY",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"I'll open it,\" said little miss.\"",
+    "options": [
+     "\"I know that grandmamma would say, 'Don't meddle with it, dear;' But then she's far enough away, And no one else is near; Beside, what can there be amiss In opening such a box as this?\"",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "\"I know that grandmamma would say, 'Don't meddle with it, dear;' But then she's far enough away, And no one else is near; Beside, what can there be amiss In opening such a box as this?\"",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 2,
+    "label": "IX. MEDDLESOME MATTY",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Grandmamma",
+     "Try",
+     "Ned",
+     "Piccola"
+    ],
+    "answer": "Grandmamma",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 2,
+    "label": "IX. MEDDLESOME MATTY",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ nothing would bring to her!",
+    "options": [
+     "Nicholas",
+     "Lesson",
+     "Heed",
+     "First"
+    ],
+    "answer": "Nicholas",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 3,
+    "label": "XIII. PICCOLA",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Nicholas nothing would bring to her!\"",
+    "options": [
+     "But Piccola never doubted at all That something beautiful must befall Every child upon Christmas day, And so she slept till the dawn was gray.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "But Piccola never doubted at all That something beautiful must befall Every child upon Christmas day, And so she slept till the dawn was gray.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 3,
+    "label": "XIII. PICCOLA",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Piccola",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Piccola",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 3,
+    "label": "XIII. PICCOLA",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ girl, little boy, Or the world will lose some of its joy!",
+    "options": [
+     "little",
+     "lesson",
+     "heed",
+     "first"
+    ],
+    "answer": "little",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 4,
+    "label": "XVI. THE BROWN THRUSH",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Little",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Little",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 4,
+    "label": "XVI. THE BROWN THRUSH",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Which of these words appears in the passage?",
+    "options": [
+     "Larcom",
+     "Lesson",
+     "First",
+     "Succeed"
+    ],
+    "answer": "Larcom",
+    "level": 2,
+    "kind": "vocab",
+    "pidx": 4,
+    "label": "XVI. THE BROWN THRUSH",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nThen he ____ to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.",
+    "options": [
+     "flew",
+     "lesson",
+     "heed",
+     "first"
+    ],
+    "answer": "flew",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 5,
+    "label": "XX. FREAKS OF THE FROST",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Then he flew to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.\"",
+    "options": [
+     "He went to the windows of those who slept, And over each pane, like a fairy, crept; Wherever he breathed, wherever he stepped, By the light of the morn were seen Most beautiful things; there were flowers and trees; There were bevies of birds, and swarms of bees; There were cities with temples and towers, and these All pictured in silver sheen.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "He went to the windows of those who slept, And over each pane, like a fairy, crept; Wherever he breathed, wherever he stepped, By the light of the morn were seen Most beautiful things; there were flowers and trees; There were bevies of birds, and swarms of bees; There were cities with temples and towers, and these All pictured in silver sheen.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 5,
+    "label": "XX. FREAKS OF THE FROST",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "I'll",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "I'll",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 5,
+    "label": "XX. FREAKS OF THE FROST",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n\"I ____ you so!\" cried angry Jo: \"It always is a-raining!\" Then hid her face in dire despair, Lamenting and complaining.",
+    "options": [
+     "told",
+     "lesson",
+     "heed",
+     "first"
+    ],
+    "answer": "told",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 6,
+    "label": "XXII. JEANNETTE AND JO",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"\"I told you so!\" cried angry Jo: \"It always is a-raining!\" Then hid her face in dire despair, Lamenting and complaining.\"",
+    "options": [
+     "But sweet Jeannette, quite hopeful yet,-- I tell it to her honor,-- Looked up and waited till the sun Came streaming in upon her.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "But sweet Jeannette, quite hopeful yet,-- I tell it to her honor,-- Looked up and waited till the sun Came streaming in upon her.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 6,
+    "label": "XXII. JEANNETTE AND JO",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Jeannette",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Jeannette",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 6,
+    "label": "XXII. JEANNETTE AND JO",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ carpeting the ground; Thrushes, orioles, warbling sound:-- Swing me low, and swing me high, To the warm clouds of July.",
+    "options": [
+     "Roses",
+     "Lesson",
+     "Heed",
+     "First"
+    ],
+    "answer": "Roses",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 7,
+    "label": "XXVI. IN TIME'S SWING",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Roses carpeting the ground; Thrushes, orioles, warbling sound:-- Swing me low, and swing me high, To the warm clouds of July.\"",
+    "options": [
+     "Slower now, for at my side White pond lilies open wide.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "Slower now, for at my side White pond lilies open wide.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 7,
+    "label": "XXVI. IN TIME'S SWING",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Swing",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Swing",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 7,
+    "label": "XXVI. IN TIME'S SWING",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ the white highway like cavalry fleet, It dashes the dust with its numberless feet.",
+    "options": [
+     "Adown",
+     "Lesson",
+     "Heed",
+     "First"
+    ],
+    "answer": "Adown",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 8,
+    "label": "XXXVIII. THE SUMMER SHOWER",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Adown the white highway like cavalry fleet, It dashes the dust with its numberless feet.\"",
+    "options": [
+     "Like a murmurless school, in their leafy retreat, The wild birds sit listening the drops round them beat; And the boy crouches close to the blackberry wall.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "Like a murmurless school, in their leafy retreat, The wild birds sit listening the drops round them beat; And the boy crouches close to the blackberry wall.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 8,
+    "label": "XXXVIII. THE SUMMER SHOWER",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Boy",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Boy",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 8,
+    "label": "XXXVIII. THE SUMMER SHOWER",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n'T is a ____ thing in winter To be shattered by the blast, And to hear the rattling trumpet Thunder, \"Cut away the mast!\"",
+    "options": [
+     "fearful",
+     "lesson",
+     "heed",
+     "first"
+    ],
+    "answer": "fearful",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 9,
+    "label": "XLV. THE TEMPEST",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"'T is a fearful thing in winter To be shattered by the blast, And to hear the rattling trumpet Thunder, \"Cut away the mast!\"\"",
+    "options": [
+     "So we shuddered there in silence, For the stoutest held his breath, While the hungry sea was roaring, And the breakers threatened death.",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "So we shuddered there in silence, For the stoutest held his breath, While the hungry sea was roaring, And the breakers threatened death.",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 9,
+    "label": "XLV. THE TEMPEST",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Born",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Born",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 9,
+    "label": "XLV. THE TEMPEST",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\nHe has no ____ of any wrong, He scans me with a fearless eye; Stanch friends are we, well-tried and strong, The little sandpiper and I.",
+    "options": [
+     "thought",
+     "lesson",
+     "heed",
+     "first"
+    ],
+    "answer": "thought",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 10,
+    "label": "XLIX. THE SANDPIPER",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"He has no thought of any wrong, He scans me with a fearless eye; Stanch friends are we, well-tried and strong, The little sandpiper and I.\"",
+    "options": [
+     "Comrade, where wilt thou be to-night, When the loosed storm breaks furiously?",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "Comrade, where wilt thou be to-night, When the loosed storm breaks furiously?",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 10,
+    "label": "XLIX. THE SANDPIPER",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Little",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Little",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 10,
+    "label": "XLIX. THE SANDPIPER",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Read the sentence from the passage and choose the word that fills the blank.\n____ one who will not fear To feel thy coldest touch, or shrink Thy loudest blast to hear.",
+    "options": [
+     "Here's",
+     "Lesson",
+     "Heed",
+     "First"
+    ],
+    "answer": "Here's",
+    "level": 1,
+    "kind": "cloze",
+    "pidx": 11,
+    "label": "LII. THE SNOW MAN",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "In the passage, which sentence comes right after this one?\n\"Here's one who will not fear To feel thy coldest touch, or shrink Thy loudest blast to hear.\"",
+    "options": [
+     "Proud triumph of the schoolboy's skill!",
+     "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+     "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+     "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+    ],
+    "answer": "Proud triumph of the schoolboy's skill!",
+    "level": 2,
+    "kind": "sequence",
+    "pidx": 11,
+    "label": "LII. THE SNOW MAN",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   },
+   {
+    "q": "Who or what is this passage mostly about?",
+    "options": [
+     "Snow",
+     "Try",
+     "Ned",
+     "Grandmamma"
+    ],
+    "answer": "Snow",
+    "level": 1,
+    "kind": "main-topic",
+    "pidx": 11,
+    "label": "LII. THE SNOW MAN",
+    "skill_node": "4.READ.text-evidence",
+    "subject": "reading",
+    "cat_domain": "ela"
+   }
+  ]
+ }
+}

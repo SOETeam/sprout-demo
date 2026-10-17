@@ -44,6 +44,7 @@ const content = readJSON('data/content.json');
 const tree = readJSON('data/skill_tree.json');
 const bank = readJSON('data/items.json');
 const reg = readJSON('data/engine_schemas.json');
+const gens = readJSON('data/generators.json');
 
 section('schema markers');
 ok('skill_tree/v1 marker', tree.schema === 'skill_tree/v1', tree.schema);
@@ -189,8 +190,13 @@ Object.values(content.weeks).forEach((byWeek) =>
     (w.generators || []).forEach((gen) =>
       (gen.items || []).forEach((it) => genItems.add(gen.id + '|' + norm(it.question))));
   }));
+/* K/1/2/4 lane E3: generator configs in data/generators.json carry authored literal items[]
+   (bank-mode) — collect those too so generator:<id>.items[i] provenance stays traceable. */
+Object.values(gens.grades || {}).forEach((list) =>
+  (list || []).forEach((gen) =>
+    (gen.items || []).forEach((it) => genItems.add(gen.id + '|' + norm(it.question)))));
 (content.assessment.bank || []).forEach((b) => sourceTexts.add(norm(b.text)));
-const genRef = (i) => /^generator:([\w.]+)\.items\[\d+\]$/.exec(i.provenance || '');
+const genRef = (i) => /^generator:([\w.-]+)\.items\[\d+\]$/.exec(i.provenance || '');
 const untraceable = items.filter((i) => {
   const m = genRef(i);
   if (m) return !genItems.has(m[1] + '|' + norm(i.text));
@@ -312,6 +318,139 @@ ok('registry documents anti-grind rule',
   JSON.stringify(reg.schemas['mastery/v1'].algorithm).includes('non-practice'));
 ok('registry documents CAT floor',
   JSON.stringify(reg.schemas['item/v1'].invariants).includes('16 items per CAT domain'));
+/* ---- K/1/2/4 lane E3: generators/v1 registry + config integrity ---- */
+ok('registry registers generators/v1', !!(reg.schemas && reg.schemas['generators/v1']));
+ok('generators/v1 registry names a file that exists',
+  !!(reg.schemas && reg.schemas['generators/v1'] && reg.schemas['generators/v1'].file &&
+     fs.existsSync(path.join(ROOT, reg.schemas['generators/v1'].file))));
+ok('generators/v1 registry documents its schema marker',
+  !!(reg.schemas && reg.schemas['generators/v1'] &&
+     JSON.stringify(reg.schemas['generators/v1'].shape || {}).includes('generators/v1')));
+
+section('generators/v1 config integrity (K/1/2/4)');
+ok('generators.json has generators/v1 marker', gens.schema === 'generators/v1', gens.schema);
+ok('generators.json covers K/1/2/4', ['K','1','2','4'].every((g) => Array.isArray(gens.grades && gens.grades[g])));
+const allCfgs = ['K','1','2','4'].flatMap((g) => (gens.grades[g] || []).map((c) => Object.assign({ grade: g }, c)));
+ok('generator config ids unique', new Set(allCfgs.map((c) => c.id)).size === allCfgs.length,
+  allCfgs.length + ' configs');
+ok('every config skill_node resolves in skill_tree (same grade)',
+  allCfgs.every((c) => byId.has(c.skill_node) && byId.get(c.skill_node).grade === c.grade));
+ok('exposure_limit === 3 on every config', allCfgs.every((c) => c.exposure_limit === 3));
+ok('mode in enum parametric|bank', allCfgs.every((c) => c.mode === 'parametric' || c.mode === 'bank'),
+  [...new Set(allCfgs.map((c) => c.mode))].join(','));
+/* family must exist in js/generator.js's families registry (proves the config can actually run) */
+let GENMOD = null;
+try { GENMOD = require(path.join(ROOT, 'js/generator.js')); } catch (e) { GENMOD = null; }
+const famOk = !!GENMOD && !!GENMOD.families;
+ok('js/generator.js loads and exposes families', famOk);
+ok('every config family exists in js/generator.js',
+  famOk && allCfgs.every((c) => Object.prototype.hasOwnProperty.call(GENMOD.families, c.family)),
+  famOk ? [...new Set(allCfgs.filter((c) => !GENMOD.families[c.family]).map((c) => c.family))].join(',') || 'all resolve'
+        : 'generator.js failed to load');
+/* parametric configs must have well-formed levels; bank configs must have valid literal items[] */
+ok('parametric configs have >=1 level with integer level + params object',
+  allCfgs.filter((c) => c.mode === 'parametric').every((c) =>
+    Array.isArray(c.levels) && c.levels.length > 0 &&
+    c.levels.every((l) => Number.isInteger(l.level) && l.level >= 1 && l.params && typeof l.params === 'object')));
+ok('bank configs have items[] passing item/v1 shape (3..6 options, answer index valid)',
+  allCfgs.filter((c) => c.mode === 'bank').every((c) =>
+    Array.isArray(c.items) && c.items.length > 0 &&
+    c.items.every((it) => Array.isArray(it.options) && it.options.length >= 3 && it.options.length <= 6 &&
+      Number.isInteger(it.correctIndex) && it.correctIndex >= 0 && it.correctIndex < it.options.length)));
+/* coverage: each new grade has at least one math and one ela/reading config */
+ok('every new grade has >=1 math config and >=1 ela/reading config',
+  ['K','1','2','4'].every((g) => {
+    const gc = gens.grades[g] || [];
+    return gc.some((c) => c.subject === 'math') &&
+           gc.some((c) => ['ela','reading'].includes(c.subject));
+  }));
+
+section('generators/v1 runtime smoke (deterministic seeded generation)');
+if (GENMOD && GENMOD.families) {
+  const smokeFail = [];
+  const smokePass = [];
+  for (const c of allCfgs.filter((x) => x.mode === 'parametric')) {
+    const reg2 = { generators: [Object.assign({}, c)], student: 'validator_smoke' };
+    for (const lv of (c.levels || [])) {
+      for (let cur = 0; cur < 8; cur++) {
+        let it = null;
+        try {
+          it = GENMOD.itemFor(reg2, c.id, { date: '2026-10-17', student: 'validator_smoke', level: lv.level, cursor: cur });
+        } catch (e) { smokeFail.push(c.id + ':exception:' + e.message); continue; }
+        if (!it || !Array.isArray(it.options) || it.options.length < 3 || it.options.length > 6 ||
+            !Number.isInteger(it.correctIndex) || it.correctIndex < 0 || it.correctIndex >= it.options.length ||
+            typeof it.question !== 'string' || it.question.length === 0) {
+          smokeFail.push(c.id + ':level' + lv.level + ':cursor' + cur);
+        } else {
+          smokePass.push(1);
+        }
+      }
+    }
+  }
+  ok('every parametric config produces valid MC items across sampled seeds',
+    smokeFail.length === 0,
+    smokeFail.length === 0 ? smokePass.length + ' sampled items valid'
+                           : smokeFail.slice(0, 5).join(' | ') + (smokeFail.length > 5 ? ' +' + (smokeFail.length - 5) + ' more' : ''));
+  /* determinism: same (date, student, genId, cursor) -> byte-identical item, twice */
+  let detOk = true;
+  for (const c of allCfgs.filter((x) => x.mode === 'parametric').slice(0, 6)) {
+    const reg2 = { generators: [Object.assign({}, c)], student: 'det_student' };
+    const lv = c.levels[0];
+    const a = GENMOD.itemFor(reg2, c.id, { date: '2026-10-17', student: 'det_student', level: lv.level, cursor: 3 });
+    const b = GENMOD.itemFor(reg2, c.id, { date: '2026-10-17', student: 'det_student', level: lv.level, cursor: 3 });
+    if (JSON.stringify(a) !== JSON.stringify(b)) detOk = false;
+  }
+  ok('same seed -> byte-identical item (deterministic)', detOk);
+} else {
+  ok('every parametric config produces valid MC items across sampled seeds', false, 'generator.js unavailable');
+  ok('same seed -> byte-identical item (deterministic)', false, 'generator.js unavailable');
+}
+
+section('PD passage comprehension grounding (research/pd_readers_passages.json)');
+let PDOK = false, pdPassages = null;
+try { pdPassages = JSON.parse(fs.readFileSync(path.join(ROOT, 'research/pd_readers_passages.json'), 'utf8')); PDOK = true; } catch (e) { PDOK = false; }
+ok('research/pd_readers_passages.json loads (48 passages across K/1/2/4)',
+  PDOK && ['K','1','2','4'].every((g) => Array.isArray(pdPassages[g]) && pdPassages[g].length === 12),
+  PDOK ? ['K','1','2','4'].map((g) => g + '=' + (pdPassages[g] || []).length).join(' ') : 'file missing');
+if (PDOK) {
+  /* every pd.comprehension.g<grade> config exists, has 3..4 items per passage, answers grounded verbatim */
+  const norm2 = norm;
+  const pdFail = [];
+  let pdItemCount = 0;
+  for (const g of ['K','1','2','4']) {
+    const cfg = (gens.grades[g] || []).find((c) => c.id === 'pd.comprehension.g' + g);
+    if (!cfg || !Array.isArray(cfg.items)) { pdFail.push(g + ':no-config'); continue; }
+    const byPassage = new Map();
+    for (const it of cfg.items) {
+      pdItemCount++;
+      const pidx = it.passage_index;
+      if (typeof pidx !== 'number' || !pdPassages[g][pidx]) { pdFail.push(g + ':bad-passage-index'); continue; }
+      byPassage.set(pidx, (byPassage.get(pidx) || 0) + 1);
+      const pt = pdPassages[g][pidx].text;
+      /* answer must be grounded: appears in passage (word-level for short answers, normalized substring for sentences) */
+      const ans = it.options[it.correctIndex];
+      const inPassage = pt.toLowerCase().includes(String(ans).toLowerCase()) ||
+        norm2(pt).includes(norm2(ans));
+      if (!inPassage) pdFail.push(g + ':p' + pidx + ':ungrounded-answer:' + String(ans).slice(0, 30));
+      /* all options must be unique */
+      if (new Set(it.options).size !== it.options.length) pdFail.push(g + ':p' + pidx + ':dup-options');
+    }
+    for (const [pidx, n] of byPassage) {
+      if (n < 3 || n > 4) pdFail.push(g + ':p' + pidx + ':count=' + n);
+    }
+    /* every passage must have at least 3 questions */
+    for (let i = 0; i < pdPassages[g].length; i++) {
+      if (!byPassage.has(i)) pdFail.push(g + ':p' + i + ':missing');
+    }
+  }
+  ok('every PD passage has 3..4 comprehension questions with grounded answers',
+    pdFail.length === 0,
+    pdFail.length === 0 ? pdItemCount + ' questions across 48 passages'
+                        : pdFail.slice(0, 5).join(' | '));
+} else {
+  ok('every PD passage has 3..4 comprehension questions with grounded answers', false, 'passages file missing');
+}
+
 
 /* ------------------------------------------------ 8. node --check all js */
 section('node --check on provider js');

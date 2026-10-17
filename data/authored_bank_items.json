@@ -1,0 +1,1376 @@
+{
+ "schema": "authored_bank/v1",
+ "generated_by": "tools/build_engine_data.py (lane E3 authoring step)",
+ "source": "hand-authored K/1/2/4 practice item banks (science, social_studies, ela-story) — factual recall MC, options 3-6, correctIndex valid; mirrors the existing content.json bank-mode generator item shape",
+ "exposure_limit": 3,
+ "grades": {
+  "K": {
+   "letter-sounds": [
+    {
+     "group": "ls1",
+     "question": "Which letter makes the sound at the START of \"map\"?",
+     "options": [
+      "m",
+      "a",
+      "p",
+      "t"
+     ],
+     "correctIndex": 0,
+     "hint": "The first sound you hear in map is /m/.",
+     "praise": "Yes - m says /m/."
+    },
+    {
+     "group": "ls1",
+     "question": "Which letter says /s/?",
+     "options": [
+      "s",
+      "n",
+      "l",
+      "r"
+     ],
+     "correctIndex": 0,
+     "hint": "s makes the hissing /s/ sound.",
+     "praise": "Yes - s says /s/."
+    },
+    {
+     "group": "ls1",
+     "question": "What sound does \"t\" make at the start of \"top\"?",
+     "options": [
+      "/t/",
+      "/n/",
+      "/p/",
+      "/k/"
+     ],
+     "correctIndex": 0,
+     "hint": "t makes a quick tap sound /t/.",
+     "praise": "Yes - t says /t/."
+    },
+    {
+     "group": "ls1",
+     "question": "Which letter is the FIRST letter in the word \"sun\"?",
+     "options": [
+      "s",
+      "u",
+      "n",
+      "m"
+     ],
+     "correctIndex": 0,
+     "hint": "Read the word from left to right; the first letter is s.",
+     "praise": "Yes - sun starts with s."
+    },
+    {
+     "group": "ls1",
+     "question": "Which of these starts with the letter \"b\"?",
+     "options": [
+      "bat",
+      "cat",
+      "dog",
+      "fish"
+     ],
+     "correctIndex": 0,
+     "hint": "b says /b/, and bat begins with /b/.",
+     "praise": "Yes - bat starts with b."
+    },
+    {
+     "group": "ls1",
+     "question": "Rhyming words share the same ENDING sound. Which pair rhymes?",
+     "options": [
+      "cat - hat",
+      "cat - dog",
+      "cat - sun",
+      "dog - mat"
+     ],
+     "correctIndex": 0,
+     "hint": "Rhyme check: do they end in the same sound?",
+     "praise": "Yes - cat and hat both end in -at."
+    }
+   ],
+   "story-questions": [
+    {
+     "group": "sq1",
+     "question": "Who is the story about? (a boy named Sam who lost his hat)",
+     "options": [
+      "Sam",
+      "A dog",
+      "A cat",
+      "A bird"
+     ],
+     "correctIndex": 0,
+     "hint": "The main character is the one the story follows.",
+     "praise": "Yes - the story is about Sam."
+    },
+    {
+     "group": "sq1",
+     "question": "What did Sam lose in the story?",
+     "options": [
+      "His hat",
+      "His shoe",
+      "His ball",
+      "His book"
+     ],
+     "correctIndex": 0,
+     "hint": "Look for the thing Sam could not find.",
+     "praise": "Yes - Sam lost his hat."
+    },
+    {
+     "group": "sq1",
+     "question": "Where did Sam look for his hat?",
+     "options": [
+      "Under the bed",
+      "In the sky",
+      "At the store",
+      "In the garden"
+     ],
+     "correctIndex": 0,
+     "hint": "Find the place Sam checked first.",
+     "praise": "Yes - he looked under the bed."
+    },
+    {
+     "group": "sq1",
+     "question": "What happened at the END of the story?",
+     "options": [
+      "Sam found his hat",
+      "Sam cried",
+      "Sam went to sleep",
+      "Sam lost his shoe"
+     ],
+     "correctIndex": 0,
+     "hint": "The ending tells what was solved.",
+     "praise": "Yes - Sam found his hat in the end."
+    },
+    {
+     "group": "sq1",
+     "question": "Why was Sam sad at the start?",
+     "options": [
+      "He lost his hat",
+      "He was hungry",
+      "He was tired",
+      "It was raining"
+     ],
+     "correctIndex": 0,
+     "hint": "The problem is what makes the character sad.",
+     "praise": "Yes - losing his hat made Sam sad."
+    },
+    {
+     "group": "sq1",
+     "question": "How did Sam feel when he found the hat?",
+     "options": [
+      "Happy",
+      "Angry",
+      "Scared",
+      "Bored"
+     ],
+     "correctIndex": 0,
+     "hint": "Finding something lost usually makes you happy.",
+     "praise": "Yes - Sam felt happy."
+    }
+   ],
+   "weather-patterns": [
+    {
+     "group": "w1",
+     "question": "What do we use to check the weather outside?",
+     "options": [
+      "A window and the sky",
+      "A calculator",
+      "A clock",
+      "A map of the ocean"
+     ],
+     "correctIndex": 0,
+     "hint": "You look outside to see the weather.",
+     "praise": "Yes - look out the window!"
+    },
+    {
+     "group": "w1",
+     "question": "Which of these is a sunny-day sign?",
+     "options": [
+      "Blue sky and sun",
+      "Dark clouds",
+      "Rain falling",
+      "Snow"
+     ],
+     "correctIndex": 0,
+     "hint": "Sunny days have bright sun and blue sky.",
+     "praise": "Yes - blue sky and sunshine!"
+    },
+    {
+     "group": "w1",
+     "question": "What might you need when it rains?",
+     "options": [
+      "An umbrella",
+      "A hat only",
+      "Sandals",
+      "Sunglasses"
+     ],
+     "correctIndex": 0,
+     "hint": "An umbrella keeps you dry in the rain.",
+     "praise": "Yes - an umbrella!"
+    },
+    {
+     "group": "w1",
+     "question": "Is it cold or hot on a snowy day?",
+     "options": [
+      "Cold",
+      "Hot",
+      "Warm like summer",
+      "Exactly room temperature"
+     ],
+     "correctIndex": 0,
+     "hint": "Snow only falls when it is cold.",
+     "praise": "Yes - snowy days are cold."
+    },
+    {
+     "group": "w1",
+     "question": "What season has the warmest, sunniest days?",
+     "options": [
+      "Summer",
+      "Winter",
+      "Fall",
+      "Spring"
+     ],
+     "correctIndex": 0,
+     "hint": "Summer has the longest, hottest days.",
+     "praise": "Yes - summer!"
+    },
+    {
+     "group": "w1",
+     "question": "We record the weather each day in a...",
+     "options": [
+      "weather chart",
+      "spelling list",
+      "story book",
+      "math book"
+     ],
+     "correctIndex": 0,
+     "hint": "A chart helps you track daily weather.",
+     "praise": "Yes - a weather chart."
+    }
+   ],
+   "classroom-rules": [
+    {
+     "group": "cr1",
+     "question": "Why do we have rules in the classroom?",
+     "options": [
+      "So everyone is safe and can learn",
+      "To make kids sad",
+      "To waste time",
+      "There is no reason"
+     ],
+     "correctIndex": 0,
+     "hint": "Rules keep things fair and safe for learning.",
+     "praise": "Yes - rules help everyone learn safely!"
+    },
+    {
+     "group": "cr1",
+     "question": "What should you do when the teacher is talking?",
+     "options": [
+      "Listen quietly",
+      "Shout out",
+      "Walk around",
+      "Play with toys"
+     ],
+     "correctIndex": 0,
+     "hint": "Listening shows respect and helps you learn.",
+     "praise": "Yes - listen quietly."
+    },
+    {
+     "group": "cr1",
+     "question": "How should you take turns with materials?",
+     "options": [
+      "Wait your turn",
+      "Grab them first",
+      "Hide them",
+      "Throw them"
+     ],
+     "correctIndex": 0,
+     "hint": "Taking turns is fair to everyone.",
+     "praise": "Yes - wait your turn."
+    },
+    {
+     "group": "cr1",
+     "question": "What is a fair way to solve a disagreement?",
+     "options": [
+      "Use kind words and take turns",
+      "Hit",
+      "Yell",
+      "Cry"
+     ],
+     "correctIndex": 0,
+     "hint": "Kind words fix problems better than yelling.",
+     "praise": "Yes - use kind words."
+    },
+    {
+     "group": "cr1",
+     "question": "Why must we raise our hand to speak?",
+     "options": [
+      "So everyone gets a turn to talk",
+      "To make noise",
+      "To waste time",
+      "No reason"
+     ],
+     "correctIndex": 0,
+     "hint": "Raising your hand gives each person a fair turn.",
+     "praise": "Yes - raise your hand for a turn."
+    },
+    {
+     "group": "cr1",
+     "question": "What do we do with toys when the lesson ends?",
+     "options": [
+      "Put them away neatly",
+      "Leave them on the floor",
+      "Take them home",
+      "Hide them"
+     ],
+     "correctIndex": 0,
+     "hint": "Cleaning up keeps the room ready for the next activity.",
+     "praise": "Yes - put them away neatly."
+    }
+   ]
+  },
+  "1": {
+   "sound-vibration": [
+    {
+     "group": "sv1",
+     "question": "What makes a drum make sound when you hit it?",
+     "options": [
+      "It vibrates (shakes fast)",
+      "It glows",
+      "It melts",
+      "It floats"
+     ],
+     "correctIndex": 0,
+     "hint": "Sound starts when something shakes back and forth - that is vibration.",
+     "praise": "Yes - vibration makes sound!"
+    },
+    {
+     "group": "sv1",
+     "question": "Which of these can you HEAR?",
+     "options": [
+      "A ringing bell",
+      "a color",
+      "a smell",
+      "a thought"
+     ],
+     "correctIndex": 0,
+     "hint": "You hear sounds with your ears.",
+     "praise": "Yes - you can hear a bell ring."
+    },
+    {
+     "group": "sv1",
+     "question": "What do your vocal cords do when you speak?",
+     "options": [
+      "They vibrate",
+      "They light up",
+      "They cool down",
+      "They freeze"
+     ],
+     "correctIndex": 0,
+     "hint": "Your throat vibrates to make your voice.",
+     "praise": "Yes - they vibrate!"
+    },
+    {
+     "group": "sv1",
+     "question": "Where do the vibrations from a guitar string go?",
+     "options": [
+      "Into the air as sound waves",
+      "Nowhere",
+      "Into the floor only",
+      "Into the light"
+     ],
+     "correctIndex": 0,
+     "hint": "Vibrations travel through the air as sound.",
+     "praise": "Yes - sound waves in the air!"
+    },
+    {
+     "group": "sv1",
+     "question": "Why does a spoon make noise when you tap a bowl?",
+     "options": [
+      "The bowl vibrates",
+      "The bowl glows",
+      "The bowl melts",
+      "The bowl spins"
+     ],
+     "correctIndex": 0,
+     "hint": "Tapping makes the bowl shake - vibrate - and that is sound.",
+     "praise": "Yes - the bowl vibrates."
+    },
+    {
+     "group": "sv1",
+     "question": "What happens to sound if you cover your ears?",
+     "options": [
+      "You hear it less",
+      "You hear it more",
+      "It stops existing",
+      "It gets louder"
+     ],
+     "correctIndex": 0,
+     "hint": "Covering ears blocks some sound waves.",
+     "praise": "Yes - you hear it less."
+    }
+   ],
+   "light-and-sight": [
+    {
+     "group": "ls2",
+     "question": "What do you need to SEE an object?",
+     "options": [
+      "Light shining on it",
+      "A loud noise",
+      "A strong wind",
+      "Cold air"
+     ],
+     "correctIndex": 0,
+     "hint": "You need light to reflect off things so your eyes can see them.",
+     "praise": "Yes - you need light!"
+    },
+    {
+     "group": "ls2",
+     "question": "What makes a shadow?",
+     "options": [
+      "An object blocking light",
+      "A reflection in water",
+      "A loud sound",
+      "Cold air"
+     ],
+     "correctIndex": 0,
+     "hint": "When an object blocks light, the dark spot behind it is a shadow.",
+     "praise": "Yes - an object blocking light!"
+    },
+    {
+     "group": "ls2",
+     "question": "Which of these gives off its OWN light?",
+     "options": [
+      "The sun",
+      "The moon",
+      "a book",
+      "a chair"
+     ],
+     "correctIndex": 0,
+     "hint": "The sun makes its own light; the moon only reflects it.",
+     "praise": "Yes - the sun!"
+    },
+    {
+     "group": "ls2",
+     "question": "Why can you not see in a perfectly dark room?",
+     "options": [
+      "There is no light to reflect",
+      "Your eyes are broken",
+      "It is too small",
+      "It is too loud"
+     ],
+     "correctIndex": 0,
+     "hint": "No light = nothing for your eyes to catch.",
+     "praise": "Yes - no light to see!"
+    },
+    {
+     "group": "ls2",
+     "question": "What do mirrors do with light?",
+     "options": [
+      "Bounce it back (reflect)",
+      "Absorb it all",
+      "Turn it into sound",
+      "Turn it into heat only"
+     ],
+     "correctIndex": 0,
+     "hint": "Mirrors reflect light like a bounce.",
+     "praise": "Yes - mirrors reflect light!"
+    },
+    {
+     "group": "ls2",
+     "question": "You can see a ball in a dark room if you...",
+     "options": [
+      "Shine a light on it",
+      "Sing to it",
+      "Wave at it",
+      "Close your eyes"
+     ],
+     "correctIndex": 0,
+     "hint": "Add light and the ball becomes visible.",
+     "praise": "Yes - shine a light on it!"
+    }
+   ],
+   "sky-patterns": [
+    {
+     "group": "sp1",
+     "question": "What do we see in the daytime sky?",
+     "options": [
+      "The sun",
+      "The full moon",
+      "Stars",
+      "Comets"
+     ],
+     "correctIndex": 0,
+     "hint": "The sun is up during the day.",
+     "praise": "Yes - the sun!"
+    },
+    {
+     "group": "sp1",
+     "question": "When do we usually see the moon?",
+     "options": [
+      "At night",
+      "At noon",
+      "Only in winter",
+      "Only indoors"
+     ],
+     "correctIndex": 0,
+     "hint": "The moon shines in the night sky.",
+     "praise": "Yes - at night!"
+    },
+    {
+     "group": "sp1",
+     "question": "Which star is closest to Earth?",
+     "options": [
+      "The sun",
+      "Polaris",
+      "A distant galaxy",
+      "A black hole"
+     ],
+     "correctIndex": 0,
+     "hint": "The sun is our nearest star.",
+     "praise": "Yes - the sun is a star!"
+    },
+    {
+     "group": "sp1",
+     "question": "What changes make the seasons?",
+     "options": [
+      "How Earth is tilted as it orbits the sun",
+      "The moon getting closer",
+      "Clouds",
+      "Rain"
+     ],
+     "correctIndex": 0,
+     "hint": "Earth tilt + orbit = seasons.",
+     "praise": "Yes - Earth’s tilt and orbit!"
+    },
+    {
+     "group": "sp1",
+     "question": "Which season has the longest days?",
+     "options": [
+      "Summer",
+      "Winter",
+      "Fall",
+      "Spring"
+     ],
+     "correctIndex": 0,
+     "hint": "Summer has the most daylight hours.",
+     "praise": "Yes - summer!"
+    },
+    {
+     "group": "sp1",
+     "question": "What pattern do the sun and moon follow?",
+     "options": [
+      "They rise and set each day/night",
+      "They never move",
+      "They only appear on weekends",
+      "They swap places"
+     ],
+     "correctIndex": 0,
+     "hint": "Daily rise-and-set is the basic sky pattern.",
+     "praise": "Yes - they rise and set!"
+    }
+   ],
+   "classroom-rules": [
+    {
+     "group": "cr2",
+     "question": "Why does our class have rules?",
+     "options": [
+      "To keep everyone safe and learning",
+      "To be mean",
+      "To waste time",
+      "No reason"
+     ],
+     "correctIndex": 0,
+     "hint": "Rules protect safety and focus for learning.",
+     "praise": "Yes - safety and learning!"
+    },
+    {
+     "group": "cr2",
+     "question": "What should you do before speaking in class?",
+     "options": [
+      "Raise your hand",
+      "Shout",
+      "Leave the room",
+      "Ignore the teacher"
+     ],
+     "correctIndex": 0,
+     "hint": "Raising your hand gives everyone a fair turn.",
+     "praise": "Yes - raise your hand."
+    },
+    {
+     "group": "cr2",
+     "question": "How do you show respect for a classmate’s idea?",
+     "options": [
+      "Listen and take turns",
+      "Interrupt",
+      "Laugh",
+      "Copy without asking"
+     ],
+     "correctIndex": 0,
+     "hint": "Listening and taking turns shows respect.",
+     "praise": "Yes - listen and take turns."
+    },
+    {
+     "group": "cr2",
+     "question": "What is the fair way to share supplies?",
+     "options": [
+      "Take turns and share",
+      "Grab the most",
+      "Hide them",
+      "Refuse to share"
+     ],
+     "correctIndex": 0,
+     "hint": "Sharing fairly means everyone gets a chance.",
+     "praise": "Yes - take turns and share."
+    },
+    {
+     "group": "cr2",
+     "question": "Why do we clean up after an activity?",
+     "options": [
+      "So the next group is ready",
+      "To waste time",
+      "Because we must not",
+      "No reason"
+     ],
+     "correctIndex": 0,
+     "hint": "Cleaning up keeps the room ready for the next class.",
+     "praise": "Yes - so the next group is ready."
+    },
+    {
+     "group": "cr2",
+     "question": "What should you do if you disagree with a rule?",
+     "options": [
+      "Raise your hand and ask respectfully",
+      "Yell",
+      "Break it",
+      "Ignore it"
+     ],
+     "correctIndex": 0,
+     "hint": "Ask respectfully - that is how fair rules get discussed.",
+     "praise": "Yes - ask respectfully."
+    }
+   ]
+  },
+  "2": {
+   "material-properties": [
+    {
+     "group": "mp1",
+     "question": "Which material is the HARDEST?",
+     "options": [
+      "Metal rock",
+      "A feather",
+      "Jelly",
+      "Cotton candy"
+     ],
+     "correctIndex": 0,
+     "hint": "Hard materials keep their shape and do not squash easily.",
+     "praise": "Yes - metal is hard!"
+    },
+    {
+     "group": "mp1",
+     "question": "Which material lets light pass through?",
+     "options": [
+      "Clear glass",
+      "Wood",
+      "Brick",
+      "Cardboard"
+     ],
+     "correctIndex": 0,
+     "hint": "Transparent materials like clear glass let light through.",
+     "praise": "Yes - clear glass!"
+    },
+    {
+     "group": "mp1",
+     "question": "What property describes how heavy something is?",
+     "options": [
+      "Mass",
+      "Color",
+      "Smell",
+      "Taste"
+     ],
+     "correctIndex": 0,
+     "hint": "Mass tells you how much matter is in an object.",
+     "praise": "Yes - mass!"
+    },
+    {
+     "group": "mp1",
+     "question": "Which material is the BEST insulator (keeps heat in)?",
+     "options": [
+      "Wool",
+      "Metal",
+      "Glass",
+      "Water"
+     ],
+     "correctIndex": 0,
+     "hint": "Wool traps air and slows heat loss.",
+     "praise": "Yes - wool!"
+    },
+    {
+     "group": "mp1",
+     "question": "A material that bends easily without breaking is...",
+     "options": [
+      "Flexible",
+      "Rigid",
+      "Transparent",
+      "Brittle"
+     ],
+     "correctIndex": 0,
+     "hint": "Flexible things bend; rigid things do not.",
+     "praise": "Yes - flexible!"
+    },
+    {
+     "group": "mp1",
+     "question": "Which is a NATURAL material?",
+     "options": [
+      "Wood",
+      "Plastic",
+      "Nylon",
+      "Glass"
+     ],
+     "correctIndex": 0,
+     "hint": "Wood comes from trees - it is natural.",
+     "praise": "Yes - wood!"
+    }
+   ],
+   "plants-need-sun-water": [
+    {
+     "group": "pn1",
+     "question": "What do plants need to make their own food?",
+     "options": [
+      "Sunlight and water",
+      "Moonlight only",
+      "Wind only",
+      "Salt water"
+     ],
+     "correctIndex": 0,
+     "hint": "Plants use sunlight + water to make food (photosynthesis).",
+     "praise": "Yes - sunlight and water!"
+    },
+    {
+     "group": "pn1",
+     "question": "Why do plants need water?",
+     "options": [
+      "To grow and stay firm",
+      "To change color",
+      "To make sound",
+      "To move faster"
+     ],
+     "correctIndex": 0,
+     "hint": "Water keeps plants growing and healthy.",
+     "praise": "Yes - to grow!"
+    },
+    {
+     "group": "pn1",
+     "question": "What gas do plants take in for photosynthesis?",
+     "options": [
+      "Carbon dioxide",
+      "Oxygen only",
+      "Helium",
+      "Nitrogen only"
+     ],
+     "correctIndex": 0,
+     "hint": "Plants breathe in CO2 and breathe out oxygen.",
+     "praise": "Yes - carbon dioxide!"
+    },
+    {
+     "group": "pn1",
+     "question": "What do plants release as a product of photosynthesis?",
+     "options": [
+      "Oxygen",
+      "Carbon dioxide",
+      "Methane",
+      "Smoke"
+     ],
+     "correctIndex": 0,
+     "hint": "Plants give off oxygen - we breathe it!",
+     "praise": "Yes - oxygen!"
+    },
+    {
+     "group": "pn1",
+     "question": "Where do most plants grow best?",
+     "options": [
+      "In soil with sunlight",
+      "In total darkness",
+      "In salt water",
+      "Under a rock"
+     ],
+     "correctIndex": 0,
+     "hint": "Soil anchors roots; sunlight powers growth.",
+     "praise": "Yes - soil + sunlight!"
+    },
+    {
+     "group": "pn1",
+     "question": "What happens to a plant with no water for a long time?",
+     "options": [
+      "It wilts and may die",
+      "It grows faster",
+      "It changes color to blue",
+      "It floats"
+     ],
+     "correctIndex": 0,
+     "hint": "No water = wilting and stress.",
+     "praise": "Yes - it wilts!"
+    }
+   ],
+   "land-and-water": [
+    {
+     "group": "lw1",
+     "question": "What is LAND?",
+     "options": [
+      "The ground we walk on",
+      "Only oceans",
+      "The sky",
+      "Clouds"
+     ],
+     "correctIndex": 0,
+     "hint": "Land is solid ground - soil, rock, grass.",
+     "praise": "Yes - the ground!"
+    },
+    {
+     "group": "lw1",
+     "question": "What is WATER (on a map)?",
+     "options": [
+      "Oceans, lakes, rivers",
+      "Mountains",
+      "Cities",
+      "Forests"
+     ],
+     "correctIndex": 0,
+     "hint": "Water features are blue on most maps.",
+     "praise": "Yes - oceans, lakes, rivers!"
+    },
+    {
+     "group": "lw1",
+     "question": "What can slowly change the shape of land?",
+     "options": [
+      "Moving water and wind",
+      "A pencil",
+      "A sound",
+      "A shadow"
+     ],
+     "correctIndex": 0,
+     "hint": "Erosion from water and wind reshapes land over time.",
+     "praise": "Yes - water and wind!"
+    },
+    {
+     "group": "lw1",
+     "question": "Which is a large body of salt water?",
+     "options": [
+      "An ocean",
+      "A pond",
+      "A puddle",
+      "A river"
+     ],
+     "correctIndex": 0,
+     "hint": "Oceans are the biggest salt-water bodies.",
+     "praise": "Yes - an ocean!"
+    },
+    {
+     "group": "lw1",
+     "question": "Where does a river usually END up?",
+     "options": [
+      "In an ocean or lake",
+      "In the sky",
+      "In the desert",
+      "Underground only"
+     ],
+     "correctIndex": 0,
+     "hint": "Rivers flow downhill to lakes or oceans.",
+     "praise": "Yes - an ocean or lake!"
+    },
+    {
+     "group": "lw1",
+     "question": "What is a hill?",
+     "options": [
+      "A piece of land higher than the ground around it",
+      "A body of water",
+      "A cloud",
+      "A wind pattern"
+     ],
+     "correctIndex": 0,
+     "hint": "Hills rise above the surrounding land.",
+     "praise": "Yes - higher land!"
+    }
+   ],
+   "local-government": [
+    {
+     "group": "lg1",
+     "question": "What does local government DO?",
+     "options": [
+      "Makes and enforces town rules (ordinances)",
+      "Flies rockets",
+      "Paints pictures",
+      "Grows food"
+     ],
+     "correctIndex": 0,
+     "hint": "Local government runs the town: laws, roads, safety.",
+     "praise": "Yes - town rules and services!"
+    },
+    {
+     "group": "lg1",
+     "question": "Who helps keep a town safe every day?",
+     "options": [
+      "Police and firefighters",
+      "Astronauts",
+      "Artists",
+      "Farmers only"
+     ],
+     "correctIndex": 0,
+     "hint": "Local safety services protect the community.",
+     "praise": "Yes - police and firefighters!"
+    },
+    {
+     "group": "lg1",
+     "question": "What is an ORDINANCE?",
+     "options": [
+      "A local law",
+      "A type of tree",
+      "A weather event",
+      "A math rule"
+     ],
+     "correctIndex": 0,
+     "hint": "Ordinances are laws passed by a town or city.",
+     "praise": "Yes - a local law!"
+    },
+    {
+     "group": "lg1",
+     "question": "Where do town leaders meet to make decisions?",
+     "options": [
+      "City/town hall",
+      "A mountain",
+      "A forest",
+      "A boat"
+     ],
+     "correctIndex": 0,
+     "hint": "City or town hall is the seat of local government.",
+     "praise": "Yes - city/town hall!"
+    },
+    {
+     "group": "lg1",
+     "question": "Why do towns make rules (ordinances)?",
+     "options": [
+      "To keep people safe and orderly",
+      "To confuse people",
+      "To waste money",
+      "No reason"
+     ],
+     "correctIndex": 0,
+     "hint": "Rules keep a community safe and running smoothly.",
+     "praise": "Yes - safety and order!"
+    },
+    {
+     "group": "lg1",
+     "question": "Which of these is a LOCAL service?",
+     "options": [
+      "Trash pickup",
+      "Space travel",
+      "Ocean shipping only",
+      "Global satellites"
+     ],
+     "correctIndex": 0,
+     "hint": "Trash pickup is a town-provided service.",
+     "praise": "Yes - trash pickup!"
+    }
+   ]
+  },
+  "4": {
+   "energy-and-motion": [
+    {
+     "group": "em1",
+     "question": "What is ENERGY?",
+     "options": [
+      "The ability to do work or cause change",
+      "A type of rock",
+      "A color",
+      "A sound"
+     ],
+     "correctIndex": 0,
+     "hint": "Energy powers all motion and change.",
+     "praise": "Yes - ability to do work!"
+    },
+    {
+     "group": "em1",
+     "question": "The FASTER an object moves, the more it has...",
+     "options": [
+      "Kinetic energy",
+      "No energy",
+      "Only potential energy",
+      "Negative energy"
+     ],
+     "correctIndex": 0,
+     "hint": "Kinetic energy grows with speed.",
+     "praise": "Yes - kinetic energy!"
+    },
+    {
+     "group": "em1",
+     "question": "Energy stored for later use is called...",
+     "options": [
+      "Potential energy",
+      "Kinetic energy only",
+      "Sound energy only",
+      "Light energy only"
+     ],
+     "correctIndex": 0,
+     "hint": "Potential = stored, ready to be released.",
+     "praise": "Yes - potential energy!"
+    },
+    {
+     "group": "em1",
+     "question": "In a collision, what usually happens to energy?",
+     "options": [
+      "It transfers from one object to another",
+      "It vanishes",
+      "It turns into nothing",
+      "It doubles for free"
+     ],
+     "correctIndex": 0,
+     "hint": "Energy is transferred, not created from nothing.",
+     "praise": "Yes - it transfers!"
+    },
+    {
+     "group": "em1",
+     "question": "A heavier object at the same speed has...",
+     "options": [
+      "More kinetic energy",
+      "Less energy",
+      "The same as a feather",
+      "No energy"
+     ],
+     "correctIndex": 0,
+     "hint": "More mass at same speed = more kinetic energy.",
+     "praise": "Yes - more kinetic energy!"
+    },
+    {
+     "group": "em1",
+     "question": "What happens to total energy in a closed system?",
+     "options": [
+      "It is conserved (stays the same)",
+      "It disappears",
+      "It multiplies",
+      "It turns into mass only"
+     ],
+     "correctIndex": 0,
+     "hint": "Conservation of energy: total stays constant.",
+     "praise": "Yes - it is conserved!"
+    }
+   ],
+   "waves-sound-light": [
+    {
+     "group": "wl1",
+     "question": "What is a WAVE?",
+     "options": [
+      "A disturbance that transfers energy",
+      "A solid object",
+      "A type of animal",
+      "A weather event"
+     ],
+     "correctIndex": 0,
+     "hint": "Waves move energy from place to place.",
+     "praise": "Yes - a transfer of energy!"
+    },
+    {
+     "group": "wl1",
+     "question": "AMPLITUDE tells you a wave’s...",
+     "options": [
+      "Height (energy)",
+      "Color",
+      "Speed of sound only",
+      "Direction of gravity"
+     ],
+     "correctIndex": 0,
+     "hint": "Bigger amplitude = more energy.",
+     "praise": "Yes - the wave’s height!"
+    },
+    {
+     "group": "wl1",
+     "question": "WAVELENGTH is the distance between...",
+     "options": [
+      "Two matching points on a wave",
+      "The floor and ceiling",
+      "Two colors",
+      "Two objects only"
+     ],
+     "correctIndex": 0,
+     "hint": "Peak-to-peak (or trough-to-trough) = one wavelength.",
+     "praise": "Yes - two matching points!"
+    },
+    {
+     "group": "wl1",
+     "question": "Sound waves travel best through...",
+     "options": [
+      "Solids and liquids",
+      "A vacuum only",
+      "Outer space only",
+      "A void"
+     ],
+     "correctIndex": 0,
+     "hint": "Sound needs a medium - solids/liquids work well.",
+     "praise": "Yes - solids and liquids!"
+    },
+    {
+     "group": "wl1",
+     "question": "Light waves can travel through...",
+     "options": [
+      "Empty space (a vacuum)",
+      "Only glass",
+      "Only water",
+      "Only air, never space"
+     ],
+     "correctIndex": 0,
+     "hint": "Light needs no medium - it crosses empty space.",
+     "praise": "Yes - empty space!"
+    },
+    {
+     "group": "wl1",
+     "question": "A longer wavelength of visible light looks more like...",
+     "options": [
+      "Red",
+      "Violet",
+      "Blue",
+      "Green"
+     ],
+     "correctIndex": 0,
+     "hint": "Red has the longest visible wavelength.",
+     "praise": "Yes - red!"
+    }
+   ],
+   "rocks-and-fossils": [
+    {
+     "group": "rf1",
+     "question": "What do FOSSILS tell scientists?",
+     "options": [
+      "What lived long ago",
+      "The weather tomorrow",
+      "Future events",
+      "Nothing at all"
+     ],
+     "correctIndex": 0,
+     "hint": "Fossils are preserved remains of ancient life.",
+     "praise": "Yes - what lived long ago!"
+    },
+    {
+     "group": "rf1",
+     "question": "Most fossils are found in...",
+     "options": [
+      "Sedimentary rock",
+      "Igneous rock",
+      "Metal",
+      "Glass"
+     ],
+     "correctIndex": 0,
+     "hint": "Sedimentary rock forms in layers where organisms get buried.",
+     "praise": "Yes - sedimentary rock!"
+    },
+    {
+     "group": "rf1",
+     "question": "Rock layers (strata) are usually...",
+     "options": [
+      "Oldest on the bottom, youngest on top",
+      "Randomly mixed",
+      "All the same age",
+      "Newest on the bottom"
+     ],
+     "correctIndex": 0,
+     "hint": "Law of superposition: deeper = older.",
+     "praise": "Yes - oldest on the bottom!"
+    },
+    {
+     "group": "rf1",
+     "question": "What process slowly WEATHERS rock?",
+     "options": [
+      "Water, wind, ice over time",
+      "Instant melting only",
+      "A single raindrop",
+      "Nothing changes rock"
+     ],
+     "correctIndex": 0,
+     "hint": "Weathering is slow and steady.",
+     "praise": "Yes - water, wind, ice over time!"
+    },
+    {
+     "group": "rf1",
+     "question": "EROSION is when weathered material is...",
+     "options": [
+      "Moved and deposited elsewhere",
+      "Made into energy",
+      "Vaporized",
+      "Recycled instantly"
+     ],
+     "correctIndex": 0,
+     "hint": "Erosion transports weathered bits to new spots.",
+     "praise": "Yes - moved and deposited!"
+    },
+    {
+     "group": "rf1",
+     "question": "Which is NOT a type of fossil?",
+     "options": [
+      "A footprint in a computer chip",
+      "A petrified shell",
+      "A bone cast",
+      "Amber insect"
+     ],
+     "correctIndex": 0,
+     "hint": "Real fossils are preserved remains/imprints, not electronics.",
+     "praise": "Yes - computer chips are not fossils!"
+    }
+   ],
+   "michigan-inquiry": [
+    {
+     "group": "mi1",
+     "question": "What do historians ASK when studying Michigan?",
+     "options": [
+      "Why did events happen and how do we know?",
+      "What is 2+2?",
+      "What color is the sky?",
+      "How fast can you run?"
+     ],
+     "correctIndex": 0,
+     "hint": "Historians ask evidence-based why/how questions.",
+     "praise": "Yes - why and how, with evidence!"
+    },
+    {
+     "group": "mi1",
+     "question": "Michigan became a state in...",
+     "options": [
+      "1837",
+      "1776",
+      "1900",
+      "1791"
+     ],
+     "correctIndex": 0,
+     "hint": "Michigan statehood was 1837.",
+     "praise": "Yes - 1837!"
+    },
+    {
+     "group": "mi1",
+     "question": "What is a PRIMARY source?",
+     "options": [
+      "A document/artifact from the time being studied",
+      "A modern textbook summary",
+      "A novel written later",
+      "A website blog"
+     ],
+     "correctIndex": 0,
+     "hint": "Primary = created at the time, first-hand.",
+     "praise": "Yes - a first-hand source!"
+    },
+    {
+     "group": "mi1",
+     "question": "What is a SECONDARY source?",
+     "options": [
+      "Something written AFTER the event using primary sources",
+      "A diary from the day",
+      "A photo from the time",
+      "A signed treaty"
+     ],
+     "correctIndex": 0,
+     "hint": "Secondary = analysis after the fact.",
+     "praise": "Yes - written after the event!"
+    },
+    {
+     "group": "mi1",
+     "question": "Which is a good question for studying Michigan’s past?",
+     "options": [
+      "How did the Great Lakes shape trade and towns?",
+      "What is my favorite color?",
+      "Who won yesterday’s game?",
+      "How tall am I?"
+     ],
+     "correctIndex": 0,
+     "hint": "Good historical questions are about patterns over time.",
+     "praise": "Yes - lakes shaping trade and towns!"
+    },
+    {
+     "group": "mi1",
+     "question": "Where do historians find EVIDENCE?",
+     "options": [
+      "Letters, photos, maps, and records",
+      "Their imagination only",
+      "A crystal ball",
+      "Nowhere"
+     ],
+     "correctIndex": 0,
+     "hint": "Evidence lives in real documents and artifacts.",
+     "praise": "Yes - letters, photos, maps, records!"
+    }
+   ],
+   "us-regions-maps": [
+    {
+     "group": "ur1",
+     "question": "What does a MAP show?",
+     "options": [
+      "Places and their locations",
+      "Only the weather",
+      "Only time",
+      "Only sound"
+     ],
+     "correctIndex": 0,
+     "hint": "Maps display spatial information.",
+     "praise": "Yes - places and locations!"
+    },
+    {
+     "group": "ur1",
+     "question": "A LEGEND (key) on a map tells you...",
+     "options": [
+      "What the symbols/colors mean",
+      "The map’s age",
+      "The author’s name only",
+      "Nothing"
+     ],
+     "correctIndex": 0,
+     "hint": "The key decodes symbols.",
+     "praise": "Yes - what symbols mean!"
+    },
+    {
+     "group": "ur1",
+     "question": "The UNITED STATES is commonly divided into...",
+     "options": [
+      "Regions (e.g. Northeast, Midwest, South, West)",
+      "Only two states",
+      "One city",
+      "Just oceans"
+     ],
+     "correctIndex": 0,
+     "hint": "Common regional groupings split the country.",
+     "praise": "Yes - regions!"
+    },
+    {
+     "group": "ur1",
+     "question": "What are PUSH factors in migration?",
+     "options": [
+      "Reasons to LEAVE a place (conflict, jobs)",
+      "Reasons to stay",
+      "Vacation plans",
+      "Random chance"
+     ],
+     "correctIndex": 0,
+     "hint": "Push = forces driving people out.",
+     "praise": "Yes - reasons to leave!"
+    },
+    {
+     "group": "ur1",
+     "question": "What are PULL factors in migration?",
+     "options": [
+      "Reasons to GO TO a place (jobs, safety)",
+      "Reasons to leave",
+      "Storms",
+      "Fences"
+     ],
+     "correctIndex": 0,
+     "hint": "Pull = attractions drawing people in.",
+     "praise": "Yes - reasons to go to!"
+    },
+    {
+     "group": "ur1",
+     "question": "A compass rose shows...",
+     "options": [
+      "Direction (N, S, E, W)",
+      "Elevation",
+      "Population",
+      "Rainfall"
+     ],
+     "correctIndex": 0,
+     "hint": "The compass rose is the direction guide.",
+     "praise": "Yes - direction!"
+    }
+   ]
+  }
+ }
+}

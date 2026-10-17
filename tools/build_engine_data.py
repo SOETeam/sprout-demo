@@ -53,10 +53,12 @@ from collections import defaultdict, OrderedDict
 SRC = 'data/content.json'
 OUT_TREE = 'data/skill_tree.json'
 OUT_ITEMS = 'data/items.json'
+OUT_GENS = 'data/generators.json'
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, SRC)
 OUT_TREE = os.path.join(ROOT, OUT_TREE)
 OUT_ITEMS = os.path.join(ROOT, OUT_ITEMS)
+OUT_GENS = os.path.join(ROOT, OUT_GENS)
 
 with open(SRC) as f:
     C = json.load(f)
@@ -67,6 +69,7 @@ with open(MAPS_SRC) as f:
 MAP_IDS = {g: {s['id'] for subj in STD_MAPS['grades'][g].values() for s in subj}
            for g in STD_MAPS['grades']}
 assert sorted(MAP_IDS) == ['1', '2', '4', 'K'], 'standards map must cover K/1/2/4 only'
+
 
 STATUTORY = list(C['statutory'])  # 9 MCL 380.1561(3)(f) subjects
 SUBJ_TO_STATUTORY = {
@@ -920,6 +923,226 @@ if unmapped:
         print('  ', u)
     sys.exit(1)
 
+# ------------------- K/1/2/4 generator configs (lane E3, after node validation) -------------------
+RESEARCH_DIR = os.path.join(ROOT, 'research')
+def _load_research(name):
+    with open(os.path.join(RESEARCH_DIR, name)) as f:
+        return json.load(f)
+
+WORD_SETS = _load_research('word_sets.json')
+PD_PASSAGES = _load_research('pd_readers_passages.json')
+
+PHONICS = {
+    'cvc': ['cat','bed','sit','hot','mud','pin','cup','fox','leg','box','tap','fin','rug','jet','log','cub','hen','dig','bus','top'],
+    'cvce': ['cake','bike','home','mule','robe','gate','time','note','lake','five','rose','cube','kite','pipe','bone','hide','game','site','wire','pure'],
+    'digraph': ['ship','chat','fish','thin','that','whale','phone','sheep','chin','path','rich','when','what','this','with','bath'],
+    'vowel_team': ['rain','boat','tree','food','coin','house','moon','play','star','light','day','night','snow','sea','road'],
+}
+PHONICS_BANKS = dict(PHONICS)
+
+PDQ_PATH = os.path.join(ROOT, 'data', 'pd_comprehension_questions.json')
+with open(PDQ_PATH) as f:
+    PDQ = json.load(f)['grades']
+
+AB_PATH = os.path.join(ROOT, 'data', 'authored_bank_items.json')
+with open(AB_PATH) as f:
+    AUTHORED_BANK = json.load(f)['grades']
+
+def _skill_node_subject(g, nid):
+    n = NODE_BY_ID[nid]
+    assert n['grade'] == g, (g, nid)
+    return n['subject']
+
+def _pd_items(g):
+    out = []
+    for q in PDQ.get(g, []):
+        opts = list(q['options']); ans = q['answer']
+        out.append(OrderedDict([
+            ('group','pd'), ('question', q['q']), ('options', opts),
+            ('correctIndex', opts.index(ans)),
+            ('hint','Read the passage carefully and use its exact words.'),
+            ('praise','Yes - the passage says so.'),
+            ('passage_index', q['pidx']), ('passage_label', q['label']),
+        ]))
+    return out
+
+def _cfg(id_, skill, family, mode, subject, skill_node, levels=None, banks=None, items=None, source=None):
+    d = OrderedDict()
+    d['id'] = id_; d['grade'] = None; d['skill'] = skill; d['skill_node'] = skill_node
+    d['subject'] = subject; d['family'] = family; d['mode'] = mode; d['exposure_limit'] = 3
+    if source: d['source'] = source
+    if levels: d['levels'] = levels
+    if banks: d['banks'] = banks
+    if items is not None: d['items'] = items
+    return d
+
+GEN_CONFIGS = []
+
+# ---- Grade K ----
+GEN_CONFIGS.append(_cfg('k.math.count_to_100','count-to-100','math.counting','parametric','math','K.MATH.count-to-100',
+    levels=[dict(level=1,params=dict(max=20,mode='next')),dict(level=2,params=dict(max=50,mode='next')),
+            dict(level=3,params=dict(max=100,mode='missing'))],
+    source='CCSS K.CC.1 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('k.math.count_how_many','count-tell-how-many','math.counting','parametric','math','K.MATH.count-tell-how-many',
+    levels=[dict(level=1,params=dict(max=10,mode='set')),dict(level=2,params=dict(max=20,mode='set'))],
+    source='CCSS K.CC.5 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('k.math.add_sub_5','add-subtract-5','math.add_sub_within','parametric','math','K.MATH.add-subtract-5',
+    levels=[dict(level=1,params=dict(max=5,ops=['+','-'])),dict(level=2,params=dict(max=10,ops=['+','-']))],
+    source='CCSS K.OA.1/K.OA.5 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('k.ela.cvc_decode','sight-words-cvc','word.cvc','parametric','ela','K.ELA.sight-words',
+    levels=[dict(level=1,params=dict(patterns=['cvc'],banks=PHONICS_BANKS))],
+    source='CCSS RF.K.3 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('k.ela.dolch_sight','sight-words-dolch','word.sight_word','parametric','ela','K.ELA.sight-words',
+    levels=[dict(level=1,params=dict(list='dolch_pre_primer',n=3))],
+    banks=dict(words=WORD_SETS['dolch_stages']['pre_primer']),
+    source='research/word_sets.json dolch_stages.pre_primer'))
+for sk,nid in [('letter-sounds','K.ELA.letter-sounds'),('story-questions','K.ELA.story-questions'),
+               ('weather-patterns','K.SCI.weather-patterns'),('classroom-rules','K.SS.classroom-rules')]:
+    GEN_CONFIGS.append(_cfg('k.bank.'+sk, sk, 'bank.recall','bank', _skill_node_subject('K',nid), nid,
+        items=AUTHORED_BANK['K'][sk], source='hand-authored K practice bank'))
+GEN_CONFIGS.append(_cfg('pd.comprehension.gK','story-questions','bank.recall','bank','ela','K.ELA.story-questions',
+    items=_pd_items('K'), source='research/pd_readers_passages.json grade K comprehension'))
+
+# ---- Grade 1 ----
+GEN_CONFIGS.append(_cfg('g1.math.count_to_120','count-to-120','math.counting','parametric','math','1.MATH.count-to-120',
+    levels=[dict(level=1,params=dict(max=120,mode='next')),dict(level=2,params=dict(max=120,mode='start'))],
+    source='CCSS 1.NBT.1 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g1.math.add_sub_20','add-sub-facts-20','math.add_sub_within','parametric','math','1.MATH.add-sub-facts-20',
+    levels=[dict(level=1,params=dict(max=10,ops=['+','-'])),dict(level=2,params=dict(max=20,ops=['+','-'])),
+            dict(level=3,params=dict(max=20,ops=['+','-'],missing=True))],
+    source='CCSS 1.OA.6 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g1.math.place_value_tens_ones','place-value-tens-ones','math.place_value','parametric','math','1.MATH.place-value-tens-ones',
+    levels=[dict(level=1,params=dict(digits=2,mode='place')),dict(level=2,params=dict(digits=2,mode='value'))],
+    source='CCSS 1.NBT.2 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g1.math.two_digit_addition','two-digit-addition','math.multi_digit_add','parametric','math','1.MATH.two-digit-addition',
+    levels=[dict(level=1,params=dict(digits=2,mode='two')),dict(level=2,params=dict(digits=2,mode='four'))],
+    source='CCSS 1.NBT.4 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g1.ela.digraph_decode','decoding-digraphs','word.cvc','parametric','ela','1.ELA.decoding-digraphs',
+    levels=[dict(level=1,params=dict(patterns=['cvc','digraph'],banks=PHONICS_BANKS)),
+            dict(level=2,params=dict(patterns=['cvce','digraph'],banks=PHONICS_BANKS))],
+    source='CCSS RF.1.3 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g1.ela.dolch_grade1','sight-words-grade1','word.sight_word','parametric','ela','1.ELA.fluency-reread',
+    levels=[dict(level=1,params=dict(list='grade_1',n=3))],
+    banks=dict(words=WORD_SETS['dolch_stages']['grade_1']),
+    source='research/word_sets.json dolch_stages.grade_1'))
+for sk,nid in [('sound-vibration','1.SCI.sound-vibration'),('light-and-sight','1.SCI.light-and-sight'),
+               ('sky-patterns','1.SCI.sky-patterns'),('classroom-rules','1.SS.classroom-rules')]:
+    GEN_CONFIGS.append(_cfg('1.bank.'+sk, sk, 'bank.recall','bank', _skill_node_subject('1',nid), nid,
+        items=AUTHORED_BANK['1'][sk], source='hand-authored grade 1 practice bank'))
+GEN_CONFIGS.append(_cfg('pd.comprehension.g1','main-topic-details','bank.recall','bank','ela','1.ELA.main-topic-details',
+    items=_pd_items('1'), source='research/pd_readers_passages.json grade 1 comprehension'))
+
+# ---- Grade 2 ----
+GEN_CONFIGS.append(_cfg('g2.math.add_sub_fluency_20','add-sub-fluency-20','math.add_sub_within','parametric','math','2.MATH.add-sub-fluency-20',
+    levels=[dict(level=1,params=dict(max=20,ops=['+','-'])),dict(level=2,params=dict(max=20,ops=['+','-'],missing=True))],
+    source='CCSS 2.OA.2 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g2.math.word_problems_100','word-problems-100','math.add_sub_within','parametric','math','2.MATH.word-problems-100',
+    levels=[dict(level=1,params=dict(max=100,ops=['+','-'],word=True)),
+            dict(level=2,params=dict(max=100,ops=['+','-'],word=True,two_step=True))],
+    source='CCSS 2.OA.1 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g2.math.skip_counting','skip-counting','sequence.skip_count','parametric','math','2.MATH.skip-counting',
+    levels=[dict(level=1,params=dict(steps=[5,10],to=100,mode='next')),
+            dict(level=2,params=dict(steps=[5,10,100],to=1000,mode='position'))],
+    source='CCSS 2.NBT.2 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g2.math.three_digit_place_value','three-digit-place-value','math.place_value','parametric','math','2.MATH.three-digit-place-value',
+    levels=[dict(level=1,params=dict(digits=3,mode='place')),dict(level=2,params=dict(digits=3,mode='value')),
+            dict(level=3,params=dict(digits=3,mode='read'))],
+    source='CCSS 2.NBT.1/2.NBT.3 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g2.ela.vowel_teams','vowel-teams-decoding','word.cvc','parametric','ela','2.ELA.vowel-teams-decoding',
+    levels=[dict(level=1,params=dict(patterns=['cvce','digraph'],banks=PHONICS_BANKS)),
+            dict(level=2,params=dict(patterns=['vowel_team','cvce'],banks=PHONICS_BANKS))],
+    source='CCSS RF.2.3 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g2.ela.dolch_grade2','sight-words-grade2','word.sight_word','parametric','ela','2.ELA.fluency-expression',
+    levels=[dict(level=1,params=dict(list='grade_2',n=3))],
+    banks=dict(words=WORD_SETS['dolch_stages']['grade_2']),
+    source='research/word_sets.json dolch_stages.grade_2'))
+GEN_CONFIGS.append(_cfg('g2.ela.fry_second_third','sight-words-fry','word.sight_word','parametric','ela','2.ELA.fluency-expression',
+    levels=[dict(level=1,params=dict(list='fry_2',n=3))],
+    banks=dict(words=WORD_SETS['fry_hundreds']['hundred_2']+WORD_SETS['fry_hundreds']['hundred_3']),
+    source='research/word_sets.json fry_hundreds.hundred_2/3'))
+for sk,nid in [('material-properties','2.SCI.material-properties'),('plants-need-sun-water','2.SCI.plants-need-sun-water'),
+               ('land-and-water','2.SCI.land-and-water'),('local-government','2.SS.local-government')]:
+    GEN_CONFIGS.append(_cfg('2.bank.'+sk, sk, 'bank.recall','bank', _skill_node_subject('2',nid), nid,
+        items=AUTHORED_BANK['2'][sk], source='hand-authored grade 2 practice bank'))
+GEN_CONFIGS.append(_cfg('pd.comprehension.g2','main-topic-paragraphs','bank.recall','bank','ela','2.ELA.main-topic-paragraphs',
+    items=_pd_items('2'), source='research/pd_readers_passages.json grade 2 comprehension'))
+
+# ---- Grade 4 ----
+GEN_CONFIGS.append(_cfg('g4.math.multi_digit_add_sub','multi-digit-add-sub','math.multi_digit_add','parametric','math','4.MATH.multi-digit-add-sub',
+    levels=[dict(level=1,params=dict(digits=3,mode='two')),dict(level=2,params=dict(digits=3,mode='four'))],
+    source='CCSS 4.NBT.4 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g4.math.multiplicative_comparison','multiplicative-comparison','math.mult','parametric','math','4.MATH.multiplicative-comparison',
+    levels=[dict(level=1,params=dict(facts=[2,3,4,5],bmax=10,framing='fact')),
+            dict(level=2,params=dict(facts=[2,3,4,5,6],bmax=12,framing='groups'))],
+    source='CCSS 4.OA.1 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g4.math.division_remainders','division-remainders','math.mult','parametric','math','4.MATH.division-remainders',
+    levels=[dict(level=1,params=dict(facts=[2,3,4,5,6],bmax=10,framing='repeat',mode='division')),
+            dict(level=2,params=dict(facts=[3,4,5,6,7,8],bmax=12,framing='repeat',mode='division'))],
+    source='CCSS 4.NBT.6 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g4.math.fraction_equivalence','fraction-equivalence','math.fraction','parametric','math','4.MATH.fraction-equivalence',
+    levels=[dict(level=1,params=dict(mode='equiv_missing')),dict(level=2,params=dict(mode='equiv_missing_den')),
+            dict(level=3,params=dict(mode='equiv_check')),dict(level=4,params=dict(mode='compare'))],
+    source='CCSS 4.NF.1/4.NF.2 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g4.read.multisyllabic_decoding','multisyllabic-decoding','word.spell_task','parametric','reading','4.READ.multisyllabic-decoding',
+    levels=[dict(level=1,params=dict(words=['na-tion','ac-tion','sta-tion','frac-tion','mo-tion'],task='vowel')),
+            dict(level=2,params=dict(words=['na-tion','ac-tion','sta-tion','frac-tion','mo-tion'],task='missing'))],
+    source='CCSS RF.4.3 (standards_maps.json)'))
+GEN_CONFIGS.append(_cfg('g4.spell.patterns','spelling-patterns','word.pattern','parametric','spelling','4.SPELL.patterns',
+    levels=[dict(level=1,params=dict(words=['nation','action','station','fraction','motion','mission','vision','decision'],task='ending')),
+            dict(level=2,params=dict(words=['nation','action','station','fraction','motion','mission','vision','decision'],task='missing'))],
+    banks=dict(words=['nation','action','station','fraction','motion','mission','vision','decision']),
+    source='CCSS L.4.2.d (standards_maps.json)'))
+_cloze_passages=[dict(text=ps['text'], title=ps['label'],
+                      pool=[w for w in re.findall(r"[A-Za-z']+", ps['text'])][:40])
+                 for ps in PD_PASSAGES['4']]
+GEN_CONFIGS.append(_cfg('g4.read.cloze_passages','text-evidence','text.cloze','parametric','reading','4.READ.text-evidence',
+    levels=[dict(level=1,params=dict(passages=_cloze_passages))],
+    source='research/pd_readers_passages.json grade 4 (text.cloze algorithmic cloze)'))
+for sk,nid in [('energy-and-motion','4.SCI.energy-and-motion'),('waves-sound-light','4.SCI.waves-sound-light'),
+               ('rocks-and-fossils','4.SCI.rocks-and-fossils'),('michigan-inquiry','4.HIST.michigan-inquiry'),
+               ('us-regions-maps','4.HIST.us-regions-maps')]:
+    GEN_CONFIGS.append(_cfg('4.bank.'+sk, sk, 'bank.recall','bank', _skill_node_subject('4',nid), nid,
+        items=AUTHORED_BANK['4'][sk], source='hand-authored grade 4 practice bank'))
+GEN_CONFIGS.append(_cfg('pd.comprehension.g4','text-evidence','bank.recall','bank','reading','4.READ.text-evidence',
+    items=_pd_items('4'), source='research/pd_readers_passages.json grade 4 comprehension'))
+
+# stamp grades + validate (hard asserts; build fails loudly on any mismatch)
+for _c in GEN_CONFIGS:
+    _g = _c['skill_node'].split('.')[0]
+    if _g == 'P': _g = 'preschool'
+    _c['grade'] = _g
+    assert _g in NEW_GRADES, (_c['id'], _g)
+    assert _c['skill_node'] in NODE_BY_ID, _c['skill_node']
+    assert NODE_BY_ID[_c['skill_node']]['grade'] == _g, _c['id']
+    assert _c['exposure_limit'] == 3
+    assert _c['mode'] in ('parametric', 'bank')
+    if _c['mode'] == 'bank':
+        assert _c.get('items'), _c['id']
+        for _it in _c['items']:
+            assert 3 <= len(_it['options']) <= 6, (_c['id'], _it['question'][:40])
+            assert 0 <= _it['correctIndex'] < len(_it['options']), _c['id']
+    else:
+        assert _c.get('levels'), _c['id']
+_ids = [c['id'] for c in GEN_CONFIGS]
+assert len(_ids) == len(set(_ids)), 'duplicate generator config id'
+
+# ---- Freeze bank-mode literal items into ITEMS (so they land in data/items.json) ----
+from collections import Counter as _Counter
+_passage_node = {'K':'K.ELA.story-questions','1':'1.ELA.main-topic-details',
+                 '2':'2.ELA.main-topic-paragraphs','4':'4.READ.text-evidence'}
+for _c in GEN_CONFIGS:
+    if _c['mode'] != 'bank':
+        continue
+    _g = _c['grade']
+    _node = _c['skill_node']
+    _subj = NODE_BY_ID[_node]['subject']
+    for _i, _it in enumerate(_c['items']):
+        _opts = _it['options']
+        _ans = _opts[_it['correctIndex']]
+        add_item(_g, _node, _subj, _it['question'], _opts, _ans, 1,
+                 'generator:%s.items[%d]' % (_c['id'], _i),
+                 _c['skill'],
+                 extra={'generator': _c['id'], 'generator_family': _c['family']})
 # ------------------------------- output -------------------------------------
 tree = OrderedDict()
 tree['schema'] = 'skill_tree/v1'
@@ -990,6 +1213,52 @@ with open(OUT_ITEMS, 'w') as f:
     json.dump(items_doc, f, indent=1, ensure_ascii=False)
     f.write('\n')
 
+# ---- data/generators.json (generators/v1) — K/1/2/4 configs, stable key order ----
+gens_doc = OrderedDict()
+gens_doc['schema'] = 'generators/v1'
+gens_doc['generated_by'] = 'tools/build_engine_data.py'
+gens_doc['purpose'] = ('Parametric + bank generator configs for grades K/1/2/4 (lane E3): '
+                       'deterministic seeded multiple-choice generation WITHOUT per-item AI authoring. '
+                       'Each entry maps a skill_tree node to a generator family (js/generator.js) with '
+                       'seeded level params (parametric) or a literal authored item bank (bank). '
+                       'exposure_limit=3 everywhere (item/v1 invariant). PD reading passages '
+                       '(research/pd_readers_passages.json) are wired as grade-appropriate comprehension '
+                       'bank items via pd.comprehension.g<grade>.')
+gens_doc['schema_ref'] = 'data/engine_schemas.json -> schemas["generators/v1"]'
+gens_doc['generator_js'] = ('js/generator.js (window.SPRUT_GEN / module.exports) — families registry must '
+                            'contain every family referenced here (asserted by tools/validate_engine.js)')
+gens_doc['sources'] = [
+    'data/standards_maps.json (CCSS/NGSS/MI public standards codes+labels, read 2026-10-17)',
+    'research/word_sets.json (Dolch 1936 public domain + Fry frequency lists — word bank data only)',
+    'research/pd_readers_passages.json (48 public-domain K/1/2/4 reader passages, Lane B verbatim)',
+    'data/skill_tree.json (every skill_node FK resolves in the same grade)',
+]
+gens_doc['item_production'] = ('parametric configs stream an unbounded deterministic variant set at '
+                               'runtime (date+student+genId+cursor seed); only bank configs freeze literal '
+                               'items[] into data/items.json. "items producible per grade" = frozen bank '
+                               'items + runtime-unique parametric variants (measured by js/generator.js '
+                               'variantBudget).')
+
+def _order_cfg(c):
+    out = OrderedDict()
+    for k in ['id','grade','skill','skill_node','subject','family','mode','exposure_limit','source']:
+        if k in c: out[k] = c[k]
+    for k in ['levels','banks','items']:
+        if k in c: out[k] = c[k]
+    for k in c:
+        if k not in out: out[k] = c[k]
+    return out
+
+gens_doc['grades'] = OrderedDict()
+for g in NEW_GRADES:
+    gens_doc['grades'][g] = [_order_cfg(c) for c in GEN_CONFIGS if c['grade'] == g]
+gens_doc['config_count'] = len(GEN_CONFIGS)
+
+with open(OUT_GENS, 'w') as f:
+    json.dump(gens_doc, f, indent=1, ensure_ascii=False)
+    f.write('\n')
+
+
 # ------------------------------- report -------------------------------------
 from collections import Counter
 ALL_GRADES = ['preschool', '3', '5'] + NEW_GRADES
@@ -997,6 +1266,9 @@ print('skill_tree.json: %d nodes (%s)' % (
     len(NODES), ', '.join('%s=%d' % (g, sum(1 for n in NODES if n['grade'] == g))
                           for g in ALL_GRADES)))
 print('items.json: %d items (%d duplicates dropped)' % (len(ITEMS), dropped))
+print('generators.json: %d configs (K/1/2/4) — %s' % (
+    len(GEN_CONFIGS),
+    ', '.join('%s=%d' % (g, sum(1 for c in GEN_CONFIGS if c['grade'] == g)) for g in NEW_GRADES)))
 for g in ALL_GRADES:
     dom = Counter(i['cat_domain'] for i in ITEMS if i['grade'] == g)
     print('  grade %-9s math=%-3d ela=%-3d non-CAT=%d%s' % (

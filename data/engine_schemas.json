@@ -1,9 +1,14 @@
 {
  "schema": "engine_schema_registry/v1",
- "registry_version": 2,
+ "registry_version": 3,
  "generated_at": "2026-10-17",
- "contract": "SPROUT_ENGINE_ARCH_2026-10-17.md §1 (data model) + §9 (guardrails). Every engine object carries a schema marker; readers reject unknown versions. P1 ships the four registry entries below as provider globals only — no app wiring until P2.",
+ "contract": "SPROUT_ENGINE_ARCH_2026-10-17.md §1 (data model) + §9 (guardrails). Every engine object carries a schema marker; readers reject unknown versions. P1 ships the four registry entries below as provider globals only — no app wiring until P2. E3 (lane E3) adds generators/v1; all P1/P2 invariants above still hold.",
  "changelog": [
+  {
+   "version": 3,
+   "date": "2026-10-17",
+   "change": "K/1/2/4 lane E3: generators/v1 registered (data/generators.json) — 46 parametric+bank configs mapping K/1/2/4 skill_tree nodes to js/generator.js families (4 new families: math.counting, math.add_sub_within, word.cvc, word.sight_word) with seeded level params and authored literal item banks; PD reading passages (research/pd_readers_passages.json, 48 passages) wired as grade-appropriate comprehension bank items (data/pd_comprehension_questions.json, grounded verbatim); item/v1 bank grows to 686 items (K/1/2/4 now ship items, additive)."
+  },
   {
    "version": 2,
    "date": "2026-10-17",
@@ -32,13 +37,29 @@
     "generated_by": "string",
     "source": "string — MI crosswalk + MONTH1 scaffold provenance",
     "subject_source": "string — canonical subject list provenance",
-    "statutory_subjects": ["string[] — the nine MCL 380.1561(3)(f) subjects"],
-    "grade_subjects": {"<grade_band>": "string[] — subject union for that grade"},
+    "statutory_subjects": [
+     "string[] — the nine MCL 380.1561(3)(f) subjects"
+    ],
+    "grade_subjects": {
+     "<grade_band>": "string[] — subject union for that grade"
+    },
     "standards_maps": {
      "schema": "standards_maps/v1",
      "file": "data/standards_maps.json",
-     "grades": ["K", "1", "2", "4"],
-     "sources": [{"id": "string", "title": "string", "url": "string", "accessed": "YYYY-MM-DD"}]
+     "grades": [
+      "K",
+      "1",
+      "2",
+      "4"
+     ],
+     "sources": [
+      {
+       "id": "string",
+       "title": "string",
+       "url": "string",
+       "accessed": "YYYY-MM-DD"
+      }
+     ]
     },
     "grades": {
      "<grade_band>": {
@@ -47,19 +68,25 @@
       "statutory_subjects": "string[] — (new grades only) per-grade statutory band: K/1/2 = [ela,math,science,social_studies,motor,art,music], 4 = the full MCL nine in engine subject vocabulary",
       "cat_domains": "[\"math\",\"ela\"] — (new grades only) CAT placement domains once item content lands",
       "content": "string — (new grades only) standards-mapped only; content lane pending",
-      "nodes": [{
-       "id": "string — unique node_id (CASE-shaped: 3.OA.1 / RF.K.1 / K.H2.0.1 / 3.OA.7.multiplication-facts)",
-       "grade": "preschool | 3 | 5 | K | 1 | 2 | 4",
-       "subject": "string — content.json subject vocabulary (math, reading, ...)",
-       "statutory": "string|null — MCL subject name; null = enrichment (e.g. coding)",
-       "kind": "strand | standard | skill",
-       "label": "string",
-       "parent": "string|null — node id, same grade",
-       "prereqs": ["string[] — node ids, same grade"],
-       "standards": ["string[] — MI standards codes this node claims (empty = codeless practice node)"],
-       "unit_wk": "int|null — MONTH1 module week (1-4)",
-       "priority": "int — 1 statutory, 2 practice/enrichment"
-      }]
+      "nodes": [
+       {
+        "id": "string — unique node_id (CASE-shaped: 3.OA.1 / RF.K.1 / K.H2.0.1 / 3.OA.7.multiplication-facts)",
+        "grade": "preschool | 3 | 5 | K | 1 | 2 | 4",
+        "subject": "string — content.json subject vocabulary (math, reading, ...)",
+        "statutory": "string|null — MCL subject name; null = enrichment (e.g. coding)",
+        "kind": "strand | standard | skill",
+        "label": "string",
+        "parent": "string|null — node id, same grade",
+        "prereqs": [
+         "string[] — node ids, same grade"
+        ],
+        "standards": [
+         "string[] — MI standards codes this node claims (empty = codeless practice node)"
+        ],
+        "unit_wk": "int|null — MONTH1 module week (1-4)",
+        "priority": "int — 1 statutory, 2 practice/enrichment"
+       }
+      ]
      }
     }
    },
@@ -80,9 +107,29 @@
    "shape": {
     "schema": "standards_maps/v1",
     "accessed": "YYYY-MM-DD",
-    "sources": [{"id": "string", "title": "string", "publisher": "string", "url": "string", "accessed": "YYYY-MM-DD"}],
-    "code_conventions": {"<area>": "string — how the code was normalized (e.g. CCSS cluster letter dropped)"},
-    "grades": {"K|1|2|4": {"<subject>": [{"id": "string — standard code", "label": "string — one-line label condensed from the public text", "source": "string — source id"}]}}
+    "sources": [
+     {
+      "id": "string",
+      "title": "string",
+      "publisher": "string",
+      "url": "string",
+      "accessed": "YYYY-MM-DD"
+     }
+    ],
+    "code_conventions": {
+     "<area>": "string — how the code was normalized (e.g. CCSS cluster letter dropped)"
+    },
+    "grades": {
+     "K|1|2|4": {
+      "<subject>": [
+       {
+        "id": "string — standard code",
+        "label": "string — one-line label condensed from the public text",
+        "source": "string — source id"
+       }
+      ]
+     }
+    }
    },
    "invariants": [
     "every K/1/2/4 standard node id in skill_tree/v1 appears here, and every entry here is a standard node (1:1)",
@@ -99,27 +146,33 @@
     "derivation": "string — provenance law statement",
     "level_rule": "string — how level 1..4 is assigned per source",
     "exposure_limit": 3,
-    "items": [{
-     "id": "string — itm_<16 hex> (content-hash stable)",
-     "schema": "item/v1",
-     "grade": "preschool | 3 | 5",
-     "subject": "string — content.json subject vocabulary",
-     "cat_domain": "math | ela | null — CAT placement domain (null = not served by the 2-domain CAT)",
-     "skill_node": "string — FK -> skill_tree node id (must resolve)",
-     "skill_tag": "string|null — display/legacy tag carried from source",
-     "standards": ["string[] — inherited from the owning skill node"],
-     "level": "int 1..4 — human difficulty band alongside irt.b",
-     "type": "mc | numeric | written",
-     "exposure_limit": "int — default 3; cap across placement rounds (R7 tiny-bank law)",
-     "accessibility": {"read_aloud_ok": "bool"},
-     "text": "string — verbatim from source",
-     "options": "string[] — verbatim from source",
-     "answer": "string — verbatim from source (must appear in options)",
-     "provenance": "string — content.json path or generator:<genId> ref",
-     "irt": "optional {a,b,c,calibration} — only on CAT bank items",
-     "generator": "optional string — generator config id",
-     "generator_family": "optional string"
-    }]
+    "items": [
+     {
+      "id": "string — itm_<16 hex> (content-hash stable)",
+      "schema": "item/v1",
+      "grade": "preschool | 3 | 5",
+      "subject": "string — content.json subject vocabulary",
+      "cat_domain": "math | ela | null — CAT placement domain (null = not served by the 2-domain CAT)",
+      "skill_node": "string — FK -> skill_tree node id (must resolve)",
+      "skill_tag": "string|null — display/legacy tag carried from source",
+      "standards": [
+       "string[] — inherited from the owning skill node"
+      ],
+      "level": "int 1..4 — human difficulty band alongside irt.b",
+      "type": "mc | numeric | written",
+      "exposure_limit": "int — default 3; cap across placement rounds (R7 tiny-bank law)",
+      "accessibility": {
+       "read_aloud_ok": "bool"
+      },
+      "text": "string — verbatim from source",
+      "options": "string[] — verbatim from source",
+      "answer": "string — verbatim from source (must appear in options)",
+      "provenance": "string — content.json path or generator:<genId> ref",
+      "irt": "optional {a,b,c,calibration} — only on CAT bank items",
+      "generator": "optional string — generator config id",
+      "generator_family": "optional string"
+     }
+    ]
    },
    "invariants": [
     "every item.skill_node resolves to a skill_tree node of the SAME grade",
@@ -144,7 +197,13 @@
     "payload": "object|null",
     "dedupe_sig": "fnv1a32(childId|type|canonical-payload) — idempotency key for the future relay; never suppresses an append"
    },
-   "api": ["child(id).logEvent(type,payload)", "logEvent(childId,type,payload)", "readEvents(childId)", "exportEvents(childId,fname?)", "count(childId)"],
+   "api": [
+    "child(id).logEvent(type,payload)",
+    "logEvent(childId,type,payload)",
+    "readEvents(childId)",
+    "exportEvents(childId,fname?)",
+    "count(childId)"
+   ],
    "invariants": [
     "NO mutation or deletion API exists — append-only law (§1E)",
     "lines are strictly ordered by append; eid sequence never decreases",
@@ -159,7 +218,7 @@
    "shape": {
     "schema": "mastery/v1",
     "child_id": "string",
-    "gate": 0.80,
+    "gate": 0.8,
     "nodes": {
      "<node_id>": {
       "node_id": "string — FK -> skill_tree node id",
@@ -167,11 +226,17 @@
       "attempts": "int",
       "correct": "int",
       "state": "new | developing | mastered | lapsed",
-      "gate": 0.80,
+      "gate": 0.8,
       "box": "int 1..5 — Leitner box",
       "due": "YYYY-MM-DD",
       "last_event_id": "string|null — eid of the last mastery event",
-      "evidence_refs": [{"eid": "string", "evidence_kind": "practice|test|artifact|placement", "at": "ISO-8601"}],
+      "evidence_refs": [
+       {
+        "eid": "string",
+        "evidence_kind": "practice|test|artifact|placement",
+        "at": "ISO-8601"
+       }
+      ],
       "next_review": "YYYY-MM-DD — app.js leitner compatibility",
       "state_label": "Not started | In progress | Reviewed — neutral child-facing labels only (§9)"
      }
@@ -184,12 +249,70 @@
     "leitner": "port of /root/sprout/sprout/mastery/reviews.py — boxes [1,2,4,7,15] days, monotonic on recall, lapse -> box 1",
     "anti_grind": "state=mastered requires p_known >= gate AND >=1 non-practice evidence (test|artifact|placement); practice taps alone never produce mastered (§1C)"
    },
-   "api": ["record(childId,nodeId,correct,evidenceKind?,when?)", "getNode", "getPKnown", "isMastered", "snapshot", "mergeSnapshot", "bktUpdate", "gateCheck", "leitnerSchedule", "resetChild"],
+   "api": [
+    "record(childId,nodeId,correct,evidenceKind?,when?)",
+    "getNode",
+    "getPKnown",
+    "isMastered",
+    "snapshot",
+    "mergeSnapshot",
+    "bktUpdate",
+    "gateCheck",
+    "leitnerSchedule",
+    "resetChild"
+   ],
    "invariants": [
     "p_known in [0.01, 0.99]; attempts/correct non-decreasing",
     "every state change appends an events/v1 line; last_event_id points at it",
     "gate is never lowered per child (§9: no scoring modifiers)",
     "state_label uses neutral vocabulary only — no 'remedial' label reaches a child (§9)"
+   ]
+  },
+  "generators/v1": {
+   "file": "data/generators.json",
+   "kind": "content bundle (read-only)",
+   "provenance": "K/1/2/4 lane E3: parametric + bank generator configs built by tools/build_engine_data.py from data/standards_maps.json (public CCSS/NGSS/MI codes), research/word_sets.json (Dolch/Fry word data), research/pd_readers_passages.json (48 public-domain passages), and hand-authored practice banks (data/authored_bank_items.json). Every skill_node FK resolves in skill_tree/v1; every family exists in js/generator.js.",
+   "shape": {
+    "schema": "generators/v1",
+    "generated_by": "string",
+    "purpose": "string — why these configs exist (no per-item AI authoring)",
+    "schema_ref": "string — pointer back to this registry entry",
+    "generator_js": "string — js/generator.js families registry contract",
+    "sources": [
+     "string[] — public/source files read to build the configs"
+    ],
+    "item_production": "string — parametric (unbounded runtime variants) vs bank (frozen literal items)",
+    "grades": {
+     "K|1|2|4": [
+      {
+       "id": "string — unique config id (e.g. k.math.count_to_100, pd.comprehension.gK)",
+       "grade": "K | 1 | 2 | 4",
+       "skill": "string — skill tag (legacy/display)",
+       "skill_node": "string — FK -> skill_tree node id (same grade)",
+       "subject": "string — content.json subject vocabulary",
+       "family": "string — js/generator.js families registry key",
+       "mode": "parametric | bank",
+       "exposure_limit": "int — always 3 (item/v1 invariant)",
+       "source": "string — provenance (standard code / research file)",
+       "levels": "parametric only — [{level:int>=1, params:object}]",
+       "banks": "optional object — word/passage banks injected into params (flatten or nested per family contract)",
+       "bank only — items": "literal authored item array [{group, question, options[], correctIndex, hint, praise, passage_index?, passage_label?}]"
+      }
+     ]
+    }
+   },
+   "invariants": [
+    "generators/v1 marker present on data/generators.json",
+    "config ids unique across all four grades",
+    "every skill_node resolves to a skill_tree node of the SAME grade",
+    "exposure_limit === 3 on every config (mirrors item/v1)",
+    "mode in enum parametric | bank",
+    "every family referenced by a config exists in js/generator.js families registry (proven runnable)",
+    "parametric configs carry >=1 level with integer level and object params",
+    "bank configs carry items[] passing item/v1 shape (options 3..6, correctIndex in range)",
+    "every new grade has >=1 math config and >=1 ela/reading config",
+    "every PD passage (research/pd_readers_passages.json, 12 per grade x 4 grades) has 3..4 comprehension questions whose answers are grounded verbatim in their passage (validated by tools/validate_engine.js)",
+    "parametric item generation is deterministic: same (date, student, genId, cursor) -> byte-identical item (validated by tools/validate_engine.js smoke test)"
    ]
   }
  },
