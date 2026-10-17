@@ -1,0 +1,2691 @@
+{
+ "schema": "skill_tree/v1",
+ "generated_by": "tools/build_engine_data.py",
+ "source": "MDE K-12 standards crosswalk: LNM_BRAIN/SAITTASPROUT/MI_COMPLIANCE_MAP_2026-10-16.md §3 (read 2026-10-16) + MONTH1_SCAFFOLD_1016.md module structure (modules are week-scoped)",
+ "subject_source": "data/content.json per-grade subject union + content.statutory (D7 nine)",
+ "statutory_subjects": [
+  "reading",
+  "spelling",
+  "mathematics",
+  "science",
+  "history",
+  "civics",
+  "literature",
+  "writing",
+  "english_grammar"
+ ],
+ "grade_subjects": {
+  "preschool": [
+   "literature",
+   "math",
+   "reading",
+   "science",
+   "writing"
+  ],
+  "3": [
+   "civics",
+   "coding",
+   "english_grammar",
+   "history",
+   "literature",
+   "math",
+   "reading",
+   "science",
+   "spelling",
+   "writing"
+  ],
+  "5": [
+   "coding",
+   "english_grammar",
+   "history",
+   "math",
+   "reading",
+   "science",
+   "spelling"
+  ]
+ },
+ "grades": {
+  "preschool": {
+   "grade_band": "preschool",
+   "label": "Preschool",
+   "nodes": [
+    {
+     "id": "P.READ",
+     "grade": "preschool",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "strand",
+     "label": "Reading (preschool, MCL: reading)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.READ.letters",
+     "grade": "preschool",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Letter names A-Z",
+     "parent": "P.READ",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.READ.sounds",
+     "grade": "preschool",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "First letter sounds",
+     "parent": "P.READ",
+     "prereqs": [
+      "P.READ.letters"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.READ.practice",
+     "grade": "preschool",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Read-aloud & picture books (practice)",
+     "parent": "P.READ",
+     "prereqs": [
+      "P.READ.sounds"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (preschool, MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.MATH.counting-1-10",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Counting 1-10",
+     "parent": "P.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.MATH.counting-11-20",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Counting 11-20",
+     "parent": "P.MATH",
+     "prereqs": [
+      "P.MATH.counting-1-10"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.MATH.more-or-less",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "More or less (compare groups)",
+     "parent": "P.MATH",
+     "prereqs": [
+      "P.MATH.counting-1-10"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH.counting-with-toys",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Counting with toys (add one more)",
+     "parent": "P.MATH",
+     "prereqs": [
+      "P.MATH.counting-1-10"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH.color-sorting",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Sorting by color and size",
+     "parent": "P.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH.shapes",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Shapes (circle, triangle, square)",
+     "parent": "P.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH.fine-motor",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Fine-motor counting (beads, stickers)",
+     "parent": "P.MATH",
+     "prereqs": [
+      "P.MATH.counting-1-10"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH.practice",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Math play practice (practice)",
+     "parent": "P.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.WRIT",
+     "grade": "preschool",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "strand",
+     "label": "Writing (preschool, MCL: writing)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.WRIT.practice",
+     "grade": "preschool",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Pre-writing: lines, playdough, stickers",
+     "parent": "P.WRIT",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.LIT",
+     "grade": "preschool",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "strand",
+     "label": "Literature (preschool, MCL: literature)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.LIT.read-aloud",
+     "grade": "preschool",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "skill",
+     "label": "Picture-book read-aloud & retell",
+     "parent": "P.LIT",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.SCI",
+     "grade": "preschool",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (preschool, MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "P.SCI.play",
+     "grade": "preschool",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Outdoor & sensory discovery",
+     "parent": "P.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "P.MATH.practice-w3",
+     "grade": "preschool",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Lesson practice — math week 3",
+     "parent": "P.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 3,
+     "priority": 2
+    },
+    {
+     "id": "P.WRIT.practice-w4",
+     "grade": "preschool",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Lesson practice — writing week 4",
+     "parent": "P.WRIT",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    },
+    {
+     "id": "P.READ.practice-w4",
+     "grade": "preschool",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Lesson practice — reading week 4",
+     "parent": "P.READ",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    }
+   ]
+  },
+  "3": {
+   "grade_band": "3",
+   "label": "Grade 3",
+   "nodes": [
+    {
+     "id": "3.MATH",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.1",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Interpret products of whole numbers (equal groups, arrays)",
+     "parent": "3.MATH",
+     "prereqs": [],
+     "standards": [
+      "3.OA.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.3",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Use multiplication and division within 100 in word problems",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.OA.1"
+     ],
+     "standards": [
+      "3.OA.3"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.4",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Determine the unknown whole number in an equation",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.OA.1"
+     ],
+     "standards": [
+      "3.OA.4"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.5",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Apply properties of operations as strategies",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.OA.1"
+     ],
+     "standards": [
+      "3.OA.5"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.7",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently multiply and divide within 100",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.OA.1"
+     ],
+     "standards": [
+      "3.OA.7"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "3.NBT.1",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Round to nearest 10 and 100; place value of 3-digit numbers",
+     "parent": "3.MATH",
+     "prereqs": [],
+     "standards": [
+      "3.NBT.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.NBT.2",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Add and subtract within 1000",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.NBT.1"
+     ],
+     "standards": [
+      "3.NBT.2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.1.equal-groups-arrays",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Equal groups & arrays (multiplication meaning)",
+     "parent": "3.OA.1",
+     "prereqs": [],
+     "standards": [
+      "3.OA.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.3.word-problems",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multiplication & division word problems",
+     "parent": "3.OA.3",
+     "prereqs": [
+      "3.OA.1.equal-groups-arrays"
+     ],
+     "standards": [
+      "3.OA.3"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.OA.7.multiplication-facts",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multiplication facts 0-5 & skip-counting",
+     "parent": "3.OA.7",
+     "prereqs": [
+      "3.OA.1.equal-groups-arrays"
+     ],
+     "standards": [
+      "3.OA.7"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "3.NBT.1.place-value-rounding",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "3-4 digit place value, read/write, rounding",
+     "parent": "3.NBT.1",
+     "prereqs": [],
+     "standards": [
+      "3.NBT.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.NBT.2.add-subtract",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multi-digit addition (regrouping), subtraction, estimation",
+     "parent": "3.NBT.2",
+     "prereqs": [
+      "3.NBT.1.place-value-rounding"
+     ],
+     "standards": [
+      "3.NBT.2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.MATH.fractions",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Fractions (CAT bank practice)",
+     "parent": "3.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.MATH.area-perimeter",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Area & perimeter (CAT bank practice)",
+     "parent": "3.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.MATH.division-facts",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Division facts (CAT bank practice)",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.OA.7.multiplication-facts"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.MATH.elapsed-time",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Elapsed time (CAT bank practice)",
+     "parent": "3.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.MATH.money-change",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Money & making change (CAT bank practice)",
+     "parent": "3.MATH",
+     "prereqs": [
+      "3.NBT.2.add-subtract"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.READ",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "strand",
+     "label": "Reading (MCL: reading)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.RI.3.1",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Ask/answer questions referring explicitly to the text",
+     "parent": "3.READ",
+     "prereqs": [],
+     "standards": [
+      "3.RI.3.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.RI.3.2",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Determine main idea and supporting details",
+     "parent": "3.READ",
+     "prereqs": [
+      "3.RI.3.1"
+     ],
+     "standards": [
+      "3.RI.3.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.RL.3.1",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Refer to story details in answering questions",
+     "parent": "3.READ",
+     "prereqs": [],
+     "standards": [
+      "3.RL.3.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.RL.3.3",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Describe character traits, motivations, sequence of events",
+     "parent": "3.READ",
+     "prereqs": [
+      "3.RL.3.1"
+     ],
+     "standards": [
+      "3.RL.3.3"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.RF.3.3",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Grade-level phonics and multisyllable decoding",
+     "parent": "3.READ",
+     "prereqs": [],
+     "standards": [
+      "3.RF.3.3"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "3.RF.3.4",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Read prose and poetry with accuracy, expression",
+     "parent": "3.READ",
+     "prereqs": [
+      "3.RF.3.3"
+     ],
+     "standards": [
+      "3.RF.3.4"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "3.RI.3.1.comprehension-evidence",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Comprehension with text evidence (incl. cloze)",
+     "parent": "3.RI.3.1",
+     "prereqs": [],
+     "standards": [
+      "3.RI.3.1",
+      "3.RI.3.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.RL.3.1.literary-questions",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Answering questions about story details",
+     "parent": "3.RL.3.1",
+     "prereqs": [],
+     "standards": [
+      "3.RL.3.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.RF.3.3.decoding-syllables",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Decoding & syllable awareness",
+     "parent": "3.RF.3.3",
+     "prereqs": [],
+     "standards": [
+      "3.RF.3.3"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "3.READ.passages",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Grade-3 reading passages (practice)",
+     "parent": "3.READ",
+     "prereqs": [
+      "3.RI.3.1.comprehension-evidence"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.LIT",
+     "grade": "3",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "strand",
+     "label": "Literature (MCL: literature)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.RL.3.3.lit",
+     "grade": "3",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Character traits and event sequence in literature",
+     "parent": "3.LIT",
+     "prereqs": [],
+     "standards": [
+      "3.RL.3.3.lit"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.LIT.practice",
+     "grade": "3",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "skill",
+     "label": "Literature read-aloud & discussion (practice)",
+     "parent": "3.LIT",
+     "prereqs": [
+      "3.RL.3.3.lit"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.WRIT",
+     "grade": "3",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "strand",
+     "label": "Writing (MCL: writing)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.W.3.1",
+     "grade": "3",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Opinion piece: reasons, linking words, conclusion",
+     "parent": "3.WRIT",
+     "prereqs": [],
+     "standards": [
+      "3.W.3.1"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.W.3.2",
+     "grade": "3",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Informative/explanatory piece",
+     "parent": "3.WRIT",
+     "prereqs": [],
+     "standards": [
+      "3.W.3.2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.W.3.2.informative-sentences",
+     "grade": "3",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Sentence order & detail in informative writing",
+     "parent": "3.W.3.2",
+     "prereqs": [
+      "3.L.3.1.sentences"
+     ],
+     "standards": [
+      "3.W.3.2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.WRIT.practice",
+     "grade": "3",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Writing practice (practice)",
+     "parent": "3.WRIT",
+     "prereqs": [
+      "3.W.3.1",
+      "3.W.3.2"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.GRAM",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English grammar (MCL: English grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.L.3.1",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Complete sentences, fragments, sentence structure",
+     "parent": "3.GRAM",
+     "prereqs": [],
+     "standards": [
+      "3.L.3.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.L.3.2",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Punctuation and capitalization",
+     "parent": "3.GRAM",
+     "prereqs": [
+      "3.L.3.1"
+     ],
+     "standards": [
+      "3.L.3.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.L.3.1.sentences",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Sentence structure, plurals, subject-verb agreement",
+     "parent": "3.L.3.1",
+     "prereqs": [],
+     "standards": [
+      "3.L.3.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.L.3.2.punctuation-capitalization",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "End punctuation & capitalization",
+     "parent": "3.L.3.2",
+     "prereqs": [
+      "3.L.3.1.sentences"
+     ],
+     "standards": [
+      "3.L.3.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.GRAM.synonyms",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Synonyms & word choice (CAT bank practice)",
+     "parent": "3.GRAM",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.GRAM.practice",
+     "grade": "3",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Grammar practice (practice)",
+     "parent": "3.GRAM",
+     "prereqs": [
+      "3.L.3.1.sentences"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.SPELL",
+     "grade": "3",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "strand",
+     "label": "Spelling (MCL: spelling)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.L.3.2.e",
+     "grade": "3",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "standard",
+     "label": "Grade-appropriate spelling in own writing",
+     "parent": "3.SPELL",
+     "prereqs": [
+      "3.RF.3.3"
+     ],
+     "standards": [
+      "3.L.3.2.e"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "3.L.3.2.e.spelling",
+     "grade": "3",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "skill",
+     "label": "Spelling lists & closed syllables",
+     "parent": "3.L.3.2.e",
+     "prereqs": [
+      "3.RF.3.3.decoding-syllables"
+     ],
+     "standards": [
+      "3.L.3.2.e"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "3.SCI",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3-PS2-1",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Plan/investigate balanced and unbalanced forces",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [
+      "3-PS2-1"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3-PS2-2",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Support a claim about motion patterns",
+     "parent": "3.SCI",
+     "prereqs": [
+      "3-PS2-1"
+     ],
+     "standards": [
+      "3-PS2-2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3-ESS2-1",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Use weather data to describe the season",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [
+      "3-ESS2-1"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3-5-ETS1-1",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Define a simple design problem and criteria for success",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [
+      "3-5-ETS1-1"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "3.SCI.living-nonliving",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Living and non-living things",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.SCI.forces-motion",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Forces & motion (practice)",
+     "parent": "3-PS2-1",
+     "prereqs": [
+      "3.SCI.living-nonliving"
+     ],
+     "standards": [
+      "3-PS2-1",
+      "3-PS2-2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.SCI.weather",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Weather & seasons (practice)",
+     "parent": "3-ESS2-1",
+     "prereqs": [],
+     "standards": [
+      "3-ESS2-1"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "3.SCI.practice",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Science practice (practice)",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.HIST",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "History (MCL: history)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "H3.0.1",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "What historians ask (historian's questions)",
+     "parent": "3.HIST",
+     "prereqs": [],
+     "standards": [
+      "H3.0.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "H3.0.3",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Primary vs secondary sources",
+     "parent": "3.HIST",
+     "prereqs": [
+      "H3.0.1"
+     ],
+     "standards": [
+      "H3.0.3"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "H3.0.4",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Causal relationships",
+     "parent": "3.HIST",
+     "prereqs": [
+      "H3.0.3"
+     ],
+     "standards": [
+      "H3.0.4"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "H3.0.10",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Early-Michigan timeline",
+     "parent": "3.HIST",
+     "prereqs": [
+      "H3.0.1"
+     ],
+     "standards": [
+      "H3.0.10"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "3.HIST.community-helpers",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Community helpers: order & timeline, recall",
+     "parent": "3.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.HIST.practice",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "History practice (practice)",
+     "parent": "3.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.CIV",
+     "grade": "3",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "strand",
+     "label": "Civics (MCL: civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "C1.0.1",
+     "grade": "3",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "What Michigan government does",
+     "parent": "3.CIV",
+     "prereqs": [],
+     "standards": [
+      "C1.0.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "C2.0.1",
+     "grade": "3",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Representative government",
+     "parent": "3.CIV",
+     "prereqs": [
+      "C1.0.1"
+     ],
+     "standards": [
+      "C2.0.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "3.CIV.symbols",
+     "grade": "3",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "skill",
+     "label": "Symbols of our country",
+     "parent": "C1.0.1",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.CIV.practice",
+     "grade": "3",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "skill",
+     "label": "Civics practice (practice)",
+     "parent": "3.CIV",
+     "prereqs": [
+      "C1.0.1",
+      "C2.0.1"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.CODE",
+     "grade": "3",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Coding (enrichment, not statutory)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "3.CODE.block-coding",
+     "grade": "3",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Block coding: predict order & debug",
+     "parent": "3.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.CODE.practice",
+     "grade": "3",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Coding practice (practice)",
+     "parent": "3.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "3.MATH.practice-w2",
+     "grade": "3",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Lesson practice — math week 2",
+     "parent": "3.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 2,
+     "priority": 2
+    },
+    {
+     "id": "3.READ.practice-w2",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Lesson practice — reading week 2",
+     "parent": "3.READ",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 2,
+     "priority": 2
+    },
+    {
+     "id": "3.SPELL.practice-w2",
+     "grade": "3",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "skill",
+     "label": "Lesson practice — spelling week 2",
+     "parent": "3.SPELL",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 2,
+     "priority": 2
+    },
+    {
+     "id": "3.CODE.practice-w2",
+     "grade": "3",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Lesson practice — coding week 2",
+     "parent": "3.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 2,
+     "priority": 2
+    },
+    {
+     "id": "3.HIST.practice-w2",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Lesson practice — history week 2",
+     "parent": "3.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 2,
+     "priority": 2
+    },
+    {
+     "id": "3.SCI.practice-w2",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Lesson practice — science week 2",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 2,
+     "priority": 2
+    },
+    {
+     "id": "3.SPELL.practice-w3",
+     "grade": "3",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "skill",
+     "label": "Lesson practice — spelling week 3",
+     "parent": "3.SPELL",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 3,
+     "priority": 2
+    },
+    {
+     "id": "3.READ.practice-w3",
+     "grade": "3",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Lesson practice — reading week 3",
+     "parent": "3.READ",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 3,
+     "priority": 2
+    },
+    {
+     "id": "3.CODE.practice-w4",
+     "grade": "3",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Lesson practice — coding week 4",
+     "parent": "3.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    },
+    {
+     "id": "3.SCI.practice-w4",
+     "grade": "3",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Lesson practice — science week 4",
+     "parent": "3.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    },
+    {
+     "id": "3.HIST.practice-w4",
+     "grade": "3",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Lesson practice — history week 4",
+     "parent": "3.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    }
+   ]
+  },
+  "5": {
+   "grade_band": "5",
+   "label": "Grade 5",
+   "nodes": [
+    {
+     "id": "5.MATH",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.OA.1",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Use parentheses in numerical expressions",
+     "parent": "5.MATH",
+     "prereqs": [],
+     "standards": [
+      "5.OA.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.OA.2",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Write and interpret simple expressions",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.OA.1"
+     ],
+     "standards": [
+      "5.OA.2"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.1",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Place value: tenths/hundredths as 10x",
+     "parent": "5.MATH",
+     "prereqs": [],
+     "standards": [
+      "5.NBT.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.3",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Read, write, compare decimals to thousandths",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.1"
+     ],
+     "standards": [
+      "5.NBT.3"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.4",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Round decimals to any place",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.1"
+     ],
+     "standards": [
+      "5.NBT.4"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.5",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently multiply multi-digit whole numbers",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.1"
+     ],
+     "standards": [
+      "5.NBT.5"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.6",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Find whole-number quotients",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.5"
+     ],
+     "standards": [
+      "5.NBT.6"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.7",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Add, subtract, multiply, divide decimals to hundredths",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.3"
+     ],
+     "standards": [
+      "5.NBT.7"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "5.OA.1.expressions",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Expressions with parentheses",
+     "parent": "5.OA.1",
+     "prereqs": [],
+     "standards": [
+      "5.OA.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.OA.2.variables",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Variables & writing expressions",
+     "parent": "5.OA.2",
+     "prereqs": [
+      "5.OA.1.expressions"
+     ],
+     "standards": [
+      "5.OA.2"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.OA.1.solving-equations",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Solve for the unknown (equations)",
+     "parent": "5.OA.1",
+     "prereqs": [
+      "5.OA.2.variables"
+     ],
+     "standards": [
+      "5.OA.1"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.1.place-value",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Decimal place value & rounding",
+     "parent": "5.NBT.1",
+     "prereqs": [],
+     "standards": [
+      "5.NBT.1",
+      "5.NBT.4"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.3.decimals",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Read/write/compare decimals",
+     "parent": "5.NBT.3",
+     "prereqs": [
+      "5.NBT.1.place-value"
+     ],
+     "standards": [
+      "5.NBT.3"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "5.NBT.5.multiplication",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multi-digit multiplication fluency",
+     "parent": "5.NBT.5",
+     "prereqs": [
+      "5.NBT.1.place-value"
+     ],
+     "standards": [
+      "5.NBT.5"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.MATH.fractions",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Fractions: numerator/denominator, equivalent, mixed review",
+     "parent": "5.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.MATH.fractions-operations",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Fraction operations & compare",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.MATH.fractions"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 3
+    },
+    {
+     "id": "5.MATH.area-perimeter-volume",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Area, perimeter & volume",
+     "parent": "5.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.MATH.add-subtract",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multi-digit addition & subtraction (CAT bank practice)",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.1.place-value"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.MATH.division-facts",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Division facts (CAT bank practice)",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.5.multiplication"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.MATH.elapsed-time",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Elapsed time (CAT bank practice)",
+     "parent": "5.MATH",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.MATH.money-change",
+     "grade": "5",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Money & making change (CAT bank practice)",
+     "parent": "5.MATH",
+     "prereqs": [
+      "5.NBT.3.decimals"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.READ",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "strand",
+     "label": "Reading (MCL: reading)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.RI.5.1",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Quote explicit text to answer questions",
+     "parent": "5.READ",
+     "prereqs": [],
+     "standards": [
+      "5.RI.5.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.RI.5.2",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Main ideas and supporting details",
+     "parent": "5.READ",
+     "prereqs": [
+      "5.RI.5.1"
+     ],
+     "standards": [
+      "5.RI.5.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.RF.5.fluency",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Fluency/accuracy routine and self-correcting rereads",
+     "parent": "5.READ",
+     "prereqs": [],
+     "standards": [
+      "5.RF.5.fluency"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.RI.5.1.comprehension-evidence",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Comprehension with text evidence (incl. cloze)",
+     "parent": "5.RI.5.1",
+     "prereqs": [],
+     "standards": [
+      "5.RI.5.1",
+      "5.RI.5.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.READ.passages",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Grade-5 reading passages (practice)",
+     "parent": "5.READ",
+     "prereqs": [
+      "5.RI.5.1.comprehension-evidence"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.READ.syllables",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Syllable count (CAT bank practice)",
+     "parent": "5.RF.5.fluency",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.LIT",
+     "grade": "5",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "strand",
+     "label": "Literature (MCL: literature)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.RL.5.1",
+     "grade": "5",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Theme and supporting evidence",
+     "parent": "5.LIT",
+     "prereqs": [],
+     "standards": [
+      "5.RL.5.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.RL.5.3",
+     "grade": "5",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Character traits and chapter structure",
+     "parent": "5.LIT",
+     "prereqs": [
+      "5.RL.5.1"
+     ],
+     "standards": [
+      "5.RL.5.3"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.LIT.practice",
+     "grade": "5",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "skill",
+     "label": "Literature read-aloud & discussion (practice)",
+     "parent": "5.LIT",
+     "prereqs": [
+      "5.RL.5.1",
+      "5.RL.5.3"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.WRIT",
+     "grade": "5",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "strand",
+     "label": "Writing (MCL: writing)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.W.5.1",
+     "grade": "5",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Opinion piece: state opinion, group reasons, conclude",
+     "parent": "5.WRIT",
+     "prereqs": [],
+     "standards": [
+      "5.W.5.1"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "5.W.5.1.opinion",
+     "grade": "5",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Opinion writing with linking words",
+     "parent": "5.W.5.1",
+     "prereqs": [
+      "5.L.5.1.sentences"
+     ],
+     "standards": [
+      "5.W.5.1"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "5.WRIT.practice",
+     "grade": "5",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Writing practice (practice)",
+     "parent": "5.WRIT",
+     "prereqs": [
+      "5.W.5.1"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.GRAM",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English grammar (MCL: English grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.1",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Verb tenses",
+     "parent": "5.GRAM",
+     "prereqs": [],
+     "standards": [
+      "5.L.5.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.2",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Comma and punctuation control",
+     "parent": "5.GRAM",
+     "prereqs": [
+      "5.L.5.1"
+     ],
+     "standards": [
+      "5.L.5.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.2.b",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Spelling patterns incl. irregular high-frequency words",
+     "parent": "5.GRAM",
+     "prereqs": [
+      "5.L.5.2"
+     ],
+     "standards": [
+      "5.L.5.2.b"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.4",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Vocabulary and figurative language",
+     "parent": "5.GRAM",
+     "prereqs": [],
+     "standards": [
+      "5.L.5.4"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.1.sentences",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Verb tenses & sentence structure",
+     "parent": "5.L.5.1",
+     "prereqs": [],
+     "standards": [
+      "5.L.5.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.2.punctuation",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Punctuation & capitalization",
+     "parent": "5.L.5.2",
+     "prereqs": [
+      "5.L.5.1.sentences"
+     ],
+     "standards": [
+      "5.L.5.2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.4.synonyms",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Synonyms & vocabulary (CAT bank practice)",
+     "parent": "5.L.5.4",
+     "prereqs": [],
+     "standards": [
+      "5.L.5.4"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.GRAM.practice",
+     "grade": "5",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Grammar practice (practice)",
+     "parent": "5.GRAM",
+     "prereqs": [
+      "5.L.5.1.sentences"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.SPELL",
+     "grade": "5",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "strand",
+     "label": "Spelling (MCL: spelling)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.2.b.sp",
+     "grade": "5",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "standard",
+     "label": "Spelling patterns (-tion/-sion) in own writing",
+     "parent": "5.SPELL",
+     "prereqs": [
+      "5.L.5.2"
+     ],
+     "standards": [
+      "5.L.5.2.b.sp"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.L.5.2.b.spelling-patterns",
+     "grade": "5",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "skill",
+     "label": "-tion / -sion spelling patterns",
+     "parent": "5.L.5.2.b.sp",
+     "prereqs": [
+      "5.L.5.2.punctuation"
+     ],
+     "standards": [
+      "5.L.5.2.b"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.SCI",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5-PS1-1",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Matter is made of particles; models of matter",
+     "parent": "5.SCI",
+     "prereqs": [],
+     "standards": [
+      "5-PS1-1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5-PS1-2",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Measure and record amount of matter; weight conserved",
+     "parent": "5.SCI",
+     "prereqs": [
+      "5-PS1-1"
+     ],
+     "standards": [
+      "5-PS1-2"
+     ],
+     "unit_wk": 2,
+     "priority": 1
+    },
+    {
+     "id": "5-PS1-3",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Identify materials by properties",
+     "parent": "5.SCI",
+     "prereqs": [
+      "5-PS1-1"
+     ],
+     "standards": [
+      "5-PS1-3"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5-PS1-4",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Mixtures and substances",
+     "parent": "5.SCI",
+     "prereqs": [
+      "5-PS1-3"
+     ],
+     "standards": [
+      "5-PS1-4"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "5-PS1-1.particle-model",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Particle model of matter & conservation",
+     "parent": "5-PS1-1",
+     "prereqs": [],
+     "standards": [
+      "5-PS1-1",
+      "5-PS1-2"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.SCI.properties",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Properties of matter (practice)",
+     "parent": "5-PS1-3",
+     "prereqs": [
+      "5-PS1-1.particle-model"
+     ],
+     "standards": [
+      "5-PS1-3"
+     ],
+     "unit_wk": 3,
+     "priority": 1
+    },
+    {
+     "id": "5.SCI.scientific-method",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Scientific method: observation & data",
+     "parent": "5.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.SCI.practice",
+     "grade": "5",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "skill",
+     "label": "Science practice (practice)",
+     "parent": "5.SCI",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.HIST",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "History (MCL: history)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "U1.1.1",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Indigenous peoples of the Eastern Woodlands",
+     "parent": "5.HIST",
+     "prereqs": [],
+     "standards": [
+      "U1.1.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "U1.4",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Three-world interactions (Europe, Africa, Americas)",
+     "parent": "5.HIST",
+     "prereqs": [
+      "U1.1.1"
+     ],
+     "standards": [
+      "U1.4"
+     ],
+     "unit_wk": 4,
+     "priority": 1
+    },
+    {
+     "id": "5.HIST.indigenous-peoples",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Indigenous peoples maps & routines",
+     "parent": "U1.1.1",
+     "prereqs": [],
+     "standards": [
+      "U1.1.1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.HIST.ancient-civilizations",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Ancient civilizations (practice)",
+     "parent": "5.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.HIST.map-skills",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Map skills: equator, hemispheres, continents",
+     "parent": "5.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.HIST.practice",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "History practice (practice)",
+     "parent": "5.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.CIV",
+     "grade": "5",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "strand",
+     "label": "Civics (MCL: civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "C1",
+     "grade": "5",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Purposes of government (light touch, weekly)",
+     "parent": "5.CIV",
+     "prereqs": [],
+     "standards": [
+      "C1"
+     ],
+     "unit_wk": 1,
+     "priority": 1
+    },
+    {
+     "id": "5.CIV.practice",
+     "grade": "5",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "skill",
+     "label": "Civics practice (practice)",
+     "parent": "5.CIV",
+     "prereqs": [
+      "C1"
+     ],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.CODE",
+     "grade": "5",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "strand",
+     "label": "Coding (enrichment, not statutory)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "5.CODE.python",
+     "grade": "5",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Python syntax: print, variables, indentation",
+     "parent": "5.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.CODE.practice",
+     "grade": "5",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Coding practice (practice)",
+     "parent": "5.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 2
+    },
+    {
+     "id": "5.CODE.practice-w3",
+     "grade": "5",
+     "subject": "coding",
+     "statutory": null,
+     "kind": "skill",
+     "label": "Lesson practice — coding week 3",
+     "parent": "5.CODE",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 3,
+     "priority": 2
+    },
+    {
+     "id": "5.HIST.practice-w4",
+     "grade": "5",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "skill",
+     "label": "Lesson practice — history week 4",
+     "parent": "5.HIST",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    },
+    {
+     "id": "5.READ.practice-w4",
+     "grade": "5",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Lesson practice — reading week 4",
+     "parent": "5.READ",
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": 4,
+     "priority": 2
+    }
+   ]
+  }
+ }
+}
