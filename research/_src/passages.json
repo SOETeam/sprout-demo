@@ -1,0 +1,634 @@
+{
+ "K": [
+  {
+   "label": "LESSON II",
+   "text": "The cat has a rat.\n\nThe rat ran at Ann.\n\nAnn has a cat.\n\nThe cat ran at the rat.",
+   "stats": {
+    "words": 20,
+    "sentences": 4,
+    "words_per_sentence": 5.0,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.8,
+    "flesch_ease": 117.2
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON III",
+   "text": "Ann and Nat.\n\nAnn has a fan.\n\nNat has a hat.\n\nAnn can fan Nat.",
+   "stats": {
+    "words": 15,
+    "sentences": 4,
+    "words_per_sentence": 3.8,
+    "syllables_per_word": 1.0,
+    "fk_grade": -2.3,
+    "flesch_ease": 118.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON VI",
+   "text": "Has the lad a dog?\n\nThe lad has a fat dog.\n\nThe dog has Nat's cap.\n\nNat and Rab ran.\n\nRab ran at a cat.",
+   "stats": {
+    "words": 25,
+    "sentences": 5,
+    "words_per_sentence": 5.0,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.8,
+    "flesch_ease": 117.2
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON VII",
+   "text": "See the frog on a log.\n\nRab sees the frog.\n\nCan the frog see Rab?\n\nThe frog can see the dog.\n\nRab ran at the frog.",
+   "stats": {
+    "words": 26,
+    "sentences": 5,
+    "words_per_sentence": 5.2,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.8,
+    "flesch_ease": 117.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON VIII",
+   "text": "See the lamp! It is on a mat.\n\nThe mat is on the stand.\n\nThe lamp is Nat's, and the mat is Ann's.",
+   "stats": {
+    "words": 23,
+    "sentences": 4,
+    "words_per_sentence": 5.8,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.5,
+    "flesch_ease": 116.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON IX",
+   "text": "Tom   nag   not   him   catch   he   his    ch\n\nSee the nag! It is Tom's nag.\n\nCan Tom catch his nag?\n\nHe can not catch him.\n\nThe dog ran at the nag, and the nag ran.",
+   "stats": {
+    "words": 35,
+    "sentences": 5,
+    "words_per_sentence": 7.0,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.1,
+    "flesch_ease": 115.1
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON X",
+   "text": "Tom's nag is fat; his dog is not fat.\n\nNat is on Tom's nag.\n\nNat's dog, Rab, can not catch the rat.\n\nSee the frog on the log.\n\nA lad sees the frog.\n\nThe lad can not catch it.\n\nA cat is on the mat; the cat sees a rat.\n\nAnn's fan is on the stand.\n\nThe man has a lamp.\n\nA dog ran at the man.\n\nAnn sat on a log.",
+   "stats": {
+    "words": 72,
+    "sentences": 11,
+    "words_per_sentence": 6.5,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.2,
+    "flesch_ease": 115.6
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XVIII",
+   "text": "This is a pet bird.\n\nIt lives in a new cage.\n\nIt will stand on Sue's hand, and sing.\n\nSue loves her pet bird.\n\nSo do I love it.",
+   "stats": {
+    "words": 29,
+    "sentences": 5,
+    "words_per_sentence": 5.8,
+    "syllables_per_word": 1.07,
+    "fk_grade": -0.7,
+    "flesch_ease": 110.5
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXII",
+   "text": "The day is hot.\n\nThe cows are in the shade of the big tree.\n\nThey feed on the new grass.\n\nOur cows do not run off.\n\nAt night they come to the barn.",
+   "stats": {
+    "words": 33,
+    "sentences": 5,
+    "words_per_sentence": 6.6,
+    "syllables_per_word": 1.03,
+    "fk_grade": -0.9,
+    "flesch_ease": 113.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXIV",
+   "text": "The ship has run on a rock.\n\nFive men are on the ship.\n\nIf the boat can not get to them, they will drown.\n\nThe boat has brave men in it. They will save the five men.",
+   "stats": {
+    "words": 37,
+    "sentences": 5,
+    "words_per_sentence": 7.4,
+    "syllables_per_word": 1.03,
+    "fk_grade": -0.6,
+    "flesch_ease": 112.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXV",
+   "text": "Come, boys, and feed the cows. The sun has set, and they are at the barn.\n\nSue has a bell on the neck of her pet cat.\n\nOne hot day Ann and Nell sat on the grass in the shade of a big tree. They like to rock their dolls, and sing to them.\n\nThe brave men in our boat are on their way to the ship. They will save the men in the ship, if they can. They will not let them drown.\n\nWhat bird has big eyes? The owl. Can an owl see at night? Yes, an owl can see best at night.",
+   "stats": {
+    "words": 105,
+    "sentences": 12,
+    "words_per_sentence": 8.8,
+    "syllables_per_word": 1.03,
+    "fk_grade": -0.0,
+    "flesch_ease": 110.9
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XLIV",
+   "text": "\"Buzz! buzz!\" a bee said to Mary.\n\n\"What do you mean?\" said Mary. \"Please tell me once more.\"\n\n\"Buzz! buzz! buzz!\" but Mary could not tell its wants.\n\nI think it said, \"Please let me get some sweets in this vine.",
+   "stats": {
+    "words": 41,
+    "sentences": 7,
+    "words_per_sentence": 5.9,
+    "syllables_per_word": 1.07,
+    "fk_grade": -0.6,
+    "flesch_ease": 110.1
+   },
+   "new_vocab_vs_band": null
+  }
+ ],
+ "1": [
+  {
+   "label": "LESSON VI",
+   "text": "Ann can catch Rab.\n\nSee! She has the hat.\n\nNow Ann can pat Rab.\n\nLet me pat Rab, too.",
+   "stats": {
+    "words": 19,
+    "sentences": 5,
+    "words_per_sentence": 3.8,
+    "syllables_per_word": 1.0,
+    "fk_grade": -2.3,
+    "flesch_ease": 118.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON VII",
+   "text": "Ned    eggs    black    left    fed    nest    them    get    will\n\nNed has fed the hen.\n\nShe is a black hen.\n\nShe has left the nest.\n\nSee the eggs in the nest!\n\nWill the hen let Ned get them?",
+   "stats": {
+    "words": 37,
+    "sentences": 5,
+    "words_per_sentence": 7.4,
+    "syllables_per_word": 1.0,
+    "fk_grade": -0.9,
+    "flesch_ease": 114.7
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON X",
+   "text": "Nell    some    pan    him    yes     do      you    have\n\nDo you see Nell?\n\nYes; she has a pan with some eggs in it.\n\nLet me have the pan and the eggs, will you, Nell?\n\nHas the black hen left the nest?\n\nI will now run to catch Rab. Will you run, too?",
+   "stats": {
+    "words": 51,
+    "sentences": 6,
+    "words_per_sentence": 8.5,
+    "syllables_per_word": 1.0,
+    "fk_grade": -0.5,
+    "flesch_ease": 113.6
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XI",
+   "text": "O    whip    Ben    up    still    sit    if    stand    Jip\n\nO Ben! let me get in, will you?\n\nYes, if you will sit still.\n\nStand still, Jip, and let Ann get in.\n\nNow, Ben, hand me the whip.\n\nGet up, Jip!\n\n1,2.",
+   "stats": {
+    "words": 40,
+    "sentences": 6,
+    "words_per_sentence": 6.7,
+    "syllables_per_word": 1.0,
+    "fk_grade": -1.2,
+    "flesch_ease": 115.5
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XIII",
+   "text": "Look at Tom and his dog. The dog has a black spot on his back. Do you think he is a good dog?\n\nTom has a big top, too. It is on the box with Kitty's doll.",
+   "stats": {
+    "words": 37,
+    "sentences": 5,
+    "words_per_sentence": 7.4,
+    "syllables_per_word": 1.03,
+    "fk_grade": -0.6,
+    "flesch_ease": 112.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XX",
+   "text": "mam ma'    large    as      pa pa     arms      ride\n\nfar        barn     both    Prince    trot      your\n\nPapa, will you let me ride with you on Prince? I will sit still in your arms.\n\nSee, mamma! We are both on Prince. How large he is!\n\nGet up, Prince! You are not too fat to trot as far as the barn.",
+   "stats": {
+    "words": 57,
+    "sentences": 7,
+    "words_per_sentence": 8.1,
+    "syllables_per_word": 1.07,
+    "fk_grade": 0.2,
+    "flesch_ease": 108.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXII",
+   "text": "had    went    call    might    flag    near    swam    swing\n\nDid you call us, mamma?\n\nI went with Tom to the pond. I had my doll, and Tom had his flag.\n\nThe fat duck swam to the bank, and we fed her. Did you think we might fall into the pond?\n\nWe did not go too near, did we, Tom?\n\nMay we go to the swing, now, mamma?",
+   "stats": {
+    "words": 66,
+    "sentences": 7,
+    "words_per_sentence": 9.4,
+    "syllables_per_word": 1.05,
+    "fk_grade": 0.4,
+    "flesch_ease": 108.8
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXIII",
+   "text": "here    band     hear     horse    play    they\n\npass    where    front    fine     hope    comes\n\nHere comes the band! Shall we call mamma and Fanny to see it?\n\nLet us stand still, and hear the men play as they pass.\n\nI hope they will stop here and play for us.\n\nSee the large man in front of the band, with his big hat. What has he in his hand? How fine he looks!\n\nLook, too, at the man on that fine horse.\n\nIf the men do not stop, let us go with them and see where they go.",
+   "stats": {
+    "words": 95,
+    "sentences": 9,
+    "words_per_sentence": 10.6,
+    "syllables_per_word": 1.04,
+    "fk_grade": 0.8,
+    "flesch_ease": 108.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXVIII",
+   "text": "peep    while    take    sleep    tuck    safe\n\nPeep, peep! Where have you gone, little chick? Are you lost? Can't you get back to the hen?\n\nOh, here you are! I will take you back. Here, hen, take this little chick under your wing.\n\nNow, chick, tuck your little, wet feet under you, and go to sleep for a while.\n\nPeep, peep! How safe the little chick feels now!",
+   "stats": {
+    "words": 67,
+    "sentences": 10,
+    "words_per_sentence": 6.7,
+    "syllables_per_word": 1.21,
+    "fk_grade": 1.3,
+    "flesch_ease": 97.8
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXIX",
+   "text": "wind    time      there    fence    kite    high\n\neyes    bright    flies    why      day     shines\n\nThis is a fine day. The sun shines bright. There is a good wind, and my kite flies high. I can just see it.\n\nThe sun shines in my eyes; I will stand in the shade of this high fence.\n\nWhy, here comes my dog! He was under the cart. Did you see him there?\n\nWhat a good time we have had! Are you not glad that we did not go to the woods with John?\n\nSLATE WORK.",
+   "stats": {
+    "words": 90,
+    "sentences": 11,
+    "words_per_sentence": 8.2,
+    "syllables_per_word": 1.07,
+    "fk_grade": 0.2,
+    "flesch_ease": 108.3
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXXI",
+   "text": "bound     Rose       called     got       drown      found       brave\n\n\"Here, Ponto! Here, Ponto!\" Kate called to her dog. \"Come, and get the dolls out of the pond.\"\n\nRose went under, but she did not drown. Bess was still on the top of the water.\n\nPonto came with a bound, and jumped into the pond. He swam around, and got Bess in his mouth, and brought her to the shore.\n\nPonto then found Rose, and brought her out, too.\n\nKate said, \"Good, old Ponto! Brave old dog!\"\n\nWhat do you think of Ponto?",
+   "stats": {
+    "words": 90,
+    "sentences": 9,
+    "words_per_sentence": 10.0,
+    "syllables_per_word": 1.14,
+    "fk_grade": 1.8,
+    "flesch_ease": 99.9
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON LI",
+   "text": "Ellen, do look at Fido! He sits up in a chair, with my hat on. He looks like a little boy; but it is only Fido.\n\nNow see him shake hands. Give me your paw, Fido. How do you do, sir? Will you take dinner with us. Fido? Speak! Fido says, \"Bowwow,\" which means, \"Thank you, I will.\"\n\nIsn't Fido a good dog, Ellen? He is always so polite.\n\nWhen school is out, I will try to teach him some other tricks.",
+   "stats": {
+    "words": 82,
+    "sentences": 12,
+    "words_per_sentence": 6.8,
+    "syllables_per_word": 1.2,
+    "fk_grade": 1.2,
+    "flesch_ease": 98.8
+   },
+   "new_vocab_vs_band": null
+  }
+ ],
+ "2": [
+  {
+   "label": "LESSON XI",
+   "text": "WHAT A BIRD TAUGHT.\n\n1. Why do you come to my apple tree, Little bird so gray? Twit-twit, twit-twit, twit-twit-twee! That was all he would say.\n\n2. Why do you lock your rosy feet So closely round the spray? Twit-twit, twit-twit, twit-tweet! That was all he would say.\n\n3. Why on the topmost bough do you get, Little bird so gray? Twit-twit-twee! twit-twit-twit! That was all he would say.\n\n4. Where is your mate? come, answer me, Little bird so gray. Twit-twit-twit! twit-twit-twee! That was all he would say. Alice Cary.",
+   "stats": {
+    "words": 102,
+    "sentences": 17,
+    "words_per_sentence": 6.0,
+    "syllables_per_word": 1.15,
+    "fk_grade": 0.3,
+    "flesch_ease": 103.7
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON VI",
+   "text": "AFRAID IN THE DARK.\n\n1.  \"Willie, will you run upstairs, and get my needle book from the bureau?\"\n\n2.  But Willie did not stir. \"Willie!\" said mamma. She thought he had not heard.\n\n3.  \"I'm afraid,\" said Willie.\n\n4.  \"Afraid of what?\"\n\n5.  \"It's dark up there.\"\n\n6.  \"What is the dark?\" asked mamma. \"See! It is nothing but a shadow.\" And she held her hand between the lamp and the workbasket on the table.\n\n7. \"Now it is dark in the basket; but as soon as I take my hand away, it is light.\"\n\n8. \"Come and stand between the lamp and the wall, Willie. See! There is your shadow on the wall. Can your shadow hurt you?\"\n\n9. \"Oh no, mamma! I am sure it can not hurt me.\"\n\n10. \"Well, the dark is only a big shadow over everything.\"\n\n11. \"What makes the big shadow, mamma?\"\n\n12. \"I will tell you all about that, Willie, when you are a little older. But now, I wish you would find me a brave boy who is not afraid of shadows, to run upstairs and get my needlebook.\"\n\n13. \"I am bravo, mamma. I will go. --Here it is.\"\n\n14. \"Thank you, my brave little man. You see the dark didn't hurt you.\"\n\nSLATE WORK.",
+   "stats": {
+    "words": 201,
+    "sentences": 27,
+    "words_per_sentence": 7.4,
+    "syllables_per_word": 1.26,
+    "fk_grade": 2.2,
+    "flesch_ease": 92.8
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXVIII",
+   "text": "SAM AND HARRY.\n\n1. One fine summer afternoon, Sam was walking home from school. He went along slowly, reading a book.\n\n2. Sam had spent all his money for the book, but he was a happy boy.\n\n3. At length he came into the highroad, where there was a gate. A blind man stood, holding it open.\n\n4. The poor man said, \"Please give me a few cents to buy some bread!\" But Sam gave him nothing.\n\n5. What! did Sam give the poor blind man nothing? Yes; for, as I told you, he had spent all his money.\n\n6. So Sam walked on, very sad. Soon after, a fine carriage came up, and in it were Harry and his mother.\n\n7. The blind man stood, and held out his hat. \"Let us give the poor man something,\" said Harry to his mother.\n\n8. His mother gave him some cents. Harry took them, but did not put them into the man's hat.\n\n9. He threw them into the hedge as far as he could. The poor man could not find them, for, you know, ho was blind.\n\n10. Sam had turned back to look at the fine carriage. He saw Harry throw the cents into the hedge; so he came back at once, and looked for the money until he found it all for the blind man.\n\n11. This took so long a time, that he almost lost his supper.\n\n12. Which of the boys do you think was truly kind to the poor man?\n\n13. I know which he thanked most in his heart.",
+   "stats": {
+    "words": 252,
+    "sentences": 23,
+    "words_per_sentence": 11.0,
+    "syllables_per_word": 1.17,
+    "fk_grade": 2.5,
+    "flesch_ease": 96.7
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON LI",
+   "text": "lain    weak    stiff    shrill    rode    bleak\n\nTHE STORY TELLER (CONCLUDED)\n\n1. \"One cold, bleak night, the snow fell fast, and the wind blew loud and shrill. It was quite dark. Not a star was to be seen in the sky.\n\n2. \"These good men sent out a dog, to hunt for those who might want help. In an hour or two, the dog was heard coming back.\n\n3. \"On looking out, they saw him with a boy on his back. The poor child was stiff with cold. He could but just hold on to the dog's back.\n\n4. \"He had lain for a long time in the snow, and was too weak to walk.\n\n5. \"He felt something pull him by the coat, and heard the bark of a dog. He put out his hand, and felt the dog. The dog gave him another pull.\n\n6. \"This gave the poor boy some hope, and he took hold of the dog. He drew himself out of the snow, but ho could not stand or walk.\n\n7. \"He got on the dog's back, and put his arms round the dog's neck, and held on. He felt sure that the dog did not mean to do him any harm.\n\n8. \"Thus he rode all the way to the good men's house.\n\n9. \"They took care of him, till the snow was gone. Then they sent him to his home.\"",
+   "stats": {
+    "words": 226,
+    "sentences": 20,
+    "words_per_sentence": 11.3,
+    "syllables_per_word": 1.05,
+    "fk_grade": 1.2,
+    "flesch_ease": 106.6
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON I",
+   "text": "branch'es     kiss    burns     Mrs.    e vents'\n\nan oth'er     Mr.     stool     lamp    mends\n\nEVENING AT HOME.\n\n1. It is winter. The cold wind whistles through the branches of the trees.\n\n2. Mr. Brown has done his day's work, and his children, Harry and Kate, have come home from school. They learned their lessons well to-day, and both feel happy\n\n3. Tea is over. Mrs. Brown has put the little sitting room in order. The fire burns brightly. One lamp gives light enough for all. On the stool is a basket of fine apples. They seem to say, \"Won't you have one?\"\n\n4. Harry and Kate read a story in a new book. The father reads his newspaper, and the mother mends Harry's stockings.\n\n5. By and by, they will tell one another what they have been reading about, and will have a chat over the events of the day.\n\n6. Harry and Kate's bedtime will come first. I think I see them kiss their dear father and mother a sweet good night.\n\n7. Do you not wish that every boy and girl could have a home like this?",
+   "stats": {
+    "words": 181,
+    "sentences": 21,
+    "words_per_sentence": 8.6,
+    "syllables_per_word": 1.25,
+    "fk_grade": 2.6,
+    "flesch_ease": 92.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON II",
+   "text": "BUBBLES.\n\n1. The boys have come out on the porch to blow bubbles. The old cat is asleep on the mat by the door.\n\n2. \"Ha! ha!\" laughs Robert, as a bubble comes down softly on the old cat's back, and does not burst.\n\n3. Willie tries to make his bubble do the same. This time it comes down on the cat's face, and makes her sneeze.\n\n4. \"She would rather wash her face without soap,\" says Harry. \"Now let us see who can make the biggest bubble.\"\n\n5. \"Mine is the biggest,\" says Robert. \"See how high it floats in the air! I can see--ah! it has burst.\"\n\n6. \"I can see the house and the trees and the sky in mine,\" says Willie; \"and such beautiful colors.\"\n\n7.  \"How many, Willie?\"\n\n8. \"Red, one; blue, two; there--they are all out. Let us try again.\"\n\n9. \"I know how many colors there are,\" says Harry. \"Just as many as there are in the rainbow.\"\n\n10. \"Do you know how many that is?\"",
+   "stats": {
+    "words": 165,
+    "sentences": 20,
+    "words_per_sentence": 8.2,
+    "syllables_per_word": 1.23,
+    "fk_grade": 2.1,
+    "flesch_ease": 94.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XXXVIII",
+   "text": "beam        thick      pine       next      groove     scales\n\nTHE NEW SCALES.\n\nI. \"Herbert, will you please peel my orange?\" said Lucy. Herbert was reading his new book, but he put it down at once, and took the orange from his little sister.\n\n2. \"Shall I make a pair of scales, Lucy, for you to use when you play store?\"\n\n3. \"Oh yes! but how can you do that'!\"\n\n4.  \"I'll show you. First, we must take the peel off in two little cups, one just as large as the other. While I do this, see if you can find me two nice sticks about ten inches long.\"\n\n5. Lucy ran out to the woodhouse to find the sticks.--\" Will these do?\"\n\n6. \"No, they are too hard. Find some pine sticks if you can.\"\n\n7.  \"Here are some.\"\n\n8. \"These will do nicely. Now I must make a scale beam and a post. Can you find me a little block for a post, Lucy'!\"\n\n9. \"Will a ribbon block do, Herbert?\"\n\n10.  \"Yes, if it is not too thick.\"\n\n11.  \"Here is one an inch thick.\"\n\n12. \"That will be just right. Now get the little gimlet.\"\n\n13. Herbert worked away until he had made the beam and the post. Then he made a hole in the middle of the block, and put the post in. Next, he put the beam into a little groove at the top of the post, so that it would balance nicely.\n\n14. \"Now, Lucy, we must have a needle and some thread. We must put four threads to each cup; then we will tie the threads to the ends of the beam.\n\n15. \"There, Lucy, what do you think of that?\"\n\n16. \"Why, Herbert, that is just as nice as the real scales in father's store; and you may have all my orange for making them.\"",
+   "stats": {
+    "words": 295,
+    "sentences": 29,
+    "words_per_sentence": 10.2,
+    "syllables_per_word": 1.2,
+    "fk_grade": 2.5,
+    "flesch_ease": 95.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON LII",
+   "text": "THE OWL.\n\n1. \"Where did you get that owl, Harry?\"\n\n2. \"Fred and I found him in the old, hollow oak.\"\n\n3. \"How did you know he was there?\"\n\n4. \"I'll tell you. Fred and I were playing 'hide and seek' round the old barn, one night just at dusk.\n\n5. \"I was just creeping round the corner, when I heard a loud squeak, and a big bird flew up with something in his claws.\n\n6. \"I called Fred, and we watched him as he flew to the woods. Fred thought the bird was an owl, and that he had a nest in the old oak.\n\n7. \"The next day we went to look for him, and, sure enough, he was there.\"\n\n8. \"But how did you catch him? I should think he could fight like a good fellow with that sharp bill.\"\n\n9. \"He can when he is wide awake; but owls can't see very well in the daytime, and he was taking a nap.\n\n10. \"He opened his great eyes, and ruffled up his feathers, and said, \"Whoo! Whoo!' 'Never mind who,' Fred said, and slipped him into a bag.\"",
+   "stats": {
+    "words": 184,
+    "sentences": 15,
+    "words_per_sentence": 12.3,
+    "syllables_per_word": 1.11,
+    "fk_grade": 2.3,
+    "flesch_ease": 100.6
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON LIV",
+   "text": "broad    knee    fig    fresh    city    trout    un der neath'\n\nGRANDFATHER'S STORY.\n\n1. \"Come and sit by my knee, Jane, and grandfather will tell you a strange story.\n\n2. \"One bright Summer day, I was in a garden in a city, with a friend. \"We rested underneath a fig tree. The broad leaves were green and fresh.\n\n3. \"We looked up at the ripe, purple figs. And what do you think came down through the branches of the fig tree over our heads?\"\n\n4. \"Oh, a bird, grandfather, a bird!\" said little Jane, clapping her hands.\n\n5. \"No, not a bird. It was a fish; a trout, my little girl.\"\n\n6. \"Not a fish, grandfather! A trout come through the branches of a tree in the city'! I am sure you must be in fun.\"\n\n7. \"No, Jane, I tell you the truth. My friend and I were very much surprised to see a fish falling from a fig tree.\n\n8. \"But we ran from under the tree, and saw a fishhawk flying, and an eagle after him.\n\n9. \"The hawk had caught the fish, and was carrying it home to his nest, when the eagle saw it and wanted it.\n\n10. \"They fought for it. The fish was dropped, and they both lost it. So much for fighting!\"",
+   "stats": {
+    "words": 208,
+    "sentences": 20,
+    "words_per_sentence": 10.4,
+    "syllables_per_word": 1.22,
+    "fk_grade": 2.9,
+    "flesch_ease": 93.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON LVI",
+   "text": "A GOOD OLD MAN.\n\n1.  There once lived an old man in a snug, little cottage. It had two rooms and only two windows. A small garden lay just behind it.\n\n2. Old as the poor man was, he used to work in the fields. Often he would come home very tired and weak, with his hoe or spade on his shoulder.\n\n3. And who do you think met him at the door! Mary and Jane, his two little grandchildren.\n\n4. They were too young to work, except to weed in the garden, or bring water from the spring.\n\n5. In winter, as they were too poor to buy much wood or coal, they had little fire; so they used to sit close together to keep warm. Mary would sit on one of the old man's knees, and Jane on the other.\n\n6. Sometimes their grandfather would tell them a droll story. Sometimes he would teach them a hymn.\n\n7. He would often talk to them of their father, who had gone to sea, or of their good, kind mother, who was in her grave. Every night he prayed God to bless them, and to bring back their father in safety.\n\n8. The old man grew weaker every year; but the little girls were glad to work for him, who had been so good to them.\n\n9. One cold, windy night, they heard a knock at the door. The little girls ran and opened it. Oh, joy to them! There stood their father.\n\n10. He had been at sea a long time. He had saved some money, and had now come home to stay.\n\n11. After this the old man did not have to work. His son worked for him, and his grandchildren took care of him. Many happy days they spent together.",
+   "stats": {
+    "words": 292,
+    "sentences": 25,
+    "words_per_sentence": 11.7,
+    "syllables_per_word": 1.24,
+    "fk_grade": 3.6,
+    "flesch_ease": 90.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON LXI",
+   "text": "THE BROKEN WINDOW. (CONCLUDED.)\n\n1. George started off, and felt much happier for having made up his mind to do what was right.\n\n2. He rang the doorbell. When the man came out, George said, \"Sir, I threw a snowball through your window. But I did not intend to do it. I am very sorry, and wish to pay you. Here is the dollar my father gave me as a New- year gift.\"\n\n3. The gentleman took the dollar, and asked George if he had no more money. George said he had not. \"Well,\" said he, \"this will do.\"\n\n4. So, after asking George his name, and where he lived, he called him an honest boy, and shut the door.\n\n5. George went home at dinner time, with a face as rosy, and eyes as bright, as if nothing had gone wrong. At dinner, Mr. Ellet asked him what he had bought with his money.\n\n6. George very honestly told him all about the broken window, and said he felt very well without any money to spend.\n\n7. When dinner was over, Mr. Ellet told George to go and look in his cap. He did so, and found two silver dollars there.\n\n8. The man, whose window had been broken, had been there, and told Mr. Ellet about it. He gave back George's dollar and another besides.\n\n9. A short time after this, the man came and told Mr. Ellet that he wanted a good boy to stay in his store.\n\n10. As soon as George left school, he went to live with this man, who was a rich merchant. In a few years he became the merchant's partner.",
+   "stats": {
+    "words": 269,
+    "sentences": 26,
+    "words_per_sentence": 10.3,
+    "syllables_per_word": 1.24,
+    "fk_grade": 3.1,
+    "flesch_ease": 91.6
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LESSON XLV",
+   "text": "MARY'S STORY.\n\n1. Father, and Charles, and Lucy, and I went to the beach yesterday. We took our dinner, and stayed all day.\n\n2. Father and Charles went out a little way from the shore in a boat, and fished, while Lucy and I gathered sea mosses.\n\n3. We took off our shoes and stockings, and waded into the shallow water. We had a pail to put our seaweeds in.\n\n4. We found such beautiful ones. Some wore purple, some pink, and some brown. When they were spread out in the water, the purple ones looked like plumes, and the brown ones like little trees.\n\n5. Such a funny thing happened to Lucy. She slipped on a stone, and down she went into the water. How we both laughed! But the wind and sun soon dried Lucy's dress.\n\n6. Then father came and took us in the boat for a row. After that we had a picnic dinner in the woods.\n\n7. Then father spread his coat on the grass, and took a nap while we children played on the beach.",
+   "stats": {
+    "words": 174,
+    "sentences": 16,
+    "words_per_sentence": 10.9,
+    "syllables_per_word": 1.31,
+    "fk_grade": 4.1,
+    "flesch_ease": 84.9
+   },
+   "new_vocab_vs_band": null
+  }
+ ],
+ "4": [
+  {
+   "label": "II. TRY, TRY AGAIN",
+   "text": "1. 'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.\n\n2. Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case? Try, try again.\n\n3. If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again. All that other folks can do, Why, with patience, should not you? Only keep this rule in view: Try, try again.\n\nDEFINITIONS.--l. Cour'age, resolution. Con'quer, gain the vic-tory. 2. Pre-vail, overcome.  Dis-grace', shame. Win, gain, ob-tain. 3. Re-ward', anything given in return for good or bad con-duct. Pa'-tience, constany in labor.\n\nEXERCISES.--What does the mark before \"'T is\" mean? What is it called? What point is used after the word \"case\" in the second stanza? Why?",
+   "stats": {
+    "words": 181,
+    "sentences": 18,
+    "words_per_sentence": 10.1,
+    "syllables_per_word": 1.28,
+    "fk_grade": 3.5,
+    "flesch_ease": 88.2
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "VII. LAZY NED",
+   "text": "1. \"'T is royal fun,\" cried lazy Ned, \"To coast, upon my fine, new sled, And beat the other boys; But then, I can not bear to climb The tiresome hill, for every time It more and more annoys.\"\n\n2. So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.\n\n3. Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last.\n\nDEFINITIONS.-l. Roy'al, excellent, noble. Coast, to slide. An--noys', troubles. 2. In'do-lent, lazy. 3. Prize, a reward. Bug-bear, something frightful. Dunce, a silly fellow.\n\nEXERCISES.--What did Ned like? What did he not like?",
+   "stats": {
+    "words": 143,
+    "sentences": 13,
+    "words_per_sentence": 11.0,
+    "syllables_per_word": 1.36,
+    "fk_grade": 4.8,
+    "flesch_ease": 80.3
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "IX. MEDDLESOME MATTY",
+   "text": "1. Oh, how one ugly trick has spoiled The sweetest and the best! Matilda, though a pleasant child, One grievous fault possessed, Which, like a cloud before the skies, Hid all her better qualities.\n\n2. Sometimes, she'd lift the teapot lid To peep at what was in it; Or tilt, the kettle, if you did But turn your back a minute. In vain you told her not to touch, Her trick of meddling grew so much.\n\n3. Her grand mamma went out one day, And, by mistake, she laid Her spectacles and snuffbox gay, Too near the little maid; \"Ah! well,\" thought she, \"I'll try them on, As soon as grand mamma is gone.\"\n\n4. Forthwith, she placed upon her nose The glasses large and wide; And looking round, as I suppose, The snuffbox, too, she spied. \"Oh, what a pretty box is this! I'll open it,\" said little miss.\n\n5. \"I know that grandmamma would say, 'Don't meddle with it, dear;' But then she's far enough away, And no one else is near; Beside, what can there be amiss In opening such a box as this?\"\n\n6. So, thumb and finger went to work To move the stubborn lid; And, presently, a mighty jerk The mighty mischief did; For all at once, ah! woeful case! The snuff came puffing in her face.\n\n7. Poor eyes, and nose, and mouth, and chin A dismal sight presented; And as the snuff got further in, Sincerely she repented. In vain she ran about for ease, She could do nothing else but sneeze.\n\n8. She dashed the spectacles away, To wipe her tingling eyes; And, as in twenty bits they lay, Her grandmamma she spies. \"Heyday! and what's the matter now?\" Cried grandmamma, with angry brow.\n\n9. Matilda, smarting with the pain, And tingling still, and sore, Made many a promise to refrain From meddling evermore; And 't is a fact, as I have heard, She ever since has kept her word.\n\nDEFINITIONS.-l. Qual'i-ties, traits of character. 2. Med'-dling, interfering without right. 4. Forth-with', at once. Spied, saw. 5. A-miss', wrong, faulty. 6. Woe'ful, sad, sorrowful 8. Tin'gling, smarting. 9. Re-frain', to keep from.\n\nEXERCISES.--What did Matilda do? How was she punished?  What effect did it have on her?",
+   "stats": {
+    "words": 369,
+    "sentences": 31,
+    "words_per_sentence": 11.9,
+    "syllables_per_word": 1.33,
+    "fk_grade": 4.7,
+    "flesch_ease": 82.4
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XIII. PICCOLA",
+   "text": "By Celia Laighton Thaxter, who was born at Portsmouth, N. H., June 29, 1836. Much of her childhood was passed at White Island, one of the Isles of Shoals, off the coast of New Hampshire. \"Among the Isles of Shoals,\" is her most noted work in prose. She published a volume of poems, many of which are favorites with children. She died in 1894.\n\n1. Poor, sweet Piccola! Did you hear What happened to Piccola, children dear? 'T is seldom Fortune such favor grants As fell to this little maid of France.\n\n2. 'T was Christmas time, and her parents poor Could hardly drive the wolf from the door, Striving with poverty's patient pain Only to live till summer again.\n\n3. No gift for Piccola! sad were they When dawned the morning of Christmas day! Their little darling no joy might stir; St. Nicholas nothing would bring to her!\n\n4. But Piccola never doubted at all That something beautiful must befall Every child upon Christmas day, And so she slept till the dawn was gray.\n\n5. And full of faith, when at last she woke, She stole to her shoe as the morning broke; Such sounds of gladness filled all the air, 'T was plain St. Nicholas had been there.\n\n6. In rushed Piccola, sweet, half wild-- Never was seen such a joyful child-- \"See what the good saint brought!\" she cried, And mother and father must peep inside.\n\n7. Now such a story I never heard! There was a little shivering bird! A sparrow, that in at the window flew, Had crept into Piccola's tiny shoe!\n\n8. \"How good poor Piccola must have been!\" She cried, as happy as any queen, While the starving sparrow she fed and warmed, And danced with rapture, she was so charmed.\n\n9. Children, this story I tell to you Of Piccola sweet and her bird, is true. In the far-off land of France, they say, Still do they live to this very day.\n\nDEFINITIONS.--3. Dawned, began to grow light. Stir, excite. 4. Be-fall, happen. 7. Shiv'er-ing, trembling from cold. Ti'ny, very small. 8. Rapture, great joy. Charmed, greatly.\n\nEXERCISES.--What is meant by \"driving the wolf from the door\"? In the third stanza, what does \"St.\" before Nicholas mean? Who is St. Nicholas? What did Piccola find in her shoe on Christmas morning?",
+   "stats": {
+    "words": 378,
+    "sentences": 37,
+    "words_per_sentence": 10.2,
+    "syllables_per_word": 1.37,
+    "fk_grade": 4.5,
+    "flesch_ease": 81.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XVI. THE BROWN THRUSH",
+   "text": "Lucy Larcom, the author of the following poem, was born in 1826, and passed many years of her life as a factory girl at Lowell, Mass. She died in 1893.\n\n1. There's a merry brown thrush sitting up in a tree; \"He's singing to me! he's singing to me!\" And what does he say, little girl, little boy? \"Oh, the world's running over with joy! Don't You hear? Don't you see? Hush! look! In my tree I'm as happy as happy can be!\"\n\n2. And the brown thrush keeps singing, \"A nest do you see, And five eggs hid by me in the juniper tree? Don't meddle! don't touch! little girl, little boy, Or the world will lose some of its joy! Now I'm glad! now I'm free! And I always shall be, If you never bring sorrow to me.\"\n\n3. So the merry brown thrush sings away in the tree, To you and to me, to you and to me; And he sings all the day, little girl, little boy, \"Oh, the world's running over with joy! But long it won't be, Don't you know? Don't you see? Unless we're as good as can be.\"\n\nEXERCISES.--What is a thrush? Why was the thrush so happy? Do you think he would have been happy if the little boy or girl had robbed the nest?",
+   "stats": {
+    "words": 220,
+    "sentences": 23,
+    "words_per_sentence": 9.6,
+    "syllables_per_word": 1.24,
+    "fk_grade": 2.7,
+    "flesch_ease": 92.5
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XX. FREAKS OF THE FROST",
+   "text": "By Hannah Flagg Gould, who was born at Lancaster, Vermont, in 1789. She published several volumes of poems (one for children) and one collection of prose articles, entitled \"Gathered Leaves.\" She died in 1865.\n\n1. The Frost looked forth one still, clear night, And whispered, \"Now I shall be out of sight; So through the valley and over the height In silence I'll take my way; I will not go on, like that blustering train, The wind and the snow, the hail and the rain, Who make so much bustle and noise in vain, But I'll be as busy as they.\"\n\n2. Then he flew to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.\n\n3. He went to the windows of those who slept, And over each pane, like a fairy, crept; Wherever he breathed, wherever he stepped, By the light of the morn were seen Most beautiful things; there were flowers and trees; There were bevies of birds, and swarms of bees; There were cities with temples and towers, and these All pictured in silver sheen.\n\n4. But he did one thing that was hardly fair; He peeped in the cupboard, and, finding there That all had forgotten for him to prepare, \"Now just to set them a-thinking, I'll bite this basket of fruit,\" said he, \"This costly pitcher I'll burst in three; And the glass of water they've left for me Shall 'tchick!' to tell them I'm drinking.\"\n\nDEFINITIONS.--l. Blus'ter-ing, being noisy and loud. Bus'tle, stir. 2. Crest, the top. Quiv'er-ing, trembling, shaking. Mar'gin, edge, border. 3. Bev'ies, flocks. Pic'tured, painted. Sheen, brightness, splendor of appearance.\n\nEXERCISES.--What did the frost say? What did he do to the mountain? The trees? The lake? What is a \"coat of mail\"? What did he do to the window? The pitcher?",
+   "stats": {
+    "words": 347,
+    "sentences": 21,
+    "words_per_sentence": 16.5,
+    "syllables_per_word": 1.29,
+    "fk_grade": 6.1,
+    "flesch_ease": 80.8
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XXII. JEANNETTE AND JO",
+   "text": "By Mary Mapes Dodge, who was born in New York City in 1838. She is the editor of the \"St. Nicholas\" magazine, and has written many stories for children.\n\n1. Two girls I know--Jeannette and Jo, And one is always moping; The other lassie, come what may, Is ever bravely hoping.\n\n2. Beauty of face and girlish grace Are theirs, for joy or sorrow; Jeannette takes brightly every day, And Jo dreads each to-morrow.\n\n3. One early morn they watched the dawn-- I saw them stand together; Their whole day's sport, 't was very plain, Depended on the weather.\n\n4. \"'T will storm!\" cried Jo. Jeannette spoke low; \"Yes, but 't will soon be over.\" And, as she spoke, the sudden shower Came, beating down the clover.\n\n5. \"I told you so!\" cried angry Jo: \"It always is a-raining!\" Then hid her face in dire despair, Lamenting and complaining.\n\n6. But sweet Jeannette, quite hopeful yet,-- I tell it to her honor,-- Looked up and waited till the sun Came streaming in upon her.\n\n7. The broken clouds sailed off in crowds, Across a sea of glory. Jeannette and Jo ran, laughing, in-- Which ends my simple story.\n\n8. Joy is divine. Come storm, come shine, The hopeful are the gladdest; And doubt and dread, children, believe Of all things are the saddest.\n\n9. In morning's light, let youth be bright; Take in the sunshine tender; Then, at the close, shall life's decline Be full of sunset splendor.\n\n10. And ye who fret, try, like Jeannette, To shun all weak complaining; And not, like Jo, cry out too soon-- \"It always is a-raining!\"",
+   "stats": {
+    "words": 266,
+    "sentences": 16,
+    "words_per_sentence": 16.6,
+    "syllables_per_word": 1.36,
+    "fk_grade": 6.9,
+    "flesch_ease": 75.1
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XXVI. IN TIME'S SWING",
+   "text": "By Lucy Larcom.\n\n1. Father Time, your footsteps go Lightly as the falling snow. In your swing I'm sitting, see! Push me softly; one, two; three, Twelve times only. Like a sheet, Spread the snow beneath my feet. Singing merrily, let me swing Out of winter into spring.\n\n2. Swing me out, and swing me in! Trees are bare, but birds begin Twittering to the peeping leaves, On the bough beneath the eaves. Wait,--one lilac bud I saw. Icy hillsides feel the thaw. April chased off March to-day; Now I catch a glimpse of May.\n\n3. Oh, the smell of sprouting grass! In a blur the violets pass. Whispering from the wildwood come Mayflower's breath and insect's hum. Roses carpeting the ground; Thrushes, orioles, warbling sound:-- Swing me low, and swing me high, To the warm clouds of July.\n\n4. Slower now, for at my side White pond lilies open wide. Underneath the pine's tall spire Cardinal blossoms burn like fire. They are gone; the golden-rod Flashes from the dark green sod. Crickets in the grass I hear; Asters light the fading year.\n\n5. Slower still! October weaves Rainbows of the forest leaves. Gentians fringed, like eyes of blue, Glimmer out of sleety dew. Meadow green I sadly miss: Winds through withered sedges hiss. Oh, 't is snowing, swing me fast, While December shivers past!\n\n6. Frosty-bearded Father Time, Stop your footfall on the rime! Hard you push, your hand is rough; You have swung me long enough. \"Nay, no stopping,\" say you? Well, Some of your best stories tell, While you swing me--gently, do!-- From the Old Year to the New.\n\nDEFINITIONS.--2. Twit'ter-ing, making a succession of small, chirping noises. Glimpse, a short, hurried view. 3. Blur, a dim, confused appearance. 6. Rime, whitefrost, hoarfrost.",
+   "stats": {
+    "words": 294,
+    "sentences": 33,
+    "words_per_sentence": 8.9,
+    "syllables_per_word": 1.37,
+    "fk_grade": 4.1,
+    "flesch_ease": 81.5
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XXXVIII. THE SUMMER SHOWER",
+   "text": "The author, Thomas Buchanan Read, was born in Chester Co., Pa., March 12, 1822. His life was devoted to the fine arts, and he attained a high reputation both as artist and poet. He died in New York, May 11, 1872.\n\n1. Before the stout harvesters falleth the grain, As when the strong stormwind is reaping the plain, And loiters the boy in the briery lane; But yonder aslant comes the silvery rain, Like a long line of spears brightly burnished and tall.\n\n2. Adown the white highway like cavalry fleet, It dashes the dust with its numberless feet. Like a murmurless school, in their leafy retreat, The wild birds sit listening the drops round them beat; And the boy crouches close to the blackberry wall.\n\n3. The swallows alone take the storm on the wing, And, taunting the tree-sheltered laborers, sing. Like pebbles the rain breaks the face of the spring, While a bubble darts up from each widening ring; And the boy in dismay hears the loud shower fall.\n\n4. But soon are the harvesters tossing their sheaves; The robin darts out from his bower of leaves; The wren peereth forth from the moss-covered eaves; And the rain-spattered urchin now gladly perceives That the beautiful bow bendeth over them all.\n\nDEFINITIONS.--l. A-slant', toward one side. 2. High'way, a public road. Re-treat', a place of refuge or safety, Crouch'es, stoops low. 3. Taunt'ing, deriding, mocking. 4. Ur'chin, a child.",
+   "stats": {
+    "words": 235,
+    "sentences": 15,
+    "words_per_sentence": 15.7,
+    "syllables_per_word": 1.42,
+    "fk_grade": 7.2,
+    "flesch_ease": 71.1
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XLV. THE TEMPEST",
+   "text": "By James T. Fields (born 1817, died 1881), who was born at Portsmouth, N. H. He was a poet, and the author, also, of some well known prose works. Of these, his \"Yesterdays with Authors\" is the most noted.\n\n1. We were crowded in the cabin; Not a soul would dare to sleep: It was midnight on the waters, And a storm was on the deep.\n\n2. 'T is a fearful thing in winter To be shattered by the blast, And to hear the rattling trumpet Thunder, \"Cut away the mast!\"\n\n3. So we shuddered there in silence, For the stoutest held his breath, While the hungry sea was roaring, And the breakers threatened death.\n\n4. And as thus we sat in darkness, Each one busy in his prayers, \"We are lost!\" the captain shouted, As he staggered down the stairs.\n\n5. But his little daughter whispered, As she took his icy hand, \"Is n't God upon the ocean, Just the same as on the land?\"\n\n6. Then we kissed the little maiden, And we spoke in better cheer; And we anchored safe in harbor When the morn was shining clear.\n\nDEFINITIONS.--l. Deep, the ocean. 2. Blast, tempest. 3. Break'ers, waves of the sea broken by rocks. 6. Cheer, state of mind.",
+   "stats": {
+    "words": 202,
+    "sentences": 16,
+    "words_per_sentence": 12.6,
+    "syllables_per_word": 1.31,
+    "fk_grade": 4.8,
+    "flesch_ease": 83.0
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "XLIX. THE SANDPIPER",
+   "text": "By CELIA THAXTER.\n\n1. Across the lonely beach we flit, One little sandpiper and I, And fast I gather, bit by bit, The scattered driftwood, bleached and dry. The wild waves reach their hands for it, The wild wind raves, the tide runs high, As up and down the beach we flit, One little sandpiper and I.\n\n2. Above our heads the sullen clouds Scud, black and swift, across the sky; Like silent ghosts in misty shrouds Stand out the white lighthouses high. Almost as far as eye can reach I see the close-reefed vessels fly, As fast we flit across the beach, One little sandpiper and I.\n\n3. I watch him as he skims along, Uttering his sweet and mournful cry; He starts not at my fitful song, Nor flash of fluttering drapery. He has no thought of any wrong, He scans me with a fearless eye; Stanch friends are we, well-tried and strong, The little sandpiper and I.\n\n4. Comrade, where wilt thou be to-night, When the loosed storm breaks furiously? My driftwood fire will burn so bright! To what warm shelter canst thou fly? I do not fear for thee, though wroth The tempest rushes through the sky; For are we not God's children both, Thou, little sandpiper, and I?\n\nDEFINITIONS.--l. Sand'pi-per, a bird of the snipe family, found along the seacoast. Drift'wood. wood tossed on shore by the waves. Bleached, whitened. Tide, the regular rise and fall of the ocean which occurs twice in a little over twenty-four hours. 2. Scud, fly hastily. Shrouds, Winding sheets, dresses of the dead. Close'reefed, with sails contracted as much as possible. 3. Fit'ful, irregularly variable. Draper-y, garments. Scans, looks at care-fully. Stanch, firm. 4. Wroth, angry.",
+   "stats": {
+    "words": 288,
+    "sentences": 25,
+    "words_per_sentence": 11.5,
+    "syllables_per_word": 1.4,
+    "fk_grade": 5.4,
+    "flesch_ease": 77.1
+   },
+   "new_vocab_vs_band": null
+  },
+  {
+   "label": "LII. THE SNOW MAN",
+   "text": "By Marian Douglas.\n\n1. Look! how the clouds are flying south! The winds pipe loud and shrill! And high above the white drifts stands The snow man on the hill.\n\n2. Blow, wild wind from the icy north! Here's one who will not fear To feel thy coldest touch, or shrink Thy loudest blast to hear.\n\n3. Proud triumph of the schoolboy's skill! Far rather would I be A winter giant, ruling o'er A frosty realm, like thee,\n\n4. And stand amid the drifted snow, Like thee, a thing apart, Than be a man who walks with men, But has a frozen heart!\n\nDEFINITIONS.--l. Pipe, whistle. 2. Shrink, to draw back on account of fear. 3. Triumph, success causing exultation. Realm, the territory over which authority is used, dominion.\n\nEXERCISES.--With what is the snow man compared in this poem? What is meant by a man with \"a frozen heart\"? Do you think such a man would follow the Golden Rule?",
+   "stats": {
+    "words": 156,
+    "sentences": 18,
+    "words_per_sentence": 8.7,
+    "syllables_per_word": 1.31,
+    "fk_grade": 3.2,
+    "flesch_ease": 87.4
+   },
+   "new_vocab_vs_band": null
+  }
+ ]
+}
