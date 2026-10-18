@@ -300,7 +300,7 @@
     var blob = new Blob([json], { type: 'application/json' });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
-    a.href = url; a.download = S.syncFileName(child.name, new Date());
+    a.href = url; a.download = S.syncFileName(child.name, S.dayStr(new Date())); /* day string: filename matches Sprout_<child>_<YYYY-MM-DD>.json, no spaces/colons */
     document.body.appendChild(a); a.click(); a.remove();
     setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
     toast('Exported ' + child.name + '’s progress file — move it to another device by hand (files only, nothing networked).');
@@ -347,7 +347,7 @@
   function parentNoteAdd(childId, text) {
     var S = SYN();
     if (!S) { return; }
-    var res = S.addParentNote(dashLoad(), childId, text, new Date().toISOString());
+    var res = S.addParentNote(dashLoad(), childId, text, new Date()); /* Date, not ISO string: addParentNote calls now.getTime()/toISOString() */
     dashSave(res && res.dash ? res.dash : dashLoad());
     viewChildren();
   }

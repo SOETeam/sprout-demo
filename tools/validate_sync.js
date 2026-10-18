@@ -96,6 +96,16 @@ var nod = JSON.parse(JSON.stringify(blob));
 nod._sync.device.id = 'machine-fingerprint-99';
 assert(sync.validateSyncBlob(nod).ok === false, 'non-d_ device tag rejected (PII law)');
 
+/* ---------- [5] Parent notes: add/delete live only in dash.pnotes ---------- */
+console.log('[5] parent notes add + delete');
+var nd1 = sync.addParentNote(sync.emptyDash(), 'kid', 'Reads best after lunch', D(50000));
+assert(nd1.note.id === 'n_50000' && nd1.note.at === '1970-01-01T00:00:50.000Z', 'note add with Date now (wiring contract) shapes id + at');
+assert(nd1.dash.pnotes.kid.length === 1 && nd1.dash.pnotes.kid[0].text === 'Reads best after lunch', 'note stored under the child in dash.pnotes');
+var nd2 = sync.addParentNote(nd1.dash, 'kid', '   ', D(51000));
+assert(nd2.dash.pnotes.kid.length === 1, 'blank note text is dropped');
+var nd3 = sync.deleteParentNote(nd2.dash, 'kid', 'n_50000');
+assert(nd3.pnotes.kid.length === 0, 'note delete removes by id');
+
 console.log('\n========================================');
 if (FAILURES.length === 0) {
   console.log('VALIDATOR PASS: ' + PASS + '/' + PASS + ' checks green');
