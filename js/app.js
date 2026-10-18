@@ -25,6 +25,7 @@
     placement: function (id) { return NS + '.placement.' + id; },
     yearplan: function (id) { return NS + '.yearplan.' + id; },
     progress: function (id) { return NS + '.progress.' + id; },
+    dash: NS + '.dash_v1',                                       // sync lane: parent dash
     landingSeen: NS + '.landing.seen'                         // P1 one-shot first-run flag
   };
 
@@ -261,6 +262,100 @@
     if (pl && pl.guardian_gate && pl.guardian_gate.status === 'approved') return 'ceremony';
     if (pl) return 'placement';
     return 'assess';
+  }
+
+  /* ================= SYNC (parent dashboard, local-first) =================
+     Ported from the SaittaSprout sync lane (owner order 2026-10-18), SPROUT
+     namespace: window.SPROUT_SYNC (js/sync.js, loaded before this file) is a
+     pure export/validate/merge layer — no DOM, no storage, no fetch. This
+     wiring owns the sprout_demo_v1.dash_v1 localStorage key, the parent
+     dashboard block on the children page, and the validate-then-merge chain
+     (validateSyncBlob -> mergeSyncBlob -> dashSave).
+     Privacy law: first names only, random device tags (d_xxxx), no emails,
+     localStorage only, zero network. Merge policy lives in js/sync.js:
+     last-write-wins per key, best+last+flag on score conflicts, dedupe by
+     (student, lesson, completed_at) via the per-device ledger. */
+  function SYN() { return window.SPROUT_SYNC || null; }
+  function dashLoad() {
+    try { return JSON.parse(localStorage.getItem(K.dash) || '{}'); } catch (e) { return {}; }
+  }
+  function dashSave(d) {
+    try { localStorage.setItem(K.dash, JSON.stringify(d)); } catch (e) {}
+  }
+  /* Stable random device tag for this browser (lives inside the dash blob). */
+  function parentDevice() {
+    var S = SYN();
+    if (!S) { return null; }
+    var r = S.ensureDevice(dashLoad());
+    if (r.created) { dashSave(r.store); }
+    return r.device;
+  }
+  function parentExportChild(child) {
+    var S = SYN();
+    if (!S) { toast('Sync layer did not load — js/sync.js missing.', true); return; }
+    var dev = parentDevice();
+    if (!dev || !dev.id) { toast('No device tag available — export aborted.', true); return; }
+    var bundle = S.buildBundle(dashLoad(), child.id, true, dev, new Date());
+    var json = JSON.stringify(bundle, null, 2);
+    var blob = new Blob([json], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = S.syncFileName(child.name, new Date());
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+    toast('Exported ' + child.name + '’s progress file — move it to another device by hand (files only, nothing networked).');
+  }
+  function parentImportFiles() {
+    var S = SYN();
+    if (!S) { toast('Sync layer did not load — js/sync.js missing.', true); return; }
+    var inp = document.createElement('input');
+    inp.type = 'file'; inp.setAttribute('multiple', ''); inp.setAttribute('accept', '.json,application/json');
+    inp.addEventListener('change', function () {
+      var dash = dashLoad(), files = inp.files || [], done = 0, report = [];
+      if (!files.length) { return; }
+      for (var i = 0; i < files.length; i++) {
+        (function (f) {
+          var r = new FileReader();
+          r.onload = function () {
+            try {
+              var parsed = JSON.parse(r.result);
+              var v = S.validateSyncBlob(typeof parsed === 'string' ? parsed : r.result);
+              if (v && v.ok === false) {
+                report.push(f.name + ': ⚠️ ' + (v.error || 'rejected'));
+              } else {
+                var res = S.mergeSyncBlob(dash, parsed);
+                dash = res.dash;
+                var rp = res.report || {};
+                report.push(f.name + ': ' + (rp.student || 'merged') + ' · +' + (rp.addedKeys || 0) +
+                  ' entries' + (rp.conflicts && rp.conflicts.length ? ' · ' + rp.conflicts.length + ' conflict(s) flagged' : ''));
+              }
+            } catch (e) { report.push(f.name + ': ⚠️ ' + e.message); }
+            done++;
+            if (done === files.length) {
+              dashSave(dash);
+              viewChildren();
+              toast('Synced ' + files.length + ' file(s): ' + report.join(' · '),
+                report.some(function (line) { return line.indexOf('⚠️') >= 0; }));
+            }
+          };
+          r.readAsText(f);
+        })(files[i]);
+      }
+    });
+    inp.click();
+  }
+  function parentNoteAdd(childId, text) {
+    var S = SYN();
+    if (!S) { return; }
+    var res = S.addParentNote(dashLoad(), childId, text, new Date().toISOString());
+    dashSave(res && res.dash ? res.dash : dashLoad());
+    viewChildren();
+  }
+  function parentNoteDelete(childId, noteId) {
+    var S = SYN();
+    if (!S) { return; }
+    dashSave(S.deleteParentNote(dashLoad(), childId, noteId));
+    viewChildren();
   }
 
   /* ---------------- synthetic name helper ---------------- */
@@ -536,6 +631,38 @@
         '</button>';
     }).join('');
 
+    /* parent dashboard sync rows: per-child lastSync stamp + device count,
+       Export progress file, Import file(s), parent notes (add/delete) */
+    var S = SYN();
+    var dash = S ? dashLoad() : null;
+    var syncRows = kids.map(function (c) {
+      var entry = S ? S.peekEntry(dash, c.id) : null;
+      var devCount = entry ? Object.keys(entry.devices || {}).length : 0;
+      var pn = (dash && Array.isArray(dash.pnotes) && dash.pnotes[c.id]) ? dash.pnotes[c.id] : [];
+      var h = '<div class="card syncrow">';
+      h += '<div class="syncrow-head"><span class="name">' + esc(c.name) + '</span>' +
+        '<span class="mono muted">last synced ' + esc(entry && entry.lastSync ? entry.lastSync : 'never') +
+        ' · ' + devCount + ' device' + (devCount === 1 ? '' : 's') + '</span></div>';
+      if (S) {
+        h += '<div class="row btns">' +
+          '<button class="btn ghost sm" type="button" data-sync-export="' + esc(c.id) + '">Export ' + esc(c.name) + '’s progress file</button>' +
+          '<button class="btn ghost sm" type="button" data-sync-import="' + esc(c.id) + '">Import file(s)</button>' +
+          '</div>';
+      } else {
+        h += '<div class="row"><span class="mono muted">sync layer unavailable</span></div>';
+      }
+      h += '<div class="pnotes"><h3>Parent notes</h3>';
+      for (var i = 0; i < pn.length; i++) {
+        h += '<div class="qrow"><span>' + esc(pn[i].text) + '</span>' +
+          '<button class="pill state" type="button" data-note-del="' + esc(c.id) + '|' + esc(pn[i].id) + '" aria-label="Delete note">✕</button></div>';
+      }
+      h += '<form class="noteadd" data-note-add="' + esc(c.id) + '">' +
+        '<input type="text" name="note" placeholder="Add a note about ' + esc(c.name) + '…" autocomplete="off" maxlength="240" aria-label="New parent note">' +
+        '<button class="btn ghost sm" type="submit">Add</button></form></div>';
+      h += '</div>';
+      return h;
+    }).join('');
+
     var html =
       '<section class="panel">' +
       '<h2>My children</h2>' +
@@ -545,6 +672,17 @@
         ? '<div class="grid3">' + cards + '</div>'
         : '<div class="grid3"><div class="card"><h3>No children yet</h3><p class="mono">Add one below to start the flow.</p></div></div>') +
       '</section>' +
+
+      (kids.length
+        ? '<section class="panel" id="sync-panel">' +
+          '<h2>Sync &amp; notes</h2>' +
+          '<p class="lede">Move ' + (kids.length === 1 ? 'this child' : 'a child') + '’s progress between devices by file — export here, import anywhere. ' +
+          'Files are the only thing that crosses devices; nothing is ever sent to a server. Parent notes live in this dashboard only.</p>' +
+          '<div class="grid3">' + syncRows + '</div>' +
+          '<p class="mono muted" style="margin-top:12px">Merged dash stored locally under <code>' + esc(K.dash) + '</code> · sync schema ' +
+          esc(S ? S.SYNC_SCHEMA : 'sprout-sync') + ' v' + (S ? S.SYNC_VERSION : 1) + ' · first names only, random device tags, no emails.</p>' +
+          '</section>'
+        : '') +
 
       '<section class="panel">' +
       '<h2>Add child</h2>' +
@@ -611,6 +749,30 @@
       if (stage === 'portal') go('#/portal/' + c.id);
       else if (stage === 'ceremony') go('#/ceremony/' + c.id);
       else go('#/assess/' + c.id);
+    });
+
+    var sp = $('sync-panel');
+    if (sp) sp.addEventListener('click', function (e) {
+      if (!SYN()) { return; }
+      var ex = e.target.closest ? e.target.closest('[data-sync-export]') : null;
+      if (ex) { var c1 = childById(ex.getAttribute('data-sync-export')); if (c1) parentExportChild(c1); return; }
+      var im = e.target.closest ? e.target.closest('[data-sync-import]') : null;
+      if (im) { parentImportFiles(); return; }
+      var del = e.target.closest ? e.target.closest('[data-note-del]') : null;
+      if (del) {
+        var kd = del.getAttribute('data-note-del').split('|');
+        parentNoteDelete(kd[0], kd[1]);
+        return;
+      }
+    });
+    if (sp) sp.addEventListener('submit', function (e) {
+      var f = e.target && e.target.closest ? e.target.closest('[data-note-add]') : null;
+      if (!f || !SYN()) { return; }
+      e.preventDefault();
+      var inp = f.querySelector('input[name=note]');
+      var text = ((inp && inp.value) || '').trim();
+      if (!text) { return; }
+      parentNoteAdd(f.getAttribute('data-note-add'), text);
     });
   }
 
