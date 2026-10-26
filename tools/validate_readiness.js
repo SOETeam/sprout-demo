@@ -489,6 +489,23 @@ L('Run: `node tools/validate_readiness.js [--strict] [--no-write]` or `bash tool
 const report = lines.join('\n') + '\n';
 if (!NO_WRITE) fs.writeFileSync(path.join(ROOT, 'K6_READINESS_MATRIX.md'), report);
 
+/* machine contract consumed by the P0.7 audit (tools/k6_readiness_audit.py
+   auto-detects tools/readiness_matrix_v2.json when present) */
+const contract = {
+  schema: 'k6_readiness/v2',
+  generated_at: new Date().toISOString(),
+  source: 'tools/validate_readiness.js',
+  axes: { grades: GRADES, months: MONTHS, weeks_per_month: WEEKS_PER_MONTH },
+  tiers: {},
+  counts: counts
+};
+GRADES.concat(APPENDIX).forEach((g) => {
+  contract.tiers[g] = {};
+  for (let m = 1; m <= MONTHS; m++) contract.tiers[g][String(m)] = matrix[g][m].tier;
+});
+if (!NO_WRITE) fs.writeFileSync(path.join(ROOT, 'tools', 'readiness_matrix_v2.json'),
+  JSON.stringify(contract, null, 1) + '\n');
+
 /* ------------------------------------------------------------------ stdout */
 console.log(report);
 

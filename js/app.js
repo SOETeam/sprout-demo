@@ -1778,8 +1778,13 @@
       else weekMap.push({ week: wn, theme: w.theme || '', status: wn <= 2 ? 'full' : 'topics_only', days: (w.days || []).length, blocks: w.counts ? w.counts.blocks : 0 });
     }
     var covered = {};
-    for (var i = 1; i <= 2; i++) {
-      var wd = weekData(gk, i);
+    /* P0.4 honesty fix (flagged by the P0.7 baseline): union EVERY authored week,
+       not just weeks 1-2 — the card must not read more favourably than the
+       per-week validator. Topic-only weeks contribute no blocks, so today's
+       numbers are unchanged; future content waves are counted from the start. */
+    var authoredWeeks = Object.keys(weeks(gk)).map(Number).sort(function (a, b) { return a - b; });
+    for (var wi = 0; wi < authoredWeeks.length; wi++) {
+      var wd = weekData(gk, authoredWeeks[wi]);
       (wd && wd.days || []).forEach(function (d) {
         (d.blocks || []).forEach(function (b) {
           var s = (b.subject || '').toLowerCase();
@@ -2274,7 +2279,7 @@
     out += '<div class="card" style="margin-top:14px"><h3>Coverage audit — nine statutory subjects</h3>' +
       '<div class="cov">' + cov.map(function (a) {
         return '<span><b>' + (a.covered_in_weeks > 0 ? '✓' : '·') + '</b> ' + esc(a.subject) +
-          '<div class="mono">' + (a.covered_in_weeks > 0 ? a.covered_in_weeks + ' block(s) w1–2' : 'on the year spine') + '</div></span>';
+          '<div class="mono">' +            (a.covered_in_weeks > 0 ? a.covered_in_weeks + ' block(s) across authored weeks' : 'on the year spine') + '</div></span>';
       }).join('') + '</div>' +
       '<p class="mono" style="margin-top:10px">' + esc(COMPLIANCE_COPY) + ' · MCL 380.1561(3)(f) · verified-D7 · not legal advice</p></div>';
     out += monthPlanCardHTML(c, pl, yp);
