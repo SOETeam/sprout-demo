@@ -392,6 +392,393 @@
   var SYNTH_I = 0;
   function synthName() { var n = SYNTH[SYNTH_I % SYNTH.length]; SYNTH_I++; return n; }
 
+  /* ================= P0.5 / P0.6 — month-at-a-time engine (client port) =========
+     Port of the /root/sprout sprout/planning package (generate_month, roadmap §3
+     STEP 3-7) to the static demo for the live grades (preschool/3/5, K/1/2/4 lane).
+     Same laws, same fold-map as tools/validate_readiness.js:
+       * guardian gate on every placement+plan (no approval -> no plan)
+       * 9/9 statutory coverage is a HARD constraint on homeschool skeletons
+       * mastery gate 0.80, minutes = internal planning number
+       * tutor mode: session-shaped blocks, 2-3/wk, gap-targets only, coverage
+         TRACKED not claimed (TUTOR_NOTE)
+       * status stays 'draft' until the guardian approves (gate #2) — the engine
+         never auto-approves.
+     Binding-ladder proxy: the demo's authored lessons carry no skill_node, so
+     "node-matched" is proxied by same-week + subject match; node-level binding
+     lands when lessons ship skill_node (validator gate (e) already reads it).
+     Zero network, localStorage only. */
+  var MODES = ['homeschool', 'tutor'];
+  var TUTOR_NOTE = "tutor plan supplements the family's statutory spine — coverage is tracked, not claimed";
+  var HOMESCHOOL_NOTE = 'organizes Michigan-required subject coverage (MCL 380.1561(3)(f)) — not legal advice';
+  var NON_STAT_SUBJECTS = ['coding', 'art', 'motor', 'music', 'pe', 'physical_education',
+    'health', 'technology', 'enrichment', 'library'];
+  var FOLD_MAP = {
+    ela: ['reading', 'writing', 'spelling', 'literature', 'english_grammar'],
+    social_studies: ['history', 'civics'],
+    math: ['mathematics'], maths: ['mathematics'], read: ['reading'],
+    reading_comp: ['reading'], lit: ['literature'],
+    grammar: ['english_grammar'], english: ['english_grammar']
+  };
+  var PRESCHOOL_STATUTORY = ['literature', 'mathematics', 'reading', 'science', 'writing'];
+  var HOME_DAYS = 4, HOME_BLOCKS = 6;
+  var SLOT_WEIGHT = { mathematics: 4, reading: 4, writing: 4, science: 4, spelling: 2,
+    english_grammar: 2, history: 2, literature: 1, civics: 1 };
+  var SLOT_PRIORITY = ['mathematics', 'reading', 'writing', 'science', 'spelling',
+    'english_grammar', 'history', 'literature', 'civics'];
+  var DAY_CORE = ['mathematics', 'reading'];
+  var LITERACY = ['writing', 'english_grammar', 'spelling'];
+  var SUBJECT_MIN = { mathematics: 45, reading: 45, writing: 30, science: 35,
+    spelling: 20, english_grammar: 20, history: 25, literature: 25, civics: 20 };
+  /* provisional norms (roadmap §2.3 minute law): [target, lo, hi=overload cap] */
+  var DAY_NORM = { preschool: [180, 150, 180], K: [180, 150, 180], '1': [180, 150, 180],
+    '2': [195, 160, 210], '3': [210, 180, 230], '4': [210, 180, 230],
+    '5': [210, 180, 240], '6': [210, 180, 240] };
+  var TUTOR_SESSION_SHAPE = [['pre_check', 8], ['teach', 18], ['practice', 15],
+    ['exit_ticket', 6]];
+  var TUTOR_SESSIONS_DEFAULT = 3;
+
+  function dayNorm(gk) { return DAY_NORM[gk] || [210, 180, 240]; }
+  function monthPlanKey(id) { return NS + '.monthplan.' + id; }
+  function foldStatutory(subj) {
+    var s = String(subj == null ? '' : subj).toLowerCase();
+    if (NON_STAT_SUBJECTS.indexOf(s) >= 0) return [];        // never counts toward 9/9
+    return FOLD_MAP[s] || [s];
+  }
+  function statutoryForGrade(gk) {
+    return String(gk) === 'preschool' ? PRESCHOOL_STATUTORY.slice() : STATUTORY.slice();
+  }
+  function subjectLabelFor(stat, gk) {
+    gk = String(gk);
+    /* K/1/2 speak the folded vocabulary (ela, social_studies) — same fold-map as
+       the engine's spine.subject_label() and tools/validate_readiness.js. */
+    if (gk === 'K' || gk === '1' || gk === '2') {
+      if (['reading', 'writing', 'spelling', 'literature', 'english_grammar'].indexOf(stat) >= 0) return 'ela';
+      if (['history', 'civics'].indexOf(stat) >= 0) return 'social_studies';
+      if (stat === 'mathematics') return 'math';
+      return stat;
+    }
+    return stat === 'mathematics' ? 'math' : stat;
+  }
+  /* ---- P0.6 mode: account.mode, child.mode override, plan.mode copy ---- */
+  function accountMode() { var a = store.account(); return (a && a.mode) || 'homeschool'; }
+  function modeFor(c) { return (c && c.mode) || accountMode(); }
+  function setMode(c, mode) {
+    if (MODES.indexOf(mode) < 0) mode = 'homeschool';
+    var a = store.account();
+    if (a) { a.mode = mode; store.set(K.account, a); }
+    if (c) {
+      var kids = children();
+      for (var i = 0; i < kids.length; i++) if (kids[i].id === c.id) kids[i].mode = mode;
+      store.saveChildren(kids); c.mode = mode;
+    }
+    return mode;
+  }
+  /* ---- weekly slot template: 9/9 hard constraint first, then weights ---- */
+  function weeklySlotCounts(stat, total) {
+    var counts = {}, left, exact = {}, base = {}, sum = 0, i, s;
+    if (total < stat.length) return null;                     // cannot fit 9/9
+    for (i = 0; i < stat.length; i++) counts[stat[i]] = 1;
+    left = total - stat.length;
+    var wsum = 0;
+    for (i = 0; i < stat.length; i++) wsum += (SLOT_WEIGHT[stat[i]] || 1);
+    wsum = wsum || 1;
+    for (i = 0; i < stat.length; i++) {
+      exact[stat[i]] = ((SLOT_WEIGHT[stat[i]] || 1) * left) / wsum;
+      base[stat[i]] = Math.floor(exact[stat[i]]);
+      counts[stat[i]] += base[stat[i]];
+      sum += base[stat[i]];
+    }
+    var rem = left - sum;
+    var order = stat.slice().sort(function (a, b) {
+      var fa = exact[a] - base[a], fb = exact[b] - base[b];
+      if (fa !== fb) return fb - fa;
+      var pa = SLOT_PRIORITY.indexOf(a), pb = SLOT_PRIORITY.indexOf(b);
+      return (pa < 0 ? 99 : pa) - (pb < 0 ? 99 : pb);
+    });
+    for (i = 0; i < rem && i < order.length; i++) counts[order[i]]++;
+    return counts;
+  }
+  function homeschoolSlots(gk, dayCount, blocksPerDay) {
+    dayCount = dayCount || HOME_DAYS; blocksPerDay = blocksPerDay || HOME_BLOCKS;
+    var stat = statutoryForGrade(gk);
+    var counts = weeklySlotCounts(stat, dayCount * blocksPerDay);
+    if (!counts) return [];
+    var days = [];
+    for (var d = 0; d < dayCount; d++) {
+      var picks = [], i, s;
+      for (i = 0; i < DAY_CORE.length && picks.length < blocksPerDay; i++) {
+        s = DAY_CORE[i];
+        if (counts[s] > 0 && picks.indexOf(s) < 0) { counts[s]--; picks.push(s); }
+      }
+      for (i = 0; i < LITERACY.length && picks.length < blocksPerDay; i++) {
+        s = LITERACY[i];
+        if (picks.indexOf(s) >= 0) continue;
+        if (counts[s] > 0) { counts[s]--; picks.push(s); break; }
+      }
+      while (picks.length < blocksPerDay) {
+        var best = null, bestKey = null;
+        Object.keys(counts).forEach(function (k) {
+          if (counts[k] <= 0) return;
+          var key = (picks.indexOf(k) >= 0 ? 1 : 0) * 1000 + (-counts[k]) * 10 +
+            (SLOT_PRIORITY.indexOf(k) < 0 ? 99 : SLOT_PRIORITY.indexOf(k));
+          if (bestKey === null || key < bestKey) { bestKey = key; best = k; }
+        });
+        if (best === null) break;
+        counts[best]--; picks.push(best);
+      }
+      days.push(picks);
+    }
+    return days;
+  }
+  /* ---- STEP 3 gap map: placement domains -> per-subject targets ---- */
+  function gapMapFor(c, pl) {
+    var stat = statutoryForGrade(c.grade), sig = {};
+    (pl && pl.domains || []).forEach(function (d) {
+      foldStatutory(d.domain).forEach(function (s) {
+        var e = sig[s] || (sig[s] = { mastered: {}, gaps: {}, prereq: {}, se: null });
+        (d.mastered_skills || []).forEach(function (x) { e.mastered[x] = 1; });
+        (d.focus_skills || d.gap_skills || []).forEach(function (x) { e.gaps[x] = 1; });
+        (d.prerequisite_gaps || []).forEach(function (x) { e.prereq[x] = 1; });
+        if (typeof d.se === 'number') e.se = (e.se == null) ? d.se : Math.max(e.se, d.se);
+      });
+    });
+    var gm = {};
+    stat.forEach(function (s) {
+      var e = sig[s] || { mastered: {}, gaps: {}, prereq: {}, se: null };
+      var gaps = Object.keys(e.gaps);
+      var action = gaps.length ? 'focus' : (Object.keys(e.mastered).length ? 'maintain' : 'spine');
+      gm[s] = {
+        statutory: s, grade: String(c.grade),
+        target: gaps[0] || null,
+        action: action,
+        mastered: Object.keys(e.mastered),
+        repair: (Object.keys(e.prereq).filter(function (p) { return !e.mastered[p]; }))[0] || null,
+        rationale: gaps.length ? 'placement gap signal — focus skill'
+          : (action === 'maintain' ? 'every signal mastered — spiral review'
+            : 'no placement signal for this subject — spine default'),
+        se: e.se,
+        spot_check: (e.se != null && e.se > 0.6)
+          ? { week: 1, reason: 'low confidence (se ' + e.se + ') — start one node below' }
+          : null
+      };
+      if (String(c.grade) === 'preschool') {
+        gm[s].action = 'show_me';
+        gm[s].rationale = 'preschool bypasses scoring — show-me checklist, portfolio, no pass mark';
+      }
+    });
+    return gm;
+  }
+  /* ---- lesson binding ladder: node-matched -> spiral -> fallback ---- */
+  function bindLesson(lessons, subjectLabel, wno) {
+    var exact = null, spiral = null;
+    Object.keys(lessons).forEach(function (id) {
+      var e = lessons[id], l = e.lesson || {};
+      if (String(l.subject || '').toLowerCase() !== subjectLabel) return;
+      if (+e.week === wno && !exact) exact = id;
+      if (+e.week < wno && !spiral) spiral = id;
+    });
+    if (exact) return { tier: 'exact', lesson_ref: exact, note: 'node-matched lesson (same week, subject match)' };
+    if (spiral) return { tier: 'spiral', lesson_ref: spiral, note: 'spiral review — earlier-week lesson' };
+    return { tier: 'fallback', lesson_ref: null, note: 'subject fallback — no authored lesson yet' };
+  }
+  function blockMinutes(stat, norm, attention) {
+    var raw = SUBJECT_MIN[stat] || 25;
+    raw = raw * (norm[0] / 210);
+    return Math.max(5, Math.min(attention || 45, Math.round(raw)));
+  }
+  /* ---- test binding: covers[] = target nodes, passScore 0.80 (0.0 preschool n/a) ---- */
+  function bindTest(lessons, blocks, wno, grade, prefix) {
+    var covers = [], seen = {}, questions = [];
+    blocks.forEach(function (b) {
+      if (b.skill_node && !seen[b.skill_node]) { seen[b.skill_node] = 1; covers.push(b.skill_node); }
+    });
+    blocks.forEach(function (b) {
+      var e = b.lesson_ref ? lessons[b.lesson_ref] : null;
+      var l = e && e.lesson;
+      if (!l || !l.content || !Array.isArray(l.content.practice)) return;
+      l.content.practice.forEach(function (p) {
+        questions.push({ q: p.question, options: p.options, correctIndex: p.correctIndex,
+          why: p.hint || p.praise || '' });
+      });
+    });
+    return {
+      quizId: (prefix || 'wk') + wno + '_test',
+      title: (prefix === 'session_' ? 'Session check ' : 'Week ') + wno + ' test',
+      format: 'tap-mcq', tapFriendly: true,
+      passScore: String(grade) === 'preschool' ? null : 0.80,   // preschool: NO pass mark
+      covers: covers, question_count: questions.length, questions: questions
+    };
+  }
+  function coverageAudit(weeksBlocks, stat) {
+    var counts = {}, excluded = {};
+    stat.forEach(function (s) { counts[s] = 0; });
+    weeksBlocks.forEach(function (b) {
+      var folds = foldStatutory(b.subject);
+      if (!folds.length) { var k = String(b.subject || '?').toLowerCase(); excluded[k] = (excluded[k] || 0) + 1; return; }
+      folds.forEach(function (s) { if (counts[s] != null) counts[s]++; });
+    });
+    var missing = stat.filter(function (s) { return counts[s] === 0; });
+    return { counts: counts, missing: missing, excluded_non_statutory: excluded,
+      covered: stat.length - missing.length, required: stat.length, ok: missing.length === 0 };
+  }
+  /* ---- hash for generated_from.mastery_snapshot_hash (no crypto dependency) ---- */
+  function hashStr(s) {
+    var h = 5381;
+    for (var i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) >>> 0;
+    return ('00000000' + h.toString(16)).slice(-8);
+  }
+  /* ---- STEP 4-6: generate_month() -> monthly_plan/v1 + 4 weekly_plan/v1 ---- */
+  function generateMonth(c, opts) {
+    opts = opts || {};
+    var mode = MODES.indexOf(opts.mode) >= 0 ? opts.mode : modeFor(c);
+    var month = Math.max(1, Math.min(9, +(opts.month || 1)));
+    var pl = store.get(K.placement(c.id), null);
+    var yp = store.get(K.yearplan(c.id), null);
+    if (!pl || !pl.guardian_gate || pl.guardian_gate.status !== 'approved' ||
+      pl.plan_generation_allowed === false) {
+      return { error: 'placement', message: 'Placement is locked until a guardian reviews it — no month plan can be generated.' };
+    }
+    if (!yp || !yp.approved) {
+      return { error: 'yearplan', message: 'The year plan is still draft — approve it before generating a month.' };
+    }
+    var stat = statutoryForGrade(c.grade);
+    var gm = gapMapFor(c, pl);
+    var lessons = allWeekLessonIds(c.grade);
+    var norm = dayNorm(c.grade), cap = norm[2];
+    var sessionsPer = Math.max(2, Math.min(3, +(opts.sessions_per_week || TUTOR_SESSIONS_DEFAULT)));
+    var focusTargets = stat.filter(function (s) { return gm[s].target; });
+    var weeks = [], coverage = [], overload = [], errors = [];
+
+    for (var wi = 1; wi <= 4; wi++) {
+      var wno = (month - 1) * 4 + wi;
+      var days = [], allBlocks = [];
+      if (mode === 'tutor') {
+        /* P0.6 tutor: session-shaped blocks, gap-targets ONLY */
+        var tcount = focusTargets.length ? Math.min(sessionsPer, focusTargets.length) : sessionsPer;
+        for (var si = 1; si <= tcount; si++) {
+          var statForSession = focusTargets.length
+            ? focusTargets[(si - 1) % focusTargets.length] : null;
+          var entry = statForSession ? gm[statForSession] : null;
+          var label = statForSession ? subjectLabelFor(statForSession, c.grade) : null;
+          var sblocks = TUTOR_SESSION_SHAPE.map(function (shape, bi) {
+            var binding = statForSession ? bindLesson(lessons, label, wno)
+              : { tier: 'fallback', lesson_ref: null, note: 'no open gap — review session' };
+            return {
+              block: bi + 1, phase: shape[0], subject: label, statutory: statForSession,
+              min: Math.max(2, Math.min(45, Math.round(shape[1]))),
+              activity: shape[0].replace('_', ' ') + ' — ' + binding.note +
+                (entry && entry.target ? ' (' + entry.target + ')' : ''),
+              lesson_ref: binding.lesson_ref,
+              skill_node: entry ? entry.target : null,
+              binding: binding
+            };
+          });
+          allBlocks = allBlocks.concat(sblocks);
+          days.push({ session: si, day: si, blocks: sblocks,
+            target: entry ? { statutory: statForSession, target: entry.target,
+              action: entry.action, rationale: entry.rationale } : null,
+            total_min: sblocks.reduce(function (a, b) { return a + b.min; }, 0) });
+        }
+      } else {
+        var slots = homeschoolSlots(c.grade);
+        slots.forEach(function (daySlots, di) {
+          var blocks = daySlots.map(function (statSubj, bi) {
+            var entry = gm[statSubj] || {};
+            var label = subjectLabelFor(statSubj, c.grade);
+            var binding = bindLesson(lessons, label, wno);
+            var target = (wi === 1 && entry.repair) ? entry.repair : entry.target;
+            return {
+              block: bi + 1, subject: label, statutory: statSubj,
+              min: blockMinutes(statSubj, norm, 45),
+              activity: (entry.target || statSubj) + ' — ' + binding.note,
+              lesson_ref: binding.lesson_ref,
+              skill_node: target,            // demo placement carries skill tags, not tree ids
+              binding: binding
+            };
+          });
+          allBlocks = allBlocks.concat(blocks);
+          days.push({ day: di + 1, blocks: blocks,
+            total_min: blocks.reduce(function (a, b) { return a + b.min; }, 0) });
+        });
+      }
+      var cov = coverageAudit(allBlocks, stat);
+      cov.week = wno;
+      cov.claim = mode === 'tutor' ? 'tracked-not-claimed' : 'claimed-full';
+      if (mode === 'tutor' && !cov.ok) {
+        cov.tracking_note = "gaps are tracked against the family's statutory spine, not claimed by this plan";
+      }
+      coverage.push(cov);
+      if (!cov.ok && mode === 'homeschool') {
+        errors.push({ type: 'coverage', week: wno, missing: cov.missing });
+      }
+      days.forEach(function (d) {
+        if (d.total_min > cap) {
+          overload.push({ week: wno, day: d.day, total_min: d.total_min, cap: cap });
+          errors.push({ type: 'overload', week: wno, day: d.day, total_min: d.total_min, cap: cap });
+        }
+      });
+      var wpl = {
+        schema: 'weekly_plan/v1', plan_id: uid('wplan'), learner_id: c.id,
+        grade: String(c.grade), month: month, week: wno, mode: mode, status: 'draft',
+        targets: allBlocks.filter(function (b) { return b.skill_node; })
+          .map(function (b) { return b.skill_node; })
+          .filter(function (v, i, a) { return a.indexOf(v) === i; }),
+        test: bindTest(lessons, allBlocks, wno, c.grade, mode === 'tutor' ? 'session_' : 'wk'),
+        coverage_audit: cov,
+        spot_checks: stat.filter(function (s) { return gm[s].spot_check; })
+          .map(function (s) { return gm[s].spot_check; }),
+        generated_from: { placement_id: pl.report_id, mastery_snapshot_hash: null },
+        adjustments_applied: []
+      };
+      if (mode === 'tutor') wpl.sessions = days; else wpl.days = days;
+      weeks.push(wpl);
+    }
+    var sig = hashStr(JSON.stringify({ p: pl.report_id, m: month, g: c.grade, mode: mode,
+      focus: focusTargets }));
+    weeks.forEach(function (w) { w.generated_from.mastery_snapshot_hash = sig; });
+    return {
+      schema: 'monthly_plan/v1', plan_id: uid('mplan'), learner_id: c.id,
+      grade: String(c.grade), month: month, mode: mode, status: 'draft',
+      weeks: weeks, targets: gm, assessment_ref: pl.report_id,
+      generated_from: { placement_id: pl.report_id, mastery_snapshot_hash: sig },
+      pacing: { norms_version: 'provisional-2026-10', state_preset: 'MI', day_norm: norm,
+        minutes_note: 'minutes are an internal planning number' },
+      audits: { coverage: coverage, overload: overload, errors: errors,
+        coverage_claim: mode === 'tutor' ? 'tracked-not-claimed' : 'claimed-full' },
+      mode_note: mode === 'tutor' ? TUTOR_NOTE : HOMESCHOOL_NOTE,
+      ready_for_gate: errors.length === 0,
+      guardian_gate: { status: 'pending', decided_by: null, decided_at: null, notes: null },
+      created_at: new Date().toISOString()
+    };
+  }
+  function monthPlanStore(c) {
+    return store.get(monthPlanKey(c.id), { schema: MARKER + '.monthplans', current: null, history: [] });
+  }
+  function saveMonthPlan(c, plan) {
+    var box = monthPlanStore(c);
+    if (box.current && plan.month !== box.current.month) {
+      box.history = (box.history || []).concat([{
+        month: box.current.month, mode: box.current.mode, status: box.current.status,
+        coverage_claim: box.current.audits.coverage_claim,
+        targets: Object.keys(box.current.targets || {}).length,
+        generated_at: box.current.created_at
+      }]).slice(-11);
+    }
+    box.current = plan;
+    store.set(monthPlanKey(c.id), box);
+    return box;
+  }
+  function approveMonthPlan(c, plan, decidedBy) {
+    if (plan.audits && plan.audits.errors && plan.audits.errors.length) {
+      return { error: 'audits', message: 'Audit violations on this plan — it stays draft and never ships.' };
+    }
+    plan.status = 'active';
+    plan.guardian_gate = { status: 'approved', decided_by: decidedBy || 'guardian',
+      decided_at: new Date().toISOString(), notes: null };
+    saveMonthPlan(c, plan);
+    return plan;
+  }
+
   /* ---------------- router ---------------- */
   var ROUTES = [
     { re: /^#?\/?$/, view: 'landing' },
@@ -575,6 +962,10 @@
       '<button type="button" class="gradeopt" data-role="student">Student<span class="tag">→ keypad gate</span></button>' +
       '<button type="button" class="gradeopt" data-role="tutor">Tutor<span class="tag">→ class view</span></button>' +
       '</div><div class="hint">Pick once — it decides where you land after signup. Stored in this browser only.</div></div>' +
+      '<div class="field"><label>Plan mode (P0.6)</label><div class="gradelist" id="mode-list" role="radiogroup" aria-label="Plan mode">' +
+      '<button type="button" class="gradeopt on" data-planmode="homeschool">Homeschool<span class="tag">4-day × 6-block spine</span></button>' +
+      '<button type="button" class="gradeopt" data-planmode="tutor">Tutor<span class="tag">2–3 sessions / week</span></button>' +
+      '</div><div class="hint">Default plan shape for this browser. Every generated plan stores the mode it was built with; switch any time from a child’s parent view.</div></div>' +
       '<div class="field"><label for="su-pass">Passphrase</label>' +
       '<input id="su-pass" name="pass" type="password" required minlength="6" placeholder="at least 6 characters">' +
       '<div class="hint">Stored as a salted, stretched sha256 digest — never as plaintext.</div></div>' +
@@ -593,6 +984,14 @@
 
     renderInto(html);
     var selectedRole = 'parent';
+    var selectedMode = 'homeschool';
+    var ml = $('mode-list');
+    ml.addEventListener('click', function (e) {
+      var b = e.target.closest('.gradeopt'); if (!b) return;
+      Array.prototype.forEach.call(ml.querySelectorAll('.gradeopt'), function (x) { x.classList.remove('on'); });
+      b.classList.add('on');
+      selectedMode = b.getAttribute('data-planmode');
+    });
     var rl = $('role-list');
     rl.addEventListener('click', function (e) {
       var b = e.target.closest('.gradeopt'); if (!b) return;
@@ -614,8 +1013,9 @@
       }
       var salt = uid('sl');
       var role = ROLES.indexOf(selectedRole) >= 0 ? selectedRole : 'parent';
-      var rec = { schema: MARKER, name: name, family: family || null, role: role, salt: salt,
-        digest: digest(pass, salt), created_at: new Date().toISOString() };
+      var rec = { schema: MARKER, name: name, family: family || null, role: role,
+        mode: MODES.indexOf(selectedMode) >= 0 ? selectedMode : 'homeschool',
+        salt: salt, digest: digest(pass, salt), created_at: new Date().toISOString() };
       store.set(K.account, rec);
       store.set(K.session, { schema: MARKER, name: name, family: rec.family, role: role, at: new Date().toISOString() });
       store.set(K.landingSeen, { schema: MARKER, v: 1 });   // suppress the auto-landing below
@@ -1771,6 +2171,91 @@
     return out;
   }
 
+  /* ---------- P0.5/P0.6 month-plan card (parent view, guardian gate #2) ---------- */
+  function monthPlanCardHTML(c, pl, yp) {
+    var mode = modeFor(c);
+    var box = monthPlanStore(c);
+    var plan = box.current;
+    var plOk = pl && pl.guardian_gate && pl.guardian_gate.status === 'approved';
+    var out = '<div class="card" style="margin-top:14px"><h3>Month plan (one month at a time)</h3>';
+    out += '<div class="row"><span>Plan mode</span><b>' + esc(mode) + '</b></div>' +
+      '<div class="btnrow" style="margin-top:6px">' +
+      '<button type="button" class="btn ' + (mode === 'homeschool' ? '' : 'ghost') + ' sm" data-mode-set="' +
+      esc(c.id) + '|homeschool">Homeschool spine (4 days × 6 blocks)</button>' +
+      '<button type="button" class="btn ' + (mode === 'tutor' ? '' : 'ghost') + ' sm" data-mode-set="' +
+      esc(c.id) + '|tutor">Tutor sessions (2–3/week)</button></div>';
+
+    if (!plOk) {
+      out += '<div class="gate-blocked" style="margin-top:10px">⛔ Placement is locked until a guardian reviews it — no month plan can be generated.</div></div>';
+      return out;
+    }
+    if (!yp || !yp.approved) {
+      out += '<div class="gate-blocked" style="margin-top:10px">⛔ The year plan is still draft — approve it before generating a month.</div></div>';
+      return out;
+    }
+    if (!plan) {
+      out += '<p class="mono" style="margin-top:10px">No month generated yet. The engine reads the approved placement, builds a gap map per statutory subject, then drafts 4 weeks (9/9 hard constraint in homeschool mode).</p>' +
+        '<div style="margin-top:10px"><button type="button" class="btn amber" data-month-gen="' + esc(c.id) + '">Generate month draft →</button></div></div>';
+      return out;
+    }
+
+    /* what changed vs last month (or first month of this plan year) */
+    var prev = (box.history || []).length ? box.history[box.history.length - 1] : null;
+    var changed = prev
+      ? (prev.month !== plan.month || prev.mode !== plan.mode
+        ? 'month ' + prev.month + ' (' + prev.mode + ') → month ' + plan.month + ' (' + plan.mode + ')'
+        : 'regenerated month ' + plan.month + ' — gap map re-read from placement ' + (plan.assessment_ref || '—'))
+      : 'first month of this plan year — gap map read from placement ' + (plan.assessment_ref || '—');
+
+    out += '<div class="row"><span>Plan</span><b>' + esc(plan.schema) + ' · month ' + plan.month +
+      ' · ' + esc(plan.mode) + '</b></div>';
+    out += '<div class="row"><span>Status</span><b>' + esc(plan.status) +
+      (plan.guardian_gate && plan.guardian_gate.status === 'approved' ? ' (guardian approved)' : ' — guardian gate #2 pending') + '</b></div>';
+    out += '<div class="mono" style="margin-top:6px">changed vs last month: ' + esc(changed) + '</div>';
+
+    /* per-subject targets */
+    out += '<div class="cov" style="margin-top:10px">' + Object.keys(plan.targets).map(function (s) {
+      var t = plan.targets[s];
+      return '<span><b>' + (t.target ? '✓' : '·') + '</b> ' + esc(s) +
+        '<div class="mono">' + esc(t.action) + (t.target ? ' → ' + esc(t.target) : ' — spine') + '</div></span>';
+    }).join('') + '</div>';
+
+    /* audit results */
+    out += '<div class="mono" style="margin-top:10px">audits: ' +
+      plan.audits.coverage.map(function (cov) {
+        return 'wk' + cov.week + ' ' + cov.covered + '/' + cov.required + (cov.ok ? ' ✓' : ' ✗ missing ' + esc(cov.missing.join(',')));
+      }).join(' · ') + ' · overload ' + (plan.audits.overload.length ? esc(String(plan.audits.overload.length)) + ' ✗' : '✓') + '</div>';
+    if (plan.audits.errors && plan.audits.errors.length) {
+      out += '<div class="gate-blocked" style="margin-top:8px">⛔ Audit violations — this plan stays draft and never ships:<br>' +
+        plan.audits.errors.map(function (e) { return esc(e.type + (e.missing ? ': ' + e.missing.join(',') : (e.day ? ' day ' + e.day + ' ' + e.total_min + ' > ' + e.cap : ''))); }).join('<br>') + '</div>';
+    }
+    out += '<div class="mono" style="margin-top:8px">' + esc(plan.pacing.minutes_note) +
+      ' · norms ' + esc(plan.pacing.norms_version) + ' · ' + esc(plan.pacing.state_preset) +
+      ' · coverage ' + esc(plan.audits.coverage_claim) + '</div>';
+    if (plan.mode === 'tutor') {
+      out += '<div class="note" style="margin-top:8px">' + esc(plan.mode_note) + '</div>';
+      if (plan.audits.coverage.some(function (c) { return !c.ok; })) {
+        out += '<div class="mono" style="margin-top:6px">Gaps shown above are tracked against the family’s statutory spine — this tutor plan does not claim them.</div>';
+      }
+    } else {
+      out += '<div class="mono" style="margin-top:6px">' + esc(plan.mode_note) + '</div>';
+    }
+
+    /* guardian gate #2 */
+    if (plan.status === 'draft') {
+      out += '<div style="margin-top:12px">' +
+        '<button type="button" class="btn amber" data-month-approve="' + esc(c.id) + '"' +
+        (plan.audits.errors && plan.audits.errors.length ? ' disabled' : '') + '>Approve month plan (guardian gate #2) →</button> ' +
+        '<button type="button" class="btn ghost sm" data-month-gen="' + esc(c.id) + '">Regenerate draft</button></div>';
+    } else {
+      out += '<div class="mono" style="margin-top:10px">approved by ' +
+        esc((plan.guardian_gate && plan.guardian_gate.decided_by) || 'guardian') + ' at ' +
+        esc((plan.guardian_gate && plan.guardian_gate.decided_at) || '—') + ' — status active.</div>';
+    }
+    out += '</div>';
+    return out;
+  }
+
   function portalParentHTML(c) {
     var pl = store.get(K.placement(c.id), null);
     var yp = store.get(K.yearplan(c.id), null);
@@ -1792,6 +2277,7 @@
           '<div class="mono">' + (a.covered_in_weeks > 0 ? a.covered_in_weeks + ' block(s) w1–2' : 'on the year spine') + '</div></span>';
       }).join('') + '</div>' +
       '<p class="mono" style="margin-top:10px">' + esc(COMPLIANCE_COPY) + ' · MCL 380.1561(3)(f) · verified-D7 · not legal advice</p></div>';
+    out += monthPlanCardHTML(c, pl, yp);
     out += '<div class="card" style="margin-top:14px"><h3>Guardian approvals</h3>' +
       '<div class="skillrow"><span>Placement</span><span class="mono">' + esc(pl && pl.guardian_gate ? pl.guardian_gate.status : 'pending') + '</span></div>' +
       '<div class="skillrow"><span>Year plan</span><span class="mono">' + esc(yp && yp.guardian_gate ? yp.guardian_gate.status : 'pending') + '</span></div>' +
@@ -1799,11 +2285,14 @@
     return out;
   }
 
-  var portalWired = false;
   function wirePortal(c) {
     var b;
-    if (!portalWired && (b = $('portal-body'))) {
-      portalWired = true;               // delegated once — tab switches re-render the inner HTML only
+    /* P0.5 fix: renderPortal() rebuilds #portal-body (innerHTML), which destroys the
+       delegated listener — keying on a per-ELEMENT flag instead of an app-wide flag
+       keeps every body button (week tabs, lessons, tests, month plan) live after a
+       full re-render instead of dying after the first tab switch. */
+    if ((b = $('portal-body')) && !b.getAttribute('data-delegated')) {
+      b.setAttribute('data-delegated', '1');
       b.addEventListener('click', function (e) {
         var t = e.target.closest('button'); if (!t) return;
         if (t.hasAttribute('data-week')) { portal.week = +t.getAttribute('data-week'); renderPortalBody(c); return; }
@@ -1820,6 +2309,30 @@
           return;
         }
         if (t.hasAttribute('data-test')) { runWeeklyTest(c, t.getAttribute('data-test')); return; }
+        /* P0.5/P0.6 month plan: generate, approve (gate #2), switch mode */
+        var cc = portal.child || c;
+        if (t.hasAttribute('data-month-gen')) {
+          var gen = generateMonth(cc, { mode: modeFor(cc) });
+          if (gen.error) { toast(gen.message, true); return; }
+          saveMonthPlan(cc, gen);
+          toast('Month ' + gen.month + ' draft generated — guardian gate #2 is pending.');
+          portal.tab = 'parent'; renderPortalBody(cc); return;
+        }
+        if (t.hasAttribute('data-month-approve')) {
+          var bx = monthPlanStore(cc);
+          if (!bx.current) return;
+          var ap = approveMonthPlan(cc, bx.current, (requireSession() || {}).name || 'guardian');
+          if (ap.error) { toast(ap.message, true); return; }
+          toast('Month ' + ap.month + ' plan approved — status active.');
+          renderPortalBody(cc); return;
+        }
+        if (t.hasAttribute('data-mode-set')) {
+          var parts = t.getAttribute('data-mode-set').split('|');
+          var kid = childById(parts[0]) || cc;
+          setMode(kid, parts[1]);
+          toast('Plan mode for this browser: ' + parts[1] + '.');
+          renderPortalBody(kid); return;
+        }
       });
     }
     if ((b = $('prog-export'))) b.addEventListener('click', function () { exportProgress(c); });
@@ -2102,7 +2615,14 @@
   window.SPROUT_DEMO = {
     NS: NS, store: store, digest: digest, content: CONTENT,
     exportPayload: exportPayload, STATUTORY: STATUTORY, GRADES_ENABLED: GRADES_ENABLED,
-    routes: route
+    routes: route,
+    /* P0.5/P0.6 engine (client port) — QA hooks */
+    generateMonth: generateMonth, approveMonthPlan: approveMonthPlan,
+    monthPlanStore: monthPlanStore, saveMonthPlan: saveMonthPlan,
+    gapMapFor: gapMapFor, modeFor: modeFor, setMode: setMode,
+    homeschoolSlots: homeschoolSlots, coverageAudit: coverageAudit,
+    foldStatutory: foldStatutory, statutoryForGrade: statutoryForGrade,
+    TUTOR_NOTE: TUTOR_NOTE, MODES: MODES
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
