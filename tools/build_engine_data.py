@@ -6,7 +6,7 @@ invented: every item's text/options/answer is copied verbatim from an existing
 weekly-test question, quiz question, lesson practice question, bank-mode
 generator item, or the CAT assessment.bank. skill_nodes come from an explicit
 hand-authored spec (below) shaped to the MI crosswalk codes in
-/root/LNM_BRAIN/SAITTASPROUT/MI_COMPLIANCE_MAP_2026-10-16.md §3 + the
+/root/LNM_BRAIN/SPROUT/MI_COMPLIANCE_MAP_2026-10-16.md §3 + the
 MONTH1_SCAFFOLD_1016.md module structure (modules are week-scoped).
 
 Subjects.yaml note: subjects.yaml lives in the engine repo
@@ -297,7 +297,7 @@ NODES += [
     SK('5.CODE.practice', '5', 'coding', 'Coding practice (practice)', '5.CODE', (), (), None, 2),
 ]
 # --------------------------- preschool (lite) -------------------------------
-# No MI crosswalk codes for preschool (crosswalk covers Max g3 / Adonis g5 only):
+# No MI crosswalk codes for preschool (crosswalk covers the g3 / g5 pilot only):
 # all preschool nodes are codeless skills under subject strands.
 NODES += [
     S('P.READ', 'preschool', 'reading', 'Reading (preschool, MCL: reading)', None),
@@ -705,26 +705,26 @@ BANK_MAP = {
 # item text/options/answers remain verbatim from content.json. Any lesson not
 # in this table and without a subject field is a hard build failure.
 NULL_SUBJ_LESSONS = {
-    'max_w2_l5': 'math',      # Mixed Fact Practice (5x0, 3x5, ...)
-    'max_w2_l6': 'math',      # Week 1-2 Cumulative Review (skip-count, arrays, estimate)
-    'max_w2_l7': 'math',      # Fact Fluency Builder (5x2, 3x0, ...)
-    'max_w2_l8': 'reading',   # Retell in Order
-    'max_w2_l9': 'coding',    # Morning Routine Code
-    'max_w2_l10': 'reading',  # Retelling in Order
-    'max_w2_l11': 'spelling', # Spelling Sentences
-    'max_w2_l12': 'coding',   # Loop Your Routine
-    'max_w2_l13': 'history',  # Town Helpers Quiz
-    'max_w2_l14': 'coding',   # Loop Your Routine
-    'max_w2_l15': 'reading',  # Retell in Four Sentences
-    'max_w2_l16': 'science',  # Animal Facts & Art
-    'max_w2_l17': 'science',  # Animal Facts & Pictures
-    'max_w2_l18': 'history',  # Town Helpers Timeline
-    'max_w2_l19': 'coding',   # Debug a Morning Routine
-    'max_w2_l20': 'reading',  # Retell & Why Questions
-    'max_w2_l21': 'spelling', # Cover-Write-Check Spelling
-    'max_w2_l22': 'science',  # Explain & Draw Animal Families
-    'max_w2_l23': 'history',  # Kid Helpers in the Community
-    'max_w2_l24': 'coding',   # Explain Your Code
+    'juniper_w2_l5': 'math',      # Mixed Fact Practice (5x0, 3x5, ...)
+    'juniper_w2_l6': 'math',      # Week 1-2 Cumulative Review (skip-count, arrays, estimate)
+    'juniper_w2_l7': 'math',      # Fact Fluency Builder (5x2, 3x0, ...)
+    'juniper_w2_l8': 'reading',   # Retell in Order
+    'juniper_w2_l9': 'coding',    # Morning Routine Code
+    'juniper_w2_l10': 'reading',  # Retelling in Order
+    'juniper_w2_l11': 'spelling', # Spelling Sentences
+    'juniper_w2_l12': 'coding',   # Loop Your Routine
+    'juniper_w2_l13': 'history',  # Town Helpers Quiz
+    'juniper_w2_l14': 'coding',   # Loop Your Routine
+    'juniper_w2_l15': 'reading',  # Retell in Four Sentences
+    'juniper_w2_l16': 'science',  # Animal Facts & Art
+    'juniper_w2_l17': 'science',  # Animal Facts & Pictures
+    'juniper_w2_l18': 'history',  # Town Helpers Timeline
+    'juniper_w2_l19': 'coding',   # Debug a Morning Routine
+    'juniper_w2_l20': 'reading',  # Retell & Why Questions
+    'juniper_w2_l21': 'spelling', # Cover-Write-Check Spelling
+    'juniper_w2_l22': 'science',  # Explain & Draw Animal Families
+    'juniper_w2_l23': 'history',  # Kid Helpers in the Community
+    'juniper_w2_l24': 'coding',   # Explain Your Code
 }
 
 def resolve_lesson_subject(lesson):
@@ -733,7 +733,7 @@ def resolve_lesson_subject(lesson):
         return s
     return NULL_SUBJ_LESSONS.get(lesson.get('id'))
 
-# preschool lesson title -> node id (luca lessons carry no generator id)
+# preschool lesson title -> node id (preschool lessons carry no generator id)
 PRESCHOOL_LESSON_MAP = [
     (r'[Aa]lphabet|[Ll]etter', 'P.READ.letters', 'reading'),
     (r'[Ss]ound', 'P.READ.sounds', 'reading'),
@@ -1147,7 +1147,7 @@ for _c in GEN_CONFIGS:
 tree = OrderedDict()
 tree['schema'] = 'skill_tree/v1'
 tree['generated_by'] = 'tools/build_engine_data.py'
-tree['source'] = ('MDE K-12 standards crosswalk: LNM_BRAIN/SAITTASPROUT/'
+tree['source'] = ('MDE K-12 standards crosswalk: LNM_BRAIN/SPROUT/'
                   'MI_COMPLIANCE_MAP_2026-10-16.md §3 (read 2026-10-16) + '
                   'MONTH1_SCAFFOLD_1016.md module structure (modules are week-scoped)')
 tree['subject_source'] = 'data/content.json per-grade subject union + content.statutory (D7 nine)'

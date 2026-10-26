@@ -7,7 +7,7 @@ Sources (all local, never fetched at runtime):
   engine /root/sprout            -> schema names + item bank (assessment CAT)
   prototype apps/sprout/data     -> week schedule, curriculum lessons, tests,
                                     generator configs, quizzes, passages
-  master docs SAITTASPROUT       -> open-lesson sheets (materials/),
+  master docs (private SPROUT lane) -> open-lesson sheets (materials/),
                                     weeks 2-6 schedule + topic text
 
 Output: /root/sprout-demo/data/content.json  (schema marker sprout_demo_v1.content)
@@ -15,17 +15,29 @@ Output: /root/sprout-demo/data/content.json  (schema marker sprout_demo_v1.conte
 import json, os, re, glob, sys
 
 APPS = "/root/SOETechWebApp-obsidian/apps/sprout"
-MASTER = "/root/LNM_BRAIN/SAITTASPROUT"
 ENGINE = "/root/sprout"
+
+# ---- private build manifest (NOT committed; this public copy is name-free) ----
+# The master-docs tree and the real learner keys/filenames live in the private repo and are
+# named after the real learners. They are supplied via tools/_private_names.json (gitignored).
+# A public clone has no manifest: we fall back to neutral keys so the pipeline still runs and
+# emits clean ids, and real-name scrubbing is skipped (inputs are assumed pre-scrubbed).
+try:
+    _PRIV = json.load(open(os.path.join(os.path.dirname(__file__), "_private_names.json")))
+except Exception:
+    _PRIV = {}
+_KEYS = _PRIV.get("keys", {})
+_CFILES = _PRIV.get("curriculum_file", {})
+MASTER = _PRIV.get("master", "/root/LNM_BRAIN/SPROUT-private")
 OUT_DIR = "/root/sprout-demo/data"
 W2_LESSONS = "/root/sprout-demo/data/_w2_lessons_grade3.json"
 W2_TESTS_DIR = "/root/sprout-demo/data/_w2_tests"
 
-# grade key -> (prototype student key, synthetic persona, grade label, grade number)
+# grade key -> (source student key, synthetic persona, grade label, grade number)
 GRADES = {
-    "preschool": ("luca", "Rookie", "Preschool", 0),
-    "3": ("max", "Juniper", "Grade 3", 3),
-    "5": ("adonis", "Pixel", "Grade 5", 5),
+    "preschool": (_KEYS.get("preschool", "rookie"), "Rookie", "Preschool", 0),
+    "3": (_KEYS.get("3", "juniper"), "Juniper", "Grade 3", 3),
+    "5": (_KEYS.get("5", "pixel"), "Pixel", "Grade 5", 5),
 }
 
 STATUTORY = ["reading", "spelling", "mathematics", "science", "history",
@@ -36,19 +48,11 @@ SUBJECT_MAP = {
     "read": "reading", "geo": "history", "art": "literature",
 }
 
-# synthetic-name scrubber: real learner names must never reach a served byte
-SCRUB = [
-    (re.compile(r"\bMAX_YEAR_2026-27\b"), "the year plan"),
-    (re.compile(r"\bADONIS_YEAR_2026-27\b"), "the year plan"),
-    (re.compile(r"\bLUCA_YEAR_2026-27\b"), "the year plan"),
-    (re.compile(r"\bMax\b"), "Juniper"), (re.compile(r"\bmax\b"), "juniper"),
-    (re.compile(r"\bAdonis\b"), "Pixel"), (re.compile(r"\badonis\b"), "pixel"),
-    (re.compile(r"\bLuca\b"), "Rookie"), (re.compile(r"\bluca\b"), "rookie"),
-    (re.compile(r"\bMimi\b"), "a grown-up"), (re.compile(r"\bSophia\b"), "a grown-up"),
-    (re.compile(r"\bSophi\b"), "a grown-up"), (re.compile(r"\bDoni\b"), "a grown-up"),
-    (re.compile(r"\bSaitta\b"), "SPROUT"), (re.compile(r"\bsaitta\b"), "sprout"),
-    (re.compile(r"\bsaittasprout\b"), "sprout"),
-]
+# synthetic-name scrubber: real learner names must never reach a served byte.
+# The real-name pattern list ships only in the private manifest (tools/_private_names.json);
+# this public copy ships none, so nothing is scrubbed here (inputs are pre-scrubbed/neutral).
+SCRUB = [(re.compile(r"\b%s\b" % re.escape(src)), rep)
+         for src, rep in _PRIV.get("scrub", [])]
 
 def scrub(v):
     """Recursively scrub banned strings from every value we ship."""
@@ -109,8 +113,8 @@ def md_sheet(path):
 
 def lesson_index(student, grade_key):
     """All curriculum lesson objects for a student, by id."""
-    p = os.path.join(APPS, "data/curriculum", {
-        "3": "max_grade3", "5": "adonis_grade5", "preschool": "luca_preschool"}[grade_key] + ".json")
+    p = os.path.join(APPS, "data/curriculum",
+        _CFILES.get(grade_key, student + "_curriculum") + ".json")
     if not os.path.exists(p):
         return {}
     d = jload(p)

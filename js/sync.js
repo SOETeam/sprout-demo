@@ -99,8 +99,8 @@
     return blob;
   }
 
-  /* per-student filter: engine keys are learner-prefixed ('max_w1_d1_b1',
-     'max_q1', 'max_w1_test'), so a blob only carries this student's keys. */
+  /* per-student filter: engine keys are learner-prefixed ('juniper_w1_d1_b1',
+     'juniper_q1', 'juniper_w1_test'), so a blob only carries this student's keys. */
   function studentKeyed(student, map) {
     var out = {}, k, pre = String(student || '') + '_';
     if (!isObj(map)) { return out; }
@@ -474,7 +474,7 @@
   }
 
   /* One child's day view from merged data. weekDay = {week, day} | null.
-     blockKeys: the keys scheduled today (['max_w1_d2_b1', ...]) or null. */
+     blockKeys: the keys scheduled today (['juniper_w1_d2_b1', ...]) or null. */
   function dayView(dash, student, todayStr, weekDay, blockKeys) {
     var st = peekEntry(dash, student);
     var eff = st ? effectiveProgress(st) : {};

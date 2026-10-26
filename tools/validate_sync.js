@@ -25,16 +25,16 @@ var devC = { id: 'd_testCCCC1234567890', label: 'USB Stick' };
 console.log('[1] export -> wipe -> import roundtrip identical');
 var store = {
   ddevice: devA,
-  progress: { max_w1_d1_b1: true, max_w1_d2_b1: true, other_w1_d1_b1: true },
-  quiz: { max_q1: { attempts: 3, best: 4, total: 5, at: 1000 } },
-  tests: { max_w1_test: { attempts: 1, best: 9, total: 10, at: 1001 } },
-  hours: { max: { '2026-10-19': { planned: 30, practiced: 25 } } },
-  practice: { max: { '2026-10-19': { math: { minutes: 20, items: 15, correct: 13, streak_best: 4 } } } },
-  streams: { max: { '2026-10-19|gen-1': { level: 3, cursor: 7, attempts: 12, correct: 9, streak: 3, best: 5, at: 1002 } } },
-  notes: { max: { max_w1_d1_b1: { text: 'Needs help with verbs', updated_at: '2026-10-19T10:00:00.000Z', highlights: ['verb'] } } }
+  progress: { juniper_w1_d1_b1: true, juniper_w1_d2_b1: true, other_w1_d1_b1: true },
+  quiz: { juniper_q1: { attempts: 3, best: 4, total: 5, at: 1000 } },
+  tests: { juniper_w1_test: { attempts: 1, best: 9, total: 10, at: 1001 } },
+  hours: { juniper: { '2026-10-19': { planned: 30, practiced: 25 } } },
+  practice: { juniper: { '2026-10-19': { math: { minutes: 20, items: 15, correct: 13, streak_best: 4 } } } },
+  streams: { juniper: { '2026-10-19|gen-1': { level: 3, cursor: 7, attempts: 12, correct: 9, streak: 3, best: 5, at: 1002 } } },
+  notes: { juniper: { juniper_w1_d1_b1: { text: 'Needs help with verbs', updated_at: '2026-10-19T10:00:00.000Z', highlights: ['verb'] } } }
 };
-var blob = sync.buildSyncBlob(store, 'max', { device: devA, now: D(2000) });
-assert(blob && isObj(blob._sync) && blob._sync.student === 'max', 'export blob envelope (student=max)');
+var blob = sync.buildSyncBlob(store, 'juniper', { device: devA, now: D(2000) });
+assert(blob && isObj(blob._sync) && blob._sync.student === 'juniper', 'export blob envelope (student=juniper)');
 assert(blob._sync.schema === sync.SYNC_SCHEMA && blob._sync.version === sync.SYNC_VERSION, 'export blob version marker');
 assert(blob._sync.ns === 'sprout_v1' && blob._sync.schema === 'sprout-sync', 'SPROUT namespace markers (schema sprout-sync, ns sprout_v1)');
 assert(!blob.progress.other_w1_d1_b1, 'export filters other students (PII/scope law)');
@@ -43,54 +43,54 @@ assert(vres.ok === true, 'exported blob passes validateSyncBlob');
 
 /* wipe = parent merges into an empty dash */
 var dash1 = sync.mergeSyncBlob(sync.emptyDash(), blob);
-var bundle = sync.buildBundle(dash1.dash, 'max', false, devA, D(3000));
+var bundle = sync.buildBundle(dash1.dash, 'juniper', false, devA, D(3000));
 assert(j(bundle.progress) === j(blob.progress), 'roundtrip progress identical');
-assert(bundle.quiz.max_q1.attempts === 3 && bundle.quiz.max_q1.best === 4 && bundle.quiz.max_q1.total === 5, 'roundtrip quiz identical (best path)');
-assert(bundle.tests.max_w1_test.best === 9 && bundle.tests.max_w1_test.total === 10, 'roundtrip tests identical');
+assert(bundle.quiz.juniper_q1.attempts === 3 && bundle.quiz.juniper_q1.best === 4 && bundle.quiz.juniper_q1.total === 5, 'roundtrip quiz identical (best path)');
+assert(bundle.tests.juniper_w1_test.best === 9 && bundle.tests.juniper_w1_test.total === 10, 'roundtrip tests identical');
 assert(j(bundle.hours) === j(blob.hours), 'roundtrip hours identical');
 assert(j(bundle.practice) === j(blob.practice), 'roundtrip practice identical');
-assert(bundle.notes.max_w1_d1_b1 && bundle.notes.max_w1_d1_b1.text === 'Needs help with verbs', 'roundtrip notes identical');
-var back = sync.buildSyncBlob({ ddevice: devA, progress: bundle.progress, quiz: compactBack(bundle.quiz), tests: compactBack(bundle.tests), hours: { max: bundle.hours }, practice: { max: bundle.practice }, streams: { max: bundle.streams }, notes: { max: bundle.notes } }, 'max', { device: devA, now: D(4000) });
+assert(bundle.notes.juniper_w1_d1_b1 && bundle.notes.juniper_w1_d1_b1.text === 'Needs help with verbs', 'roundtrip notes identical');
+var back = sync.buildSyncBlob({ ddevice: devA, progress: bundle.progress, quiz: compactBack(bundle.quiz), tests: compactBack(bundle.tests), hours: { juniper: bundle.hours }, practice: { juniper: bundle.practice }, streams: { juniper: bundle.streams }, notes: { juniper: bundle.notes } }, 'juniper', { device: devA, now: D(4000) });
 assert(j(back.quiz) === j(blob.quiz) && j(back.progress) === j(blob.progress) && j(back.hours) === j(blob.hours), 'full roundtrip re-export identical');
 function compactBack(m) { return JSON.parse(j(m)); }
 
 /* ---------- [2] Conflict: best + last kept, flagged ---------- */
 console.log('[2] conflict keeps best + last, flags disagreement');
-var blobA = sync.buildSyncBlob({ ddevice: devA, progress: {}, quiz: { max_qc: { attempts: 2, best: 5, total: 5, at: 1000 } }, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'max', { device: devA, now: D(10000) });
-var blobB = sync.buildSyncBlob({ ddevice: devB, progress: {}, quiz: { max_qc: { attempts: 4, best: 2, total: 5, at: 2000 } }, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'max', { device: devB, now: D(20000) });
+var blobA = sync.buildSyncBlob({ ddevice: devA, progress: {}, quiz: { juniper_qc: { attempts: 2, best: 5, total: 5, at: 1000 } }, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'juniper', { device: devA, now: D(10000) });
+var blobB = sync.buildSyncBlob({ ddevice: devB, progress: {}, quiz: { juniper_qc: { attempts: 4, best: 2, total: 5, at: 2000 } }, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'juniper', { device: devB, now: D(20000) });
 var d2 = sync.mergeSyncBlob(sync.emptyDash(), blobA);
 var r2 = sync.mergeSyncBlob(d2.dash, blobB);
-var rec = r2.dash.sync.max.quiz.max_qc;
+var rec = r2.dash.sync.juniper.quiz.juniper_qc;
 assert(rec && rec.best === 5 && rec.best_dev === devA.id, 'best kept (5, from device A)');
 assert(rec.last === 2 && rec.last_dev === devB.id && rec.last_at === 2000, 'last kept (2, newest, from device B)');
 assert(rec.conflict === true, 'conflict flag set on the score record');
 assert(r2.report.conflicts.length > 0, 'merge report lists the conflict');
-assert(r2.dash.sync.max.conflicts.length > 0 && r2.dash.sync.max.conflicts[0].type === 'quiz', 'dash conflict log carries the conflict');
+assert(r2.dash.sync.juniper.conflicts.length > 0 && r2.dash.sync.juniper.conflicts[0].type === 'quiz', 'dash conflict log carries the conflict');
 
 /* ---------- [3] Multi-device dedupe + merge ---------- */
 console.log('[3] multi-device dedupe');
-var shared = sync.buildSyncBlob({ ddevice: devC, progress: { max_w2_d1_b1: true }, quiz: { max_qd: { attempts: 1, best: 4, total: 5, at: 3000 } }, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'max', { device: devC, now: D(30000) });
+var shared = sync.buildSyncBlob({ ddevice: devC, progress: { juniper_w2_d1_b1: true }, quiz: { juniper_qd: { attempts: 1, best: 4, total: 5, at: 3000 } }, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'juniper', { device: devC, now: D(30000) });
 var d3a = sync.mergeSyncBlob(sync.emptyDash(), shared);
 var d3b = sync.mergeSyncBlob(d3a.dash, shared); /* same blob, same device, re-imported */
-var st3 = d3b.dash.sync.max;
+var st3 = d3b.dash.sync.juniper;
 assert(Object.keys(st3.devices).length === 1, 'same device twice = one device entry (dedupe)');
-assert(Object.keys(st3.ledger.max_w2_d1_b1).length === 1, 'same key re-import collapses to one device report');
-assert(st3.quiz.max_qd.attempts === 1 && st3.quiz.max_qd.conflict === false, 'same quiz re-import does not inflate attempts or flag conflict');
+assert(Object.keys(st3.ledger.juniper_w2_d1_b1).length === 1, 'same key re-import collapses to one device report');
+assert(st3.quiz.juniper_qd.attempts === 1 && st3.quiz.juniper_qd.conflict === false, 'same quiz re-import does not inflate attempts or flag conflict');
 /* two different devices, same key done -> one effective key, two device reports, no conflict */
-var b1 = sync.buildSyncBlob({ ddevice: devA, progress: { max_w3_d1_b1: true }, quiz: {}, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'max', { device: devA, now: D(40000) });
-var b2 = sync.buildSyncBlob({ ddevice: devB, progress: { max_w3_d1_b1: true }, quiz: {}, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'max', { device: devB, now: D(41000) });
+var b1 = sync.buildSyncBlob({ ddevice: devA, progress: { juniper_w3_d1_b1: true }, quiz: {}, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'juniper', { device: devA, now: D(40000) });
+var b2 = sync.buildSyncBlob({ ddevice: devB, progress: { juniper_w3_d1_b1: true }, quiz: {}, tests: {}, hours: {}, practice: {}, streams: {}, notes: {} }, 'juniper', { device: devB, now: D(41000) });
 var d4 = sync.mergeSyncBlob(sync.mergeSyncBlob(sync.emptyDash(), b1).dash, b2);
-var st4 = d4.dash.sync.max;
-assert(Object.keys(st4.ledger.max_w3_d1_b1).length === 2, 'two devices both recorded in ledger');
-assert(sync.effectiveProgress(st4).max_w3_d1_b1 === true, 'effective progress = done once');
+var st4 = d4.dash.sync.juniper;
+assert(Object.keys(st4.ledger.juniper_w3_d1_b1).length === 2, 'two devices both recorded in ledger');
+assert(sync.effectiveProgress(st4).juniper_w3_d1_b1 === true, 'effective progress = done once');
 assert(st4.conflicts.length === 0, 'agreeing devices raise no conflict');
 assert(Object.keys(st4.devices).length === 2 && st4.lastSync !== null, 'per-child device count + lastSync stamp present');
 
 /* ---------- [4] SPROUT namespace + rejection gates ---------- */
 console.log('[4] namespace + rejection gates');
 var bad = JSON.parse(JSON.stringify(blob));
-bad._sync.schema = 'saittasprout-sync';
-assert(sync.validateSyncBlob(bad).ok === false, 'a SaittaSprout-namespace blob is rejected (no cross-app imports)');
+bad._sync.schema = 'legacy-sync';   // a foreign/legacy sync namespace — must be rejected (no cross-app imports)
+assert(sync.validateSyncBlob(bad).ok === false, 'a foreign-namespace blob is rejected (no cross-app imports)');
 assert(sync.validateSyncBlob('not json').ok === false, 'non-JSON file rejected');
 var nod = JSON.parse(JSON.stringify(blob));
 nod._sync.device.id = 'machine-fingerprint-99';

@@ -126,7 +126,7 @@ async function clickAttr(page, sel, attr, val) {
   const acct = await page.evaluate(() => localStorage.getItem('sprout_demo_v1.account'));
   ok('account stored under sprout_demo_v1.account', !!acct && /sprout_demo_v1/.test(acct));
   ok('no plaintext passphrase in storage', !/demo-passphrase/.test(acct || ''));
-  const legacy = await page.evaluate(() => ['saittasprout_v1', 'sprout_v2'].map(k => k + ':' + (localStorage.getItem(k) != null)));
+  const legacy = await page.evaluate(() => ['sprout_v1', 'sprout_v2'].map(k => k + ':' + (localStorage.getItem(k) != null)));
   ok('legacy namespaces never written', legacy.every(x => x.endsWith('false')), legacy.join(' '));
 
   /* ---------- add three children ---------- */
@@ -388,12 +388,12 @@ async function clickAttr(page, sel, attr, val) {
   ok('reload preserves account + children + progress', after.kids === 3 && after.session && after.progress >= 1, JSON.stringify(after));
 
   /* ---------- Clear this demo removes only the prefix ---------- */
-  await page.evaluate(() => { localStorage.setItem('other_app_key', '1'); localStorage.setItem('saittasprout_v1', 'stale'); });
+  await page.evaluate(() => { localStorage.setItem('other_app_key', '1'); localStorage.setItem('sprout_v1', 'stale'); });
   await page.evaluate(() => window.SPROUT_DEMO.store.clearAll());
   const cleared = await page.evaluate(() => ({
     sprout: Object.keys(localStorage).filter(k => k.indexOf('sprout_demo_v1') === 0).length,
     other: localStorage.getItem('other_app_key'),
-    legacy: localStorage.getItem('saittasprout_v1')
+    legacy: localStorage.getItem('sprout_v1')
   }));
   ok('Clear this demo removes the prefix only', cleared.sprout === 0 && cleared.other === '1' && cleared.legacy === null, JSON.stringify(cleared));
 

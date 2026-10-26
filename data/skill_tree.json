@@ -1,7 +1,7 @@
 {
  "schema": "skill_tree/v1",
  "generated_by": "tools/build_engine_data.py",
- "source": "MDE K-12 standards crosswalk: LNM_BRAIN/SAITTASPROUT/MI_COMPLIANCE_MAP_2026-10-16.md §3 (read 2026-10-16) + MONTH1_SCAFFOLD_1016.md module structure (modules are week-scoped)",
+ "source": "MDE K-12 standards crosswalk: LNM_BRAIN/SPROUT/MI_COMPLIANCE_MAP_2026-10-16.md §3 (read 2026-10-16) + MONTH1_SCAFFOLD_1016.md module structure (modules are week-scoped)",
  "subject_source": "data/content.json per-grade subject union + content.statutory (D7 nine)",
  "statutory_subjects": [
   "reading",

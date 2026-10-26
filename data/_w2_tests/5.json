@@ -7,12 +7,12 @@
   "minutes": 15,
   "passScore": 0.8,
   "covers": [
-    "adonis_w2_l1",
-    "adonis_w2_l2",
-    "adonis_w2_l3",
-    "adonis_w2_l4",
-    "adonis_w1_l1",
-    "adonis_w1_l2"
+    "pixel_w2_l1",
+    "pixel_w2_l2",
+    "pixel_w2_l3",
+    "pixel_w2_l4",
+    "pixel_w1_l1",
+    "pixel_w1_l2"
   ],
   "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice.",
   "questions": [

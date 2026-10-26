@@ -5,9 +5,9 @@ no backend, no analytics, no third-party requests. Everything a browser needs sh
 
 - Repo: `github.com/SOETeam/sprout-demo` · live: `https://soeteam.github.io/sprout-demo/`
 - Engine (schemas + rules): `/root/sprout` — commits **5874bdd** and **3f96d8b**
-- Content sources: `/root/LNM_BRAIN/SAITTASPROUT/` (master docs) and
-  `/root/SOETechWebApp-obsidian/apps/sprout/` (SaittaSprout prototype)
-- Naming law: the public app is **SPROUT**. "SaittaSprout" appears only in provenance docs.
+- Content sources: `/root/LNM_BRAIN/SPROUT/` (master docs) and
+  `/root/SOETechWebApp-obsidian/apps/sprout/` (SPROUT prototype)
+- Naming law: the public app is **SPROUT**. "SPROUT" appears only in provenance docs.
 
 ## Route / view map
 
@@ -41,7 +41,7 @@ Lesson view, seeded practice, weekly tests and passages all render inside the po
 
 ## localStorage key table
 
-Namespace: **`sprout_demo_v1`** (never `saittasprout_v1`, never `sprout_v2`). Every blob is
+Namespace: **`sprout_demo_v1`** (never `sprout_v1`, never `sprout_v2`). Every blob is
 an object carrying `"schema": "sprout_demo_v1"`.
 
 | key | contents |
@@ -60,14 +60,14 @@ legacy namespaces if a stale browser still carries them). Nothing else on the de
 
 1. `tools/build_content.py` reads, per enabled grade:
    - week schedule: `apps/sprout/data/week/<student>/week_01.json` (w1) and
-     `SAITTASPROUT/year_curriculum/<student>/week_02..04.json` (w2–w4);
+     `SPROUT/year_curriculum/<student>/week_02..04.json` (w2–w4);
    - open-lesson objects: `apps/sprout/data/curriculum/<student>_grade*.json` modules;
-   - open-lesson source sheets: `SAITTASPROUT/materials/<student>/w*/**.md`;
+   - open-lesson source sheets: `SPROUT/materials/<student>/w*/**.md`;
    - weekly tests: `apps/sprout/data/tests/*_w1_test.json` + worker-authored `data/_w2_tests/*`;
    - generator configs: `apps/sprout/data/generators/*_w1.json`;
    - passages: `apps/sprout/data/passages/*`; pop quizzes: `apps/sprout/data/quizzes/*`;
    - assessment bank: `/root/sprout/item_bank_seed/{math,ela}.json` (IRT a/b, answer keys);
-   - weeks 5–6 topics: `WEEK 5 —` / `WEEK 6 —` headings in `SAITTASPROUT/students/*_YEAR_2026-27.md`.
+   - weeks 5–6 topics: `WEEK 5 —` / `WEEK 6 —` headings in `SPROUT/students/*_YEAR_2026-27.md`.
 2. Scrub pass (banned names), local-path strip, schema marker, item counts.
 3. Emits `data/content.js` (`window.SPROUT_CONTENT = {...}`) + `data/content.json`.
 

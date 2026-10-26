@@ -13,11 +13,11 @@
  *   - Nothing here ever touches scoring: mastery gate stays 0.80, item content untouched,
  *     no pass marks, no "remedial" label (arch §9).
  *
- * CALIBRATION (block.min = instruction + practice) — the SaittaSprout lane's table
- *   Source: LNM_BRAIN/SAITTASPROUT/build_recalibrate_week.py, owner GO 2026-10-17 09:26,
+ * CALIBRATION (block.min = instruction + practice) — the SPROUT lane's table
+ *   Source: LNM_BRAIN/SPROUT/build_recalibrate_week.py, owner GO 2026-10-17 09:26,
  *   FORMULA TABLE, RULE 1:  block.min = linked lesson.minutes (INSTRUCTION) + practice segment
- *     math grade 3 (max)             lesson.minutes + 30   (20 worksheet + 10 game-practice)
- *     math grade 5 (adonis)          lesson.minutes + 35   (25 worksheet + 10 game-practice)
+ *     math grade 3                   lesson.minutes + 30   (20 worksheet + 10 game-practice)
+ *     math grade 5                   lesson.minutes + 35   (25 worksheet + 10 game-practice)
  *     reading / literature           lesson.minutes + 15   (15 silent reading)
  *     LONG-LESSON CLAUSE: lessons >= 45 min add NOTHING (self-contained — a 60-min
  *       reading lesson already IS the practice). Applies to every row above.
@@ -263,7 +263,7 @@
     }
     return {
       grade: g, subject: s, segment: seg, lane: true,
-      formula: 'lesson.minutes + ' + seg + '   (SaittaSprout lane RULE 1)'
+      formula: 'lesson.minutes + ' + seg + '   (SPROUT lane RULE 1)'
     };
   }
 

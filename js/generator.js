@@ -1,4 +1,4 @@
-/* SaittaSprout practice generator — v1 (week-1 lesson engine).
+/* SPROUT practice generator — v1 (week-1 lesson engine).
    Seeded, deterministic, ZERO network, ZERO AI. Algorithmic families only.
    Same date + student + generatorId + cursor => byte-identical item, offline, forever.
 
@@ -23,7 +23,7 @@
 (function () {
   'use strict';
 
-  var SCHEMA = 'saittasprout.generators/1';
+  var SCHEMA = 'sprout.generators/1';
 
   /* ---------------- hashing ---------------- */
 
@@ -202,7 +202,7 @@
 
   /* 3 — place value: 3- AND 4-digit numbers, digit value/place, read/write with
      place-value blocks (C2: covers the D3 card's "read and write 6 three-digit
-     numbers with place-value blocks" as well as max_w1_l3's 4-digit work). */
+     numbers with place-value blocks" as well as juniper_w1_l3's 4-digit work). */
   families['math.place_value'] = function (p, rng, ctx) {
     var mode = p.mode || 'place';
     var digits = p.digits || 3;

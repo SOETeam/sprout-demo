@@ -11,6 +11,31 @@
 <link rel="stylesheet" href="js/workspace.css">
 <link rel="stylesheet" href="css/prototype.css">
 <link rel="stylesheet" href="css/app.css">
+<style>
+/* Bug-report widget (roadmap P0.1/§4.1) — shell-mounted, fixed, outside #app */
+.bug-btn{position:fixed;right:14px;bottom:14px;z-index:60;background:#0b132b;color:#eaf2ff;
+  border:1px solid #3a4a7a;border-radius:999px;padding:9px 14px;
+  font:600 13px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;cursor:pointer;
+  box-shadow:0 4px 16px rgba(0,0,0,.35)}
+.bug-btn:hover{background:#14204a}
+.bug-sheet{position:fixed;inset:0;z-index:70;background:rgba(6,10,26,.6);
+  display:flex;align-items:center;justify-content:center;padding:16px}
+.bug-sheet[hidden]{display:none}
+.bug-card{background:#0e1730;color:#eaf2ff;border:1px solid #2a3766;border-radius:14px;
+  max-width:520px;width:100%;max-height:88vh;overflow:auto;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.bug-card h2{margin:0 0 6px;font:700 18px/1.2 system-ui,sans-serif}
+.bug-card label{display:block;margin:10px 0 4px;font:600 13px/1.3 system-ui,sans-serif}
+.bug-card textarea{width:100%;box-sizing:border-box;background:#081022;color:#eaf2ff;
+  border:1px solid #2a3766;border-radius:8px;padding:8px;font:400 14px/1.4 system-ui,sans-serif;resize:vertical}
+.bug-hint,.bug-privacy{color:#9fb2d8;font:400 12px/1.45 system-ui,sans-serif;margin:6px 0}
+.bug-attach{display:flex;gap:8px;align-items:center;font-weight:500}
+.bug-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.bug-card .btn{background:#2563b0;color:#fff;border:0;border-radius:8px;padding:9px 12px;
+  font:600 13px/1 system-ui,sans-serif;cursor:pointer}
+.bug-card .btn.ghost{background:transparent;border:1px solid #3a4a7a;color:#cfe0ff}
+.bug-card .btn:hover{filter:brightness(1.08)}
+.bug-nudge{color:#ffd27a;font:600 12px/1.4 system-ui,sans-serif;margin-top:10px}
+</style>
 </head>
 <body>
 <a class="skip" href="#app">Skip to content</a>
@@ -39,6 +64,34 @@
 <input type="file" id="import-file" accept="application/json,.json" hidden>
 <input type="file" id="import-file-progress" accept="application/json,.json" hidden>
 
+<!-- Bug-report widget (roadmap P0.1/§4.1): shell chrome, OUTSIDE the #app router container
+     so it is present on every route by construction. localStorage only — nothing uploaded. -->
+<button id="bug-btn" class="bug-btn" type="button" aria-haspopup="dialog">🐛 Report a bug</button>
+<div id="bug-sheet" class="bug-sheet" role="dialog" aria-modal="true" aria-labelledby="bug-title" hidden>
+  <div class="bug-card">
+    <h2 id="bug-title">Report a bug</h2>
+    <p class="bug-hint" id="bug-kidhint" hidden>Something broken? Ask your grown-up to tap this.</p>
+    <form id="bug-form" autocomplete="off">
+      <label for="bug-what">What happened?</label>
+      <textarea id="bug-what" name="what" rows="3" maxlength="2000" required></textarea>
+      <label for="bug-expected">What did you expect instead?</label>
+      <textarea id="bug-expected" name="expected" rows="2" maxlength="2000"></textarea>
+      <label for="bug-repro">How can we reproduce it?</label>
+      <textarea id="bug-repro" name="repro" rows="2" maxlength="2000"></textarea>
+      <p class="bug-privacy">Please don’t type your child’s name. Reports stay in this browser until you export them — nothing is ever uploaded.</p>
+      <label class="bug-attach"><input type="checkbox" id="bug-state" checked> Attach app state snapshot (key names only — never values)</label>
+      <div class="bug-actions">
+        <button class="btn" type="submit">Save report</button>
+        <button class="btn ghost" type="button" id="bug-export-dl">Download all (.json)</button>
+        <button class="btn ghost" type="button" id="bug-export-copy">Copy summary</button>
+        <button class="btn ghost" type="button" id="bug-export-mail">Email (mailto)</button>
+        <button class="btn ghost" type="button" id="bug-close">Close</button>
+      </div>
+    </form>
+    <p class="bug-nudge" id="bug-nudge" hidden></p>
+  </div>
+</div>
+
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/vendor/math.min.js"></script>
 <script src="js/vendor/Sortable.min.js"></script>
@@ -47,9 +100,11 @@
 <script src="js/lesson.js"></script>
 <script src="js/workspace.js"></script>
 <script src="data/content.js"></script>
+<script src="data/grades_k124.js"></script>
 <script src="data/pacing.js"></script>
 <script src="js/pacing.js"></script>
 <script src="js/sync.js"></script>
 <script src="js/app.js"></script>
+<script src="js/bugreport.js"></script>
 </body>
 </html>

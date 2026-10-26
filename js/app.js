@@ -2,7 +2,7 @@
    SPROUT public demo v1 — app shell
    ---------------------------------------------------------------------
    Static + localStorage only. No backend, no accounts server, no analytics.
-   Engines ported from the SaittaSprout prototype (see ARCHITECTURE.md):
+   Engines ported from the SPROUT prototype (see ARCHITECTURE.md):
      js/generator.js  -> window.SPRUT_GEN   (seeded practice, 14 families)
      js/lesson.js     -> window.SPRUT_LESSON (open-lesson view)
      js/workspace.js  -> window.SPRUT_WS     (math/spelling/reading/writing tools)
@@ -15,7 +15,7 @@
   /* ---------------- constants ---------------- */
   var NS = 'sprout_demo_v1';
   var MARKER = 'sprout_demo_v1';
-  var LEGACY = ['saittasprout_v1', 'sprout_v2'];   // must NEVER be written
+  var LEGACY = ['sprout_v1', 'sprout_v2'];   // must NEVER be written
   var CONTENT = window.SPROUT_CONTENT || null;
 
   var K = {
@@ -29,7 +29,21 @@
     landingSeen: NS + '.landing.seen'                         // P1 one-shot first-run flag
   };
 
-  var GRADES_ENABLED = ['preschool', '3', '5'];                       // plan F2
+  /* E5: grades live in this demo. K/1/2/4 ride the E3 engine data (skill tree +
+     generators + PD comprehension) wired by data/grades_k124.js; pre/g3/g5 keep
+     their original hand-built content. Two files, one union. */
+  var GRADES_ENABLED = ['preschool', '3', '5'];                       // plan F2 (original content)
+  var K124 = window.SPROUT_CONTENT_K124 || null;                      // E5: K/1/2/4 lane
+  var K124_GRADES = K124 && K124.grades ? Object.keys(K124.grades) : [];
+  if (K124_GRADES.length) { GRADES_ENABLED = GRADES_ENABLED.concat(K124_GRADES); }
+  /* every grade with real content in ANY lane is selectable; the rest stay locked */
+  function gradeLive(gk) {
+    return GRADES_ENABLED.indexOf(gk) >= 0;
+  }
+  function gradeComing(gk) {
+    /* honest tooltip: the grade has an engine data lane, its content lane is pending */
+    return 'Full lesson weeks for ' + (GRADE_LABEL[gk] || gk) + ' are coming — the standards map exists, the demo content lane does not yet.';
+  }
   var GRADE_ORDER = ['preschool', 'K', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
   var GRADE_LABEL = {
     preschool: 'Preschool', K: 'Kindergarten', '1': 'Grade 1', '2': 'Grade 2',
@@ -43,7 +57,8 @@
     english: 'english_grammar', grammar: 'english_grammar', read: 'reading',
     reading_comp: 'reading', lit: 'literature'
   };
-  var PERSONA_TOTEM = { '3': '🦊', '5': '🐺', preschool: '🐨' };
+  var PERSONA_TOTEM = { '3': '🦊', '5': '🐺', preschool: '🐨',
+    K: '🐣', '1': '🐰', '2': '🦉', '4': '🦅' };
   var COMPLIANCE_COPY = 'organizes Michigan-required subject coverage';
 
   var $ = function (id) { return document.getElementById(id); };
@@ -192,12 +207,21 @@
     saveProgress: function (childId, p) { p.schema = MARKER; store.set(K.progress(childId), p); }
   };
 
-  /* ---------------- content ---------------- */
+  /* ---------------- content (E5: two lanes, one union) ----------------
+     pre/g3/g5 read window.SPROUT_CONTENT (the original hand-built weeks).
+     K/1/2/4 read window.SPROUT_CONTENT_K124 (E5: engine-data-backed weeks).
+     weeks()/gradeMeta() pick the right lane per grade; nothing else changes. */
+  function k124Grade(gk) { return !!(K124 && K124.grades && K124.grades[gk]); }
+  function k124Weeks(gk) { return (K124 && K124.weeks && K124.weeks[gk]) || {}; }
   function gradeMeta(gk) {
+    if (k124Grade(gk)) { return K124.grades[gk]; }
     var g = (CONTENT && CONTENT.grades && CONTENT.grades[gk]) || {};
     return g;
   }
-  function weeks(gk) { return (CONTENT && CONTENT.weeks && CONTENT.weeks[gk]) || {}; }
+  function weeks(gk) {
+    if (k124Grade(gk)) { return k124Weeks(gk); }
+    return (CONTENT && CONTENT.weeks && CONTENT.weeks[gk]) || {};
+  }
   function weekData(gk, wn) { return weeks(gk)[String(wn)] || null; }
   function lessonsOf(gk, wn) { var w = weekData(gk, wn); return (w && w.lessons) || {}; }
   function findLesson(gk, wn, lid) { return lessonsOf(gk, wn)[lid] || null; }
@@ -212,6 +236,10 @@
 
   /* generator registry helpers (seeded practice: seed = date+student+skill) */
   function registryFor(gk, wn) {
+    if (k124Grade(gk)) {
+      var wk = weekData(gk, wn) || weekData(gk, 1) || {};
+      return { schema: MARKER + '.registry', generators: wk.generators || [] };
+    }
     var w = weekData(gk, 1) || {};       // generator configs ship with w1 and are reused
     /* SPRUT_GEN.getGen(reg, id) reads reg.generators — keep the file shape */
     return { schema: MARKER + '.registry', generators: w.generators || [] };
@@ -265,7 +293,7 @@
   }
 
   /* ================= SYNC (parent dashboard, local-first) =================
-     Ported from the SaittaSprout sync lane (owner order 2026-10-18), SPROUT
+     Ported from the SPROUT sync lane (owner order 2026-10-18), SPROUT
      namespace: window.SPROUT_SYNC (js/sync.js, loaded before this file) is a
      pure export/validate/merge layer — no DOM, no storage, no fetch. This
      wiring owns the sprout_demo_v1.dash_v1 localStorage key, the parent
@@ -433,13 +461,15 @@
     var kids = children();
     var c = CONTENT || { grades: {}, counts: {} };
     var gradeChips = GRADE_ORDER.map(function (g) {
-      var live = GRADES_ENABLED.indexOf(g) >= 0;
-      return '<span class="' + (live ? 'live' : 'soon') + '">' + (live ? '✓ ' : '🔒 ') +
+      var live = gradeLive(g);
+      return '<span class="' + (live ? 'live' : 'soon') + '" title="' + (live ? '' : esc(gradeComing(g))) + '">' + (live ? '✓ ' : '🔒 ') +
         esc(GRADE_LABEL[g]) + (live ? '' : ' · coming soon') + '</span>';
     }).join('');
 
     var stat = (CONTENT && CONTENT.counts) || {};
     var w1total = stat.w1_items_total || 0;
+    var genCount = 22 + (K124_GRADES.reduce(function (n, g) {
+      return n + (K124.weeks[g]['1'].generators || []).length; }, 0));
 
     var html =
       '<section class="hero">' +
@@ -472,11 +502,11 @@
 
       '<section class="panel">' +
       '<h2>Grades in this demo</h2>' +
-      '<p class="lede">Preschool, 3rd and 5th are live in this demo. K–12 coverage is on the roadmap.</p>' +
+      '<p class="lede">Preschool, K, 1st, 2nd, 3rd, 4th and 5th are live in this demo. Middle and high school are on the roadmap.</p>' +
       '<div class="strip">' + gradeChips + '</div>' +
       '<div class="statgrid">' +
       '<div class="statbox"><b>' + w1total + '</b><span>week-1 lesson items ported (3 grades)</span></div>' +
-      '<div class="statbox"><b>22</b><span>generator configs (seeded practice)</span></div>' +
+      '<div class="statbox"><b>' + genCount + '</b><span>generator configs (seeded practice)</span></div>' +
       '<div class="statbox"><b>9</b><span>Michigan statutory subjects organized</span></div>' +
       '<div class="statbox"><b>0</b><span>servers, trackers or uploads</span></div>' +
       '</div>' +
@@ -487,8 +517,8 @@
       '<h2>Proven in month 1 (verified, not marketing)</h2>' +
       '<p class="lede">Real build evidence from the month-1 curriculum scaffold — checked with a script, not screenshots.</p>' +
       '<div class="statgrid">' +
-      '<div class="statbox"><b>4 weeks × 2</b><span>children (Adonis g5, Max g3) — Oct 19–Nov 13 2026</span></div>' +
-      '<div class="statbox"><b>32</b><span>kid-day rows validated (Max 16 + Adonis 16) — 6/6 openable lessons each</span></div>' +
+      '<div class="statbox"><b>4 weeks × 2</b><span>pilot children — Oct 19–Nov 13 2026</span></div>' +
+      '<div class="statbox"><b>32</b><span>kid-day rows validated — 6/6 openable lessons each</span></div>' +
       '<div class="statbox"><b>9</b><span>Michigan statutory subjects covered weekly per child (MCL 380.1561(3)(f))</span></div>' +
       '<div class="statbox"><b>8/8</b><span>week + test files pass the scripted validator (refs resolve, minutes sum, counts match)</span></div>' +
       '</div>' +
@@ -666,7 +696,7 @@
     var html =
       '<section class="panel">' +
       '<h2>My children</h2>' +
-      '<p class="lede">K–12 coverage is on the roadmap; Preschool, 3rd and 5th are live in this demo. ' +
+      '<p class="lede">Middle and high school are on the roadmap; Preschool, K, 1st, 2nd, 3rd, 4th and 5th are live in this demo. ' +
       'Every name below is synthetic — invent one or use the helper.</p>' +
       (kids.length
         ? '<div class="grid3">' + cards + '</div>'
@@ -706,15 +736,15 @@
     var gl = $('grade-list');
     var selected = null;
     gl.innerHTML = GRADE_ORDER.map(function (g) {
-      var live = GRADES_ENABLED.indexOf(g) >= 0;
+      var live = gradeLive(g);
       return '<button type="button" class="gradeopt" data-grade="' + g + '" data-live="' + live + '"' +
-        (live ? '' : ' disabled aria-disabled="true"') + '>' + esc(GRADE_LABEL[g]) +
+        (live ? '' : ' disabled aria-disabled="true" title="' + esc(gradeComing(g)) + '"') + '>' + esc(GRADE_LABEL[g]) +
         '<span class="tag">' + (live ? '✓ live in this demo' : '🔒 coming soon') + '</span></button>';
     }).join('');
     gl.addEventListener('click', function (e) {
       var b = e.target.closest('.gradeopt'); if (!b) return;
       if (b.disabled) {
-        toast(GRADE_LABEL[b.dataset.grade] + ' is on the roadmap — Preschool, 3rd and 5th are live now.', true);
+        toast(GRADE_LABEL[b.dataset.grade] + ' is on the roadmap — Preschool, K, 1, 2, 3, 4 and 5 are live now.', true);
         return;
       }
       Array.prototype.forEach.call(gl.querySelectorAll('.gradeopt'), function (x) { x.classList.remove('on'); });
@@ -804,9 +834,10 @@
     var p = 1 / (1 + Math.exp(-1.702 * a * (theta - b)));
     return (1.702 * a) * (1.702 * a) * p * (1 - p);
   }
-  function catNextItem(pool, used, theta) {
+  function catNextItem(pool, used, theta, filter) {
     var best = null;
     pool.slice().sort(function (x, y) { return x.item_id < y.item_id ? -1 : 1; }).forEach(function (it) {
+      if (filter && !filter(it)) return;
       if (used.indexOf(it.item_id) >= 0) return;
       var info = fisherInfo(it.a, it.b, theta);
       if (!best || info > best.info + 1e-9) best = { item: it, info: info };
@@ -835,6 +866,7 @@
   function startAssessment(child) {
     var gk = child.grade;
     var bank = (CONTENT && CONTENT.assessment && CONTENT.assessment.bank) || [];
+    bank = bankByGrade(gk);
     assess = {
       child: child, gk: gk, phase: 'child', item: null, used: [], responses: [],
       math: { theta: 0, se: 1 }, ela: { theta: 0, se: 1 }, checklist: [], qIdx: 0, priors: {},
@@ -842,6 +874,80 @@
     };
     if (gk === 'preschool') { assess.phase = 'intro'; assess.checklist = preschoolChecklist(); }
     else { assess.phase = 'intro'; assess.catDomain = 'math'; assess.catItems = bank.slice(); }
+  }
+
+  /* E5: the CAT bank is per grade band.
+     - g3/g5/pre: the original 16-item bank (content.json assessment.bank).
+     - K/1/2: the K-2 band bank = pd.comprehension.g<grade> items + the grade's
+       non-PD authored items (letter-sounds etc.), mapped to the 2PL shape.
+       Passages are read-aloud; every item is MC with an answer string.
+     - g4: the 3-5 band bank = original items + g4's PD-comprehension + authored items. */
+  function bandOf(gk) {
+    return (gk === 'K' || gk === '1' || gk === '2') ? 'K2' :
+      (gk === '4' || gk === '5' || gk === '3') ? '35' : null;
+  }
+  function bankByGrade(gk) {
+    var base = (CONTENT && CONTENT.assessment && CONTENT.assessment.bank) || [];
+    if (!k124Grade(gk)) { return base; }
+    var band = bandOf(gk);
+    if (band === '35') { return base.concat(k124CatItems('4')); }
+    if (band === 'K2') {
+      var pool = [];
+      ['K', '1', '2'].forEach(function (g) { pool = pool.concat(k124CatItems(g)); });
+      return pool;
+    }
+    return base;
+  }
+  /* K/1/2/4 CAT items from the E3 engine data:
+     - bank configs (PD comprehension + authored): literal items[].
+     - parametric configs: items synthesized at runtime by SPRUT_GEN.itemFor
+       (seeded, deterministic — counting/add-sub/mult/fraction math coverage for
+       the K-2 and 3-5 bands, which otherwise have zero written math items). */
+  function k124CatItems(g) {
+    var wk = k124Weeks(g)['1'] || {};
+    var gens1 = wk.generators || [];
+    var reg = { schema: MARKER + '.registry', generators: gens1 };
+    var out = [], n = 0;
+    gens1.forEach(function (c) {
+      var isPD = c.id.indexOf('pd.comprehension') === 0;
+      var isBank = c.mode === 'bank';
+      if (isBank) {
+        (c.items || []).forEach(function (it) {
+          if (!it || !Array.isArray(it.options)) return;
+          if (!isPD && (out.length >= 10)) return;   // cap authored non-PD items
+          out.push(catItemFrom(c, it.question, it.options, it.options[it.correctIndex], isPD, it.level || 1, n));
+          n++;
+        });
+      } else if (c.mode === 'parametric' && window.SPRUT_GEN) {
+        (c.levels || []).slice(0, 2).forEach(function (lv) {
+          for (var cur = 0; cur < 2; cur++) {
+            var it = null;
+            try {
+              it = window.SPRUT_GEN.itemFor(reg, c.id,
+                { date: '2026-10-17', student: 'placement.' + g, level: lv.level, cursor: cur });
+            } catch (err) { it = null; }
+            if (it && Array.isArray(it.options) && typeof it.question === 'string') {
+              out.push(catItemFrom(c, it.question, it.options, it.options[it.correctIndex], false, lv.level, n));
+              n++;
+            }
+          }
+        });
+      }
+    });
+    return out;
+  }
+  function catItemFrom(c, question, options, answer, isPD, level, n) {
+    return {
+      item_id: c.id + '.' + n,
+      subject: (c.subject === 'math') ? 'math' : 'ela',
+      skill_tag: c.skill || c.skill_node,
+      a: 1,
+      b: -0.4 + Math.min(0.8, (level || 1) * 0.3),
+      text: question,
+      options: options,
+      answer: answer,
+      read_aloud: !!isPD
+    };
   }
 
   function preschoolChecklist() {
@@ -879,7 +985,15 @@
     } else if (assess.phase === 'cat') {
       var item = assess.item;
       if (!item) {
-        assess.item = catNextItem(assess.catItems, assess.used, assess.catDomain === 'math' ? assess.math.theta : assess.ela.theta);
+        var thetaNow = assess.catDomain === 'math' ? assess.math.theta : assess.ela.theta;
+        /* K-2 band: always open with one read-aloud PD-passage comprehension item
+           (the passage is read to the child; every other item stays written). */
+        if (bandOf(assess.gk) === 'K2') {
+          assess.item = catNextItem(assess.catItems, assess.used, thetaNow, function (it) { return !!it.read_aloud; });
+        }
+        if (!assess.item) {
+          assess.item = catNextItem(assess.catItems, assess.used, thetaNow);
+        }
         item = assess.item;
         if (!item) { assess.phase = 'questionnaire'; }
       }
@@ -1448,7 +1562,7 @@
   /* ================= STUDENT PORTAL (F5) ================= */
   var portal = { child: null, week: 1, tab: 'week' };
 
-  /* keypad gate (tile-first, exactly the SaittaSprout interaction:
+  /* keypad gate (tile-first, exactly the SPROUT interaction:
      digits typed before a tile are buffered and ignored until a tile is
      tapped; CLR resets the buffer on retry) */
   function gateKey(id) { return NS + '.gate.' + id; }

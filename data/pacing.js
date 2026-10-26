@@ -4,8 +4,8 @@
  * Data source: PROPOSALS/SPROUT_TIME_NORMS_2026-10-17.md (compiled 2026-10-17)
  *   - per-subject norms .... §1 (published minute recommendations), §2 (engaged-time rule),
  *                            §5 (writing minutes), §9 (overload thresholds)
- *   - shipped baselines ..... SaittaSprout lane recalibration, owner GO 2026-10-17 09:26
- *                            (LNM_BRAIN/SAITTASPROUT/build_recalibrate_week.py RULE 1:
+ *   - shipped baselines ..... SPROUT lane recalibration, owner GO 2026-10-17 09:26
+ *                            (LNM_BRAIN/SPROUT/build_recalibrate_week.py RULE 1:
  *                            block.min = lesson.minutes + practice segment). That script
  *                            is the source of the per-subject base_min values below;
  *                            per-subject range = [0.8x, 1.2x] of the shipped slot,
@@ -50,7 +50,7 @@ window.SPROUT_PACING_DATA = {
    * "coding" because it is enrichment, never statutory coverage).
    *
    *   base_min  reference slot = the shipped, recalibrated block value
-   *             (SaittaSprout lane RULE 1: lesson.minutes + practice segment)
+   *             (SPROUT lane RULE 1: lesson.minutes + practice segment)
    *   lo_min    [0.8 x base] floored at the MI map §4 core minimum where one
    *             exists, widened only where the shipped data itself runs shorter
    *             (light / consolidation-day slots) — widening keeps recalc identity
@@ -63,7 +63,7 @@ window.SPROUT_PACING_DATA = {
 
     '3': {
       mathematics:    { base_min: 45, lo_min: 36, hi_min: 54, floor_min: 30, hours_per_day: 0.75, hours_per_week_upper: 3.0,
-                        source: 'SaittaSprout lane recalibration (build_recalibrate_week.py RULE 1: lesson.minutes + 30) — shipped g3 math slot 45 (36 on the consolidation week, 50 on long days); §1 math >=60 min/day is a school-day figure, §10 homeschool practice 3.0-3.5 h/day',
+                        source: 'SPROUT lane recalibration (build_recalibrate_week.py RULE 1: lesson.minutes + 30) — shipped g3 math slot 45 (36 on the consolidation week, 50 on long days); §1 math >=60 min/day is a school-day figure, §10 homeschool practice 3.0-3.5 h/day',
                         note: 'MI §4 daily core. RANGE [0.8x,1.2x] of the shipped slot, floored at the §4 core minimum (30).' },
       reading:        { base_min: 35, lo_min: 28, hi_min: 42, floor_min: 20, hours_per_day: 0.58, hours_per_week_upper: 2.33,
                         source: 'lane recalibration (lesson.minutes + 15 silent reading) — shipped g3 reading slot 35 (28 light days); §4 core 20-30 min',
@@ -96,7 +96,7 @@ window.SPROUT_PACING_DATA = {
 
     '5': {
       mathematics:    { base_min: 55, lo_min: 40, hi_min: 66, floor_min: 30, hours_per_day: 0.92, hours_per_week_upper: 3.67,
-                        source: 'SaittaSprout lane recalibration (build_recalibrate_week.py RULE 1: lesson.minutes + 35) — shipped g5 math slot 55 (44/40 light days, 50 long days); §1 math >=60 min/day is a school-day figure',
+                        source: 'SPROUT lane recalibration (build_recalibrate_week.py RULE 1: lesson.minutes + 35) — shipped g5 math slot 55 (44/40 light days, 50 long days); §1 math >=60 min/day is a school-day figure',
                         note: 'MI §4 daily core. RANGE [0.8x,1.2x] of the shipped slot, floored at the §4 core minimum (30), widened to the shipped 40-min consolidation slot.' },
       reading:        { base_min: 75, lo_min: 60, hi_min: 90, floor_min: 20, hours_per_day: 1.25, hours_per_week_upper: 5.0,
                         source: 'lane recalibration (lesson.minutes 60 + 15 silent reading) — shipped g5 reading slot 75 (60 light days); §1 literacy >=120 min/day',

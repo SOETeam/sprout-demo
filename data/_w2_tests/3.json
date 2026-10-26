@@ -7,10 +7,10 @@
   "minutes": 15,
   "passScore": 0.8,
   "covers": [
-    "max_w2_l1",
-    "max_w2_l2",
-    "max_w2_l3",
-    "max_w2_l4"
+    "juniper_w2_l1",
+    "juniper_w2_l2",
+    "juniper_w2_l3",
+    "juniper_w2_l4"
   ],
   "note": "Drawn from Juniper's week-2 math lessons (times table review 2-5, equal groups & arrays, word problems with arrays, estimate to check) plus the daily spine practice activities.",
   "questions": [

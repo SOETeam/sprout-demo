@@ -20,7 +20,7 @@ Corrections are new `CORR-` entries. Existing lines are never edited.
 ## Public demo v1 rulings
 
 - D-2026-10-06-1 | RESOLVED | Grade gating: v1 enables `preschool`, `3`, `5`; every other K–12 grade renders disabled + "Coming soon" (visible roadmap, inert click). | SPROUT_DEMO_V1_PLAN_2026-10-06.md §1 F2
-- D-2026-10-06-2 | RESOLVED | localStorage namespace is `sprout_demo_v1`; `saittasprout_v1` / `sprout_v2` are never read or written; "Clear this demo" removes only the `sprout_demo_v1` prefix. | plan §4.2
+- D-2026-10-06-2 | RESOLVED | localStorage namespace is `sprout_demo_v1`; `sprout_v1` / `sprout_v2` are never read or written; "Clear this demo" removes only the `sprout_demo_v1` prefix. | plan §4.2
 - D-2026-10-06-3 | RESOLVED | Synthetic-only names in every served byte (persona set Juniper / Pixel / Rookie + a synthetic-name helper); banned: the three real learner names used in the source repo plus any synthetic-lookalike personal, contact or money figures (plan §4.1). | plan §4.1
 - D-2026-10-06-4 | RESOLVED | `w1_items = 166` is a **cross-grade** figure = 72 scheduled blocks + 72 open-lesson markdowns + 22 generator configs (3rd 61 + 5th 57 + preschool 48). "166 per grade" is wrong and must not be restated; per-grade *full* inventories are 115 / 117 / 70 (plan §0). | plan §0 "The 166 reconciliation"
 - D-2026-10-06-5 | RESOLVED | w2 scope: 72 schedule cards (from `year_curriculum`) + 24 new grade-3 open-lesson objects + 3 weekly tests (10/14/6 questions) drafted via the free worker pool from the master docs and manager-verified; generator practice is seeded at runtime (0 authored items); w3–w6 are topic-only cards with a "Section coming soon" badge. | plan §2

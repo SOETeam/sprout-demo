@@ -8,7 +8,7 @@ import json, os, sys, glob
 
 D = "/root/sprout-demo/data"
 P = "/root/LNM_BRAIN/AGENT_DISPATCH/WORKER_POOL/packets"
-EXPECTED = ["max_w2_l%d" % i for i in range(1, 25)]
+EXPECTED = ["juniper_w2_l%d" % i for i in range(1, 25)]
 
 def complete_objects(raw):
     """Return the list of complete top-level {...} objects found in raw."""
@@ -36,7 +36,7 @@ def complete_objects(raw):
 def valid_lesson(ls):
     if not isinstance(ls, dict): return False, "not an object"
     lid = ls.get("id")
-    if not lid or not str(lid).startswith("max_w2_l"): return False, "bad id"
+    if not lid or not str(lid).startswith("juniper_w2_l"): return False, "bad id"
     c = ls.get("content") or {}
     ex = c.get("explain") or ""
     if len(ex) < 80: return False, "explain too short (%d)" % len(ex)
@@ -98,7 +98,7 @@ def main():
                      '"practice":[{"question","options":[4 strings],"correctIndex":0-3,"hint","praise"} x3-5],'
                      '"workbook":[{"prompt","answer"} x0-2]}}.\n'
                      "Cover ONLY the schedule blocks and year-doc text in the source file. Grade-3 wording. "
-                     "NEVER use the words Max, Adonis, Luca, Mimi, Sophi, Doni, Saitta. No child is ever wrong/failing. "
+                     "NEVER use any real family or child first name (roster is private, not in this file). No child is ever wrong/failing. "
                      "Output ONLY the JSON array, no prose, no markdown fences. Keep every string SHORT so nothing is cut off."
                      % (", ".join(chunk), len(chunk))),
             "context_files": [P + "/sprout-w2-ctx/lessons_grade3_w2_source.json"],

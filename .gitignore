@@ -1,0 +1,5 @@
+# Never commit the private build manifest — it holds real learner names + private paths.
+tools/_private_names.json
+# python build artifacts
+__pycache__/
+*.pyc

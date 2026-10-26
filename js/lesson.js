@@ -1,4 +1,4 @@
-/* SaittaSprout Open Lesson View — five sections for EVERY week-1 day card:
+/* SPROUT Open Lesson View — five sections for EVERY week-1 day card:
    1 Explain · 2 Worked Examples · 3 Workbook Area (reveal on demand)
    4 Practice Area (generator arena: auto-spawn, streak, timer, minutes)
    5 Note Section (autosave into the student's own store).
@@ -359,7 +359,7 @@
         });
         saveHighlights(ctx, out);
         if (typeof document !== 'undefined' && document.dispatchEvent) {
-          try { document.dispatchEvent(new CustomEvent('saittasprout:highlights')); } catch (e) {}
+          try { document.dispatchEvent(new CustomEvent('sprout:highlights')); } catch (e) {}
         }
       });
     });

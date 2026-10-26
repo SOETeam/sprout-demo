@@ -1,4 +1,4 @@
-/* SaittaSprout Workspaces — rule-based digital manipulatives for math, spelling,
+/* SPROUT Workspaces — rule-based digital manipulatives for math, spelling,
    writing and reading, mounted beside (desktop) or over (mobile) the lesson view.
 
    ZERO AI, ZERO NETWORK: every tool is deterministic JS/SVG built from the lesson's
@@ -1120,10 +1120,10 @@
       paint();
     });
     if (document.removeEventListener && window.__SPROUT_HI_HANDLER) {
-      try { document.removeEventListener('saittasprout:highlights', window.__SPROUT_HI_HANDLER); } catch (e) {}
+      try { document.removeEventListener('sprout:highlights', window.__SPROUT_HI_HANDLER); } catch (e) {}
     }
     window.__SPROUT_HI_HANDLER = function () { paint(); };
-    if (document.addEventListener) { document.addEventListener('saittasprout:highlights', window.__SPROUT_HI_HANDLER); }
+    if (document.addEventListener) { document.addEventListener('sprout:highlights', window.__SPROUT_HI_HANDLER); }
     paint();
   }
 

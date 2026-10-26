@@ -28,7 +28,7 @@
     "D"
    ],
    "answer": "A",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q1[0]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q1[0]"
   },
   {
    "id": "itm_1ac6e2144aff0c8f",
@@ -53,7 +53,7 @@
     "S"
    ],
    "answer": "M",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q1[1]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q1[1]"
   },
   {
    "id": "itm_cdb8e51dd162e9eb",
@@ -78,7 +78,7 @@
     "E"
    ],
    "answer": "B",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q1[2]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q1[2]"
   },
   {
    "id": "itm_c2695ee9021869fb",
@@ -103,7 +103,7 @@
     "V"
    ],
    "answer": "S",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q1[3]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q1[3]"
   },
   {
    "id": "itm_257a96e8c56251b1",
@@ -128,7 +128,7 @@
     "F"
    ],
    "answer": "B",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q1[4]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q1[4]"
   },
   {
    "id": "itm_7f4c34f1f4fd25fc",
@@ -153,7 +153,7 @@
     "E"
    ],
    "answer": "B",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q1[5]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q1[5]"
   },
   {
    "id": "itm_a97b3f038033c007",
@@ -178,7 +178,7 @@
     "5"
    ],
    "answer": "3",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q2[0]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q2[0]"
   },
   {
    "id": "itm_4172632e81cb2dcc",
@@ -203,7 +203,7 @@
     "10"
    ],
    "answer": "8",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q2[1]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q2[1]"
   },
   {
    "id": "itm_6a73d5ac36500996",
@@ -228,7 +228,7 @@
     "Rectangle"
    ],
    "answer": "Circle",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q2[2]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q2[2]"
   },
   {
    "id": "itm_9701802dbaefb035",
@@ -253,7 +253,7 @@
     "6"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q2[3]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q2[3]"
   },
   {
    "id": "itm_d4b932ab8b4790f8",
@@ -278,7 +278,7 @@
     "Star"
    ],
    "answer": "Triangle",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q2[4]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q2[4]"
   },
   {
    "id": "itm_d04e1e9b3d05fe9f",
@@ -303,7 +303,7 @@
     "15"
    ],
    "answer": "13",
-   "provenance": "content.json:weeks/preschool/1/quizzes/luca_q2[5]"
+   "provenance": "content.json:weeks/preschool/1/quizzes/rookie_q2[5]"
   },
   {
    "id": "itm_ee7e3ab4c635ecfd",
@@ -480,7 +480,7 @@
     "15"
    ],
    "answer": "0",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[0]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[0]"
   },
   {
    "id": "itm_08bc4283493d182a",
@@ -507,7 +507,7 @@
     "14"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[1]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[1]"
   },
   {
    "id": "itm_0bcabbe25953896e",
@@ -534,7 +534,7 @@
     "30"
    ],
    "answer": "25",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[2]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[2]"
   },
   {
    "id": "itm_cb249108ca2a74ca",
@@ -561,7 +561,7 @@
     "5, 10, 15, 20"
    ],
    "answer": "2, 4, 6, 8",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[3]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[3]"
   },
   {
    "id": "itm_3d5f4fc33bb60768",
@@ -588,7 +588,7 @@
     "15"
    ],
    "answer": "20",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[4]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[4]"
   },
   {
    "id": "itm_8aa026081be8b3df",
@@ -615,7 +615,7 @@
     "5,000"
    ],
    "answer": "500",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[5]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[5]"
   },
   {
    "id": "itm_0b49ff9031e64f37",
@@ -642,7 +642,7 @@
     "5"
    ],
    "answer": "3",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[6]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[6]"
   },
   {
    "id": "itm_e582c7fd4d857d56",
@@ -669,7 +669,7 @@
     "He forgot his book"
    ],
    "answer": "The library was closed",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[7]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[7]"
   },
   {
    "id": "itm_0a48e65184eba54b",
@@ -696,7 +696,7 @@
     "frind"
    ],
    "answer": "friend",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[8]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[8]"
   },
   {
    "id": "itm_19289e0367bc2faa",
@@ -721,7 +721,7 @@
     "A shoe"
    ],
    "answer": "A fish",
-   "provenance": "content.json:weeks/3/1/test/max_w1_test[9]"
+   "provenance": "content.json:weeks/3/1/test/juniper_w1_test[9]"
   },
   {
    "id": "itm_2ff3c485b0d75502",
@@ -748,7 +748,7 @@
     "15"
    ],
    "answer": "25",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[1]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[1]"
   },
   {
    "id": "itm_d7b75d59fea5fa6b",
@@ -775,7 +775,7 @@
     "16"
    ],
    "answer": "14",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[2]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[2]"
   },
   {
    "id": "itm_c9de49f0a970c9a1",
@@ -802,7 +802,7 @@
     "2"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[3]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[3]"
   },
   {
    "id": "itm_b59090ffd720286b",
@@ -829,7 +829,7 @@
     "7000"
    ],
    "answer": "700",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[4]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[4]"
   },
   {
    "id": "itm_d0d81b6eddf7722b",
@@ -856,7 +856,7 @@
     "844"
    ],
    "answer": "834",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[5]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[5]"
   },
   {
    "id": "itm_b2de77653ce79b2b",
@@ -883,7 +883,7 @@
     "5 + 5"
    ],
    "answer": "5 + 5 + 5 + 5",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[6]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[6]"
   },
   {
    "id": "itm_7f4952dc3cdf5f06",
@@ -910,7 +910,7 @@
     "24"
    ],
    "answer": "18",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q1[7]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q1[7]"
   },
   {
    "id": "itm_eef62e07238a8e04",
@@ -938,7 +938,7 @@
     "It was playing"
    ],
    "answer": "It was late",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[0]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[0]"
   },
   {
    "id": "itm_aadf9f6965508347",
@@ -966,7 +966,7 @@
     "quiet"
    ],
    "answer": "fast",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[1]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[1]"
   },
   {
    "id": "itm_e580961f6991e64d",
@@ -993,7 +993,7 @@
     "beatiful"
    ],
    "answer": "beautiful",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[2]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[2]"
   },
   {
    "id": "itm_f44d5187c60cce56",
@@ -1020,7 +1020,7 @@
     "risieve"
    ],
    "answer": "receive",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[3]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[3]"
   },
   {
    "id": "itm_e1cb795d6430b23f",
@@ -1045,7 +1045,7 @@
     "A computer game"
    ],
    "answer": "A list of steps to finish a task",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[4]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[4]"
   },
   {
    "id": "itm_91e346fc01b7b237",
@@ -1070,7 +1070,7 @@
     "Saves the blocks"
    ],
    "answer": "Repeats the blocks",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[5]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[5]"
   },
   {
    "id": "itm_a7dbed75e0370337",
@@ -1095,7 +1095,7 @@
     "Jupiter"
    ],
    "answer": "Earth",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[6]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[6]"
   },
   {
    "id": "itm_efb40138ba1ff7db",
@@ -1120,7 +1120,7 @@
     "1980s"
    ],
    "answer": "1960s",
-   "provenance": "content.json:weeks/3/1/quizzes/max_q2[7]"
+   "provenance": "content.json:weeks/3/1/quizzes/juniper_q2[7]"
   },
   {
    "id": "itm_3413ec6d10a8d91d",
@@ -1415,7 +1415,7 @@
     "3/5"
    ],
    "answer": "5/8",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[0]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[0]"
   },
   {
    "id": "itm_e72628ef1ab40bdb",
@@ -1440,7 +1440,7 @@
     "Nothing at all"
    ],
    "answer": "How many equal parts the whole has",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[1]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[1]"
   },
   {
    "id": "itm_7453f81bd9166818",
@@ -1465,7 +1465,7 @@
     "4/6"
    ],
    "answer": "4/10",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[2]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[2]"
   },
   {
    "id": "itm_3c38ee68b2f14ccb",
@@ -1490,7 +1490,7 @@
     "1/4"
    ],
    "answer": "7",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[3]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[3]"
   },
   {
    "id": "itm_202e2ceb6723ce18",
@@ -1515,7 +1515,7 @@
     "5/6"
    ],
    "answer": "2/6",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[4]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[4]"
   },
   {
    "id": "itm_a57e84e2b9f73452",
@@ -1540,7 +1540,7 @@
     "13"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[5]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[5]"
   },
   {
    "id": "itm_8d5435e71dfa2087",
@@ -1565,7 +1565,7 @@
     "1/3 and 2/3"
    ],
    "answer": "1/3 and 2/3",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[6]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[6]"
   },
   {
    "id": "itm_b576e60a16dfbdfe",
@@ -1590,7 +1590,7 @@
     "3"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[7]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[7]"
   },
   {
    "id": "itm_b287fc418e718555",
@@ -1615,7 +1615,7 @@
     "30"
    ],
    "answer": "26",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[8]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[8]"
   },
   {
    "id": "itm_dd6efb7e7b9305e4",
@@ -1640,7 +1640,7 @@
     "print score"
    ],
    "answer": "score = 7",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[9]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[9]"
   },
   {
    "id": "itm_2f85327a43f1ded8",
@@ -1665,7 +1665,7 @@
     "show Hello"
    ],
    "answer": "print(\"Hello\")",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[10]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[10]"
   },
   {
    "id": "itm_0e78152ee21f0594",
@@ -1690,7 +1690,7 @@
     "It should be a loop"
    ],
    "answer": "Quotes and parentheses are missing",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[11]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[11]"
   },
   {
    "id": "itm_144777302a25bea4",
@@ -1715,7 +1715,7 @@
     "comment"
    ],
    "answer": "string",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[12]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[12]"
   },
   {
    "id": "itm_843a2bdea2b1c60a",
@@ -1742,7 +1742,7 @@
     "saparate"
    ],
    "answer": "separate",
-   "provenance": "content.json:weeks/5/1/test/adonis_w1_test[13]"
+   "provenance": "content.json:weeks/5/1/test/pixel_w1_test[13]"
   },
   {
    "id": "itm_28718e739de10464",
@@ -1767,7 +1767,7 @@
     "2/4"
    ],
    "answer": "3/4",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[0]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[0]"
   },
   {
    "id": "itm_c3b95123cd2e234a",
@@ -1792,7 +1792,7 @@
     "2/3"
    ],
    "answer": "2/4",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[1]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[1]"
   },
   {
    "id": "itm_5bf28195c8b86db8",
@@ -1817,7 +1817,7 @@
     "15"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[2]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[2]"
   },
   {
    "id": "itm_ee128031d26db300",
@@ -1842,7 +1842,7 @@
     "28"
    ],
    "answer": "24",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[3]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[3]"
   },
   {
    "id": "itm_7f052b187408062f",
@@ -1867,7 +1867,7 @@
     "28"
    ],
    "answer": "20",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[4]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[4]"
   },
   {
    "id": "itm_e0d109fd7d2b16b8",
@@ -1892,7 +1892,7 @@
     "36"
    ],
    "answer": "27",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[5]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[5]"
   },
   {
    "id": "itm_b65a49b66384c24d",
@@ -1919,7 +1919,7 @@
     "7"
    ],
    "answer": "8",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[6]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[6]"
   },
   {
    "id": "itm_ff33e1ef9eedef4b",
@@ -1946,7 +1946,7 @@
     "24"
    ],
    "answer": "7",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[7]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[7]"
   },
   {
    "id": "itm_0e4a5cdf9d10a803",
@@ -1973,7 +1973,7 @@
     "11"
    ],
    "answer": "15",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[8]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[8]"
   },
   {
    "id": "itm_d6f8d784eda676e5",
@@ -2000,7 +2000,7 @@
     "12"
    ],
    "answer": "n",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q1[9]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q1[9]"
   },
   {
    "id": "itm_dffe9b89a133e9a8",
@@ -2025,7 +2025,7 @@
     "turn off the computer"
    ],
    "answer": "repeat a set of instructions",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[0]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[0]"
   },
   {
    "id": "itm_b4758a52f009a049",
@@ -2050,7 +2050,7 @@
     "input"
    ],
    "answer": "for",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[1]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[1]"
   },
   {
    "id": "itm_0fff25e7137720b5",
@@ -2075,7 +2075,7 @@
     "write Hi"
    ],
    "answer": "print('Hi')",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[2]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[2]"
   },
   {
    "id": "itm_e472dd578884b3b0",
@@ -2102,7 +2102,7 @@
     "only sentences"
    ],
    "answer": "a value that can change",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[3]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[3]"
   },
   {
    "id": "itm_606fe9d1db1b70c6",
@@ -2127,7 +2127,7 @@
     "*"
    ],
    "answer": "#",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[4]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[4]"
   },
   {
    "id": "itm_42d8dc40353a4194",
@@ -2152,7 +2152,7 @@
     "Home Tool Markup Language"
    ],
    "answer": "HyperText Markup Language",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[5]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[5]"
   },
   {
    "id": "itm_6502a91dd2e9f660",
@@ -2177,7 +2177,7 @@
     "<b>"
    ],
    "answer": "<h1>",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[6]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[6]"
   },
   {
    "id": "itm_99a7495fa52e6b90",
@@ -2202,7 +2202,7 @@
     "<a>"
    ],
    "answer": "<p>",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[7]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[7]"
   },
   {
    "id": "itm_aa764b4abccdecb1",
@@ -2229,7 +2229,7 @@
     "Where are you going"
    ],
    "answer": "Where are you going?",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[8]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[8]"
   },
   {
    "id": "itm_d1824f7b1ad16bca",
@@ -2256,7 +2256,7 @@
     "donot"
    ],
    "answer": "don't",
-   "provenance": "content.json:weeks/5/1/quizzes/adonis_q2[9]"
+   "provenance": "content.json:weeks/5/1/quizzes/pixel_q2[9]"
   },
   {
    "id": "itm_d7203c3484cc01cf",
@@ -2646,7 +2646,7 @@
     "H"
    ],
    "answer": "G",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l1.practice[0]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l1.practice[0]"
   },
   {
    "id": "itm_950e388c7cfb0838",
@@ -2670,7 +2670,7 @@
     "C"
    ],
    "answer": "A",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l1.practice[1]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l1.practice[1]"
   },
   {
    "id": "itm_d9933ffe1780ff51",
@@ -2694,7 +2694,7 @@
     "T"
    ],
    "answer": "S",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l1.practice[2]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l1.practice[2]"
   },
   {
    "id": "itm_bf5bb5257fe6bc3d",
@@ -2718,7 +2718,7 @@
     "E"
    ],
    "answer": "C",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l1.practice[3]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l1.practice[3]"
   },
   {
    "id": "itm_33d327e43b782ffc",
@@ -2742,7 +2742,7 @@
     "X"
    ],
    "answer": "Z",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l2.practice[0]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l2.practice[0]"
   },
   {
    "id": "itm_864abff820d9dbce",
@@ -2766,7 +2766,7 @@
     "R"
    ],
    "answer": "U",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l2.practice[1]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l2.practice[1]"
   },
   {
    "id": "itm_af24a51b186e61b7",
@@ -2790,7 +2790,7 @@
     "Z"
    ],
    "answer": "Z",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l2.practice[2]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l2.practice[2]"
   },
   {
    "id": "itm_e0ecdae0c7dd49fb",
@@ -2814,7 +2814,7 @@
     "V"
    ],
    "answer": "Y",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l2.practice[3]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l2.practice[3]"
   },
   {
    "id": "itm_b107955d673f9453",
@@ -2838,7 +2838,7 @@
     "sss"
    ],
    "answer": "dih",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l3.practice[0]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l3.practice[0]"
   },
   {
    "id": "itm_aaa6193cc21f1ce9",
@@ -2862,7 +2862,7 @@
     "pah"
    ],
    "answer": "sss",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l3.practice[1]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l3.practice[1]"
   },
   {
    "id": "itm_9e3952fc5dfcf69a",
@@ -2886,7 +2886,7 @@
     "tih"
    ],
    "answer": "mmm",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l3.practice[2]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l3.practice[2]"
   },
   {
    "id": "itm_e27ce07029645124",
@@ -2910,7 +2910,7 @@
     "P"
    ],
    "answer": "G",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l4.practice[0]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l4.practice[0]"
   },
   {
    "id": "itm_726af8023a3c6bff",
@@ -2934,7 +2934,7 @@
     "G"
    ],
    "answer": "E",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l4.practice[1]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l4.practice[1]"
   },
   {
    "id": "itm_4a556b6bdb630db8",
@@ -2958,7 +2958,7 @@
     "S"
    ],
    "answer": "R",
-   "provenance": "content.json:weeks/preschool/1/lessons/luca_w1_l4.practice[2]"
+   "provenance": "content.json:weeks/preschool/1/lessons/rookie_w1_l4.practice[2]"
   },
   {
    "id": "itm_d1697b50bc4d8fe9",
@@ -2982,7 +2982,7 @@
     "3"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l1.practice[0]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l1.practice[0]"
   },
   {
    "id": "itm_9eda56a5be09cc8c",
@@ -3006,7 +3006,7 @@
     "2"
    ],
    "answer": "4",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l1.practice[1]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l1.practice[1]"
   },
   {
    "id": "itm_06dfec941c7b7220",
@@ -3030,7 +3030,7 @@
     "10"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l1.practice[2]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l1.practice[2]"
   },
   {
    "id": "itm_0fb6426856dc0759",
@@ -3054,7 +3054,7 @@
     "They are the same"
    ],
    "answer": "7",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l1.practice[3]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l1.practice[3]"
   },
   {
    "id": "itm_be429875745d5e25",
@@ -3078,7 +3078,7 @@
     "13"
    ],
    "answer": "15",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l2.practice[0]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l2.practice[0]"
   },
   {
    "id": "itm_3738158b1e1821d2",
@@ -3102,7 +3102,7 @@
     "30"
    ],
    "answer": "20",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l2.practice[1]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l2.practice[1]"
   },
   {
    "id": "itm_3db6443d7c68d93f",
@@ -3126,7 +3126,7 @@
     "20"
    ],
    "answer": "19",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l2.practice[2]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l2.practice[2]"
   },
   {
    "id": "itm_d512fa463d5b924d",
@@ -3150,7 +3150,7 @@
     "10"
    ],
    "answer": "13",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l2.practice[3]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l2.practice[3]"
   },
   {
    "id": "itm_81b2b5a77e962995",
@@ -3174,7 +3174,7 @@
     "They are the same"
    ],
    "answer": "5 apples",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l3.practice[0]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l3.practice[0]"
   },
   {
    "id": "itm_5510b30c5c8c31a6",
@@ -3198,7 +3198,7 @@
     "They are the same"
    ],
    "answer": "8",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l3.practice[1]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l3.practice[1]"
   },
   {
    "id": "itm_51b71fb1c00aa71d",
@@ -3222,7 +3222,7 @@
     "They are the same"
    ],
    "answer": "2",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l3.practice[2]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l3.practice[2]"
   },
   {
    "id": "itm_28c39569a8487a16",
@@ -3246,7 +3246,7 @@
     "3"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l4.practice[0]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l4.practice[0]"
   },
   {
    "id": "itm_929fc59ec905a97b",
@@ -3270,7 +3270,7 @@
     "6"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l4.practice[1]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l4.practice[1]"
   },
   {
    "id": "itm_34dd4d88fa6c988c",
@@ -3294,7 +3294,7 @@
     "They are the same"
    ],
    "answer": "4 cars",
-   "provenance": "content.json:weeks/preschool/2/lessons/luca_w2_l4.practice[2]"
+   "provenance": "content.json:weeks/preschool/2/lessons/rookie_w2_l4.practice[2]"
   },
   {
    "id": "itm_05d6dee3b9e58a08",
@@ -3318,7 +3318,7 @@
     "Black"
    ],
    "answer": "Yellow",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l1.practice[0]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l1.practice[0]"
   },
   {
    "id": "itm_f94fffb1fcc87e0c",
@@ -3342,7 +3342,7 @@
     "Red"
    ],
    "answer": "Blue",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l1.practice[1]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l1.practice[1]"
   },
   {
    "id": "itm_0907d765bec8d034",
@@ -3366,7 +3366,7 @@
     "The lettuce"
    ],
    "answer": "The strawberry",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l1.practice[2]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l1.practice[2]"
   },
   {
    "id": "itm_7b360133e4121a13",
@@ -3390,7 +3390,7 @@
     "2"
    ],
    "answer": "3",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l2.practice[0]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l2.practice[0]"
   },
   {
    "id": "itm_7289896588603fbd",
@@ -3414,7 +3414,7 @@
     "Star"
    ],
    "answer": "Circle",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l2.practice[1]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l2.practice[1]"
   },
   {
    "id": "itm_6dcf5966e4c8b4f9",
@@ -3438,7 +3438,7 @@
     "Star"
    ],
    "answer": "Rectangle",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l2.practice[2]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l2.practice[2]"
   },
   {
    "id": "itm_41158b6307c4eafe",
@@ -3462,7 +3462,7 @@
     "5"
    ],
    "answer": "4",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l2.practice[3]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l2.practice[3]"
   },
   {
    "id": "itm_c56bce9c13f799f6",
@@ -3486,7 +3486,7 @@
     "Green"
    ],
    "answer": "Red",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l3.practice[0]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l3.practice[0]"
   },
   {
    "id": "itm_ec019f2ac09dd624",
@@ -3510,7 +3510,7 @@
     "5"
    ],
    "answer": "1",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l3.practice[1]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l3.practice[1]"
   },
   {
    "id": "itm_df9122f1f262a6c2",
@@ -3534,7 +3534,7 @@
     "Sun"
    ],
    "answer": "Star",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l3.practice[2]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l3.practice[2]"
   },
   {
    "id": "itm_2899fca93e47768f",
@@ -3558,7 +3558,7 @@
     "B"
    ],
    "answer": "B",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l3.practice[3]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l3.practice[3]"
   },
   {
    "id": "itm_1f48b71859a591fe",
@@ -3582,7 +3582,7 @@
     "The ball"
    ],
    "answer": "The apple",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l4.practice[0]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l4.practice[0]"
   },
   {
    "id": "itm_5bf11c1c56b95ec9",
@@ -3606,7 +3606,7 @@
     "The square"
    ],
    "answer": "The circle",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l4.practice[1]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l4.practice[1]"
   },
   {
    "id": "itm_af2a98d514444fee",
@@ -3630,7 +3630,7 @@
     "The yellow dot"
    ],
    "answer": "The blue square",
-   "provenance": "content.json:weeks/preschool/3/lessons/luca_w3_l4.practice[2]"
+   "provenance": "content.json:weeks/preschool/3/lessons/rookie_w3_l4.practice[2]"
   },
   {
    "id": "itm_cdb0e7bc2b75f217",
@@ -3654,7 +3654,7 @@
     "The squiggle"
    ],
    "answer": "The straight line",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l1.practice[0]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l1.practice[0]"
   },
   {
    "id": "itm_3530c3f0fd2abdb0",
@@ -3678,7 +3678,7 @@
     "The dot"
    ],
    "answer": "The wavy line",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l1.practice[1]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l1.practice[1]"
   },
   {
    "id": "itm_795bdeb79ecafcb2",
@@ -3702,7 +3702,7 @@
     "Anywhere, it does not matter"
    ],
    "answer": "At the start",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l1.practice[2]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l1.practice[2]"
   },
   {
    "id": "itm_550530ae91abc71c",
@@ -3726,7 +3726,7 @@
     "0"
    ],
    "answer": "4",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l2.practice[0]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l2.practice[0]"
   },
   {
    "id": "itm_c7d8113adcc1c975",
@@ -3750,7 +3750,7 @@
     "The triangle"
    ],
    "answer": "The circle",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l2.practice[1]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l2.practice[1]"
   },
   {
    "id": "itm_900166e40b6d7f50",
@@ -3774,7 +3774,7 @@
     "4"
    ],
    "answer": "0",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l2.practice[2]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l2.practice[2]"
   },
   {
    "id": "itm_45180b5803643433",
@@ -3798,7 +3798,7 @@
     "On a chair"
    ],
    "answer": "On a log",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l3.practice[0]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l3.practice[0]"
   },
   {
    "id": "itm_2e4782dc009500ca",
@@ -3822,7 +3822,7 @@
     "Up a tree"
    ],
    "answer": "In the pond",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l3.practice[1]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l3.practice[1]"
   },
   {
    "id": "itm_ff3d947ffb4b6331",
@@ -3846,7 +3846,7 @@
     "Close the book"
    ],
    "answer": "Listen and look at the pictures",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l3.practice[2]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l3.practice[2]"
   },
   {
    "id": "itm_dd41107ae66e5ca7",
@@ -3870,7 +3870,7 @@
     "The rain"
    ],
    "answer": "The seeds",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l4.practice[0]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l4.practice[0]"
   },
   {
    "id": "itm_3c554c5c540774c8",
@@ -3894,7 +3894,7 @@
     "The rain"
    ],
    "answer": "The flower",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l4.practice[1]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l4.practice[1]"
   },
   {
    "id": "itm_b4673c605ade464b",
@@ -3918,7 +3918,7 @@
     "A dog"
    ],
    "answer": "Rain",
-   "provenance": "content.json:weeks/preschool/4/lessons/luca_w4_l4.practice[2]"
+   "provenance": "content.json:weeks/preschool/4/lessons/rookie_w4_l4.practice[2]"
   },
   {
    "id": "itm_5c7b4340701c953e",
@@ -3945,7 +3945,7 @@
     "5, 10, 15, 20"
    ],
    "answer": "10, 20, 30, 40",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l1.practice[2]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l1.practice[2]"
   },
   {
    "id": "itm_067c0086989ee788",
@@ -3972,7 +3972,7 @@
     "15"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l1.practice[3]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l1.practice[3]"
   },
   {
    "id": "itm_81b2c43b6f63003b",
@@ -3999,7 +3999,7 @@
     "28"
    ],
    "answer": "24",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l2.practice[0]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l2.practice[0]"
   },
   {
    "id": "itm_4811c6a5f4a05bda",
@@ -4026,7 +4026,7 @@
     "50"
    ],
    "answer": "40",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l2.practice[1]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l2.practice[1]"
   },
   {
    "id": "itm_1d9af22b37d3eba9",
@@ -4053,7 +4053,7 @@
     "5 + 3"
    ],
    "answer": "5 + 5 + 5",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l2.practice[2]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l2.practice[2]"
   },
   {
    "id": "itm_d409efede4502594",
@@ -4080,7 +4080,7 @@
     "21"
    ],
    "answer": "18",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l2.practice[3]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l2.practice[3]"
   },
   {
    "id": "itm_0b8f5d506b28024b",
@@ -4107,7 +4107,7 @@
     "5"
    ],
    "answer": "0",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l3.practice[0]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l3.practice[0]"
   },
   {
    "id": "itm_ed7fac39596066f8",
@@ -4134,7 +4134,7 @@
     "4,000"
    ],
    "answer": "4,000",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l3.practice[2]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l3.practice[2]"
   },
   {
    "id": "itm_34c578298e4c0d2e",
@@ -4161,7 +4161,7 @@
     "513"
    ],
    "answer": "413",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l4.practice[0]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l4.practice[0]"
   },
   {
    "id": "itm_f2cace4e79260a5e",
@@ -4188,7 +4188,7 @@
     "853"
    ],
    "answer": "843",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l4.practice[1]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l4.practice[1]"
   },
   {
    "id": "itm_cdb8a905e63f3266",
@@ -4215,7 +4215,7 @@
     "503"
    ],
    "answer": "603",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l4.practice[2]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l4.practice[2]"
   },
   {
    "id": "itm_12930930c83ba0d4",
@@ -4242,7 +4242,7 @@
     "0"
    ],
    "answer": "1",
-   "provenance": "content.json:weeks/3/1/lessons/max_w1_l4.practice[3]"
+   "provenance": "content.json:weeks/3/1/lessons/juniper_w1_l4.practice[3]"
   },
   {
    "id": "itm_bcf5654ce68a3f05",
@@ -4267,7 +4267,7 @@
     "26"
    ],
    "answer": "24",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l1.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l1.practice[0]"
   },
   {
    "id": "itm_95af62c2912f3bd4",
@@ -4292,7 +4292,7 @@
     "25"
    ],
    "answer": "35",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l1.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l1.practice[1]"
   },
   {
    "id": "itm_d8423ca7dc00aabc",
@@ -4317,7 +4317,7 @@
     "3 x 6 = 21"
    ],
    "answer": "3 x 6 = 18",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l1.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l1.practice[2]"
   },
   {
    "id": "itm_c7fe11d6a2b87843",
@@ -4342,7 +4342,7 @@
     "16"
    ],
    "answer": "24",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l1.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l1.practice[3]"
   },
   {
    "id": "itm_4b6d3a2a91761942",
@@ -4367,7 +4367,7 @@
     "Skip the question"
    ],
    "answer": "Find the proof in the text",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l10.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l10.practice[0]"
   },
   {
    "id": "itm_f4af17427bcaac71",
@@ -4392,7 +4392,7 @@
     "Frogs have fur"
    ],
    "answer": "Frogs have smooth, wet skin",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l10.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l10.practice[1]"
   },
   {
    "id": "itm_3f9cbcd8ec7d43ec",
@@ -4417,7 +4417,7 @@
     "It uses more paper"
    ],
    "answer": "It shows where you found the answer",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l10.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l10.practice[2]"
   },
   {
    "id": "itm_8aad1500d66569b2",
@@ -4442,7 +4442,7 @@
     "Copy a neighbor"
    ],
    "answer": "Reread the passage carefully",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l10.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l10.practice[3]"
   },
   {
    "id": "itm_5ff386a2b659dd4e",
@@ -4467,7 +4467,7 @@
     "10"
    ],
    "answer": "5",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l10.practice[4]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l10.practice[4]"
   },
   {
    "id": "itm_bdd02c4cf3e3face",
@@ -4492,7 +4492,7 @@
     "The cat slept"
    ],
    "answer": "The cat slept.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l11.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l11.practice[0]"
   },
   {
    "id": "itm_5ec478661ad1f016",
@@ -4517,7 +4517,7 @@
     "is hopping the rabbit"
    ],
    "answer": "The rabbit is hopping.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l11.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l11.practice[1]"
   },
   {
    "id": "itm_d2c65862e861da3e",
@@ -4542,7 +4542,7 @@
     "A capital letter"
    ],
    "answer": "A period, question mark, or exclamation point",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l11.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l11.practice[2]"
   },
   {
    "id": "itm_83ee45c5445eeb64",
@@ -4567,7 +4567,7 @@
     "Yesterday played we."
    ],
    "answer": "We played soccer yesterday.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l11.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l11.practice[3]"
   },
   {
    "id": "itm_5949d3e4108cad38",
@@ -4592,7 +4592,7 @@
     "Stops the program"
    ],
    "answer": "Runs blocks inside it multiple times",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l12.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l12.practice[0]"
   },
   {
    "id": "itm_47432a6877ec3880",
@@ -4617,7 +4617,7 @@
     "4"
    ],
    "answer": "2",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l12.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l12.practice[1]"
   },
   {
    "id": "itm_1768a8876d483652",
@@ -4642,7 +4642,7 @@
     "10"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l12.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l12.practice[2]"
   },
   {
    "id": "itm_5736938613bef025",
@@ -4667,7 +4667,7 @@
     "Next to the repeat block"
    ],
    "answer": "Inside the repeat block",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l12.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l12.practice[3]"
   },
   {
    "id": "itm_a3d52ba8a3e4ee51",
@@ -4692,7 +4692,7 @@
     "Artist"
    ],
    "answer": "Police officer",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l13.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l13.practice[0]"
   },
   {
    "id": "itm_58201f7815e42877",
@@ -4717,7 +4717,7 @@
     "Dentist"
    ],
    "answer": "Teacher",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l13.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l13.practice[1]"
   },
   {
    "id": "itm_870df4b903f87432",
@@ -4742,7 +4742,7 @@
     "Farmer"
    ],
    "answer": "Doctor",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l13.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l13.practice[2]"
   },
   {
    "id": "itm_0a4dff20a22a9a8c",
@@ -4767,7 +4767,7 @@
     "Guess the rest"
    ],
    "answer": "Check the lesson and fix 2",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l13.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l13.practice[3]"
   },
   {
    "id": "itm_f54e1bc71df50cbb",
@@ -4792,7 +4792,7 @@
     "Chef"
    ],
    "answer": "Mail carrier",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l13.practice[4]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l13.practice[4]"
   },
   {
    "id": "itm_f39862e6e307c720",
@@ -4817,7 +4817,7 @@
     "Changes the block colors"
    ],
    "answer": "Runs the blocks inside it two times",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l14.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l14.practice[0]"
   },
   {
    "id": "itm_de18af0a37a203b9",
@@ -4842,7 +4842,7 @@
     "3"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l14.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l14.practice[1]"
   },
   {
    "id": "itm_ccf98169f12835cf",
@@ -4867,7 +4867,7 @@
     "In a different project"
    ],
    "answer": "Inside the loop",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l14.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l14.practice[2]"
   },
   {
    "id": "itm_934cb991fae448a6",
@@ -4892,7 +4892,7 @@
     "Copies are better"
    ],
    "answer": "Less typing, fewer mistakes",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l14.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l14.practice[3]"
   },
   {
    "id": "itm_62ebda75ac4613fc",
@@ -4917,7 +4917,7 @@
     "Your opinion"
    ],
    "answer": "The beginning",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l15.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l15.practice[0]"
   },
   {
    "id": "itm_e651a94654ceef77",
@@ -4942,7 +4942,7 @@
     "10"
    ],
    "answer": "4",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l15.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l15.practice[1]"
   },
   {
    "id": "itm_1f8f6f9f270b5a76",
@@ -4967,7 +4967,7 @@
     "A joke"
    ],
    "answer": "Key details from the passage",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l15.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l15.practice[2]"
   },
   {
    "id": "itm_cbaf9dce96aae92a",
@@ -4992,7 +4992,7 @@
     "The first word"
    ],
    "answer": "How the passage ends",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l15.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l15.practice[3]"
   },
   {
    "id": "itm_bb2f2d2a86d2233a",
@@ -5017,7 +5017,7 @@
     "Kid"
    ],
    "answer": "Lamb",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l16.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l16.practice[0]"
   },
   {
    "id": "itm_1176f0e4af1dbb74",
@@ -5042,7 +5042,7 @@
     "Snake"
    ],
    "answer": "Koala",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l16.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l16.practice[1]"
   },
   {
    "id": "itm_7c65b90338b7ad4a",
@@ -5067,7 +5067,7 @@
     "Calf"
    ],
    "answer": "Foal",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l16.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l16.practice[2]"
   },
   {
    "id": "itm_f29b427177db0eb3",
@@ -5092,7 +5092,7 @@
     "All babies can walk right away."
    ],
    "answer": "Some babies look very different from adults.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l16.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l16.practice[3]"
   },
   {
    "id": "itm_82981387b136a6a6",
@@ -5117,7 +5117,7 @@
     "Baby birds should be pets."
    ],
    "answer": "A baby elephant is called a calf.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l17.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l17.practice[0]"
   },
   {
    "id": "itm_3f073752147d708b",
@@ -5142,7 +5142,7 @@
     "Nothing, just the drawing"
    ],
    "answer": "Names of the important parts",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l17.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l17.practice[1]"
   },
   {
    "id": "itm_513305dce32bf22b",
@@ -5167,7 +5167,7 @@
     "One fact"
    ],
    "answer": "Four facts",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l17.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l17.practice[2]"
   },
   {
    "id": "itm_9b123fd28cd45140",
@@ -5192,7 +5192,7 @@
     "Emojis instead of words"
    ],
    "answer": "A capital letter and ending punctuation",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l17.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l17.practice[3]"
   },
   {
    "id": "itm_2dc79060b0a5b0ed",
@@ -5217,7 +5217,7 @@
     "What the weather will be"
    ],
    "answer": "Events in the order they happened",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l18.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l18.practice[0]"
   },
   {
    "id": "itm_b6f3f23dc0c35d5e",
@@ -5242,7 +5242,7 @@
     "Town founded in 1880"
    ],
    "answer": "Fire station at Oak and 3rd",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l18.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l18.practice[1]"
   },
   {
    "id": "itm_0337ebd73263bd8a",
@@ -5267,7 +5267,7 @@
     "Ten labels"
    ],
    "answer": "Four labels",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l18.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l18.practice[2]"
   },
   {
    "id": "itm_996f43ca11f22b04",
@@ -5292,7 +5292,7 @@
     "To scare the cat"
    ],
    "answer": "To check they make sense in order",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l18.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l18.practice[3]"
   },
   {
    "id": "itm_80787db2d1376a9f",
@@ -5317,7 +5317,7 @@
     "Changing the colors"
    ],
    "answer": "Finding and fixing mistakes in code",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l19.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l19.practice[0]"
   },
   {
    "id": "itm_5101adc248aa43f6",
@@ -5342,7 +5342,7 @@
     "The weather forecast"
    ],
    "answer": "What went wrong when the code ran",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l19.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l19.practice[1]"
   },
   {
    "id": "itm_7ef85578c133eb59",
@@ -5367,7 +5367,7 @@
     "Blame the cat"
    ],
    "answer": "Run it and watch the run screen for clues",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l19.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l19.practice[2]"
   },
   {
    "id": "itm_6dd3acb353321d1e",
@@ -5392,7 +5392,7 @@
     "10 blocks"
    ],
    "answer": "6 blocks",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l19.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l19.practice[3]"
   },
   {
    "id": "itm_d248705840986eda",
@@ -5417,7 +5417,7 @@
     "25"
    ],
    "answer": "20",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l2.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l2.practice[0]"
   },
   {
    "id": "itm_f154497067fc68e1",
@@ -5442,7 +5442,7 @@
     "24"
    ],
    "answer": "18",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l2.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l2.practice[1]"
   },
   {
    "id": "itm_09abe182412620b0",
@@ -5467,7 +5467,7 @@
     "4 x 4"
    ],
    "answer": "4 + 4 + 4",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l2.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l2.practice[2]"
   },
   {
    "id": "itm_546144d4934dba4e",
@@ -5492,7 +5492,7 @@
     "7"
    ],
    "answer": "14",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l2.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l2.practice[3]"
   },
   {
    "id": "itm_5013ecb0f2a7d594",
@@ -5517,7 +5517,7 @@
     "One sentence"
    ],
    "answer": "Four sentences",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l20.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l20.practice[0]"
   },
   {
    "id": "itm_f842eb954515c736",
@@ -5542,7 +5542,7 @@
     "What you ate for lunch"
    ],
    "answer": "What the passage is mostly about",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l20.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l20.practice[1]"
   },
   {
    "id": "itm_c0b3e38741211693",
@@ -5567,7 +5567,7 @@
     "On the back of the book"
    ],
    "answer": "In the text",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l20.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l20.practice[2]"
   },
   {
    "id": "itm_fefc346cbc0cd052",
@@ -5592,7 +5592,7 @@
     "Pizza is..."
    ],
    "answer": "Because... or The text says...",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l20.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l20.practice[3]"
   },
   {
    "id": "itm_7813f01a94c76882",
@@ -5617,7 +5617,7 @@
     "Ask a friend to spell it"
    ],
    "answer": "Look at the word and say it aloud",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l21.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l21.practice[0]"
   },
   {
    "id": "itm_d45d70cec340e2e4",
@@ -5642,7 +5642,7 @@
     "Draw a picture of it"
    ],
    "answer": "Uncover and check each letter",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l21.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l21.practice[1]"
   },
   {
    "id": "itm_5e55d4f2cd4a618c",
@@ -5667,7 +5667,7 @@
     "Blame the pencil"
    ],
    "answer": "Rewrite it correctly",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l21.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l21.practice[2]"
   },
   {
    "id": "itm_64632240c70393f6",
@@ -5692,7 +5692,7 @@
     "All ten words"
    ],
    "answer": "Five words",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l21.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l21.practice[3]"
   },
   {
    "id": "itm_8e52adfa5dc7223a",
@@ -5717,7 +5717,7 @@
     "Ten sentences"
    ],
    "answer": "Three sentences",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l22.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l22.practice[0]"
   },
   {
    "id": "itm_303ffbfe72fc9d6f",
@@ -5742,7 +5742,7 @@
     "Your favorite animal name"
    ],
    "answer": "The big idea or main topic",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l22.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l22.practice[1]"
   },
   {
    "id": "itm_cd784e62f12ef699",
@@ -5767,7 +5767,7 @@
     "Labels are not needed"
    ],
    "answer": "So others understand the parts",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l22.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l22.practice[2]"
   },
   {
    "id": "itm_922c85cf34bedc8a",
@@ -5792,7 +5792,7 @@
     "Draw on the parent's hand"
    ],
    "answer": "Point to each label as you read",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l22.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l22.practice[3]"
   },
   {
    "id": "itm_ec8d3f227c6174b7",
@@ -5817,7 +5817,7 @@
     "Talk during quiet reading"
    ],
    "answer": "Help pick up the dropped papers",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l23.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l23.practice[0]"
   },
   {
    "id": "itm_8727cba412d5aa28",
@@ -5842,7 +5842,7 @@
     "Shout in the library"
    ],
    "answer": "Pick up litter at the park",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l23.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l23.practice[1]"
   },
   {
    "id": "itm_e7d83da2dd4c048a",
@@ -5867,7 +5867,7 @@
     "Ten ways"
    ],
    "answer": "Four ways",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l23.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l23.practice[2]"
   },
   {
    "id": "itm_980d7c684654846a",
@@ -5892,7 +5892,7 @@
     "Write a letter to the mayor"
    ],
    "answer": "Pick one to do this week and make a plan",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l23.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l23.practice[3]"
   },
   {
    "id": "itm_0bfaf641d7462542",
@@ -5917,7 +5917,7 @@
     "Eat"
    ],
    "answer": "Wake up",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l24.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l24.practice[0]"
   },
   {
    "id": "itm_9d262b3ce6b467e8",
@@ -5942,7 +5942,7 @@
     "To skip blocks"
    ],
    "answer": "To check you understand each step",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l24.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l24.practice[1]"
   },
   {
    "id": "itm_498cc33781662122",
@@ -5967,7 +5967,7 @@
     "Walk out"
    ],
    "answer": "Eat",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l24.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l24.practice[2]"
   },
   {
    "id": "itm_a4fbd17213fd33a9",
@@ -5992,7 +5992,7 @@
     "Run it backward"
    ],
    "answer": "Stop and explain the whole routine",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l24.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l24.practice[3]"
   },
   {
    "id": "itm_380adca522e1e580",
@@ -6017,7 +6017,7 @@
     "25"
    ],
    "answer": "20",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l3.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l3.practice[0]"
   },
   {
    "id": "itm_738f1abd2c8a6243",
@@ -6042,7 +6042,7 @@
     "40"
    ],
    "answer": "32",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l3.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l3.practice[1]"
   },
   {
    "id": "itm_f361e202375dfdda",
@@ -6067,7 +6067,7 @@
     "22"
    ],
    "answer": "18",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l3.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l3.practice[2]"
   },
   {
    "id": "itm_cacbc20edc6165dd",
@@ -6092,7 +6092,7 @@
     "Divide"
    ],
    "answer": "Multiply",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l3.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l3.practice[3]"
   },
   {
    "id": "itm_ab351d30eeb49175",
@@ -6117,7 +6117,7 @@
     "About 60"
    ],
    "answer": "About 100",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l4.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l4.practice[0]"
   },
   {
    "id": "itm_7abcecc0e228b1be",
@@ -6142,7 +6142,7 @@
     "20 x 20 = 400"
    ],
    "answer": "20 x 3 = 60",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l4.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l4.practice[1]"
   },
   {
    "id": "itm_dfd90820119a74c0",
@@ -6167,7 +6167,7 @@
     "80"
    ],
    "answer": "80",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l4.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l4.practice[2]"
   },
   {
    "id": "itm_df0b2c43c421c52b",
@@ -6192,7 +6192,7 @@
     "About 300"
    ],
    "answer": "About 50",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l4.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l4.practice[3]"
   },
   {
    "id": "itm_7a94dcd884c0a405",
@@ -6217,7 +6217,7 @@
     "10"
    ],
    "answer": "0",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l5.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l5.practice[0]"
   },
   {
    "id": "itm_752d686f25eccfa8",
@@ -6242,7 +6242,7 @@
     "10"
    ],
    "answer": "15",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l5.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l5.practice[1]"
   },
   {
    "id": "itm_ad95daca8434f70d",
@@ -6267,7 +6267,7 @@
     "6 × 1"
    ],
    "answer": "4 × 2",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l5.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l5.practice[2]"
   },
   {
    "id": "itm_fd3dbaf779016ecb",
@@ -6292,7 +6292,7 @@
     "12"
    ],
    "answer": "8",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l5.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l5.practice[3]"
   },
   {
    "id": "itm_1cd281eda2467bac",
@@ -6317,7 +6317,7 @@
     "10"
    ],
    "answer": "0",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l5.practice[4]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l5.practice[4]"
   },
   {
    "id": "itm_02910d0bec0aad1a",
@@ -6342,7 +6342,7 @@
     "18"
    ],
    "answer": "15",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l6.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l6.practice[0]"
   },
   {
    "id": "itm_995bf8ffafc338db",
@@ -6367,7 +6367,7 @@
     "14"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l6.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l6.practice[1]"
   },
   {
    "id": "itm_e125729f3f736b2d",
@@ -6392,7 +6392,7 @@
     "25"
    ],
    "answer": "20",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l6.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l6.practice[2]"
   },
   {
    "id": "itm_6d2a4f485ddbf30e",
@@ -6417,7 +6417,7 @@
     "40"
    ],
    "answer": "60",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l6.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l6.practice[3]"
   },
   {
    "id": "itm_6202984fe6752d45",
@@ -6442,7 +6442,7 @@
     "5"
    ],
    "answer": "10",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l7.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l7.practice[0]"
   },
   {
    "id": "itm_4d6a85e7466a4562",
@@ -6467,7 +6467,7 @@
     "30"
    ],
    "answer": "0",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l7.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l7.practice[1]"
   },
   {
    "id": "itm_ba2233e735dbb911",
@@ -6492,7 +6492,7 @@
     "15"
    ],
    "answer": "12",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l7.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l7.practice[2]"
   },
   {
    "id": "itm_fa012932df1bdfaa",
@@ -6517,7 +6517,7 @@
     "4 × 4"
    ],
    "answer": "5 × 3",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l7.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l7.practice[3]"
   },
   {
    "id": "itm_bf481a2cea88a7f0",
@@ -6542,7 +6542,7 @@
     "8"
    ],
    "answer": "4",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l7.practice[4]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l7.practice[4]"
   },
   {
    "id": "itm_30af315007ce0f18",
@@ -6567,7 +6567,7 @@
     "Jumps on land"
    ],
    "answer": "Hatches from an egg",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l8.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l8.practice[0]"
   },
   {
    "id": "itm_9b893cefdff7f9f1",
@@ -6592,7 +6592,7 @@
     "Fish"
    ],
    "answer": "Froglet with legs",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l8.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l8.practice[1]"
   },
   {
    "id": "itm_6a722616cb125e2c",
@@ -6617,7 +6617,7 @@
     "Frogs lay eggs in water."
    ],
    "answer": "Frogs eat insects and worms.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l8.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l8.practice[2]"
   },
   {
    "id": "itm_1badba3f1b7d29ea",
@@ -6642,7 +6642,7 @@
     "They jump high."
    ],
    "answer": "They lay eggs in water.",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l8.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l8.practice[3]"
   },
   {
    "id": "itm_568ef9ccf321011e",
@@ -6667,7 +6667,7 @@
     "Brush teeth"
    ],
    "answer": "Wake up",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l9.practice[0]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l9.practice[0]"
   },
   {
    "id": "itm_fce893d9025ea7c7",
@@ -6692,7 +6692,7 @@
     "To use more blocks"
    ],
    "answer": "To catch mistakes early",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l9.practice[1]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l9.practice[1]"
   },
   {
    "id": "itm_0629776d4f3a04e7",
@@ -6717,7 +6717,7 @@
     "Pack bag, Get dressed, Eat breakfast"
    ],
    "answer": "Get dressed, Eat breakfast, Pack bag",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l9.practice[2]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l9.practice[2]"
   },
   {
    "id": "itm_691f72244a7a86cf",
@@ -6742,7 +6742,7 @@
     "Change the words"
    ],
    "answer": "Swap the two blocks",
-   "provenance": "content.json:weeks/3/2/lessons/max_w2_l9.practice[3]"
+   "provenance": "content.json:weeks/3/2/lessons/juniper_w2_l9.practice[3]"
   },
   {
    "id": "itm_123f01a665c8fecc",
@@ -6767,7 +6767,7 @@
     "It was raining"
    ],
    "answer": "Ben fed it",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l1.practice[0]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l1.practice[0]"
   },
   {
    "id": "itm_f922b8b08cd91683",
@@ -6792,7 +6792,7 @@
     "Ben fed the dog"
    ],
    "answer": "The ice melted",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l1.practice[1]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l1.practice[1]"
   },
   {
    "id": "itm_0d7ea7798ec13f5b",
@@ -6817,7 +6817,7 @@
     "quiet"
    ],
    "answer": "big",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l1.practice[2]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l1.practice[2]"
   },
   {
    "id": "itm_d73cf17285f59e37",
@@ -6842,7 +6842,7 @@
     "To see the dog"
    ],
    "answer": "To catch the bus",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l1.practice[3]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l1.practice[3]"
   },
   {
    "id": "itm_1df8eff9f59378e3",
@@ -6867,7 +6867,7 @@
     "He forgot his book"
    ],
    "answer": "The library was closed",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l2.practice[0]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l2.practice[0]"
   },
   {
    "id": "itm_c8c070fd51f41181",
@@ -6892,7 +6892,7 @@
     "During class"
    ],
    "answer": "After lunch",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l2.practice[1]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l2.practice[1]"
   },
   {
    "id": "itm_367d99a323757344",
@@ -6917,7 +6917,7 @@
     "Dry"
    ],
    "answer": "Muddy",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l2.practice[2]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l2.practice[2]"
   },
   {
    "id": "itm_0eaa875e1e369e4d",
@@ -6942,7 +6942,7 @@
     "Nobody"
    ],
    "answer": "The dog",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l2.practice[3]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l2.practice[3]"
   },
   {
    "id": "itm_04a04ddbc5d29ab4",
@@ -6967,7 +6967,7 @@
     "Wensdey"
    ],
    "answer": "Wednesday",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l3.practice[1]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l3.practice[1]"
   },
   {
    "id": "itm_f362fbbba253aabe",
@@ -6992,7 +6992,7 @@
     "like"
    ],
    "answer": "night",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l3.practice[2]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l3.practice[2]"
   },
   {
    "id": "itm_91c5e6048319f193",
@@ -7017,7 +7017,7 @@
     "becuse"
    ],
    "answer": "because",
-   "provenance": "content.json:weeks/3/3/lessons/max_w3_l3.practice[3]"
+   "provenance": "content.json:weeks/3/3/lessons/juniper_w3_l3.practice[3]"
   },
   {
    "id": "itm_6ecc3997bf9c6235",
@@ -7042,7 +7042,7 @@
     "Written in code only"
    ],
    "answer": "In the right order, clear and small",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l1.practice[0]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l1.practice[0]"
   },
   {
    "id": "itm_2a1c17d057317fe5",
@@ -7067,7 +7067,7 @@
     "Skip the steps"
    ],
    "answer": "Fix the unclear step and try again",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l1.practice[1]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l1.practice[1]"
   },
   {
    "id": "itm_e7ea10b3122e3829",
@@ -7092,7 +7092,7 @@
     "Rinse the cup"
    ],
    "answer": "Pick up the toothbrush and put paste on it",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l1.practice[2]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l1.practice[2]"
   },
   {
    "id": "itm_360a15c7572b236e",
@@ -7117,7 +7117,7 @@
     "Anywhere you like"
    ],
    "answer": "Between steps 2 and 4",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l1.practice[3]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l1.practice[3]"
   },
   {
    "id": "itm_f60480e89092a94a",
@@ -7142,7 +7142,7 @@
     "Write clap 50 times"
    ],
    "answer": "Write repeat 5 times: clap",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l2.practice[0]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l2.practice[0]"
   },
   {
    "id": "itm_4d9e115a38be5ebf",
@@ -7167,7 +7167,7 @@
     "Never"
    ],
    "answer": "3 times",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l2.practice[1]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l2.practice[1]"
   },
   {
    "id": "itm_733bd46fce3aa1bd",
@@ -7192,7 +7192,7 @@
     "Only the red ones"
    ],
    "answer": "From top to bottom",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l2.practice[2]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l2.practice[2]"
   },
   {
    "id": "itm_8333a4cf5594f018",
@@ -7217,7 +7217,7 @@
     "clear"
    ],
    "answer": "repeat",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l2.practice[3]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l2.practice[3]"
   },
   {
    "id": "itm_67cf50a2d25cb3a2",
@@ -7242,7 +7242,7 @@
     "A hammer"
    ],
    "answer": "A cork",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l3.practice[0]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l3.practice[0]"
   },
   {
    "id": "itm_701a9a036227cf34",
@@ -7267,7 +7267,7 @@
     "Sand"
    ],
    "answer": "Water",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l3.practice[1]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l3.practice[1]"
   },
   {
    "id": "itm_d24299622a1a2100",
@@ -7292,7 +7292,7 @@
     "The time of day"
    ],
    "answer": "The tub and the water",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l3.practice[2]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l3.practice[2]"
   },
   {
    "id": "itm_f23e1755a0799451",
@@ -7317,7 +7317,7 @@
     "Nothing at all"
    ],
    "answer": "Water vapour",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l3.practice[3]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l3.practice[3]"
   },
   {
    "id": "itm_8e3b780d69b7e33d",
@@ -7342,7 +7342,7 @@
     "1969"
    ],
    "answer": "1492",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l4.practice[0]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l4.practice[0]"
   },
   {
    "id": "itm_bf5fa6fea1373a93",
@@ -7367,7 +7367,7 @@
     "Michael Collins"
    ],
    "answer": "Neil Armstrong",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l4.practice[1]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l4.practice[1]"
   },
   {
    "id": "itm_2e7096c1b6d03f78",
@@ -7392,7 +7392,7 @@
     "To burn for light"
    ],
    "answer": "To find their way and show new places",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l4.practice[2]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l4.practice[2]"
   },
   {
    "id": "itm_d7457b0831e261a4",
@@ -7417,7 +7417,7 @@
     "Sleeping"
    ],
    "answer": "Using the engineering process",
-   "provenance": "content.json:weeks/3/4/lessons/max_w4_l4.practice[3]"
+   "provenance": "content.json:weeks/3/4/lessons/juniper_w4_l4.practice[3]"
   },
   {
    "id": "itm_89bebcf5d713f322",
@@ -7442,7 +7442,7 @@
     "Nothing at all"
    ],
    "answer": "How many equal parts the whole has",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l1.practice[1]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l1.practice[1]"
   },
   {
    "id": "itm_1ff9123719de1773",
@@ -7467,7 +7467,7 @@
     "4/6"
    ],
    "answer": "4/10",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l1.practice[2]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l1.practice[2]"
   },
   {
    "id": "itm_7d3a5d04c8ae7ba9",
@@ -7492,7 +7492,7 @@
     "5/2"
    ],
    "answer": "4/10",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l2.practice[1]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l2.practice[1]"
   },
   {
    "id": "itm_2d396394b1c23b5b",
@@ -7517,7 +7517,7 @@
     "20"
    ],
    "answer": "40",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l3.practice[0]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l3.practice[0]"
   },
   {
    "id": "itm_922f0c65e7f44c7e",
@@ -7542,7 +7542,7 @@
     "20"
    ],
    "answer": "26",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l3.practice[1]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l3.practice[1]"
   },
   {
    "id": "itm_c4fc547475f48944",
@@ -7567,7 +7567,7 @@
     "7"
    ],
    "answer": "3",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l3.practice[2]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l3.practice[2]"
   },
   {
    "id": "itm_a92c7d3beefca74d",
@@ -7592,7 +7592,7 @@
     "6"
    ],
    "answer": "24",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l3.practice[3]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l3.practice[3]"
   },
   {
    "id": "itm_92496f50a26a42e8",
@@ -7617,7 +7617,7 @@
     "There is not enough information"
    ],
    "answer": "3/5 of 10",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l4.practice[2]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l4.practice[2]"
   },
   {
    "id": "itm_5265fac1f1147ba9",
@@ -7642,7 +7642,7 @@
     "45"
    ],
    "answer": "9",
-   "provenance": "content.json:weeks/5/1/lessons/adonis_w1_l4.practice[3]"
+   "provenance": "content.json:weeks/5/1/lessons/pixel_w1_l4.practice[3]"
   },
   {
    "id": "itm_5e107571d4b92b18",
@@ -7667,7 +7667,7 @@
     "<br>"
    ],
    "answer": "<ul>",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l3.practice[0]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l3.practice[0]"
   },
   {
    "id": "itm_b015d8abab449040",
@@ -7692,7 +7692,7 @@
     "<h3>"
    ],
    "answer": "<a>",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l3.practice[1]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l3.practice[1]"
   },
   {
    "id": "itm_b2ae385c0db4c03d",
@@ -7717,7 +7717,7 @@
     "Hides the text"
    ],
    "answer": "Marks the text as important, shown in bold",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l3.practice[2]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l3.practice[2]"
   },
   {
    "id": "itm_ffcc4d3d785ac20c",
@@ -7742,7 +7742,7 @@
     "<li>Milk<li>"
    ],
    "answer": "<ul><li>Milk</li></ul>",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l3.practice[3]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l3.practice[3]"
   },
   {
    "id": "itm_49285fe6f5700728",
@@ -7767,7 +7767,7 @@
     "<p>"
    ],
    "answer": "<!DOCTYPE html>",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l4.practice[0]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l4.practice[0]"
   },
   {
    "id": "itm_a7052bc41ccf06d2",
@@ -7792,7 +7792,7 @@
     "<!DOCTYPE>"
    ],
    "answer": "<body>",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l4.practice[1]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l4.practice[1]"
   },
   {
    "id": "itm_2be9c70910ab112d",
@@ -7817,7 +7817,7 @@
     "<b>T</b> then <i>B</i>"
    ],
    "answer": "<h1>T</h1> then <p>B</p>",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l4.practice[2]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l4.practice[2]"
   },
   {
    "id": "itm_cf37ba63be58c818",
@@ -7842,7 +7842,7 @@
     "Nowhere at all"
    ],
    "answer": "In the browser tab",
-   "provenance": "content.json:weeks/5/3/lessons/adonis_w3_l4.practice[3]"
+   "provenance": "content.json:weeks/5/3/lessons/pixel_w3_l4.practice[3]"
   },
   {
    "id": "itm_17a30bd0c34444e7",
@@ -7867,7 +7867,7 @@
     "1519"
    ],
    "answer": "1492",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l3.practice[0]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l3.practice[0]"
   },
   {
    "id": "itm_43c263636391fe1f",
@@ -7892,7 +7892,7 @@
     "Ferdinand Magellan"
    ],
    "answer": "Vasco da Gama",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l3.practice[1]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l3.practice[1]"
   },
   {
    "id": "itm_6d8acfc06d4a2273",
@@ -7917,7 +7917,7 @@
     "reach the North Pole"
    ],
    "answer": "sail all the way around the world",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l3.practice[2]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l3.practice[2]"
   },
   {
    "id": "itm_4ecf06eaa5b5c3fe",
@@ -7942,7 +7942,7 @@
     "To avoid ships"
    ],
    "answer": "To find a shorter trade route by sea",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l3.practice[3]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l3.practice[3]"
   },
   {
    "id": "itm_39dca41d1fa50e55",
@@ -7967,7 +7967,7 @@
     ",After the storm we sailed on."
    ],
    "answer": "After the storm, we sailed on.",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l4.practice[0]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l4.practice[0]"
   },
   {
    "id": "itm_fe3523650ea2956d",
@@ -7992,7 +7992,7 @@
     "addres"
    ],
    "answer": "address",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l4.practice[1]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l4.practice[1]"
   },
   {
    "id": "itm_43eb3aec7a6efb38",
@@ -8017,7 +8017,7 @@
     "Never"
    ],
    "answer": "The next year",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l4.practice[2]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l4.practice[2]"
   },
   {
    "id": "itm_0eadcbd451e38125",
@@ -8042,7 +8042,7 @@
     "anchored"
    ],
    "answer": "started",
-   "provenance": "content.json:weeks/5/4/lessons/adonis_w4_l4.practice[3]"
+   "provenance": "content.json:weeks/5/4/lessons/pixel_w4_l4.practice[3]"
   },
   {
    "id": "itm_0cc51eaaf716d117",
