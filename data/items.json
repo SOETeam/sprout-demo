@@ -18802,6 +18802,2164 @@
    "provenance": "generator:pd.comprehension.g4.items[35]",
    "generator": "pd.comprehension.g4",
    "generator_family": "bank.recall"
+  },
+  {
+   "id": "itm_a42ca270e63d9d90",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is the ratio of wings to birds if there are 12 wings and 4 birds?",
+   "options": [
+    "4:1",
+    "3:1",
+    "1:3",
+    "12:4"
+   ],
+   "answer": "3:1",
+   "irt": {
+    "a": 1.0,
+    "b": -0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[0]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_4cf2914d1e159499",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A recipe uses 3 cups of flour for every 2 cups of water. What is the ratio of flour to water?",
+   "options": [
+    "2:3",
+    "3:5",
+    "5:3",
+    "3:2"
+   ],
+   "answer": "3:2",
+   "irt": {
+    "a": 1.0,
+    "b": -0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[1]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_4dbbc132e3bf6245",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "If 5 pencils cost $4.00, what is the unit rate in dollars per pencil?",
+   "options": [
+    "$0.80",
+    "$1.25",
+    "$2.00",
+    "$4.00"
+   ],
+   "answer": "$0.80",
+   "irt": {
+    "a": 1.0,
+    "b": -0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[2]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_6eb660ad19908432",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A car travels 180 miles in 3 hours. What is its unit rate in miles per hour?",
+   "options": [
+    "54 miles per hour",
+    "60 miles per hour",
+    "600 miles per hour",
+    "45 miles per hour"
+   ],
+   "answer": "60 miles per hour",
+   "irt": {
+    "a": 1.0,
+    "b": -0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[3]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_85d575f72df925a5",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which ratio is equivalent to 2:5?",
+   "options": [
+    "5:2",
+    "6:10",
+    "4:10",
+    "3:5"
+   ],
+   "answer": "4:10",
+   "irt": {
+    "a": 1.0,
+    "b": -0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[4]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_de79cd687909d719",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In a class the ratio of girls to boys is 3:4. If there are 12 girls, how many boys are there?",
+   "options": [
+    "9",
+    "16",
+    "12",
+    "8"
+   ],
+   "answer": "16",
+   "irt": {
+    "a": 1.0,
+    "b": 0.0,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[5]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_1b35a123adf79b3f",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A store sells 8 notebooks for $6.00. What is the rate in dollars per notebook?",
+   "options": [
+    "$1.33",
+    "$0.75",
+    "$1.50",
+    "$0.50"
+   ],
+   "answer": "$0.75",
+   "irt": {
+    "a": 1.0,
+    "b": 0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[6]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_bb180387b1c9ee8e",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "30 out of 50 students walk to school. What is that ratio in simplest form?",
+   "options": [
+    "30:50",
+    "5:3",
+    "3:5",
+    "2:5"
+   ],
+   "answer": "3:5",
+   "irt": {
+    "a": 1.0,
+    "b": 0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[7]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_1e7901375f92df59",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these shows a rate?",
+   "options": [
+    "5 red marbles",
+    "3 apples and 2 oranges",
+    "the tall tree",
+    "40 miles in 2 hours"
+   ],
+   "answer": "40 miles in 2 hours",
+   "irt": {
+    "a": 1.0,
+    "b": 0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[8]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_6715182015625d19",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A recipe uses 4 cups of sugar and 6 cups of flour. What is the ratio of sugar to flour?",
+   "options": [
+    "3:2",
+    "4:2",
+    "2:3",
+    "1:3"
+   ],
+   "answer": "2:3",
+   "irt": {
+    "a": 1.0,
+    "b": 0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[9]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_3f6f2a5c976b016e",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "If the ratio of cats to dogs is 7:12 and there are 21 cats, how many dogs are there?",
+   "options": [
+    "28",
+    "36",
+    "35",
+    "42"
+   ],
+   "answer": "36",
+   "irt": {
+    "a": 1.0,
+    "b": 0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[10]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_17f1ba568deedc38",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.ratio-reasoning",
+   "skill_tag": "ratio-reasoning",
+   "standards": [
+    "6.RP.1",
+    "6.RP.2",
+    "6.RP.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A graph of two quantities is a straight line through the origin. What does that show?",
+   "options": [
+    "The quantities are not related",
+    "The quantities always add to 10",
+    "The quantities are in a proportional relationship",
+    "The quantities have no ratio"
+   ],
+   "answer": "The quantities are in a proportional relationship",
+   "irt": {
+    "a": 1.0,
+    "b": -0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.ratio-rates.items[11]",
+   "generator": "6.bank.ratio-rates",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_294bdab930a43e2c",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 4.5 + 3.75?",
+   "options": [
+    "7.25",
+    "8.75",
+    "1.80",
+    "8.25"
+   ],
+   "answer": "8.25",
+   "irt": {
+    "a": 1.0,
+    "b": -0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[0]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_0e98ab222ce4e5f8",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 7.2 - 2.85?",
+   "options": [
+    "5.65",
+    "4.35",
+    "4.85",
+    "5.15"
+   ],
+   "answer": "4.35",
+   "irt": {
+    "a": 1.0,
+    "b": -0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[1]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_6a01e76941c6a7d1",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 3.6 x 2?",
+   "options": [
+    "6.12",
+    "5.6",
+    "7.2",
+    "8.2"
+   ],
+   "answer": "7.2",
+   "irt": {
+    "a": 1.0,
+    "b": -0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[2]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_9010c8519413ee2a",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 9.44 / 4?",
+   "options": [
+    "2.46",
+    "3.76",
+    "2.36",
+    "2.16"
+   ],
+   "answer": "2.36",
+   "irt": {
+    "a": 1.0,
+    "b": -0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[3]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_f81f108d9ccf07c8",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 852 / 4?",
+   "options": [
+    "212",
+    "214",
+    "203",
+    "213"
+   ],
+   "answer": "213",
+   "irt": {
+    "a": 1.0,
+    "b": 0.0,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[4]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_ff94debe9ed0ee09",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 3/4 + 1/8?",
+   "options": [
+    "4/12",
+    "5/8",
+    "3/8",
+    "7/8"
+   ],
+   "answer": "7/8",
+   "irt": {
+    "a": 1.0,
+    "b": 0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[5]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_1a5cb4e97bcf86a3",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 5/6 - 1/3?",
+   "options": [
+    "1/2",
+    "4/3",
+    "2/6",
+    "1/3"
+   ],
+   "answer": "1/2",
+   "irt": {
+    "a": 1.0,
+    "b": 0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[6]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_2c2b3c9ee0fe7711",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "math",
+   "cat_domain": "math",
+   "skill_node": "6.MATH.division-decimals",
+   "skill_tag": "division-decimals",
+   "standards": [
+    "6.NS.1",
+    "6.NS.2",
+    "6.NS.3"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is 8 divided by 1/2?",
+   "options": [
+    "4",
+    "1/16",
+    "16",
+    "32"
+   ],
+   "answer": "16",
+   "irt": {
+    "a": 1.0,
+    "b": 0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.number-system-ops.items[7]",
+   "generator": "6.bank.number-system-ops",
+   "generator_family": "math"
+  },
+  {
+   "id": "itm_2686ec7565712637",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is the central idea of an informational text?",
+   "options": [
+    "The first sentence only",
+    "The longest paragraph",
+    "The main point the author wants the reader to understand",
+    "The title of the book"
+   ],
+   "answer": "The main point the author wants the reader to understand",
+   "irt": {
+    "a": 1.0,
+    "b": 0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[0]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_44095a2601048b54",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these counts as textual evidence?",
+   "options": [
+    "Your opinion of the ending",
+    "A quotation from the passage that supports your point",
+    "A guess about what the author meant",
+    "A summary of a different text"
+   ],
+   "answer": "A quotation from the passage that supports your point",
+   "irt": {
+    "a": 1.0,
+    "b": 0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[1]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_edb774ffb1d6bf46",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A claim supported by reasons and evidence is called...",
+   "options": [
+    "an argument",
+    "a summary",
+    "a prediction",
+    "a description"
+   ],
+   "answer": "an argument",
+   "irt": {
+    "a": 1.0,
+    "b": -0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[2]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_fb9334f0a44a8886",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which sentence is an opinion rather than a fact?",
+   "options": [
+    "The best pizza in town is at Corner Slice",
+    "Water boils at 100 degrees Celsius",
+    "Michigan has two peninsulas",
+    "A week has seven days"
+   ],
+   "answer": "The best pizza in town is at Corner Slice",
+   "irt": {
+    "a": 1.0,
+    "b": -0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[3]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_432513b286612064",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a summary?",
+   "options": [
+    "A short account of the main ideas in your own words",
+    "A copy of every sentence",
+    "A list of difficult words",
+    "The biography of the author"
+   ],
+   "answer": "A short account of the main ideas in your own words",
+   "irt": {
+    "a": 1.0,
+    "b": -0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[4]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_fff681b4db40f77a",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why should you cite evidence in a response?",
+   "options": [
+    "To show exactly where your idea came from",
+    "To make the answer longer",
+    "To avoid using your own words",
+    "To fill the page"
+   ],
+   "answer": "To show exactly where your idea came from",
+   "irt": {
+    "a": 1.0,
+    "b": -0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[5]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_8d5766ce63108732",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "An author's point of view is...",
+   "options": [
+    "the position the author takes on a topic",
+    "the order of events",
+    "the setting of a story",
+    "the number of paragraphs"
+   ],
+   "answer": "the position the author takes on a topic",
+   "irt": {
+    "a": 1.0,
+    "b": -0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[6]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_d5dc4d350b3ea5a5",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "The central idea of an informational text is usually...",
+   "options": [
+    "found only in the last word",
+    "stated or repeated in the key details throughout",
+    "always identical to the title",
+    "hidden in the page numbers"
+   ],
+   "answer": "stated or repeated in the key details throughout",
+   "irt": {
+    "a": 1.0,
+    "b": 0.0,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[7]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_d53812757f3939ae",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Reading between the lines using clues and what you already know is called...",
+   "options": [
+    "a quotation",
+    "a paraphrase",
+    "a heading",
+    "an inference"
+   ],
+   "answer": "an inference",
+   "irt": {
+    "a": 1.0,
+    "b": 0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[8]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_f1dad43bb9b1a67a",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "reading",
+   "cat_domain": "ela",
+   "skill_node": "6.READ.text-evidence",
+   "skill_tag": "text-evidence",
+   "standards": [
+    "RI.6.1",
+    "RI.6.8"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A paragraph that develops a key individual, event, or idea with examples is...",
+   "options": [
+    "contrasting two characters",
+    "narrating a story in order",
+    "describing a setting",
+    "illustrating and elaborating on the topic"
+   ],
+   "answer": "illustrating and elaborating on the topic",
+   "irt": {
+    "a": 1.0,
+    "b": 0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.reading-evidence.items[9]",
+   "generator": "6.bank.reading-evidence",
+   "generator_family": "reading"
+  },
+  {
+   "id": "itm_32e1b88bed1de9f2",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Choose the correct pronoun: \"My friend and ___ went to the library.\"",
+   "options": [
+    "me",
+    "I",
+    "myself",
+    "mine"
+   ],
+   "answer": "I",
+   "irt": {
+    "a": 1.0,
+    "b": 0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[0]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_60cf0fc30ca6a727",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Choose the correct pronoun: \"The trophy was awarded to Sam and ___.\"",
+   "options": [
+    "I",
+    "myself",
+    "mine",
+    "me"
+   ],
+   "answer": "me",
+   "irt": {
+    "a": 1.0,
+    "b": 0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[1]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_ef6b080eed2fc390",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which sentence punctuates the two independent clauses correctly?",
+   "options": [
+    "I finished my essay, then; I read a chapter.",
+    "I finished; my essay then I read a chapter.",
+    "I finished my essay; then I read a chapter.",
+    "I finished my essay then; I read a chapter."
+   ],
+   "answer": "I finished my essay; then I read a chapter.",
+   "irt": {
+    "a": 1.0,
+    "b": 0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[2]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_9393f0a5e008986e",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these is a fragment?",
+   "options": [
+    "The bus was late.",
+    "We waited at the stop.",
+    "Because the bus was late.",
+    "The bus arrived ten minutes later."
+   ],
+   "answer": "Because the bus was late.",
+   "irt": {
+    "a": 1.0,
+    "b": -0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[3]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_8387c089d88f89bd",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In \"When Maya gave Lena the notes, she was grateful,\" which word is a vague pronoun?",
+   "options": [
+    "Maya",
+    "she",
+    "notes",
+    "When"
+   ],
+   "answer": "she",
+   "irt": {
+    "a": 1.0,
+    "b": -0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[4]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_f80e766c76569359",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which sentence uses the comma correctly?",
+   "options": [
+    "After the storm the power, came back.",
+    "After, the storm the power came back.",
+    "After the storm, the power came back.",
+    "After the storm the power came, back."
+   ],
+   "answer": "After the storm, the power came back.",
+   "irt": {
+    "a": 1.0,
+    "b": -0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[5]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_73a9411a0969d5d0",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "The bikes belonging to the two boys are the ___ bikes.",
+   "options": [
+    "boys'",
+    "boys",
+    "boy's",
+    "boys's"
+   ],
+   "answer": "boys'",
+   "irt": {
+    "a": 1.0,
+    "b": -0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[6]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_a9695e26c9d3ecd3",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "english_grammar",
+   "cat_domain": "ela",
+   "skill_node": "6.GRAM.sentence-conventions",
+   "skill_tag": "sentence-conventions",
+   "standards": [
+    "L.6.1",
+    "L.6.2"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which sentence sets off the parenthetical clause with dashes correctly?",
+   "options": [
+    "My brother, who never reads, loved - this book.",
+    "My brother - who never reads - loved this book.",
+    "My - brother who never reads loved this book.",
+    "My brother who never reads - loved this."
+   ],
+   "answer": "My brother - who never reads - loved this book.",
+   "irt": {
+    "a": 1.0,
+    "b": -0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.grammar-conventions.items[7]",
+   "generator": "6.bank.grammar-conventions",
+   "generator_family": "english_grammar"
+  },
+  {
+   "id": "itm_38625b2ba30cd7c3",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What does a map scale tell you?",
+   "options": [
+    "How map distance relates to real distance",
+    "How large the paper is",
+    "What title to use",
+    "Which colour to shade"
+   ],
+   "answer": "How map distance relates to real distance",
+   "irt": {
+    "a": 1.0,
+    "b": 0.0,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[0]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_d52858b65440e7bf",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which tool shows Earth's continents and oceans on a flat surface?",
+   "options": [
+    "A thermometer",
+    "A bar graph",
+    "A map",
+    "A clock"
+   ],
+   "answer": "A map",
+   "irt": {
+    "a": 1.0,
+    "b": 0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[1]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_27f142a089d01294",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is culture?",
+   "options": [
+    "The landforms of a region",
+    "The weather of a place",
+    "The population count of a country",
+    "The shared beliefs, customs, and practices of a group of people"
+   ],
+   "answer": "The shared beliefs, customs, and practices of a group of people",
+   "irt": {
+    "a": 1.0,
+    "b": 0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[2]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_25af15170bf8e169",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Cultural diffusion is...",
+   "options": [
+    "a type of landform",
+    "the spread of ideas, customs, and goods between groups",
+    "the movement of air masses",
+    "a form of government"
+   ],
+   "answer": "the spread of ideas, customs, and goods between groups",
+   "irt": {
+    "a": 1.0,
+    "b": 0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[3]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_79779ecf4b4e5ca0",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why did early cities often grow near rivers?",
+   "options": [
+    "Water for drinking and farming, plus travel and trade",
+    "Because rivers are always cold",
+    "To avoid forests",
+    "Because maps were not invented yet"
+   ],
+   "answer": "Water for drinking and farming, plus travel and trade",
+   "irt": {
+    "a": 1.0,
+    "b": 0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[4]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_769c3788e9ac1e3f",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "\"Human-environment interaction\" describes...",
+   "options": [
+    "how to draw a compass rose",
+    "how people use and change the environment, and how the environment shapes people",
+    "how many people live in a city",
+    "which continent a country is on"
+   ],
+   "answer": "how people use and change the environment, and how the environment shapes people",
+   "irt": {
+    "a": 1.0,
+    "b": 0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[5]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_53d008cc2a47c7d7",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A population pyramid shows...",
+   "options": [
+    "the height of mountains",
+    "total rainfall",
+    "trade routes",
+    "the age and sex distribution of a population"
+   ],
+   "answer": "the age and sex distribution of a population",
+   "irt": {
+    "a": 1.0,
+    "b": -0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[6]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_ffada62cfde4871b",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "history",
+   "cat_domain": null,
+   "skill_node": "6.G1.1.1",
+   "skill_tag": "geographic-tools",
+   "standards": [
+    "6.G1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these is a global issue?",
+   "options": [
+    "The colour of one street sign",
+    "Access to clean water across many countries",
+    "One family's dinner menu",
+    "One town's football score"
+   ],
+   "answer": "Access to clean water across many countries",
+   "irt": {
+    "a": 1.0,
+    "b": -0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.world-geography.items[7]",
+   "generator": "6.bank.world-geography",
+   "generator_family": "history"
+  },
+  {
+   "id": "itm_4737ec9ce800efbe",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "The rock cycle describes...",
+   "options": [
+    "how Earth's materials are recycled through melting, weathering, and sedimentation",
+    "how air masses move",
+    "how populations grow",
+    "how cells divide"
+   ],
+   "answer": "how Earth's materials are recycled through melting, weathering, and sedimentation",
+   "irt": {
+    "a": 1.0,
+    "b": -0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[0]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_880b1db5babf616b",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which is an example of weathering?",
+   "options": [
+    "Rock breaking down at Earth's surface",
+    "A volcano erupting",
+    "A river flooding",
+    "Clouds forming"
+   ],
+   "answer": "Rock breaking down at Earth's surface",
+   "irt": {
+    "a": 1.0,
+    "b": -0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[1]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_4d588fb5ddee583a",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "The energy that drives Earth's material cycles comes mainly from...",
+   "options": [
+    "the moon",
+    "ocean tides",
+    "the sun and Earth's hot interior",
+    "weather fronts"
+   ],
+   "answer": "the sun and Earth's hot interior",
+   "irt": {
+    "a": 1.0,
+    "b": -0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[2]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_528dab2c3c054bd1",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which factor most limits how many organisms an ecosystem can support?",
+   "options": [
+    "Availability of resources such as food and water",
+    "The colour of the soil",
+    "The time of day",
+    "The number of maps"
+   ],
+   "answer": "Availability of resources such as food and water",
+   "irt": {
+    "a": 1.0,
+    "b": 0.0,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[3]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_b095f3b8e6d50e7c",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What evidence shows that a population changed when a resource became scarce?",
+   "options": [
+    "Population size data collected over time",
+    "A single photograph",
+    "A weather map",
+    "The ecosystem's latitude"
+   ],
+   "answer": "Population size data collected over time",
+   "irt": {
+    "a": 1.0,
+    "b": 0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[4]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_80d841112ca2c0b6",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "When two air masses collide, the usual result is...",
+   "options": [
+    "a new climate zone",
+    "an earthquake",
+    "a new continent",
+    "a change in weather such as rain or wind"
+   ],
+   "answer": "a change in weather such as rain or wind",
+   "irt": {
+    "a": 1.0,
+    "b": 0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[5]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_9cdd3693a31e270d",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these is NOT part of weather?",
+   "options": [
+    "Species diversity",
+    "Temperature",
+    "Precipitation",
+    "Wind"
+   ],
+   "answer": "Species diversity",
+   "irt": {
+    "a": 1.0,
+    "b": 0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[6]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_5dcc0e8f4356f879",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "science",
+   "cat_domain": null,
+   "skill_node": "MS-ESS2-1",
+   "skill_tag": "rock-cycle-resources",
+   "standards": [
+    "MS-ESS2-1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What explains the uneven distribution of Earth's mineral and energy resources?",
+   "options": [
+    "past and current geoscience processes",
+    "human inventiveness",
+    "the age of the map",
+    "the size of the population"
+   ],
+   "answer": "past and current geoscience processes",
+   "irt": {
+    "a": 1.0,
+    "b": 0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.earth-systems.items[7]",
+   "generator": "6.bank.earth-systems",
+   "generator_family": "science"
+  },
+  {
+   "id": "itm_8a2777d73afcae66",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "civics",
+   "cat_domain": null,
+   "skill_node": "6.C1.1.1",
+   "skill_tag": "government-nation-state",
+   "standards": [
+    "6.C1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which of these is a stated purpose of government?",
+   "options": [
+    "Ignoring its own laws",
+    "Ending all trade",
+    "Removing every border",
+    "Protecting individual rights"
+   ],
+   "answer": "Protecting individual rights",
+   "irt": {
+    "a": 1.0,
+    "b": 0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.civic-life.items[0]",
+   "generator": "6.bank.civic-life",
+   "generator_family": "civics"
+  },
+  {
+   "id": "itm_664a4ba652057187",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "civics",
+   "cat_domain": null,
+   "skill_node": "6.C1.1.1",
+   "skill_tag": "government-nation-state",
+   "standards": [
+    "6.C1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "What is a nation-state?",
+   "options": [
+    "A country with a defined territory, citizens, and a government",
+    "Any large city",
+    "A group of nomadic people",
+    "A river system"
+   ],
+   "answer": "A country with a defined territory, citizens, and a government",
+   "irt": {
+    "a": 1.0,
+    "b": -0.8,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.civic-life.items[1]",
+   "generator": "6.bank.civic-life",
+   "generator_family": "civics"
+  },
+  {
+   "id": "itm_5a5571bbe38db933",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "civics",
+   "cat_domain": null,
+   "skill_node": "6.C1.1.1",
+   "skill_tag": "government-nation-state",
+   "standards": [
+    "6.C1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Which is a characteristic of modern nation-states?",
+   "options": [
+    "No laws",
+    "No citizens",
+    "No government",
+    "Clearly defined boundaries"
+   ],
+   "answer": "Clearly defined boundaries",
+   "irt": {
+    "a": 1.0,
+    "b": -0.64,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.civic-life.items[2]",
+   "generator": "6.bank.civic-life",
+   "generator_family": "civics"
+  },
+  {
+   "id": "itm_1c8543b2169207ed",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "civics",
+   "cat_domain": null,
+   "skill_node": "6.C1.1.1",
+   "skill_tag": "government-nation-state",
+   "standards": [
+    "6.C1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "A higher tax on cigarettes is meant to act as...",
+   "options": [
+    "a disincentive that discourages smoking",
+    "a subsidy that encourages smoking",
+    "a reward for buying more",
+    "a trade quota"
+   ],
+   "answer": "a disincentive that discourages smoking",
+   "irt": {
+    "a": 1.0,
+    "b": -0.48,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.civic-life.items[3]",
+   "generator": "6.bank.civic-life",
+   "generator_family": "civics"
+  },
+  {
+   "id": "itm_bb86a7eaddd8318c",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "civics",
+   "cat_domain": null,
+   "skill_node": "6.C1.1.1",
+   "skill_tag": "government-nation-state",
+   "standards": [
+    "6.C1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "In a market economy, the three basic economic questions are about...",
+   "options": [
+    "where, when, and why to build",
+    "what, how, and for whom to produce",
+    "who votes, who rules, who pays",
+    "how many, how much, how often"
+   ],
+   "answer": "what, how, and for whom to produce",
+   "irt": {
+    "a": 1.0,
+    "b": -0.32,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.civic-life.items[4]",
+   "generator": "6.bank.civic-life",
+   "generator_family": "civics"
+  },
+  {
+   "id": "itm_78cff18378d90d5d",
+   "schema": "item/v1",
+   "grade": "6",
+   "subject": "civics",
+   "cat_domain": null,
+   "skill_node": "6.C1.1.1",
+   "skill_tag": "government-nation-state",
+   "standards": [
+    "6.C1.1.1"
+   ],
+   "level": 1,
+   "type": "mc",
+   "exposure_limit": 3,
+   "accessibility": {
+    "read_aloud_ok": true
+   },
+   "text": "Why can two nations' policies on the same issue differ?",
+   "options": [
+    "Each government answers to different citizens and priorities",
+    "One country owns more maps",
+    "Their weather is different",
+    "Their languages are the same"
+   ],
+   "answer": "Each government answers to different citizens and priorities",
+   "irt": {
+    "a": 1.0,
+    "b": -0.16,
+    "c": null,
+    "calibration": "uncalibrated-v0"
+   },
+   "provenance": "generator:6.bank.civic-life.items[5]",
+   "generator": "6.bank.civic-life",
+   "generator_family": "civics"
   }
  ]
 }
