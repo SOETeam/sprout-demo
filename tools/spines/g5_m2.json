@@ -1,0 +1,2443 @@
+{
+ "schema": "sprout_demo_v1.spine/1",
+ "grade": "5",
+ "month": 2,
+ "week_numbers": [
+  5,
+  6,
+  7,
+  8
+ ],
+ "themes": [
+  "Quarter 1 Mastery Review",
+  "Division & Sharing",
+  "Place Value & Rounding",
+  "Fractions: Equivalence & Comparison"
+ ],
+ "goals": [
+  "Review quarter 1, hold a spelling bee, and launch the science fair.",
+  "Divide multi-digit numbers as sharing and write character-trait evidence.",
+  "Read, write and round decimals to thousandths and use maps well.",
+  "Show equivalent fractions two ways and compare them with pictures."
+ ],
+ "subjects": {
+  "math": [
+   "mixed review: fraction operations, area, perimeter and volume",
+   "sharing into equal groups: multi-digit division with remainders",
+   "decimal place value, comparing decimals and rounding",
+   "equivalent fractions and comparing fractions with pictures"
+  ],
+  "reading": [
+   "three short quarter-1 passages: main idea and text evidence",
+   "a story of quiet courage: character traits and the proof line",
+   "a nonfiction passage on maps and legends: text features",
+   "comparing two pets: compare and contrast signal words"
+  ],
+  "spelling": [
+   "spelling bee practice: sort the words by pattern",
+   "prefixes un-, re- and pre-",
+   "suffixes -s, -es, -est and -ly",
+   "double consonants before -ed and -ing"
+  ],
+  "science": [
+   "science fair: pick a testable question",
+   "properties of matter: describe, classify and measure",
+   "the particle model: matter in three states",
+   "mixtures and substances: separate and identify"
+  ],
+  "history": [
+   "quarter 1 review: indigenous peoples and unit-1 events",
+   "three-world interactions: Europe, Africa and the Americas",
+   "map skills: equator, hemispheres and continents",
+   "ancient civilizations: peoples who built cities on rivers"
+  ],
+  "civics": [
+   "symbols of our country and what each stands for",
+   "ways a kid can help at home, school and in town",
+   "who makes a rule and why rules exist",
+   "jobs and rules that make a community work"
+  ],
+  "literature": [
+   "our reader: main character, setting and problem",
+   "our reader: explaining the ending in three sentences",
+   "our reader: theme — what the story teaches",
+   "our reader: two characters compared, trait by trait"
+  ],
+  "writing": [
+   "a five-sentence quarter-1 reflection",
+   "character-trait evidence: claim, proof, explanation",
+   "four sentences about a map feature you would add",
+   "a compare-and-contrast paragraph with linking words"
+  ],
+  "english_grammar": [
+   "verb tenses: past, present and future",
+   "commas in a series and after an introduction",
+   "subjects and predicates that agree",
+   "sentence boundaries: fragments and run-ons"
+  ]
+ },
+ "coding": [
+  "a five-block review program with a repeat",
+  "a loop that shares items into equal groups",
+  "a program that prints place-value labels",
+  "a drawing that shades a fraction shape"
+ ],
+ "lessons": [
+  {
+   "subject": "math",
+   "title": "Quarter 1 Review: Fractions, Area and Volume",
+   "emoji": "🔢",
+   "minutes": 75,
+   "skill": "quarter-1-math-review",
+   "summary": "Sort the skills you own from the ones you re-learn, then re-work the weak ones with a drawing.",
+   "explain": "Review works best when you sort first. Put every skill from weeks 1 to 4 into two piles: own it and re-learn it. Fraction operations keep the denominator unless you are multiplying; area multiplies two sides, perimeter adds all around, and volume multiplies three. Work the re-learn pile with a drawing or a labelled sketch, say each step out loud, then re-test yourself on a fresh copy. Speed is not the goal yet — the pattern is.",
+   "examples": [
+    {
+     "q": "Add 3/8 + 2/8.",
+     "a": "5/8 — the denominator stays 8 because the pieces are the same size.",
+     "steps": [
+      "Check both fractions have denominator 8.",
+      "Add the numerators: 3 + 2 = 5.",
+      "Write 5/8 and re-check the pieces are equal."
+     ]
+    },
+    {
+     "q": "A rectangle is 6 cm long and 4 cm wide. Area? Perimeter?",
+     "a": "Area = 24 cm², Perimeter = 20 cm.",
+     "steps": [
+      "Area: 6 × 4 = 24.",
+      "Perimeter: 6 + 4 + 6 + 4 = 20.",
+      "Label the units: cm² for area, cm for perimeter."
+     ]
+    },
+    {
+     "q": "A box is 5 cm long, 3 cm wide and 2 cm tall. Volume?",
+     "a": "30 cm³",
+     "steps": [
+      "Volume = length × width × height.",
+      "5 × 3 × 2 = 30.",
+      "Label the unit cubic centimetres."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which is larger: 3/8 of a pizza or 1/4 of the same pizza?",
+     "options": [
+      "3/8",
+      "1/4",
+      "They are equal",
+      "Not enough information"
+     ],
+     "correctIndex": 0,
+     "hint": "Make the denominators the same: 1/4 = 2/8.",
+     "praise": "Yes — 3/8 beats 2/8."
+    },
+    {
+     "question": "A garden is 7 m long and 5 m wide. What is its area?",
+     "options": [
+      "12 m²",
+      "35 m²",
+      "24 m²",
+      "35 m"
+     ],
+     "correctIndex": 1,
+     "hint": "Area multiplies the two sides.",
+     "praise": "Right — 7 × 5 = 35 m²."
+    },
+    {
+     "question": "A prism measures 4 × 3 × 2. What is the volume?",
+     "options": [
+      "9 cm³",
+      "14 cm³",
+      "24 cm³",
+      "26 cm³"
+     ],
+     "correctIndex": 2,
+     "hint": "Multiply all three measurements.",
+     "praise": "Yes — 4 × 3 × 2 = 24 cm³."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Sort into own it / re-learn it: 5/8 + 1/8, area of a 9 × 4 rectangle, volume of 3 × 3 × 3, 4 − 1/2.",
+     "answer": "Own it only if you can do it cold; re-learn the rest with a drawing before Friday.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write every fact that belongs to 6, 8 and 48.",
+     "answer": "6 × 8 = 48, 8 × 6 = 48, 48 ÷ 8 = 6, 48 ÷ 6 = 8.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Draw a 5 by 3 array and label its area.",
+     "answer": "15 square units — five rows of three.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "In one sentence, explain why perimeter and area are different.",
+     "answer": "Perimeter counts around the edge; area covers the inside.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Main Idea, Details and the Line That Proves It",
+   "emoji": "📖",
+   "minutes": 60,
+   "skill": "main-idea-evidence",
+   "summary": "Find the main idea, name two supporting details, and underline the exact line that proves each answer.",
+   "explain": "The main idea is the one sentence that covers everything a passage is about; a detail supports only part of it. Read the title and first sentence, then say the big idea in your own words in under ten words. For every answer, underline the exact line that proves it — if you cannot underline a line, you are guessing. Quote short: six to ten words is enough to point at the proof.",
+   "examples": [
+    {
+     "q": "A passage explains how bees carry pollen between flowers. What is the main idea?",
+     "a": "Bees help plants make food by carrying pollen from flower to flower.",
+     "steps": [
+      "Read the title and first sentence.",
+      "Say the big idea in ten words.",
+      "Check that every paragraph fits under it."
+     ]
+    },
+    {
+     "q": "Is 'Some bees live alone.' a main idea or a detail?",
+     "a": "A detail — it supports one part of the passage, not all of it.",
+     "steps": [
+      "Ask: does this cover the whole passage?",
+      "If only part, it is a detail."
+     ]
+    },
+    {
+     "q": "How do you prove a comprehension answer?",
+     "a": "Underline the line and quote six to ten words of it.",
+     "steps": [
+      "Find the line.",
+      "Underline it.",
+      "Copy a short quote beside your answer."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which sentence is most likely the main idea of a passage about storm clouds?",
+     "options": [
+      "Clouds are gray.",
+      "Storm clouds build, warn, and break over a town.",
+      "Rain fell on Tuesday.",
+      "Some clouds are flat."
+     ],
+     "correctIndex": 1,
+     "hint": "The main idea must cover the whole passage.",
+     "praise": "Yes — it covers building, warning and breaking."
+    },
+    {
+     "question": "A detail in that passage would be:",
+     "options": [
+      "The passage's biggest point",
+      "One example that supports the main idea",
+      "The title",
+      "The last word"
+     ],
+     "correctIndex": 1,
+     "hint": "Details hold up one part of the big point.",
+     "praise": "Right — details support, they do not cover."
+    },
+    {
+     "question": "Your answer says the fox was brave, but you cannot underline a line. What now?",
+     "options": [
+      "Guess anyway",
+      "Look again and find the line that proves it",
+      "Pick a different question",
+      "Write a longer answer"
+     ],
+     "correctIndex": 1,
+     "hint": "No line means no proof yet.",
+     "praise": "Exactly — find the proof line before you answer."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Read your current passage. Write its main idea in ten words or fewer.",
+     "answer": "One sentence that covers the whole passage — no extra facts.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Underline two details that support that main idea and quote four words from each.",
+     "answer": "Any two supporting lines, quoted short.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Turn one detail into a question your parent could answer from the text.",
+     "answer": "Who, what, where or when question answered by the underlined line.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why a fact that is not in the passage can never be an answer.",
+     "answer": "Every answer must point to a line in the text, or it is a guess.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "Pick a Testable Question",
+   "emoji": "🔬",
+   "minutes": 30,
+   "skill": "testable-question",
+   "summary": "Turn a big wonder into a question one fair test can answer, and name the one thing you will change.",
+   "explain": "A science fair starts with a question you can actually test. 'Why is the sky blue?' has no finish line; 'Does music help plants grow taller?' can be answered by one fair test. In a fair test you change exactly one thing — the variable — measure what happens, and keep everything else the same. Write your question so it starts with how, what, which or does, then list what you will change, what you will measure, and what you will keep the same.",
+   "examples": [
+    {
+     "q": "Is 'Do birds like red seed better?' testable?",
+     "a": "Yes — one variable (colour), one measurement (visits), a fair comparison.",
+     "steps": [
+      "Change only the feeder colour.",
+      "Count visits for the same time each day.",
+      "Keep seed, place and time the same."
+     ]
+    },
+    {
+     "q": "Why is 'Why do we dream?' hard to test?",
+     "a": "No single measurable result and nothing to keep the same.",
+     "steps": [
+      "Ask: what would I measure?",
+      "If nothing, the question is not testable yet."
+     ]
+    },
+    {
+     "q": "Name the variable in 'Does salt make water boil faster?'",
+     "a": "The amount of salt — that is the one thing you change.",
+     "steps": [
+      "Change: salt.",
+      "Measure: minutes to boil.",
+      "Keep the same: pot, water amount, heat level."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which question is testable?",
+     "options": [
+      "Are rainbows lucky?",
+      "Does fertilizer make bean plants taller?",
+      "What is the best colour ever?",
+      "Why do stars shine?"
+     ],
+     "correctIndex": 1,
+     "hint": "Look for something you can measure.",
+     "praise": "Yes — height is easy to measure."
+    },
+    {
+     "question": "In a fair test of plant fertilizer, what must stay the same?",
+     "options": [
+      "The fertilizer",
+      "Water, light and pot size",
+      "The plant's height",
+      "Nothing"
+     ],
+     "correctIndex": 1,
+     "hint": "Change one thing; hold the rest still.",
+     "praise": "Right — only the fertilizer changes."
+    },
+    {
+     "question": "The one thing you change in a test is called the:",
+     "options": [
+      "Result",
+      "Variable",
+      "Conclusion",
+      "Repeat"
+     ],
+     "correctIndex": 1,
+     "hint": "It varies between the two runs.",
+     "praise": "Yes — the variable is what you change."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Write your science fair question so it starts with Does, Which or How.",
+     "answer": "One sentence with a measurable answer — no why-so-big questions.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "List your change, your measure, and two things you keep the same.",
+     "answer": "Change / measure / keep-same — all three written out.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Predict the result in one sentence and say what would prove you wrong.",
+     "answer": "A prediction plus the observation that would overturn it.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Name one tool you will use to measure your result.",
+     "answer": "Ruler, scale, timer, counter or thermometer — matched to the measurement.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Unit 1 Review: Peoples, Maps and Order",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "skill": "unit-1-sequence-review",
+   "summary": "Put the unit-1 events and peoples in order and read a map like a historian.",
+   "explain": "History is a timeline plus a map. The Eastern Woodlands peoples built villages of longhouses, grew the three sisters — corn, beans and squash — and traded along rivers long before Europeans arrived. Later, Europe, Africa and the Americas became linked through trade and migration, and each contact changed all three. Review by ordering four events or people on a strip, then finding the places on an outline map; if you can order it and locate it, you know it.",
+   "examples": [
+    {
+     "q": "Order: trade routes grow, villages founded, contact across the Atlantic, longhouses built.",
+     "a": "Villages founded → longhouses built → trade routes grow → contact across the Atlantic.",
+     "steps": [
+      "Start with the earliest everyday life.",
+      "Add growth and trade.",
+      "Contact comes last."
+     ]
+    },
+    {
+     "q": "What does a map legend do?",
+     "a": "It decodes the symbols so the map can be read.",
+     "steps": [
+      "Find the legend box.",
+      "Match each symbol.",
+      "Read the map with it."
+     ]
+    },
+    {
+     "q": "Name the three sisters.",
+     "a": "Corn, beans and squash.",
+     "steps": [
+      "Corn climbs.",
+      "Beans fix nitrogen.",
+      "Squash shades the ground."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which came first?",
+     "options": [
+      "Atlantic contact",
+      "Eastern Woodlands villages",
+      "Trade route growth",
+      "Modern state borders"
+     ],
+     "correctIndex": 1,
+     "hint": "Village life came long before contact.",
+     "praise": "Yes — villages first."
+    },
+    {
+     "question": "The three sisters are:",
+     "options": [
+      "Corn, beans and squash",
+      "Rice, wheat and oats",
+      "Potatoes, yams and taro",
+      "Apples, pears and plums"
+     ],
+     "correctIndex": 0,
+     "hint": "The three planted together in Eastern Woodlands fields.",
+     "praise": "Right — corn, beans and squash."
+    },
+    {
+     "question": "Three-world interactions means contact among:",
+     "options": [
+      "Three weather zones",
+      "Europe, Africa and the Americas",
+      "Three continents' rivers",
+      "Three local towns"
+     ],
+     "correctIndex": 1,
+     "hint": "The three worlds of the unit title.",
+     "praise": "Yes — Europe, Africa and the Americas."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw a four-stop timeline strip of unit 1 and label each stop in five words.",
+     "answer": "Four ordered stops: villages, longhouses, trade, contact.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Add four labels to your outline map and read them back to a parent.",
+     "answer": "Four correct place labels, read aloud.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Write one sentence on how the three sisters helped each other.",
+     "answer": "Any true mutual-benefit sentence (shade, climbing support, nitrogen).",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why order matters in history.",
+     "answer": "Cause comes before effect — order is how we know what caused what.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "math",
+   "title": "Sharing Into Equal Groups: Multi-Digit Division",
+   "emoji": "🔢",
+   "minutes": 75,
+   "skill": "division-as-sharing",
+   "summary": "Break a big number into equal groups with place-value drawings, and name what the remainder means.",
+   "explain": "Division is sharing: you have a total and you want equal groups, or you know the group size and want the number of groups. Draw base-ten blocks for the dividend and deal them into groups, keeping the place values straight. When something is left over, that is the remainder — decide whether it belongs as leftovers in the story or needs rounding. Check every answer by multiplying the quotient by the divisor and adding the remainder; if you get back your dividend, you are done.",
+   "examples": [
+    {
+     "q": "Share 852 pencils equally among 4 classrooms.",
+     "a": "213 each, no remainder.",
+     "steps": [
+      "8 hundreds ÷ 4 = 2 hundreds.",
+      "5 tens ÷ 4 = 1 ten with 1 ten (10 ones) carried over.",
+      "2 + 10 = 12 ones ÷ 4 = 3 ones, so 213 — check 4 × 213 = 852."
+     ]
+    },
+    {
+     "q": "105 stickers into bags of 8. How many full bags and what is left?",
+     "a": "13 bags with 1 sticker left over.",
+     "steps": [
+      "10 ÷ 8 = 1, remainder 2.",
+      "25 ÷ 8 = 3, remainder 1.",
+      "Check: 13 × 8 + 1 = 105."
+     ]
+    },
+    {
+     "q": "What does the remainder mean in 26 ÷ 4?",
+     "a": "6 groups of 4 with 2 left over: 6 r2.",
+     "steps": [
+      "Multiply back: 6 × 4 = 24.",
+      "Subtract: 26 − 24 = 2.",
+      "State the leftover in story words."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "What is 96 ÷ 4?",
+     "options": [
+      "24",
+      "22",
+      "26",
+      "28"
+     ],
+     "correctIndex": 0,
+     "hint": "4 × 24 = 96. Multiply back to check.",
+     "praise": "Yes — 96 ÷ 4 = 24."
+    },
+    {
+     "question": "23 apples are shared among 5 plates. What is left over?",
+     "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "correctIndex": 3,
+     "hint": "5 × 4 = 20, so 23 − 20 leaves 3.",
+     "praise": "Right — 4 each with 3 left over."
+    },
+    {
+     "question": "In 47 ÷ 6, the remainder is:",
+     "options": [
+      "5",
+      "4",
+      "3",
+      "7"
+     ],
+     "correctIndex": 0,
+     "hint": "6 × 7 = 42, then 47 − 42 = 5.",
+     "praise": "Yes — 7 with 5 left over."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw base-ten blocks to show 725 ÷ 5 and write the quotient.",
+     "answer": "145 — 7 hundreds shared, then regroup.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write the multiplication check for 39 ÷ 6 = 6 r3.",
+     "answer": "6 × 6 + 3 = 39.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Solve 148 ÷ 4 two ways: sharing drawing and fact family.",
+     "answer": "37 — 14 ÷ 4 = 3 r2, 28 ÷ 4 = 7; check 37 × 4 = 148.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "A bus holds 12 people. How many buses for 70, and who rides the last one?",
+     "answer": "6 buses with 2 people over — the 7th bus carries 2.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Character Traits and the Proof Line",
+   "emoji": "📖",
+   "minutes": 60,
+   "skill": "character-trait-evidence",
+   "summary": "Name a trait, find the action or line that proves it, and write the evidence in your own sentence.",
+   "explain": "A trait is a lasting quality — patient, stubborn, brave — not a passing feeling. You never just assert a trait; you prove it with an action or a line of dialogue from the story. Read for what the character does under pressure, then quote the moment short and explain how it shows the trait. Strong evidence answers the question 'how does that show it?' in one more sentence of your own.",
+   "examples": [
+    {
+     "q": "Kenji walks the storm path to check the flags even though he is shaking. Trait?",
+     "a": "Brave — or dutiful.",
+     "steps": [
+      "Name the trait.",
+      "Quote: 'he walked the path anyway'.",
+      "Explain: he acted while afraid, which is what brave means."
+     ]
+    },
+    {
+     "q": "Why is 'the character is nice' weak evidence?",
+     "a": "It is a label with no proof line attached.",
+     "steps": [
+      "Find an action that shows nice.",
+      "Quote it.",
+      "Explain the link."
+     ]
+    },
+    {
+     "q": "Trait or mood: 'She sighed for the third time.'",
+     "a": "Evidence of impatience — an action you can quote.",
+     "steps": [
+      "Actions are quotable.",
+      "Name the trait the action shows."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which of these is a trait, not a mood?",
+     "options": [
+      "Grumpy today",
+      "Generous",
+      "Excited right now",
+      "Sleepy"
+     ],
+     "correctIndex": 1,
+     "hint": "Traits last; moods pass.",
+     "praise": "Yes — generous is a lasting quality."
+    },
+    {
+     "question": "Best evidence for 'the friend was loyal'?",
+     "options": [
+      "She said she was loyal",
+      "She stayed to help even when late",
+      "It rained that day",
+      "Her name is Anna"
+     ],
+     "correctIndex": 1,
+     "hint": "Pick the action under pressure.",
+     "praise": "Right — actions prove traits."
+    },
+    {
+     "question": "After the quote, what still needs writing?",
+     "options": [
+      "Another quote",
+      "One sentence explaining how the quote proves it",
+      "The page number",
+      "A new trait"
+     ],
+     "correctIndex": 1,
+     "hint": "The link sentence is your own thinking.",
+     "praise": "Exactly — claim, proof, link."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Choose your reader's main character. Write one trait and one proof line.",
+     "answer": "Trait + exact moment from the text that shows it.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write the evidence sentence that links the quote to the trait.",
+     "answer": "A because-sentence: it shows the trait because...",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Find one line of dialogue that reveals a second trait.",
+     "answer": "Dialogue quoted short, with the trait named.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why a feeling alone is not a character trait.",
+     "answer": "Feelings pass; traits show up in choices again and again.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "Properties of Matter: Describe, Classify, Measure",
+   "emoji": "🔬",
+   "minutes": 30,
+   "skill": "properties-of-matter",
+   "summary": "Use observable properties to describe and sort materials, and measure mass the same way each time.",
+   "explain": "Matter is anything with mass and volume, and every material shows properties you can observe: colour, texture, hardness, transparency, magnetism, whether it floats. Classify by choosing one property as your rule and saying the rule out loud before you sort. When you measure, use the same tool and the same method every time — a balance read at eye level, a ruler at the zero mark — so your numbers can be compared and repeated.",
+   "examples": [
+    {
+     "q": "Sort these by hardness: chalk, steel key, eraser.",
+     "a": "Steel key > eraser > chalk.",
+     "steps": [
+      "Pick hardness as the rule.",
+      "Test each the same way.",
+      "Line them up hardest to softest."
+     ]
+    },
+    {
+     "q": "Why does mass stay the same when you cut a bar in half?",
+     "a": "Matter is conserved — the halves add back to the whole mass.",
+     "steps": [
+      "Measure before: 12 g.",
+      "Measure both halves: 5 g + 7 g.",
+      "They sum to 12 g."
+     ]
+    },
+    {
+     "q": "Property or not: 'it smells sweet'?",
+     "a": "Yes — an observable property, useful for identification.",
+     "steps": [
+      "Observable without changing the sample.",
+      "Record it with the rest."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which is an observable property?",
+     "options": [
+      "Its price",
+      "Whether it is transparent",
+      "Where it was made",
+      "Its name"
+     ],
+     "correctIndex": 1,
+     "hint": "You can see it without changing the material.",
+     "praise": "Yes — transparency is observable."
+    },
+    {
+     "question": "You cut a 9 g block into three pieces. Total mass?",
+     "options": [
+      "Less than 9 g",
+      "9 g",
+      "More than 9 g",
+      "Depends on the cut"
+     ],
+     "correctIndex": 1,
+     "hint": "Matter is neither created nor lost.",
+     "praise": "Right — mass is conserved."
+    },
+    {
+     "question": "Two students weigh the same rock and disagree. Most likely cause?",
+     "options": [
+      "Different rocks",
+      "One did not zero the balance",
+      "Mass changes daily",
+      "Units do not matter"
+     ],
+     "correctIndex": 1,
+     "hint": "Same method gives same number.",
+     "praise": "Yes — zero the balance first."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Describe one sample using three different properties.",
+     "answer": "Three observable properties, each measured or seen the same way.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Sort five household materials by one stated rule and write the rule first.",
+     "answer": "Rule written, then the sorted list matching it.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Record the mass of a pencil in grams twice, two ways; explain any difference.",
+     "answer": "Two readings plus a method note (zeroing, eye level).",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why mass is conserved when matter changes form.",
+     "answer": "The same particles are rearranged, not added or removed.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Three Worlds Meet: Europe, Africa and the Americas",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "skill": "three-world-interactions",
+   "summary": "Track how trade, migration and contact linked three worlds — and what each side gave and took.",
+   "explain": "Before contact, Europe, Africa and the Americas each had their own nations, trade networks and technologies. Ocean travel linked them, and the exchange ran in every direction: crops like corn and potatoes moved east, horses and wheat moved west, and ideas travelled with them. Contact also brought conquest and disease that reshaped all three. Review by drawing three columns and filling what each world contributed and what changed for it.",
+   "examples": [
+    {
+     "q": "Name a crop that traveled from the Americas to the Old World.",
+     "a": "Corn or potatoes.",
+     "steps": [
+      "Americas → Europe/Africa/Asia.",
+      "Old World → Americas: horses, wheat."
+     ]
+    },
+    {
+     "q": "Why did horses change life on the Plains?",
+     "a": "They changed hunting, travel and trade — a transfer from the Old World.",
+     "steps": [
+      "Horse arrives via contact.",
+      "Hunting and movement speed up.",
+      "Trade routes shift."
+     ]
+    },
+    {
+     "q": "One consequence of contact that was not a trade good?",
+     "a": "Disease, which depopulated communities.",
+     "steps": [
+      "Contact = proximity.",
+      "New diseases met no prior immunity."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which moved from the Americas to Europe?",
+     "options": [
+      "Horses",
+      "Potatoes",
+      "Wheat",
+      "Iron tools"
+     ],
+     "correctIndex": 1,
+     "hint": "Think New World crops.",
+     "praise": "Yes — potatoes crossed the Atlantic west to east."
+    },
+    {
+     "question": "Three-world interactions in the unit title means:",
+     "options": [
+      "Three planets",
+      "Europe, Africa and the Americas",
+      "Three weather zones",
+      "Three local towns"
+     ],
+     "correctIndex": 1,
+     "hint": "The three worlds of the era.",
+     "praise": "Right."
+    },
+    {
+     "question": "A fair way to describe contact is:",
+     "options": [
+      "All benefit equally",
+      "Exchange plus disruption",
+      "Nothing changed",
+      "Only trade"
+     ],
+     "correctIndex": 1,
+     "hint": "Goods and ideas flowed, and so did harm.",
+     "praise": "Yes — exchange plus disruption."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Make three columns: what Europe, Africa and the Americas each contributed to the exchange.",
+     "answer": "At least one true item per column.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write one sentence on how the horse changed Plains life.",
+     "answer": "Any sentence linking horses to hunting, travel or trade.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Name two things that changed for a community after contact.",
+     "answer": "Any two: population, crops, animals, trade, governance.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why 'nothing changed' is wrong.",
+     "answer": "Goods, animals, people and diseases all moved — everything shifted.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "math",
+   "title": "Decimal Place Value, Comparing and Rounding",
+   "emoji": "🔢",
+   "minutes": 75,
+   "skill": "decimal-place-value-rounding",
+   "summary": "Read decimals to thousandths, compare them digit by digit, and round with the digit to the right.",
+   "explain": "A decimal extends the place-value chart to the right of the ones place: tenths, hundredths, thousandths. Each step right is ten times smaller, so 0.5 is ten times more than 0.05 even though 5 looks bigger than 05. To compare, line up the decimal points and read digit by digit from the left; the first difference decides. To round, underline the place, look one digit right — 5 or more rounds up, less than 5 stays — then drop everything after it.",
+   "examples": [
+    {
+     "q": "Write 4 tens, 7 hundredths, 3 thousandths as a decimal.",
+     "a": "40.073",
+     "steps": [
+      "4 in the tens place = 40.",
+      "Nothing in ones, tenths: 0.0.",
+      "7 hundredths and 3 thousandths = .073."
+     ]
+    },
+    {
+     "q": "Which is greater: 0.409 or 0.41?",
+     "a": "0.41 — compare hundredths: 1 > 0.",
+     "steps": [
+      "Line up points: 0.409 / 0.410.",
+      "Tenths tie (4).",
+      "Hundredths: 0 vs 1 — 0.41 wins."
+     ]
+    },
+    {
+     "q": "Round 6.378 to the nearest hundredth.",
+     "a": "6.38",
+     "steps": [
+      "Underline hundredths: 7.",
+      "Look right: 8 ≥ 5, round up.",
+      "Drop the thousandths place."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "What value does the 5 represent in 12.456?",
+     "options": [
+      "5 ones",
+      "5 tenths",
+      "5 hundredths",
+      "5 thousandths"
+     ],
+     "correctIndex": 2,
+     "hint": "Count right from the decimal: tenths, hundredths, thousandths.",
+     "praise": "Yes — the 5 sits in hundredths."
+    },
+    {
+     "question": "Which number is largest?",
+     "options": [
+      "0.7",
+      "0.68",
+      "0.709",
+      "0.599"
+     ],
+     "correctIndex": 2,
+     "hint": "Compare tenths first, then hundredths.",
+     "praise": "Right — 0.709 beats 0.7 at hundredths."
+    },
+    {
+     "question": "Round 15.84 to the nearest whole number.",
+     "options": [
+      "15",
+      "16",
+      "15.8",
+      "15.0"
+     ],
+     "correctIndex": 1,
+     "hint": "Look at the tenths digit: 8 ≥ 5.",
+     "praise": "Yes — 15.8 rounds up to 16."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Write 30 + 5 + 0.2 + 0.04 + 0.006 as one decimal.",
+     "answer": "35.246",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Order from least to greatest: 0.9, 0.099, 0.99, 0.009.",
+     "answer": "0.009 < 0.099 < 0.9 < 0.99",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Round 247.356 to the nearest tenth, hundredth and whole.",
+     "answer": "247.4 / 247.36 / 247",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why 0.5 is greater than 0.05.",
+     "answer": "The 5 in 0.5 is tenths, which are ten times larger than hundredths.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Text Features: Headings, Captions and Legends",
+   "emoji": "📖",
+   "minutes": 60,
+   "skill": "text-features-nonfiction",
+   "summary": "Use headings, captions, bold words and the map legend to find information without reading end to end.",
+   "explain": "Nonfiction writers build signposts into the page. Headings tell you what a section covers, captions explain what a picture shows, bold words flag key vocabulary, and a legend decodes a map's symbols. Skim the signposts first and predict where your answer lives, then dive only into that section. Every text-feature answer still needs a line of proof — point to the heading, caption or legend entry that gave it to you.",
+   "examples": [
+    {
+     "q": "Where do you look first for 'what does this diagram show?'",
+     "a": "The caption under the diagram.",
+     "steps": [
+      "Find the picture.",
+      "Read its caption.",
+      "Quote the phrase that answers."
+     ]
+    },
+    {
+     "q": "What does a map legend do?",
+     "a": "It matches each symbol to its meaning.",
+     "steps": [
+      "Find the legend box.",
+      "Match symbol to meaning.",
+      "Apply it to the map."
+     ]
+    },
+    {
+     "q": "Why skim headings before reading?",
+     "a": "Headings show the structure, so you can jump to the right section.",
+     "steps": [
+      "Read all headings.",
+      "Pick the matching section.",
+      "Read for proof."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which text feature gives the meaning of map symbols?",
+     "options": [
+      "Caption",
+      "Legend",
+      "Index",
+      "Glossary"
+     ],
+     "correctIndex": 1,
+     "hint": "It lives in a box beside the map.",
+     "praise": "Yes — the legend."
+    },
+    {
+     "question": "The sentence under a photograph is called the:",
+     "options": [
+      "Heading",
+      "Caption",
+      "Bulleted list",
+      "Footer"
+     ],
+     "correctIndex": 1,
+     "hint": "It says what the picture shows.",
+     "praise": "Right — the caption."
+    },
+    {
+     "question": "You need one fact about rivers only. Best move:",
+     "options": [
+      "Read page 1 twice",
+      "Skim headings, jump to the rivers section",
+      "Read the index aloud",
+      "Skip the pictures"
+     ],
+     "correctIndex": 1,
+     "hint": "Let the signposts narrow the search.",
+     "praise": "Exactly — headings first."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Open this week's nonfiction passage: list its headings in order.",
+     "answer": "All headings listed in page order.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Copy one caption and explain in your own words what it adds.",
+     "answer": "Caption quoted plus one sentence of explanation.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Use the legend to identify three symbols on the map.",
+     "answer": "Three symbols each matched to its legend meaning.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence how a heading saves reading time.",
+     "answer": "It previews the section so you skip what you do not need.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "The Particle Model: Matter in Three States",
+   "emoji": "🔬",
+   "minutes": 30,
+   "skill": "particle-model-states",
+   "summary": "Explain solids, liquids and gases with particles — how they are arranged and how they move.",
+   "explain": "Everything is made of particles too small to see. In a solid they are packed in a fixed pattern and vibrate in place, so the shape holds. In a liquid they slide past each other, taking the container's shape while keeping their volume. In a gas they spread far apart and move fast, so both shape and volume are set by the container. Changing temperature changes how much the particles move — that is what melting, boiling and freezing really are.",
+   "examples": [
+    {
+     "q": "Why does a solid keep its shape?",
+     "a": "Particles sit in fixed positions and only vibrate.",
+     "steps": [
+      "Particles packed tight.",
+      "Fixed pattern.",
+      "Shape holds."
+     ]
+    },
+    {
+     "q": "Ice at 0 °C melts into water — what changed?",
+     "a": "Particles gained enough energy to break the fixed pattern.",
+     "steps": [
+      "Heat added.",
+      "Pattern breaks.",
+      "Particles slide — still same amount of matter."
+     ]
+    },
+    {
+     "q": "Why does perfume smell across a room?",
+     "a": "Gas particles spread and move through the air — diffusion.",
+     "steps": [
+      "Particles start together.",
+      "They spread out fast.",
+      "Smell reaches you."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "In a liquid, particles:",
+     "options": [
+      "Are locked in place",
+      "Slide past each other",
+      "Are far apart and flying",
+      "Do not move"
+     ],
+     "correctIndex": 1,
+     "hint": "Liquids flow but keep their volume.",
+     "praise": "Yes — they slide past each other."
+    },
+    {
+     "question": "Water evaporating is:",
+     "options": [
+      "Liquid to gas",
+      "Solid to liquid",
+      "Gas to solid",
+      "Liquid to solid"
+     ],
+     "correctIndex": 0,
+     "hint": "It leaves as vapour.",
+     "praise": "Right — liquid becomes gas."
+    },
+    {
+     "question": "Mass of an ice cube after it melts:",
+     "options": [
+      "Less",
+      "More",
+      "The same",
+      "Zero"
+     ],
+     "correctIndex": 2,
+     "hint": "Particles were rearranged, not removed.",
+     "praise": "Yes — matter is conserved."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw the three states as particle pictures and label each.",
+     "answer": "Three labelled sketches: packed/vibrating, sliding, spread/flying.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Explain melting in one sentence using the word particles.",
+     "answer": "Particles gain energy, break the fixed pattern, and slide.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Name two changes of state and the direction of energy flow.",
+     "answer": "Melting/boiling (in), freezing/condensing (out).",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "A pot boils for an hour and loses half its water. Where did the missing matter go?",
+     "answer": "It left as water vapour — matter is conserved, it just moved into the air.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Reading the Map: Equator, Hemispheres, Continents",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "skill": "map-skills-equator-hemispheres",
+   "summary": "Locate the equator and hemispheres, name the continents, and use coordinates to point at places.",
+   "explain": "Map skills are the toolbox of history and geography. The equator is the imaginary line around the middle of Earth; north of it is the Northern Hemisphere, south is the Southern. Continents are the large landmasses, and oceans the water between them. Latitude and longitude cross like a grid: lines of latitude run east–west and measure north–south of the equator, lines of longitude run pole to pole. Together they name any spot on the globe.",
+   "examples": [
+    {
+     "q": "Which continent lies entirely in the Southern Hemisphere?",
+     "a": "Australia — nothing of it sits north of the equator.",
+     "steps": [
+      "Find the equator on the map.",
+      "Check the continent's whole outline sits below it."
+     ]
+    },
+    {
+     "q": "A place at 0° latitude is:",
+     "a": "On the equator.",
+     "steps": [
+      "Latitude measures north/south.",
+      "0° is the middle line."
+     ]
+    },
+    {
+     "q": "Lines of longitude run:",
+     "a": "North to south, meeting at the poles.",
+     "steps": [
+      "Longitude = pole-to-pole.",
+      "Latitude = east-west rings."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "The equator divides Earth into:",
+     "options": [
+      "Two hemispheres",
+      "Seven continents",
+      "Five oceans",
+      "Time zones"
+     ],
+     "correctIndex": 0,
+     "hint": "North half and south half.",
+     "praise": "Yes — Northern and Southern."
+    },
+    {
+     "question": "Which line runs pole to pole?",
+     "options": [
+      "Latitude",
+      "Longitude",
+      "Equator",
+      "Tropic of Cancer"
+     ],
+     "correctIndex": 1,
+     "hint": "It measures east and west.",
+     "praise": "Right — longitude."
+    },
+    {
+     "question": "Which is the largest continent?",
+     "options": [
+      "Africa",
+      "Asia",
+      "Europe",
+      "Antarctica"
+     ],
+     "correctIndex": 1,
+     "hint": "It also holds the highest point.",
+     "praise": "Yes — Asia."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw an outline map and add the equator plus four continents.",
+     "answer": "Equator labelled across the middle, four correct continents.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Name one country in each hemisphere using the atlas page.",
+     "answer": "Any two correct, one per hemisphere.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Give the latitude/longitude pair for one world city.",
+     "answer": "Roughly correct pair, read from the grid.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why a map needs a grid.",
+     "answer": "The grid names any exact spot with two numbers.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "math",
+   "title": "Equivalent Fractions and Comparing",
+   "emoji": "🔢",
+   "minutes": 60,
+   "skill": "equivalent-fractions-compare",
+   "summary": "Build equivalent fractions two ways and decide which fraction is greater without common denominators first.",
+   "explain": "Equivalent fractions name the same amount with different numbers: multiply or divide the top and bottom by the same thing and the value does not change. Cut a strip into halves and quarters and you can see 1/2 = 2/4. To compare, you can make common denominators, or reason from benchmarks — anything above one half is bigger than one half, and unit fractions get smaller as the denominator grows. Pictures make both moves obvious.",
+   "examples": [
+    {
+     "q": "Make two fractions equivalent to 3/4.",
+     "a": "6/8 and 9/12",
+     "steps": [
+      "Multiply top and bottom by 2: 6/8.",
+      "Multiply by 3: 9/12.",
+      "Check: the shaded amount never changed."
+     ]
+    },
+    {
+     "q": "Which is greater: 3/5 or 2/3?",
+     "a": "2/3 — with a common denominator of 15: 3/5 = 9/15 and 2/3 = 10/15.",
+     "steps": [
+      "Common denominator 15.",
+      "3/5 = 9/15, 2/3 = 10/15.",
+      "10/15 is greater, so 2/3 wins."
+     ]
+    },
+    {
+     "q": "Why is 1/6 smaller than 1/3?",
+     "a": "Bigger denominator = smaller pieces.",
+     "steps": [
+      "Same whole.",
+      "Cut into 6 makes each piece smaller.",
+      "So 1/6 < 1/3."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which fraction is equivalent to 1/2?",
+     "options": [
+      "2/3",
+      "4/8",
+      "3/4",
+      "1/3"
+     ],
+     "correctIndex": 1,
+     "hint": "Double the top and bottom.",
+     "praise": "Yes — 4/8 = 1/2."
+    },
+    {
+     "question": "Which is greater: 5/6 or 3/4?",
+     "options": [
+      "3/4",
+      "5/6",
+      "They are equal",
+      "Cannot tell"
+     ],
+     "correctIndex": 1,
+     "hint": "Common denominator 12: 10/12 vs 9/12.",
+     "praise": "Right — 5/6 wins."
+    },
+    {
+     "question": "Which is the smallest?",
+     "options": [
+      "1/3",
+      "1/8",
+      "1/5",
+      "1/2"
+     ],
+     "correctIndex": 1,
+     "hint": "Most cuts, smallest piece.",
+     "praise": "Yes — eighths are the smallest."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Shade one strip as 1/2 and a second as 4/8. What do you notice?",
+     "answer": "Same amount shaded — they are equivalent.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write three fractions equivalent to 2/5.",
+     "answer": "4/10, 6/15, 8/20 — same multiplier top and bottom.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Compare 7/10 and 4/5 with a common denominator.",
+     "answer": "7/10 = 7/10, 4/5 = 8/10, so 4/5 is greater.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence why 1/4 > 1/9.",
+     "answer": "Cutting a whole into more pieces makes each piece smaller.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Compare and Contrast: Two Pets Side by Side",
+   "emoji": "📖",
+   "minutes": 45,
+   "skill": "compare-contrast-signal-words",
+   "summary": "Use signal words to sort similarities and differences, then write one comparison sentence.",
+   "explain": "Compare and contrast writing sets two subjects side by side. Signal words are your cues: like, both and as well as show similarity; unlike, however, whereas and on the other hand show difference. Organize in one of two ways — subject by subject (all about pet A, then pet B) or feature by feature (food, then sleep, then care for both). Either way, every claim needs a line from the text behind it.",
+   "examples": [
+    {
+     "q": "'Both pets need water daily' signals:",
+     "a": "Similarity.",
+     "steps": [
+      "Both = same column.",
+      "Pair it with the matching line in the text."
+     ]
+    },
+    {
+     "q": "'A hamster sleeps by day; an owl hunts by night' signals:",
+     "a": "Difference — however / whereas territory.",
+     "steps": [
+      "Name the shared feature: sleep timing.",
+      "State the two sides."
+     ]
+    },
+    {
+     "q": "Which plan groups by feature?",
+     "a": "Feature by feature: food, then sleep, then care — each for both animals.",
+     "steps": [
+      "List features.",
+      "Write both subjects under each."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which word signals a difference?",
+     "options": [
+      "Similarly",
+      "However",
+      "Also",
+      "Both"
+     ],
+     "correctIndex": 1,
+     "hint": "It sets up a turn.",
+     "praise": "Yes — however turns to contrast."
+    },
+    {
+     "question": "'Fish and cats both need clean water' is:",
+     "options": [
+      "A difference",
+      "A similarity",
+      "An opinion",
+      "A sequence"
+     ],
+     "correctIndex": 1,
+     "hint": "Both = the same column.",
+     "praise": "Right — a similarity."
+    },
+    {
+     "question": "Organizing pet A fully, then pet B, is the:",
+     "options": [
+      "Feature-by-feature plan",
+      "Subject-by-subject plan",
+      "Timeline plan",
+      "Cause plan"
+     ],
+     "correctIndex": 1,
+     "hint": "You finish one subject first.",
+     "praise": "Yes — subject by subject."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Make a two-column chart from this week's passage: similarities and differences.",
+     "answer": "At least two true entries per column.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write one sentence using however to contrast the two subjects.",
+     "answer": "One independent clause each side of however, with a comma.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Write one sentence using both to state a shared feature.",
+     "answer": "Both-subjects sentence supported by the text.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Which plan would you use for three pets? Why?",
+     "answer": "Any sensible plan with a reason — feature-by-feature usually scales better.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "Mixtures and Substances: Separate and Identify",
+   "emoji": "🔬",
+   "minutes": 30,
+   "skill": "mixtures-and-substances",
+   "summary": "Tell a mixture from a substance and pick a separation method that matches the parts.",
+   "explain": "A substance has one kind of particle and fixed properties — pure water, pure salt. A mixture holds two or more substances that are not chemically joined, so each part keeps its own properties and can be pulled back out. Match the method to the parts: evaporation for dissolved solids, filtration for solids floating in liquid, magnets for iron, and careful sorting or sieving for chunky dry mixes. If you can recover the parts, it was a mixture.",
+   "examples": [
+    {
+     "q": "Saltwater: mixture or substance?",
+     "a": "A mixture — salt can be recovered by evaporation.",
+     "steps": [
+      "Two materials present.",
+      "Not chemically joined.",
+      "Evaporate: salt returns."
+     ]
+    },
+    {
+     "q": "How do you separate iron filings from sand?",
+     "a": "A magnet.",
+     "steps": [
+      "Iron responds to magnets.",
+      "Sand does not.",
+      "The filings lift out."
+     ]
+    },
+    {
+     "q": "Why is pure water a substance, not a mixture?",
+     "a": "Only one kind of particle — H₂O throughout.",
+     "steps": [
+      "One composition.",
+      "Fixed properties everywhere in the sample."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which is a mixture?",
+     "options": [
+      "Distilled water",
+      "Salt and sand",
+      "Pure copper",
+      "Oxygen"
+     ],
+     "correctIndex": 1,
+     "hint": "Two materials that can be pulled apart.",
+     "praise": "Yes — both stay themselves."
+    },
+    {
+     "question": "Best method to get salt from saltwater:",
+     "options": [
+      "Filter it",
+      "Evaporate the water",
+      "Use a magnet",
+      "Freeze and float"
+     ],
+     "correctIndex": 1,
+     "hint": "The salt is dissolved — it stays behind.",
+     "praise": "Right — evaporation."
+    },
+    {
+     "question": "In a mixture, each part:",
+     "options": [
+      "Loses its properties",
+      "Keeps its properties",
+      "Becomes a new substance",
+      "Disappears"
+     ],
+     "correctIndex": 1,
+     "hint": "Nothing chemical joined them.",
+     "praise": "Yes — properties are preserved."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "List three household mixtures and the method to separate each.",
+     "answer": "Three mixtures, each with a matching method.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Describe an evaporation experiment: what you start with and what you recover.",
+     "answer": "Saltwater in → water gone → salt crystals left.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Sort: sand in water, brass ring, trail mix, air. Mixture or substance?",
+     "answer": "Mixture, substance, mixture, mixture (air is a mixture of gases).",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence how separation proves something was a mixture.",
+     "answer": "If the parts come back with their own properties, they were never joined.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Ancient Peoples and the Rivers They Chose",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "skill": "river-valley-civilizations",
+   "summary": "Explain why early civilizations formed along rivers and sequence the four great river valleys.",
+   "explain": "Early farmers settled along rivers for three practical reasons: fresh water to drink and carry to fields, rich silt that rebuilt the soil after every flood, and flat land that was easy to plumb and divide. From those advantages grew cities, writing, codes of law and long-distance trade. Sequence the river valleys on a timeline strip — and remember the pattern: water first, surplus next, cities after.",
+   "examples": [
+    {
+     "q": "Why did early cities form beside rivers?",
+     "a": "Water, fertile silt and flat farmland together.",
+     "steps": [
+      "Drink and irrigate.",
+      "Silt refreshes fields.",
+      "Flat land is easy to farm and build."
+     ]
+    },
+    {
+     "q": "What did farming surplus enable?",
+     "a": "Specialization — not everyone had to farm, so crafts, writing and governance grew.",
+     "steps": [
+      "Food surplus feeds more people.",
+      "Some people specialise.",
+      "Cities and records follow."
+     ]
+    },
+    {
+     "q": "Order: writing develops, villages farm, cities grow, laws are codified.",
+     "a": "Villages farm → cities grow → writing develops → laws codified.",
+     "steps": [
+      "Farming first.",
+      "Cities from surplus.",
+      "Records and codes after."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which did NOT draw early settlers to rivers?",
+     "options": [
+      "Fresh water",
+      "Fertile silt",
+      "Steep mountainsides",
+      "Flat land"
+     ],
+     "correctIndex": 2,
+     "hint": "Think what makes farming easy.",
+     "praise": "Yes — mountains repelled, not attracted."
+    },
+    {
+     "question": "Farming surplus meant:",
+     "options": [
+      "Everyone still farmed",
+      "Some people could specialise",
+      "Cities disappeared",
+      "Rivers dried up"
+     ],
+     "correctIndex": 1,
+     "hint": "Food beyond the farmers' own needs.",
+     "praise": "Right — surplus frees people to specialise."
+    },
+    {
+     "question": "Which comes last in the pattern?",
+     "options": [
+      "Villages",
+      "Farm surplus",
+      "Cities",
+      "Coded laws"
+     ],
+     "correctIndex": 3,
+     "hint": "Records and rules follow cities.",
+     "praise": "Yes — laws come after cities."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw a four-stop timeline: villages → surplus → cities → codes.",
+     "answer": "Four labelled stops in that order.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Add four river-valley labels to your outline map.",
+     "answer": "Four correct rivers or valleys labelled.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Write three sentences on why silt mattered.",
+     "answer": "Any three: floods deposit it, crops grow, fields stay fertile.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in one sentence how a river could start a city.",
+     "answer": "Water and food surplus let people gather, trade and build.",
+     "reveal": "on-demand"
+    }
+   ]
+  }
+ ],
+ "tests": [
+  {
+   "title": "Week 5 Test — Review, Fair Tests and Three Worlds",
+   "note": "Mapped to the Week 5 day flow: quarter-1 review of fractions/area/volume, main idea with proof lines, testable questions and variables, unit-1 peoples and map order.",
+   "questions": [
+    {
+     "q": "3/8 + 2/8 equals:",
+     "options": [
+      "5/8",
+      "5/16",
+      "6/8",
+      "1/8"
+     ],
+     "correct": 0,
+     "skill": "fraction-addition-same-denominator",
+     "subject": "math",
+     "why": "Same denominators stay put — add the numerators: 3 + 2 = 5, so 5/8."
+    },
+    {
+     "q": "A rectangle is 9 cm long and 4 cm wide. Its area is:",
+     "options": [
+      "13 cm²",
+      "26 cm²",
+      "36 cm²",
+      "36 cm"
+     ],
+     "correct": 2,
+     "skill": "area-of-rectangle",
+     "subject": "math",
+     "why": "Area multiplies the two sides: 9 × 4 = 36 square centimetres."
+    },
+    {
+     "q": "A box measures 3 × 3 × 3. Its volume is:",
+     "options": [
+      "9 cm³",
+      "18 cm³",
+      "27 cm³",
+      "30 cm³"
+     ],
+     "correct": 2,
+     "skill": "volume-of-prism",
+     "subject": "math",
+     "why": "Volume multiplies all three: 3 × 3 × 3 = 27 cubic centimetres."
+    },
+    {
+     "q": "Which sentence best states a main idea?",
+     "options": [
+      "Rain fell Tuesday.",
+      "Storm clouds build, warn and break over a town.",
+      "Clouds are gray.",
+      "The last word is wind."
+     ],
+     "correct": 1,
+     "skill": "main-idea",
+     "subject": "reading",
+     "why": "A main idea covers the whole passage — building, warning and breaking is the whole story."
+    },
+    {
+     "q": "To prove an answer from a passage you must:",
+     "options": [
+      "Guess confidently",
+      "Underline the line that proves it",
+      "Read only the first sentence",
+      "Count the words"
+     ],
+     "correct": 1,
+     "skill": "text-evidence",
+     "subject": "reading",
+     "why": "Comprehension answers point to a line — if you cannot underline it, you are guessing."
+    },
+    {
+     "q": "Which question can a fair test answer?",
+     "options": [
+      "Why do we dream?",
+      "Does fertilizer make bean plants taller?",
+      "Are rainbows lucky?",
+      "What is the best colour ever?"
+     ],
+     "correct": 1,
+     "skill": "testable-question",
+     "subject": "science",
+     "why": "It names one variable and one measurement — height over time — so one test can settle it."
+    },
+    {
+     "q": "In a fair test, everything except the variable must be:",
+     "options": [
+      "Changed too",
+      "Kept the same",
+      "Randomised",
+      "Ignored"
+     ],
+     "correct": 1,
+     "skill": "controlled-variables",
+     "subject": "science",
+     "why": "Hold all else still so the result can only come from the one thing you changed."
+    },
+    {
+     "q": "The three sisters planted together were:",
+     "options": [
+      "Corn, beans and squash",
+      "Rice, wheat and oats",
+      "Potatoes, yams and taro",
+      "Apples, pears and plums"
+     ],
+     "correct": 0,
+     "skill": "eastern-woodlands-agriculture",
+     "subject": "history",
+     "why": "Corn, beans and squash were planted together so each helped the others grow."
+    },
+    {
+     "q": "Which came first?",
+     "options": [
+      "Atlantic contact",
+      "Eastern Woodlands villages",
+      "Trade route growth",
+      "Modern state borders"
+     ],
+     "correct": 1,
+     "skill": "chronological-order",
+     "subject": "history",
+     "why": "Village life long preceded ocean contact — order is cause before effect."
+    },
+    {
+     "q": "A map legend is used to:",
+     "options": [
+      "Show the title",
+      "Decode the symbols",
+      "List the author",
+      "Measure distance only"
+     ],
+     "correct": 1,
+     "skill": "map-legend",
+     "subject": "history",
+     "why": "The legend matches each symbol to its meaning so the map can be read."
+    },
+    {
+     "q": "Which word needs a capital letter at the start of a sentence?",
+     "options": [
+      "river",
+      "Brave",
+      "the",
+      "under"
+     ],
+     "correct": 1,
+     "skill": "capitalization",
+     "subject": "english_grammar",
+     "why": "Sentences begin with a capital — Brave is the only option that can open one."
+    },
+    {
+     "q": "A rule that keeps a classroom fair is a good example of:",
+     "options": [
+      "Weather",
+      "Civics",
+      "Geography",
+      "Fractions"
+     ],
+     "correct": 1,
+     "skill": "rules-and-fairness",
+     "subject": "civics",
+     "why": "Civics is how groups make and live by rules — a classroom rule is civics in miniature."
+    }
+   ]
+  },
+  {
+   "title": "Week 6 Test — Division, Traits and Three Worlds",
+   "note": "Mapped to the Week 6 day flow: multi-digit division with remainders, character-trait evidence, properties of matter, and three-world exchange.",
+   "questions": [
+    {
+     "q": "96 ÷ 4 equals:",
+     "options": [
+      "24",
+      "22",
+      "26",
+      "28"
+     ],
+     "correct": 0,
+     "skill": "division-facts",
+     "subject": "math",
+     "why": "4 × 24 = 96 — multiply back to confirm the quotient."
+    },
+    {
+     "q": "23 apples shared among 5 plates leaves how many over?",
+     "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+     ],
+     "correct": 3,
+     "skill": "division-remainder",
+     "subject": "math",
+     "why": "5 × 4 = 20, and 23 − 20 = 3, so three apples are left over."
+    },
+    {
+     "q": "In 47 ÷ 6 the remainder is:",
+     "options": [
+      "5",
+      "4",
+      "3",
+      "7"
+     ],
+     "correct": 0,
+     "skill": "division-remainder",
+     "subject": "math",
+     "why": "6 × 7 = 42 and 47 − 42 = 5 — seven groups with five left."
+    },
+    {
+     "q": "148 ÷ 4 equals:",
+     "options": [
+      "36",
+      "37",
+      "38",
+      "47"
+     ],
+     "correct": 1,
+     "skill": "partial-quotients",
+     "subject": "math",
+     "why": "14 ÷ 4 = 3 remainder 2, then 28 ÷ 4 = 7 — so 37, and 37 × 4 = 148."
+    },
+    {
+     "q": "Which of these is a character trait?",
+     "options": [
+      "Sleepy right now",
+      "Generous",
+      "Grumpy today",
+      "Excited at noon"
+     ],
+     "correct": 1,
+     "skill": "character-traits",
+     "subject": "reading",
+     "why": "Traits last across situations; moods like grumpy-today pass."
+    },
+    {
+     "q": "Strong evidence for 'the friend was loyal' is:",
+     "options": [
+      "She said so",
+      "She stayed to help even when she was late",
+      "It rained that day",
+      "Her name is on the list"
+     ],
+     "correct": 1,
+     "skill": "evidence-for-traits",
+     "subject": "reading",
+     "why": "An action under pressure proves the trait; a label proves nothing on its own."
+    },
+    {
+     "q": "Which is an observable property of a material?",
+     "options": [
+      "Its price",
+      "Whether it is transparent",
+      "Where it was made",
+      "What it is called"
+     ],
+     "correct": 1,
+     "skill": "properties-of-matter",
+     "subject": "science",
+     "why": "Transparency can be seen without changing the material — that makes it a property."
+    },
+    {
+     "q": "A 9 g block is cut into three pieces. The total mass is:",
+     "options": [
+      "Less than 9 g",
+      "Exactly 9 g",
+      "More than 9 g",
+      "Zero"
+     ],
+     "correct": 1,
+     "skill": "conservation-of-mass",
+     "subject": "science",
+     "why": "Matter is rearranged, not created or destroyed, so the pieces still sum to 9 g."
+    },
+    {
+     "q": "Which crop travelled from the Americas to the Old World?",
+     "options": [
+      "Horses",
+      "Potatoes",
+      "Wheat",
+      "Iron tools"
+     ],
+     "correct": 1,
+     "skill": "columbian-exchange-crops",
+     "subject": "history",
+     "why": "Potatoes are a New World crop; horses, wheat and iron came the other way."
+    },
+    {
+     "q": "The unit's 'three worlds' are:",
+     "options": [
+      "Europe, Africa and the Americas",
+      "Three planets",
+      "Three weather zones",
+      "Three local towns"
+     ],
+     "correct": 0,
+     "skill": "three-world-interactions",
+     "subject": "history",
+     "why": "The era linked the societies of Europe, Africa and the Americas."
+    },
+    {
+     "q": "The best summary of contact is:",
+     "options": [
+      "Everything stayed the same",
+      "Exchange plus disruption",
+      "Only trade happened",
+      "Nothing moved"
+     ],
+     "correct": 1,
+     "skill": "cause-and-effect",
+     "subject": "history",
+     "why": "Goods, animals and ideas moved — and so did conquest and disease."
+    },
+    {
+     "q": "Choose the sentence with correct comma use in a series:",
+     "options": [
+      "I packed bread, cheese and apples.",
+      "I packed bread cheese, and apples.",
+      "I, packed bread cheese and, apples.",
+      "I packed, bread cheese apples."
+     ],
+     "correct": 0,
+     "skill": "commas-in-a-series",
+     "subject": "english_grammar",
+     "why": "Items in a series are separated by commas, with the last pair joined by 'and'."
+    }
+   ]
+  },
+  {
+   "title": "Week 7 Test — Decimals, Text Features and Maps",
+   "note": "Mapped to the Week 7 day flow: decimal place value and rounding, nonfiction text features, the particle model, and equator/hemisphere map skills.",
+   "questions": [
+    {
+     "q": "In 12.456, the 5 is worth:",
+     "options": [
+      "5 ones",
+      "5 tenths",
+      "5 hundredths",
+      "5 thousandths"
+     ],
+     "correct": 2,
+     "skill": "decimal-place-value",
+     "subject": "math",
+     "why": "Three places right of the decimal ends at thousandths, and the 5 sits in the hundredths place."
+    },
+    {
+     "q": "Which number is largest?",
+     "options": [
+      "0.7",
+      "0.68",
+      "0.709",
+      "0.599"
+     ],
+     "correct": 2,
+     "skill": "comparing-decimals",
+     "subject": "math",
+     "why": "Line them up as 0.700 and 0.709: tenths and hundredths tie, then 9 thousandths beats 0 thousandths."
+    },
+    {
+     "q": "Round 6.378 to the nearest hundredth:",
+     "options": [
+      "6.37",
+      "6.38",
+      "6.4",
+      "6.40"
+     ],
+     "correct": 1,
+     "skill": "rounding-decimals",
+     "subject": "math",
+     "why": "The hundredths digit is 7 and the digit to its right is 8, so round up to 6.38."
+    },
+    {
+     "q": "Round 15.84 to the nearest whole number:",
+     "options": [
+      "15",
+      "16",
+      "15.8",
+      "15.0"
+     ],
+     "correct": 1,
+     "skill": "rounding-decimals",
+     "subject": "math",
+     "why": "The tenths digit 8 is 5 or more, so 15.84 rounds up to 16."
+    },
+    {
+     "q": "The sentence beneath a photograph is called the:",
+     "options": [
+      "Heading",
+      "Caption",
+      "Index",
+      "Footer"
+     ],
+     "correct": 1,
+     "skill": "text-features",
+     "subject": "reading",
+     "why": "A caption explains what the picture shows."
+    },
+    {
+     "q": "Which text feature decodes map symbols?",
+     "options": [
+      "Legend",
+      "Glossary",
+      "Bulleted list",
+      "Table of contents"
+     ],
+     "correct": 0,
+     "skill": "text-features",
+     "subject": "reading",
+     "why": "The legend pairs each symbol with its meaning — that is exactly its job."
+    },
+    {
+     "q": "In a liquid, particles:",
+     "options": [
+      "Are locked in place",
+      "Slide past each other",
+      "Fly far apart",
+      "Do not move"
+     ],
+     "correct": 1,
+     "skill": "particle-model",
+     "subject": "science",
+     "why": "Liquids keep their volume but take the container's shape because particles slide past one another."
+    },
+    {
+     "q": "Water evaporating is a change from:",
+     "options": [
+      "Liquid to gas",
+      "Solid to liquid",
+      "Gas to solid",
+      "Liquid to solid"
+     ],
+     "correct": 0,
+     "skill": "changes-of-state",
+     "subject": "science",
+     "why": "Evaporation turns liquid water into water vapour — a gas."
+    },
+    {
+     "q": "The equator divides Earth into:",
+     "options": [
+      "Two hemispheres",
+      "Seven continents",
+      "Five oceans",
+      "Twenty-four zones"
+     ],
+     "correct": 0,
+     "skill": "hemispheres",
+     "subject": "history",
+     "why": "North of the equator is the Northern Hemisphere, south is the Southern."
+    },
+    {
+     "q": "Which line runs from pole to pole?",
+     "options": [
+      "Latitude",
+      "Longitude",
+      "Equator",
+      "Tropic"
+     ],
+     "correct": 1,
+     "skill": "longitude-latitude",
+     "subject": "history",
+     "why": "Longitude lines run north–south between the poles; latitude lines run east–west."
+    },
+    {
+     "q": "Which continent lies entirely in the Southern Hemisphere?",
+     "options": [
+      "Asia",
+      "Australia",
+      "Europe",
+      "North America"
+     ],
+     "correct": 1,
+     "skill": "continents",
+     "subject": "history",
+     "why": "Australia sits wholly south of the equator."
+    },
+    {
+     "q": "Which sentence uses a verb tense correctly throughout?",
+     "options": [
+      "She walk to the store yesterday.",
+      "She walked to the store yesterday.",
+      "She walks to the store yesterday.",
+      "She walking to the store."
+     ],
+     "correct": 1,
+     "skill": "verb-tenses",
+     "subject": "english_grammar",
+     "why": "'Yesterday' calls for the past tense — walked — kept consistent in the sentence."
+    }
+   ]
+  },
+  {
+   "title": "Week 8 Test — Equivalent Fractions, Compare and Contrast",
+   "note": "Mapped to the Week 8 day flow: equivalence and comparing fractions, compare/contrast signal words, mixtures versus substances, and river-valley civilizations.",
+   "questions": [
+    {
+     "q": "Which fraction is equivalent to 1/2?",
+     "options": [
+      "2/3",
+      "4/8",
+      "3/4",
+      "1/3"
+     ],
+     "correct": 1,
+     "skill": "equivalent-fractions",
+     "subject": "math",
+     "why": "Multiply top and bottom by 4: 1 × 4 = 4 and 2 × 4 = 8, so 4/8 = 1/2."
+    },
+    {
+     "q": "Which is greater: 5/6 or 3/4?",
+     "options": [
+      "3/4",
+      "5/6",
+      "They are equal",
+      "Cannot be determined"
+     ],
+     "correct": 1,
+     "skill": "comparing-fractions",
+     "subject": "math",
+     "why": "Over 12: 5/6 = 10/12 and 3/4 = 9/12 — ten twelfths wins."
+    },
+    {
+     "q": "Which is the smallest?",
+     "options": [
+      "1/3",
+      "1/8",
+      "1/5",
+      "1/2"
+     ],
+     "correct": 1,
+     "skill": "unit-fractions",
+     "subject": "math",
+     "why": "The more pieces a whole is cut into, the smaller each piece — eighths are smallest here."
+    },
+    {
+     "q": "Which fraction is equivalent to 2/5?",
+     "options": [
+      "4/10",
+      "3/6",
+      "5/2",
+      "2/50"
+     ],
+     "correct": 0,
+     "skill": "equivalent-fractions",
+     "subject": "math",
+     "why": "Multiply both by 2: 2 × 2 = 4 and 5 × 2 = 10, so 4/10 = 2/5."
+    },
+    {
+     "q": "Which word signals a difference?",
+     "options": [
+      "Similarly",
+      "However",
+      "Also",
+      "Both"
+     ],
+     "correct": 1,
+     "skill": "compare-contrast-signal-words",
+     "subject": "reading",
+     "why": "'However' turns the sentence toward a contrast; the others introduce similarity."
+    },
+    {
+     "q": "'Fish and cats both need clean water' states a:",
+     "options": [
+      "Difference",
+      "Sequence",
+      "Similarity",
+      "Opinion"
+     ],
+     "correct": 2,
+     "skill": "compare-contrast-signal-words",
+     "subject": "reading",
+     "why": "'Both' marks a shared feature — the similarity column."
+    },
+    {
+     "q": "Which separation method recovers salt from saltwater?",
+     "options": [
+      "Filtration",
+      "Evaporation",
+      "A magnet",
+      "Sieving"
+     ],
+     "correct": 1,
+     "skill": "separation-methods",
+     "subject": "science",
+     "why": "Dissolved salt stays behind when the water evaporates."
+    },
+    {
+     "q": "In a mixture, each part:",
+     "options": [
+      "Loses its properties",
+      "Keeps its properties",
+      "Becomes a new substance",
+      "Disappears"
+     ],
+     "correct": 1,
+     "skill": "mixtures",
+     "subject": "science",
+     "why": "Nothing chemically joins the parts, so each keeps its own properties — and can be recovered."
+    },
+    {
+     "q": "Early cities formed beside rivers mainly because of:",
+     "options": [
+      "Steep slopes",
+      "Water, fertile silt and flat land",
+      "Cold weather",
+      "Deserts"
+     ],
+     "correct": 1,
+     "skill": "river-valley-civilizations",
+     "subject": "history",
+     "why": "Drinkable water, silt-rebuilt soil and plowable flat land together made farming and cities possible."
+    },
+    {
+     "q": "Farming surplus first enabled:",
+     "options": [
+      "Everyone farming forever",
+      "People to specialise",
+      "Cities to vanish",
+      "Rivers to dry"
+     ],
+     "correct": 1,
+     "skill": "surplus-and-specialisation",
+     "subject": "history",
+     "why": "Food beyond the farmers' own needs let others craft, write and govern."
+    },
+    {
+     "q": "Which comes last in the river-valley pattern?",
+     "options": [
+      "Villages",
+      "Surplus",
+      "Cities",
+      "Coded laws"
+     ],
+     "correct": 3,
+     "skill": "chronological-order",
+     "subject": "history",
+     "why": "Villages → surplus → cities → written codes: rules follow the cities they govern."
+    },
+    {
+     "q": "Which sentence shows correct subject–verb agreement?",
+     "options": [
+      "The dogs runs outside.",
+      "The dogs run outside.",
+      "The dogs running outside.",
+      "The dogs to run outside."
+     ],
+     "correct": 1,
+     "skill": "subject-verb-agreement",
+     "subject": "english_grammar",
+     "why": "The plural subject 'dogs' takes the plural verb 'run' — no -s on the verb."
+    },
+    {
+     "q": "Which symbol belongs in civics — a rule a community follows?",
+     "options": [
+      "A vote",
+      "A fraction",
+      "A fossil",
+      "A stanza"
+     ],
+     "correct": 0,
+     "skill": "civics-participation",
+     "subject": "civics",
+     "why": "Voting is how a community makes the rules it then follows — civics in action."
+    }
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "title": "The School Greenhouse",
+   "text": "Behind the gym sits a long greenhouse with a glass roof. Every class has a shelf there. In March, the fifth graders filled small pots with soil and pressed bean seeds an inch deep. They watered half the pots with plain water and half with diluted seaweed feed, keeping the shelf, the light and the amount of water exactly the same. By the third week the fed plants stood taller, but both groups had sprouted. Rowan recorded the height of every plant in a lab notebook and drew the leaves. When the class argued about the results, their teacher reminded them that a fair test changes only one thing, and that one measurement repeated three times tells more than a single lucky look. The plants were transplanted into the garden in May.",
+   "pool": [
+    "greenhouse",
+    "diluted",
+    "sprouted",
+    "measurement",
+    "transplanted",
+    "soil",
+    "shelf",
+    "sprouted",
+    "fair",
+    "notebook",
+    "height",
+    "glass"
+   ]
+  },
+  {
+   "title": "The Quietest Courage",
+   "text": "Nadia was the quietest kid in class, the one who never raised a hand even when she knew the answer. When the school play lost its narrator two days before the show, nobody volunteered. Nadia went home and practised the script three times in front of her mirror, her voice shaking at first and steady by the third run-through. At rehearsal she read the whole part without a single stumble, though her palms were damp the entire time. On opening night she forgot one line, paused, found it, and kept going. Afterward her classmates crowded around her, and Nadia surprised even herself by laughing out loud. Courage, she decided, was not the absence of shaking — it was reading anyway.",
+   "pool": [
+    "narrator",
+    "practised",
+    "shaking",
+    "stumble",
+    "rehearsal",
+    "volunteered",
+    "courage",
+    "script",
+    "steady",
+    "mirror",
+    "crowded",
+    "pause"
+   ]
+  },
+  {
+   "title": "Reading a Map Legend",
+   "text": "Every good map comes with a legend, sometimes called a key, tucked into a corner of the page. The legend is a small table that matches each symbol on the map with its meaning: a star for a capital city, a dotted line for a trail, a blue triangle for a lake. Below the legend sit the scale, which converts map distance into real distance, and a north arrow that keeps the reader oriented. Latitude lines circle the globe east and west, while longitude lines run north and south and meet at the poles. The equator, at zero degrees latitude, splits the planet into two hemispheres. Students who read the legend first answer map questions faster and with far fewer guesses, because the symbols stop being puzzles and start being information.",
+   "pool": [
+    "legend",
+    "latitude",
+    "longitude",
+    "hemispheres",
+    "equator",
+    "symbols",
+    "oriented",
+    "dotted",
+    "triangle",
+    "scale",
+    "converts",
+    "circle"
+   ]
+  },
+  {
+   "title": "Two Pets, Compared",
+   "text": "A hamster and a goldfish are both popular first pets, and both need daily care, but almost everything else differs. A hamster sleeps all day and wakes at dusk, while a goldfish drifts quietly through the afternoon. Hamsters need a wheel, a deep nest and seeds; goldfish need clean water, flakes and a filter that runs continuously. Both animals grow, both eat on a schedule, and neither can be left with a neighbour for a month. Feed a hamster too much and it stuffs its cheeks; feed a goldfish too much and the water fouls. Families choose between them by asking three questions: how much space is free, how much noise is tolerable, and who will remember the daily feeding without being reminded.",
+   "pool": [
+    "hamster",
+    "goldfish",
+    "differ",
+    "schedule",
+    "continuously",
+    "fouls",
+    "tolerable",
+    "neighbour",
+    "wheel",
+    "flakes",
+    "daily",
+    "reminded"
+   ]
+  }
+ ]
+}
