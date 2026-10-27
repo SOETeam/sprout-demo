@@ -1,6 +1,6 @@
 # K–6 Readiness Matrix (P0.4 validator v2 output — regenerated, do not hand-edit)
 
-- Generated: `2026-10-27T02:00:14.606Z` by `tools/validate_readiness.js`
+- Generated: `2026-10-27T03:17:21.037Z` by `tools/validate_readiness.js`
 - Axes: 7 grades (K–6) × 9 school months × 4 weeks (year week = (month−1)×4 + week-of-month)
 - Statutory list: nine MCL 380.1561(3)(f) subjects (D7-verified) — reading, spelling, mathematics, science, history, civics, literature, writing, english_grammar
 - Fold-map (K/1/2): `ela` → reading, writing, spelling, literature, english_grammar; `social_studies` → history, civics; `math` → mathematics; `science` → science.
@@ -17,10 +17,10 @@
 | **2** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 | **3** | T0 | **T2** | **T2** | T0 | T0 | T0 | T0 | T0 | T0 |
 | **4** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
-| **5** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
+| **5** | **T2** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 | **6** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 
-Grade-month totals: T2 = 2, T1 = 0, T0 = 61 (of 63).
+Grade-month totals: T2 = 3, T1 = 0, T0 = 60 (of 63).
 
 **Beta-blocking (T0) grade-months:**
 - grade K: months 1, 2, 3, 4, 5, 6, 7, 8, 9
@@ -28,7 +28,7 @@ Grade-month totals: T2 = 2, T1 = 0, T0 = 61 (of 63).
 - grade 2: months 1, 2, 3, 4, 5, 6, 7, 8, 9
 - grade 3: months 1, 4, 5, 6, 7, 8, 9
 - grade 4: months 1, 2, 3, 4, 5, 6, 7, 8, 9
-- grade 5: months 1, 2, 3, 4, 5, 6, 7, 8, 9
+- grade 5: months 2, 3, 4, 5, 6, 7, 8, 9
 - grade 6: months 1, 2, 3, 4, 5, 6, 7, 8, 9
 
 ## Per-week detail (failures and spiral reasons only)
@@ -199,10 +199,6 @@ Grade-month totals: T2 = 2, T1 = 0, T0 = 61 (of 63).
 - **4 / month 9 / week 34** → T0: week file missing
 - **4 / month 9 / week 35** → T0: week file missing
 - **4 / month 9 / week 36** → T0: week file missing
-- **5 / month 1 / week 1** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar
-- **5 / month 1 / week 2** → T0: 9/9 coverage: 5/9 — missing reading, civics, literature, writing
-- **5 / month 1 / week 3** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar
-- **5 / month 1 / week 4** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar
 - **5 / month 2 / week 5** → T0: topic-only stub (no day flow)
 - **5 / month 2 / week 6** → T0: topic-only stub (no day flow)
 - **5 / month 2 / week 7** → T0: week file missing
@@ -313,7 +309,6 @@ Grade-month totals: T2 = 2, T1 = 0, T0 = 61 (of 63).
 - grade 4: 6/36 week files exist, 2 carry a day flow.
 - grade 4: statutory subject(s) missing from at least one authored week — civics, literature, writing, english_grammar.
 - grade 5: 6/36 week files exist, 4 carry a day flow.
-- grade 5: statutory subject(s) missing from at least one authored week — civics, literature, writing, english_grammar, reading.
 - grade 6: no content lane and no skill_tree band — T0 across all 9 months.
 
 Run: `node tools/validate_readiness.js [--strict] [--no-write]` or `bash tools/run_readiness.sh`.

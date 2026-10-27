@@ -59,12 +59,16 @@
    "persona": "Pixel",
    "student_key": "pixel",
    "subjects": [
+    "civics",
+    "coding",
+    "english_grammar",
+    "history",
+    "literature",
     "math",
     "reading",
-    "spelling",
     "science",
-    "history",
-    "coding"
+    "spelling",
+    "writing"
    ],
    "enabled": true,
    "statutory_map": [
@@ -27711,10 +27715,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "civics",
         "min": 30,
-        "activity": "Run it: type the python-syntax slot: print(), variables, indentation sample, predict the output first, then run it.",
-        "lesson_ref": "pixel_w3_l2"
+        "activity": "Model: read the rules that make a classroom fair lesson and name 4 jobs or rules from it without looking.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -27761,10 +27765,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "english_grammar",
         "min": 30,
-        "activity": "Build: write the short python-syntax slot: print(), variables, indentation program from the checklist and run it twice.",
-        "lesson_ref": "pixel_w1_cod2"
+        "activity": "Practice: complete sentences about fraction parts — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -27811,10 +27815,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "writing",
         "min": 30,
-        "activity": "Debug: fix 3 seeded errors in the python-syntax slot: print(), variables, indentation starter file and explain each fix.",
-        "lesson_ref": "pixel_w1_cod3"
+        "activity": "Apply: a how-to paragraph: sharing one pizza fairly — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -27861,10 +27865,11 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "literature",
         "min": 30,
-        "activity": "Extend: add one new feature to your python-syntax slot: print(), variables, indentation program, then take the weekly test.",
-        "lesson_ref": "pixel_w1_cod4"
+        "activity": "Review: our class reader: the chapter where the problem appears — read for 15 minutes, then retell the ending in 3 sentences.",
+        "tier": "fallback",
+        "passage_ref": "pixel_p1"
        }
       ],
       "total_min": 210
@@ -31058,10 +31063,11 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "reading",
         "min": 30,
-        "activity": "Run it: type the loops slot: for and while with range() sample, predict the output first, then run it.",
-        "lesson_ref": "pixel_w3_l1"
+        "activity": "Model: read the passage on a recipe card: following fraction instructions in order together and underline 3 words you do not know.",
+        "tier": "fallback",
+        "passage_ref": "pixel_p1"
        }
       ],
       "total_min": 240
@@ -31107,10 +31113,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "civics",
         "min": 30,
-        "activity": "Build: write the short loops slot: for and while with range() program from the checklist and run it twice.",
-        "lesson_ref": "pixel_w2_d2_b6"
+        "activity": "Practice: how a family follows rules and why — answer 5 questions from memory, then check the lesson and fix 2.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -31156,10 +31162,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "writing",
         "min": 30,
-        "activity": "Debug: fix 3 seeded errors in the loops slot: for and while with range() starter file and explain each fix.",
-        "lesson_ref": "pixel_w2_d3_b6"
+        "activity": "Apply: how-to sentences: adding fractions with like denominators — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -31205,10 +31211,11 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "literature",
         "min": 30,
-        "activity": "Extend: add one new feature to your loops slot: for and while with range() program, then take the weekly test.",
-        "lesson_ref": "pixel_w2_d4_b6"
+        "activity": "Review: our class reader: how the main character solves the problem — read for 15 minutes, then retell the ending in 3 sentences.",
+        "tier": "fallback",
+        "passage_ref": "pixel_p1"
        }
       ],
       "total_min": 210
@@ -33151,10 +33158,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "civics",
         "min": 30,
-        "activity": "Run it: type the html-basics slot: tags, elements, and nesting sample, predict the output first, then run it.",
-        "lesson_ref": "pixel_w3_l3"
+        "activity": "Model: read the jobs that keep a neighbourhood working lesson and name 4 jobs or rules from it without looking.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -33200,10 +33207,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "english_grammar",
         "min": 30,
-        "activity": "Build: write the short html-basics slot: tags, elements, and nesting program from the checklist and run it twice.",
-        "lesson_ref": "pixel_w3_l4"
+        "activity": "Practice: subjects and predicates in sentences about shapes — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -33249,10 +33256,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "writing",
         "min": 30,
-        "activity": "Debug: fix 3 seeded errors in the html-basics slot: tags, elements, and nesting starter file and explain each fix.",
-        "lesson_ref": "pixel_w3_d3_b6"
+        "activity": "Apply: an informational paragraph about area and perimeter at home — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -33298,10 +33305,11 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "literature",
         "min": 30,
-        "activity": "Extend: add one new feature to your html-basics slot: tags, elements, and nesting program, then take the weekly test.",
-        "lesson_ref": "pixel_w3_d4_b6"
+        "activity": "Review: our class reader: a setting described with detail — read for 15 minutes, then retell the ending in 3 sentences.",
+        "tier": "fallback",
+        "passage_ref": "pixel_p1"
        }
       ],
       "total_min": 210
@@ -35331,10 +35339,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "civics",
         "min": 30,
-        "activity": "Run it: type the html preview: build and run a four-line page sample, predict the output first, then run it.",
-        "lesson_ref": "pixel_w4_d1_b6"
+        "activity": "Model: read the who makes a rule and why rules exist lesson and name 4 jobs or rules from it without looking.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -35380,10 +35388,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "english_grammar",
         "min": 30,
-        "activity": "Build: write the short html preview: build and run a four-line page program from the checklist and run it twice.",
-        "lesson_ref": "pixel_w4_d2_b6"
+        "activity": "Practice: commas and end marks in sentences about volume — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -35429,10 +35437,10 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "writing",
         "min": 30,
-        "activity": "Debug: fix 3 seeded errors in the html preview: build and run a four-line page starter file and explain each fix.",
-        "lesson_ref": "pixel_w4_d3_b6"
+        "activity": "Apply: explaining volume with one example from real life — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback"
        }
       ],
       "total_min": 240
@@ -35478,10 +35486,11 @@
        },
        {
         "block": 6,
-        "subject": "coding",
+        "subject": "literature",
         "min": 30,
-        "activity": "Extend: add one new feature to your html preview: build and run a four-line page program, then take the weekly test.",
-        "lesson_ref": "pixel_w4_d4_b6"
+        "activity": "Review: our class reader: the ending, retold in three sentences — read for 15 minutes, then retell the ending in 3 sentences.",
+        "tier": "fallback",
+        "passage_ref": "pixel_p1"
        }
       ],
       "total_min": 210
