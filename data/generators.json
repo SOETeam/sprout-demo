@@ -1,7 +1,7 @@
 {
  "schema": "generators/v1",
- "generated_by": "tools/build_engine_data.py",
- "purpose": "Parametric + bank generator configs for grades K/1/2/4 (lane E3): deterministic seeded multiple-choice generation WITHOUT per-item AI authoring. Each entry maps a skill_tree node to a generator family (js/generator.js) with seeded level params (parametric) or a literal authored item bank (bank). exposure_limit=3 everywhere (item/v1 invariant). PD reading passages (research/pd_readers_passages.json) are wired as grade-appropriate comprehension bank items via pd.comprehension.g<grade>.",
+ "generated_by": "tools/build_engine_data.py + D2 grade-6 configs",
+ "purpose": "Parametric + bank generator configs for grades K/1/2/4 (lane E3) and grade 6 (lane D2): deterministic seeded multiple-choice generation WITHOUT per-item AI authoring. Each entry maps a skill_tree node to a generator family (js/generator.js) with seeded level params (parametric) or a literal authored item bank (bank). exposure_limit=3 everywhere (item/v1 invariant). PD reading passages (research/pd_readers_passages.json) are wired as grade-appropriate comprehension bank items via pd.comprehension.g<grade>.",
  "schema_ref": "data/engine_schemas.json -> schemas[\"generators/v1\"]",
  "generator_js": "js/generator.js (window.SPRUT_GEN / module.exports) — families registry must contain every family referenced here (asserted by tools/validate_engine.js)",
  "sources": [
@@ -5880,7 +5880,1087 @@
      }
     ]
    }
+  ],
+  "6": [
+   {
+    "id": "g6.math.ratio_reasoning",
+    "grade": "6",
+    "skill": "ratio-reasoning",
+    "skill_node": "6.MATH.ratio-reasoning",
+    "subject": "math",
+    "family": "math.fraction",
+    "mode": "parametric",
+    "exposure_limit": 3,
+    "source": "CCSS 6.RP.1, 6.RP.3 (standards_maps.json grades.6) — fraction family reused as the ratio & rate practice stream",
+    "levels": [
+     {
+      "level": 1,
+      "params": {
+       "mode": "of_set"
+      }
+     },
+     {
+      "level": 2,
+      "params": {
+       "mode": "compare"
+      }
+     },
+     {
+      "level": 3,
+      "params": {
+       "mode": "equiv_missing"
+      }
+     },
+     {
+      "level": 4,
+      "params": {
+       "mode": "equiv_missing_den"
+      }
+     }
+    ]
+   },
+   {
+    "id": "g6.math.division_fluency",
+    "grade": "6",
+    "skill": "division-decimals",
+    "skill_node": "6.MATH.division-decimals",
+    "subject": "math",
+    "family": "math.mult",
+    "mode": "parametric",
+    "exposure_limit": 3,
+    "source": "CCSS 6.NS.2 (standards_maps.json grades.6) — division fact fluency; the multi-digit standard algorithm is frozen in data/items.json",
+    "levels": [
+     {
+      "level": 1,
+      "params": {
+       "facts": [
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "bmax": 10,
+       "framing": "repeat",
+       "mode": "division"
+      }
+     },
+     {
+      "level": 2,
+      "params": {
+       "facts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "bmax": 12,
+       "framing": "repeat",
+       "mode": "division"
+      }
+     }
+    ]
+   },
+   {
+    "id": "g6.math.multi_digit_ops",
+    "grade": "6",
+    "skill": "division-decimals",
+    "skill_node": "6.MATH.division-decimals",
+    "subject": "math",
+    "family": "math.multi_digit_add",
+    "mode": "parametric",
+    "exposure_limit": 3,
+    "source": "CCSS 6.NS.3 (standards_maps.json grades.6) — standard-algorithm fluency",
+    "levels": [
+     {
+      "level": 1,
+      "params": {
+       "digits": 3,
+       "mode": "two"
+      }
+     },
+     {
+      "level": 2,
+      "params": {
+       "digits": 3,
+       "mode": "four"
+      }
+     }
+    ]
+   },
+   {
+    "id": "g6.math.area_volume",
+    "grade": "6",
+    "skill": "area-volume",
+    "skill_node": "6.MATH.area-volume",
+    "subject": "math",
+    "family": "math.area_perimeter",
+    "mode": "parametric",
+    "exposure_limit": 3,
+    "source": "CCSS 6.G.1 (standards_maps.json grades.6) — area by composing/decomposing",
+    "levels": [
+     {
+      "level": 1,
+      "params": {
+       "mode": "area"
+      }
+     },
+     {
+      "level": 2,
+      "params": {
+       "mode": "missing_side"
+      }
+     },
+     {
+      "level": 3,
+      "params": {
+       "mode": "square",
+       "what": "area"
+      }
+     }
+    ]
+   },
+   {
+    "id": "g6.spell.tion_sion",
+    "grade": "6",
+    "skill": "patterns",
+    "skill_node": "6.SPELL.patterns",
+    "subject": "spelling",
+    "family": "word.pattern",
+    "mode": "parametric",
+    "exposure_limit": 3,
+    "source": "CCSS L.6.2 (standards_maps.json grades.6) — -tion/-sion spelling patterns",
+    "levels": [
+     {
+      "level": 1,
+      "params": {
+       "words": [
+        "caution",
+        "tension",
+        "division",
+        "decision",
+        "expression",
+        "motion",
+        "mention",
+        "completion",
+        "pension",
+        "location"
+       ],
+       "task": "ending"
+      }
+     },
+     {
+      "level": 2,
+      "params": {
+       "words": [
+        "caution",
+        "tension",
+        "division",
+        "decision",
+        "expression",
+        "motion",
+        "mention",
+        "completion",
+        "pension",
+        "location"
+       ],
+       "task": "missing"
+      }
+     },
+     {
+      "level": 3,
+      "params": {
+       "words": [
+        "caution",
+        "tension",
+        "division",
+        "decision",
+        "expression",
+        "motion",
+        "mention",
+        "completion",
+        "pension",
+        "location"
+       ],
+       "task": "sort"
+      }
+     }
+    ]
+   },
+   {
+    "id": "6.bank.ratio-rates",
+    "grade": "6",
+    "skill": "ratio-reasoning",
+    "skill_node": "6.MATH.ratio-reasoning",
+    "subject": "math",
+    "family": "math",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "CCSS 6.RP.1, 6.RP.3 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "ratio-rates",
+      "question": "What is the ratio of wings to birds if there are 12 wings and 4 birds?",
+      "options": [
+       "4:1",
+       "3:1",
+       "1:3",
+       "12:4"
+      ],
+      "correctIndex": 1,
+      "hint": "Divide both numbers by 4: 12 / 4 = 3, so 3 wings for every 1 bird.",
+      "praise": "Yes - 3:1!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "A recipe uses 3 cups of flour for every 2 cups of water. What is the ratio of flour to water?",
+      "options": [
+       "2:3",
+       "3:5",
+       "5:3",
+       "3:2"
+      ],
+      "correctIndex": 3,
+      "hint": "Flour comes first in the question, so flour is the first number.",
+      "praise": "Yes - 3:2, flour to water!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "If 5 pencils cost $4.00, what is the unit rate in dollars per pencil?",
+      "options": [
+       "$0.80",
+       "$1.25",
+       "$2.00",
+       "$4.00"
+      ],
+      "correctIndex": 0,
+      "hint": "Divide the dollars by the pencils: 4.00 / 5 = 0.80.",
+      "praise": "Yes - 80 cents each!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "A car travels 180 miles in 3 hours. What is its unit rate in miles per hour?",
+      "options": [
+       "54 miles per hour",
+       "60 miles per hour",
+       "600 miles per hour",
+       "45 miles per hour"
+      ],
+      "correctIndex": 1,
+      "hint": "Divide the miles by the hours: 180 / 3 = 60.",
+      "praise": "Yes - 60 mph!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "Which ratio is equivalent to 2:5?",
+      "options": [
+       "5:2",
+       "6:10",
+       "4:10",
+       "3:5"
+      ],
+      "correctIndex": 2,
+      "hint": "Multiply both parts of 2:5 by 2: 2x2=4 and 5x2=10.",
+      "praise": "Yes - 4:10!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "In a class the ratio of girls to boys is 3:4. If there are 12 girls, how many boys are there?",
+      "options": [
+       "9",
+       "16",
+       "12",
+       "8"
+      ],
+      "correctIndex": 1,
+      "hint": "Scale the 3 up to 12 (x4), then scale the 4 up the same way: 4x4=16.",
+      "praise": "Yes - 16 boys!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "A store sells 8 notebooks for $6.00. What is the rate in dollars per notebook?",
+      "options": [
+       "$1.33",
+       "$0.75",
+       "$1.50",
+       "$0.50"
+      ],
+      "correctIndex": 1,
+      "hint": "Divide the dollars by the notebooks: 6.00 / 8 = 0.75.",
+      "praise": "Yes - 75 cents!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "30 out of 50 students walk to school. What is that ratio in simplest form?",
+      "options": [
+       "30:50",
+       "5:3",
+       "3:5",
+       "2:5"
+      ],
+      "correctIndex": 2,
+      "hint": "Divide both numbers by their greatest common factor, 10: 30/10 and 50/10.",
+      "praise": "Yes - 3:5!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "Which of these shows a rate?",
+      "options": [
+       "5 red marbles",
+       "3 apples and 2 oranges",
+       "the tall tree",
+       "40 miles in 2 hours"
+      ],
+      "correctIndex": 3,
+      "hint": "A rate compares two different quantities, usually with different units.",
+      "praise": "Yes - two quantities being compared!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "A recipe uses 4 cups of sugar and 6 cups of flour. What is the ratio of sugar to flour?",
+      "options": [
+       "3:2",
+       "4:2",
+       "2:3",
+       "1:3"
+      ],
+      "correctIndex": 2,
+      "hint": "Simplify 4:6 by dividing both numbers by 2.",
+      "praise": "Yes - 2:3!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "If the ratio of cats to dogs is 7:12 and there are 21 cats, how many dogs are there?",
+      "options": [
+       "28",
+       "36",
+       "35",
+       "42"
+      ],
+      "correctIndex": 1,
+      "hint": "Scale the 7 up to 21 (x3), then do the same to the 12: 12x3=36.",
+      "praise": "Yes - 36 dogs!"
+     },
+     {
+      "group": "ratio-rates",
+      "question": "A graph of two quantities is a straight line through the origin. What does that show?",
+      "options": [
+       "The quantities are not related",
+       "The quantities always add to 10",
+       "The quantities are in a proportional relationship",
+       "The quantities have no ratio"
+      ],
+      "correctIndex": 2,
+      "hint": "A straight line through the origin is the signature of a proportional relationship.",
+      "praise": "Yes - proportional!"
+     }
+    ]
+   },
+   {
+    "id": "6.bank.number-system-ops",
+    "grade": "6",
+    "skill": "division-decimals",
+    "skill_node": "6.MATH.division-decimals",
+    "subject": "math",
+    "family": "math",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "CCSS 6.NS.1, 6.NS.2, 6.NS.3 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "number-system-ops",
+      "question": "What is 4.5 + 3.75?",
+      "options": [
+       "7.25",
+       "8.75",
+       "1.80",
+       "8.25"
+      ],
+      "correctIndex": 3,
+      "hint": "Line up the decimal points: 4.50 + 3.75.",
+      "praise": "Yes - 8.25!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 7.2 - 2.85?",
+      "options": [
+       "5.65",
+       "4.35",
+       "4.85",
+       "5.15"
+      ],
+      "correctIndex": 1,
+      "hint": "Write 7.20 - 2.85 and subtract, borrowing from the tens place.",
+      "praise": "Yes - 4.35!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 3.6 x 2?",
+      "options": [
+       "6.12",
+       "5.6",
+       "7.2",
+       "8.2"
+      ],
+      "correctIndex": 2,
+      "hint": "Multiply as usual, then place the decimal point: 36 x 2 = 72, one decimal place.",
+      "praise": "Yes - 7.2!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 9.44 / 4?",
+      "options": [
+       "2.46",
+       "3.76",
+       "2.36",
+       "2.16"
+      ],
+      "correctIndex": 2,
+      "hint": "Divide as usual: 9 / 4 = 2 remainder 1, then 14 / 4 = 3 remainder 2, then 24 / 4 = 6.",
+      "praise": "Yes - 2.36!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 852 / 4?",
+      "options": [
+       "212",
+       "214",
+       "203",
+       "213"
+      ],
+      "correctIndex": 3,
+      "hint": "Use the standard algorithm: 8/4=2, 5/4=1 r1, 12/4=3.",
+      "praise": "Yes - 213!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 3/4 + 1/8?",
+      "options": [
+       "4/12",
+       "5/8",
+       "3/8",
+       "7/8"
+      ],
+      "correctIndex": 3,
+      "hint": "Rename 3/4 as 6/8, then add: 6/8 + 1/8 = 7/8.",
+      "praise": "Yes - 7/8!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 5/6 - 1/3?",
+      "options": [
+       "1/2",
+       "4/3",
+       "2/6",
+       "1/3"
+      ],
+      "correctIndex": 0,
+      "hint": "Rename 1/3 as 2/6, then subtract: 5/6 - 2/6 = 3/6 = 1/2.",
+      "praise": "Yes - one half!"
+     },
+     {
+      "group": "number-system-ops",
+      "question": "What is 8 divided by 1/2?",
+      "options": [
+       "4",
+       "1/16",
+       "16",
+       "32"
+      ],
+      "correctIndex": 2,
+      "hint": "Dividing by a fraction means multiplying by its reciprocal: 8 x 2/1 = 16.",
+      "praise": "Yes - 16 halves fit in 8!"
+     }
+    ]
+   },
+   {
+    "id": "6.bank.reading-evidence",
+    "grade": "6",
+    "skill": "text-evidence",
+    "skill_node": "6.READ.text-evidence",
+    "subject": "reading",
+    "family": "reading",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "CCSS RI.6.1, RI.6.8, RL.6.1 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "reading-evidence",
+      "question": "What is the central idea of an informational text?",
+      "options": [
+       "The first sentence only",
+       "The longest paragraph",
+       "The main point the author wants the reader to understand",
+       "The title of the book"
+      ],
+      "correctIndex": 2,
+      "hint": "The central idea is the big idea the whole text is built around.",
+      "praise": "Yes - the main point!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "Which of these counts as textual evidence?",
+      "options": [
+       "Your opinion of the ending",
+       "A quotation from the passage that supports your point",
+       "A guess about what the author meant",
+       "A summary of a different text"
+      ],
+      "correctIndex": 1,
+      "hint": "Textual evidence comes from the text itself - words you can point to.",
+      "praise": "Yes - words from the text!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "A claim supported by reasons and evidence is called...",
+      "options": [
+       "an argument",
+       "a summary",
+       "a prediction",
+       "a description"
+      ],
+      "correctIndex": 0,
+      "hint": "An argument states a claim and backs it with reasons and evidence.",
+      "praise": "Yes - an argument!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "Which sentence is an opinion rather than a fact?",
+      "options": [
+       "The best pizza in town is at Corner Slice",
+       "Water boils at 100 degrees Celsius",
+       "Michigan has two peninsulas",
+       "A week has seven days"
+      ],
+      "correctIndex": 0,
+      "hint": "An opinion can be agreed or disagreed with; a fact can be checked.",
+      "praise": "Yes - opinions can be debated!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "What is a summary?",
+      "options": [
+       "A short account of the main ideas in your own words",
+       "A copy of every sentence",
+       "A list of difficult words",
+       "The biography of the author"
+      ],
+      "correctIndex": 0,
+      "hint": "A summary keeps the main ideas and leaves out the details.",
+      "praise": "Yes - main ideas in your own words!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "Why should you cite evidence in a response?",
+      "options": [
+       "To show exactly where your idea came from",
+       "To make the answer longer",
+       "To avoid using your own words",
+       "To fill the page"
+      ],
+      "correctIndex": 0,
+      "hint": "Citing lets the reader check your claim against the text.",
+      "praise": "Yes - evidence you can point to!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "An author's point of view is...",
+      "options": [
+       "the position the author takes on a topic",
+       "the order of events",
+       "the setting of a story",
+       "the number of paragraphs"
+      ],
+      "correctIndex": 0,
+      "hint": "Point of view is where the author stands on the issue.",
+      "praise": "Yes - the author's position!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "The central idea of an informational text is usually...",
+      "options": [
+       "found only in the last word",
+       "stated or repeated in the key details throughout",
+       "always identical to the title",
+       "hidden in the page numbers"
+      ],
+      "correctIndex": 1,
+      "hint": "Authors reinforce the central idea through key details across the text.",
+      "praise": "Yes - key details carry it!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "Reading between the lines using clues and what you already know is called...",
+      "options": [
+       "a quotation",
+       "a paraphrase",
+       "a heading",
+       "an inference"
+      ],
+      "correctIndex": 3,
+      "hint": "You combine text clues with prior knowledge to reach a conclusion.",
+      "praise": "Yes - an inference!"
+     },
+     {
+      "group": "reading-evidence",
+      "question": "A paragraph that develops a key individual, event, or idea with examples is...",
+      "options": [
+       "contrasting two characters",
+       "narrating a story in order",
+       "describing a setting",
+       "illustrating and elaborating on the topic"
+      ],
+      "correctIndex": 3,
+      "hint": "Illustration and elaboration add examples and detail to the topic.",
+      "praise": "Yes - examples that develop the idea!"
+     }
+    ]
+   },
+   {
+    "id": "6.bank.grammar-conventions",
+    "grade": "6",
+    "skill": "sentence-conventions",
+    "skill_node": "6.GRAM.sentence-conventions",
+    "subject": "english_grammar",
+    "family": "english_grammar",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "CCSS L.6.1, L.6.2 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "grammar-conventions",
+      "question": "Choose the correct pronoun: \"My friend and ___ went to the library.\"",
+      "options": [
+       "me",
+       "I",
+       "myself",
+       "mine"
+      ],
+      "correctIndex": 1,
+      "hint": "Drop \"my friend and\" and the sentence reads \"I went to the library.\"",
+      "praise": "Yes - subject pronoun \"I\"!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "Choose the correct pronoun: \"The trophy was awarded to Sam and ___.\"",
+      "options": [
+       "I",
+       "myself",
+       "mine",
+       "me"
+      ],
+      "correctIndex": 3,
+      "hint": "The pronoun follows a preposition (\"to\"), so use the object form.",
+      "praise": "Yes - \"to Sam and me\"!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "Which sentence punctuates the two independent clauses correctly?",
+      "options": [
+       "I finished my essay, then; I read a chapter.",
+       "I finished; my essay then I read a chapter.",
+       "I finished my essay; then I read a chapter.",
+       "I finished my essay then; I read a chapter."
+      ],
+      "correctIndex": 2,
+      "hint": "A semicolon joins two independent clauses; the comma does not go after it here.",
+      "praise": "Yes - semicolon between full clauses!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "Which of these is a fragment?",
+      "options": [
+       "The bus was late.",
+       "We waited at the stop.",
+       "Because the bus was late.",
+       "The bus arrived ten minutes later."
+      ],
+      "correctIndex": 2,
+      "hint": "A dependent clause starting with \"because\" leaves the thought unfinished.",
+      "praise": "Yes - it is not a full sentence!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "In \"When Maya gave Lena the notes, she was grateful,\" which word is a vague pronoun?",
+      "options": [
+       "Maya",
+       "she",
+       "notes",
+       "When"
+      ],
+      "correctIndex": 1,
+      "hint": "\"She\" could mean Maya or Lena - the antecedent is unclear.",
+      "praise": "Yes - unclear who \"she\" is!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "Which sentence uses the comma correctly?",
+      "options": [
+       "After the storm the power, came back.",
+       "After, the storm the power came back.",
+       "After the storm, the power came back.",
+       "After the storm the power came, back."
+      ],
+      "correctIndex": 2,
+      "hint": "A comma follows an introductory phrase at the start of the sentence.",
+      "praise": "Yes - comma after the intro phrase!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "The bikes belonging to the two boys are the ___ bikes.",
+      "options": [
+       "boys'",
+       "boys",
+       "boy's",
+       "boys's"
+      ],
+      "correctIndex": 0,
+      "hint": "For a plural noun already ending in s, add only the apostrophe.",
+      "praise": "Yes - boys' with the apostrophe after the s!"
+     },
+     {
+      "group": "grammar-conventions",
+      "question": "Which sentence sets off the parenthetical clause with dashes correctly?",
+      "options": [
+       "My brother, who never reads, loved - this book.",
+       "My brother - who never reads - loved this book.",
+       "My - brother who never reads loved this book.",
+       "My brother who never reads - loved this."
+      ],
+      "correctIndex": 1,
+      "hint": "The dashes (or commas) must wrap the whole inserted clause.",
+      "praise": "Yes - dashes around the whole aside!"
+     }
+    ]
+   },
+   {
+    "id": "6.bank.world-geography",
+    "grade": "6",
+    "skill": "geographic-tools",
+    "skill_node": "6.G1.1.1",
+    "subject": "history",
+    "family": "history",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "MI GLCE 6.G1.1.1, 6.G4.1.1 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "world-geography",
+      "question": "What does a map scale tell you?",
+      "options": [
+       "How map distance relates to real distance",
+       "How large the paper is",
+       "What title to use",
+       "Which colour to shade"
+      ],
+      "correctIndex": 0,
+      "hint": "A scale converts distance on the map into distance on the ground.",
+      "praise": "Yes - map distance to real distance!"
+     },
+     {
+      "group": "world-geography",
+      "question": "Which tool shows Earth's continents and oceans on a flat surface?",
+      "options": [
+       "A thermometer",
+       "A bar graph",
+       "A map",
+       "A clock"
+      ],
+      "correctIndex": 2,
+      "hint": "A map is a flat representation of a place or the whole Earth.",
+      "praise": "Yes - a map!"
+     },
+     {
+      "group": "world-geography",
+      "question": "What is culture?",
+      "options": [
+       "The landforms of a region",
+       "The weather of a place",
+       "The population count of a country",
+       "The shared beliefs, customs, and practices of a group of people"
+      ],
+      "correctIndex": 3,
+      "hint": "Culture is what a group shares: beliefs, customs, and practices.",
+      "praise": "Yes - the shared way of life!"
+     },
+     {
+      "group": "world-geography",
+      "question": "Cultural diffusion is...",
+      "options": [
+       "a type of landform",
+       "the spread of ideas, customs, and goods between groups",
+       "the movement of air masses",
+       "a form of government"
+      ],
+      "correctIndex": 1,
+      "hint": "Diffusion means spreading out - here, culture moving between groups.",
+      "praise": "Yes - culture spreading!"
+     },
+     {
+      "group": "world-geography",
+      "question": "Why did early cities often grow near rivers?",
+      "options": [
+       "Water for drinking and farming, plus travel and trade",
+       "Because rivers are always cold",
+       "To avoid forests",
+       "Because maps were not invented yet"
+      ],
+      "correctIndex": 0,
+      "hint": "Rivers gave water, fertile soil, and a route for goods and people.",
+      "praise": "Yes - water, farming, and trade!"
+     },
+     {
+      "group": "world-geography",
+      "question": "\"Human-environment interaction\" describes...",
+      "options": [
+       "how to draw a compass rose",
+       "how people use and change the environment, and how the environment shapes people",
+       "how many people live in a city",
+       "which continent a country is on"
+      ],
+      "correctIndex": 1,
+      "hint": "The idea covers both directions: people affecting the environment and back.",
+      "praise": "Yes - people and environment shaping each other!"
+     },
+     {
+      "group": "world-geography",
+      "question": "A population pyramid shows...",
+      "options": [
+       "the height of mountains",
+       "total rainfall",
+       "trade routes",
+       "the age and sex distribution of a population"
+      ],
+      "correctIndex": 3,
+      "hint": "The bars are age groups, split by sex - it shows a population's structure.",
+      "praise": "Yes - age and sex structure!"
+     },
+     {
+      "group": "world-geography",
+      "question": "Which of these is a global issue?",
+      "options": [
+       "The colour of one street sign",
+       "Access to clean water across many countries",
+       "One family's dinner menu",
+       "One town's football score"
+      ],
+      "correctIndex": 1,
+      "hint": "A global issue affects people in more than one country.",
+      "praise": "Yes - a worldwide concern!"
+     }
+    ]
+   },
+   {
+    "id": "6.bank.earth-systems",
+    "grade": "6",
+    "skill": "rock-cycle-resources",
+    "skill_node": "MS-ESS2-1",
+    "subject": "science",
+    "family": "science",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "NGSS MS-ESS2-1, MS-LS2-1, MS-ESS2-5 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "earth-systems",
+      "question": "The rock cycle describes...",
+      "options": [
+       "how Earth's materials are recycled through melting, weathering, and sedimentation",
+       "how air masses move",
+       "how populations grow",
+       "how cells divide"
+      ],
+      "correctIndex": 0,
+      "hint": "Melting, crystallization, weathering, deformation, and sedimentation recycle Earth's materials.",
+      "praise": "Yes - Earth's materials cycling!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "Which is an example of weathering?",
+      "options": [
+       "Rock breaking down at Earth's surface",
+       "A volcano erupting",
+       "A river flooding",
+       "Clouds forming"
+      ],
+      "correctIndex": 0,
+      "hint": "Weathering is rock breaking down in place, without melting.",
+      "praise": "Yes - rock breaking down!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "The energy that drives Earth's material cycles comes mainly from...",
+      "options": [
+       "the moon",
+       "ocean tides",
+       "the sun and Earth's hot interior",
+       "weather fronts"
+      ],
+      "correctIndex": 2,
+      "hint": "All Earth processes run on energy flowing from the sun and the hot interior.",
+      "praise": "Yes - sun and interior heat!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "Which factor most limits how many organisms an ecosystem can support?",
+      "options": [
+       "Availability of resources such as food and water",
+       "The colour of the soil",
+       "The time of day",
+       "The number of maps"
+      ],
+      "correctIndex": 0,
+      "hint": "Resource availability sets the ceiling for a population.",
+      "praise": "Yes - resources set the limit!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "What evidence shows that a population changed when a resource became scarce?",
+      "options": [
+       "Population size data collected over time",
+       "A single photograph",
+       "A weather map",
+       "The ecosystem's latitude"
+      ],
+      "correctIndex": 0,
+      "hint": "You need data over time to see the effect of the resource change.",
+      "praise": "Yes - data over time!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "When two air masses collide, the usual result is...",
+      "options": [
+       "a new climate zone",
+       "an earthquake",
+       "a new continent",
+       "a change in weather such as rain or wind"
+      ],
+      "correctIndex": 3,
+      "hint": "Colliding air masses produce sudden weather changes at a location.",
+      "praise": "Yes - weather changes!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "Which of these is NOT part of weather?",
+      "options": [
+       "Species diversity",
+       "Temperature",
+       "Precipitation",
+       "Wind"
+      ],
+      "correctIndex": 0,
+      "hint": "Weather is described by temperature, pressure, humidity, precipitation, and wind.",
+      "praise": "Yes - species diversity is ecology!"
+     },
+     {
+      "group": "earth-systems",
+      "question": "What explains the uneven distribution of Earth's mineral and energy resources?",
+      "options": [
+       "past and current geoscience processes",
+       "human inventiveness",
+       "the age of the map",
+       "the size of the population"
+      ],
+      "correctIndex": 0,
+      "hint": "Geoscience processes over time concentrated resources where they are.",
+      "praise": "Yes - geoscience processes!"
+     }
+    ]
+   },
+   {
+    "id": "6.bank.civic-life",
+    "grade": "6",
+    "skill": "government-nation-state",
+    "skill_node": "6.C1.1.1",
+    "subject": "civics",
+    "family": "civics",
+    "mode": "bank",
+    "exposure_limit": 3,
+    "source": "MI GLCE 6.C1.1.1, 6.C3.6.1, 6.E1.1.1 (standards_maps.json grades.6)",
+    "items": [
+     {
+      "group": "civic-life",
+      "question": "Which of these is a stated purpose of government?",
+      "options": [
+       "Ignoring its own laws",
+       "Ending all trade",
+       "Removing every border",
+       "Protecting individual rights"
+      ],
+      "correctIndex": 3,
+      "hint": "Governments are described by the purposes they serve, such as protecting rights.",
+      "praise": "Yes - protecting rights!"
+     },
+     {
+      "group": "civic-life",
+      "question": "What is a nation-state?",
+      "options": [
+       "A country with a defined territory, citizens, and a government",
+       "Any large city",
+       "A group of nomadic people",
+       "A river system"
+      ],
+      "correctIndex": 0,
+      "hint": "Territory, citizens, and government are the marks of a nation-state.",
+      "praise": "Yes - territory, citizens, government!"
+     },
+     {
+      "group": "civic-life",
+      "question": "Which is a characteristic of modern nation-states?",
+      "options": [
+       "No laws",
+       "No citizens",
+       "No government",
+       "Clearly defined boundaries"
+      ],
+      "correctIndex": 3,
+      "hint": "Defined territory and boundaries are listed among the characteristics.",
+      "praise": "Yes - clearly defined boundaries!"
+     },
+     {
+      "group": "civic-life",
+      "question": "A higher tax on cigarettes is meant to act as...",
+      "options": [
+       "a disincentive that discourages smoking",
+       "a subsidy that encourages smoking",
+       "a reward for buying more",
+       "a trade quota"
+      ],
+      "correctIndex": 0,
+      "hint": "A disincentive raises the cost so people choose to do less of it.",
+      "praise": "Yes - a disincentive!"
+     },
+     {
+      "group": "civic-life",
+      "question": "In a market economy, the three basic economic questions are about...",
+      "options": [
+       "where, when, and why to build",
+       "what, how, and for whom to produce",
+       "who votes, who rules, who pays",
+       "how many, how much, how often"
+      ],
+      "correctIndex": 1,
+      "hint": "Every economy must decide what to produce, how to produce it, and for whom.",
+      "praise": "Yes - what, how, and for whom!"
+     },
+     {
+      "group": "civic-life",
+      "question": "Why can two nations' policies on the same issue differ?",
+      "options": [
+       "Each government answers to different citizens and priorities",
+       "One country owns more maps",
+       "Their weather is different",
+       "Their languages are the same"
+      ],
+      "correctIndex": 0,
+      "hint": "Governments set policy for their own people, so positions can differ.",
+      "praise": "Yes - different citizens, different priorities!"
+     }
+    ]
+   }
   ]
  },
- "config_count": 46
+ "config_count": 58
 }
