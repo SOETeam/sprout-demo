@@ -32,7 +32,7 @@
   /* E5: grades live in this demo. K/1/2/4 ride the E3 engine data (skill tree +
      generators + PD comprehension) wired by data/grades_k124.js; pre/g3/g5 keep
      their original hand-built content. Two files, one union. */
-  var GRADES_ENABLED = ['preschool', '3', '5'];                       // plan F2 (original content)
+  var GRADES_ENABLED = ['preschool', '3', '5', '6'];                     // plan F2 (original content) + D2 grade-6 lane
   var K124 = window.SPROUT_CONTENT_K124 || null;                      // E5: K/1/2/4 lane
   var K124_GRADES = K124 && K124.grades ? Object.keys(K124.grades) : [];
   if (K124_GRADES.length) { GRADES_ENABLED = GRADES_ENABLED.concat(K124_GRADES); }
@@ -58,7 +58,7 @@
     reading_comp: 'reading', lit: 'literature'
   };
   var PERSONA_TOTEM = { '3': '🦊', '5': '🐺', preschool: '🐨',
-    K: '🐣', '1': '🐰', '2': '🦉', '4': '🦅' };
+    K: '🐣', '1': '🐰', '2': '🦉', '4': '🦅', '6': '🐙' };
   var COMPLIANCE_COPY = 'organizes Michigan-required subject coverage';
 
   var $ = function (id) { return document.getElementById(id); };
@@ -1288,6 +1288,9 @@
   }
   function bankByGrade(gk) {
     var base = (CONTENT && CONTENT.assessment && CONTENT.assessment.bank) || [];
+    /* D2: grade 6 has its own 6-band pool — it must never inherit the 16
+       grade-3 items that live in CONTENT.assessment.bank. */
+    if (gk === '6') { return g6CatItems(); }
     if (!k124Grade(gk)) { return base; }
     var band = bandOf(gk);
     if (band === '35') { return base.concat(k124CatItems('4')); }
@@ -1325,6 +1328,41 @@
             try {
               it = window.SPRUT_GEN.itemFor(reg, c.id,
                 { date: '2026-10-17', student: 'placement.' + g, level: lv.level, cursor: cur });
+            } catch (err) { it = null; }
+            if (it && Array.isArray(it.options) && typeof it.question === 'string') {
+              out.push(catItemFrom(c, it.question, it.options, it.options[it.correctIndex], false, lv.level, n));
+              n++;
+            }
+          }
+        });
+      }
+    });
+    return out;
+  }
+  /* D2: grade-6 CAT pool — same mechanism as k124CatItems (week-1 registry ->
+     bank configs serve their literal items[], parametric configs are synthesized
+     by SPRUT_GEN.itemFor), reading data/content.json weeks.6['1'].generators.
+     No 10-item authored cap here: grade 6 ships its full 60-item bank so the
+     pool clears the 16/domain floor on authored items alone. */
+  function g6CatItems() {
+    var wk = (CONTENT && CONTENT.weeks && CONTENT.weeks['6']) || {};
+    var gens1 = (wk['1'] && wk['1'].generators) || [];
+    var reg = { schema: MARKER + '.registry', generators: gens1 };
+    var out = [], n = 0;
+    gens1.forEach(function (c) {
+      if (c.mode === 'bank') {
+        (c.items || []).forEach(function (it) {
+          if (!it || !Array.isArray(it.options)) return;
+          out.push(catItemFrom(c, it.question, it.options, it.options[it.correctIndex], false, it.level || 1, n));
+          n++;
+        });
+      } else if (c.mode === 'parametric' && window.SPRUT_GEN) {
+        (c.levels || []).slice(0, 2).forEach(function (lv) {
+          for (var cur = 0; cur < 2; cur++) {
+            var it = null;
+            try {
+              it = window.SPRUT_GEN.itemFor(reg, c.id,
+                { date: '2026-10-17', student: 'placement.6', level: lv.level, cursor: cur });
             } catch (err) { it = null; }
             if (it && Array.isArray(it.options) && typeof it.question === 'string') {
               out.push(catItemFrom(c, it.question, it.options, it.options[it.correctIndex], false, lv.level, n));

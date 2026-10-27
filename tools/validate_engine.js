@@ -104,7 +104,7 @@ ok('node.subject in grade union or statutory', badSubj.length === 0,
    comparing, so 'math' matches 'mathematics' and the NOTE is not a false gap */
 const TO_STATUTORY = { math: 'mathematics', maths: 'mathematics', ela: 'english_grammar',
   read: 'reading', reading_comp: 'reading', lit: 'literature' };
-for (const g of ['preschool', '3', '5']) {
+for (const g of ['preschool', '3', '5', '6']) {
   const union = new Set(tree.grade_subjects[g].map((s) => TO_STATUTORY[s] || s));
   const missing = tree.statutory_subjects.filter((s) => !union.has(s));
   if (missing.length) console.log('NOTE  grade ' + g + ' statutory subjects with no shipped content (arch §0 gap, P2 must close): ' + missing.join(','));
@@ -128,7 +128,7 @@ function contentSubjects(g) {
     (d.blocks || []).forEach((b) => b.subject && s.add(b.subject))));
   return [...s].sort();
 }
-for (const g of ['preschool', '3', '5']) {
+for (const g of ['preschool', '3', '5', '6']) {
   const want = contentSubjects(g).join(',');
   const have = (tree.grade_subjects[g] || []).join(',');
   ok('grade ' + g + ' subject union matches content.json', want === have, have);
@@ -215,7 +215,7 @@ ok('no skill node id referenced by items is missing from tree',
 /* --------------------------------------------------------- 4. CAT floor */
 section('CAT domain floor (>=16 per domain per grade)');
 const CATS = ['math', 'ela'];
-for (const g of ['preschool', '3', '5']) {
+for (const g of ['preschool', '3', '5', '6']) {
   for (const d of CATS) {
     const n = items.filter((i) => i.grade === g && i.cat_domain === d).length;
     ok('grade ' + g + ' ' + d + ' >= 16 items', n >= 16, n + ' items');
@@ -327,10 +327,10 @@ ok('generators/v1 registry documents its schema marker',
   !!(reg.schemas && reg.schemas['generators/v1'] &&
      JSON.stringify(reg.schemas['generators/v1'].shape || {}).includes('generators/v1')));
 
-section('generators/v1 config integrity (K/1/2/4)');
+section('generators/v1 config integrity (K/1/2/4/6)');
 ok('generators.json has generators/v1 marker', gens.schema === 'generators/v1', gens.schema);
-ok('generators.json covers K/1/2/4', ['K','1','2','4'].every((g) => Array.isArray(gens.grades && gens.grades[g])));
-const allCfgs = ['K','1','2','4'].flatMap((g) => (gens.grades[g] || []).map((c) => Object.assign({ grade: g }, c)));
+ok('generators.json covers K/1/2/4/6', ['K','1','2','4','6'].every((g) => Array.isArray(gens.grades && gens.grades[g])));
+const allCfgs = ['K','1','2','4','6'].flatMap((g) => (gens.grades[g] || []).map((c) => Object.assign({ grade: g }, c)));
 ok('generator config ids unique', new Set(allCfgs.map((c) => c.id)).size === allCfgs.length,
   allCfgs.length + ' configs');
 ok('every config skill_node resolves in skill_tree (same grade)',
@@ -359,7 +359,7 @@ ok('bank configs have items[] passing item/v1 shape (3..6 options, answer index 
       Number.isInteger(it.correctIndex) && it.correctIndex >= 0 && it.correctIndex < it.options.length)));
 /* coverage: each new grade has at least one math and one ela/reading config */
 ok('every new grade has >=1 math config and >=1 ela/reading config',
-  ['K','1','2','4'].every((g) => {
+  ['K','1','2','4','6'].every((g) => {
     const gc = gens.grades[g] || [];
     return gc.some((c) => c.subject === 'math') &&
            gc.some((c) => ['ela','reading'].includes(c.subject));
@@ -464,7 +464,7 @@ for (const f of ['js/events.js', 'js/mastery.js', 'js/app.js', 'js/generator.js'
 /* ------------------------------------------------------------- summary */
 section('SUMMARY');
 const perGrade = {};
-for (const g of ['preschool', '3', '5', 'K', '1', '2', '4']) {
+for (const g of ['preschool', '3', '5', 'K', '1', '2', '4', '6']) {
   perGrade[g] = {
     items: items.filter((i) => i.grade === g).length,
     math: items.filter((i) => i.grade === g && i.cat_domain === 'math').length,

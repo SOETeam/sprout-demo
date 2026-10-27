@@ -94,7 +94,6 @@ const add = (level, check, g, m, w, detail) =>
 const integrityFails = () => findings.filter((f) => f.level === 'FAIL');
 
 function weeksFor(grade) {
-  if (grade === '6') return null;                       // no lane at all
   if (k124.weeks && k124.weeks[grade]) return k124.weeks[grade];
   if (content.weeks && content.weeks[grade]) return content.weeks[grade];
   return null;

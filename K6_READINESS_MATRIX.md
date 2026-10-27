@@ -1,6 +1,6 @@
 # K–6 Readiness Matrix (P0.4 validator v2 output — regenerated, do not hand-edit)
 
-- Generated: `2026-10-27T04:16:03.207Z` by `tools/validate_readiness.js`
+- Generated: `2026-10-27T04:19:29.942Z` by `tools/validate_readiness.js`
 - Axes: 7 grades (K–6) × 9 school months × 4 weeks (year week = (month−1)×4 + week-of-month)
 - Statutory list: nine MCL 380.1561(3)(f) subjects (D7-verified) — reading, spelling, mathematics, science, history, civics, literature, writing, english_grammar
 - Fold-map (K/1/2): `ela` → reading, writing, spelling, literature, english_grammar; `social_studies` → history, civics; `math` → mathematics; `science` → science.
@@ -225,10 +225,10 @@ Grade-month totals: T2 = 4, T1 = 1, T0 = 58 (of 63).
 - **5 / month 9 / week 34** → T0: week file missing
 - **5 / month 9 / week 35** → T0: week file missing
 - **5 / month 9 / week 36** → T0: week file missing
-- **6 / month 1 / week 1** → T0: week file missing
-- **6 / month 1 / week 2** → T0: week file missing
-- **6 / month 1 / week 3** → T0: week file missing
-- **6 / month 1 / week 4** → T0: week file missing
+- **6 / month 1 / week 1** → T0: topic-only stub (no day flow)
+- **6 / month 1 / week 2** → T0: topic-only stub (no day flow)
+- **6 / month 1 / week 3** → T0: topic-only stub (no day flow)
+- **6 / month 1 / week 4** → T0: topic-only stub (no day flow)
 - **6 / month 2 / week 5** → T0: week file missing
 - **6 / month 2 / week 6** → T0: week file missing
 - **6 / month 2 / week 7** → T0: week file missing
@@ -297,6 +297,6 @@ Grade-month totals: T2 = 4, T1 = 1, T0 = 58 (of 63).
 - grade 3: 12/36 week files exist, 12 carry a day flow.
 - grade 4: 6/36 week files exist, 4 carry a day flow.
 - grade 5: 6/36 week files exist, 4 carry a day flow.
-- grade 6: no content lane and no skill_tree band — T0 across all 9 months.
+- grade 6: 4/36 week files exist, 0 carry a day flow.
 
 Run: `node tools/validate_readiness.js [--strict] [--no-write]` or `bash tools/run_readiness.sh`.
