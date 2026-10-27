@@ -1,7 +1,7 @@
 {
  "schema": "sprout_demo_v1.content_k124",
  "generated_at": "2026-10-17",
- "generated_by": "tools/build_e5_content.py (E5 UI lane; engine data frozen at E3, validator 91/0)",
+ "generated_by": "tools/build_e5_content.py (E5 UI lane; engine data frozen at E3, validator 91/0) + tools/build_month_scaffold.py",
  "grades": {
   "K": {
    "label": "Kindergarten",
@@ -13689,9 +13689,17 @@
         "min": 15,
         "activity": "Spelling — Spelling patterns and reference-checking routine",
         "lesson_ref": "g4.spell.patterns"
+       },
+       {
+        "block": 4,
+        "subject": "civics",
+        "min": 20,
+        "activity": "Model: Questions political scientists ask when examining the… — work one example together and say each step out loud.",
+        "tier": "fallback",
+        "skill_node": "4.C1.0.1"
        }
       ],
-      "total_min": 90
+      "total_min": 110
      },
      {
       "day": 2,
@@ -13725,9 +13733,17 @@
         "min": 40,
         "activity": "Science — Waves, sound, and light (practice)",
         "lesson_ref": "4.bank.waves-sound-light"
+       },
+       {
+        "block": 5,
+        "subject": "english_grammar",
+        "min": 20,
+        "activity": "Practice: Similes, metaphors, idioms, and antonyms/synonyms — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback",
+        "skill_node": "4.GRAM.figurative-language"
        }
       ],
-      "total_min": 130
+      "total_min": 150
      },
      {
       "day": 3,
@@ -13761,9 +13777,17 @@
         "min": 35,
         "activity": "History — Michigan history inquiry: then and now",
         "lesson_ref": "4.bank.michigan-inquiry"
+       },
+       {
+        "block": 5,
+        "subject": "literature",
+        "min": 20,
+        "activity": "Apply: Theme and summary in stories, drama, and poetry — use it once today and explain how you know it worked.",
+        "tier": "fallback",
+        "skill_node": "4.LIT.theme-summary"
        }
       ],
-      "total_min": 125
+      "total_min": 145
      },
      {
       "day": 4,
@@ -13804,9 +13828,17 @@
         "min": 35,
         "activity": "History — U.S. regions, maps, and migration stories",
         "lesson_ref": "4.bank.us-regions-maps"
+       },
+       {
+        "block": 6,
+        "subject": "writing",
+        "min": 20,
+        "activity": "Review: Informative writing: structure, detail, precise language — redo the hardest part and fix each miss in a new colour.",
+        "tier": "fallback",
+        "skill_node": "4.WRIT.informative"
        }
       ],
-      "total_min": 165
+      "total_min": 185
      }
     ],
     "lessons": {
@@ -14285,7 +14317,7 @@
      }
     },
     "counts": {
-     "blocks": 16,
+     "blocks": 20,
      "lesson_objects": 12,
      "sheets": 0
     },
@@ -16430,9 +16462,17 @@
         "min": 15,
         "activity": "Spelling — Spelling patterns and reference-checking routine",
         "lesson_ref": "g4.spell.patterns"
+       },
+       {
+        "block": 4,
+        "subject": "civics",
+        "min": 20,
+        "activity": "Model: Purposes of government as stated in the Preamble of the… — work one example together and say each step out loud.",
+        "tier": "fallback",
+        "skill_node": "4.C1.0.2"
        }
       ],
-      "total_min": 90
+      "total_min": 110
      },
      {
       "day": 2,
@@ -16466,9 +16506,17 @@
         "min": 40,
         "activity": "Science — Waves, sound, and light (practice)",
         "lesson_ref": "4.bank.waves-sound-light"
+       },
+       {
+        "block": 5,
+        "subject": "english_grammar",
+        "min": 20,
+        "activity": "Practice: Sentence structure, fragments, and run-ons — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback",
+        "skill_node": "4.GRAM.sentence-conventions"
        }
       ],
-      "total_min": 130
+      "total_min": 150
      },
      {
       "day": 3,
@@ -16502,9 +16550,17 @@
         "min": 35,
         "activity": "History — Michigan history inquiry: then and now",
         "lesson_ref": "4.bank.michigan-inquiry"
+       },
+       {
+        "block": 5,
+        "subject": "literature",
+        "min": 20,
+        "activity": "Apply: Use details and examples to explain and infer from a… — use it once today and explain how you know it worked.",
+        "tier": "fallback",
+        "skill_node": "RL.4.1"
        }
       ],
-      "total_min": 125
+      "total_min": 145
      },
      {
       "day": 4,
@@ -16545,9 +16601,17 @@
         "min": 35,
         "activity": "History — U.S. regions, maps, and migration stories",
         "lesson_ref": "4.bank.us-regions-maps"
+       },
+       {
+        "block": 6,
+        "subject": "writing",
+        "min": 20,
+        "activity": "Review: Opinion writing: reasons, facts, linking words, conclusion — redo the hardest part and fix each miss in a new colour.",
+        "tier": "fallback",
+        "skill_node": "4.WRIT.opinion"
        }
       ],
-      "total_min": 165
+      "total_min": 185
      }
     ],
     "lessons": {
@@ -17026,7 +17090,7 @@
      }
     },
     "counts": {
-     "blocks": 16,
+     "blocks": 20,
      "lesson_objects": 12,
      "sheets": 0
     },
@@ -19142,21 +19206,767 @@
    },
    "3": {
     "week": 3,
-    "theme": "Topic to follow",
+    "theme": "Multi-digit addition and… and Comprehension with text evidence…",
+    "goal": "Keep Multi-digit addition and subtraction… moving and touch every required subject at least once this week.",
     "grade": "4",
     "persona": "Kestrel",
-    "topic_only": true,
-    "badge": "Section coming soon",
-    "source": "e5_demo_scope"
+    "days": [
+     {
+      "day": 1,
+      "parent_note": "Watch: the fact or the sentence is said aloud before it is written — no guessing.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Model: work 5 guided Multi-digit addition and subtraction fluency items together and say each step out loud.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-add-sub"
+       },
+       {
+        "block": 2,
+        "subject": "reading",
+        "min": 60,
+        "activity": "Model: read the passage on Comprehension with text evidence (incl. cloze) together and underline 3 words you do not know.",
+        "tier": "fallback",
+        "skill_node": "4.READ.text-evidence"
+       },
+       {
+        "block": 3,
+        "subject": "spelling",
+        "min": 15,
+        "activity": "Model: read the 10 Spelling patterns and reference-checking routine words aloud, then sort them by the pattern.",
+        "tier": "fallback",
+        "skill_node": "4.SPELL.patterns"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Model: read the Internal and external structures support survival and… lesson and tell a parent 3 facts from it without looking.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-1"
+       },
+       {
+        "block": 5,
+        "subject": "history",
+        "min": 25,
+        "activity": "Model: read the Describe ways the United States can be divided into regions lesson and put 4 events or people in order.",
+        "tier": "fallback",
+        "skill_node": "4.G2.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "literature",
+        "min": 20,
+        "activity": "Model: Determine a theme from details in the text; summarize — work one example together and say each step out loud.",
+        "tier": "fallback",
+        "skill_node": "RL.4.2"
+       }
+      ],
+      "total_min": 210
+     },
+     {
+      "day": 2,
+      "parent_note": "Watch: answers are worked fully, not rushed; point to the line that proves each one.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Practice: solve 10 Multi-digit addition and subtraction fluency items on your own, then check every one.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-add-sub"
+       },
+       {
+        "block": 2,
+        "subject": "reading",
+        "min": 60,
+        "activity": "Practice: answer the 5 questions on Comprehension with text evidence (incl. cloze) and point to the line that proves each answer.",
+        "tier": "fallback",
+        "skill_node": "4.READ.text-evidence"
+       },
+       {
+        "block": 3,
+        "subject": "english_grammar",
+        "min": 15,
+        "activity": "Practice: Conventions of standard English grammar and usage — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback",
+        "skill_node": "L.4.1"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Practice: answer the 6 Internal and external structures support survival and… questions and check each one against the lesson.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-1"
+       },
+       {
+        "block": 5,
+        "subject": "history",
+        "min": 25,
+        "activity": "Practice: answer 5 Describe ways the United States can be divided into regions questions from memory, then check the lesson and fix 2.",
+        "tier": "fallback",
+        "skill_node": "4.G2.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "english_grammar",
+        "min": 20,
+        "activity": "Practice: Conventions of standard English grammar and usage — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback",
+        "skill_node": "L.4.1"
+       }
+      ],
+      "total_min": 210
+     },
+     {
+      "day": 3,
+      "parent_note": "Watch: corrections go in a new colour, nothing erased.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Apply: solve 6 Multi-digit addition and subtraction fluency word problems and underline the clue that tells you which operation.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-add-sub"
+       },
+       {
+        "block": 2,
+        "subject": "writing",
+        "min": 60,
+        "activity": "Apply: Opinion pieces that support a point of view with reasons… — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback",
+        "skill_node": "W.4.1"
+       },
+       {
+        "block": 3,
+        "subject": "spelling",
+        "min": 15,
+        "activity": "Apply: dictation — write all 10 Spelling patterns and reference-checking routine words from memory, then fix misses in a new colour.",
+        "tier": "fallback",
+        "skill_node": "4.SPELL.patterns"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Apply: draw or build Internal and external structures support survival and… examples and label 4 of them.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-1"
+       },
+       {
+        "block": 5,
+        "subject": "history",
+        "min": 25,
+        "activity": "Apply: add 4 labels to the Describe ways the United States can be divided into regions timeline or map, then read them back.",
+        "tier": "fallback",
+        "skill_node": "4.G2.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "writing",
+        "min": 20,
+        "activity": "Apply: Opinion pieces that support a point of view with reasons… — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback",
+        "skill_node": "W.4.1"
+       }
+      ],
+      "total_min": 210
+     },
+     {
+      "day": 4,
+      "parent_note": "Watch: keep the tone light, break before the test, finish on time.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Review: redo the 3 hardest Multi-digit addition and subtraction fluency items and fix each miss in a new colour.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-add-sub"
+       },
+       {
+        "block": 2,
+        "subject": "literature",
+        "min": 60,
+        "activity": "Review: Determine a theme from details in the text; summarize — read for 15 minutes, then retell the ending in 3 sentences.",
+        "tier": "fallback",
+        "skill_node": "RL.4.2"
+       },
+       {
+        "block": 3,
+        "subject": "spelling",
+        "min": 15,
+        "activity": "Review: cover, write and check the 5 hardest Spelling patterns and reference-checking routine words, then re-test yourself once.",
+        "tier": "fallback",
+        "skill_node": "4.SPELL.patterns"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Review: explain Internal and external structures support survival and… to a parent in 3 sentences, then draw one labelled picture.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-1"
+       },
+       {
+        "block": 5,
+        "subject": "civics",
+        "min": 25,
+        "activity": "Review: Popular sovereignty, rule of law, checks and balances, and… — name 4 jobs or rules that make a community work and say why one matters.",
+        "tier": "fallback",
+        "skill_node": "4.C2.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "civics",
+        "min": 20,
+        "activity": "Review: Popular sovereignty, rule of law, checks and balances, and… — name 4 jobs or rules that make a community work and say why one matters.",
+        "tier": "fallback",
+        "skill_node": "4.C2.0.1"
+       }
+      ],
+      "total_min": 210
+     }
+    ],
+    "lessons": {},
+    "passages": [],
+    "test": {
+     "quizId": "kestrel_w3_test",
+     "learner": "Kestrel",
+     "title": "Week 3 check-in",
+     "tapFriendly": true,
+     "format": "tap-mcq",
+     "minutes": 15,
+     "passScore": 0.8,
+     "covers": [],
+     "tier": "fallback",
+     "note": "Spiral review — questions drawn from the items.json — target nodes; no authored week test yet.",
+     "questions": [
+      {
+       "q": "In the passage, which sentence comes right after this one? \"If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again.\"",
+       "options": [
+        "All that other folks can do, Why, with patience, should not you?",
+        "\"'T is royal fun,\" cried lazy Ned, \"To coast, upon my fine, new sled, And beat the other boys; But then, I can not bear to climb The tiresome hill, for every time It more and more annoys.\"",
+        "So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.",
+        "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last."
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Who or what is this passage mostly about?",
+       "options": [
+        "Swing",
+        "Try",
+        "Ned",
+        "Grandmamma"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Read the sentence from the passage and choose the word that fills the blank. Then he ____ to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.",
+       "options": [
+        "flew",
+        "lesson",
+        "heed",
+        "first"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Who or what is this passage mostly about?",
+       "options": [
+        "Grandmamma",
+        "Try",
+        "Ned",
+        "Piccola"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "In the passage, which sentence comes right after this one? \"Adown the white highway like cavalry fleet, It dashes the dust with its numberless feet.\"",
+       "options": [
+        "Like a murmurless school, in their leafy retreat, The wild birds sit listening the drops round them beat; And the boy crouches close to the blackberry wall.",
+        "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+        "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+        "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Who or what is this passage mostly about?",
+       "options": [
+        "Boy",
+        "Try",
+        "Ned",
+        "Grandmamma"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Who or what is this passage mostly about?",
+       "options": [
+        "Jeannette",
+        "Try",
+        "Ned",
+        "Grandmamma"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Read the sentence from the passage and choose the word that fills the blank. ____ nothing would bring to her!",
+       "options": [
+        "Nicholas",
+        "Lesson",
+        "Heed",
+        "First"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Read the sentence from the passage and choose the word that fills the blank. ____ carpeting the ground; Thrushes, orioles, warbling sound:-- Swing me low, and swing me high, To the warm clouds of July.",
+       "options": [
+        "Roses",
+        "Lesson",
+        "Heed",
+        "First"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Who or what is this passage mostly about?",
+       "options": [
+        "I'll",
+        "Try",
+        "Ned",
+        "Grandmamma"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      }
+     ]
+    },
+    "quizzes": [],
+    "counts": {
+     "blocks": 24,
+     "lesson_objects": 0,
+     "sheets": 0
+    },
+    "source": "build_month_scaffold --t1"
    },
    "4": {
     "week": 4,
-    "theme": "Topic to follow",
+    "theme": "Multi-digit multiplication… and Decode multisyllabic words using…",
+    "goal": "Keep Multi-digit multiplication strategies moving and touch every required subject at least once this week.",
     "grade": "4",
     "persona": "Kestrel",
-    "topic_only": true,
-    "badge": "Section coming soon",
-    "source": "e5_demo_scope"
+    "days": [
+     {
+      "day": 1,
+      "parent_note": "Watch: the fact or the sentence is said aloud before it is written — no guessing.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Model: work 5 guided Multi-digit multiplication strategies items together and say each step out loud.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-multiplication"
+       },
+       {
+        "block": 2,
+        "subject": "reading",
+        "min": 60,
+        "activity": "Model: read the passage on Decode multisyllabic words using syllabication and… together and underline 3 words you do not know.",
+        "tier": "fallback",
+        "skill_node": "RF.4.3"
+       },
+       {
+        "block": 3,
+        "subject": "spelling",
+        "min": 15,
+        "activity": "Model: read the 10 Spell grade-appropriate words correctly, consulting… words aloud, then sort them by the pattern.",
+        "tier": "fallback",
+        "skill_node": "L.4.2.d"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Model: read the Model how animals receive, process, and respond to sensory… lesson and tell a parent 3 facts from it without looking.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-2"
+       },
+       {
+        "block": 5,
+        "subject": "history",
+        "min": 25,
+        "activity": "Model: read the Push and pull factors in a migration case study lesson and put 4 events or people in order.",
+        "tier": "fallback",
+        "skill_node": "4.G4.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "literature",
+        "min": 20,
+        "activity": "Model: Describe in depth a character, setting, or event using… — work one example together and say each step out loud.",
+        "tier": "fallback",
+        "skill_node": "RL.4.3"
+       }
+      ],
+      "total_min": 210
+     },
+     {
+      "day": 2,
+      "parent_note": "Watch: answers are worked fully, not rushed; point to the line that proves each one.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Practice: solve 10 Multi-digit multiplication strategies items on your own, then check every one.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-multiplication"
+       },
+       {
+        "block": 2,
+        "subject": "reading",
+        "min": 60,
+        "activity": "Practice: answer the 5 questions on Decode multisyllabic words using syllabication and… and point to the line that proves each answer.",
+        "tier": "fallback",
+        "skill_node": "RF.4.3"
+       },
+       {
+        "block": 3,
+        "subject": "english_grammar",
+        "min": 15,
+        "activity": "Practice: Conventions of standard English capitalization,… — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback",
+        "skill_node": "L.4.2"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Practice: answer the 6 Model how animals receive, process, and respond to sensory… questions and check each one against the lesson.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-2"
+       },
+       {
+        "block": 5,
+        "subject": "history",
+        "min": 25,
+        "activity": "Practice: answer 5 Push and pull factors in a migration case study questions from memory, then check the lesson and fix 2.",
+        "tier": "fallback",
+        "skill_node": "4.G4.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "english_grammar",
+        "min": 20,
+        "activity": "Practice: Conventions of standard English capitalization,… — write 4 sentences, capitalising the first word and ending each one correctly.",
+        "tier": "fallback",
+        "skill_node": "L.4.2"
+       }
+      ],
+      "total_min": 210
+     },
+     {
+      "day": 3,
+      "parent_note": "Watch: corrections go in a new colour, nothing erased.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Apply: solve 6 Multi-digit multiplication strategies word problems and underline the clue that tells you which operation.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-multiplication"
+       },
+       {
+        "block": 2,
+        "subject": "writing",
+        "min": 60,
+        "activity": "Apply: Informative/explanatory texts that examine a topic clearly — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback",
+        "skill_node": "W.4.2"
+       },
+       {
+        "block": 3,
+        "subject": "spelling",
+        "min": 15,
+        "activity": "Apply: dictation — write all 10 Spell grade-appropriate words correctly, consulting… words from memory, then fix misses in a new colour.",
+        "tier": "fallback",
+        "skill_node": "L.4.2.d"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Apply: draw or build Model how animals receive, process, and respond to sensory… examples and label 4 of them.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-2"
+       },
+       {
+        "block": 5,
+        "subject": "history",
+        "min": 25,
+        "activity": "Apply: add 4 labels to the Push and pull factors in a migration case study timeline or map, then read them back.",
+        "tier": "fallback",
+        "skill_node": "4.G4.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "writing",
+        "min": 20,
+        "activity": "Apply: Informative/explanatory texts that examine a topic clearly — write 4 sentences in order, then read them aloud.",
+        "tier": "fallback",
+        "skill_node": "W.4.2"
+       }
+      ],
+      "total_min": 210
+     },
+     {
+      "day": 4,
+      "parent_note": "Watch: keep the tone light, break before the test, finish on time.",
+      "blocks": [
+       {
+        "block": 1,
+        "subject": "math",
+        "min": 65,
+        "activity": "Review: redo the 3 hardest Multi-digit multiplication strategies items and fix each miss in a new colour.",
+        "tier": "fallback",
+        "skill_node": "4.MATH.multi-digit-multiplication"
+       },
+       {
+        "block": 2,
+        "subject": "literature",
+        "min": 60,
+        "activity": "Review: Describe in depth a character, setting, or event using… — read for 15 minutes, then retell the ending in 3 sentences.",
+        "tier": "fallback",
+        "skill_node": "RL.4.3"
+       },
+       {
+        "block": 3,
+        "subject": "spelling",
+        "min": 15,
+        "activity": "Review: cover, write and check the 5 hardest Spell grade-appropriate words correctly, consulting… words, then re-test yourself once.",
+        "tier": "fallback",
+        "skill_node": "L.4.2.d"
+       },
+       {
+        "block": 4,
+        "subject": "science",
+        "min": 25,
+        "activity": "Review: explain Model how animals receive, process, and respond to sensory… to a parent in 3 sentences, then draw one labelled picture.",
+        "tier": "fallback",
+        "skill_node": "4-LS1-2"
+       },
+       {
+        "block": 5,
+        "subject": "civics",
+        "min": 25,
+        "activity": "Review: Ways the Constitution limits the powers of the federal… — name 4 jobs or rules that make a community work and say why one matters.",
+        "tier": "fallback",
+        "skill_node": "4.C3.0.1"
+       },
+       {
+        "block": 6,
+        "subject": "civics",
+        "min": 20,
+        "activity": "Review: Ways the Constitution limits the powers of the federal… — name 4 jobs or rules that make a community work and say why one matters.",
+        "tier": "fallback",
+        "skill_node": "4.C3.0.1"
+       }
+      ],
+      "total_min": 210
+     }
+    ],
+    "lessons": {},
+    "passages": [],
+    "test": {
+     "quizId": "kestrel_w4_test",
+     "learner": "Kestrel",
+     "title": "Week 4 check-in",
+     "tapFriendly": true,
+     "format": "tap-mcq",
+     "minutes": 15,
+     "passScore": 0.8,
+     "covers": [],
+     "tier": "fallback",
+     "note": "Spiral review — questions drawn from the items.json — week subjects; no authored week test yet.",
+     "questions": [
+      {
+       "q": "Read the sentence from the passage and choose the word that fills the blank. ____ one who will not fear To feel thy coldest touch, or shrink Thy loudest blast to hear.",
+       "options": [
+        "Here's",
+        "Lesson",
+        "Heed",
+        "First"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "In the passage, which sentence comes right after this one? \"If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again.\"",
+       "options": [
+        "All that other folks can do, Why, with patience, should not you?",
+        "\"'T is royal fun,\" cried lazy Ned, \"To coast, upon my fine, new sled, And beat the other boys; But then, I can not bear to climb The tiresome hill, for every time It more and more annoys.\"",
+        "So, while his schoolmates glided by, And gladly tugged uphill, to try Another merry race, Too indolent to share their plays, Ned was compelled to stand and gaze, While shivering in his place.",
+        "Thus, he would never take the pains To seek the prize that labor gains, Until the time had passed; For, all his life, he dreaded still The silly bugbear of uphill, And died a dunce at last."
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Read the sentence from the passage and choose the word that fills the blank. Then he ____ to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.",
+       "options": [
+        "flew",
+        "lesson",
+        "heed",
+        "first"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "Who or what is this passage mostly about?",
+       "options": [
+        "Snow",
+        "Try",
+        "Ned",
+        "Grandmamma"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "What is a WAVE?",
+       "options": [
+        "A disturbance that transfers energy",
+        "A solid object",
+        "A type of animal",
+        "A weather event"
+       ],
+       "correct": 0,
+       "skill": "waves-sound-light",
+       "subject": "science",
+       "why": "Practice bank item for 4.SCI.waves-sound-light."
+      },
+      {
+       "q": "WAVELENGTH is the distance between...",
+       "options": [
+        "Two matching points on a wave",
+        "The floor and ceiling",
+        "Two colors",
+        "Two objects only"
+       ],
+       "correct": 0,
+       "skill": "waves-sound-light",
+       "subject": "science",
+       "why": "Practice bank item for 4.SCI.waves-sound-light."
+      },
+      {
+       "q": "Read the sentence from the passage and choose the word that fills the blank. ____ girl, little boy, Or the world will lose some of its joy!",
+       "options": [
+        "little",
+        "lesson",
+        "heed",
+        "first"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "What process slowly WEATHERS rock?",
+       "options": [
+        "Water, wind, ice over time",
+        "Instant melting only",
+        "A single raindrop",
+        "Nothing changes rock"
+       ],
+       "correct": 0,
+       "skill": "rocks-and-fossils",
+       "subject": "science",
+       "why": "Practice bank item for 4.SCI.rocks-and-fossils."
+      },
+      {
+       "q": "Which of these words appears in the passage?",
+       "options": [
+        "Larcom",
+        "Lesson",
+        "First",
+        "Succeed"
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      },
+      {
+       "q": "In the passage, which sentence comes right after this one? \"Then he flew to the mountain, and powdered its crest; He lit on the trees, and their boughs he dressed In diamond beads; and over the breast Of the quivering lake, he spread A coat of mail, that it need not fear The downward point of many a spear, That he hung on its margin, far and near, Where a rock could rear its head.\"",
+       "options": [
+        "He went to the windows of those who slept, And over each pane, like a fairy, crept; Wherever he breathed, wherever he stepped, By the light of the morn were seen Most beautiful things; there were flowers and trees; There were bevies of birds, and swarms of bees; There were cities with temples and towers, and these All pictured in silver sheen.",
+        "'T is a lesson you should heed, Try, try again; If at first you don't succeed, Try, try again; Then your courage should appear, For, if you will persevere, You will conquer, never fear; Try, try again.",
+        "Once or twice though you should fail, Try, try again; If you would at last prevail, Try, try again; If we strive, 'tis no disgrace Though we do not win the race; What should you do in the case?",
+        "If you find your task is hard, Try, try again; Time will bring you your reward, Try, try again."
+       ],
+       "correct": 0,
+       "skill": "text-evidence",
+       "subject": "reading",
+       "why": "Practice bank item for 4.READ.text-evidence."
+      }
+     ]
+    },
+    "quizzes": [],
+    "counts": {
+     "blocks": 24,
+     "lesson_objects": 0,
+     "sheets": 0
+    },
+    "source": "build_month_scaffold --t1"
    },
    "5": {
     "week": 5,

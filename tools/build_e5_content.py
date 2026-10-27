@@ -23,6 +23,31 @@ import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 APP = os.environ.get('SPROUT_APP_DIR', '/root/SOETechWebApp-obsidian/apps/sprout')
 
+# Where grades_k124 lands. The repo copy is what tools/validate_readiness.js and
+# index.html read, so it is always written; the deployment copy is written too
+# when its app dir exists. Both are merged from the REPO file (repo = canonical).
+TARGET_DIRS = [os.path.join(ROOT, 'data')]
+if APP and os.path.isdir(APP):
+    TARGET_DIRS.append(os.path.join(APP, 'data'))
+
+# --rebuild: ignore the preserve rule and regenerate weeks 1-6 from scratch
+REBUILD = '--rebuild' in sys.argv[1:]
+
+DEFAULT_GENERATED_BY = ('tools/build_e5_content.py (E5 UI lane; engine data '
+                        'frozen at E3, validator 91/0)')
+
+
+def load_prev():
+    """the repo's current grades_k124.json, if any — the merge base."""
+    jp = os.path.join(TARGET_DIRS[0], 'grades_k124.json')
+    if not os.path.exists(jp):
+        return None
+    try:
+        with open(jp, encoding='utf-8') as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return None
+
 def load(rel):
     with open(os.path.join(ROOT, rel), encoding='utf-8') as f:
         return json.load(f)
@@ -239,56 +264,97 @@ def topic_week(grade, wn):
     }
 
 def main():
+    prev_doc = load_prev()
+    prev_weeks_all = (prev_doc or {}).get('weeks') or {}
+    prev_grades = (prev_doc or {}).get('grades') or {}
     grades_meta, weeks = {}, {}
     for g in GRADES:
         band = tree['grades'][g]
-        grades_meta[g] = {
+        # merge, never clobber: a week that already carries a day flow was
+        # authored (spine) or built (build_month_scaffold --t1) — regenerating
+        # it here would silently drop that work.  --rebuild forces a rewrite.
+        prev_weeks = prev_weeks_all.get(g) or {}
+        meta = dict(prev_grades.get(g) or {}) or {
             'label': GRADE_LABEL[g], 'grade': g, 'persona': PERSONAS[g],
             'student_key': PERSONAS[g].lower(),
-            'subjects': [s for s, _ in DAY_PLANS[g][0]] if False else sorted({s for plan in DAY_PLANS[g] for s, _ in plan}),
+            'subjects': sorted({s for plan in DAY_PLANS[g] for s, _ in plan}),
             'enabled': True,
-            'statutory_map': [STAT_MAP[s] for s in sorted({s for plan in DAY_PLANS[g] for s, _ in plan}) if STAT_MAP[s]],
+            'statutory_map': [STAT_MAP[s] for s in
+                              sorted({s for plan in DAY_PLANS[g] for s, _ in plan})
+                              if STAT_MAP[s]],
             'grade_band': band_of(g),
             'cat_domains': band.get('cat_domains', ['math', 'ela']),
             'statutory_subjects': band.get('statutory_subjects', []),
         }
+        # keep the lane's own identity keys current without dropping anything
+        # the month scaffold may have synced (subjects, statutory_map, ...)
+        meta.setdefault('label', GRADE_LABEL[g])
+        meta.setdefault('grade', g)
+        meta.setdefault('persona', PERSONAS[g])
+        meta.setdefault('student_key', PERSONAS[g].lower())
+        meta.setdefault('subjects',
+                        sorted({s for plan in DAY_PLANS[g] for s, _ in plan}))
+        meta.setdefault('statutory_map',
+                        [STAT_MAP[s] for s in
+                         sorted({s for plan in DAY_PLANS[g] for s, _ in plan})
+                         if STAT_MAP[s]])
+        meta.setdefault('enabled', True)
+        grades_meta[g] = meta
         weeks[g] = {}
-        for wn in (1, 2):
-            weeks[g][str(wn)] = build_week(g, wn, None)
-        for wn in range(3, 7):
-            weeks[g][str(wn)] = topic_week(g, wn)
+        for wn in range(1, 7):
+            old = prev_weeks.get(str(wn))
+            has_days = bool(old) and isinstance(old.get('days'), list) and old['days']
+            if has_days and not REBUILD:
+                weeks[g][str(wn)] = old          # preserve — do not regenerate
+            elif wn <= 2:
+                weeks[g][str(wn)] = build_week(g, wn, None)
+            else:
+                weeks[g][str(wn)] = topic_week(g, wn)
+        # weeks 7+ belong to the month scaffold — carry them through untouched
+        for k, w in prev_weeks.items():
+            try:
+                keep = int(k) > 6
+            except (TypeError, ValueError):
+                keep = True
+            if keep and k not in weeks[g]:
+                weeks[g][k] = w
 
     doc = {
         'schema': 'sprout_demo_v1.content_k124',
-        'generated_at': '2026-10-17',
-        'generated_by': 'tools/build_e5_content.py (E5 UI lane; engine data frozen at E3, validator 91/0)',
+        'generated_at': (prev_doc or {}).get('generated_at') or '2026-10-17',
+        'generated_by': (prev_doc or {}).get('generated_by') or DEFAULT_GENERATED_BY,
         'grades': grades_meta,
         'weeks': weeks,
         'passages_source': 'research/pd_readers_passages.json — verbatim public-domain reader passages (Gutenberg), grade-leveled',
     }
-    os.makedirs(APP, exist_ok=True)
-    jp = os.path.join(APP, 'data', 'grades_k124.json')
-    with open(jp, 'w', encoding='utf-8') as f:
-        json.dump(doc, f, ensure_ascii=False, indent=1)
-    js_path = os.path.join(APP, 'data', 'grades_k124.js')
-    with open(js_path, 'w', encoding='utf-8') as f:
-        f.write('/* E5 — K/1/2/4 demo content (weeks 1-2 full, 3-6 topic cards). Generated by\n'
-                '   tools/build_e5_content.py from the E3 engine artifacts; do not hand-edit. */\n'
-                'window.SPROUT_CONTENT_K124 = ' + json.dumps(doc, ensure_ascii=False) + ';\n')
-    # self-check: every block lesson_ref resolves, every generator id present
+    for tgt in TARGET_DIRS:
+        os.makedirs(os.path.join(tgt), exist_ok=True)
+        with open(os.path.join(tgt, 'grades_k124.json'), 'w', encoding='utf-8') as f:
+            json.dump(doc, f, ensure_ascii=False, indent=1)
+        with open(os.path.join(tgt, 'grades_k124.js'), 'w', encoding='utf-8') as f:
+            f.write('/* E5 — K/1/2/4 demo content (weeks 1-2 full, 3-6 topic cards). Generated by\n'
+                    '   tools/build_e5_content.py from the E3 engine artifacts; do not hand-edit.\n'
+                    '   Merge rule: a week that already has a day flow is preserved, so a rerun\n'
+                    '   never clobbers weeks built by tools/build_month_scaffold.py. */\n'
+                    'window.SPROUT_CONTENT_K124 = ' + json.dumps(doc, ensure_ascii=False) + ';\n')
+    # self-check: every block lesson_ref resolves, no built week lost its items
     for g in GRADES:
-        for wn in ('1', '2'):
-            w = doc['weeks'][g][wn]
+        for wn, w in weeks[g].items():
+            if not (isinstance(w.get('days'), list) and w['days']):
+                continue
             for d in w['days']:
                 for b in d['blocks']:
                     if b.get('lesson_ref'):
                         assert b['lesson_ref'] in w['lessons'], (g, wn, b)
-            assert len(w['test']['questions']) == 8, (g, wn)
-    print('OK  grades_k124 written: %d grades, weeks 1-2 full + 4 topic cards each' % len(GRADES))
+            qlist = (w.get('test') or {}).get('questions') or []
+            assert len(qlist) >= 1, (g, wn, 'week has no test questions')
+    print('OK  grades_k124 written to %d target(s): %d grades, day-flow weeks '
+          'preserved, stubs regenerated' % (len(TARGET_DIRS), len(GRADES)))
     for g in GRADES:
-        w1 = doc['weeks'][g]['1']
+        w1 = weeks[g]['1']
         print('  %s: %d blocks w1, %d lessons, %d passages, test %d q' %
-              (g, w1['counts']['blocks'], len(w1['lessons']), len(w1['passages']), len(w1['test']['questions'])))
+              (g, w1['counts']['blocks'], len(w1['lessons']), len(w1['passages']),
+               len(w1['test']['questions'])))
 
 if __name__ == '__main__':
     main()

@@ -78,12 +78,102 @@ B3 = {1: 'spelling', 2: 'english_grammar', 3: 'spelling', 4: 'spelling'}
 B5 = {1: 'history', 2: 'history', 3: 'history', 4: 'civics'}
 ROTATION = ['math', 'b2', 'b3', 'science', 'b5', 'coding']
 
-# minute law (roadmap §2.3 step 2): minutes per block, per day
+# 6th slot when the band carries no coding nodes (grade 4): rotate the thin
+# statutory strands instead, so the week union still equals
+# skill_tree.grade_subjects[grade] exactly (validate_engine gate 3).
+# Chosen so it never collides with B2/B3/B5 on the SAME day — a day carrying
+# english_grammar twice is legal but clones one topic into two identical blocks.
+B6 = {1: 'literature', 2: 'writing', 3: 'english_grammar', 4: 'writing'}
+
+# --- G7 per-grade skeleton shapes -----------------------------------------
+# K/1/2 ship 4 days x 4 blocks (grades_k124 w1/w2 reality: 60-90 min/day) and
+# preschool ships 4 x 6 at 180 min/day; grades 3-6 run the 4 x 6 spine.  The
+# union of each row folds to 9/9 statutory (K/1/2: ela + social_studies do the
+# folding) and coding/art/motor/music never count toward it.
+K12_DAY_SUBJECTS = [
+    ['ela', 'math', 'science', 'social_studies'],
+    ['ela', 'math', 'science', 'motor'],
+    ['ela', 'math', 'social_studies', 'art'],
+    ['ela', 'math', 'science', 'music'],
+]
+PRESCHOOL_DAY_SUBJECTS = [
+    ['reading', 'math', 'math', 'writing', 'literature', 'science'],
+] * 4
+
+# minute law (roadmap §2.3 step 2): minutes per block, per day.
+# 'shape' = (days, blocks) per G7; day.total_min is recomputed, never trusted.
 MINUTE_LAW = {
-    '3': {'days': [[65, 60, 15, 25, 25, 20]] * 4, 'totals': [210, 210, 210, 210]},
-    '5': {'days': [[75, 60, 15, 30, 30, 30]] * 3 + [[60, 45, 15, 30, 30, 30]],
+    'preschool': {'shape': (4, 6),
+                  'days': [[30, 25, 20, 25, 30, 50]] * 4,
+                  'totals': [180, 180, 180, 180]},
+    'K': {'shape': (4, 4),
+          'days': [[15, 15, 15, 15], [15, 15, 15, 20],
+                   [15, 15, 15, 20], [15, 15, 15, 20]],
+          'totals': [60, 65, 65, 65]},
+    '1': {'shape': (4, 4),
+          'days': [[20, 20, 20, 15], [20, 20, 20, 20],
+                   [20, 20, 15, 20], [20, 20, 20, 20]],
+          'totals': [75, 80, 75, 80]},
+    '2': {'shape': (4, 4),
+          'days': [[25, 25, 20, 15], [25, 25, 20, 20],
+                   [25, 25, 15, 20], [25, 25, 20, 20]],
+          'totals': [85, 90, 85, 90]},
+    '3': {'shape': (4, 6),
+          'days': [[65, 60, 15, 25, 25, 20]] * 4,
+          'totals': [210, 210, 210, 210]},
+    '4': {'shape': (4, 6),
+          'days': [[65, 60, 15, 25, 25, 20]] * 4,
+          'totals': [210, 210, 210, 210]},
+    '5': {'shape': (4, 6),
+          'days': [[75, 60, 15, 30, 30, 30]] * 3 + [[60, 45, 15, 30, 30, 30]],
+          'totals': [240, 240, 240, 210]},
+    '6': {'shape': (4, 6),
+          'days': [[75, 60, 15, 30, 30, 30]] * 3 + [[60, 45, 15, 30, 30, 30]],
           'totals': [240, 240, 240, 210]},
 }
+
+# minutes added to a day when T1 completes an authored week's 9/9 coverage
+COVERAGE_TOPUP = {'preschool': 30, 'K': 15, '1': 20, '2': 20}
+
+
+def _verify_minute_law():
+    """shape/day-row/total drift is a build bug — catch it at import."""
+    for g, law in MINUTE_LAW.items():
+        days, blocks = law['shape']
+        assert days == 4, 'grade %s: minute law must be 4 days (got %d)' % (g, days)
+        assert len(law['days']) == days and len(law['totals']) == days, \
+            'grade %s: minute law rows/totals must be %d long' % (g, days)
+        for i, row in enumerate(law['days']):
+            assert len(row) == blocks, 'grade %s day %d: %d blocks, shape says %d' \
+                % (g, i + 1, len(row), blocks)
+            assert sum(row) == law['totals'][i], 'grade %s day %d sums to %d, totals say %d' \
+                % (g, i + 1, sum(row), law['totals'][i])
+
+
+_verify_minute_law()
+
+# statutory fold-map (roadmap P0.4.a) — must stay byte-equal in spirit to
+# tools/validate_readiness.js#FOLD and sprout/planning/spine.py#FOLD.
+FOLD = {
+    'reading': ['reading'], 'spelling': ['spelling'], 'mathematics': ['mathematics'],
+    'science': ['science'], 'history': ['history'], 'civics': ['civics'],
+    'literature': ['literature'], 'writing': ['writing'],
+    'english_grammar': ['english_grammar'],
+    'ela': ['reading', 'writing', 'spelling', 'literature', 'english_grammar'],
+    'social_studies': ['history', 'civics'],
+    'math': ['mathematics'], 'maths': ['mathematics'], 'read': ['reading'],
+    'reading_comp': ['reading'], 'lit': ['literature'],
+    'grammar': ['english_grammar'], 'english': ['english_grammar'],
+}
+# never counts toward the statutory count, never rescues a coverage failure
+EXCLUDE = {'coding', 'art', 'motor', 'music', 'pe', 'physical_education',
+           'health', 'technology', 'enrichment', 'library'}
+
+# G1: the one sentence a guardian is allowed to read when the data is not there.
+GUARDIAN_NOT_READY = 'Grade %s content is not ready yet — no plans can be generated'
+
+# grades whose weeks live in data/grades_k124.{json,js} (E5 lane), not content.json
+K124_GRADES = ('K', '1', '2', '4')
 
 PARENT_NOTES = {
     1: 'Watch: the fact or the sentence is said aloud before it is written — no guessing.',
@@ -118,6 +208,36 @@ ACTIVITY = {
     ('coding', 'Practice'): 'Practice: remix the {topic} so it does something new, then run it again.',
     ('coding', 'Apply'): 'Apply: add a repeat block to the {topic} so it runs 3 times.',
     ('coding', 'Review'): 'Review: run the {topic} and fix the one block that makes it stop early.',
+    # K/1/2 folded band labels + the non-statutory slots their days carry
+    ('ela', 'Model'): 'Model: read {topic} together and underline 3 words you do not know.',
+    ('ela', 'Practice'): 'Practice: {topic} — answer the questions and point to the line that proves each one.',
+    ('ela', 'Apply'): 'Apply: {topic} — write 4 sentences using it, then read them aloud.',
+    ('ela', 'Review'): 'Review: {topic} — read for 10 minutes, then retell it in 3 sentences.',
+    ('social_studies', 'Model'): 'Model: read the {topic} lesson and name 3 facts from it without looking.',
+    ('social_studies', 'Practice'): 'Practice: answer 5 {topic} questions from memory, then check the lesson and fix 2.',
+    ('social_studies', 'Apply'): 'Apply: add 4 labels to the {topic} map or timeline, then read them back.',
+    ('social_studies', 'Review'): 'Review: {topic} — name 4 jobs or rules that make a community work and say why one matters.',
+    ('motor', 'Model'): 'Model: {topic} — copy the movement slowly, then at half speed.',
+    ('motor', 'Practice'): 'Practice: {topic} — repeat it 5 times and notice what changes each time.',
+    ('motor', 'Apply'): 'Apply: {topic} — build a 3-move sequence and do it twice through.',
+    ('motor', 'Review'): 'Review: {topic} — show a parent one favourite move and name the muscles it uses.',
+    ('art', 'Model'): 'Model: {topic} — watch one step done slowly, then try that step.',
+    ('art', 'Practice'): 'Practice: {topic} — make 3 of them and keep the one you like best.',
+    ('art', 'Apply'): 'Apply: {topic} — finish one piece and say what you would change next time.',
+    ('art', 'Review'): 'Review: {topic} — pick your best work and tell a parent one thing it shows.',
+    ('music', 'Model'): 'Model: {topic} — clap or hum it back once, slowly.',
+    ('music', 'Practice'): 'Practice: {topic} — try it 3 times and keep the steadiest one.',
+    ('music', 'Apply'): 'Apply: {topic} — teach it to a parent or a toy, beat by beat.',
+    ('music', 'Review'): 'Review: {topic} — play it through twice and name the part that felt easiest.',
+}
+
+# any (subject, phase) pair the fixed templates do not cover — never KeyError,
+# never invent a subject claim: the phase verb does the work, {topic} carries it.
+GENERIC_ACTIVITY = {
+    'Model': 'Model: {topic} — work one example together and say each step out loud.',
+    'Practice': 'Practice: {topic} — work 6 items on your own, then check every one.',
+    'Apply': 'Apply: {topic} — use it once today and explain how you know it worked.',
+    'Review': 'Review: {topic} — redo the hardest part and fix each miss in a new colour.',
 }
 
 EMOJI = {'math': '🔢', 'reading': '📖', 'writing': '✍️', 'literature': '📚',
@@ -145,7 +265,217 @@ def die(msg):
     sys.exit(1)
 
 
-# ------------------------------------------------------------------ spine
+# ------------------------------------------------- G1 data floor (pre-flight)
+def fold(label):
+    """statutory subjects a block label counts for ([] = excluded, never counts)."""
+    key = str(label or '').lower()
+    if key in EXCLUDE:
+        return []
+    return FOLD.get(key, [key])
+
+
+def statutory_required(grade):
+    """the list a week must cover: D7 nine MCL subjects, preschool override."""
+    if str(grade) == 'preschool':
+        return ['literature', 'mathematics', 'reading', 'science', 'writing']
+    return list(STATUTORY_NINE)
+
+
+def data_floor(grade, tree):
+    """G1 pre-flight — refuse to generate when the band cannot cover its
+    statutory list.  A draft-forever plan (gap_map 'no_nodes' -> coverage error
+    -> status:draft forever) is worse for a guardian than one clear refusal, so
+    this dies before any week is written.  Returns the verified floor record."""
+    band = (tree.get('grades') or {}).get(str(grade)) or {}
+    nodes = band.get('nodes') or []
+    required = statutory_required(grade)
+    if not nodes:
+        die('%s (technical: no skill_tree band for grade %s)'
+            % (GUARDIAN_NOT_READY % grade, grade))
+    covered = set()
+    for n in nodes:
+        covered.update(fold(n.get('subject')))
+        if n.get('statutory'):
+            covered.update(fold(n.get('statutory')))
+    missing = [s for s in required if s not in covered]
+    if missing:
+        die('%s (technical: band has no node for %s)'
+            % (GUARDIAN_NOT_READY % grade, ', '.join(missing)))
+    return {'band_exists': True, 'statutorys_with_nodes': len(required),
+            'statutorys_required': required, 'missing': [],
+            'nodes': len(nodes),
+            'block_labels': sorted({s for s in
+                                    ((tree.get('grade_subjects') or {}).get(str(grade)) or [])
+                                    if s} | {n.get('subject') for n in nodes
+                                             if n.get('subject')})}
+
+
+def covered_statutory(blocks):
+    """validator gate (a) computed the same way validate_readiness.js does."""
+    out = set()
+    for b in blocks:
+        out.update(fold(b.get('subject')))
+    return out
+
+
+# ------------------------------------------- T1 skeleton (no authored spine)
+def skeleton_rotation(grade, block_labels):
+    """per-day subject lists for a --t1 week (G7 shapes).  Each row folds to
+    the full statutory list — the 9/9 hard constraint is structural, not
+    checked-after-the-fact."""
+    if grade in ('K', '1', '2'):
+        return [list(row) for row in K12_DAY_SUBJECTS]
+    if grade == 'preschool':
+        return [list(row) for row in PRESCHOOL_DAY_SUBJECTS]
+    use_coding = 'coding' in set(block_labels or [])
+    return [['math', B2[d], B3[d], 'science', B5[d],
+             'coding' if use_coding else B6[d]] for d in range(1, 5)]
+
+
+def topic_pool(tree, grade, subject):
+    """(node_ids, labels) for one band subject, priority order (strands skipped
+    — a strand label like 'Mathematics (MCL: mathematics)' is not a topic)."""
+    nodes = [n for n in ((tree.get('grades') or {}).get(str(grade)) or {}).get('nodes', [])
+             if n.get('subject') == subject and n.get('kind') != 'strand']
+    nodes.sort(key=lambda n: (n.get('priority') if isinstance(n.get('priority'), int) else 99,
+                              str(n.get('id'))))
+    return ([n['id'] for n in nodes],
+            [str(n.get('label') or n.get('skill_tag') or n['id']) for n in nodes])
+
+
+def skeleton_picks(grade, wi, tree, rotation):
+    """[[ (subject, node_id|None, topic_label) per block ] per day] for a --t1
+    week.  ONE occurrence counter per subject across the WEEK, so a subject
+    that repeats (math on all 4 days; preschool's two math slots) draws a
+    different priority-ordered node each time instead of cloning one block
+    into identical twins.  build_skeleton_week and week_targets both go
+    through here, so the test chain sees exactly the nodes the days point at.
+    """
+    pools = {}
+    for row in rotation:
+        for subject in row:
+            if subject not in pools:
+                pools[subject] = topic_pool(tree, grade, subject)
+    occ, days = {}, []
+    for row in rotation:
+        out = []
+        for subject in row:
+            ids, labels = pools[subject]
+            if not ids:                          # band has no node for this slot
+                out.append((subject, None, subject.replace('_', ' ') + ' practice'))
+                continue
+            n = occ.get(subject, 0)
+            occ[subject] = n + 1
+            k = (wi + n) % len(ids)
+            out.append((subject, ids[k], labels[k]))
+        days.append(out)
+    return days
+
+
+def short(text, n=60):
+    t = ' '.join(str(text).split())
+    return t if len(t) <= n else t[:n].rsplit(' ', 1)[0] + '…'
+
+
+def activity_for(subject, phase, topic):
+    tpl = ACTIVITY.get((subject, phase)) or GENERIC_ACTIVITY[phase]
+    return tpl.format(topic=topic)
+
+
+def cover_labels(block_labels, missing):
+    """greedy set-cover: which band labels fold over the most missing subjects."""
+    picks, rem = [], list(missing)
+    while rem:
+        best, best_n = None, 0
+        for lab in block_labels:
+            f = fold(lab)
+            n = len([x for x in f if x in rem])
+            if n > best_n:
+                best, best_n = lab, n
+        if not best:
+            break
+        picks.append(best)
+        rem = [x for x in rem if x not in fold(best)]
+    return picks, rem
+
+
+# --------------------------------------- G2 test binding (question fallback)
+def _to_mc(pool, grade, want, skill_of, why_of, start=0):
+    """deterministic pick of 4-option mc items -> tap-mcq question dicts.
+    `start` rotates the pick by week so two weeks never draw an identical test
+    from the same small pool."""
+    usable = []
+    for i in pool:
+        opts = i.get('options') or []
+        if len(opts) != 4:
+            continue
+        ans = i.get('answer')
+        try:
+            idx = opts.index(ans)
+        except ValueError:
+            continue
+        usable.append((i, idx))
+    if not usable:
+        return []
+    usable.sort(key=lambda t: str(t[0].get('id') or t[0].get('question') or ''))
+    n = len(usable)
+    off = int(start or 0) % n
+    usable = usable[off:] + usable[:off]
+    stride = max(1, n // want)
+    picked = usable[::stride][:want]
+    return [{'q': i['text'], 'options': i['options'], 'correct': idx,
+             'skill': skill_of(i), 'subject': i.get('subject'),
+             'why': why_of(i)} for i, idx in picked if i.get('text')]
+
+
+def assemble_questions(grade, week_no, target_nodes, block_subjects, bank, authored):
+    """G2 chain: bank items for the week's target nodes -> any item for the
+    week's subjects -> any grade bank item -> authored_bank topic items.
+    Returns (questions, source_note); (None, None) means the grade has no
+    question source at all and the caller must refuse honestly."""
+    items = [i for i in (bank.get('items') or [])
+             if str(i.get('grade')) == str(grade) and i.get('type', 'mc') == 'mc']
+    subj = set(block_subjects or [])
+    pools = (
+        ([i for i in items if i.get('skill_node') in target_nodes],
+         'items.json — target nodes'),
+        ([i for i in items if i.get('subject') in subj],
+         'items.json — week subjects'),
+        (items, 'items.json — grade bank'),
+    )
+    for pool, note in pools:
+        qs = _to_mc(pool, grade, 10,
+                    lambda i: i.get('skill_tag') or i.get('skill_node') or 'skill',
+                    lambda i: 'Practice bank item for %s.' % (i.get('skill_node') or 'this skill'),
+                    start=week_no)
+        if qs:
+            return qs, note
+    flat = []
+    for topic, group in ((authored.get('grades') or {}).get(str(grade)) or {}).items():
+        for it in group or []:
+            flat.append({'_topic': topic, '_item': it})
+    if flat:
+        opts = [{'id': '%s|%s|%s' % (grade, e['_topic'], e['_item'].get('question', '')),
+                 'text': e['_item'].get('question'), 'options': e['_item'].get('options'),
+                 'answer': (e['_item'].get('options') or [None])[
+                     e['_item'].get('correctIndex', 0)]
+                 if 0 <= e['_item'].get('correctIndex', -1) < len(e['_item'].get('options') or [])
+                 else None,
+                 'skill_tag': e['_topic'], 'subject': None,
+                 'skill_node': None, 'type': 'mc'}
+                for e in flat]
+        qs = _to_mc(opts, grade, 10,
+                    lambda i: i.get('skill_tag') or 'practice',
+                    lambda i: 'Authored topic bank item (%s).' % (i.get('skill_tag') or 'practice'),
+                    start=week_no)
+        # authored items carry no why/skill provenance beyond the topic — say so
+        for q in qs:
+            q.pop('subject', None)
+        if qs:
+            return qs, 'authored_bank_items.json — grade topic bank'
+    return None, None
+
+
 def validate_spine(spine, grade, month):
     errs = []
     if spine.get('schema') != 'sprout_demo_v1.spine/1':
@@ -223,7 +553,155 @@ def validate_spine(spine, grade, month):
     return errs
 
 
-# ------------------------------------------------------- day / lesson build
+def build_skeleton_week(grade, persona, key, week_no, wi, tree, floor,
+                        questions, qnote):
+    """--t1 week: day flow from the grade's skeleton shape (G7), topics from
+    skill_tree node labels ordered by priority, every block tiered 'fallback'
+    (no authored lesson exists for this week yet), test assembled through the
+    G2 question chain.  Returns the week dict."""
+    law = MINUTE_LAW[grade]
+    rotation = skeleton_rotation(grade, floor['block_labels'])
+    picked = skeleton_picks(grade, wi, tree, rotation)
+
+    days, target_nodes = [], set()
+    for d in range(1, 5):
+        phase = PHASE[d]
+        mins = law['days'][d - 1]
+        blocks = []
+        for bi, (subject, nid, label) in enumerate(picked[d - 1]):
+            if nid:
+                target_nodes.add(nid)
+            b = {'block': bi + 1, 'subject': subject, 'min': mins[bi],
+                 'activity': activity_for(subject, phase, short(label)),
+                 'tier': 'fallback'}
+            if nid:
+                b['skill_node'] = nid
+            blocks.append(b)
+        total = sum(b['min'] for b in blocks)
+        if total != law['totals'][d - 1]:
+            die('week %d day %d sums to %d, minute law says %d'
+                % (week_no, d, total, law['totals'][d - 1]))
+        days.append({'day': d, 'parent_note': PARENT_NOTES[d],
+                     'blocks': blocks, 'total_min': total})
+
+    # theme/goal: the first two statutory subjects of the week, top-priority labels
+    theme_picks, seen = [], set()
+    for subject, _nid, label in picked[0]:
+        if subject in EXCLUDE or subject in seen:
+            continue
+        seen.add(subject)
+        theme_picks.append(short(label, 34))
+        if len(theme_picks) == 2:
+            break
+    if not theme_picks:
+        theme_picks = ['every required subject']
+    theme = theme_picks[0] + (' and ' + theme_picks[1] if len(theme_picks) > 1 else '')
+    goal = ('Keep %s moving and touch every required subject at least once this week.'
+            % short(picked[0][0][2], 40))
+
+    if not questions:
+        die('%s (technical: no question source for grade %s week %d — items.json '
+            'and authored_bank_items.json are both empty for this grade)'
+            % (GUARDIAN_NOT_READY % grade, grade, week_no))
+    nblocks = sum(len(d['blocks']) for d in days)
+    week = {
+        'week': week_no,
+        'theme': theme,
+        'goal': goal,
+        'grade': str(grade),
+        'persona': persona,
+        'days': days,
+        'lessons': {},
+        'passages': [],
+        'test': {
+            'quizId': '%s_w%d_test' % (key, week_no),
+            'learner': persona,
+            'title': 'Week %d check-in' % week_no,
+            'tapFriendly': True,
+            'format': 'tap-mcq',
+            'minutes': 15,
+            'passScore': 0 if grade == 'preschool' else 0.80,
+            # no authored lesson exists to cover[] against — the tier says so
+            # out loud (validator accepts an explicitly tiered test)
+            'covers': [],
+            'tier': 'fallback',
+            'note': 'Spiral review — questions drawn from the %s; no authored '
+                    'week test yet.' % qnote,
+            'questions': questions,
+        },
+        'quizzes': [],
+        'counts': {'blocks': nblocks, 'lesson_objects': 0, 'sheets': 0},
+        'source': 'build_month_scaffold --t1',
+    }
+    return week, sorted(target_nodes)
+
+
+def complete_week(grade, week, tree, floor, bank, authored):
+    """T1 completion for a week that already has a day flow (authored or E5):
+    never rewrite the author's days/lessons/test — only (a) add the missing
+    statutory blocks and (b) guarantee a non-empty test.  Returns the number
+    of coverage blocks added."""
+    required = statutory_required(grade)
+    blocks = [b for d in week['days'] for b in d['blocks']]
+    missing = [s for s in required if s not in covered_statutory(blocks)]
+    added = 0
+    if missing:
+        picks, unmet = cover_labels(floor['block_labels'], missing)
+        if unmet:
+            die('%s (technical: week %s cannot reach %s — no band label folds to %s)'
+                % (GUARDIAN_NOT_READY % grade, week.get('week'),
+                   ','.join(missing), ','.join(unmet)))
+        topup = COVERAGE_TOPUP.get(grade, 20)
+        wno = int(week.get('week') or 1)
+        for i, label in enumerate(picks):
+            day = week['days'][i % len(week['days'])]
+            ids, labels = topic_pool(tree, grade, label)
+            if ids:
+                nid = ids[(wno - 1) % len(ids)]
+                topic = labels[(wno - 1) % len(ids)]
+            else:
+                nid, topic = None, label.replace('_', ' ') + ' practice'
+            b = {'block': len(day['blocks']) + 1, 'subject': label, 'min': topup,
+                 'activity': activity_for(label, PHASE.get(day['day'], 'Practice'),
+                                          short(topic)),
+                 'tier': 'fallback'}
+            if nid:
+                b['skill_node'] = nid
+            day['blocks'].append(b)
+            day['total_min'] = sum(x['min'] for x in day['blocks'])
+            added += 1
+        counts = week.setdefault('counts', {})
+        counts['blocks'] = sum(len(d['blocks']) for d in week['days'])
+        blocks = [b for d in week['days'] for b in d['blocks']]
+
+    # test floor: an authored week with no items still fails validator gate (d)
+    test = week.get('test') or {}
+    if not (test.get('questions') or test.get('items') or []):
+        rotation = skeleton_rotation(grade, floor['block_labels'])
+        qs, note = assemble_questions(grade, int(week.get('week') or 1),
+                                      set(), {s for row in rotation for s in row},
+                                      bank, authored)
+        if not qs:
+            die('%s (technical: week %s has no test and no question source)'
+                % (GUARDIAN_NOT_READY % grade, week.get('week')))
+        week['test'] = {
+            'quizId': '%s_w%d_test' % (key_of(week), int(week.get('week') or 1)),
+            'learner': week.get('persona'), 'title': 'Week %s check-in' % week.get('week'),
+            'tapFriendly': True, 'format': 'tap-mcq', 'minutes': 15,
+            'passScore': 0 if grade == 'preschool' else 0.80,
+            'covers': [], 'tier': 'fallback',
+            'note': 'Spiral review — questions drawn from the %s.' % note,
+            'questions': qs,
+        }
+    return added
+
+
+def key_of(week):
+    """student key from an existing week (persona is lower-cased in E5 meta)."""
+    return str(week.get('persona') or 'learner').lower()
+
+
+# ------------------------------------------------------------------ spine
 def strand_of(subject):
     return STRAND[subject]
 
@@ -394,23 +872,90 @@ def next_passage_ids(key, existing):
     return n
 
 
-def emit_bundles(content):
-    with open(os.path.join(DATA, 'content.js'), 'w', encoding='utf-8') as f:
-        f.write('window.SPROUT_CONTENT = ' +
-                json.dumps(content, ensure_ascii=False, separators=(',', ':')) + ';\n')
+def emit_bundles(lane, doc):
+    """content lane -> data/content.js; K/1/2/4 lane -> data/grades_k124.js.
+    index.html loads both and app.js picks the lane by grade (k124Grade())."""
+    if lane == 'k124':
+        path = os.path.join(DATA, 'grades_k124.js')
+        var = 'window.SPROUT_CONTENT_K124'
+        head = ('/* K/1/2/4 content lane — generated, do not hand-edit.\n'
+                '   tools/build_e5_content.py seeds weeks 1-2 + topic cards;\n'
+                '   tools/build_month_scaffold.py [--t1] completes or builds later\n'
+                '   weeks. Both merge: a week that already carries a day flow is\n'
+                '   never regenerated, so reruns cannot clobber built weeks. */\n')
+    else:
+        path, var, head = os.path.join(DATA, 'content.js'), 'window.SPROUT_CONTENT', ''
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(head + var + ' = ' +
+                json.dumps(doc, ensure_ascii=False, separators=(',', ':')) + ';\n')
+
+
+def lane_of(grade):
+    """which data lane owns this grade's weeks: E5's grades_k124 or content.json."""
+    if grade in K124_GRADES:
+        return 'k124', os.path.join(DATA, 'grades_k124.json')
+    return 'content', os.path.join(DATA, 'content.json')
+
+
+def week_targets(grade, wi, tree, rotation):
+    """node ids the week's blocks point at — computed through skeleton_picks(),
+    the SAME path build_skeleton_week uses, so the G2 test chain targets exactly
+    the nodes the days bind."""
+    out = set()
+    for day in skeleton_picks(grade, wi, tree, rotation):
+        for _subject, nid, _label in day:
+            if nid:
+                out.add(nid)
+    return sorted(out)
+
+
+def week_bind_report(week):
+    """(blocks bound to a real in-week lesson, {tier/how -> count}) for the
+    build report.  Strips the spine builder's `_bind` marker as it goes."""
+    how, bound = {}, 0
+    for d in week['days']:
+        for b in d['blocks']:
+            h = b.pop('_bind', None)
+            if h is None:
+                t = b.get('tier')
+                if t in ('spiral', 'fallback', 'topic'):
+                    h = t
+                elif b.get('lesson_ref'):
+                    h = 'bound'
+                else:
+                    h = 'untiered'
+            how[h] = how.get(h, 0) + 1
+            if b.get('lesson_ref') and h in ('exact', 'same-week', 'bound'):
+                bound += 1
+    return bound, how
+
+
+def print_report(report):
+    for wn, theme, bound, nl, nq, how, nblocks in report:
+        print('  w%-2d %-42s lessons=%d  bound=%d/%d  test=%dq  %s'
+              % (wn, str(theme)[:42], nl, bound, nblocks, nq, how))
 
 
 def main():
-    ap = argparse.ArgumentParser(description='build one SPROUT grade-month from a spine sheet')
+    ap = argparse.ArgumentParser(
+        description='build one SPROUT grade-month from a spine sheet, or a T1 '
+                    'skeleton month with --t1 (no spine needed)')
     ap.add_argument('--grade', required=True)
     ap.add_argument('--month', required=True, type=int)
     ap.add_argument('--spine', default=None)
+    ap.add_argument('--t1', action='store_true',
+                    help='T1 skeleton mode: topics from skill_tree labels by '
+                         'priority, tests assembled through the items.json G2 '
+                         'chain, blocks tiered fallback. Weeks that already have '
+                         'a day flow are COMPLETED (coverage + test floor), '
+                         'never rewritten; stubs/missing weeks are built fresh.')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--no-validate', action='store_true')
     ap.add_argument('--force', action='store_true',
-                    help='overwrite an existing full week (default: refuse)')
+                    help='overwrite an existing full week (default: refuse; '
+                         'with --t1: rebuild it as a skeleton instead of completing it)')
     ap.add_argument('--sync-subject-union', action='store_true',
-                    help='widen content.grades[].subjects + skill_tree.grade_subjects[] '
+                    help='widen grades[].subjects + skill_tree.grade_subjects[] '
                          'to the union the new weeks need (grade 5 needs this)')
     args = ap.parse_args()
 
@@ -422,116 +967,179 @@ def main():
         die('minute law not defined for grade %s (have %s)'
             % (grade, ', '.join(sorted(MINUTE_LAW))))
 
-    spine_path = args.spine or os.path.join(SPINES, 'g%s_m%d.json' % (grade, month))
-    if not os.path.exists(spine_path):
-        die('spine sheet not found: %s' % spine_path)
-    spine = L(spine_path)
-
-    errs = validate_spine(spine, grade, month)
-    if errs:
-        for e in errs:
-            sys.stderr.write('  * %s\n' % e)
-        die('spine sheet failed %d check(s)' % len(errs))
-
-    content = L(os.path.join(DATA, 'content.json'))
+    # ---- data lane (E5 grades_k124 vs content.json) + G1 pre-flight.
+    # data_floor runs FIRST: a band that cannot cover its statutory list must
+    # refuse with a guardian-safe sentence before any week object is built.
+    lane, doc_path = lane_of(grade)
+    doc = L(doc_path)
     tree = L(os.path.join(DATA, 'skill_tree.json'))
-    meta = content['grades'].get(grade) or {}
+    floor = data_floor(grade, tree)
+    meta = (doc.get('grades') or {}).get(grade) or {}
     persona, key = meta.get('persona'), meta.get('student_key')
     if not key:
-        die('content.json has no persona/student_key for grade %s' % grade)
+        die('%s (technical: %s carries no persona/student_key)'
+            % (GUARDIAN_NOT_READY % grade, os.path.basename(doc_path)))
+    weeks_now = (doc.get('weeks') or {}).setdefault(grade, {})
 
-    weeks_now = content['weeks'].setdefault(grade, {})
-    week_numbers = [int(w) for w in spine['week_numbers']]
-    for wn in week_numbers:
-        existing = weeks_now.get(str(wn))
-        if existing and not existing.get('topic_only') and not args.force:
-            die('week %d already holds a full day flow — rerun with --force to overwrite' % wn)
+    bank = authored = None
+    if args.t1:
+        bank = L(os.path.join(DATA, 'items.json'))
+        authored = L(os.path.join(DATA, 'authored_bank_items.json'))
 
-    # spiral pool = every lesson authored in an earlier week of this grade
-    spiral_pool = {}
-    for wn in sorted(weeks_now, key=int):
-        if int(wn) >= week_numbers[0]:
-            continue
-        for lid, les in (weeks_now[wn].get('lessons') or {}).items():
-            spiral_pool[lid] = les
-
-    pcount = next_passage_ids(key, weeks_now)
     built, bindings, week_bindings, report = [], [], {}, []
-    for wi, wn in enumerate(week_numbers):
-        pcount += 1
-        passage_id = '%s_p%d' % (key, pcount)
-        week, lessons_src = build_week(grade, persona, key, wn, spine, wi,
-                                       spiral_pool, passage_id)
-        weeks_now[str(wn)] = week
-        built.append(str(wn))
-        week_bindings[str(wn)] = generator_bindings(grade, key, wn, spine, wi,
-                                                    lessons_src, tree)
-        bindings += week_bindings[str(wn)]
-        for lid, les in week['lessons'].items():          # spiral pool grows
-            spiral_pool[lid] = les
-        how = {}
-        for d in week['days']:
-            for b in d['blocks']:
-                how[b.get('_bind')] = how.get(b.get('_bind'), 0) + 1
-                b.pop('_bind', None)
-        bound = how.get('exact', 0) + how.get('same-week', 0)
-        report.append((wn, week['theme'], bound, len(week['lessons']),
-                       len(week['test']['questions']), how))
+
+    if args.t1:
+        # ---- T1: complete authored weeks, skeleton-build the rest (G7 shapes)
+        rotation = skeleton_rotation(grade, floor['block_labels'])
+        for wi, wn in enumerate([(month - 1) * 4 + i for i in range(1, 5)]):
+            existing = weeks_now.get(str(wn))
+            if (isinstance(existing, dict) and isinstance(existing.get('days'), list)
+                    and existing['days'] and not args.force):
+                added = complete_week(grade, existing, tree, floor, bank, authored)
+                bound, how = week_bind_report(existing)
+                built.append(str(wn))
+                report.append((wn, existing.get('theme') or '(untitled)', bound,
+                               len(existing.get('lessons') or {}),
+                               len((existing.get('test') or {}).get('questions') or []),
+                               how, sum(len(d['blocks']) for d in existing['days'])))
+                if added:
+                    print('  w%-2d preserved: %d statutory coverage block(s) added'
+                          % (wn, added))
+                continue
+            targets = week_targets(grade, wi, tree, rotation)
+            subjects = sorted({s for row in rotation for s in row} - EXCLUDE)
+            questions, qnote = assemble_questions(grade, wn, targets, subjects,
+                                                  bank, authored)
+            week, _targets = build_skeleton_week(grade, persona, key, wn, wi, tree,
+                                                 floor, questions, qnote)
+            weeks_now[str(wn)] = week
+            built.append(str(wn))
+            bound, how = week_bind_report(week)
+            report.append((wn, week['theme'], bound, len(week['lessons']),
+                           len(week['test']['questions']), how,
+                           sum(len(d['blocks']) for d in week['days'])))
+        # 9/9 is a hard constraint — assert it here, before anything is written,
+        # computed exactly the way validate_readiness.js gate (a) computes it.
+        for wn in built:
+            blocks = [b for d in weeks_now[wn]['days'] for b in d['blocks']]
+            missing = [s for s in statutory_required(grade)
+                       if s not in covered_statutory(blocks)]
+            if missing:
+                die('week %s built without 9/9 coverage — missing %s'
+                    % (wn, ', '.join(missing)))
+    else:
+        # ---- authored-spine lane (T2): only grades whose band uses the 4x6
+        # BLOCK_SUBJECTS vocabulary have a spine schema; K/1/2/preschool do not.
+        shape_days, shape_blocks = MINUTE_LAW[grade]['shape']
+        if shape_blocks != 6 or grade in ('K', '1', '2', 'preschool'):
+            die('grade %s has no authored-spine lane (G7 skeleton %d days x %d '
+                'blocks) — rerun with --t1' % (grade, shape_days, shape_blocks))
+        spine_path = args.spine or os.path.join(SPINES, 'g%s_m%d.json' % (grade, month))
+        if not os.path.exists(spine_path):
+            die('spine sheet not found: %s' % spine_path)
+        spine = L(spine_path)
+        errs = validate_spine(spine, grade, month)
+        if errs:
+            for e in errs:
+                sys.stderr.write('  * %s\n' % e)
+            die('spine sheet failed %d check(s)' % len(errs))
+
+        week_numbers = [int(w) for w in spine['week_numbers']]
+        for wn in week_numbers:
+            existing = weeks_now.get(str(wn))
+            if existing and not existing.get('topic_only') and not args.force:
+                die('week %d already holds a full day flow — rerun with --force '
+                    'to overwrite (or use --t1 to complete it in place)' % wn)
+
+        # spiral pool = every lesson authored in an earlier week of this grade
+        spiral_pool = {}
+        for wn in sorted(weeks_now, key=int):
+            if int(wn) >= week_numbers[0]:
+                continue
+            for lid, les in (weeks_now[wn].get('lessons') or {}).items():
+                spiral_pool[lid] = les
+
+        pcount = next_passage_ids(key, weeks_now)
+        for wi, wn in enumerate(week_numbers):
+            pcount += 1
+            passage_id = '%s_p%d' % (key, pcount)
+            week, lessons_src = build_week(grade, persona, key, wn, spine, wi,
+                                           spiral_pool, passage_id)
+            weeks_now[str(wn)] = week
+            built.append(str(wn))
+            week_bindings[str(wn)] = generator_bindings(grade, key, wn, spine, wi,
+                                                        lessons_src, tree)
+            bindings += week_bindings[str(wn)]
+            for lid, les in week['lessons'].items():          # spiral pool grows
+                spiral_pool[lid] = les
+            bound, how = week_bind_report(week)
+            report.append((wn, week['theme'], bound, len(week['lessons']),
+                           len(week['test']['questions']), how,
+                           sum(len(d['blocks']) for d in week['days'])))
 
     # ---- subject-union coupling: validate_engine gate 3 compares
-    # content.grades[g].subjects (+ block subjects) to skill_tree.grade_subjects[g]
-    blocks_union = set(content['grades'][grade].get('subjects') or [])
+    # grades[g].subjects (+ block subjects) to skill_tree.grade_subjects[g]
+    blocks_union = set((doc['grades'].get(grade) or {}).get('subjects') or [])
     for wn in built:
         for d in weeks_now[wn]['days']:
             for b in d['blocks']:
                 blocks_union.add(b['subject'])
     want = sorted(blocks_union)
     have = sorted(tree['grade_subjects'].get(grade) or [])
-    if want != have:
-        if not args.sync_subject_union:
-            die('new weeks need subject union %s but skill_tree.grade_subjects[%s] is %s '
-                '(validate_engine gate 3) — rerun with --sync-subject-union'
-                % (want, grade, have))
-        tree['grade_subjects'][grade] = want
-        content['grades'][grade]['subjects'] = want
-        W(os.path.join(DATA, 'skill_tree.json'), tree)
-        print('synced subject union for grade %s -> %s' % (grade, want))
+    sync_union = want != have
+    if sync_union and not args.sync_subject_union:
+        die('new weeks need subject union %s but skill_tree.grade_subjects[%s] is %s '
+            '(validate_engine gate 3) — rerun with --sync-subject-union'
+            % (want, grade, have))
 
-    # each week carries its own bindings (validator + T2 evidence) ...
+    # each spine-built week carries its own bindings (validator + T2 evidence) ...
     for wn in built:
-        weeks_now[wn]['generators'] = week_bindings[wn]
+        if wn in week_bindings:
+            weeks_now[wn]['generators'] = week_bindings[wn]
 
     # ... but app.js registryFor() reads the grade's WEEK 1 registry only,
     # so every new lesson binding is also appended there (existing pattern:
-    # "generator configs ship with w1 and are reused").
-    if '1' not in weeks_now:
-        die('grade %s has no week 1 — cannot register generator bindings' % grade)
-    reg = weeks_now['1'].setdefault('generators', [])
-    known = {g['id'] for g in reg}
-    added = 0
-    for g in bindings:
-        if g['id'] not in known:
-            reg.append(g)
-            known.add(g['id'])
-            added += 1
+    # "generator configs ship with w1 and are reused").  T1 weeks have no
+    # lesson bindings, so this stays empty for --t1.
+    added_registry = 0
+    if bindings:
+        if '1' not in weeks_now:
+            die('grade %s has no week 1 — cannot register generator bindings' % grade)
+        reg = weeks_now['1'].setdefault('generators', [])
+        known = {g['id'] for g in reg}
+        for g in bindings:
+            if g['id'] not in known:
+                reg.append(g)
+                known.add(g['id'])
+                added_registry += 1
 
     if args.dry_run:
-        print('DRY RUN — nothing written. Would build grade %s month %d weeks %s'
-              % (grade, month, built))
-        for wn, theme, bound, nl, nq, how in report:
-            print('  w%-2d %-42s lessons=%d  bound=%d/24  test=%dq  %s'
-                  % (wn, theme[:42], nl, bound, nq, how))
+        print('DRY RUN — nothing written. Would build grade %s month %d weeks %s '
+              '(lane: %s%s)' % (grade, month, ','.join(built), lane,
+                                ', --t1' if args.t1 else ''))
+        print_report(report)
+        if sync_union:
+            print('  would sync subject union for grade %s -> %s' % (grade, want))
         return
 
-    W(os.path.join(DATA, 'content.json'), content)
-    emit_bundles(content)
-    print('wrote grade %s month %d -> weeks %s (content.json + content.js)'
-          % (grade, month, ','.join(built)))
-    for wn, theme, bound, nl, nq, how in report:
-        print('  w%-2d %-42s lessons=%d  bound=%d/24  test=%dq  %s'
-              % (wn, theme[:42], nl, bound, nq, how))
-    print('  generator bindings: %d this batch, %d newly appended to week-1 registry'
-          % (len(bindings), added))
+    if sync_union:
+        tree['grade_subjects'][grade] = want
+        doc['grades'][grade]['subjects'] = want
+        W(os.path.join(DATA, 'skill_tree.json'), tree)
+        print('synced subject union for grade %s -> %s' % (grade, want))
+
+    gen = str(doc.get('generated_by') or '')
+    scaffold_tag = 'tools/build_month_scaffold.py'
+    if scaffold_tag not in gen:
+        doc['generated_by'] = (gen + ' + ' + scaffold_tag).strip(' +')
+    W(doc_path, doc)
+    emit_bundles(lane, doc)
+    print('wrote grade %s month %d -> weeks %s (%s lane: %s)'
+          % (grade, month, ','.join(built), lane, os.path.basename(doc_path)))
+    print_report(report)
+    if bindings:
+        print('  generator bindings: %d this batch, %d newly appended to week-1 '
+              'registry' % (len(bindings), added_registry))
 
     if not args.no_validate:
         r = subprocess.run(['node', os.path.join(ROOT, 'tools', 'validate_readiness.js')],

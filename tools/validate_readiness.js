@@ -243,7 +243,12 @@ function checkWeek(grade, month, wno, wk) {
         (Array.isArray(test.questions) ? 'questions' : 'items') + '.length ' + qlist.length);
     }
     if (!qlist.length) integrity.push('d/test: no questions/items');
-    if (Array.isArray(test.questions) && test.questions.length && !(test.covers || []).length) {
+    /* an empty covers[] is only drift when the test CLAIMS an authored week:
+       a test explicitly tiered spiral/fallback (G2 — skeleton or rebind) has
+       no in-week lesson to cover[] against by construction. */
+    const testTier = (test.tier && String(test.tier).toLowerCase()) || null;
+    if (Array.isArray(test.questions) && test.questions.length && !(test.covers || []).length &&
+      ['spiral', 'fallback', 'topic'].indexOf(testTier) < 0) {
       add('WARN', 'd/test-covers', grade, month, wno, 'test ' + test.quizId + ' has questions but an empty covers[] (unbound test)');
     }
     /* preschool = show-me, NO pass mark (roadmap §3 STEP 3); 0 == no threshold */
