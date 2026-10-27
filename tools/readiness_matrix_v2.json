@@ -1,6 +1,6 @@
 {
  "schema": "k6_readiness/v2",
- "generated_at": "2026-10-27T01:19:23.249Z",
+ "generated_at": "2026-10-27T01:25:59.281Z",
  "source": "tools/validate_readiness.js",
  "axes": {
   "grades": [
