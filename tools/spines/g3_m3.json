@@ -1,0 +1,2383 @@
+{
+ "schema": "sprout_demo_v1.spine/1",
+ "grade": "3",
+ "month": 3,
+ "week_numbers": [
+  9,
+  10,
+  11,
+  12
+ ],
+ "themes": [
+  "Quarter 1 Mastery Review",
+  "Division Facts & Sharing",
+  "Place Value & Rounding",
+  "Fractions Intro"
+ ],
+ "goals": [
+  "Review quarter 1, hold a spelling bee, and launch the science fair.",
+  "Learn division facts as sharing and write character-trait evidence.",
+  "Read and round four-digit numbers and use maps well.",
+  "Name unit fractions and compare them with pictures."
+ ],
+ "subjects": {
+  "math": [
+   "mixed facts, regrouped sums and word problems",
+   "division facts as sharing and fact families",
+   "four-digit place value, expanded form and rounding",
+   "unit fractions and comparing fractions with pictures"
+  ],
+  "reading": [
+   "three short passages with mixed comprehension",
+   "character traits in a story",
+   "maps and legends: text features and captions",
+   "compare and contrast across two texts"
+  ],
+  "spelling": [
+   "spelling bee practice on your missed words",
+   "prefixes: un-, re-, pre-",
+   "suffixes: -s, -es, -est",
+   "double consonant before -ed and -ing"
+  ],
+  "science": [
+   "the science fair: choosing a question",
+   "plant and animal life cycles",
+   "Earth's surface: land and water",
+   "states of matter"
+  ],
+  "history": [
+   "quarter 1 review: helpers, explorers, our state",
+   "inventors and inventions",
+   "geography and maps of our country",
+   "ancient peoples and rivers"
+  ],
+  "civics": [
+   "symbols of our country and what each stands for",
+   "ways a kid can help at home, school and in town",
+   "who makes a rule for a school or a town",
+   "jobs and rules that make a community work"
+  ],
+  "literature": [
+   "our reader: the problem and the solution",
+   "our reader: why the character does what they do",
+   "our reader: verses, stanzas and rhyme",
+   "our reader: the lesson a story teaches"
+  ],
+  "writing": [
+   "what I learned this quarter",
+   "a trait and the proof from the story",
+   "a map feature I would add to town",
+   "comparing two things, each sentence with a because"
+  ],
+  "english_grammar": [
+   "verb tense: past, present and future",
+   "irregular past-tense verbs",
+   "subjects and verbs that agree",
+   "adjectives and adverbs that compare"
+  ]
+ },
+ "coding": [
+  "sequence, repeat and condition in one program",
+  "a loop that shares 24 items into groups",
+  "a program that prints place-value labels",
+  "a drawing that shades a fraction shape"
+ ],
+ "lessons": [
+  {
+   "subject": "math",
+   "title": "Mixed Facts, Sums and Word Problems",
+   "emoji": "🔢",
+   "minutes": 65,
+   "summary": "Three categories in one sitting: facts, regrouped sums and word problems, sorted then re-learned.",
+   "explain": "Quarter review mixes skills on purpose, because real work never arrives sorted. Do the three categories in the order that costs you least: facts first while your head is fresh, then regrouped sums where careful column work matters, then word problems where you must first decide the operation. For a word problem, read it twice and underline the clue word before you compute. Finish by re-learning the two you missed, the same day, while the mistake is still specific.",
+   "examples": [
+    {
+     "q": "The clue word each makes shows which operation?",
+     "a": "Each and every often signal multiplication.",
+     "steps": [
+      "Underline the clue.",
+      "Name the operation.",
+      "Then compute."
+     ]
+    },
+    {
+     "q": "You missed 9 x 7. What now?",
+     "a": "Draw 9 rows of 7, count it, say the fact twice.",
+     "steps": [
+      "See it.",
+      "Say it.",
+      "Re-test tomorrow."
+     ]
+    },
+    {
+     "q": "A word problem and a bare number ask for the same thing. What differs?",
+     "a": "The word problem asks you to choose the operation first.",
+     "steps": [
+      "Find the clue.",
+      "Choose.",
+      "Compute."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Each of 4 baskets holds 6 apples. How many apples?",
+     "options": [
+      "24",
+      "10",
+      "18",
+      "28"
+     ],
+     "correctIndex": 0,
+     "hint": "Each signals equal groups.",
+     "praise": "Yes! Four equal groups of six."
+    },
+    {
+     "question": "7 x 8 = ?",
+     "options": [
+      "56",
+      "54",
+      "48",
+      "64"
+     ],
+     "correctIndex": 0,
+     "hint": "Count by eights seven times.",
+     "praise": "Yes! 8, 16, 24, 32, 40, 48, 56."
+    },
+    {
+     "question": "Which step comes first with a word problem?",
+     "options": [
+      "Find the clue that names the operation",
+      "Multiply immediately",
+      "Guess",
+      "Skip to the answer"
+     ],
+     "correctIndex": 0,
+     "hint": "Choose before you compute.",
+     "praise": "Yes! The clue decides the operation."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Sort eight review items into facts, sums and word problems.",
+     "answer": "Eight items in three labelled piles.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Solve three word problems and underline the clue in each.",
+     "answer": "Three correct solutions, each with its clue underlined.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Re-learn the two facts you missed, with proof.",
+     "answer": "An array, family or counter drawing for each missed fact.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write one word problem of your own and swap it for a solution.",
+     "answer": "A solvable problem whose clue clearly names the operation.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Weekly ELA: Mixed Passages, Mixed Questions",
+   "emoji": "📖",
+   "minutes": 60,
+   "summary": "Three short passages, three question types, one habit: point to the line that proves it.",
+   "explain": "Mixed review asks you to switch modes, and switching is the skill. Passage one is informational, so look for structure. Passage two is literary, so look for character and motive. Passage three is practical, so look for directions. For every question do the same thing: answer in your head, then point to the line in the text that proves it. If you cannot point, you have guessed, and a guess that happens to be right is still a guess.",
+   "examples": [
+    {
+     "q": "A question about why a character acted looks for...",
+     "a": "Motive, found in what they said, wanted or feared.",
+     "steps": [
+      "Find the action.",
+      "Find the reason near it."
+     ]
+    },
+    {
+     "q": "A question about a direction looks for...",
+     "a": "The exact step in the instructions.",
+     "steps": [
+      "Locate the step number.",
+      "Read it literally."
+     ]
+    },
+    {
+     "q": "Your answer and the text disagree. What now?",
+     "a": "Trust the text and re-read the sentence you skipped.",
+     "steps": [
+      "Re-read.",
+      "Re-answer.",
+      "Note what misled you."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Proving an answer means...",
+     "options": [
+      "pointing to the line in the text that supports it",
+      "saying it loudly",
+      "picking the longest option",
+      "guessing twice"
+     ],
+     "correctIndex": 0,
+     "hint": "Evidence is a line you can point to.",
+     "praise": "Yes! Point, then answer."
+    },
+    {
+     "question": "In a literary passage, motive is...",
+     "options": [
+      "why a character does something",
+      "where it happens",
+      "when it happens",
+      "who is narrating"
+     ],
+     "correctIndex": 0,
+     "hint": "Motive is the reason behind the action.",
+     "praise": "Yes! Say, want or fear gives the motive."
+    },
+    {
+     "question": "In practical text you should read directions...",
+     "options": [
+      "literally, step by step",
+      "for the feeling",
+      "backwards",
+      "only the first line"
+     ],
+     "correctIndex": 0,
+     "hint": "Instructions mean exactly what they say.",
+     "praise": "Yes! Literal reading is the right mode."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Label each of the three passages: informational, literary or practical.",
+     "answer": "Three correct labels with one reason each.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Answer five questions and write the proving line beside each.",
+     "answer": "Five answers each paired with a line from the text.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Copy one sentence you nearly got wrong and say why.",
+     "answer": "The sentence plus the misreading that tripped you.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write a main idea sentence for passage two.",
+     "answer": "One sentence the details of passage two would prove.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "The Science Fair: Choosing a Question",
+   "emoji": "🔬",
+   "minutes": 30,
+   "summary": "Turn a curiosity into a question you can actually test with a fair comparison.",
+   "explain": "A science fair project lives or dies on the question. A good question names one thing you change, one thing you measure, and keeps everything else the same, because a fair test changes only one thing at a time. Which plant grows tallest is testable; which plant is nicest is not. Write your question first, then predict an answer with a reason, then design the comparison. If two things change at once and the result shifts, you will never know which change did it.",
+   "examples": [
+    {
+     "q": "Which plant grows tallest in one week is good because...",
+     "a": "One change, one measure, a fixed time.",
+     "steps": [
+      "Name what changes.",
+      "Name what you measure."
+     ]
+    },
+    {
+     "q": "Which plant is the nicest fails because...",
+     "a": "Nicest cannot be measured the same way twice.",
+     "steps": [
+      "Ask what you would record.",
+      "If nothing, rewrite the question."
+     ]
+    },
+    {
+     "q": "Two things change at once. What do you do?",
+     "a": "Redo it with one change, or you cannot attribute the result.",
+     "steps": [
+      "Identify both changes.",
+      "Remove one."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "A fair test changes...",
+     "options": [
+      "only one thing at a time",
+      "everything at once",
+      "nothing at all",
+      "the result first"
+     ],
+     "correctIndex": 0,
+     "hint": "Otherwise you cannot say what caused what.",
+     "praise": "Yes! One change, one result."
+    },
+    {
+     "question": "Which is a testable question?",
+     "options": [
+      "Does more light make a bean plant taller?",
+      "Is purple the best colour?",
+      "Are beans nicer than peas?",
+      "Do plants like music?"
+     ],
+     "correctIndex": 0,
+     "hint": "Look for something you can measure.",
+     "praise": "Yes! Taller is measurable in centimetres."
+    },
+    {
+     "question": "Your prediction should include...",
+     "options": [
+      "a reason for the guess",
+      "only the guess",
+      "nothing",
+      "a prize"
+     ],
+     "correctIndex": 0,
+     "hint": "A prediction is a claim plus why.",
+     "praise": "Yes! The reason is the science."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Write your testable question and name what changes and what you measure.",
+     "answer": "One question with the changed variable and the measured variable named.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write your prediction and the reason behind it.",
+     "answer": "A prediction sentence plus a because.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "List three things you will keep the same for every trial.",
+     "answer": "Three controlled items held constant across trials.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Say how you will record the results.",
+     "answer": "A table or graph plan with what each column holds.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Quarter 1 Review: Helpers, Explorers, Our State",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "summary": "Rebuild the quarter on one timeline and defend three events with sources.",
+   "explain": "By now the quarter has three strands: the people who keep a town running, the voyages that reshaped the map, and our own state's story. Lay them on one timeline so the strands interleave instead of sitting in separate boxes. Then pick three events, one per strand, and defend each with a source. If two sources disagree, say so and say which you trust. Review is where you discover that a fact you recalled is not the same as a fact you can source.",
+   "examples": [
+    {
+     "q": "Why put all three strands on one timeline?",
+     "a": "So you can see what happened while other things were happening.",
+     "steps": [
+      "Draw one axis.",
+      "Place all three strands on it."
+     ]
+    },
+    {
+     "q": "Two sources give different dates. What do you write?",
+     "a": "Both dates and which you trust, with your reason.",
+     "steps": [
+      "Record the disagreement.",
+      "State your preference and why."
+     ]
+    },
+    {
+     "q": "What does our state's story add to the national one?",
+     "a": "Local detail: who settled where, and what the land allowed.",
+     "steps": [
+      "Find the local event.",
+      "Link it to the wider one."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "The strongest defence of a historical claim is...",
+     "options": [
+      "a dated source you can point to",
+      "a confident tone",
+      "a long answer",
+      "a picture with no caption"
+     ],
+     "correctIndex": 0,
+     "hint": "Evidence beats emphasis.",
+     "praise": "Yes! Date it and show it."
+    },
+    {
+     "question": "Interleaving the strands on one timeline shows...",
+     "options": [
+      "what happened at the same time as other events",
+      "only the longest strand",
+      "nothing new",
+      "the alphabet"
+     ],
+     "correctIndex": 0,
+     "hint": "One axis, several strands.",
+     "praise": "Yes! Contemporaneity is the payoff."
+    },
+    {
+     "question": "Local history matters because...",
+     "options": [
+      "it explains what the land and the people allowed",
+      "it is shorter",
+      "it is easier",
+      "it has no sources"
+     ],
+     "correctIndex": 0,
+     "hint": "Think about place.",
+     "praise": "Yes! Geography shapes what a town can become."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Place nine events from the quarter on one timeline across three strands.",
+     "answer": "Nine dated events, three per strand, correctly ordered.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Defend three events with a named source each.",
+     "answer": "Three events, each with a source and a reason for trusting it.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Record one disagreement between sources and your judgement.",
+     "answer": "Both claims plus which you trust and why.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write one sentence linking our state's story to the national one.",
+     "answer": "A sentence naming a real connection.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "math",
+   "title": "Division Facts as Sharing",
+   "emoji": "🔢",
+   "minutes": 65,
+   "summary": "Split counters into equal groups, write the division, then flip it back into a family.",
+   "explain": "Division is sharing or grouping, and both readings are the same arithmetic seen from two sides. Share 24 counters into 4 piles and you get 6 in each. Ask how many piles of 4 you can make from 24 and you get 6 piles. Either way the answer is 6, and every division sits inside a fact family you already know: 4 x 6 = 24, 6 x 4 = 24, 24 / 4 = 6, 24 / 6 = 4. Draw it before you write it, because a picture catches a wrong answer faster than a second look.",
+   "examples": [
+    {
+     "q": "Share 24 counters into 4 equal groups.",
+     "a": "6 in each group.",
+     "steps": [
+      "Deal the counters round by round.",
+      "Count one pile."
+     ]
+    },
+    {
+     "q": "Write the family for 6, 4 and 24.",
+     "a": "6 x 4 = 24, 4 x 6 = 24, 24 / 4 = 6, 24 / 6 = 4.",
+     "steps": [
+      "Two multiplications.",
+      "Two divisions."
+     ]
+    },
+    {
+     "q": "35 / 5 = ?",
+     "a": "7, because 5 x 7 = 35.",
+     "steps": [
+      "Find the fact you know.",
+      "Flip it."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "18 shared into 3 equal groups gives...",
+     "options": [
+      "6",
+      "5",
+      "7",
+      "21"
+     ],
+     "correctIndex": 0,
+     "hint": "Ask how many in each pile.",
+     "praise": "Yes! Three piles of six make eighteen."
+    },
+    {
+     "question": "Which division belongs to 8 x 5 = 40?",
+     "options": [
+      "40 / 5 = 8",
+      "40 - 5 = 35",
+      "8 + 5 = 13",
+      "40 + 5 = 45"
+     ],
+     "correctIndex": 0,
+     "hint": "Dividing by one factor returns the other.",
+     "praise": "Yes! 40 shared into 5 groups gives 8."
+    },
+    {
+     "question": "A remainder is...",
+     "options": [
+      "what is left over after equal sharing",
+      "an error",
+      "the answer",
+      "the question"
+     ],
+     "correctIndex": 0,
+     "hint": "Equal sharing does not always use everything.",
+     "praise": "Yes! Leftovers are the remainder."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw 24 counters shared into 4 groups and label each group.",
+     "answer": "Four groups of six, with the total marked.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write the full fact family for 5, 7 and 35.",
+     "answer": "5 x 7 = 35, 7 x 5 = 35, 35 / 5 = 7, 35 / 7 = 5.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Solve six division facts and draw a picture for two of them.",
+     "answer": "Six correct quotients with two supporting drawings.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write one sharing word problem that has a remainder.",
+     "answer": "A problem whose answer leaves a stated leftover.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Weekly ELA: Character Traits and Proof",
+   "emoji": "📖",
+   "minutes": 60,
+   "summary": "Read a story for how the character behaves, then carry the vocabulary into spelling and writing.",
+   "explain": "A trait is not a feeling that passes; it is a pattern that repeats. To name one, gather two or three moments where the character does something similar without being told to. Then write the trait and the proof together, because a trait without evidence is just your opinion of somebody you have never met. Use the story's own words as your proof, quote a short line if it helps, and check that the line could not equally support the opposite trait.",
+   "examples": [
+    {
+     "q": "The character returns a wallet and waits twenty minutes in the rain. Trait?",
+     "a": "Honest, or conscientious.",
+     "steps": [
+      "Find the repeated behaviour.",
+      "Name it in one word."
+     ]
+    },
+    {
+     "q": "Could that line also prove the opposite trait?",
+     "a": "If yes, it is weak evidence; find a better line.",
+     "steps": [
+      "Try the opposite trait.",
+      "Discard the line if it fits both."
+     ]
+    },
+    {
+     "q": "Is feeling scared a trait?",
+     "a": "Not by itself; everyone feels scared. What they do next is the trait.",
+     "steps": [
+      "Separate feeling from action.",
+      "Use the action."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "A character trait is best shown by...",
+     "options": [
+      "a pattern of what they do",
+      "what colour they wear",
+      "their age",
+      "the narrator's mood"
+     ],
+     "correctIndex": 0,
+     "hint": "Look for repetition across the story.",
+     "praise": "Yes! Repeated behaviour is the evidence."
+    },
+    {
+     "question": "Evidence for a trait should be...",
+     "options": [
+      "a specific action or line from the story",
+      "your opinion",
+      "the cover art",
+      "the page number"
+     ],
+     "correctIndex": 0,
+     "hint": "Quote the text, not your feeling.",
+     "praise": "Yes! Specific and quotable."
+    },
+    {
+     "question": "Which trait word fits a character who waits in the rain for a stranger?",
+     "options": [
+      "principled",
+      "careless",
+      "impatient",
+      "dull"
+     ],
+     "correctIndex": 0,
+     "hint": "They stuck to what was right.",
+     "praise": "Yes! Doing the right thing at a cost."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Name one trait of this week's character and write two moments that prove it.",
+     "answer": "A trait word plus two moments from the text.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Copy one line of dialogue that proves the trait.",
+     "answer": "A short direct quote from the story.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Write four sentences: the trait, the proof, why it matters, and how it changes.",
+     "answer": "Four sentences in that order, all text-based.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Argue the opposite trait using different evidence, then say which you accept.",
+     "answer": "A counter-argument and a judgement with a reason.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "Plant and Animal Life Cycles",
+   "emoji": "🔬",
+   "minutes": 30,
+   "summary": "Compare four cycles side by side and name the stage each organism starts from.",
+   "explain": "Every life cycle is the same loop with different stations: birth or germination, growth, reproduction, and the next generation. A bean seed germinates in soil, grows roots and leaves, flowers, and drops new seeds. A butterfly hatches as a caterpillar, pupates, and emerges with wings. A frog starts in water with gills and later breathes air. Laying the cycles side by side shows what changes and what stays, and the question to ask at each stage is what this stage is for.",
+   "examples": [
+    {
+     "q": "What is a chrysalis for?",
+     "a": "Rebuilding the body from caterpillar into butterfly.",
+     "steps": [
+      "Name the stage.",
+      "Say what it accomplishes."
+     ]
+    },
+    {
+     "q": "Where does a bean cycle start?",
+     "a": "A seed in soil, with water and warmth.",
+     "steps": [
+      "Find the starting form.",
+      "Name what it needs."
+     ]
+    },
+    {
+     "q": "Why call it a cycle rather than a line?",
+     "a": "Because it returns to where it began.",
+     "steps": [
+      "Check the end form.",
+      "Compare it to the start."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "The correct order for a butterfly is...",
+     "options": [
+      "egg, caterpillar, chrysalis, butterfly",
+      "butterfly, egg, caterpillar, chrysalis",
+      "caterpillar, egg, butterfly, chrysalis",
+      "chrysalis, egg, butterfly, caterpillar"
+     ],
+     "correctIndex": 0,
+     "hint": "Start with the egg.",
+     "praise": "Yes! Each stage sets up the next."
+    },
+    {
+     "question": "A tadpole breathes with...",
+     "options": [
+      "gills",
+      "lungs only",
+      "feathers",
+      "scales"
+     ],
+     "correctIndex": 0,
+     "hint": "It lives in water first.",
+     "praise": "Yes! Gills in water, lungs on land."
+    },
+    {
+     "question": "The purpose of a flower in a plant's cycle is...",
+     "options": [
+      "to make seeds for the next generation",
+      "to attract you",
+      "to drink faster",
+      "nothing"
+     ],
+     "correctIndex": 0,
+     "hint": "Think about what comes after the flower.",
+     "praise": "Yes! Fruit and seed follow the flower."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw four stages each for a bean and a butterfly.",
+     "answer": "Eight labelled stages, correctly ordered.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Write what each stage is for in one sentence.",
+     "answer": "One purpose sentence per stage.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Make a table comparing the plant and animal cycles.",
+     "answer": "A two-column table of shared and differing stages.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain one difference between a frog cycle and a bird cycle.",
+     "answer": "Three sentences naming gills versus hard-shelled eggs, accurately.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Inventors and Inventions",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "summary": "Date the invention, name the need it answered, and read the notebook behind it.",
+   "explain": "Inventions are dated evidence: they tell you what a society could do and what it wanted done. Match each invention to the problem it answered, because inventions rarely appear from nowhere; they appear when an old answer stops being good enough. Then look for the notebook. The failures are the historical record, and a stack of dated mistakes usually explains a breakthrough better than a story about genius. Ask always who could afford the invention, since a thing only changes a country once people can get it.",
+   "examples": [
+    {
+     "q": "What does an invention date tell a historian?",
+     "a": "What a society could build and what it needed.",
+     "steps": [
+      "Read the date.",
+      "Name the need."
+     ]
+    },
+    {
+     "q": "Why value the failure notebook?",
+     "a": "It shows the thinking, not only the result.",
+     "steps": [
+      "Find the dated entries.",
+      "Read what each one changed."
+     ]
+    },
+    {
+     "q": "Why ask who could afford it?",
+     "a": "Because reach determines whether it changed anything.",
+     "steps": [
+      "Name the price.",
+      "Name who paid it."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "An invention is most useful to a historian as...",
+     "options": [
+      "dated evidence of what a society could do",
+      "a nice object",
+      "proof of genius",
+      "a replacement for sources"
+     ],
+     "correctIndex": 0,
+     "hint": "Dates are the value.",
+     "praise": "Yes! It dates the capability."
+    },
+    {
+     "question": "Inventions usually appear when...",
+     "options": [
+      "an old answer stops being good enough",
+      "someone is bored",
+      "paper is cheap",
+      "nothing changes"
+     ],
+     "correctIndex": 0,
+     "hint": "Look for the failing predecessor.",
+     "praise": "Yes! Need pulls the invention into being."
+    },
+    {
+     "question": "The failure notebook matters because it shows...",
+     "options": [
+      "the thinking behind the result",
+      "only the success",
+      "the price",
+      "nothing"
+     ],
+     "correctIndex": 0,
+     "hint": "Process, not product.",
+     "praise": "Yes! It records what was tried and why."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "For three inventions, write: date, need answered, who could afford it.",
+     "answer": "Three labelled triples that match the lesson.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Reconstruct four dated failures from the notebook example.",
+     "answer": "Four dated entries with what each changed.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Add three inventions to a timeline and read the dates back.",
+     "answer": "Three dated placements in correct order.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Answer in three sentences: how does an invention change a country?",
+     "answer": "Three sentences covering capability, cost and reach.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "math",
+   "title": "Four-Digit Place Value and Rounding",
+   "emoji": "🔢",
+   "minutes": 65,
+   "summary": "Read and write four-digit numbers in every form, then round them to the nearest 100 and 1,000.",
+   "explain": "Place value is the address system of a number. In 4,726 the 4 is in the thousands column, the 7 in hundreds, the 2 in tens and the 6 in ones. Expanded form unpacks the address: 4,000 + 700 + 20 + 6. Rounding then asks which neighbour the number is closer to, whether the neighbour is a ten, a hundred or a thousand, and the rule is unchanged: five or more rounds up, four or less stays. Rounding is not losing precision on purpose; it is choosing the precision the question actually needs.",
+   "examples": [
+    {
+     "q": "Write 4,726 in expanded form.",
+     "a": "4,000 + 700 + 20 + 6.",
+     "steps": [
+      "Read each column.",
+      "Write its value."
+     ]
+    },
+    {
+     "q": "Round 4,726 to the nearest hundred.",
+     "a": "4,700, because the tens digit is 2.",
+     "steps": [
+      "Look at the tens digit.",
+      "Two is less than five, stay."
+     ]
+    },
+    {
+     "q": "Compare 4,726 and 4,762.",
+     "a": "4,726 is smaller; the tens column decides it.",
+     "steps": [
+      "Compare left to right.",
+      "Stop at the first difference."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "In 8,345 the digit 3 stands for...",
+     "options": [
+      "300",
+      "30",
+      "3,000",
+      "3"
+     ],
+     "correctIndex": 0,
+     "hint": "Count the columns from the right.",
+     "praise": "Yes! The 3 sits in the hundreds column."
+    },
+    {
+     "question": "Round 6,819 to the nearest ten.",
+     "options": [
+      "6,820",
+      "6,810",
+      "6,800",
+      "7,000"
+     ],
+     "correctIndex": 0,
+     "hint": "The ones digit is 9.",
+     "praise": "Yes! Nine or more rounds the tens digit up."
+    },
+    {
+     "question": "Which is the largest?",
+     "options": [
+      "9,432",
+      "9,342",
+      "9,423",
+      "9,324"
+     ],
+     "correctIndex": 0,
+     "hint": "Compare hundreds first, then tens.",
+     "praise": "Yes! The hundreds column breaks the tie."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Write five four-digit numbers in standard, expanded and word form.",
+     "answer": "Five numbers each given in all three forms correctly.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Round ten numbers to the nearest 100 and to the nearest 1,000.",
+     "answer": "Twenty correct roundings.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Order eight four-digit numbers from least to greatest.",
+     "answer": "Eight correctly ordered numbers.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain when rounding to the nearest 1,000 is enough.",
+     "answer": "A sentence about the precision a question actually needs.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Weekly ELA: Maps and Legends",
+   "emoji": "📖",
+   "minutes": 60,
+   "summary": "Read a nonfiction page about maps for its text features, then spell and write from it.",
+   "explain": "Nonfiction pages are built out of features that do real work. Headings sort the page into sections. Captions name and locate what a picture shows. A legend decodes symbols and a scale bar converts paper into ground. Read the headings first to get the shape of the piece, then the captions, then the paragraphs, because that order tells you what each block is for. When a caption and a paragraph disagree, the picture and the text are two sources, and you note the disagreement rather than picking quietly.",
+   "examples": [
+    {
+     "q": "Why read headings before paragraphs?",
+     "a": "They give the shape, so you know what each block is for.",
+     "steps": [
+      "Scan the headings.",
+      "Then read for detail."
+     ]
+    },
+    {
+     "q": "What does a legend do?",
+     "a": "Decodes the symbols so the map can be read.",
+     "steps": [
+      "Find a symbol.",
+      "Look it up in the key."
+     ]
+    },
+    {
+     "q": "Caption and paragraph disagree. What now?",
+     "a": "Note both as sources and say which you trust.",
+     "steps": [
+      "Record the conflict.",
+      "Give your reason."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "A scale bar lets you...",
+     "options": [
+      "work out real distance from map distance",
+      "find the capital",
+      "read the weather",
+      "name the author"
+     ],
+     "correctIndex": 0,
+     "hint": "It is a ratio between paper and ground.",
+     "praise": "Yes! Centimetres on paper become metres on the ground."
+    },
+    {
+     "question": "The compass rose fixes...",
+     "options": [
+      "north, and therefore every other direction",
+      "the scale",
+      "the legend",
+      "the title"
+     ],
+     "correctIndex": 0,
+     "hint": "Everything else is a bearing from there.",
+     "praise": "Yes! North first, then bearings."
+    },
+    {
+     "question": "Two sources disagree, so you...",
+     "options": [
+      "record both and say which you trust, with a reason",
+      "pick quietly",
+      "ignore both",
+      "copy one"
+     ],
+     "correctIndex": 0,
+     "hint": "Silent choosing is not history.",
+     "praise": "Yes! State the disagreement and your judgement."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "List the text features on this week's page and say what each does.",
+     "answer": "Four features, each paired with its job.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Use the legend to decode four symbols.",
+     "answer": "Four symbols matched to their meanings.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Convert a map distance to a real distance using the scale.",
+     "answer": "The multiplication shown and the answer in metres.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write four sentences giving a friend map-reading directions.",
+     "answer": "Four ordered sentences using legend, scale and compass correctly.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "Earth's Surface: Land and Water",
+   "emoji": "🔬",
+   "minutes": 30,
+   "summary": "Sort the surface into landforms and water bodies, then explain how each one changes.",
+   "explain": "The surface looks fixed and is not. Water, wind and ice wear rock away and carry the pieces somewhere else, which is erosion, and what they drop when they slow is sediment, which is deposition. A hill and a valley are both works in progress on a long clock. Rivers cut the outside of a bend and drop mud on the inside, so a meander walks across the floodplain over centuries. Learn the names of the shapes first, then ask what force shaped each one and how fast it is still working.",
+   "examples": [
+    {
+     "q": "What are the two great divisions of the surface?",
+     "a": "Land and water: continents and oceans.",
+     "steps": [
+      "Start broad.",
+      "Then subdivide."
+     ]
+    },
+    {
+     "q": "What does a river do on the outside of a bend?",
+     "a": "Cuts it, because the water is fastest there.",
+     "steps": [
+      "Find the fast side.",
+      "Erosion happens there."
+     ]
+    },
+    {
+     "q": "What is sediment?",
+     "a": "The material dropped when water or wind slows.",
+     "steps": [
+      "Fast carries.",
+      "Slow drops."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Erosion means...",
+     "options": [
+      "wearing away and carrying off material",
+      "building mountains",
+      "freezing",
+      "nothing"
+     ],
+     "correctIndex": 0,
+     "hint": "Think water, wind and ice at work.",
+     "praise": "Yes! Worn away and moved off."
+    },
+    {
+     "question": "A delta forms where...",
+     "options": [
+      "a river slows and drops sediment",
+      "a river starts",
+      "the sea ends",
+      "wind blows"
+     ],
+     "correctIndex": 0,
+     "hint": "Slow water drops its load.",
+     "praise": "Yes! Deposition at the river's mouth."
+    },
+    {
+     "question": "Which force works slowest?",
+     "options": [
+      "ice",
+      "a flood",
+      "a storm",
+      "a waterfall"
+     ],
+     "correctIndex": 0,
+     "hint": "Think in centuries.",
+     "praise": "Yes! Glaciers grind given enough time."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Draw and label five landforms and three water bodies.",
+     "answer": "Eight correctly named features.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "For each feature, name the force that shaped it.",
+     "answer": "A feature-to-force pairing for each of five.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Diagram erosion and deposition on one river bend.",
+     "answer": "Cut side and drop side correctly placed and labelled.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in three sentences why the surface is not fixed.",
+     "answer": "Three sentences on erosion, transport and deposition.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Geography and Maps of Our Country",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "summary": "Read regions, borders and waterways, then explain why people settled where they did.",
+   "explain": "Geography is the stage the history stands on. Great Lakes waterways moved people and goods long before roads, a long growing season made the south farmable, and ice shaped which cities became ports. Read a map of the country first for physical features, then for borders, then for cities, and ask why each city sits where it does. Almost every answer is water, a crossing, a harbour or fertile ground. Once you can read the stage, the play stops looking random.",
+   "examples": [
+    {
+     "q": "Why do so many old cities sit at river crossings?",
+     "a": "A crossing is a place goods and people must pass and pay.",
+     "steps": [
+      "Find the water.",
+      "Find the crossing."
+     ]
+    },
+    {
+     "q": "What does a region name?",
+     "a": "An area sharing features, climate or history.",
+     "steps": [
+      "List the shared features.",
+      "Draw the boundary."
+     ]
+    },
+    {
+     "q": "Why study physical features before borders?",
+     "a": "Features came first and shaped where borders were drawn.",
+     "steps": [
+      "Read the land.",
+      "Then the lines on it."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Old cities cluster at crossings and harbours because...",
+     "options": [
+      "goods and people must pass there",
+      "the land is highest",
+      "the wind is strongest",
+      "no reason"
+     ],
+     "correctIndex": 0,
+     "hint": "Think trade.",
+     "praise": "Yes! Water is a road."
+    },
+    {
+     "question": "A region is an area that shares...",
+     "options": [
+      "features, climate or history",
+      "one family",
+      "one building",
+      "nothing"
+     ],
+     "correctIndex": 0,
+     "hint": "Something in common defines it.",
+     "praise": "Yes! Shared traits draw the line."
+    },
+    {
+     "question": "Physical features shaped borders because...",
+     "options": [
+      "rivers and mountains are natural edges",
+      "they are pretty",
+      "people ignored them",
+      "maps were blank"
+     ],
+     "correctIndex": 0,
+     "hint": "Nature draws first lines.",
+     "praise": "Yes! Rivers and ranges make convenient boundaries."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Label four regions and state one shared feature of each.",
+     "answer": "Four regions with one shared feature each.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Mark three waterways and the cities beside them.",
+     "answer": "Three waterways with correctly placed cities.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Explain why one specific city sits where it does.",
+     "answer": "A sentence naming water, crossing or harbour as the reason.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write four sentences: how geography shaped one historical event.",
+     "answer": "Four sentences linking a feature to an event.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "math",
+   "title": "Unit Fractions and Comparing with Pictures",
+   "emoji": "🔢",
+   "minutes": 65,
+   "summary": "Shade equal parts, name the unit fraction, and compare two fractions with a drawing.",
+   "explain": "A unit fraction names one part of something cut into equal parts: one half, one third, one fourth. The parts must be equal, or the fraction is a lie. The counter-intuitive rule is that a bigger bottom number makes smaller pieces, so one fourth is smaller than one third even though four is bigger than three. When you compare, draw both fractions the same size and shade them, because a picture settles the argument faster than an argument does.",
+   "examples": [
+    {
+     "q": "Shade one half of a bar split into two equal parts.",
+     "a": "One of two equal parts shaded, written 1/2.",
+     "steps": [
+      "Cut equally.",
+      "Shade one part."
+     ]
+    },
+    {
+     "q": "Which is bigger, 1/2 or 1/4?",
+     "a": "1/2, because fewer parts means bigger pieces.",
+     "steps": [
+      "Draw both the same size.",
+      "Compare the shaded area."
+     ]
+    },
+    {
+     "q": "Why must the parts be equal?",
+     "a": "Unequal parts make the bottom number meaningless.",
+     "steps": [
+      "Check the cut.",
+      "Reject any uneven cut."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "A shape in 4 equal parts with 1 shaded shows...",
+     "options": [
+      "one fourth",
+      "one half",
+      "four fourths",
+      "one third"
+     ],
+     "correctIndex": 0,
+     "hint": "One part out of four.",
+     "praise": "Yes! One of four equal parts."
+    },
+    {
+     "question": "Which is larger, 1/3 or 1/5?",
+     "options": [
+      "1/3",
+      "1/5",
+      "they are equal",
+      "cannot tell"
+     ],
+     "correctIndex": 0,
+     "hint": "Fewer parts means bigger pieces.",
+     "praise": "Yes! Thirds are bigger than fifths."
+    },
+    {
+     "question": "Fractions can only be compared when...",
+     "options": [
+      "the wholes are the same size",
+      "the colours match",
+      "they are shading-free",
+      "they have the same digits"
+     ],
+     "correctIndex": 0,
+     "hint": "Different wholes make comparison meaningless.",
+     "praise": "Yes! Same whole, then compare."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Shade and label one half, one third, one fourth and one sixth.",
+     "answer": "Four correctly shaded shapes with unit-fraction labels.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Compare three pairs of unit fractions with a drawing.",
+     "answer": "Three drawings with the larger fraction marked and justified.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Write the fraction that names the shaded part of four diagrams.",
+     "answer": "Four correct fractions.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain to a parent why 1/4 is smaller than 1/2 despite the bigger number.",
+     "answer": "A sentence about more cuts making smaller pieces.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "reading",
+   "title": "Weekly ELA: Compare and Contrast",
+   "emoji": "📖",
+   "minutes": 60,
+   "summary": "Set two texts side by side, chart what they share and where they split, then write from the chart.",
+   "explain": "Comparison runs on a chart with two columns and a shared topic at the top. List a feature down the middle, then record what each text says about it. Features that both fill are comparisons; features only one fills are contrasts. Signal words matter: and, also and both carry similarity, while however, unlike and on the other hand carry difference. Write your paragraph only after the chart is full, because a chart turns a vague impression into a claim you can support with a line from each text.",
+   "examples": [
+    {
+     "q": "Both texts mention rivers. Where does that go?",
+     "a": "The shared feature row, with a line quoted from each.",
+     "steps": [
+      "Add the feature.",
+      "Quote each text."
+     ]
+    },
+    {
+     "q": "One text blames flooding and the other blames drought.",
+     "a": "That is a contrast, with however as the connector.",
+     "steps": [
+      "Record each claim.",
+      "Join with a contrast word."
+     ]
+    },
+    {
+     "q": "What if a feature only one text has?",
+     "a": "Still record it; an empty cell is information.",
+     "steps": [
+      "Write one side.",
+      "Leave the other blank deliberately."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which word signals contrast?",
+     "options": [
+      "however",
+      "also",
+      "both",
+      "and"
+     ],
+     "correctIndex": 0,
+     "hint": "One of these announces a difference.",
+     "praise": "Yes! However sets up the split."
+    },
+    {
+     "question": "A comparison chart is filled in...",
+     "options": [
+      "before you write the paragraph",
+      "after the paragraph",
+      "never",
+      "during the test"
+     ],
+     "correctIndex": 0,
+     "hint": "Evidence first, claim second.",
+     "praise": "Yes! The chart is the evidence."
+    },
+    {
+     "question": "A feature both texts discuss is a...",
+     "options": [
+      "comparison",
+      "contrast",
+      "failure",
+      "guess"
+     ],
+     "correctIndex": 0,
+     "hint": "Shared features compare.",
+     "praise": "Yes! Same row, both columns filled."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Build a two-column chart for this week's two texts.",
+     "answer": "At least five features with both columns filled or deliberately blank.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Underline three contrast words in your draft.",
+     "answer": "Three correctly used contrast signals.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Write one sentence of comparison and one of contrast, each with a quoted line.",
+     "answer": "Two sentences, each carrying evidence.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Write a closing sentence that says which text you found stronger, and why.",
+     "answer": "A judgement with a stated reason.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "science",
+   "title": "States of Matter",
+   "emoji": "🔬",
+   "minutes": 30,
+   "summary": "Sort examples into solid, liquid and gas, then explain what changes between them.",
+   "explain": "The three states differ in how the particles sit and how freely they move. In a solid they are packed and hold their place, so the shape holds. In a liquid they slide over each other, so the shape follows the container. In a gas they fly apart, so the material fills whatever space it has. Heating adds movement and cooling removes it, and at each fixed temperature the material changes state rather than just getting warmer. That is why a pan of water stays at a hundred degrees while it boils.",
+   "examples": [
+    {
+     "q": "Water in a jug takes the jug's shape. State?",
+     "a": "Liquid.",
+     "steps": [
+      "Does it hold its own shape?",
+      "No, so it is a liquid."
+     ]
+    },
+    {
+     "q": "Ice in the sun becomes water. Name the change.",
+     "a": "Melting: solid to liquid.",
+     "steps": [
+      "Name the start state.",
+      "Name the end state."
+     ]
+    },
+    {
+     "q": "Why does boiling water stop warming?",
+     "a": "The energy is going into changing state, not raising temperature.",
+     "steps": [
+      "Note the flat temperature.",
+      "Name the change happening."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Which is a liquid?",
+     "options": [
+      "water in a cup",
+      "a rock",
+      "a block of ice",
+      "a spoon"
+     ],
+     "correctIndex": 0,
+     "hint": "It takes the container's shape.",
+     "praise": "Yes! It pours and reshapes."
+    },
+    {
+     "question": "Gas to solid is called...",
+     "options": [
+      "deposition",
+      "melting",
+      "evaporation",
+      "boiling"
+     ],
+     "correctIndex": 0,
+     "hint": "Skipping the liquid step entirely.",
+     "praise": "Yes! Frost forms this way."
+    },
+    {
+     "question": "Particles in a solid...",
+     "options": [
+      "are packed and hold their place",
+      "fly apart freely",
+      "slide over each other",
+      "vanish"
+     ],
+     "correctIndex": 0,
+     "hint": "That is why the shape holds.",
+     "praise": "Yes! Fixed positions, fixed shape."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "Sort twelve examples into solid, liquid and gas.",
+     "answer": "Twelve correctly placed items.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Draw particles in each of the three states.",
+     "answer": "Three drawings showing packed, sliding and far-apart particles.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Name all the changes from solid to gas and back.",
+     "answer": "Melting, evaporation, condensation and freezing, in order.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Explain in three sentences why boiling water does not get hotter.",
+     "answer": "Three sentences on energy going into the state change.",
+     "reveal": "on-demand"
+    }
+   ]
+  },
+  {
+   "subject": "history",
+   "title": "Ancient Peoples and Rivers",
+   "emoji": "🏛️",
+   "minutes": 30,
+   "summary": "Follow two river civilizations and work out what the river made possible.",
+   "explain": "The first cities grew beside rivers for the same three reasons everywhere: water to drink, flat fertile soil that flooded on schedule, and a road for heavy goods. Farmers learned the flood calendar, surplus grain paid people to do other jobs, and bookkeeping arrived to track the surplus. Writing began as a receipt, not a poem. Follow one river from its banks to its mouth and you can watch a society move from farming to storage to records to government, in that order and for that reason.",
+   "examples": [
+    {
+     "q": "Why does surplus matter historically?",
+     "a": "It lets some people stop farming and specialise.",
+     "steps": [
+      "Find the extra grain.",
+      "Find the job it freed up."
+     ]
+    },
+    {
+     "q": "Why did writing appear first here?",
+     "a": "To record stored grain and trade.",
+     "steps": [
+      "Find what needed counting.",
+      "Find the record's purpose."
+     ]
+    },
+    {
+     "q": "What does a flood calendar give a society?",
+     "a": "Predictable planting and irrigation.",
+     "steps": [
+      "Note the rhythm.",
+      "Note the planning it allows."
+     ]
+    }
+   ],
+   "practice": [
+    {
+     "question": "Early river settlements grew where...",
+     "options": [
+      "water, fertile soil and trade met",
+      "mountains were highest",
+      "rain was rarest",
+      "no one lived"
+     ],
+     "correctIndex": 0,
+     "hint": "Three needs, one place.",
+     "praise": "Yes! Drink, food and a road."
+    },
+    {
+     "question": "Writing first developed to...",
+     "options": [
+      "track stored grain and trade",
+      "write poems",
+      "decorate walls",
+      "none of these"
+     ],
+     "correctIndex": 0,
+     "hint": "Bookkeeping came first.",
+     "praise": "Yes! Records before literature."
+    },
+    {
+     "question": "Surplus grain allowed...",
+     "options": [
+      "people to specialise in other jobs",
+      "nothing",
+      "shorter floods",
+      "fewer people"
+     ],
+     "correctIndex": 0,
+     "hint": "Not everyone must farm.",
+     "praise": "Yes! Specialisation follows surplus."
+    }
+   ],
+   "workbook": [
+    {
+     "id": "wb1",
+     "prompt": "List three things a river gives a settlement and one example city.",
+     "answer": "Three gifts plus a valid city example.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb2",
+     "prompt": "Order: surplus, storage, records, government.",
+     "answer": "The four in causal order with a reason for each step.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb3",
+     "prompt": "Add four events to a river-civilisation timeline.",
+     "answer": "Four dated or ordered events read back correctly.",
+     "reveal": "on-demand"
+    },
+    {
+     "id": "wb4",
+     "prompt": "Answer in three sentences: what would a city lose if the river dried up?",
+     "answer": "Three sentences naming water, soil and trade.",
+     "reveal": "on-demand"
+    }
+   ]
+  }
+ ],
+ "tests": [
+  {
+   "title": "Week 9 Test — Quarter 1 Mastery Review",
+   "note": "Covers the quarter's mixed work: facts and regrouped sums, mixed comprehension, spelling bee words, fair-test design, the review strands, verb tense and national symbols.",
+   "questions": [
+    {
+     "q": "8 x 7 = ?",
+     "options": [
+      "56",
+      "54",
+      "48",
+      "64"
+     ],
+     "correct": 0,
+     "skill": "multiplication",
+     "subject": "math",
+     "why": "Count by eights seven times: 8, 16, 24, 32, 40, 48, 56."
+    },
+    {
+     "q": "468 + 579 = ?",
+     "options": [
+      "1,047",
+      "1,037",
+      "947",
+      "1,147"
+     ],
+     "correct": 0,
+     "skill": "multi-digit-addition",
+     "subject": "math",
+     "why": "Ones 8+9=17 carry 1, tens 6+7+1=14 carry 1, hundreds 4+5+1=10."
+    },
+    {
+     "q": "Each of 5 trays holds 4 buns. How many buns?",
+     "options": [
+      "20",
+      "9",
+      "15",
+      "25"
+     ],
+     "correct": 0,
+     "skill": "word-problems",
+     "subject": "math",
+     "why": "Each signals equal groups: five groups of four is twenty."
+    },
+    {
+     "q": "Proving an answer means...",
+     "options": [
+      "pointing to the line in the text that supports it",
+      "saying it loudly",
+      "choosing the longest option",
+      "answering twice"
+     ],
+     "correct": 0,
+     "skill": "text-evidence",
+     "subject": "reading",
+     "why": "A claim without a line you can point to is a guess."
+    },
+    {
+     "q": "In a literary passage, a character's motive is...",
+     "options": [
+      "why they do something",
+      "where it happens",
+      "when it happens",
+      "who narrates"
+     ],
+     "correct": 0,
+     "skill": "story-elements",
+     "subject": "reading",
+     "why": "Motive is the reason behind an action, found in what they say, want or fear."
+    },
+    {
+     "q": "Which word is spelled correctly?",
+     "options": [
+      "running",
+      "runing",
+      "runned",
+      "runnning"
+     ],
+     "correct": 0,
+     "skill": "double-consonant-rule",
+     "subject": "spelling",
+     "why": "Short vowel plus one final consonant doubles before -ing."
+    },
+    {
+     "q": "A science fair question must name...",
+     "options": [
+      "one thing changed and one thing measured",
+      "the winner in advance",
+      "three things changed",
+      "nothing at all"
+     ],
+     "correct": 0,
+     "skill": "fair-tests",
+     "subject": "science",
+     "why": "A fair test changes only one thing at a time, or the result cannot be attributed."
+    },
+    {
+     "q": "Which is a testable question?",
+     "options": [
+      "Does more light make a bean plant taller?",
+      "Is purple the best colour?",
+      "Are beans nicer than peas?",
+      "Do plants like music?"
+     ],
+     "correct": 0,
+     "skill": "fair-tests",
+     "subject": "science",
+     "why": "Taller can be measured in centimetres; nicest cannot be measured the same way twice."
+    },
+    {
+     "q": "The strongest defence of a historical claim is...",
+     "options": [
+      "a dated source you can point to",
+      "a confident tone",
+      "a long answer",
+      "an uncaptioned picture"
+     ],
+     "correct": 0,
+     "skill": "historical-sources",
+     "subject": "history",
+     "why": "Date it, show it, and the claim can be checked."
+    },
+    {
+     "q": "Local history matters because...",
+     "options": [
+      "it explains what the land and people allowed",
+      "it is shorter",
+      "it is easier",
+      "it has no sources"
+     ],
+     "correct": 0,
+     "skill": "local-history",
+     "subject": "history",
+     "why": "Geography constrains what a settlement can become."
+    },
+    {
+     "q": "Yesterday I ____ to the library.",
+     "options": [
+      "walked",
+      "walk",
+      "walking",
+      "walks"
+     ],
+     "correct": 0,
+     "skill": "verb-tense",
+     "subject": "english_grammar",
+     "why": "Yesterday sets past tense, and walk becomes walked."
+    },
+    {
+     "q": "Which is a symbol of our country?",
+     "options": [
+      "the flag",
+      "a school bus",
+      "a rain gauge",
+      "a stop sign alone"
+     ],
+     "correct": 0,
+     "skill": "national-symbols",
+     "subject": "civics",
+     "why": "National symbols stand for the country as a whole."
+    }
+   ]
+  },
+  {
+   "title": "Week 10 Test — Division, Prefixes and Life Cycles",
+   "note": "Mapped to the Week 10 day flow: division facts as sharing, character traits, un-/re-/pre-, plant and animal life cycles, inventors and inventions, irregular past tense.",
+   "questions": [
+    {
+     "q": "24 shared into 4 equal groups gives...",
+     "options": [
+      "6",
+      "8",
+      "5",
+      "28"
+     ],
+     "correct": 0,
+     "skill": "division-facts",
+     "subject": "math",
+     "why": "Division asks how many in each group: 24 / 4 = 6."
+    },
+    {
+     "q": "Which fact family belongs to 6, 4 and 24?",
+     "options": [
+      "6 x 4 = 24, 4 x 6 = 24, 24 / 4 = 6",
+      "6 + 4 = 10",
+      "24 - 6 = 18",
+      "6 / 4 = 2"
+     ],
+     "correct": 0,
+     "skill": "fact-families",
+     "subject": "math",
+     "why": "A family holds two multiplications and a division on the same three numbers."
+    },
+    {
+     "q": "35 / 5 = ?",
+     "options": [
+      "7",
+      "6",
+      "8",
+      "30"
+     ],
+     "correct": 0,
+     "skill": "division-facts",
+     "subject": "math",
+     "why": "Five groups of seven make thirty-five."
+    },
+    {
+     "q": "A character's trait is...",
+     "options": [
+      "how they behave across the story",
+      "where they live",
+      "what they wear",
+      "how old they are"
+     ],
+     "correct": 0,
+     "skill": "character-traits",
+     "subject": "reading",
+     "why": "A trait is a pattern of behaviour, proved by what they repeatedly do."
+    },
+    {
+     "q": "Evidence for a trait is...",
+     "options": [
+      "a specific action or line from the story",
+      "your opinion",
+      "the cover",
+      "the page number"
+     ],
+     "correct": 0,
+     "skill": "character-traits",
+     "subject": "reading",
+     "why": "Traits must be shown by what the character does or says."
+    },
+    {
+     "q": "Which prefix means not?",
+     "options": [
+      "un-",
+      "re-",
+      "pre-",
+      "sub-"
+     ],
+     "correct": 0,
+     "skill": "prefixes",
+     "subject": "spelling",
+     "why": "Un- reverses or negates: unkind, unlock."
+    },
+    {
+     "q": "Which prefix means before?",
+     "options": [
+      "pre-",
+      "un-",
+      "re-",
+      "mid-"
+     ],
+     "correct": 0,
+     "skill": "prefixes",
+     "subject": "spelling",
+     "why": "Pre- means before: preview, preheat."
+    },
+    {
+     "q": "A plant's life cycle runs...",
+     "options": [
+      "seed, sprout, flower, seed",
+      "flower, seed, sprout, flower",
+      "sprout, flower, seed only",
+      "any order at all"
+     ],
+     "correct": 0,
+     "skill": "life-cycles",
+     "subject": "science",
+     "why": "A cycle returns to where it started: seed to seed."
+    },
+    {
+     "q": "An animal life cycle differs from a plant's mainly in...",
+     "options": [
+      "the stages and how young are born",
+      "having no stages",
+      "length only",
+      "nothing"
+     ],
+     "correct": 0,
+     "skill": "life-cycles",
+     "subject": "science",
+     "why": "Frogs, butterflies and mammals each pass through their own fixed stages."
+    },
+    {
+     "q": "Inventions matter to historians because they...",
+     "options": [
+      "date what a society could do",
+      "are always beautiful",
+      "replace sources",
+      "prove nothing"
+     ],
+     "correct": 0,
+     "skill": "inventors",
+     "subject": "history",
+     "why": "An invention is dated evidence of the skills and needs of its time."
+    },
+    {
+     "q": "The correct past tense of go is...",
+     "options": [
+      "went",
+      "goed",
+      "gone only",
+      "going"
+     ],
+     "correct": 0,
+     "skill": "irregular-past-tense",
+     "subject": "english_grammar",
+     "why": "Go is irregular: went is the past, gone the participle."
+    },
+    {
+     "q": "Ways a kid can help at home include...",
+     "options": [
+      "setting the table before being asked",
+      "waiting to be told twice",
+      "leaving dishes out",
+      "none of these"
+     ],
+     "correct": 0,
+     "skill": "community-participation",
+     "subject": "civics",
+     "why": "Doing your share before you are asked is the point."
+    }
+   ]
+  },
+  {
+   "title": "Week 11 Test — Place Value, Maps and Suffixes",
+   "note": "Mapped to the Week 11 day flow: four-digit place value and rounding, maps and legends text features, suffixes -s/-es/-est, Earth's surface, geography and our country, subjects and verbs that agree.",
+   "questions": [
+    {
+     "q": "In 4,726 the digit 7 stands for...",
+     "options": [
+      "700",
+      "70",
+      "7,000",
+      "7"
+     ],
+     "correct": 0,
+     "skill": "place-value",
+     "subject": "math",
+     "why": "The 7 sits in the hundreds column, so its value is seven hundred."
+    },
+    {
+     "q": "4,726 written in expanded form is...",
+     "options": [
+      "4,000 + 700 + 20 + 6",
+      "4 + 7 + 2 + 6",
+      "40 + 70 + 20 + 6",
+      "4,726 + 0"
+     ],
+     "correct": 0,
+     "skill": "place-value",
+     "subject": "math",
+     "why": "Expanded form splits the number by the value of each column."
+    },
+    {
+     "q": "Round 4,726 to the nearest hundred.",
+     "options": [
+      "4,700",
+      "4,800",
+      "4,000",
+      "5,000"
+     ],
+     "correct": 0,
+     "skill": "rounding",
+     "subject": "math",
+     "why": "The tens digit is 2, less than five, so the hundreds digit stays."
+    },
+    {
+     "q": "A map key or legend...",
+     "options": [
+      "decodes the symbols on the map",
+      "lists the page numbers",
+      "gives the weather",
+      "names the author"
+     ],
+     "correct": 0,
+     "skill": "map-skills",
+     "subject": "reading",
+     "why": "Without the key a map is a picture you cannot read."
+    },
+    {
+     "q": "A scale bar converts...",
+     "options": [
+      "centimetres on paper into metres on the ground",
+      "colours into names",
+      "wind into rain",
+      "nothing"
+     ],
+     "correct": 0,
+     "skill": "map-skills",
+     "subject": "reading",
+     "why": "The scale is the ratio between map distance and real distance."
+    },
+    {
+     "q": "Which suffix makes a comparison?",
+     "options": [
+      "-est",
+      "-s",
+      "-es",
+      "-ed"
+     ],
+     "correct": 0,
+     "skill": "suffixes",
+     "subject": "spelling",
+     "why": "-est marks the most: tallest, fastest."
+    },
+    {
+     "q": "After a word ending in s, x, ch or sh you add...",
+     "options": [
+      "-es",
+      "-s only",
+      "-est",
+      "-ed"
+     ],
+     "correct": 0,
+     "skill": "suffixes",
+     "subject": "spelling",
+     "why": "Buses, boxes, churches and bushes need the extra syllable."
+    },
+    {
+     "q": "Earth's surface is divided mainly into...",
+     "options": [
+      "land and water",
+      "rock and cloud only",
+      "hot and cold",
+      "north and south"
+     ],
+     "correct": 0,
+     "skill": "earth-surface",
+     "subject": "science",
+     "why": "Continents and oceans are the two great divisions of the surface."
+    },
+    {
+     "q": "Erosion moves soil by...",
+     "options": [
+      "water, wind and ice wearing it away",
+      "plants holding it",
+      "gravity only",
+      "nothing"
+     ],
+     "correct": 0,
+     "skill": "earth-surface",
+     "subject": "science",
+     "why": "Wearing away and carrying off is what erosion means."
+    },
+    {
+     "q": "A map of our country is useful because it...",
+     "options": [
+      "shows regions, borders and features that shape settlement",
+      "shows the weather",
+      "lists people",
+      "proves a claim"
+     ],
+     "correct": 0,
+     "skill": "geography",
+     "subject": "history",
+     "why": "Regions and waterways explain where and why people settled."
+    },
+    {
+     "q": "The birds ____ in the tree sing loudly.",
+     "options": [
+      "that",
+      "is",
+      "was",
+      "am"
+     ],
+     "correct": 0,
+     "skill": "subject-verb-agreement",
+     "subject": "english_grammar",
+     "why": "A plural subject takes a plural verb, and that introduces the plural birds."
+    },
+    {
+     "q": "Who makes a rule for a whole school?",
+     "options": [
+      "A principal or a council",
+      "One student alone",
+      "No one",
+      "The weather"
+     ],
+     "correct": 0,
+     "skill": "rule-makers",
+     "subject": "civics",
+     "why": "Rules come from whoever holds that job, then apply to everyone alike."
+    }
+   ]
+  },
+  {
+   "title": "Week 12 Test — Fractions Intro",
+   "note": "Mapped to the Week 12 day flow: unit fractions and comparing with pictures, compare and contrast, double consonants, states of matter, ancient peoples and rivers, adjectives and adverbs.",
+   "questions": [
+    {
+     "q": "A fraction bar shaded in 4 equal parts with 1 shaded shows...",
+     "options": [
+      "one fourth",
+      "one half",
+      "four fourths",
+      "one third"
+     ],
+     "correct": 0,
+     "skill": "unit-fractions",
+     "subject": "math",
+     "why": "One part shaded out of four equal parts is one fourth."
+    },
+    {
+     "q": "Which picture shows one third?",
+     "options": [
+      "a shape in 3 equal parts with 1 shaded",
+      "a shape in 3 parts with 2 shaded",
+      "a shape in 2 parts with 1 shaded",
+      "a shape in 6 parts with 1 shaded"
+     ],
+     "correct": 0,
+     "skill": "unit-fractions",
+     "subject": "math",
+     "why": "One of three equal parts is one third; the parts must be equal."
+    },
+    {
+     "q": "Which is larger, 1/2 or 1/4?",
+     "options": [
+      "1/2",
+      "1/4",
+      "they are equal",
+      "cannot tell"
+     ],
+     "correct": 0,
+     "skill": "comparing-fractions",
+     "subject": "math",
+     "why": "Splitting a whole into fewer parts leaves each part bigger."
+    },
+    {
+     "q": "To compare two texts you look for...",
+     "options": [
+      "how they are alike and how they differ",
+      "only the length",
+      "the page count",
+      "nothing"
+     ],
+     "correct": 0,
+     "skill": "compare-and-contrast",
+     "subject": "reading",
+     "why": "Compare names the shared features; contrast names the differences."
+    },
+    {
+     "q": "Signal words for contrast include...",
+     "options": [
+      "however and unlike",
+      "and also",
+      "because",
+      "first"
+     ],
+     "correct": 0,
+     "skill": "compare-and-contrast",
+     "subject": "reading",
+     "why": "Contrast words announce a difference is coming."
+    },
+    {
+     "q": "Which word is spelled correctly?",
+     "options": [
+      "stopped",
+      "stoped",
+      "stoppt",
+      "stopt"
+     ],
+     "correct": 0,
+     "skill": "double-consonant-rule",
+     "subject": "spelling",
+     "why": "Short vowel plus one final consonant doubles before -ed."
+    },
+    {
+     "q": "Which is a liquid?",
+     "options": [
+      "water in a cup",
+      "a rock",
+      "a block of ice",
+      "a spoon"
+     ],
+     "correct": 0,
+     "skill": "states-of-matter",
+     "subject": "science",
+     "why": "A liquid takes its container's shape and pours."
+    },
+    {
+     "q": "Ice melting is a change from...",
+     "options": [
+      "solid to liquid",
+      "liquid to gas",
+      "gas to solid",
+      "solid to gas"
+     ],
+     "correct": 0,
+     "skill": "states-of-matter",
+     "subject": "science",
+     "why": "Melting is solid to liquid; boiling would be liquid to gas."
+    },
+    {
+     "q": "Early river settlements grew where...",
+     "options": [
+      "water, fertile soil and trade met",
+      "the mountains were highest",
+      "rain was rarest",
+      "no one lived"
+     ],
+     "correct": 0,
+     "skill": "river-civilisations",
+     "subject": "history",
+     "why": "Rivers gave irrigation, rich soil and a road for goods."
+    },
+    {
+     "q": "Why did writing first develop in river settlements?",
+     "options": [
+      "to keep track of stored grain and trade",
+      "for fun",
+      "to decorate walls",
+      "it did not"
+     ],
+     "correct": 0,
+     "skill": "river-civilisations",
+     "subject": "history",
+     "why": "Bookkeeping came first and other uses grew out of it."
+    },
+    {
+     "q": "The quick brown fox is ___ than the slow one.",
+     "options": [
+      "quicker",
+      "quick",
+      "quickliest",
+      "quickness"
+     ],
+     "correct": 0,
+     "skill": "adjectives-adverbs",
+     "subject": "english_grammar",
+     "why": "Comparing two things takes the -er form."
+    },
+    {
+     "q": "Jobs and rules that make a community work include...",
+     "options": [
+      "everyone doing their share under the same rules",
+      "one person doing everything",
+      "no rules at all",
+      "waiting to be told"
+     ],
+     "correct": 0,
+     "skill": "community-participation",
+     "subject": "civics",
+     "why": "Shared work plus rules applied alike is what keeps a community running."
+    }
+   ]
+  }
+ ],
+ "passages": [
+  {
+   "title": "Three Passages, One Habit",
+   "text": "Our review week used three short texts instead of one long one. The first explained how a bridge carries a load down its legs into the ground. The second told the story of a kid who returned a lost wallet and waited twenty minutes in the rain for its owner. The third gave the steps for making a paper aeroplane that actually flies. The questions changed each time, but the habit did not: answer, then point. Pointing is the difference between knowing something and hoping you do. Half the class discovered that the sentences they remembered best were the ones they had never actually read.",
+   "pool": [
+    "bridge",
+    "load",
+    "legs",
+    "wallet",
+    "waited",
+    "owner",
+    "steps",
+    "aeroplane",
+    "actually",
+    "pointing",
+    "hoping",
+    "remembered"
+   ]
+  },
+  {
+   "title": "The Inventor Who Failed First",
+   "text": "The first version of the device did not work at all. Its inventor kept a notebook of every failure, dated and numbered, and the notebook is why we know his name. Failure one jammed because the seal leaked. Failure seven ran for four seconds and then overheated. Failure twelve worked, briefly, and told him what to fix next. Historians value that notebook more than the finished product, because the product shows what he made and the notebook shows what he thought. Progress is usually a stack of dated mistakes with one good result on top.",
+   "pool": [
+    "device",
+    "inventor",
+    "notebook",
+    "failure",
+    "dated",
+    "sealed",
+    "leaked",
+    "overheated",
+    "briefly",
+    "valued",
+    "progress",
+    "stack"
+   ]
+  },
+  {
+   "title": "Where Land Meets Water",
+   "text": "Stand at the edge of a lake and you are standing on a boundary that moves. Waves lift sand and drop it a few centimetres at a time, so a shoreline from a photograph taken fifty years ago rarely matches the one under your feet. Rivers do the same work faster, cutting a bend on one side and dropping the mud on the other. Ice is the slowest sculptor of all, but it grinds mountains into gravel given enough centuries. The surface of the Earth looks fixed from a classroom window, and it is not. Everything solid is just moving slowly enough to build a house on.",
+   "pool": [
+    "boundary",
+    "waves",
+    "shoreline",
+    "photograph",
+    "rarely",
+    "bend",
+    "mud",
+    "grinds",
+    "gravel",
+    "centuries",
+    "solid",
+    "sculptor"
+   ]
+  },
+  {
+   "title": "The Fraction of a Pizza Argument",
+   "text": "Two siblings argued about fairness for an entire afternoon. One had cut the pizza into eight slices and taken three. The other had cut an identical pizza into six slices and taken two, and insisted that three of eight was plainly more than two of six. Both were right about their own count and both were wrong about the comparison, because counting slices ignores the size of the slice. Line the slices up instead: three eighths of a whole covers less of the plate than two sixths of the same whole. The argument ended at dinner, and the rule that settled it was written on the fridge in marker.",
+   "pool": [
+    "siblings",
+    "argued",
+    "fairness",
+    "identical",
+    "plainly",
+    "comparison",
+    "ignores",
+    "covers",
+    "plate",
+    "settled",
+    "marker",
+    "slices"
+   ]
+  }
+ ]
+}
