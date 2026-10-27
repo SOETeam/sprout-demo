@@ -1,8 +1,8 @@
 {
  "schema": "standards_maps/v1",
- "generated_by": "tools/build_engine_data.py (reads this file; node spec lives in the build script)",
+ "generated_by": "tools/build_engine_data.py (reads this file; node spec lives in the build script) + D2 grade-6 transcription (SPROUT_K6_BUILDOUT_ANALYSIS_2026-10-26 §4)",
  "accessed": "2026-10-17",
- "purpose": "Grade-band standards maps for the K/1/2/4 skill-tree extension. Every entry is copied from a PUBLIC standards document (codes + wording condensed to a one-line label). No SPROUT-authored item text is derived from these maps.",
+ "purpose": "Grade-band standards maps for the K/1/2/4/6 skill-tree extension. Every entry is copied from a PUBLIC standards document (codes + wording condensed to a one-line label). No SPROUT-authored item text is derived from these maps.",
  "sources": [
   {
    "id": "ccss-ela",
@@ -29,6 +29,14 @@
    "accessed": "2026-10-17"
   },
   {
+   "id": "ngss-ms",
+   "title": "Next Generation Science Standards - Middle School (6-8) performance expectations",
+   "publisher": "Next Generation Science Standards / Achieve, Inc.",
+   "url": "https://www.nextgenscience.org/search-standards",
+   "html_index": "https://www.nextgenscience.org/grade/middle-school-6-8",
+   "accessed": "2026-10-27"
+  },
+  {
    "id": "mi-social-studies",
    "title": "Michigan K-12 Standards for Social Studies (Grade Level Content Expectations, GLCE coding K-4: <grade>-<discipline><category>.0.<expectation>)",
    "publisher": "Michigan Department of Education",
@@ -46,200 +54,1142 @@
  "grades": {
   "K": {
    "ela": [
-    {"id": "RF.K.1", "label": "Print concepts: organization and basic features of print", "source": "ccss-ela"},
-    {"id": "RF.K.2", "label": "Phonological awareness: words, syllables, and sounds (phonemes)", "source": "ccss-ela"},
-    {"id": "RF.K.3", "label": "Grade-level phonics and word analysis skills in decoding words", "source": "ccss-ela"},
-    {"id": "RF.K.4", "label": "Read emergent-reader texts with purpose and understanding", "source": "ccss-ela"},
-    {"id": "RL.K.1", "label": "Ask and answer questions about key details in a text (with prompting and support)", "source": "ccss-ela"},
-    {"id": "RI.K.2", "label": "Identify the main topic and retell key details of a text", "source": "ccss-ela"},
-    {"id": "W.K.1", "label": "Compose opinion pieces by drawing, dictating, and writing", "source": "ccss-ela"},
-    {"id": "L.K.1", "label": "Conventions of standard English grammar and usage when writing or speaking", "source": "ccss-ela"},
-    {"id": "L.K.2", "label": "Conventions of standard English capitalization, punctuation, and spelling", "source": "ccss-ela"}
+    {
+     "id": "RF.K.1",
+     "label": "Print concepts: organization and basic features of print",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.K.2",
+     "label": "Phonological awareness: words, syllables, and sounds (phonemes)",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.K.3",
+     "label": "Grade-level phonics and word analysis skills in decoding words",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.K.4",
+     "label": "Read emergent-reader texts with purpose and understanding",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.K.1",
+     "label": "Ask and answer questions about key details in a text (with prompting and support)",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.K.2",
+     "label": "Identify the main topic and retell key details of a text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.K.1",
+     "label": "Compose opinion pieces by drawing, dictating, and writing",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.K.1",
+     "label": "Conventions of standard English grammar and usage when writing or speaking",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.K.2",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "source": "ccss-ela"
+    }
    ],
    "math": [
-    {"id": "K.CC.1", "label": "Count to 100 by ones and by tens", "source": "ccss-math"},
-    {"id": "K.CC.4", "label": "Understand the relationship between numbers and quantities; connect counting to cardinality", "source": "ccss-math"},
-    {"id": "K.CC.5", "label": "Count to answer how-many questions about as many as 20 things", "source": "ccss-math"},
-    {"id": "K.OA.1", "label": "Represent addition and subtraction with objects, fingers, mental images, drawings, and equations", "source": "ccss-math"},
-    {"id": "K.OA.2", "label": "Solve addition and subtraction word problems and add and subtract within 10", "source": "ccss-math"},
-    {"id": "K.OA.5", "label": "Fluently add and subtract within 5", "source": "ccss-math"},
-    {"id": "K.NBT.1", "label": "Compose and decompose numbers from 11 to 19 into ten ones and some further ones", "source": "ccss-math"},
-    {"id": "K.MD.2", "label": "Directly compare two objects with a measurable attribute in common", "source": "ccss-math"},
-    {"id": "K.MD.3", "label": "Classify objects into given categories and count the number of objects in each category", "source": "ccss-math"},
-    {"id": "K.G.1", "label": "Describe objects using shape names and relative positions (above, below, beside)", "source": "ccss-math"},
-    {"id": "K.G.2", "label": "Correctly name shapes regardless of their orientations or overall size", "source": "ccss-math"}
+    {
+     "id": "K.CC.1",
+     "label": "Count to 100 by ones and by tens",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.CC.4",
+     "label": "Understand the relationship between numbers and quantities; connect counting to cardinality",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.CC.5",
+     "label": "Count to answer how-many questions about as many as 20 things",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.OA.1",
+     "label": "Represent addition and subtraction with objects, fingers, mental images, drawings, and equations",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.OA.2",
+     "label": "Solve addition and subtraction word problems and add and subtract within 10",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.OA.5",
+     "label": "Fluently add and subtract within 5",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.NBT.1",
+     "label": "Compose and decompose numbers from 11 to 19 into ten ones and some further ones",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.MD.2",
+     "label": "Directly compare two objects with a measurable attribute in common",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.MD.3",
+     "label": "Classify objects into given categories and count the number of objects in each category",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.G.1",
+     "label": "Describe objects using shape names and relative positions (above, below, beside)",
+     "source": "ccss-math"
+    },
+    {
+     "id": "K.G.2",
+     "label": "Correctly name shapes regardless of their orientations or overall size",
+     "source": "ccss-math"
+    }
    ],
    "science": [
-    {"id": "K-PS2-1", "label": "Plan and investigate the effects of different strengths or directions of pushes and pulls on motion", "source": "ngss"},
-    {"id": "K-PS3-1", "label": "Make observations to determine the effect of sunlight on Earth's surface", "source": "ngss"},
-    {"id": "K-LS1-1", "label": "Describe patterns of what plants and animals (including humans) need to survive", "source": "ngss"},
-    {"id": "K-ESS2-1", "label": "Use and share observations of local weather conditions to describe patterns over time", "source": "ngss"},
-    {"id": "K-ESS3-1", "label": "Model the relationship between the needs of plants or animals and the places they live", "source": "ngss"},
-    {"id": "K-2-ETS1-1", "label": "Ask questions, make observations, and gather information to define a simple problem", "source": "ngss"}
+    {
+     "id": "K-PS2-1",
+     "label": "Plan and investigate the effects of different strengths or directions of pushes and pulls on motion",
+     "source": "ngss"
+    },
+    {
+     "id": "K-PS3-1",
+     "label": "Make observations to determine the effect of sunlight on Earth's surface",
+     "source": "ngss"
+    },
+    {
+     "id": "K-LS1-1",
+     "label": "Describe patterns of what plants and animals (including humans) need to survive",
+     "source": "ngss"
+    },
+    {
+     "id": "K-ESS2-1",
+     "label": "Use and share observations of local weather conditions to describe patterns over time",
+     "source": "ngss"
+    },
+    {
+     "id": "K-ESS3-1",
+     "label": "Model the relationship between the needs of plants or animals and the places they live",
+     "source": "ngss"
+    },
+    {
+     "id": "K-2-ETS1-1",
+     "label": "Ask questions, make observations, and gather information to define a simple problem",
+     "source": "ngss"
+    }
    ],
    "social_studies": [
-    {"id": "K.H2.0.1", "label": "Distinguish among the past, present, and future", "source": "mi-social-studies"},
-    {"id": "K.H2.0.2", "label": "Create a timeline using events from their own lives", "source": "mi-social-studies"},
-    {"id": "K.G1.0.1", "label": "Recognize that maps and globes represent places", "source": "mi-social-studies"},
-    {"id": "K.G1.0.2", "label": "Use directions or positional words to identify significant locations in the classroom", "source": "mi-social-studies"},
-    {"id": "K.C1.0.1", "label": "Identify and explain reasons for rules at home and in school", "source": "mi-social-studies"},
-    {"id": "K.C2.0.1", "label": "Identify the American flag as an important symbol of the United States", "source": "mi-social-studies"},
-    {"id": "K.E1.0.2", "label": "Distinguish between goods and services", "source": "mi-social-studies"}
+    {
+     "id": "K.H2.0.1",
+     "label": "Distinguish among the past, present, and future",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "K.H2.0.2",
+     "label": "Create a timeline using events from their own lives",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "K.G1.0.1",
+     "label": "Recognize that maps and globes represent places",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "K.G1.0.2",
+     "label": "Use directions or positional words to identify significant locations in the classroom",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "K.C1.0.1",
+     "label": "Identify and explain reasons for rules at home and in school",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "K.C2.0.1",
+     "label": "Identify the American flag as an important symbol of the United States",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "K.E1.0.2",
+     "label": "Distinguish between goods and services",
+     "source": "mi-social-studies"
+    }
    ]
   },
   "1": {
    "ela": [
-    {"id": "RF.1.1", "label": "Print concepts: distinguishing features of a sentence", "source": "ccss-ela"},
-    {"id": "RF.1.2", "label": "Phonological awareness: long and short vowel sounds, blending, and segmenting", "source": "ccss-ela"},
-    {"id": "RF.1.3", "label": "Grade-level phonics and word analysis skills in decoding words", "source": "ccss-ela"},
-    {"id": "RF.1.4", "label": "Read with sufficient accuracy and fluency to support comprehension", "source": "ccss-ela"},
-    {"id": "RL.1.1", "label": "Ask and answer questions about key details in a text", "source": "ccss-ela"},
-    {"id": "RL.1.2", "label": "Retell stories, including key details, and demonstrate understanding of the central message or lesson", "source": "ccss-ela"},
-    {"id": "RI.1.2", "label": "Identify the main topic and retell key details of a text", "source": "ccss-ela"},
-    {"id": "W.1.1", "label": "Write opinion pieces with a topic, an opinion, a reason, and a sense of closure", "source": "ccss-ela"},
-    {"id": "W.1.3", "label": "Write narratives with sequenced events, temporal words, and a sense of closure", "source": "ccss-ela"},
-    {"id": "L.1.1", "label": "Conventions of standard English grammar and usage when writing or speaking", "source": "ccss-ela"},
-    {"id": "L.1.2", "label": "Conventions of standard English capitalization, punctuation, and spelling", "source": "ccss-ela"}
+    {
+     "id": "RF.1.1",
+     "label": "Print concepts: distinguishing features of a sentence",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.1.2",
+     "label": "Phonological awareness: long and short vowel sounds, blending, and segmenting",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.1.3",
+     "label": "Grade-level phonics and word analysis skills in decoding words",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.1.4",
+     "label": "Read with sufficient accuracy and fluency to support comprehension",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.1.1",
+     "label": "Ask and answer questions about key details in a text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.1.2",
+     "label": "Retell stories, including key details, and demonstrate understanding of the central message or lesson",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.1.2",
+     "label": "Identify the main topic and retell key details of a text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.1.1",
+     "label": "Write opinion pieces with a topic, an opinion, a reason, and a sense of closure",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.1.3",
+     "label": "Write narratives with sequenced events, temporal words, and a sense of closure",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.1.1",
+     "label": "Conventions of standard English grammar and usage when writing or speaking",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.1.2",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "source": "ccss-ela"
+    }
    ],
    "math": [
-    {"id": "1.OA.1", "label": "Use addition and subtraction within 20 to solve word problems", "source": "ccss-math"},
-    {"id": "1.OA.2", "label": "Solve word problems that call for addition of three whole numbers whose sum is within 20", "source": "ccss-math"},
-    {"id": "1.OA.5", "label": "Relate counting to addition and subtraction (counting on)", "source": "ccss-math"},
-    {"id": "1.OA.6", "label": "Add and subtract within 20, demonstrating fluency for addition and subtraction within 10", "source": "ccss-math"},
-    {"id": "1.OA.8", "label": "Determine the unknown whole number in an addition or subtraction equation", "source": "ccss-math"},
-    {"id": "1.NBT.1", "label": "Count to 120, starting at any number less than 120", "source": "ccss-math"},
-    {"id": "1.NBT.2", "label": "Understand that the two digits of a two-digit number represent amounts of tens and ones", "source": "ccss-math"},
-    {"id": "1.NBT.4", "label": "Add within 100 using place value and properties of operations", "source": "ccss-math"},
-    {"id": "1.NBT.5", "label": "Mentally find 10 more or 10 less than a two-digit number", "source": "ccss-math"},
-    {"id": "1.MD.3", "label": "Tell and write time in hours and half-hours on analog and digital clocks", "source": "ccss-math"},
-    {"id": "1.MD.4", "label": "Organize, represent, and interpret data with up to three categories", "source": "ccss-math"},
-    {"id": "1.G.1", "label": "Distinguish between defining and non-defining attributes of shapes", "source": "ccss-math"},
-    {"id": "1.G.3", "label": "Partition circles and rectangles into two and four equal shares", "source": "ccss-math"}
+    {
+     "id": "1.OA.1",
+     "label": "Use addition and subtraction within 20 to solve word problems",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.OA.2",
+     "label": "Solve word problems that call for addition of three whole numbers whose sum is within 20",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.OA.5",
+     "label": "Relate counting to addition and subtraction (counting on)",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.OA.6",
+     "label": "Add and subtract within 20, demonstrating fluency for addition and subtraction within 10",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.OA.8",
+     "label": "Determine the unknown whole number in an addition or subtraction equation",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.NBT.1",
+     "label": "Count to 120, starting at any number less than 120",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.NBT.2",
+     "label": "Understand that the two digits of a two-digit number represent amounts of tens and ones",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.NBT.4",
+     "label": "Add within 100 using place value and properties of operations",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.NBT.5",
+     "label": "Mentally find 10 more or 10 less than a two-digit number",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.MD.3",
+     "label": "Tell and write time in hours and half-hours on analog and digital clocks",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.MD.4",
+     "label": "Organize, represent, and interpret data with up to three categories",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.G.1",
+     "label": "Distinguish between defining and non-defining attributes of shapes",
+     "source": "ccss-math"
+    },
+    {
+     "id": "1.G.3",
+     "label": "Partition circles and rectangles into two and four equal shares",
+     "source": "ccss-math"
+    }
    ],
    "science": [
-    {"id": "1-PS4-1", "label": "Provide evidence that vibrating materials can make sound and that sound can make objects vibrate", "source": "ngss"},
-    {"id": "1-PS4-2", "label": "Construct an evidence-based account that objects can be seen only when illuminated", "source": "ngss"},
-    {"id": "1-LS1-1", "label": "Design a solution to a human problem by mimicking how plants and animals use their external parts", "source": "ngss"},
-    {"id": "1-LS3-1", "label": "Observe that young plants and animals are like, but not exactly like, their parents", "source": "ngss"},
-    {"id": "1-ESS1-1", "label": "Use observations of the sun, moon, and stars to describe predictable patterns", "source": "ngss"},
-    {"id": "1-ESS1-2", "label": "Relate the amount of daylight at different times of year to the time of year", "source": "ngss"}
+    {
+     "id": "1-PS4-1",
+     "label": "Provide evidence that vibrating materials can make sound and that sound can make objects vibrate",
+     "source": "ngss"
+    },
+    {
+     "id": "1-PS4-2",
+     "label": "Construct an evidence-based account that objects can be seen only when illuminated",
+     "source": "ngss"
+    },
+    {
+     "id": "1-LS1-1",
+     "label": "Design a solution to a human problem by mimicking how plants and animals use their external parts",
+     "source": "ngss"
+    },
+    {
+     "id": "1-LS3-1",
+     "label": "Observe that young plants and animals are like, but not exactly like, their parents",
+     "source": "ngss"
+    },
+    {
+     "id": "1-ESS1-1",
+     "label": "Use observations of the sun, moon, and stars to describe predictable patterns",
+     "source": "ngss"
+    },
+    {
+     "id": "1-ESS1-2",
+     "label": "Relate the amount of daylight at different times of year to the time of year",
+     "source": "ngss"
+    }
    ],
    "social_studies": [
-    {"id": "1.H2.0.1", "label": "Demonstrate chronological thinking by distinguishing among past, present, and future using family or school events", "source": "mi-social-studies"},
-    {"id": "1.H2.0.4", "label": "Compare life today with life in the past using the criteria of family, school, jobs, or communication", "source": "mi-social-studies"},
-    {"id": "1.G1.0.1", "label": "Construct simple maps of the classroom to demonstrate aerial perspective", "source": "mi-social-studies"},
-    {"id": "1.G1.0.2", "label": "Describe places using absolute location or relative location", "source": "mi-social-studies"},
-    {"id": "1.C1.0.1", "label": "Explain the need for rules and purposes of rules", "source": "mi-social-studies"},
-    {"id": "1.C2.0.2", "label": "Identify important symbols of the United States of America and what they represent", "source": "mi-social-studies"},
-    {"id": "1.E1.0.1", "label": "Distinguish between producers and consumers of goods and services", "source": "mi-social-studies"}
+    {
+     "id": "1.H2.0.1",
+     "label": "Demonstrate chronological thinking by distinguishing among past, present, and future using family or school events",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "1.H2.0.4",
+     "label": "Compare life today with life in the past using the criteria of family, school, jobs, or communication",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "1.G1.0.1",
+     "label": "Construct simple maps of the classroom to demonstrate aerial perspective",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "1.G1.0.2",
+     "label": "Describe places using absolute location or relative location",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "1.C1.0.1",
+     "label": "Explain the need for rules and purposes of rules",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "1.C2.0.2",
+     "label": "Identify important symbols of the United States of America and what they represent",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "1.E1.0.1",
+     "label": "Distinguish between producers and consumers of goods and services",
+     "source": "mi-social-studies"
+    }
    ]
   },
   "2": {
    "ela": [
-    {"id": "RF.2.3", "label": "Grade-level phonics and word analysis skills: vowel teams, prefixes, and suffixes", "source": "ccss-ela"},
-    {"id": "RF.2.4", "label": "Read with sufficient accuracy and fluency to support comprehension", "source": "ccss-ela"},
-    {"id": "RL.2.1", "label": "Ask and answer who, what, where, when, why, and how questions about a story", "source": "ccss-ela"},
-    {"id": "RL.2.2", "label": "Recount stories, including fables and folktales, and determine the central message, lesson, or moral", "source": "ccss-ela"},
-    {"id": "RL.2.5", "label": "Describe the overall structure of a story, including how the beginning and ending work", "source": "ccss-ela"},
-    {"id": "RI.2.1", "label": "Ask and answer who, what, where, when, why, and how questions to show understanding of an informational text", "source": "ccss-ela"},
-    {"id": "RI.2.2", "label": "Identify the main topic of a multiparagraph text as well as the focus of specific paragraphs", "source": "ccss-ela"},
-    {"id": "RI.2.3", "label": "Describe the connection between a series of historical events, scientific ideas, or steps in technical procedures", "source": "ccss-ela"},
-    {"id": "W.2.1", "label": "Write opinion pieces with reasons that support the opinion and linking words", "source": "ccss-ela"},
-    {"id": "W.2.2", "label": "Write informative/explanatory texts with facts and definitions and a concluding statement", "source": "ccss-ela"},
-    {"id": "L.2.1", "label": "Conventions of standard English grammar and usage when writing or speaking", "source": "ccss-ela"},
-    {"id": "L.2.2", "label": "Conventions of standard English capitalization, punctuation, and spelling", "source": "ccss-ela"}
+    {
+     "id": "RF.2.3",
+     "label": "Grade-level phonics and word analysis skills: vowel teams, prefixes, and suffixes",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.2.4",
+     "label": "Read with sufficient accuracy and fluency to support comprehension",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.2.1",
+     "label": "Ask and answer who, what, where, when, why, and how questions about a story",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.2.2",
+     "label": "Recount stories, including fables and folktales, and determine the central message, lesson, or moral",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.2.5",
+     "label": "Describe the overall structure of a story, including how the beginning and ending work",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.2.1",
+     "label": "Ask and answer who, what, where, when, why, and how questions to show understanding of an informational text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.2.2",
+     "label": "Identify the main topic of a multiparagraph text as well as the focus of specific paragraphs",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.2.3",
+     "label": "Describe the connection between a series of historical events, scientific ideas, or steps in technical procedures",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.2.1",
+     "label": "Write opinion pieces with reasons that support the opinion and linking words",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.2.2",
+     "label": "Write informative/explanatory texts with facts and definitions and a concluding statement",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.2.1",
+     "label": "Conventions of standard English grammar and usage when writing or speaking",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.2.2",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "source": "ccss-ela"
+    }
    ],
    "math": [
-    {"id": "2.OA.1", "label": "Use addition and subtraction within 100 to solve one- and two-step word problems", "source": "ccss-math"},
-    {"id": "2.OA.2", "label": "Fluently add and subtract within 20 using mental strategies", "source": "ccss-math"},
-    {"id": "2.OA.3", "label": "Determine whether a group of objects up to 20 has an odd or even number of members", "source": "ccss-math"},
-    {"id": "2.OA.4", "label": "Use addition to find the total number of objects in rectangular arrays with up to 5 rows and 5 columns", "source": "ccss-math"},
-    {"id": "2.NBT.1", "label": "Understand that the three digits of a three-digit number represent hundreds, tens, and ones", "source": "ccss-math"},
-    {"id": "2.NBT.2", "label": "Count within 1000 and skip-count by 5s, 10s, and 100s", "source": "ccss-math"},
-    {"id": "2.NBT.3", "label": "Read and write numbers to 1000 using base-ten numerals, number names, and expanded form", "source": "ccss-math"},
-    {"id": "2.NBT.5", "label": "Fluently add and subtract within 100 using place value and properties of operations", "source": "ccss-math"},
-    {"id": "2.NBT.7", "label": "Add and subtract within 1000 using concrete models or drawings and place value strategies", "source": "ccss-math"},
-    {"id": "2.MD.1", "label": "Measure the length of an object by selecting and using appropriate tools", "source": "ccss-math"},
-    {"id": "2.MD.7", "label": "Tell and write time from analog and digital clocks to the nearest five minutes, using a.m. and p.m.", "source": "ccss-math"},
-    {"id": "2.MD.8", "label": "Solve word problems involving dollar bills, quarters, dimes, nickels, and pennies", "source": "ccss-math"},
-    {"id": "2.G.1", "label": "Recognize and draw shapes with specified attributes; identify triangles, quadrilaterals, pentagons, hexagons, and cubes", "source": "ccss-math"},
-    {"id": "2.G.3", "label": "Partition circles and rectangles into two, three, or four equal shares", "source": "ccss-math"}
+    {
+     "id": "2.OA.1",
+     "label": "Use addition and subtraction within 100 to solve one- and two-step word problems",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.OA.2",
+     "label": "Fluently add and subtract within 20 using mental strategies",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.OA.3",
+     "label": "Determine whether a group of objects up to 20 has an odd or even number of members",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.OA.4",
+     "label": "Use addition to find the total number of objects in rectangular arrays with up to 5 rows and 5 columns",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.NBT.1",
+     "label": "Understand that the three digits of a three-digit number represent hundreds, tens, and ones",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.NBT.2",
+     "label": "Count within 1000 and skip-count by 5s, 10s, and 100s",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.NBT.3",
+     "label": "Read and write numbers to 1000 using base-ten numerals, number names, and expanded form",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.NBT.5",
+     "label": "Fluently add and subtract within 100 using place value and properties of operations",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.NBT.7",
+     "label": "Add and subtract within 1000 using concrete models or drawings and place value strategies",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.MD.1",
+     "label": "Measure the length of an object by selecting and using appropriate tools",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.MD.7",
+     "label": "Tell and write time from analog and digital clocks to the nearest five minutes, using a.m. and p.m.",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.MD.8",
+     "label": "Solve word problems involving dollar bills, quarters, dimes, nickels, and pennies",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.G.1",
+     "label": "Recognize and draw shapes with specified attributes; identify triangles, quadrilaterals, pentagons, hexagons, and cubes",
+     "source": "ccss-math"
+    },
+    {
+     "id": "2.G.3",
+     "label": "Partition circles and rectangles into two, three, or four equal shares",
+     "source": "ccss-math"
+    }
    ],
    "science": [
-    {"id": "2-PS1-1", "label": "Describe and classify different kinds of materials by their observable properties", "source": "ngss"},
-    {"id": "2-PS1-2", "label": "Analyze data from testing materials to determine which have properties that suit an intended use", "source": "ngss"},
-    {"id": "2-PS1-4", "label": "Construct an argument that some changes caused by heating or cooling can be reversed and some cannot", "source": "ngss"},
-    {"id": "2-LS2-1", "label": "Investigate whether plants need sunlight and water to grow", "source": "ngss"},
-    {"id": "2-LS4-1", "label": "Compare the diversity of life in different habitats", "source": "ngss"},
-    {"id": "2-ESS1-1", "label": "Use information from several sources to provide evidence that Earth events can occur quickly or slowly", "source": "ngss"},
-    {"id": "2-ESS2-1", "label": "Compare multiple solutions designed to slow or prevent wind or water from changing the shape of the land", "source": "ngss"},
-    {"id": "2-ESS2-2", "label": "Develop a model to represent the shapes and kinds of land and bodies of water in an area", "source": "ngss"}
+    {
+     "id": "2-PS1-1",
+     "label": "Describe and classify different kinds of materials by their observable properties",
+     "source": "ngss"
+    },
+    {
+     "id": "2-PS1-2",
+     "label": "Analyze data from testing materials to determine which have properties that suit an intended use",
+     "source": "ngss"
+    },
+    {
+     "id": "2-PS1-4",
+     "label": "Construct an argument that some changes caused by heating or cooling can be reversed and some cannot",
+     "source": "ngss"
+    },
+    {
+     "id": "2-LS2-1",
+     "label": "Investigate whether plants need sunlight and water to grow",
+     "source": "ngss"
+    },
+    {
+     "id": "2-LS4-1",
+     "label": "Compare the diversity of life in different habitats",
+     "source": "ngss"
+    },
+    {
+     "id": "2-ESS1-1",
+     "label": "Use information from several sources to provide evidence that Earth events can occur quickly or slowly",
+     "source": "ngss"
+    },
+    {
+     "id": "2-ESS2-1",
+     "label": "Compare multiple solutions designed to slow or prevent wind or water from changing the shape of the land",
+     "source": "ngss"
+    },
+    {
+     "id": "2-ESS2-2",
+     "label": "Develop a model to represent the shapes and kinds of land and bodies of water in an area",
+     "source": "ngss"
+    }
    ],
    "social_studies": [
-    {"id": "2.H2.0.1", "label": "Demonstrate chronological thinking by distinguishing among years and decades using a timeline of local community events", "source": "mi-social-studies"},
-    {"id": "2.H2.0.4", "label": "Describe changes in the local community over time", "source": "mi-social-studies"},
-    {"id": "2.G1.0.1", "label": "Construct maps of the local community with symbols, labels, and legends", "source": "mi-social-studies"},
-    {"id": "2.G4.0.1", "label": "Describe land use in the community", "source": "mi-social-studies"},
-    {"id": "2.C1.0.1", "label": "Explain why people form governments", "source": "mi-social-studies"},
-    {"id": "2.C3.0.1", "label": "Give examples of how local governments make, enforce, and interpret laws (ordinances)", "source": "mi-social-studies"},
-    {"id": "2.E1.0.1", "label": "Identify the opportunity cost involved in a consumer decision", "source": "mi-social-studies"}
+    {
+     "id": "2.H2.0.1",
+     "label": "Demonstrate chronological thinking by distinguishing among years and decades using a timeline of local community events",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "2.H2.0.4",
+     "label": "Describe changes in the local community over time",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "2.G1.0.1",
+     "label": "Construct maps of the local community with symbols, labels, and legends",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "2.G4.0.1",
+     "label": "Describe land use in the community",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "2.C1.0.1",
+     "label": "Explain why people form governments",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "2.C3.0.1",
+     "label": "Give examples of how local governments make, enforce, and interpret laws (ordinances)",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "2.E1.0.1",
+     "label": "Identify the opportunity cost involved in a consumer decision",
+     "source": "mi-social-studies"
+    }
    ]
   },
   "4": {
    "ela": [
-    {"id": "RI.4.1", "label": "Refer to details and examples in a text when explaining what it says and when drawing inferences", "source": "ccss-ela"},
-    {"id": "RI.4.2", "label": "Determine the main idea of a text and explain how it is supported by key details; summarize", "source": "ccss-ela"},
-    {"id": "RI.4.3", "label": "Explain events, procedures, ideas, or concepts in a historical, scientific, or technical text", "source": "ccss-ela"},
-    {"id": "RI.4.5", "label": "Describe the overall structure of events, ideas, concepts, or information in a text", "source": "ccss-ela"},
-    {"id": "RF.4.3", "label": "Use combined knowledge of letter-sound correspondences, syllabication, and morphology to read multisyllabic words", "source": "ccss-ela"},
-    {"id": "RF.4.4", "label": "Read with sufficient accuracy and fluency to support comprehension", "source": "ccss-ela"},
-    {"id": "RL.4.1", "label": "Refer to details and examples in a text when explaining what it says and when drawing inferences", "source": "ccss-ela"},
-    {"id": "RL.4.2", "label": "Determine a theme of a story, drama, or poem from details in the text; summarize the text", "source": "ccss-ela"},
-    {"id": "RL.4.3", "label": "Describe in depth a character, setting, or event in a story or drama, drawing on specific details", "source": "ccss-ela"},
-    {"id": "W.4.1", "label": "Write opinion pieces on topics or texts, supporting a point of view with reasons and information", "source": "ccss-ela"},
-    {"id": "W.4.2", "label": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly", "source": "ccss-ela"},
-    {"id": "L.4.1", "label": "Conventions of standard English grammar and usage when writing or speaking", "source": "ccss-ela"},
-    {"id": "L.4.2", "label": "Conventions of standard English capitalization, punctuation, and spelling", "source": "ccss-ela"},
-    {"id": "L.4.2.d", "label": "Spell grade-appropriate words correctly, consulting references as needed", "source": "ccss-ela"},
-    {"id": "L.4.5", "label": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings", "source": "ccss-ela"}
+    {
+     "id": "RI.4.1",
+     "label": "Refer to details and examples in a text when explaining what it says and when drawing inferences",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.4.2",
+     "label": "Determine the main idea of a text and explain how it is supported by key details; summarize",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.4.3",
+     "label": "Explain events, procedures, ideas, or concepts in a historical, scientific, or technical text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.4.5",
+     "label": "Describe the overall structure of events, ideas, concepts, or information in a text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.4.3",
+     "label": "Use combined knowledge of letter-sound correspondences, syllabication, and morphology to read multisyllabic words",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RF.4.4",
+     "label": "Read with sufficient accuracy and fluency to support comprehension",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.4.1",
+     "label": "Refer to details and examples in a text when explaining what it says and when drawing inferences",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.4.2",
+     "label": "Determine a theme of a story, drama, or poem from details in the text; summarize the text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.4.3",
+     "label": "Describe in depth a character, setting, or event in a story or drama, drawing on specific details",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.4.1",
+     "label": "Write opinion pieces on topics or texts, supporting a point of view with reasons and information",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.4.2",
+     "label": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.4.1",
+     "label": "Conventions of standard English grammar and usage when writing or speaking",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.4.2",
+     "label": "Conventions of standard English capitalization, punctuation, and spelling",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.4.2.d",
+     "label": "Spell grade-appropriate words correctly, consulting references as needed",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.4.5",
+     "label": "Demonstrate understanding of figurative language, word relationships, and nuances in word meanings",
+     "source": "ccss-ela"
+    }
    ],
    "math": [
-    {"id": "4.OA.1", "label": "Interpret a multiplication equation as a comparison", "source": "ccss-math"},
-    {"id": "4.OA.3", "label": "Solve multistep word problems with the four operations and interpret remainders", "source": "ccss-math"},
-    {"id": "4.OA.4", "label": "Find all factor pairs for a whole number 1-100 and recognize multiples", "source": "ccss-math"},
-    {"id": "4.NBT.1", "label": "Recognize that a digit represents ten times what it represents in the place to its right", "source": "ccss-math"},
-    {"id": "4.NBT.2", "label": "Read, write, and compare multi-digit whole numbers", "source": "ccss-math"},
-    {"id": "4.NBT.3", "label": "Round multi-digit whole numbers to any place", "source": "ccss-math"},
-    {"id": "4.NBT.4", "label": "Fluently add and subtract multi-digit whole numbers using the standard algorithm", "source": "ccss-math"},
-    {"id": "4.NBT.5", "label": "Multiply a whole number of up to four digits by a one-digit number and multiply two two-digit numbers", "source": "ccss-math"},
-    {"id": "4.NBT.6", "label": "Find whole-number quotients and remainders with up to four-digit dividends and one-digit divisors", "source": "ccss-math"},
-    {"id": "4.NF.1", "label": "Explain why a fraction a/b is equivalent to (n x a)/(n x b)", "source": "ccss-math"},
-    {"id": "4.NF.2", "label": "Compare two fractions with different numerators and different denominators", "source": "ccss-math"},
-    {"id": "4.NF.3", "label": "Understand a fraction a/b with a > 1 as a sum of fractions", "source": "ccss-math"},
-    {"id": "4.MD.3", "label": "Apply the area and perimeter formulas for rectangles in real-world and mathematical problems", "source": "ccss-math"}
+    {
+     "id": "4.OA.1",
+     "label": "Interpret a multiplication equation as a comparison",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.OA.3",
+     "label": "Solve multistep word problems with the four operations and interpret remainders",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.OA.4",
+     "label": "Find all factor pairs for a whole number 1-100 and recognize multiples",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NBT.1",
+     "label": "Recognize that a digit represents ten times what it represents in the place to its right",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NBT.2",
+     "label": "Read, write, and compare multi-digit whole numbers",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NBT.3",
+     "label": "Round multi-digit whole numbers to any place",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NBT.4",
+     "label": "Fluently add and subtract multi-digit whole numbers using the standard algorithm",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NBT.5",
+     "label": "Multiply a whole number of up to four digits by a one-digit number and multiply two two-digit numbers",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NBT.6",
+     "label": "Find whole-number quotients and remainders with up to four-digit dividends and one-digit divisors",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NF.1",
+     "label": "Explain why a fraction a/b is equivalent to (n x a)/(n x b)",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NF.2",
+     "label": "Compare two fractions with different numerators and different denominators",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.NF.3",
+     "label": "Understand a fraction a/b with a > 1 as a sum of fractions",
+     "source": "ccss-math"
+    },
+    {
+     "id": "4.MD.3",
+     "label": "Apply the area and perimeter formulas for rectangles in real-world and mathematical problems",
+     "source": "ccss-math"
+    }
    ],
    "science": [
-    {"id": "4-PS3-1", "label": "Construct an explanation relating the speed of an object to the energy of that object", "source": "ngss"},
-    {"id": "4-PS3-3", "label": "Ask questions and predict outcomes about the changes in energy that occur when objects collide", "source": "ngss"},
-    {"id": "4-PS4-1", "label": "Develop a model of waves to describe patterns in terms of amplitude and wavelength", "source": "ngss"},
-    {"id": "4-LS1-1", "label": "Construct an argument that plants and animals have internal and external structures that support survival", "source": "ngss"},
-    {"id": "4-LS1-2", "label": "Model how animals receive different types of information through their senses and process the information", "source": "ngss"},
-    {"id": "4-ESS1-1", "label": "Identify evidence from patterns in rock formations and fossils in rock layers", "source": "ngss"},
-    {"id": "4-ESS2-1", "label": "Provide evidence of the effects of weathering and the rate of erosion by water, ice, wind, or vegetation", "source": "ngss"},
-    {"id": "4-PS3-4", "label": "Apply scientific ideas to design, test, and refine a device that converts energy from one form to another", "source": "ngss"}
+    {
+     "id": "4-PS3-1",
+     "label": "Construct an explanation relating the speed of an object to the energy of that object",
+     "source": "ngss"
+    },
+    {
+     "id": "4-PS3-3",
+     "label": "Ask questions and predict outcomes about the changes in energy that occur when objects collide",
+     "source": "ngss"
+    },
+    {
+     "id": "4-PS4-1",
+     "label": "Develop a model of waves to describe patterns in terms of amplitude and wavelength",
+     "source": "ngss"
+    },
+    {
+     "id": "4-LS1-1",
+     "label": "Construct an argument that plants and animals have internal and external structures that support survival",
+     "source": "ngss"
+    },
+    {
+     "id": "4-LS1-2",
+     "label": "Model how animals receive different types of information through their senses and process the information",
+     "source": "ngss"
+    },
+    {
+     "id": "4-ESS1-1",
+     "label": "Identify evidence from patterns in rock formations and fossils in rock layers",
+     "source": "ngss"
+    },
+    {
+     "id": "4-ESS2-1",
+     "label": "Provide evidence of the effects of weathering and the rate of erosion by water, ice, wind, or vegetation",
+     "source": "ngss"
+    },
+    {
+     "id": "4-PS3-4",
+     "label": "Apply scientific ideas to design, test, and refine a device that converts energy from one form to another",
+     "source": "ngss"
+    }
    ],
    "social_studies": [
-    {"id": "4.H3.0.1", "label": "Use historical inquiry questions to investigate the development of Michigan's major economic activities from statehood to present", "source": "mi-social-studies"},
-    {"id": "4.H3.0.2", "label": "Use primary and secondary sources to explain how migration and immigration affected the growth of Michigan", "source": "mi-social-studies"},
-    {"id": "4.G1.0.1", "label": "Identify questions geographers ask in examining the United States", "source": "mi-social-studies"},
-    {"id": "4.G1.0.5", "label": "Use hemispheres, continents, oceans, and major lines of latitude to describe the location of the United States", "source": "mi-social-studies"},
-    {"id": "4.G2.0.1", "label": "Describe ways in which the United States can be divided into different regions", "source": "mi-social-studies"},
-    {"id": "4.G4.0.1", "label": "Use a case study or story about migration to identify push and pull factors", "source": "mi-social-studies"},
-    {"id": "4.C1.0.1", "label": "Identify questions political scientists ask in examining the United States", "source": "mi-social-studies"},
-    {"id": "4.C1.0.2", "label": "Describe the purposes of government as identified in the Preamble of the Constitution", "source": "mi-social-studies"},
-    {"id": "4.C2.0.1", "label": "Explain how popular sovereignty, rule of law, checks and balances, separation of powers, and individual rights limit the powers of the federal government", "source": "mi-social-studies"},
-    {"id": "4.C3.0.1", "label": "Give examples of ways the Constitution limits the powers of the federal government", "source": "mi-social-studies"},
-    {"id": "4.C5.0.1", "label": "Explain the responsibilities of members of American society", "source": "mi-social-studies"}
+    {
+     "id": "4.H3.0.1",
+     "label": "Use historical inquiry questions to investigate the development of Michigan's major economic activities from statehood to present",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.H3.0.2",
+     "label": "Use primary and secondary sources to explain how migration and immigration affected the growth of Michigan",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.G1.0.1",
+     "label": "Identify questions geographers ask in examining the United States",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.G1.0.5",
+     "label": "Use hemispheres, continents, oceans, and major lines of latitude to describe the location of the United States",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.G2.0.1",
+     "label": "Describe ways in which the United States can be divided into different regions",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.G4.0.1",
+     "label": "Use a case study or story about migration to identify push and pull factors",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.C1.0.1",
+     "label": "Identify questions political scientists ask in examining the United States",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.C1.0.2",
+     "label": "Describe the purposes of government as identified in the Preamble of the Constitution",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.C2.0.1",
+     "label": "Explain how popular sovereignty, rule of law, checks and balances, separation of powers, and individual rights limit the powers of the federal government",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.C3.0.1",
+     "label": "Give examples of ways the Constitution limits the powers of the federal government",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "4.C5.0.1",
+     "label": "Explain the responsibilities of members of American society",
+     "source": "mi-social-studies"
+    }
+   ]
+  },
+  "6": {
+   "ela": [
+    {
+     "id": "RL.6.1",
+     "label": "Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.6.2",
+     "label": "Determine a theme or central idea of a text and how it is conveyed through particular details; provide a summary of the text distinct from personal opinions or judgments",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.6.3",
+     "label": "Describe how a particular story's or drama's plot unfolds in a series of episodes as well as how the characters respond or change as the plot moves toward a resolution",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.6.4",
+     "label": "Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of a specific word choice on meaning and tone",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RL.6.10",
+     "label": "By the end of the year, read and comprehend literature, including stories, dramas, and poems, in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.6.1",
+     "label": "Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.6.2",
+     "label": "Determine a central idea of a text and how it is conveyed through particular details; provide a summary of the text distinct from personal opinions or judgments",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.6.3",
+     "label": "Analyze in detail how a key individual, event, or idea is introduced, illustrated, and elaborated in a text",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.6.4",
+     "label": "Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "RI.6.8",
+     "label": "Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.6.1",
+     "label": "Write arguments to support claims with clear reasons and relevant evidence",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.6.3",
+     "label": "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.6.4",
+     "label": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "W.6.9",
+     "label": "Draw evidence from literary or informational texts to support analysis, reflection, and research",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "SL.6.1",
+     "label": "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "SL.6.4",
+     "label": "Present claims and findings, sequencing ideas logically and using pertinent descriptions, facts, and details to accentuate main ideas or themes; use appropriate eye contact, adequate volume, and clear pronunciation",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.6.1",
+     "label": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking",
+     "source": "ccss-ela"
+    },
+    {
+     "id": "L.6.2",
+     "label": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing",
+     "source": "ccss-ela"
+    }
+   ],
+   "math": [
+    {
+     "id": "6.RP.1",
+     "label": "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.RP.2",
+     "label": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.RP.3",
+     "label": "Use ratio and rate reasoning to solve real-world and mathematical problems (tables of equivalent ratios, tape diagrams, double number line diagrams, equations)",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.1",
+     "label": "Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.2",
+     "label": "Fluently divide multi-digit numbers using the standard algorithm",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.3",
+     "label": "Fluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm for each operation",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.4",
+     "label": "Find the greatest common factor of two whole numbers less than or equal to 100 and the least common multiple of two whole numbers less than or equal to 12; use the distributive property to express a sum with a common factor as a multiple of a sum with no common factor",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.5",
+     "label": "Understand that positive and negative numbers are used together to describe quantities having opposite directions or values; use positive and negative numbers to represent quantities in real-world contexts",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.6",
+     "label": "Understand a rational number as a point on the number line; extend number line diagrams and coordinate axes to represent points on the line and in the plane with negative number coordinates",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.7",
+     "label": "Understand ordering and absolute value of rational numbers",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.NS.8",
+     "label": "Solve real-world and mathematical problems by graphing points in all four quadrants of the coordinate plane, including using coordinates and absolute value to find distances",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.EE.1",
+     "label": "Write and evaluate numerical expressions involving whole-number exponents",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.EE.2",
+     "label": "Write, read, and evaluate expressions in which letters stand for numbers",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.EE.3",
+     "label": "Apply the properties of operations to generate equivalent expressions",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.EE.4",
+     "label": "Identify when two expressions are equivalent (when the two expressions name the same number regardless of which value is substituted into them)",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.EE.5",
+     "label": "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true?",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.EE.7",
+     "label": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.G.1",
+     "label": "Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in real-world and mathematical problems",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.G.2",
+     "label": "Find the volume of a right rectangular prism with fractional edge lengths by packing it with unit cubes, and show that the volume is the same as would be found by multiplying the edge lengths of the prism",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.G.3",
+     "label": "Draw polygons in the coordinate plane given coordinates for the vertices; use coordinates to find the length of a side joining points with the same first coordinate or the same second coordinate",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.SP.3",
+     "label": "Recognize that a measure of center for a numerical data set summarizes all of its values with a single number, while a measure of variation describes how its values vary with a single number",
+     "source": "ccss-math"
+    },
+    {
+     "id": "6.SP.5",
+     "label": "Summarize numerical data sets in relation to their context: number of observations, nature of the attribute and its units, measures of center and variability, and the shape of the distribution",
+     "source": "ccss-math"
+    }
+   ],
+   "science": [
+    {
+     "id": "MS-PS1-3",
+     "label": "Gather and make sense of information to describe that synthetic materials come from natural resources and impact society",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-PS2-2",
+     "label": "Plan an investigation to provide evidence that the change in an object's motion depends on the sum of the forces on the object and the mass of the object",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-PS3-3",
+     "label": "Apply scientific principles to design, construct, and test a device that either minimizes or maximizes thermal energy transfer",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-LS1-2",
+     "label": "Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-LS1-5",
+     "label": "Construct a scientific explanation based on evidence for how environmental and genetic factors influence the growth of organisms",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-LS2-1",
+     "label": "Analyze and interpret data to provide evidence for the effects of resource availability on organisms and populations of organisms in an ecosystem",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-ESS2-1",
+     "label": "Develop a model to describe the cycling of Earth's materials and the flow of energy that drives this process",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-ESS2-5",
+     "label": "Collect data to provide evidence for how the motions and complex interactions of air masses result in changes in weather conditions",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-ESS3-1",
+     "label": "Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes",
+     "source": "ngss-ms"
+    },
+    {
+     "id": "MS-ETS1-1",
+     "label": "Define the criteria and constraints of a design problem with sufficient precision to ensure a successful solution, taking into account relevant scientific principles and potential impacts on people and the natural environment that may limit possible solutions",
+     "source": "ngss-ms"
+    }
+   ],
+   "social_studies": [
+    {
+     "id": "6.G1.1.1",
+     "label": "Use a variety of geographic tools (maps, globes, and web-based geography technology) to analyze the world at global, regional, and local scales",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.G1.3.1",
+     "label": "Use the fundamental themes of geography (location, place, human-environment interaction, movement, region) to describe regions or places on earth",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.G4.1.1",
+     "label": "Define culture and describe examples of cultural change through diffusion, including what has diffused, why and where it has spread, and positive and negative consequences of the change",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.G5.1.1",
+     "label": "Describe examples of how humans have impacted and are continuing to impact the environment in different places as a consequence of population size, resource use, level of consumption, and technology",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.G6.1.1",
+     "label": "Identify global issues",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.C1.1.1",
+     "label": "Compare and contrast different ideas about the purposes of government in different nations, nation-states or governments",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.C3.6.1",
+     "label": "Define the characteristics of modern nation-states",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.C4.3.1",
+     "label": "Explain how governments address national and international issues and form policies, and how the policies may not be consistent with those of other nation-states",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.E1.1.1",
+     "label": "Explain how incentives and disincentives in the market economy can change the decision-making process",
+     "source": "mi-social-studies"
+    },
+    {
+     "id": "6.E3.1.1",
+     "label": "Explain and compare how economic systems (traditional, command, market) answer the three basic economic questions: what goods and services will be produced, how will they be produced, and for whom will they be produced",
+     "source": "mi-social-studies"
+    }
    ]
   }
  }

@@ -3178,7 +3178,7 @@
      "subject": "math",
      "statutory": "mathematics",
      "kind": "standard",
-     "label": "Understand the concept of a unit rate a/b associated with a ratio a:b with b != 0, and use rate language in the context of a ratio relationship",
+     "label": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship",
      "parent": "6.MATH",
      "prereqs": [],
      "standards": [
@@ -8425,7 +8425,8 @@
    "K",
    "1",
    "2",
-   "4"
+   "4",
+   "6"
   ],
   "sources": [
    {
@@ -8445,6 +8446,12 @@
     "title": "Next Generation Science Standards — Grades K-5 by Topic (September 2017, (c)2013 Achieve, Inc.)",
     "url": "https://www.nextgenscience.org/sites/default/files/K-5Topic.pdf",
     "accessed": "2026-10-17"
+   },
+   {
+    "id": "ngss-ms",
+    "title": "Next Generation Science Standards - Middle School (6-8) performance expectations",
+    "url": "https://www.nextgenscience.org/search-standards",
+    "accessed": "2026-10-27"
    },
    {
     "id": "mi-social-studies",
