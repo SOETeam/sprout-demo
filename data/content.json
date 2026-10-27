@@ -4340,11 +4340,11 @@
        },
        {
         "block": 2,
-        "subject": "reading",
+        "subject": "literature",
         "min": 60,
-        "activity": "Retell the passage in 4 sentences, then answer 2 why-questions.",
+        "activity": "Review: our class reader: the chapter where the problem turns — read for 15 minutes, then retell the ending in 3 sentences.",
         "passage_ref": "juniper_p1",
-        "lesson_ref": "juniper_w1_rd3"
+        "lesson_ref": "juniper_w1_lit1"
        },
        {
         "block": 3,
@@ -6159,11 +6159,105 @@
        "generator": "juniper.coding",
        "minutes_target": 60
       }
+     },
+     "juniper_w1_lit1": {
+      "id": "juniper_w1_lit1",
+      "title": "Our Reader: Character, Setting, Problem",
+      "emoji": "📚",
+      "minutes": 20,
+      "summary": "Read 15 minutes of the class reader, then name the character, the setting and the problem in your own words.",
+      "subject": "literature",
+      "week": 1,
+      "content": {
+       "explain": "Literature is a story written to be read and felt, not mined for facts. While you read a chapter, hold three questions in your head: who is this about (the main character), where and when does it happen (the setting), and what is going wrong or in the way (the problem). Read the chapter once for pleasure, then stop and answer the three questions out loud before you write anything. The problem usually shows up early — it is what keeps you turning pages.",
+       "examples": [
+        {
+         "q": "Chapter 2: the shelf where the big book should be is empty.\nWhat is the problem?",
+         "a": "The book is missing, so somebody has to find it or fix it.",
+         "steps": [
+          "Say who the chapter is about.",
+          "Say where it happens.",
+          "Say what is going wrong."
+         ]
+        },
+        {
+         "q": "You read: The rain hammered the roof while she waited inside.\nWhat is the setting?",
+         "a": "Inside the library, on a rainy day.",
+         "steps": [
+          "Find the place words.",
+          "Find the time words.",
+          "Say both together."
+         ]
+        },
+        {
+         "q": "Why does the setting matter here?",
+         "a": "Being stuck inside is why she keeps reading and why she notices the empty shelf.",
+         "steps": [
+          "Ask what the place forces the character to do.",
+          "Ask what would change if the place were different."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which of these is a SETTING?",
+         "options": [
+          "a place and a time",
+          "the hero of the story",
+          "the lesson of the story",
+          "the longest word"
+         ],
+         "correctIndex": 0,
+         "hint": "Setting answers where and when.",
+         "praise": "Yes! Place and time together."
+        },
+        {
+         "question": "A problem in a story is…",
+         "options": [
+          "something the character must deal with",
+          "the title of the book",
+          "the last sentence",
+          "a fact about the author"
+         ],
+         "correctIndex": 0,
+         "hint": "Something is wrong or in the way for the character.",
+         "praise": "Right — the character has something to handle."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write the character, the setting and the problem from today’s chapter in three lines.",
+         "answer": "Three lines: a name (or description) of the main character, a place and time, and what is going wrong.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Copy one sentence that shows the problem without saying \"problem\".",
+         "answer": "A quoted line from the chapter where something is missing, wrong or in the way.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write one question you still have about the chapter.",
+         "answer": "An open question about what happens next, the character’s choice, or the missing thing.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Tell a grown-up what happened in the chapter in 30 seconds, without looking.",
+         "answer": "A spoken retell covering who, where and what is going wrong.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 20
+      }
      }
     },
     "counts": {
      "blocks": 24,
-     "lesson_objects": 24,
+     "lesson_objects": 25,
      "sheets": 0
     },
     "test": {
@@ -10044,31 +10138,36 @@
         "block": 2,
         "subject": "reading",
         "min": 60,
-        "activity": "Read the passage \"a nonfiction passage about frogs\" and underline 3 words you do not know."
+        "activity": "Read the passage \"a nonfiction passage about frogs\" and underline 3 words you do not know.",
+        "lesson_ref": "juniper_w2_l8"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Read the 10 spelling words aloud, then sort them by the -ed and -ing endings rule."
+        "activity": "Read the 10 spelling words aloud, then sort them by the -ed and -ing endings rule.",
+        "lesson_ref": "juniper_w2_l21"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Look through animals and their young pictures or the lesson and name 4 new words aloud."
+        "activity": "Look through animals and their young pictures or the lesson and name 4 new words aloud.",
+        "lesson_ref": "juniper_w2_l17"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Read the people who help our town lesson and put 4 events or people in order."
+        "activity": "Read the people who help our town lesson and put 4 events or people in order.",
+        "lesson_ref": "juniper_w2_l13"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Build a 6-block sequence for a morning routine one block at a time, testing after each block."
+        "activity": "Build a 6-block sequence for a morning routine one block at a time, testing after each block.",
+        "lesson_ref": "juniper_w2_l9"
        }
       ],
       "total_min": 210
@@ -10088,31 +10187,36 @@
         "block": 2,
         "subject": "reading",
         "min": 60,
-        "activity": "Answer the 5 retelling in order questions on the passage and point to the line that proves each answer."
+        "activity": "Answer the 5 retelling in order questions on the passage and point to the line that proves each answer.",
+        "lesson_ref": "juniper_w2_l20"
        },
        {
         "block": 3,
         "subject": "english_grammar",
         "min": 15,
-        "activity": "Write 4 spelling words in sentences, capitalizing the first word and ending each sentence correctly."
+        "activity": "Write 4 spelling words in sentences, capitalizing the first word and ending each sentence correctly.",
+        "lesson_ref": "juniper_w2_l11"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Sort 6 examples from animals and their young into two groups and say the rule you used."
+        "activity": "Sort 6 examples from animals and their young into two groups and say the rule you used.",
+        "lesson_ref": "juniper_w2_l16"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Answer 5 people who help our town questions from memory, then check the lesson and fix 2."
+        "activity": "Answer 5 people who help our town questions from memory, then check the lesson and fix 2.",
+        "lesson_ref": "juniper_w2_l18"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Remix a 6-block sequence for a morning routine so it happens twice, then run it twice."
+        "activity": "Remix a 6-block sequence for a morning routine so it happens twice, then run it twice.",
+        "lesson_ref": "juniper_w2_l14"
        }
       ],
       "total_min": 210
@@ -10132,31 +10236,36 @@
         "block": 2,
         "subject": "writing",
         "min": 60,
-        "activity": "Write 4 sentences retelling the passage: beginning, middle and end."
+        "activity": "Write 4 sentences retelling the passage: beginning, middle and end.",
+        "lesson_ref": "juniper_w2_l15"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Dictation: write all 10 words from memory, then fix misses in a new color."
+        "activity": "Dictation: write all 10 words from memory, then fix misses in a new color.",
+        "lesson_ref": "juniper_w2_l21"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Write 4 facts about animals and their young and draw 1 picture to match."
+        "activity": "Write 4 facts about animals and their young and draw 1 picture to match.",
+        "lesson_ref": "juniper_w2_l22"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Add 4 labels to the people who help our town timeline or map, then read them back."
+        "activity": "Add 4 labels to the people who help our town timeline or map, then read them back.",
+        "lesson_ref": "juniper_w2_l13"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Break a 6-block sequence for a morning routine on purpose, then fix it using what the run screen shows."
+        "activity": "Break a 6-block sequence for a morning routine on purpose, then fix it using what the run screen shows.",
+        "lesson_ref": "juniper_w2_l19"
        }
       ],
       "total_min": 210
@@ -10174,33 +10283,38 @@
        },
        {
         "block": 2,
-        "subject": "reading",
+        "subject": "literature",
         "min": 60,
-        "activity": "Retell the passage in 4 sentences, then answer 2 why-questions."
+        "activity": "Review: our class reader: how the problem gets solved — read for 15 minutes, then retell the ending in 3 sentences.",
+        "lesson_ref": "juniper_w2_lit1"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Cover, write and check the 5 hardest words, then re-test yourself once."
+        "activity": "Cover, write and check the 5 hardest words, then re-test yourself once.",
+        "lesson_ref": "juniper_w2_l21"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Explain animals and their young to a parent in 3 sentences, then draw one labeled picture."
+        "activity": "Explain animals and their young to a parent in 3 sentences, then draw one labeled picture.",
+        "lesson_ref": "juniper_w2_l16"
        },
        {
         "block": 5,
         "subject": "civics",
         "min": 25,
-        "activity": "Name 4 ways a kid can help at home, school and in town, then pick one to do."
+        "activity": "Name 4 ways a kid can help at home, school and in town, then pick one to do.",
+        "lesson_ref": "juniper_w2_l23"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Run a 6-block sequence for a morning routine and name each block job to a parent."
+        "activity": "Run a 6-block sequence for a morning routine and name each block job to a parent.",
+        "lesson_ref": "juniper_w2_l24"
        }
       ],
       "total_min": 210
@@ -10480,7 +10594,7 @@
       "emoji": "📖",
       "minutes": 15,
       "summary": "Answer 5 questions about the frog passage by finding proof in the text.",
-      "subject": null,
+      "subject": "reading",
       "week": 2,
       "content": {
        "explain": "Good readers go back to the passage to prove their answers. Read each question, then scan the text for the exact line that supports your choice. Point to the line and say the answer in your own words. This builds strong comprehension habits.",
@@ -10565,7 +10679,7 @@
       "emoji": "✍️",
       "minutes": 15,
       "summary": "Write 4 spelling words in complete sentences with correct capitalization and punctuation.",
-      "subject": null,
+      "subject": "english_grammar",
       "week": 2,
       "content": {
        "explain": "A sentence starts with a capital letter and ends with a period, question mark, or exclamation point. Pick four spelling words and write one sentence for each. Use the word naturally, like you're telling a story. Check that every sentence has a subject and a verb.",
@@ -10638,7 +10752,7 @@
       "emoji": "🏘️",
       "minutes": 15,
       "summary": "Answer 5 questions about community helpers from memory, then check and fix 2.",
-      "subject": null,
+      "subject": "history",
       "week": 2,
       "content": {
        "explain": "You've learned about people who help our town: firefighters, police officers, teachers, doctors, mail carriers, and more. Close the lesson and answer 5 questions from what you remember. Then open the lesson, check your work, and fix any two that need correction. This builds memory and self-checking skills.",
@@ -10723,7 +10837,7 @@
       "emoji": "🔁",
       "minutes": 15,
       "summary": "Remix the 6-block morning routine so it runs twice automatically.",
-      "subject": null,
+      "subject": "coding",
       "week": 2,
       "content": {
        "explain": "A loop repeats a set of blocks without rewriting them. Wrap your 6 morning blocks inside a \"repeat 2 times\" block. Now the whole routine runs, then runs again. This is how coders save time and avoid mistakes. Test it: you should see all 12 messages in order.",
@@ -10796,7 +10910,7 @@
       "emoji": "📝",
       "minutes": 15,
       "summary": "Write 4 sentences that retell the frog passage: beginning, middle, and end.",
-      "subject": null,
+      "subject": "writing",
       "week": 2,
       "content": {
        "explain": "A good retelling captures the main idea in order. Sentence 1: the beginning — what the passage introduces. Sentence 2-3: the middle — key details. Sentence 4: the end — how it wraps up. Use your own words. Each sentence starts with a capital and ends with a period.",
@@ -10869,7 +10983,7 @@
       "emoji": "🐣",
       "minutes": 15,
       "summary": "Write four facts about animal babies and draw a matching picture.",
-      "subject": null,
+      "subject": "science",
       "week": 2,
       "content": {
        "explain": "Scientists share what they learn by writing facts and drawing pictures. A fact is a true statement you can prove. Pick four things you learned about animals and their young. Write each fact as a complete sentence. Then draw one picture that shows one of your facts. Label the important parts.",
@@ -10943,7 +11057,7 @@
       "emoji": "🏘️",
       "minutes": 15,
       "summary": "Add four labels to the community helpers timeline or map.",
-      "subject": null,
+      "subject": "history",
       "week": 2,
       "content": {
        "explain": "A timeline shows events in order. A map shows where things are. Your town has many helpers: firefighters, teachers, mail carriers, librarians, and more. Add four labels to your timeline or map. Each label names a helper or an event. Then read your labels aloud to check they make sense in order.",
@@ -11017,7 +11131,7 @@
       "emoji": "🐛",
       "minutes": 15,
       "summary": "Break a 6-block code on purpose, then fix it using the run screen.",
-      "subject": null,
+      "subject": "coding",
       "week": 2,
       "content": {
        "explain": "Debugging means finding and fixing mistakes in code. First, build a working 6-block morning routine. Then, change one block on purpose to break it — maybe swap the order or delete a block. Run the code and watch the run screen. It shows what went wrong. Use those clues to fix the bug and make the routine run correctly again.",
@@ -11091,7 +11205,7 @@
       "emoji": "📖",
       "minutes": 15,
       "summary": "Retell the frog passage in four sentences, then answer two why questions.",
-      "subject": null,
+      "subject": "reading",
       "week": 2,
       "content": {
        "explain": "Retelling means telling the big events in order: beginning, middle, end. Use four sentences. First sentence: what the passage is mostly about. Next two: key details in order. Last sentence: how it ends. Then answer two why questions. Look back in the text for proof. Why questions ask for reasons. Your answer should start with Because or The text says.",
@@ -11165,7 +11279,7 @@
       "emoji": "✍️",
       "minutes": 15,
       "summary": "Practice the five trickiest spelling words with cover-write-check.",
-      "subject": null,
+      "subject": "spelling",
       "week": 2,
       "content": {
        "explain": "Cover-write-check is a powerful way to learn spelling. First, pick your five hardest words from the list. Look at a word, say it aloud, then cover it. Write the word from memory. Uncover and check letter by letter. If you missed any, rewrite it correctly. Do this once for each of the five words. Then test yourself one more time on all five without looking.",
@@ -11239,7 +11353,7 @@
       "emoji": "🗣️",
       "minutes": 15,
       "summary": "Teach a parent about animal babies in three sentences plus a labeled drawing.",
-      "subject": null,
+      "subject": "science",
       "week": 2,
       "content": {
        "explain": "Teaching someone else proves you understand. Explain animals and their young to a parent in three clear sentences. Sentence 1: the big idea. Sentence 2: a detail about how babies are born or hatch. Sentence 3: a detail about how parents care for them. Then draw one labeled picture that matches your explanation. Point to each label as you read your sentences.",
@@ -11313,7 +11427,7 @@
       "emoji": "🤝",
       "minutes": 15,
       "summary": "Name four ways kids help at home, school, and town; pick one to do.",
-      "subject": null,
+      "subject": "civics",
       "week": 2,
       "content": {
        "explain": "Citizenship means helping your community. Kids can help in many ways. At home: set the table, feed a pet, tidy toys. At school: help a classmate, clean up supplies, be a line leader. In town: pick up litter, visit a neighbor, join a clean-up day. Name four different ways — try to spread them across home, school, and town. Then choose one you will do this week and make a plan.",
@@ -11388,7 +11502,7 @@
       "emoji": "💻",
       "minutes": 15,
       "summary": "Build a 6-step morning routine sequence, testing each block as you go.",
-      "subject": null,
+      "subject": "coding",
       "week": 2,
       "content": {
        "explain": "Coding means giving a computer clear steps in the right order. A morning routine is perfect practice: wake up, brush teeth, get dressed, eat breakfast, pack bag, head out. Add one block, test it, then add the next. If something runs out of order, move the blocks until the sequence flows.",
@@ -11465,7 +11579,7 @@
       "emoji": "🔀",
       "minutes": 15,
       "summary": "Mix ×0–×5 facts to build speed for the week test.",
-      "subject": null,
+      "subject": "math",
       "week": 2,
       "content": {
        "explain": "The week test covers all facts ×0 through ×5. Practice them in random order. Say the fact, write the answer, then check. If one slows you down, practice that row three times. Mixing keeps your brain flexible.",
@@ -11552,7 +11666,7 @@
       "emoji": "📚",
       "minutes": 15,
       "summary": "Review skip-counting, arrays, and ×0–×5 facts together.",
-      "subject": null,
+      "subject": "math",
       "week": 2,
       "content": {
        "explain": "The cumulative quiz samples weeks 1 and 2. Week 1 was skip-counting by 2s, 5s, 10s. Week 2 is ×0–×5 facts, arrays, and word problems. Do a quick hit of each: count by 3s to 18, draw a 3×4 array, solve 4×5, and estimate 23+38.",
@@ -11627,7 +11741,7 @@
       "emoji": "⚡",
       "minutes": 15,
       "summary": "Timed practice to answer ×0–×5 facts in 3 seconds each.",
-      "subject": null,
+      "subject": "math",
       "week": 2,
       "content": {
        "explain": "Fluency means fast and accurate. Set a timer for 1 minute. Write answers to 20 mixed ×0–×5 facts. Count correct. Do it again tomorrow and beat your score. Focus on the facts that stick, then target the tricky ones.",
@@ -11718,7 +11832,7 @@
       "emoji": "📖",
       "minutes": 15,
       "summary": "Answer questions about the frog passage and find proof in the text.",
-      "subject": null,
+      "subject": "reading",
       "week": 2,
       "content": {
        "explain": "Good readers go back to the passage to prove their answers. Read each question, think about what happened first, next, and last. Then point to the exact line that shows your answer is right.",
@@ -11792,7 +11906,7 @@
       "emoji": "🔁",
       "minutes": 15,
       "summary": "Use a repeat block to run your morning routine twice.",
-      "subject": null,
+      "subject": "coding",
       "week": 2,
       "content": {
        "explain": "A repeat block lets you run the same steps many times without adding more blocks. Put your 6 morning blocks inside a repeat block set to 2. Then press run — the whole routine plays two times in a row.",
@@ -11865,7 +11979,7 @@
       "emoji": "🐣",
       "minutes": 15,
       "summary": "Write four facts about animal babies and draw a matching picture.",
-      "subject": null,
+      "subject": "science",
       "week": 2,
       "content": {
        "explain": "You have learned names for animal young and how they grow. Now write four true facts. Then draw one picture that shows one of your facts. Label the adult and baby in your drawing.",
@@ -11938,7 +12052,7 @@
       "emoji": "🗣️",
       "minutes": 15,
       "summary": "Run your morning routine and tell what each block does.",
-      "subject": null,
+      "subject": "coding",
       "week": 2,
       "content": {
        "explain": "Running your code and explaining it out loud helps you understand every step. Press run, watch the highlight move, and say the job of each block: wake up, brush teeth, get dressed, eat, pack bag, walk out.",
@@ -12004,11 +12118,106 @@
        ]
       },
       "authored": "worker-pool"
+     },
+     "juniper_w2_lit1": {
+      "id": "juniper_w2_lit1",
+      "title": "Our Reader: How the Problem Gets Solved",
+      "emoji": "📚",
+      "minutes": 20,
+      "summary": "Read 15 minutes, then retell how the main character solves the problem — beginning, middle, end.",
+      "subject": "literature",
+      "week": 2,
+      "content": {
+       "explain": "Stories move in an arc: the problem appears, the character tries something, something gets in the way, and then the problem is solved or changed. When you retell the ending, use exactly three sentences. Sentence one: what the character tried. Sentence two: what went wrong or what helped. Sentence three: how it ended. Keep the order — a retell that jumps around loses the arc.",
+       "examples": [
+        {
+         "q": "Try: she checked the return bin. Wrong place: nothing. Help: a name tag under the newspapers.\nHow do you retell that?",
+         "a": "She looked in the return bin and found nothing, then a name tag under a stack of newspapers led her to the book.",
+         "steps": [
+          "Name the first try.",
+          "Name what helped.",
+          "Say how it ended."
+         ]
+        },
+        {
+         "q": "What if the problem is NOT solved by the end of the chapter?",
+         "a": "Say so: the character has a new plan, and the problem is still open.",
+         "steps": [
+          "Check the last page.",
+          "Say what the character will do next.",
+          "Do not invent a solution the book did not give."
+         ]
+        },
+        {
+         "q": "How long should a retell be?",
+         "a": "Three sentences — one for each move in the arc.",
+         "steps": [
+          "Draft sentence one.",
+          "Draft sentences two and three.",
+          "Read them aloud in order."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which sentence belongs in the MIDDLE of a problem-solution retell?",
+         "options": [
+          "The character tried and something got in the way",
+          "Once upon a time",
+          "The end",
+          "The title page"
+         ],
+         "correctIndex": 0,
+         "hint": "The middle is the attempt plus the obstacle.",
+         "praise": "Yes — try, then snag."
+        },
+        {
+         "question": "A retell of the ending should have…",
+         "options": [
+          "three sentences in order",
+          "ten sentences",
+          "only feelings",
+          "a new ending you invent"
+         ],
+         "correctIndex": 0,
+         "hint": "Three moves, three sentences, in order.",
+         "praise": "Right — try, snag, result."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write the three-sentence retell of today’s chapter ending.",
+         "answer": "Three sentences in order: the try, the setback or help, the result.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Underline the sentence that shows the character changed something.",
+         "answer": "One underlined line where the character acts and the situation shifts.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write one thing that would have gone differently without the setting.",
+         "answer": "A sentence linking the place or time to what the character could do.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Predict the next chapter in one sentence, using evidence from this one.",
+         "answer": "A prediction that names a clue from today’s chapter.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 20
+      }
      }
     },
     "counts": {
      "blocks": 24,
-     "lesson_objects": 24,
+     "lesson_objects": 25,
      "sheets": 0
     },
     "test": {
@@ -14154,13 +14363,15 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Skip-count by 6s and 7s to 60, then write the ×6 facts you can say."
+        "activity": "Skip-count by 6s and 7s to 60, then write the ×6 facts you can say.",
+        "lesson_ref": "juniper_w3_m1"
        },
        {
         "block": 2,
         "subject": "reading",
         "min": 60,
-        "activity": "Read the passage \"a passage about animal habitats\" and underline 3 words you do not know."
+        "activity": "Read the passage \"a passage about animal habitats\" and underline 3 words you do not know.",
+        "lesson_ref": "juniper_w3_l2"
        },
        {
         "block": 3,
@@ -14173,19 +14384,22 @@
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Read the animal habitats lesson and tell a parent 3 facts from it without looking."
+        "activity": "Read the animal habitats lesson and tell a parent 3 facts from it without looking.",
+        "lesson_ref": "juniper_w3_sci1"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Read the community helpers: jobs that make a town work lesson and put 4 events or people in order."
+        "activity": "Read the community helpers: jobs that make a town work lesson and put 4 events or people in order.",
+        "lesson_ref": "juniper_w3_hist1"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Drag out 5 blocks to build a 6-step program that follows instructions in order and press run."
+        "activity": "Drag out 5 blocks to build a 6-step program that follows instructions in order and press run.",
+        "lesson_ref": "juniper_w3_cod1"
        }
       ],
       "total_min": 210
@@ -14198,7 +14412,8 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Build arrays for the ×8 facts and write a multiplication sentence for each."
+        "activity": "Build arrays for the ×8 facts and write a multiplication sentence for each.",
+        "lesson_ref": "juniper_w3_m1"
        },
        {
         "block": 2,
@@ -14211,25 +14426,29 @@
         "block": 3,
         "subject": "english_grammar",
         "min": 15,
-        "activity": "Write 4 spelling words in sentences, capitalizing the first word and ending each sentence correctly."
+        "activity": "Write 4 spelling words in sentences, capitalizing the first word and ending each sentence correctly.",
+        "lesson_ref": "juniper_w3_gr1"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Answer the 6 practice questions on animal habitats and check each one against the lesson."
+        "activity": "Answer the 6 practice questions on animal habitats and check each one against the lesson.",
+        "lesson_ref": "juniper_w3_sci1"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Answer 5 community helpers: jobs that make a town work questions from memory, then check the lesson and fix 2."
+        "activity": "Answer 5 community helpers: jobs that make a town work questions from memory, then check the lesson and fix 2.",
+        "lesson_ref": "juniper_w3_hist1"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Change 2 blocks so a 6-step program that follows instructions in order does something new, then run it again."
+        "activity": "Change 2 blocks so a 6-step program that follows instructions in order does something new, then run it again.",
+        "lesson_ref": "juniper_w3_cod1"
        }
       ],
       "total_min": 210
@@ -14242,13 +14461,15 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Solve 8 mixed ×6–×9 facts, then draw the groups for any you missed."
+        "activity": "Solve 8 mixed ×6–×9 facts, then draw the groups for any you missed.",
+        "lesson_ref": "juniper_w3_m1"
        },
        {
         "block": 2,
         "subject": "writing",
         "min": 60,
-        "activity": "Write 4 sentences: one main idea plus two details from the passage."
+        "activity": "Write 4 sentences: one main idea plus two details from the passage.",
+        "lesson_ref": "juniper_w3_wr1"
        },
        {
         "block": 3,
@@ -14261,19 +14482,22 @@
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Draw or build animal habitats examples and label 4 of them."
+        "activity": "Draw or build animal habitats examples and label 4 of them.",
+        "lesson_ref": "juniper_w3_sci1"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Add 4 labels to the community helpers: jobs that make a town work timeline or map, then read them back."
+        "activity": "Add 4 labels to the community helpers: jobs that make a town work timeline or map, then read them back.",
+        "lesson_ref": "juniper_w3_hist1"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Add a repeat block so a 6-step program that follows instructions in order runs 3 times."
+        "activity": "Add a repeat block so a 6-step program that follows instructions in order runs 3 times.",
+        "lesson_ref": "juniper_w3_cod1"
        }
       ],
       "total_min": 210
@@ -14286,37 +14510,43 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Beat the clock: 12 ×6–×9 facts, then re-do the 3 slowest ones."
+        "activity": "Beat the clock: 12 ×6–×9 facts, then re-do the 3 slowest ones.",
+        "lesson_ref": "juniper_w3_m1"
        },
        {
         "block": 2,
         "subject": "literature",
         "min": 60,
-        "activity": "Read your current reader for 15 minutes, then tell a parent 2 things that happened."
+        "activity": "Read your current reader for 15 minutes, then tell a parent 2 things that happened.",
+        "lesson_ref": "juniper_w3_lit1"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Cover, write and check the 5 hardest words, then re-test yourself once."
+        "activity": "Cover, write and check the 5 hardest words, then re-test yourself once.",
+        "lesson_ref": "juniper_w3_l1"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Draw a animal habitats diagram with 5 labels and explain 2 labels to a parent."
+        "activity": "Draw a animal habitats diagram with 5 labels and explain 2 labels to a parent.",
+        "lesson_ref": "juniper_w3_sci1"
        },
        {
         "block": 5,
         "subject": "civics",
         "min": 25,
-        "activity": "Explain in 3 sentences who makes a rule and why rules exist."
+        "activity": "Explain in 3 sentences who makes a rule and why rules exist.",
+        "lesson_ref": "juniper_w3_cv1"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Run a 6-step program that follows instructions in order and fix the one block that makes it stop early."
+        "activity": "Run a 6-step program that follows instructions in order and fix the one block that makes it stop early.",
+        "lesson_ref": "juniper_w3_cod1"
        }
       ],
       "total_min": 210
@@ -14523,11 +14753,720 @@
         }
        ]
       }
+     },
+     "juniper_w3_m1": {
+      "id": "juniper_w3_m1",
+      "title": "×6 to ×9: Patterns, Arrays and Facts",
+      "emoji": "🔢",
+      "minutes": 65,
+      "summary": "Skip-count by 6s, 7s, 8s and 9s, build arrays for the ×8 facts, then mix every fact from ×6 to ×9.",
+      "subject": "math",
+      "week": 3,
+      "content": {
+       "explain": "These four tables are the last hard set, and every one of them has a pattern you can lean on. Multiplying by 6 always gives an even answer. Multiplying by 9 gives a product whose digits add to 9 (9 × 7 = 63, and 6 + 3 = 9). Multiplying by 8 is doubling the ×4 fact twice. Arrays make it visible: 8 rows of 6 is a rectangle you can count by rows or by columns — same total either way, because 8 × 6 and 6 × 8 are the same rectangle turned.",
+       "examples": [
+        {
+         "q": "6 × 7 = ?",
+         "a": "42",
+         "steps": [
+          "Count by 6s: 6, 12, 18, 24, 30, 36, 42.",
+          "Seven jumps of six.",
+          "Check: 7 × 6 = 42 too."
+         ]
+        },
+        {
+         "q": "8 × 6 = ?",
+         "a": "48",
+         "steps": [
+          "Draw 8 rows of 6 dots.",
+          "Count by 6s down the rows.",
+          "Or double 4 × 6 = 24 → 48."
+         ]
+        },
+        {
+         "q": "9 × 4 = 36. How do you know it is right?",
+         "a": "3 + 6 = 9, so the pattern holds.",
+         "steps": [
+          "Write the fact.",
+          "Add the digits of the product.",
+          "If they total 9, the fact is likely right."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "7 × 8 = ?",
+         "options": [
+          "54",
+          "56",
+          "63",
+          "48"
+         ],
+         "correctIndex": 1,
+         "hint": "Count by 7s eight times, or double 7 × 4 = 28.",
+         "praise": "Yes — 56."
+        },
+        {
+         "question": "9 × 6 = ?",
+         "options": [
+          "54",
+          "56",
+          "45",
+          "63"
+         ],
+         "correctIndex": 0,
+         "hint": "The digits of a Ù fact add to 9: 5 + 4 = 9.",
+         "praise": "Correct — 54."
+        },
+        {
+         "question": "6 × 6 = ?",
+         "options": [
+          "36",
+          "42",
+          "30",
+          "48"
+         ],
+         "correctIndex": 0,
+         "hint": "Count by 6s: 6, 12, 18, 24, 30, 36.",
+         "praise": "Right — 36."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Skip-count by 6s to 72 and by 7s to 70. Circle every number that is also a ×8 answer.",
+         "answer": "Two clean count-bys; the circled numbers appear in both lists (24, 48, 72 style overlaps).",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Draw an array for 8 × 6 and write the two multiplication sentences it proves.",
+         "answer": "A rectangle of 8 rows × 6 with 8 × 6 = 48 and 6 × 8 = 48.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write the three facts you miss most from ×6–×9, then cover and retest yourself.",
+         "answer": "Three target facts written out, then a self-test with the answers checked.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Beat the clock: 12 mixed ×6–×9 facts in 90 seconds; redo the 3 slowest in a new colour.",
+         "answer": "Twelve attempts with timing, and three corrected rewrites.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w3_gr1": {
+      "id": "juniper_w3_gr1",
+      "title": "Sentences That Start Right and End Right",
+      "emoji": "📝",
+      "minutes": 15,
+      "summary": "Write four spelling words in sentences, each with a capital first word and the correct end mark.",
+      "subject": "english_grammar",
+      "week": 3,
+      "content": {
+       "explain": "A sentence has two jobs: it says who or what, and it says what that thing does or is. That is the subject and the predicate. Start it with a capital letter, keep it one complete thought, and finish with the mark that matches the meaning: a period for a statement, a question mark for a question, an exclamation point for strong feeling. If you can say \"and then what?\" and the sentence already answers it, you have a complete thought.",
+       "examples": [
+        {
+         "q": "Word: jumped\nSentence: the frog jumped over the log.",
+         "a": "The frog jumped over the log.",
+         "steps": [
+          "Capitalise the first word.",
+          "Name who or what does the action.",
+          "End with a period."
+         ]
+        },
+        {
+         "q": "Is this complete? \"Because she ran fast.\"",
+         "a": "No — it starts with \"because\" and never says who did what.",
+         "steps": [
+          "Ask: who or what?",
+          "Ask: did what?",
+          "Join it to a main clause."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which end mark fits: \"Where did the tadpole go?\"",
+         "options": [
+          ".",
+          "?",
+          "!",
+          ","
+         ],
+         "correctIndex": 1,
+         "hint": "It asks something.",
+         "praise": "Yes — question mark."
+        },
+        {
+         "question": "Which sentence is COMPLETE?",
+         "options": [
+          "Because it rained.",
+          "The rain stopped.",
+          "Running fast.",
+          "In the box."
+         ],
+         "correctIndex": 1,
+         "hint": "Only one names a subject and says what it did.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write 4 sentences, one per spelling word. Circle the capital and underline the end mark in each.",
+         "answer": "Four complete sentences with a circled capital and an underlined end mark.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Rewrite two statements as questions, changing only the punctuation and word order.",
+         "answer": "Two sentences converted to questions with a question mark.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Find and fix one fragment: \"In the tall grass.\"",
+         "answer": "A complete sentence that names who or what, plus what happened.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Read your four sentences aloud; mark any that you pause on mid-thought with ?",
+         "answer": "Self-edited sentences; any incomplete thought rewritten.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 15
+      }
+     },
+     "juniper_w3_wr1": {
+      "id": "juniper_w3_wr1",
+      "title": "Main Idea plus Two Details",
+      "emoji": "✍️",
+      "minutes": 60,
+      "summary": "Write four sentences: one main idea and two details that prove it.",
+      "subject": "writing",
+      "week": 3,
+      "content": {
+       "explain": "Every strong paragraph has one job. The main idea sentence states what the whole thing is about; the detail sentences prove it. A detail earns its place only if you can point to it supporting the main idea. Before you write, say the main idea out loud and ask \"how do I know?\" — your first answer is detail one, your second is detail two. Order matters: idea first, then the proof, then one detail that closes it.",
+       "examples": [
+        {
+         "q": "Main idea: animal habitats are built for a job.",
+         "a": "Detail 1: a polar bear has hollow hairs that trap warm air. Detail 2: a desert beetle collects fog on its bumpy shell.",
+         "steps": [
+          "State the idea.",
+          "Pick detail one from the text.",
+          "Pick detail two from the text."
+         ]
+        },
+        {
+         "q": "Is \"I like animals\" a main idea?",
+         "a": "No — it is a feeling, and nothing can prove it.",
+         "steps": [
+          "Ask: can a detail prove it?",
+          "If not, make it a claim about the text.",
+          "Re-test with one detail."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which sentence is a DETAIL that proves \"habitats are built for a job\"?",
+         "options": [
+          "Animals are cool",
+          "A polar bear has hollow hairs that trap warm air",
+          "I have a dog",
+          "Habitats are important"
+         ],
+         "correctIndex": 1,
+         "hint": "A detail is specific and checkable in the text.",
+         "praise": "Yes — it proves the claim."
+        },
+        {
+         "question": "What comes first in the paragraph?",
+         "options": [
+          "The detail",
+          "The main idea",
+          "Your favourite word",
+          "The page number"
+         ],
+         "correctIndex": 1,
+         "hint": "Idea first, then proof.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write the main idea sentence for today’s passage on line one.",
+         "answer": "One sentence stating what the passage is mostly about.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Copy two detail sentences that prove it, each with the line number.",
+         "answer": "Two quoted or paraphrased details with their line numbers.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write one detail that does NOT support the main idea and say why it fails.",
+         "answer": "An off-topic detail plus a reason it does not prove the idea.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Read the three sentences aloud; reorder any that break the idea→proof order.",
+         "answer": "A four-sentence paragraph in idea-first order.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 60
+      }
+     },
+     "juniper_w3_lit1": {
+      "id": "juniper_w3_lit1",
+      "title": "Your Current Reader: Tell What Happened",
+      "emoji": "📚",
+      "minutes": 60,
+      "summary": "Read 15 minutes of your current reader, then tell a parent two things that happened, in order.",
+      "subject": "literature",
+      "week": 3,
+      "content": {
+       "explain": "Sustained reading is a skill you build by minutes, not by pages. Set the timer for 15 minutes and keep your finger moving; when you notice your mind has drifted, go back one sentence and start again — that is not failure, that is the exercise. When the timer stops, close the book and tell a grown-up two things that happened, oldest first. If you cannot remember, reread the last page slowly; sequence comes from attention, not from speed.",
+       "examples": [
+        {
+         "q": "You drifted for a whole paragraph. Now what?",
+         "a": "Go back one sentence before you lost the thread and reread from there.",
+         "steps": [
+          "Notice you drifted.",
+          "Back up one sentence.",
+          "Continue with your finger moving."
+         ]
+        },
+        {
+         "q": "Two things that happened, in order — how?",
+         "a": "First say which came earlier in the book, then the next one: \"First… then…\".",
+         "steps": [
+          "Pick the earlier event.",
+          "Pick the later event.",
+          "Link them with a sequence word."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Your mind drifts mid-page. Best move?",
+         "options": [
+          "Skip to the end",
+          "Back up one sentence and restart",
+          "Stop reading",
+          "Read faster"
+         ],
+         "correctIndex": 1,
+         "hint": "Back up slightly and re-enter the text.",
+         "praise": "Yes — that is the exercise."
+        },
+        {
+         "question": "A sequence retell uses words like…",
+         "options": [
+          "first, then, after that",
+          "maybe, probably",
+          "big, small",
+          "hot, cold"
+         ],
+         "correctIndex": 0,
+         "hint": "Sequence words carry order.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Record the minutes you read and where you stopped (page and paragraph).",
+         "answer": "A time entry and a precise stopping place.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Write the two events in order using \"First… then…\".",
+         "answer": "Two events joined in sequence.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write one question a reader after you would need answered.",
+         "answer": "A genuine open question about the next page.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Copy one sentence you liked and say in five words why.",
+         "answer": "A quoted sentence plus a short reason.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 60
+      }
+     },
+     "juniper_w3_sci1": {
+      "id": "juniper_w3_sci1",
+      "title": "Animal Habitats: Where and Why",
+      "emoji": "🔬",
+      "minutes": 65,
+      "summary": "A habitat is built for a job — read the lesson, then prove it with three facts and a labelled diagram.",
+      "subject": "science",
+      "week": 3,
+      "content": {
+       "explain": "A habitat is not just a place an animal lives; it is a place an animal can eat, hide, and raise young in. Every feature of an animal that helps it live there is an adaptation: colour that hides it, fur that traps heat, teeth that cut plants. Change the habitat and the adaptation that once worked may stop working. When you study a habitat, ask three questions of every animal: what does it eat, what eats it, and what in the place helps it survive.",
+       "examples": [
+        {
+         "q": "Why is an arctic fox white?",
+         "a": "White fur hides it in snow so it can hunt and avoid being hunted.",
+         "steps": [
+          "Name the place.",
+          "Name the problem the animal faces.",
+          "Name the feature that solves it."
+         ]
+        },
+        {
+         "q": "Is a bird’s nest a habitat?",
+         "a": "No — the nest is a home inside the habitat; the habitat is the whole place with food, water and shelter.",
+         "steps": [
+          "Define habitat.",
+          "Place the nest inside it.",
+          "Check food, water, shelter."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "A habitat provides…",
+         "options": [
+          "food, water and shelter",
+          "only water",
+          "homework",
+          "nothing special"
+         ],
+         "correctIndex": 0,
+         "hint": "Those three, plus safety to raise young.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Colour that hides an animal is called…",
+         "options": [
+          "camouflage",
+          "migration",
+          "hibernation",
+          "pollination"
+         ],
+         "correctIndex": 0,
+         "hint": "Blending in with the surroundings.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write three facts from the lesson without looking, then check and fix.",
+         "answer": "Three recalled facts, corrected against the lesson where wrong.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Draw and label a habitat diagram with 5 labels: food, water, shelter, one adaptation, one threat.",
+         "answer": "A five-labelled diagram of a habitat and its animal.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Name one adaptation and the job it does in one sentence.",
+         "answer": "Adaptation → job, in one sentence.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Say what happens to this animal if the habitat dries up.",
+         "answer": "A cause-effect sentence about habitat change.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w3_hist1": {
+      "id": "juniper_w3_hist1",
+      "title": "Community Helpers: Jobs That Make a Town Work",
+      "emoji": "🏛️",
+      "minutes": 65,
+      "summary": "Read the lesson, then put four helpers in order by when a town needs them and say why each matters.",
+      "subject": "history",
+      "week": 3,
+      "content": {
+       "explain": "A town works because jobs depend on each other. Some helpers prevent trouble (inspectors, firefighters), some repair it (doctors, mechanics), and some keep information and goods moving (mail carriers, clerks). Order them not by importance but by sequence: what does a town need on day one, and what can only come later? When you read about people from the past, note the same pattern — the jobs change, the dependence does not.",
+       "examples": [
+        {
+         "q": "Put in order: firefighter, doctor, teacher, mail carrier — for a new town’s first week.",
+         "a": "Firefighter and doctor first (safety), teacher next (children), mail carrier (connection).",
+         "steps": [
+          "List the jobs.",
+          "Sort by prevent / repair / connect.",
+          "Order the list and justify it."
+         ]
+        },
+        {
+         "q": "Why does \"helper\" appear in the name?",
+         "a": "Because each job exists to serve other people in the town, not only itself.",
+         "steps": [
+          "Ask who benefits.",
+          "Check whether the job could be removed safely.",
+          "Notice the interdependence."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which helper PREVENTS trouble?",
+         "options": [
+          "firefighter",
+          "undertaker",
+          "commentator",
+          "spectator"
+         ],
+         "correctIndex": 0,
+         "hint": "Prevention beats repair.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Why do we study old jobs?",
+         "options": [
+          "To see how dependence on each other stays the same",
+          "Because old jobs were easier",
+          "To copy their clothes",
+          "For no reason"
+         ],
+         "correctIndex": 0,
+         "hint": "The tools change; the interdependence does not.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Read the lesson and put 4 events or people in order on the timeline strip.",
+         "answer": "Four correctly ordered entries on the timeline.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Answer 5 questions from memory, then open the lesson and fix 2.",
+         "answer": "Five answers with two corrections marked.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Add 4 labels to the town map or timeline and read them back.",
+         "answer": "Four accurate labels, read aloud.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Write one sentence on why two of these jobs need each other.",
+         "answer": "A sentence showing the link between two helpers.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w3_cv1": {
+      "id": "juniper_w3_cv1",
+      "title": "Who Makes a Rule, and Why Rules Exist",
+      "emoji": "🗳️",
+      "minutes": 65,
+      "summary": "Explain in three sentences who makes a rule and why rules exist — then test one rule at home or school.",
+      "subject": "civics",
+      "week": 3,
+      "content": {
+       "explain": "A rule is a decision a group makes so that everyone can do their part fairly. Rules come from someone with the authority to make them: a family decides at home, a school decides at school, a town council decides for the town, and a legislature decides for the state. A good rule names the harm it prevents and applies to everyone, including the people who made it. If a rule does neither, it can be questioned — politely, with a reason.",
+       "examples": [
+        {
+         "q": "Who makes the rule \"raise your hand to speak\"?",
+         "a": "The teacher, with the class’s agreement, so everyone gets a turn to be heard.",
+         "steps": [
+          "Name the decision-maker.",
+          "Name the harm it prevents.",
+          "Check it applies to everyone."
+         ]
+        },
+        {
+         "q": "Can you change a rule?",
+         "a": "Yes — by naming the problem and proposing a fix to whoever has the authority.",
+         "steps": [
+          "Say what is unfair or unclear.",
+          "Propose specific wording.",
+          "Ask the person who can change it."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Who usually makes a classroom rule?",
+         "options": [
+          "the teacher with the class",
+          "the principal of another school",
+          "the weather",
+          "nobody"
+         ],
+         "correctIndex": 0,
+         "hint": "Authority sits with whoever runs the shared space.",
+         "praise": "Yes."
+        },
+        {
+         "question": "A good rule should…",
+         "options": [
+          "name the harm it prevents and apply to everyone",
+          "apply only to some",
+          "be secret",
+          "never change"
+         ],
+         "correctIndex": 0,
+         "hint": "Purpose plus equal application.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write a rule from home and one from school; name who made each.",
+         "answer": "Two rules with their decision-makers named.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "For one rule, write the harm it prevents in one sentence.",
+         "answer": "Cause: what could go wrong; effect: the rule.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Explain in 3 sentences who makes a rule and why rules exist.",
+         "answer": "Three sentences: the maker, the purpose, the fairness test.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Draft one improved rule and say who you would ask to adopt it.",
+         "answer": "A revised rule plus the correct authority figure.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w3_cod1": {
+      "id": "juniper_w3_cod1",
+      "title": "A 6-Step Program That Follows Instructions in Order",
+      "emoji": "💻",
+      "minutes": 65,
+      "summary": "Build a 6-step program one block at a time, test after each block, then change it on purpose and fix it.",
+      "subject": "coding",
+      "week": 3,
+      "content": {
+       "explain": "A program is a list of instructions executed in order, top to bottom, with no skipping. Because order is everything, you never build all six blocks and then run it — you add one, run, confirm it did what you expected, then add the next. When something breaks, the bug lives in the newest block or in the order of two older ones. Predict out loud before every run: \"I think this will…\". If the screen disagrees with your prediction, you have found the line to inspect.",
+       "examples": [
+        {
+         "q": "Blocks: move 5 → turn right → move 3 → repeat twice. Predict the end position.",
+         "a": "Two repeats: 5+3 then 5+3 = 16 steps forward with a turn in the middle.",
+         "steps": [
+          "Read blocks in order.",
+          "Trace each step.",
+          "State the final position before running."
+         ]
+        },
+        {
+         "q": "It stops early. Where do you look first?",
+         "a": "The newest block, then any block that changes direction or repeats.",
+         "steps": [
+          "Run and watch where it stops.",
+          "Inspect the last added block.",
+          "Fix one thing, run again."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Programs execute instructions…",
+         "options": [
+          "in order, top to bottom",
+          "at random",
+          "backwards only",
+          "never"
+         ],
+         "correctIndex": 0,
+         "hint": "Sequential execution.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Best time to run the program?",
+         "options": [
+          "after placing each block",
+          "only at the end",
+          "never",
+          "twice a year"
+         ],
+         "correctIndex": 0,
+         "hint": "Test early and often.",
+         "praise": "Right — one block, one run."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write your 6 instructions on paper in order before you build them.",
+         "answer": "Six numbered instructions mirroring the blocks you will place.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Record the prediction and the actual result for each run.",
+         "answer": "Predicted vs actual lines for at least three runs.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Break the program on purpose: change one block; note what the run screen showed and the fix.",
+         "answer": "Bug description, screen output, and the one-block fix.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Add a repeat block so the routine runs 3 times; count the total steps.",
+         "answer": "A repeated routine with the correct total step count.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
      }
     },
     "counts": {
      "blocks": 24,
-     "lesson_objects": 3,
+     "lesson_objects": 11,
      "sheets": 0
     },
     "test": {
@@ -16674,31 +17613,36 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Add 6 two-digit numbers with regrouping in tens, showing every step."
+        "activity": "Add 6 two-digit numbers with regrouping in tens, showing every step.",
+        "lesson_ref": "juniper_w4_m1"
        },
        {
         "block": 2,
         "subject": "reading",
         "min": 60,
-        "activity": "Read the passage \"a story about a state fair\" and underline 3 words you do not know."
+        "activity": "Read the passage \"a story about a state fair\" and underline 3 words you do not know.",
+        "lesson_ref": "juniper_w4_rd1"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Read the 10 spelling words aloud, then sort them by the r-controlled vowels (ar, or, ir) rule."
+        "activity": "Read the 10 spelling words aloud, then sort them by the r-controlled vowels (ar, or, ir) rule.",
+        "lesson_ref": "juniper_w4_sp1"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Look through the five senses lab pictures or the lesson and name 4 new words aloud."
+        "activity": "Look through the five senses lab pictures or the lesson and name 4 new words aloud.",
+        "lesson_ref": "juniper_w4_l3"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Read the our state history lesson and put 4 events or people in order."
+        "activity": "Read the our state history lesson and put 4 events or people in order.",
+        "lesson_ref": "juniper_w4_l4"
        },
        {
         "block": 6,
@@ -16718,31 +17662,36 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Add 6 three-digit numbers with regrouping in ones, tens and hundreds."
+        "activity": "Add 6 three-digit numbers with regrouping in ones, tens and hundreds.",
+        "lesson_ref": "juniper_w4_m1"
        },
        {
         "block": 2,
         "subject": "reading",
         "min": 60,
-        "activity": "Answer the 5 story sequence questions on the passage and point to the line that proves each answer."
+        "activity": "Answer the 5 story sequence questions on the passage and point to the line that proves each answer.",
+        "lesson_ref": "juniper_w4_rd1"
        },
        {
         "block": 3,
         "subject": "english_grammar",
         "min": 15,
-        "activity": "Write 4 spelling words in sentences, capitalizing the first word and ending each sentence correctly."
+        "activity": "Write 4 spelling words in sentences, capitalizing the first word and ending each sentence correctly.",
+        "lesson_ref": "juniper_w4_gr1"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Sort 6 examples from the five senses lab into two groups and say the rule you used."
+        "activity": "Sort 6 examples from the five senses lab into two groups and say the rule you used.",
+        "lesson_ref": "juniper_w4_l3"
        },
        {
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Answer 5 our state history questions from memory, then check the lesson and fix 2."
+        "activity": "Answer 5 our state history questions from memory, then check the lesson and fix 2.",
+        "lesson_ref": "juniper_w4_l4"
        },
        {
         "block": 6,
@@ -16762,19 +17711,22 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Solve 5 addition word problems and draw a place-value sketch for each."
+        "activity": "Solve 5 addition word problems and draw a place-value sketch for each.",
+        "lesson_ref": "juniper_w4_m1"
        },
        {
         "block": 2,
         "subject": "writing",
         "min": 60,
-        "activity": "Number the 4 story events, then write them in 4 sentences."
+        "activity": "Number the 4 story events, then write them in 4 sentences.",
+        "lesson_ref": "juniper_w4_wr1"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Dictation: write all 10 words from memory, then fix misses in a new color."
+        "activity": "Dictation: write all 10 words from memory, then fix misses in a new color.",
+        "lesson_ref": "juniper_w4_sp1"
        },
        {
         "block": 4,
@@ -16787,13 +17739,15 @@
         "block": 5,
         "subject": "history",
         "min": 25,
-        "activity": "Add 4 labels to the our state history timeline or map, then read them back."
+        "activity": "Add 4 labels to the our state history timeline or map, then read them back.",
+        "lesson_ref": "juniper_w4_l4"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Break a step-by-step drawing program on purpose, then fix it using what the run screen shows."
+        "activity": "Break a step-by-step drawing program on purpose, then fix it using what the run screen shows.",
+        "lesson_ref": "juniper_w4_l1"
        }
       ],
       "total_min": 210
@@ -16806,38 +17760,43 @@
         "block": 1,
         "subject": "math",
         "min": 65,
-        "activity": "Check 4 regrouped sums by estimating first, then re-solve the one that looks off."
+        "activity": "Check 4 regrouped sums by estimating first, then re-solve the one that looks off.",
+        "lesson_ref": "juniper_w4_m1"
        },
        {
         "block": 2,
         "subject": "literature",
         "min": 60,
-        "activity": "Read a chapter and draw one scene with a one-sentence caption."
+        "activity": "Read a chapter and draw one scene with a one-sentence caption.",
+        "lesson_ref": "juniper_w4_lit1"
        },
        {
         "block": 3,
         "subject": "spelling",
         "min": 15,
-        "activity": "Cover, write and check the 5 hardest words, then re-test yourself once."
+        "activity": "Cover, write and check the 5 hardest words, then re-test yourself once.",
+        "lesson_ref": "juniper_w4_sp1"
        },
        {
         "block": 4,
         "subject": "science",
         "min": 25,
-        "activity": "Explain the five senses lab to a parent in 3 sentences, then draw one labeled picture."
+        "activity": "Explain the five senses lab to a parent in 3 sentences, then draw one labeled picture.",
+        "lesson_ref": "juniper_w4_l3"
        },
        {
         "block": 5,
-        "subject": "history",
+        "subject": "civics",
         "min": 25,
         "activity": "Name 4 jobs or rules that make a community work and say why one matters.",
-        "lesson_ref": "juniper_w4_l4"
+        "lesson_ref": "juniper_w4_cv1"
        },
        {
         "block": 6,
         "subject": "coding",
         "min": 20,
-        "activity": "Run a step-by-step drawing program and name each block job to a parent."
+        "activity": "Run a step-by-step drawing program and name each block job to a parent.",
+        "lesson_ref": "juniper_w4_l2"
        }
       ],
       "total_min": 210
@@ -17111,11 +18070,622 @@
         }
        ]
       }
+     },
+     "juniper_w4_m1": {
+      "id": "juniper_w4_m1",
+      "title": "Regrouping: Add Six Numbers and Check by Estimating",
+      "emoji": "🔢",
+      "minutes": 65,
+      "summary": "Add six numbers with regrouping in ones, tens and hundreds, then prove each sum by estimating first.",
+      "subject": "math",
+      "week": 4,
+      "content": {
+       "explain": "Regrouping is renaming: ten ones become one ten, ten tens become one hundred. Stack the numbers so the place columns line up, add one column at a time from the ones, and carry what you rename into the next column. The check that catches nearly every mistake is estimating: round each number to the nearest ten, add the rounded set, and see if your exact sum lands close. If it lands far away, you almost certainly dropped or double-counted a regrouped digit.",
+       "examples": [
+        {
+         "q": "47 + 38 + 56 = ?",
+         "a": "141",
+         "steps": [
+          "Ones: 7+8+6 = 21 → write 1, carry 2.",
+          "Tens: 4+3+5 + 2 = 14.",
+          "Hundreds: 1. Sum 141."
+         ]
+        },
+        {
+         "q": "Estimate first: 47 + 38 + 56",
+         "a": "50 + 40 + 60 = 150, so an exact answer near 140–145 is sane.",
+         "steps": [
+          "Round each to the nearest ten.",
+          "Add the rounded set.",
+          "Compare with the exact sum."
+         ]
+        },
+        {
+         "q": "Where do most errors hide?",
+         "a": "In the carried digit — written in the wrong column or added twice.",
+         "steps": [
+          "Check column alignment.",
+          "Re-add the carry line alone.",
+          "Recheck the ones column."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "47 + 38 + 56 = ?",
+         "options": [
+          "131",
+          "141",
+          "151",
+          "121"
+         ],
+         "correctIndex": 1,
+         "hint": "7+8+6 = 21, carry 2 into the tens.",
+         "praise": "Yes — 141."
+        },
+        {
+         "question": "Estimating helps because…",
+         "options": [
+          "it catches sums that are far off",
+          "it replaces adding",
+          "it is faster than thinking",
+          "it rounds answers up"
+         ],
+         "correctIndex": 0,
+         "hint": "A sanity check on the exact work.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Add six two-digit numbers with regrouping, showing every step in a new colour.",
+         "answer": "A correctly stacked sum with carry digits shown in a second colour.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Estimate that same sum first, then compare: how far off were you?",
+         "answer": "An estimate and a difference statement.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Add six three-digit numbers with regrouping in ones, tens and hundreds.",
+         "answer": "A correct three-digit sum with carries in the right columns.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Find and fix one deliberate error in a given sum; name the column it lived in.",
+         "answer": "The corrected sum and the column named.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w4_rd1": {
+      "id": "juniper_w4_rd1",
+      "title": "Read It Twice: Sequence and Proof",
+      "emoji": "📖",
+      "minutes": 65,
+      "summary": "First read for the story and the words you do not know; second read to put events in order and prove answers.",
+      "subject": "reading",
+      "week": 4,
+      "content": {
+       "explain": "A story has a sequence even when it jumps in time: something happens first, then something forces a change, then the ending follows. Mark the events with numbers as you read — if the book flashes backward, number by story order, not page order. For every answer you give, you must be able to point at a line. That is the habit that makes comprehension reliable: claim then evidence, never a claim from memory alone.",
+       "examples": [
+        {
+         "q": "Page 4 begins with \"That summer, before the fair…\" — what number is it?",
+         "a": "It belongs early in the sequence, even though it appears later on the page.",
+         "steps": [
+          "Notice the time clue.",
+          "Place it on your event list.",
+          "Renumber the rest."
+         ]
+        },
+        {
+         "q": "Question: Why did she go to the fair? What counts as proof?",
+         "a": "A line that states or strongly implies her reason — quoted with its line number.",
+         "steps": [
+          "Find the line.",
+          "Quote or paraphrase it.",
+          "Write the line number beside the answer."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Story order differs from page order when…",
+         "options": [
+          "the book flashes back in time",
+          "the book has pictures",
+          "the book is short",
+          "you read fast"
+         ],
+         "correctIndex": 0,
+         "hint": "Flashbacks break page order.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Proof for an answer is…",
+         "options": [
+          "a line in the text",
+          "a guess",
+          "your opinion",
+          "the title"
+         ],
+         "correctIndex": 0,
+         "hint": "Point to the line that proves it.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Underline three words you do not know and write your guess from the sentence.",
+         "answer": "Three underlined words with margin guesses.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Number the four main events of the passage in story order.",
+         "answer": "Four events numbered 1–4 in story (not page) order.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Answer two questions and copy the proving line for each.",
+         "answer": "Two answers each with a quoted proof line and line number.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Retell the passage in four sentences, then answer one why-question with evidence.",
+         "answer": "A four-sentence retell plus an evidence-based why answer.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w4_sp1": {
+      "id": "juniper_w4_sp1",
+      "title": "R-Controlled Vowels: ar, or, ir",
+      "emoji": "🔤",
+      "minutes": 65,
+      "summary": "Sort the week’s words by ar, or and ir, then dictation: write all 10 from memory and fix misses.",
+      "subject": "spelling",
+      "week": 4,
+      "content": {
+       "explain": "When an r sits right after a vowel, the vowel stops saying its usual name and they say one sound together: ar in car and hard, or in storm and short, ir in bird and first. That is why they are called r-controlled. Sort your list into three columns before you memorise anything — sorting by pattern beats sorting by alphabet, because your ear files the sound and your eye files the letters at the same time.",
+       "examples": [
+        {
+         "q": "storm — which column?",
+         "a": "or: the vowel+r says one sound, like in \"or\".",
+         "steps": [
+          "Find the vowel.",
+          "Check for the r after it.",
+          "Say the sound, place the word."
+         ]
+        },
+        {
+         "q": "Why is \"first\" not spelled \"ferst\"?",
+         "a": "ir is the pattern for that sound in this word; er and ur carry it in others.",
+         "steps": [
+          "Say the sound.",
+          "Recall which pair appears in this word family.",
+          "Check the list."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "storm belongs to which group?",
+         "options": [
+          "or",
+          "ar",
+          "ir",
+          "none"
+         ],
+         "correctIndex": 0,
+         "hint": "Vowel + r says one sound — \"or\".",
+         "praise": "Yes."
+        },
+        {
+         "question": "In \"hard\", the ar sound is made by…",
+         "options": [
+          "the vowel and r together",
+          "the h only",
+          "the d only",
+          "nothing"
+         ],
+         "correctIndex": 0,
+         "hint": "R controls the vowel.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Copy the 10 words once, syllable-marked, then sort them into ar / or / ir columns.",
+         "answer": "Ten words copied and sorted into three columns.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Dictation: write all 10 from memory, then fix misses in a new colour.",
+         "answer": "Ten dictated words with corrections in a second colour.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write one sentence for each of three words you missed.",
+         "answer": "Three sentences using the corrected words.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Cover, write and check the 5 hardest words, then re-test yourself once.",
+         "answer": "A second clean pass on the five hardest words.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w4_gr1": {
+      "id": "juniper_w4_gr1",
+      "title": "Capital Letters, Commas and End Marks",
+      "emoji": "📝",
+      "minutes": 15,
+      "summary": "Write four spelling words in sentences with capitals, one comma rule and the correct end mark.",
+      "subject": "english_grammar",
+      "week": 4,
+      "content": {
+       "explain": "Three marks do most of the work in your writing. A capital letter starts a sentence and names a specific person or place. A comma separates items in a list and joins two complete sentences with a joining word (and, but, or). An end mark finishes the thought: period, question mark, or exclamation point. Read each sentence twice — once for meaning, once for marks — because your ear catches a missing comma that your eye skips.",
+       "examples": [
+        {
+         "q": "List: \"We packed crayons, paper, and glue.\"",
+         "a": "Commas separate the three items; the last comma before \"and\" is optional but consistent.",
+         "steps": [
+          "Count the items.",
+          "Place commas between them.",
+          "End with a period."
+         ]
+        },
+        {
+         "q": "\"The bell rang we ran\" — fix it.",
+         "a": "Two complete sentences: \"The bell rang, and we ran.\" (or a semicolon).",
+         "steps": [
+          "Spot two subjects and verbs.",
+          "Join with a comma plus a joining word.",
+          "Add the end mark."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which needs a comma? \"We brought apples bananas and juice.\"",
+         "options": [
+          "the list of three items",
+          "nothing",
+          "only the word bananas",
+          "the capital letter"
+         ],
+         "correctIndex": 0,
+         "hint": "Items in a list are separated by commas.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Two complete sentences butted together need…",
+         "options": [
+          "a comma plus a joining word",
+          "a capital only",
+          "an exclamation point",
+          "nothing"
+         ],
+         "correctIndex": 0,
+         "hint": "Join them properly or split them.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Write 4 sentences, one per spelling word; circle capitals, underline end marks.",
+         "answer": "Four sentences with circled capitals and underlined end marks.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Write one three-item list sentence with correct commas.",
+         "answer": "A list sentence with commas between items.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Repair a run-on: \"The game ended we cheered.\"",
+         "answer": "A fixed sentence joined with a comma and a joining word (or split in two).",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Swap one period for a question mark and read it aloud to hear the change.",
+         "answer": "A rewritten question with a question mark, read aloud.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 15
+      }
+     },
+     "juniper_w4_wr1": {
+      "id": "juniper_w4_wr1",
+      "title": "Order the Events, Then Write Them",
+      "emoji": "✍️",
+      "minutes": 65,
+      "summary": "Number the four story events in order, then write them as four sentences that read in sequence.",
+      "subject": "writing",
+      "week": 4,
+      "content": {
+       "explain": "Before you write a retell, settle the order on scratch paper. Number the events 1 to 4 the way they happen in the story — not the way you remember them, the way the text proves them. Then write one sentence per event and lean on sequence words: first, next, after that, finally. Sequence words are the glue; without them, four correct events still read like four unrelated facts.",
+       "examples": [
+        {
+         "q": "Events: the ribbon was cut; crowds arrived; rides opened; prizes were judged.",
+         "a": "1 crowds arrived → 2 rides opened → 3 prizes judged → 4 ribbon cut? Check the text — order must come from proof.",
+         "steps": [
+          "List the events.",
+          "Find the proving line for each order.",
+          "Renumber until every step follows."
+         ]
+        },
+        {
+         "q": "\"After that\" — where does it go?",
+         "a": "Between sentence two and three, marking the move from one event to the next.",
+         "steps": [
+          "Locate the two events it links.",
+          "Place it at the join.",
+          "Read aloud to check the flow."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "Which is a sequence word?",
+         "options": [
+          "finally",
+          "loudly",
+          "green",
+          "seven"
+         ],
+         "correctIndex": 0,
+         "hint": "It marks order in time.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Events should be ordered by…",
+         "options": [
+          "what the text proves",
+          "what you like most",
+          "alphabet",
+          "page count"
+         ],
+         "correctIndex": 0,
+         "hint": "Evidence decides order.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Number the four events on scratch paper with a proving line for each.",
+         "answer": "Four numbered events each backed by a line from the text.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Write the four sentences with sequence words at the joins.",
+         "answer": "Four sentences linked by first / next / after that / finally.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Read aloud; mark any join where you stumbled and rewrite it.",
+         "answer": "A revised version with smoother joins.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Check capitals and end marks, then copy the final clean version.",
+         "answer": "A clean final copy with correct mechanics.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w4_lit1": {
+      "id": "juniper_w4_lit1",
+      "title": "Read a Chapter, Draw a Scene",
+      "emoji": "📚",
+      "minutes": 65,
+      "summary": "Read a chapter, then draw one scene from it with a one-sentence caption.",
+      "subject": "literature",
+      "week": 4,
+      "content": {
+       "explain": "A scene is one moment in one place: a slice, not the whole chapter. To choose it, ask which single moment changes something — a discovery, a choice, a reversal. When you draw it, include only what the text supports: if the author never described the weather, do not invent a storm. Your caption is the bridge between the picture and the book: one sentence that says what happens here and why it matters.",
+       "examples": [
+        {
+         "q": "Which moment to draw from a chapter about a lost book?",
+         "a": "The moment the name tag is found — it changes what the character will do.",
+         "steps": [
+          "List the chapter’s moments.",
+          "Pick the one that changes things.",
+          "Draw only that moment."
+         ]
+        },
+        {
+         "q": "\"Caption: Maya finds the name tag and realises whose book it is.\" — good?",
+         "a": "Yes: it names the moment and its consequence in one sentence.",
+         "steps": [
+          "Say what happens.",
+          "Say why it matters.",
+          "Keep it to one sentence."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "A scene is…",
+         "options": [
+          "one moment in one place",
+          "the whole chapter",
+          "the title",
+          "the author’s life"
+         ],
+         "correctIndex": 0,
+         "hint": "A slice of the story.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Your drawing should include…",
+         "options": [
+          "only details the text supports",
+          "anything you imagine",
+          "the page number only",
+          "nothing"
+         ],
+         "correctIndex": 0,
+         "hint": "Evidence-bound, like every retell.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "List three candidate scenes from the chapter and circle the one that changes something.",
+         "answer": "Three candidates with the pivotal one circled.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Draw the scene using only details the text supports; mark two text-backed details.",
+         "answer": "A drawing with two annotated, text-backed details.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write the one-sentence caption.",
+         "answer": "A single sentence naming the moment and why it matters.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Write one question the scene raises for the next chapter.",
+         "answer": "A follow-up question grounded in the scene.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
+     },
+     "juniper_w4_cv1": {
+      "id": "juniper_w4_cv1",
+      "title": "Jobs and Rules That Make a Community Work",
+      "emoji": "🗳️",
+      "minutes": 65,
+      "summary": "Name four jobs or rules that make a community work and say why one of them matters most.",
+      "subject": "civics",
+      "week": 4,
+      "content": {
+       "explain": "Communities run on a mix of people and rules. The jobs do the work; the rules make the work predictable — a stop sign means every driver does the same thing without negotiating each time. To judge which matters most, use one test: what breaks first if it disappears? Something that breaks many other things when it goes is load-bearing, like clean water rules or the people who enforce them.",
+       "examples": [
+        {
+         "q": "Four that make a community work: mail carrier, water inspector, crossing guard, library rule \"return by the due date\".",
+         "a": "Removing any one creates a specific, immediate problem for many people.",
+         "steps": [
+          "Name the job or rule.",
+          "Say what it prevents or delivers.",
+          "Test its absence."
+         ]
+        },
+        {
+         "q": "Which breaks first if it disappears — the rule or the job?",
+         "a": "Often the rule first: without it the job still exists but cannot coordinate anyone.",
+         "steps": [
+          "Ask what depends on it.",
+          "Count who depends on it.",
+          "Rank by blast radius."
+         ]
+        }
+       ],
+       "practice": [
+        {
+         "question": "The disappearance test asks…",
+         "options": [
+          "what breaks first if it is removed",
+          "how much it costs",
+          "who invented it",
+          "how old it is"
+         ],
+         "correctIndex": 0,
+         "hint": "Blast radius, not price.",
+         "praise": "Yes."
+        },
+        {
+         "question": "Rules matter because they make…",
+         "options": [
+          "behaviour predictable for everyone",
+          "life harder",
+          "jobs unnecessary",
+          "people identical"
+         ],
+         "correctIndex": 0,
+         "hint": "Coordination without renegotiating each time.",
+         "praise": "Right."
+        }
+       ],
+       "workbook": [
+        {
+         "id": "wb1",
+         "prompt": "Name 4 jobs or rules that make a community work and say why one matters.",
+         "answer": "Four entries, each with a one-line reason.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb2",
+         "prompt": "Run the disappearance test on two of them; write what breaks first.",
+         "answer": "Two absence scenarios with the first thing to break named.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb3",
+         "prompt": "Write one rule at home or school that works the same way.",
+         "answer": "Analogous rule with its job named.",
+         "reveal": "on-demand"
+        },
+        {
+         "id": "wb4",
+         "prompt": "Draft one new job or rule your community needs and justify it with the test.",
+         "answer": "A proposal plus a blast-radius justification.",
+         "reveal": "on-demand"
+        }
+       ],
+       "parent_note": "",
+       "minutes_target": 65
+      }
      }
     },
     "counts": {
      "blocks": 24,
-     "lesson_objects": 4,
+     "lesson_objects": 11,
      "sheets": 0
     },
     "test": {

@@ -1,6 +1,6 @@
 {
  "schema": "k6_readiness/v2",
- "generated_at": "2026-10-27T03:17:21.042Z",
+ "generated_at": "2026-10-27T03:18:56.721Z",
  "source": "tools/validate_readiness.js",
  "axes": {
   "grades": [
@@ -39,7 +39,7 @@
    "9": "T0"
   },
   "3": {
-   "1": "T0",
+   "1": "T2",
    "2": "T2",
    "3": "T2",
    "4": "T0",
@@ -106,8 +106,8 @@
   }
  },
  "counts": {
-  "T0": 60,
+  "T0": 59,
   "T1": 0,
-  "T2": 3
+  "T2": 4
  }
 }

@@ -1,6 +1,6 @@
 # K–6 Readiness Matrix (P0.4 validator v2 output — regenerated, do not hand-edit)
 
-- Generated: `2026-10-27T03:17:21.037Z` by `tools/validate_readiness.js`
+- Generated: `2026-10-27T03:18:56.699Z` by `tools/validate_readiness.js`
 - Axes: 7 grades (K–6) × 9 school months × 4 weeks (year week = (month−1)×4 + week-of-month)
 - Statutory list: nine MCL 380.1561(3)(f) subjects (D7-verified) — reading, spelling, mathematics, science, history, civics, literature, writing, english_grammar
 - Fold-map (K/1/2): `ela` → reading, writing, spelling, literature, english_grammar; `social_studies` → history, civics; `math` → mathematics; `science` → science.
@@ -15,18 +15,18 @@
 | **K** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 | **1** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 | **2** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
-| **3** | T0 | **T2** | **T2** | T0 | T0 | T0 | T0 | T0 | T0 |
+| **3** | **T2** | **T2** | **T2** | T0 | T0 | T0 | T0 | T0 | T0 |
 | **4** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 | **5** | **T2** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 | **6** | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 | T0 |
 
-Grade-month totals: T2 = 3, T1 = 0, T0 = 60 (of 63).
+Grade-month totals: T2 = 4, T1 = 0, T0 = 59 (of 63).
 
 **Beta-blocking (T0) grade-months:**
 - grade K: months 1, 2, 3, 4, 5, 6, 7, 8, 9
 - grade 1: months 1, 2, 3, 4, 5, 6, 7, 8, 9
 - grade 2: months 1, 2, 3, 4, 5, 6, 7, 8, 9
-- grade 3: months 1, 4, 5, 6, 7, 8, 9
+- grade 3: months 4, 5, 6, 7, 8, 9
 - grade 4: months 1, 2, 3, 4, 5, 6, 7, 8, 9
 - grade 5: months 2, 3, 4, 5, 6, 7, 8, 9
 - grade 6: months 1, 2, 3, 4, 5, 6, 7, 8, 9
@@ -135,10 +135,6 @@ Grade-month totals: T2 = 3, T1 = 0, T0 = 60 (of 63).
 - **2 / month 9 / week 34** → T0: week file missing
 - **2 / month 9 / week 35** → T0: week file missing
 - **2 / month 9 / week 36** → T0: week file missing
-- **3 / month 1 / week 1** → T0: 9/9 coverage: 8/9 — missing literature
-- **3 / month 1 / week 2** → T0: 9/9 coverage: 8/9 — missing literature
-- **3 / month 1 / week 3** → T1: spiral: only 13% of blocks bind an in-week lesson (<80% T2 bar)
-- **3 / month 1 / week 4** → T0: 9/9 coverage: 8/9 — missing civics
 - **3 / month 4 / week 13** → T0: week file missing
 - **3 / month 4 / week 14** → T0: week file missing
 - **3 / month 4 / week 15** → T0: week file missing
@@ -305,7 +301,6 @@ Grade-month totals: T2 = 3, T1 = 0, T0 = 60 (of 63).
 - grade 1: 6/36 week files exist, 2 carry a day flow.
 - grade 2: 6/36 week files exist, 2 carry a day flow.
 - grade 3: 12/36 week files exist, 12 carry a day flow.
-- grade 3: statutory subject(s) missing from at least one authored week — literature, civics.
 - grade 4: 6/36 week files exist, 2 carry a day flow.
 - grade 4: statutory subject(s) missing from at least one authored week — civics, literature, writing, english_grammar.
 - grade 5: 6/36 week files exist, 4 carry a day flow.
