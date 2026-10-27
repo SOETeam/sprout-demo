@@ -83,6 +83,18 @@
    "science",
    "spelling",
    "writing"
+  ],
+  "6": [
+   "civics",
+   "coding",
+   "english_grammar",
+   "history",
+   "literature",
+   "math",
+   "reading",
+   "science",
+   "spelling",
+   "writing"
   ]
  },
  "grades": {
@@ -2727,6 +2739,1308 @@
      "priority": 2
     }
    ]
+  },
+  "6": {
+   "grade_band": "6",
+   "label": "Grade 6",
+   "nodes": [
+    {
+     "id": "6.MATH",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "strand",
+     "label": "Mathematics (MCL: mathematics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.READ",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "strand",
+     "label": "Reading (MCL: reading)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.LIT",
+     "grade": "6",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "strand",
+     "label": "Literature (MCL: literature)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.WRIT",
+     "grade": "6",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "strand",
+     "label": "Writing (MCL: writing)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.GRAM",
+     "grade": "6",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "strand",
+     "label": "English grammar (MCL: English grammar)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.SPELL",
+     "grade": "6",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "strand",
+     "label": "Spelling (MCL: spelling)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.SCI",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "strand",
+     "label": "Science (MCL: science)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.HIST",
+     "grade": "6",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "strand",
+     "label": "History & geography (MCL: history)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.CIV",
+     "grade": "6",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "strand",
+     "label": "Civics (MCL: civics)",
+     "parent": null,
+     "prereqs": [],
+     "standards": [],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.6.1",
+     "grade": "6",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text",
+     "parent": "6.LIT",
+     "prereqs": [],
+     "standards": [
+      "RL.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.6.2",
+     "grade": "6",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Determine a theme or central idea of a text and how it is conveyed through particular details; provide a summary of the text distinct from personal opinions or judgments",
+     "parent": "6.LIT",
+     "prereqs": [
+      "RL.6.1"
+     ],
+     "standards": [
+      "RL.6.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.6.3",
+     "grade": "6",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Describe how a particular story's or drama's plot unfolds in a series of episodes as well as how the characters respond or change as the plot moves toward a resolution",
+     "parent": "6.LIT",
+     "prereqs": [
+      "RL.6.1"
+     ],
+     "standards": [
+      "RL.6.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.6.4",
+     "grade": "6",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "Determine the meaning of words and phrases as they are used in a text, including figurative and connotative meanings; analyze the impact of a specific word choice on meaning and tone",
+     "parent": "6.LIT",
+     "prereqs": [
+      "RL.6.1"
+     ],
+     "standards": [
+      "RL.6.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RL.6.10",
+     "grade": "6",
+     "subject": "literature",
+     "statutory": "literature",
+     "kind": "standard",
+     "label": "By the end of the year, read and comprehend literature, including stories, dramas, and poems, in the grades 6-8 text complexity band proficiently, with scaffolding as needed at the high end of the range",
+     "parent": "6.LIT",
+     "prereqs": [
+      "RL.6.1"
+     ],
+     "standards": [
+      "RL.6.10"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.6.1",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Cite textual evidence to support analysis of what the text says explicitly as well as inferences drawn from the text",
+     "parent": "6.READ",
+     "prereqs": [],
+     "standards": [
+      "RI.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.6.2",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Determine a central idea of a text and how it is conveyed through particular details; provide a summary of the text distinct from personal opinions or judgments",
+     "parent": "6.READ",
+     "prereqs": [
+      "RI.6.1"
+     ],
+     "standards": [
+      "RI.6.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.6.3",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Analyze in detail how a key individual, event, or idea is introduced, illustrated, and elaborated in a text",
+     "parent": "6.READ",
+     "prereqs": [
+      "RI.6.2"
+     ],
+     "standards": [
+      "RI.6.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.6.4",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Determine the meaning of words and phrases as they are used in a text, including figurative, connotative, and technical meanings",
+     "parent": "6.READ",
+     "prereqs": [
+      "RI.6.1"
+     ],
+     "standards": [
+      "RI.6.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "RI.6.8",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not",
+     "parent": "6.READ",
+     "prereqs": [
+      "RI.6.2"
+     ],
+     "standards": [
+      "RI.6.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.6.1",
+     "grade": "6",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Write arguments to support claims with clear reasons and relevant evidence",
+     "parent": "6.WRIT",
+     "prereqs": [],
+     "standards": [
+      "W.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.6.3",
+     "grade": "6",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences",
+     "parent": "6.WRIT",
+     "prereqs": [
+      "W.6.1"
+     ],
+     "standards": [
+      "W.6.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.6.4",
+     "grade": "6",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience",
+     "parent": "6.WRIT",
+     "prereqs": [
+      "W.6.1"
+     ],
+     "standards": [
+      "W.6.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "W.6.9",
+     "grade": "6",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "standard",
+     "label": "Draw evidence from literary or informational texts to support analysis, reflection, and research",
+     "parent": "6.WRIT",
+     "prereqs": [
+      "W.6.1"
+     ],
+     "standards": [
+      "W.6.9"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "SL.6.1",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 6 topics, texts, and issues, building on others' ideas and expressing their own clearly",
+     "parent": "6.READ",
+     "prereqs": [],
+     "standards": [
+      "SL.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "SL.6.4",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "standard",
+     "label": "Present claims and findings, sequencing ideas logically and using pertinent descriptions, facts, and details to accentuate main ideas or themes; use appropriate eye contact, adequate volume, and clear pronunciation",
+     "parent": "6.READ",
+     "prereqs": [
+      "SL.6.1"
+     ],
+     "standards": [
+      "SL.6.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.6.1",
+     "grade": "6",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking",
+     "parent": "6.GRAM",
+     "prereqs": [],
+     "standards": [
+      "L.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "L.6.2",
+     "grade": "6",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "standard",
+     "label": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing",
+     "parent": "6.GRAM",
+     "prereqs": [
+      "L.6.1"
+     ],
+     "standards": [
+      "L.6.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.RP.1",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.RP.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.RP.2",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand the concept of a unit rate a/b associated with a ratio a:b with b != 0, and use rate language in the context of a ratio relationship",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.RP.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.RP.3",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Use ratio and rate reasoning to solve real-world and mathematical problems (tables of equivalent ratios, tape diagrams, double number line diagrams, equations)",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.RP.1"
+     ],
+     "standards": [
+      "6.RP.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.1",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.NS.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.2",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently divide multi-digit numbers using the standard algorithm",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.NS.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.3",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Fluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm for each operation",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.NS.2"
+     ],
+     "standards": [
+      "6.NS.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.4",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Find the greatest common factor of two whole numbers less than or equal to 100 and the least common multiple of two whole numbers less than or equal to 12; use the distributive property to express a sum with a common factor as a multiple of a sum with no common factor",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.NS.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.5",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand that positive and negative numbers are used together to describe quantities having opposite directions or values; use positive and negative numbers to represent quantities in real-world contexts",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.NS.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.6",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand a rational number as a point on the number line; extend number line diagrams and coordinate axes to represent points on the line and in the plane with negative number coordinates",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.NS.6"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.7",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand ordering and absolute value of rational numbers",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.NS.6"
+     ],
+     "standards": [
+      "6.NS.7"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.NS.8",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Solve real-world and mathematical problems by graphing points in all four quadrants of the coordinate plane, including using coordinates and absolute value to find distances",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.NS.7"
+     ],
+     "standards": [
+      "6.NS.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.EE.1",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Write and evaluate numerical expressions involving whole-number exponents",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.EE.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.EE.2",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Write, read, and evaluate expressions in which letters stand for numbers",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.EE.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.EE.3",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Apply the properties of operations to generate equivalent expressions",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.EE.2"
+     ],
+     "standards": [
+      "6.EE.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.EE.4",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Identify when two expressions are equivalent (when the two expressions name the same number regardless of which value is substituted into them)",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.EE.3"
+     ],
+     "standards": [
+      "6.EE.4"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.EE.5",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true?",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.EE.2"
+     ],
+     "standards": [
+      "6.EE.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.EE.7",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.EE.5"
+     ],
+     "standards": [
+      "6.EE.7"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G.1",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in real-world and mathematical problems",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.G.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G.2",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Find the volume of a right rectangular prism with fractional edge lengths by packing it with unit cubes, and show that the volume is the same as would be found by multiplying the edge lengths of the prism",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.G.1"
+     ],
+     "standards": [
+      "6.G.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G.3",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Draw polygons in the coordinate plane given coordinates for the vertices; use coordinates to find the length of a side joining points with the same first coordinate or the same second coordinate",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.NS.6"
+     ],
+     "standards": [
+      "6.G.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.SP.3",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Recognize that a measure of center for a numerical data set summarizes all of its values with a single number, while a measure of variation describes how its values vary with a single number",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.SP.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.SP.5",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "standard",
+     "label": "Summarize numerical data sets in relation to their context: number of observations, nature of the attribute and its units, measures of center and variability, and the shape of the distribution",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.SP.3"
+     ],
+     "standards": [
+      "6.SP.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-PS1-3",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Gather and make sense of information to describe that synthetic materials come from natural resources and impact society",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-PS1-3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-PS2-2",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Plan an investigation to provide evidence that the change in an object's motion depends on the sum of the forces on the object and the mass of the object",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-PS2-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-PS3-3",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Apply scientific principles to design, construct, and test a device that either minimizes or maximizes thermal energy transfer",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-PS3-3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-LS1-2",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Develop and use a model to describe the function of a cell as a whole and ways the parts of cells contribute to the function",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-LS1-2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-LS1-5",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Construct a scientific explanation based on evidence for how environmental and genetic factors influence the growth of organisms",
+     "parent": "6.SCI",
+     "prereqs": [
+      "MS-LS1-2"
+     ],
+     "standards": [
+      "MS-LS1-5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-LS2-1",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Analyze and interpret data to provide evidence for the effects of resource availability on organisms and populations of organisms in an ecosystem",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-LS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-ESS2-1",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Develop a model to describe the cycling of Earth's materials and the flow of energy that drives this process",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-ESS2-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-ESS2-5",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Collect data to provide evidence for how the motions and complex interactions of air masses result in changes in weather conditions",
+     "parent": "6.SCI",
+     "prereqs": [
+      "MS-ESS2-1"
+     ],
+     "standards": [
+      "MS-ESS2-5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-ESS3-1",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Construct a scientific explanation based on evidence for how the uneven distributions of Earth's mineral, energy, and groundwater resources are the result of past and current geoscience processes",
+     "parent": "6.SCI",
+     "prereqs": [
+      "MS-ESS2-1"
+     ],
+     "standards": [
+      "MS-ESS3-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "MS-ETS1-1",
+     "grade": "6",
+     "subject": "science",
+     "statutory": "science",
+     "kind": "standard",
+     "label": "Define the criteria and constraints of a design problem with sufficient precision to ensure a successful solution, taking into account relevant scientific principles and potential impacts on people and the natural environment that may limit possible solutions",
+     "parent": "6.SCI",
+     "prereqs": [],
+     "standards": [
+      "MS-ETS1-1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G1.1.1",
+     "grade": "6",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Use a variety of geographic tools (maps, globes, and web-based geography technology) to analyze the world at global, regional, and local scales",
+     "parent": "6.HIST",
+     "prereqs": [],
+     "standards": [
+      "6.G1.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G1.3.1",
+     "grade": "6",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Use the fundamental themes of geography (location, place, human-environment interaction, movement, region) to describe regions or places on earth",
+     "parent": "6.HIST",
+     "prereqs": [
+      "6.G1.1.1"
+     ],
+     "standards": [
+      "6.G1.3.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G4.1.1",
+     "grade": "6",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Define culture and describe examples of cultural change through diffusion, including what has diffused, why and where it has spread, and positive and negative consequences of the change",
+     "parent": "6.HIST",
+     "prereqs": [],
+     "standards": [
+      "6.G4.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G5.1.1",
+     "grade": "6",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Describe examples of how humans have impacted and are continuing to impact the environment in different places as a consequence of population size, resource use, level of consumption, and technology",
+     "parent": "6.HIST",
+     "prereqs": [
+      "6.G4.1.1"
+     ],
+     "standards": [
+      "6.G5.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.G6.1.1",
+     "grade": "6",
+     "subject": "history",
+     "statutory": "history",
+     "kind": "standard",
+     "label": "Identify global issues",
+     "parent": "6.HIST",
+     "prereqs": [],
+     "standards": [
+      "6.G6.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.C1.1.1",
+     "grade": "6",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Compare and contrast different ideas about the purposes of government in different nations, nation-states or governments",
+     "parent": "6.CIV",
+     "prereqs": [],
+     "standards": [
+      "6.C1.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.C3.6.1",
+     "grade": "6",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Define the characteristics of modern nation-states",
+     "parent": "6.CIV",
+     "prereqs": [
+      "6.C1.1.1"
+     ],
+     "standards": [
+      "6.C3.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.C4.3.1",
+     "grade": "6",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Explain how governments address national and international issues and form policies, and how the policies may not be consistent with those of other nation-states",
+     "parent": "6.CIV",
+     "prereqs": [
+      "6.C3.6.1"
+     ],
+     "standards": [
+      "6.C4.3.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.E1.1.1",
+     "grade": "6",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Explain how incentives and disincentives in the market economy can change the decision-making process",
+     "parent": "6.CIV",
+     "prereqs": [],
+     "standards": [
+      "6.E1.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.E3.1.1",
+     "grade": "6",
+     "subject": "civics",
+     "statutory": "civics",
+     "kind": "standard",
+     "label": "Explain and compare how economic systems (traditional, command, market) answer the three basic economic questions: what goods and services will be produced, how will they be produced, and for whom will they be produced",
+     "parent": "6.CIV",
+     "prereqs": [
+      "6.E1.1.1"
+     ],
+     "standards": [
+      "6.E3.1.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.MATH.ratio-reasoning",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Ratio and rate reasoning (practice)",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.RP.1",
+      "6.RP.2",
+      "6.RP.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.MATH.division-decimals",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Multi-digit division and decimal operations",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.MATH.ratio-reasoning"
+     ],
+     "standards": [
+      "6.NS.1",
+      "6.NS.2",
+      "6.NS.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.MATH.rational-numbers",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Rational numbers, ordering, and the coordinate plane",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.MATH.division-decimals"
+     ],
+     "standards": [
+      "6.NS.5",
+      "6.NS.6",
+      "6.NS.7",
+      "6.NS.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.MATH.expressions-equations",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Expressions, equations, and one-variable reasoning",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.MATH.rational-numbers"
+     ],
+     "standards": [
+      "6.EE.1",
+      "6.EE.2",
+      "6.EE.3",
+      "6.EE.4",
+      "6.EE.5",
+      "6.EE.7"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.MATH.area-volume",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Area, surface area, and volume (practice)",
+     "parent": "6.MATH",
+     "prereqs": [
+      "6.MATH.rational-numbers"
+     ],
+     "standards": [
+      "6.G.1",
+      "6.G.2",
+      "6.G.3"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.MATH.statistical-questions",
+     "grade": "6",
+     "subject": "math",
+     "statutory": "mathematics",
+     "kind": "skill",
+     "label": "Statistical questions, center, and spread",
+     "parent": "6.MATH",
+     "prereqs": [],
+     "standards": [
+      "6.SP.3",
+      "6.SP.5"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.READ.text-evidence",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Comprehension with text evidence (incl. argument tracing)",
+     "parent": "6.READ",
+     "prereqs": [],
+     "standards": [
+      "RI.6.1",
+      "RI.6.8"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.READ.main-idea-structure",
+     "grade": "6",
+     "subject": "reading",
+     "statutory": "reading",
+     "kind": "skill",
+     "label": "Central idea, structure, and summarizing",
+     "parent": "6.READ",
+     "prereqs": [
+      "6.READ.text-evidence"
+     ],
+     "standards": [
+      "RI.6.2",
+      "RI.6.3",
+      "SL.6.1"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.GRAM.sentence-conventions",
+     "grade": "6",
+     "subject": "english_grammar",
+     "statutory": "english_grammar",
+     "kind": "skill",
+     "label": "Sentence structure, pronouns, and punctuation",
+     "parent": "6.GRAM",
+     "prereqs": [],
+     "standards": [
+      "L.6.1",
+      "L.6.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.SPELL.patterns",
+     "grade": "6",
+     "subject": "spelling",
+     "statutory": "spelling",
+     "kind": "skill",
+     "label": "Grade 6 spelling patterns and conventions routine",
+     "parent": "6.SPELL",
+     "prereqs": [
+      "6.READ.main-idea-structure"
+     ],
+     "standards": [
+      "L.6.2"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    },
+    {
+     "id": "6.WRIT.argument-writing",
+     "grade": "6",
+     "subject": "writing",
+     "statutory": "writing",
+     "kind": "skill",
+     "label": "Argument writing: claim, reasons, evidence, and sources",
+     "parent": "6.WRIT",
+     "prereqs": [
+      "6.READ.text-evidence"
+     ],
+     "standards": [
+      "W.6.1",
+      "W.6.9"
+     ],
+     "unit_wk": null,
+     "priority": 1
+    }
+   ],
+   "statutory_subjects": [
+    "math",
+    "reading",
+    "writing",
+    "english_grammar",
+    "spelling",
+    "literature",
+    "science",
+    "history",
+    "civics"
+   ],
+   "cat_domains": [
+    "math",
+    "ela"
+   ],
+   "content": "standards-mapped tree only; content lane pending (data/content.json grades.6 has no day-flow weeks yet)"
   },
   "K": {
    "grade_band": "K",
