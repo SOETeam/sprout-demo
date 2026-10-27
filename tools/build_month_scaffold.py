@@ -964,8 +964,8 @@ def main():
     if not 1 <= month <= 9:
         die('month must be 1..9')
     if grade not in MINUTE_LAW:
-        die('minute law not defined for grade %s (have %s)'
-            % (grade, ', '.join(sorted(MINUTE_LAW))))
+        die('%s (technical: no minute law for grade %s — supported: %s)'
+            % (GUARDIAN_NOT_READY % grade, grade, ', '.join(sorted(MINUTE_LAW))))
 
     # ---- data lane (E5 grades_k124 vs content.json) + G1 pre-flight.
     # data_floor runs FIRST: a band that cannot cover its statutory list must
