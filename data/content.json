@@ -42,15 +42,15 @@
    ],
    "enabled": true,
    "statutory_map": [
-    "civics",
-    "coding",
-    "english_grammar",
-    "history",
-    "mathematics",
     "reading",
-    "science",
     "spelling",
-    "writing"
+    "mathematics",
+    "science",
+    "history",
+    "civics",
+    "literature",
+    "writing",
+    "english_grammar"
    ]
   },
   "5": {
@@ -68,13 +68,36 @@
    ],
    "enabled": true,
    "statutory_map": [
-    "coding",
-    "history",
-    "mathematics",
     "reading",
+    "spelling",
+    "mathematics",
     "science",
-    "spelling"
+    "history",
+    "civics",
+    "literature",
+    "writing",
+    "english_grammar"
    ]
+  },
+  "6": {
+   "label": "Grade 6",
+   "grade": 6,
+   "persona": null,
+   "student_key": null,
+   "subjects": [],
+   "enabled": false,
+   "statutory_map": [
+    "reading",
+    "spelling",
+    "mathematics",
+    "science",
+    "history",
+    "civics",
+    "literature",
+    "writing",
+    "english_grammar"
+   ],
+   "note": "declaration only — no content lane, no skill_tree band yet"
   }
  },
  "weeks": {
@@ -2886,7 +2909,7 @@
     "test": {
      "quizId": "rookie_w2_test",
      "learner": "Rookie",
-     "title": "Week 2 Show-Me Time",
+     "title": "Week 3 Show-Me Time — Spiral review (Week 2 item set)",
      "tapFriendly": true,
      "format": "show-me-checklist",
      "minutes": 15,
@@ -2897,7 +2920,7 @@
       "rookie_w2_l3",
       "rookie_w2_l4"
      ],
-     "note": "Grown-up reads each prompt aloud. Rookie shows what they can do. Tap the happy face together for each one!",
+     "note": "Grown-up reads each prompt aloud. Rookie shows what they can do. Tap the happy face together for each one! Spiral tier: this is the Week 2 item set reused for Week 3 until a Week 3 set is authored (G13 documented fallback). covers[] deliberately name the Week 2 lessons the items were written from.",
      "questions": [
       {
        "q": "Show counting to 10 on fingers, nice and slow",
@@ -2971,7 +2994,8 @@
        "skill": "Fine Motor Counting",
        "why": "Each bead threaded is a tiny victory for strong fingers!"
       }
-     ]
+     ],
+     "tier": "spiral"
     },
     "quizzes": [
      {
@@ -3883,7 +3907,7 @@
     "test": {
      "quizId": "rookie_w2_test",
      "learner": "Rookie",
-     "title": "Week 2 Show-Me Time",
+     "title": "Week 4 Show-Me Time — Spiral review (Week 2 item set)",
      "tapFriendly": true,
      "format": "show-me-checklist",
      "minutes": 15,
@@ -3894,7 +3918,7 @@
       "rookie_w2_l3",
       "rookie_w2_l4"
      ],
-     "note": "Grown-up reads each prompt aloud. Rookie shows what they can do. Tap the happy face together for each one!",
+     "note": "Grown-up reads each prompt aloud. Rookie shows what they can do. Tap the happy face together for each one! Spiral tier: this is the Week 2 item set reused for Week 4 until a Week 4 set is authored (G13 documented fallback). covers[] deliberately name the Week 2 lessons the items were written from.",
      "questions": [
       {
        "q": "Show counting to 10 on fingers, nice and slow",
@@ -3968,7 +3992,8 @@
        "skill": "Fine Motor Counting",
        "why": "Each bead threaded is a tiny victory for strong fingers!"
       }
-     ]
+     ],
+     "tier": "spiral"
     },
     "quizzes": [
      {
@@ -12776,7 +12801,7 @@
     "test": {
      "quizId": "juniper_w2_test",
      "learner": "Juniper",
-     "title": "Week 2 Test — Multiplication Masters A",
+     "title": "Week 3 Test — Spiral review (Week 2 item set)",
      "tapFriendly": true,
      "format": "tap-mcq",
      "minutes": 15,
@@ -12787,7 +12812,7 @@
       "juniper_w2_l3",
       "juniper_w2_l4"
      ],
-     "note": "Drawn from Juniper's week-2 math lessons (times table review 2-5, equal groups & arrays, word problems with arrays, estimate to check) plus the daily spine practice activities.",
+     "note": "Drawn from Juniper's week-2 math lessons (times table review 2-5, equal groups & arrays, word problems with arrays, estimate to check) plus the daily spine practice activities. Spiral tier: this is the Week 2 item set reused for Week 3 until a Week 3 set is authored (G13 documented fallback). covers[] deliberately name the Week 2 lessons the items were written from.",
      "questions": [
       {
        "q": "0 × 4 = ?",
@@ -12909,7 +12934,8 @@
        "skill": "skip-counting",
        "why": "Counting by 2s — each step adds 2 more. You're cruising through the tables!"
       }
-     ]
+     ],
+     "tier": "spiral"
     },
     "generators": [
      {
@@ -15363,7 +15389,7 @@
     "test": {
      "quizId": "juniper_w2_test",
      "learner": "Juniper",
-     "title": "Week 2 Test — Multiplication Masters A",
+     "title": "Week 4 Test — Spiral review (Week 2 item set)",
      "tapFriendly": true,
      "format": "tap-mcq",
      "minutes": 15,
@@ -15374,7 +15400,7 @@
       "juniper_w2_l3",
       "juniper_w2_l4"
      ],
-     "note": "Drawn from Juniper's week-2 math lessons (times table review 2-5, equal groups & arrays, word problems with arrays, estimate to check) plus the daily spine practice activities.",
+     "note": "Drawn from Juniper's week-2 math lessons (times table review 2-5, equal groups & arrays, word problems with arrays, estimate to check) plus the daily spine practice activities. Spiral tier: this is the Week 2 item set reused for Week 4 until a Week 4 set is authored (G13 documented fallback). covers[] deliberately name the Week 2 lessons the items were written from.",
      "questions": [
       {
        "q": "0 × 4 = ?",
@@ -15496,7 +15522,8 @@
        "skill": "skip-counting",
        "why": "Counting by 2s — each step adds 2 more. You're cruising through the tables!"
       }
-     ]
+     ],
+     "tier": "spiral"
     },
     "generators": [
      {
@@ -21484,14 +21511,28 @@
      "minutes": 15,
      "passScore": 0.8,
      "covers": [
-      "pixel_w2_l1",
-      "pixel_w2_l2",
-      "pixel_w2_l3",
-      "pixel_w2_l4",
-      "pixel_w1_l1",
-      "pixel_w1_l2"
+      "pixel_w2_d1_b1",
+      "pixel_w4_l1",
+      "pixel_w2_d1_b3",
+      "pixel_w2_d1_b4",
+      "pixel_w2_d1_b5",
+      "pixel_w2_d2_b1",
+      "pixel_w2_d2_b2",
+      "pixel_w2_d2_b3",
+      "pixel_w2_d2_b4",
+      "pixel_w2_d2_b5",
+      "pixel_w2_d3_b1",
+      "pixel_w2_d3_b2",
+      "pixel_w2_d3_b3",
+      "pixel_w2_d3_b4",
+      "pixel_w2_d3_b5",
+      "pixel_w2_d4_b1",
+      "pixel_w2_d4_b2",
+      "pixel_w2_d4_b3",
+      "pixel_w2_d4_b4",
+      "pixel_w2_d4_b5"
      ],
-     "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice.",
+     "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice. covers[] rebound to the in-week lessons of the subjects the items ask about (math, sentence structure, spelling, properties of matter, ancient civilizations); the two volume items preview the Week 4 unit. No coding item is claimed.",
      "questions": [
       {
        "q": "A box is 4 cm long, 3 cm wide, and 2 cm high. What is its volume in cubic centimeters?",
@@ -23657,7 +23698,7 @@
     "test": {
      "quizId": "pixel_w2_test",
      "learner": "Pixel",
-     "title": "Week 2 Test — Fractions Operations & Algebra Basics",
+     "title": "Week 3 Test — Spiral review (Week 2 item set)",
      "tapFriendly": true,
      "format": "tap-mcq",
      "minutes": 15,
@@ -23670,7 +23711,7 @@
       "pixel_w1_l1",
       "pixel_w1_l2"
      ],
-     "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice.",
+     "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice. Spiral tier: this is the Week 2 item set reused for Week 3 until a Week 3 set is authored (G13 documented fallback). covers[] deliberately name the Week 2 lessons the items were written from.",
      "questions": [
       {
        "q": "A box is 4 cm long, 3 cm wide, and 2 cm high. What is its volume in cubic centimeters?",
@@ -23840,7 +23881,8 @@
        "skill": "ancient-civilizations",
        "why": "Rivers gave fresh water, fertile soil for crops, transportation, and trade routes — everything a city needs to thrive. You're thinking like a historian!"
       }
-     ]
+     ],
+     "tier": "spiral"
     },
     "generators": [
      {
@@ -25836,7 +25878,7 @@
     "test": {
      "quizId": "pixel_w2_test",
      "learner": "Pixel",
-     "title": "Week 2 Test — Fractions Operations & Algebra Basics",
+     "title": "Week 4 Test — Spiral review (Week 2 item set)",
      "tapFriendly": true,
      "format": "tap-mcq",
      "minutes": 15,
@@ -25849,7 +25891,7 @@
       "pixel_w1_l1",
       "pixel_w1_l2"
      ],
-     "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice.",
+     "note": "Drawn from Pixel's mapped week-2 lessons: volume, solving for x, variables, equations, plus fraction operations and cross-curricular practice. Spiral tier: this is the Week 2 item set reused for Week 4 until a Week 4 set is authored (G13 documented fallback). covers[] deliberately name the Week 2 lessons the items were written from.",
      "questions": [
       {
        "q": "A box is 4 cm long, 3 cm wide, and 2 cm high. What is its volume in cubic centimeters?",
@@ -26019,7 +26061,8 @@
        "skill": "ancient-civilizations",
        "why": "Rivers gave fresh water, fertile soil for crops, transportation, and trade routes — everything a city needs to thrive. You're thinking like a historian!"
       }
-     ]
+     ],
+     "tier": "spiral"
     },
     "generators": [
      {

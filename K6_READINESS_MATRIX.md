@@ -1,6 +1,6 @@
 # K–6 Readiness Matrix (P0.4 validator v2 output — regenerated, do not hand-edit)
 
-- Generated: `2026-10-26T23:59:13.481Z` by `tools/validate_readiness.js`
+- Generated: `2026-10-27T01:19:23.247Z` by `tools/validate_readiness.js`
 - Axes: 7 grades (K–6) × 9 school months × 4 weeks (year week = (month−1)×4 + week-of-month)
 - Statutory list: nine MCL 380.1561(3)(f) subjects (D7-verified) — reading, spelling, mathematics, science, history, civics, literature, writing, english_grammar
 - Fold-map (K/1/2): `ela` → reading, writing, spelling, literature, english_grammar; `social_studies` → history, civics; `math` → mathematics; `science` → science.
@@ -137,8 +137,8 @@ Grade-month totals: T2 = 0, T1 = 0, T0 = 63 (of 63).
 - **2 / month 9 / week 36** → T0: week file missing
 - **3 / month 1 / week 1** → T0: 9/9 coverage: 8/9 — missing literature
 - **3 / month 1 / week 2** → T0: 9/9 coverage: 8/9 — missing literature
-- **3 / month 1 / week 3** → T0: b/test.covers: juniper_w2_l1 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback); b/test.covers: juniper_w2_l2 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback); b/test.covers: juniper_w2_l3 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback); b/test.covers: juniper_w2_l4 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- **3 / month 1 / week 4** → T0: 9/9 coverage: 8/9 — missing civics; b/test.covers: juniper_w2_l1 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback); b/test.covers: juniper_w2_l2 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback); b/test.covers: juniper_w2_l3 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback); b/test.covers: juniper_w2_l4 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
+- **3 / month 1 / week 3** → T1: spiral: only 13% of blocks bind an in-week lesson (<80% T2 bar)
+- **3 / month 1 / week 4** → T0: 9/9 coverage: 8/9 — missing civics
 - **3 / month 2 / week 5** → T0: topic-only stub (no day flow)
 - **3 / month 2 / week 6** → T0: topic-only stub (no day flow)
 - **3 / month 2 / week 7** → T0: week file missing
@@ -208,9 +208,9 @@ Grade-month totals: T2 = 0, T1 = 0, T0 = 63 (of 63).
 - **4 / month 9 / week 35** → T0: week file missing
 - **4 / month 9 / week 36** → T0: week file missing
 - **5 / month 1 / week 1** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar
-- **5 / month 1 / week 2** → T0: 9/9 coverage: 5/9 — missing reading, civics, literature, writing; b/test.covers: pixel_w2_l1 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w2_l2 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w2_l3 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w2_l4 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w1_l1 unresolved in week 2 (exists only in week 1 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w1_l2 unresolved in week 2 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- **5 / month 1 / week 3** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar; b/test.covers: pixel_w2_l1 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w2_l2 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w2_l3 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w2_l4 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w1_l1 unresolved in week 3 (exists only in week 1 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w1_l2 unresolved in week 3 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- **5 / month 1 / week 4** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar; b/test.covers: pixel_w1_l1 unresolved in week 4 (exists only in week 1 — rebind, or tier it spiral/fallback); b/test.covers: pixel_w1_l2 unresolved in week 4 (exists only in week 1 — rebind, or tier it spiral/fallback)
+- **5 / month 1 / week 2** → T0: 9/9 coverage: 5/9 — missing reading, civics, literature, writing
+- **5 / month 1 / week 3** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar
+- **5 / month 1 / week 4** → T0: 9/9 coverage: 5/9 — missing civics, literature, writing, english_grammar
 - **5 / month 2 / week 5** → T0: topic-only stub (no day flow)
 - **5 / month 2 / week 6** → T0: topic-only stub (no day flow)
 - **5 / month 2 / week 7** → T0: week file missing
@@ -282,42 +282,7 @@ Grade-month totals: T2 = 0, T1 = 0, T0 = 63 (of 63).
 
 ## Integrity findings (gates b–e — these are authoring bugs, not coverage gaps)
 
-- FAIL `b/test-id` grade 3 week 3 — quizId juniper_w2_test reused: authored for week 2, repeated in week 3 (test id must resolve to its own week — rebind or add test.tier)
-- FAIL `b/test-id` grade 3 week 4 — quizId juniper_w2_test reused: authored for week 2, repeated in week 4 (test id must resolve to its own week — rebind or add test.tier)
-- FAIL `b/test-id` grade 5 week 3 — quizId pixel_w2_test reused: authored for week 2, repeated in week 3 (test id must resolve to its own week — rebind or add test.tier)
-- FAIL `b/test-id` grade 5 week 4 — quizId pixel_w2_test reused: authored for week 2, repeated in week 4 (test id must resolve to its own week — rebind or add test.tier)
-- FAIL `b/test-id` grade preschool week 3 — quizId rookie_w2_test reused: authored for week 2, repeated in week 3 (test id must resolve to its own week — rebind or add test.tier)
-- FAIL `b/test-id` grade preschool week 4 — quizId rookie_w2_test reused: authored for week 2, repeated in week 4 (test id must resolve to its own week — rebind or add test.tier)
-- FAIL `b/test.covers` grade 3 month 1 week 3 — b/test.covers: juniper_w2_l1 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 3 — b/test.covers: juniper_w2_l2 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 3 — b/test.covers: juniper_w2_l3 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 3 — b/test.covers: juniper_w2_l4 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 4 — b/test.covers: juniper_w2_l1 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 4 — b/test.covers: juniper_w2_l2 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 4 — b/test.covers: juniper_w2_l3 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 3 month 1 week 4 — b/test.covers: juniper_w2_l4 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 2 — b/test.covers: pixel_w2_l1 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 2 — b/test.covers: pixel_w2_l2 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 2 — b/test.covers: pixel_w2_l3 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 2 — b/test.covers: pixel_w2_l4 unresolved in week 2 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 2 — b/test.covers: pixel_w1_l1 unresolved in week 2 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 2 — b/test.covers: pixel_w1_l2 unresolved in week 2 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 3 — b/test.covers: pixel_w2_l1 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 3 — b/test.covers: pixel_w2_l2 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 3 — b/test.covers: pixel_w2_l3 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 3 — b/test.covers: pixel_w2_l4 unresolved in week 3 (exists only in week 4 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 3 — b/test.covers: pixel_w1_l1 unresolved in week 3 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 3 — b/test.covers: pixel_w1_l2 unresolved in week 3 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 4 — b/test.covers: pixel_w1_l1 unresolved in week 4 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade 5 month 1 week 4 — b/test.covers: pixel_w1_l2 unresolved in week 4 (exists only in week 1 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 3 — b/test.covers: rookie_w2_l1 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 3 — b/test.covers: rookie_w2_l2 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 3 — b/test.covers: rookie_w2_l3 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 3 — b/test.covers: rookie_w2_l4 unresolved in week 3 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 4 — b/test.covers: rookie_w2_l1 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 4 — b/test.covers: rookie_w2_l2 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 4 — b/test.covers: rookie_w2_l3 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
-- FAIL `b/test.covers` grade preschool month 1 week 4 — b/test.covers: rookie_w2_l4 unresolved in week 4 (exists only in week 2 — rebind, or tier it spiral/fallback)
+- none.
 
 ## Lane gaps (GAP — blocks beta, not an authoring bug)
 
@@ -325,27 +290,18 @@ Grade-month totals: T2 = 0, T1 = 0, T0 = 63 (of 63).
 
 ## Warnings (declared-map / count drift)
 
-- WARN `a-declared-map` grade K — declared statutory_map ≠ 9 MCL subjects — missing [history,literature,reading,spelling,writing]
-- WARN `a-declared-map` grade 1 — declared statutory_map ≠ 9 MCL subjects — missing [history,literature,reading,spelling,writing]
-- WARN `a-declared-map` grade 2 — declared statutory_map ≠ 9 MCL subjects — missing [history,literature,reading,spelling,writing]
-- WARN `a-declared-map` grade 3 — declared statutory_map ≠ 9 MCL subjects — missing [literature], non-statutory included [coding]
-- WARN `a-declared-map` grade 4 — declared statutory_map ≠ 9 MCL subjects — missing [civics,english_grammar,literature,writing]
-- WARN `a-declared-map` grade 5 — declared statutory_map ≠ 9 MCL subjects — missing [civics,english_grammar,literature,writing], non-statutory included [coding]
-- WARN `a-declared-map` grade 6 — no declared statutory_map in content
-- WARN `d/test-covers` grade K — test k_w1_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade K — test k_w2_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade 1 — test 1_w1_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade 1 — test 1_w2_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade 2 — test 2_w1_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade 2 — test 2_w2_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade 4 — test 4_w1_test has questions but an empty covers[] (unbound test)
-- WARN `d/test-covers` grade 4 — test 4_w2_test has questions but an empty covers[] (unbound test)
+- WARN `b/test-id` grade 3 — quizId juniper_w2_test reused: authored for week 2, repeated in week 3 — explicitly tiered spiral/fallback, accepted
+- WARN `b/test-id` grade 3 — quizId juniper_w2_test reused: authored for week 2, repeated in week 4 — explicitly tiered spiral/fallback, accepted
+- WARN `b/test-id` grade 5 — quizId pixel_w2_test reused: authored for week 2, repeated in week 3 — explicitly tiered spiral/fallback, accepted
+- WARN `b/test-id` grade 5 — quizId pixel_w2_test reused: authored for week 2, repeated in week 4 — explicitly tiered spiral/fallback, accepted
+- WARN `b/test-id` grade preschool — quizId rookie_w2_test reused: authored for week 2, repeated in week 3 — explicitly tiered spiral/fallback, accepted
+- WARN `b/test-id` grade preschool — quizId rookie_w2_test reused: authored for week 2, repeated in week 4 — explicitly tiered spiral/fallback, accepted
 
 ## Appendix — preschool (pre-K band, not scored for 9/9)
 
 | month | w1 | w2 | w3 | w4 | tier |
 |------|---|---|---|---|
-| m1 | T1 | T1 | T0 | T0 | **T0** |
+| m1 | T1 | T1 | T1 | T1 | **T1** |
 | m2 | T0 | T0 | T0 | T0 | **T0** |
 | m3 | T0 | T0 | T0 | T0 | **T0** |
 | m4 | T0 | T0 | T0 | T0 | **T0** |

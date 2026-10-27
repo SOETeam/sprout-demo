@@ -19,10 +19,10 @@
    ],
    "enabled": true,
    "statutory_map": [
-    "english_grammar",
-    "mathematics",
-    "science",
-    "civics"
+    "ela",
+    "social_studies",
+    "math",
+    "science"
    ],
    "grade_band": "K-2 band",
    "cat_domains": [
@@ -31,12 +31,9 @@
    ],
    "statutory_subjects": [
     "ela",
-    "math",
-    "science",
     "social_studies",
-    "motor",
-    "art",
-    "music"
+    "math",
+    "science"
    ]
   },
   "1": {
@@ -55,10 +52,10 @@
    ],
    "enabled": true,
    "statutory_map": [
-    "english_grammar",
-    "mathematics",
-    "science",
-    "civics"
+    "ela",
+    "social_studies",
+    "math",
+    "science"
    ],
    "grade_band": "K-2 band",
    "cat_domains": [
@@ -67,12 +64,9 @@
    ],
    "statutory_subjects": [
     "ela",
-    "math",
-    "science",
     "social_studies",
-    "motor",
-    "art",
-    "music"
+    "math",
+    "science"
    ]
   },
   "2": {
@@ -91,10 +85,10 @@
    ],
    "enabled": true,
    "statutory_map": [
-    "english_grammar",
-    "mathematics",
-    "science",
-    "civics"
+    "ela",
+    "social_studies",
+    "math",
+    "science"
    ],
    "grade_band": "K-2 band",
    "cat_domains": [
@@ -103,12 +97,9 @@
    ],
    "statutory_subjects": [
     "ela",
-    "math",
-    "science",
     "social_studies",
-    "motor",
-    "art",
-    "music"
+    "math",
+    "science"
    ]
   },
   "4": {
@@ -125,11 +116,15 @@
    ],
    "enabled": true,
    "statutory_map": [
-    "history",
-    "mathematics",
     "reading",
+    "spelling",
+    "mathematics",
     "science",
-    "spelling"
+    "history",
+    "civics",
+    "literature",
+    "writing",
+    "english_grammar"
    ],
    "grade_band": "3-5 band",
    "cat_domains": [
@@ -728,7 +723,10 @@
      "title": "Week 1 Check-in — Kindergarten",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "k.bank.story-questions",
+      "k.bank.letter-sounds"
+     ],
      "questions": [
       {
        "q": "Who or what is this passage mostly about?",
@@ -2771,7 +2769,11 @@
      "title": "Week 2 Check-in — Kindergarten",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "k.bank.weather-patterns",
+      "k.bank.letter-sounds",
+      "k.bank.story-questions"
+     ],
      "questions": [
       {
        "q": "Which of these is a sunny-day sign?",
@@ -4890,7 +4892,12 @@
      "title": "Week 1 Check-in — Grade 1",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "pd.comprehension.g1",
+      "1.bank.sky-patterns",
+      "1.bank.light-and-sight",
+      "1.bank.classroom-rules"
+     ],
      "questions": [
       {
        "q": "Read the sentence from the passage and choose the word that fills the blank. The fat ____ swam to the bank, and we fed her.",
@@ -7079,7 +7086,12 @@
      "title": "Week 2 Check-in — Grade 1",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "pd.comprehension.g1",
+      "1.bank.light-and-sight",
+      "1.bank.sky-patterns",
+      "1.bank.sound-vibration"
+     ],
      "questions": [
       {
        "q": "Who or what is this passage mostly about?",
@@ -9325,7 +9337,12 @@
      "title": "Week 1 Check-in — Grade 2",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "pd.comprehension.g2",
+      "2.bank.material-properties",
+      "2.bank.plants-need-sun-water",
+      "2.bank.land-and-water"
+     ],
      "questions": [
       {
        "q": "Read the sentence from the passage and choose the word that fills the blank. \"He ____ something pull him by the coat, and heard the bark of a dog.",
@@ -11778,7 +11795,13 @@
      "title": "Week 2 Check-in — Grade 2",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "2.bank.material-properties",
+      "pd.comprehension.g2",
+      "2.bank.local-government",
+      "2.bank.plants-need-sun-water",
+      "2.bank.land-and-water"
+     ],
      "questions": [
       {
        "q": "A material that bends easily without breaking is...",
@@ -14272,7 +14295,13 @@
      "title": "Week 1 Check-in — Grade 4",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "pd.comprehension.g4",
+      "g4.read.cloze_passages",
+      "4.bank.waves-sound-light",
+      "4.bank.michigan-inquiry",
+      "4.bank.rocks-and-fossils"
+     ],
      "questions": [
       {
        "q": "Who or what is this passage mostly about?",
@@ -17007,7 +17036,13 @@
      "title": "Week 2 Check-in — Grade 4",
      "minutes": 15,
      "passScore": 0.75,
-     "covers": [],
+     "covers": [
+      "pd.comprehension.g4",
+      "g4.read.cloze_passages",
+      "4.bank.rocks-and-fossils",
+      "4.bank.michigan-inquiry",
+      "4.bank.waves-sound-light"
+     ],
      "questions": [
       {
        "q": "Read the sentence from the passage and choose the word that fills the blank. ____ the white highway like cavalry fleet, It dashes the dust with its numberless feet.",
