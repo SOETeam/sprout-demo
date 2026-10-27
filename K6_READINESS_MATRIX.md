@@ -1,6 +1,6 @@
 # K–6 Readiness Matrix (P0.4 validator v2 output — regenerated, do not hand-edit)
 
-- Generated: `2026-10-27T04:06:44.046Z` by `tools/validate_readiness.js`
+- Generated: `2026-10-27T04:13:09.493Z` by `tools/validate_readiness.js`
 - Axes: 7 grades (K–6) × 9 school months × 4 weeks (year week = (month−1)×4 + week-of-month)
 - Statutory list: nine MCL 380.1561(3)(f) subjects (D7-verified) — reading, spelling, mathematics, science, history, civics, literature, writing, english_grammar
 - Fold-map (K/1/2): `ela` → reading, writing, spelling, literature, english_grammar; `social_studies` → history, civics; `math` → mathematics; `science` → science.
